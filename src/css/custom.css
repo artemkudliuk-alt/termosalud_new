@@ -1000,7 +1000,7 @@ header .logo picture img {
   position: relative !important;
   border-radius: 28px !important;
   padding: 3px !important;
-  background: linear-gradient(135deg, rgba(93, 135, 150, 0.4) 0%, rgba(93, 135, 150, 0.1) 50%, rgba(109, 252, 255, 0.5) 100%) !important;
+  background: linear-gradient(135deg, rgba(93, 135, 150, 0.4) 0%, rgba(93, 135, 150, 0.1) 50%, rgba(182, 203, 210, 0.4) 100%) !important;
   box-shadow: 0 25px 65px rgba(0, 40, 80, 0.18) !important;
   overflow: hidden !important;
   transition: transform 0.4s ease, box-shadow 0.4s ease !important;
@@ -1021,7 +1021,7 @@ header .logo picture img {
   left: -50% !important;
   width: 200% !important;
   height: 200% !important;
-  background: conic-gradient(from 0deg, transparent 0deg, rgba(93, 135, 150, 0.6) 60deg, transparent 120deg, rgba(109, 252, 255, 0.8) 240deg, transparent 300deg) !important;
+  background: conic-gradient(from 0deg, transparent 0deg, rgba(93, 135, 150, 0.5) 60deg, transparent 120deg, rgba(182, 203, 210, 0.6) 240deg, transparent 300deg) !important;
   animation: rotateShimmerHalo 8s linear infinite !important;
   z-index: 1 !important;
   pointer-events: none !important;
@@ -1359,7 +1359,7 @@ header .logo picture img {
   width: 26px !important;
   height: 26px !important;
   border-radius: 50% !important;
-  background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-cyan) 100%) !important;
+  background: #5d8796 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -1375,7 +1375,7 @@ header .logo picture img {
   background: rgba(15, 23, 42, 0.85) !important;
   backdrop-filter: blur(14px) !important;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
-  border-left: 4px solid var(--brand-cyan) !important;
+  border-left: 4px solid #5d8796 !important;
   border-radius: 16px !important;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35) !important;
   z-index: 5 !important;
@@ -1391,12 +1391,12 @@ header .logo picture img {
   width: 40px !important;
   height: 40px !important;
   border-radius: 12px !important;
-  background: linear-gradient(135deg, rgba(93, 135, 150, 0.2) 0%, rgba(93, 135, 150, 0.35) 100%) !important;
-  border: 1px solid rgba(93, 135, 150, 0.5) !important;
+  background: rgba(93, 135, 150, 0.25) !important;
+  border: 1px solid rgba(182, 203, 210, 0.5) !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  color: var(--brand-cyan) !important;
+  color: #b6cbd2 !important;
   flex-shrink: 0 !important;
 }
 
@@ -1990,7 +1990,7 @@ header .logo picture img {
 .modern-compact-footer,
 footer.modern-compact-footer,
 footer {
-  background: #0b1120 !important;
+  background: #1e232e !important;
   border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
   padding: 16px 0 !important;
   color: #94a3b8 !important;
