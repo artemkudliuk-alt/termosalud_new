@@ -1,0 +1,10 @@
+﻿{
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "installCommand": null,
+  "rewrites": [
+    { "source": "/about-us", "destination": "/about-us/index.html" },
+    { "source": "/zionic", "destination": "/zionic/index.html" },
+    { "source": "/linfopress", "destination": "/linfopress/index.html" }
+  ]
+}
