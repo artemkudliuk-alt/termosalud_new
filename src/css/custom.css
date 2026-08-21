@@ -1,36 +1,41 @@
-/* Termosalud Official Spain Color Palette (Pixel-Perfect) */
+/* Termosalud Authentic Pastel & Luxury Medical Palette (Pixel-Matched to termosalud.com) */
 
 :root {
-  /* Signature Termosalud Turquoise Teal (rgb(29, 191, 193)) */
-  --brand-primary: #1dbfc1;
-  --brand-primary-hover: #169b9d;
-  --brand-primary-dark: #138587;
-  --brand-primary-light: #effafa;
-  
-  --brand-teal: #1dbfc1;
-  --brand-teal-hover: #169b9d;
-  --brand-teal-light: #effafa;
-  
-  --brand-blue: #1dbfc1;
-  --brand-blue-hover: #169b9d;
-  --brand-blue-dark: #138587;
-  --brand-cyan: #1dbfc1;
-  --brand-cyan-light: #effafa;
-  
-  /* Brand Slate Navy, Gray & Surfaces */
+  /* Dominant Neutrals (72.8% White, 9.4% Soft Gray) */
+  --bg-pure: #ffffff;
+  --bg-soft-gray: #f7f9fa;
+  --bg-card: #ffffff;
+  --brand-border: #e2e8f0;
+  --brand-border-light: #edf2f7;
+
+  /* Dark Graphite & Slate (7.1% Dark Navy/Slate) */
   --brand-navy: #1e232e;
+  --brand-navy-dark: #141820;
+  --brand-navy-card: #181d26;
+
+  /* Pastel Muted Colors (2.9% Ice-Slate, 1.5% Steel-Blue) */
+  --pastel-ice: #edf4f7;
+  --pastel-slate-blue: #b6cbd2;
+  --brand-steel: #5d8796;
+  --brand-steel-hover: #4d7280;
+  --brand-steel-dark: #3f5d69;
+  
+  --brand-primary: #5d8796;
+  --brand-blue: #5d8796;
+  --brand-blue-hover: #4d7280;
+  --brand-cyan: #5d8796;
   --brand-slate: #54595f;
-  --brand-gray-dark: #222222;
-  --brand-gray-muted: #7a7a7a;
-  --brand-light-gray: #fafafa;
-  --brand-border: #e6e6e6;
-  
-  /* Accent Yellow */
-  --brand-yellow: #ffff00;
-  
-  --text-dark: #111111;
+
+  /* Typography & Muted Grays */
+  --text-dark: #1e232e;
+  --text-heading: #111827;
   --text-body: #54595f;
   --text-muted: #7a7a7a;
+  --text-light: #94a3b8;
+
+  /* Micro Accents (<0.1%) */
+  --accent-stripe: #5d8796;
+  --brand-yellow: #ffff00;
 }
 
 /* =======================================================
@@ -39,18 +44,18 @@
 .first-word-stripe {
   position: relative;
   display: inline-block;
-  color: inherit;
+  color: #1e232e !important;
 }
 
 .first-word-stripe::after {
   content: '';
   position: absolute;
-  bottom: 1px;
+  bottom: 0px;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 3.5px;
   border-radius: 2px;
-  background: #1dbfc1 !important;
+  background: #5d8796 !important;
 }
 
 html {
@@ -476,7 +481,7 @@ header .logo picture img {
    ======================================================= */
 .our-prods {
   padding: 100px 0 80px 0 !important;
-  background: linear-gradient(180deg, #ffffff 0%, #f0f7fb 40%, #e8f3f9 100%) !important;
+  background: #f7f9fa !important;
   position: relative !important;
   margin: 0 !important;
   border: none !important;
@@ -493,8 +498,8 @@ header .logo picture img {
   align-items: center !important;
   gap: 8px !important;
   padding: 8px 20px !important;
-  background: linear-gradient(135deg, rgba(29, 191, 193, 0.1) 0%, rgba(29, 191, 193, 0.18) 100%) !important;
-  border: 1.5px solid rgba(29, 191, 193, 0.35) !important;
+  background: #edf4f7 !important;
+  border: 1px solid #b6cbd2 !important;
   color: var(--brand-blue) !important;
   font-size: 12px !important;
   font-weight: 800 !important;
@@ -502,7 +507,7 @@ header .logo picture img {
   letter-spacing: 1.5px !important;
   border-radius: 50px !important;
   margin-bottom: 18px !important;
-  box-shadow: 0 4px 15px rgba(29, 191, 193, 0.1) !important;
+  box-shadow: 0 4px 15px rgba(93, 135, 150, 0.1) !important;
 }
 
 .our-prods-header h2 {
@@ -536,8 +541,8 @@ header .logo picture img {
 
 .modern-product-card {
   background: #ffffff !important;
-  border: 1px solid rgba(29, 191, 193, 0.15) !important;
-  border-top: 5px solid var(--brand-blue) !important;
+  border: 1px solid #e2e8f0 !important;
+  border-top: 4px solid #5d8796 !important;
   border-radius: 24px !important;
   padding: 40px 36px 36px 36px !important;
   display: flex !important;
@@ -550,9 +555,9 @@ header .logo picture img {
 
 .modern-product-card:hover {
   transform: translateY(-8px) !important;
-  border-color: rgba(29, 191, 193, 0.5) !important;
+  border-color: rgba(93, 135, 150, 0.5) !important;
   border-top-color: var(--brand-cyan) !important;
-  box-shadow: 0 28px 60px rgba(29, 191, 193, 0.18) !important;
+  box-shadow: 0 28px 60px rgba(93, 135, 150, 0.18) !important;
 }
 
 .card-top-meta {
@@ -565,9 +570,9 @@ header .logo picture img {
 .card-badge {
   display: inline-block !important;
   padding: 7px 16px !important;
-  background: linear-gradient(135deg, rgba(29, 191, 193, 0.1) 0%, rgba(29, 191, 193, 0.15) 100%) !important;
+  background: linear-gradient(135deg, rgba(93, 135, 150, 0.1) 0%, rgba(93, 135, 150, 0.15) 100%) !important;
   color: var(--brand-blue) !important;
-  border: 1px solid rgba(29, 191, 193, 0.3) !important;
+  border: 1px solid rgba(93, 135, 150, 0.3) !important;
   font-size: 11.5px !important;
   font-weight: 800 !important;
   text-transform: uppercase !important;
@@ -576,16 +581,16 @@ header .logo picture img {
 }
 
 .card-badge.badge-accent-cyan {
-  background: linear-gradient(135deg, rgba(29, 191, 193, 0.15) 0%, rgba(109, 252, 255, 0.25) 100%) !important;
+  background: linear-gradient(135deg, rgba(93, 135, 150, 0.15) 0%, rgba(109, 252, 255, 0.25) 100%) !important;
   color: #007799 !important;
-  border: 1px solid rgba(29, 191, 193, 0.45) !important;
+  border: 1px solid rgba(93, 135, 150, 0.45) !important;
 }
 
 .card-origin {
   font-size: 12px !important;
   font-weight: 700 !important;
-  color: #1dbfc1 !important;
-  background: rgba(29, 191, 193, 0.06) !important;
+  color: #5d8796 !important;
+  background: rgba(93, 135, 150, 0.06) !important;
   padding: 5px 12px !important;
   border-radius: 6px !important;
   text-transform: uppercase !important;
@@ -610,14 +615,14 @@ header .logo picture img {
   width: 380px !important;
   height: 380px !important;
   border-radius: 50% !important;
-  background: radial-gradient(circle, rgba(29, 191, 193, 0.28) 0%, rgba(29, 191, 193, 0.12) 45%, rgba(240, 248, 255, 0.4) 70%, transparent 80%) !important;
+  background: radial-gradient(circle, rgba(93, 135, 150, 0.28) 0%, rgba(93, 135, 150, 0.12) 45%, rgba(240, 248, 255, 0.4) 70%, transparent 80%) !important;
   z-index: 1 !important;
   transition: transform 0.45s ease, background 0.45s ease !important;
 }
 
 .modern-product-card:hover .podium-ambient-glow {
   transform: translate(-50%, -50%) scale(1.15) !important;
-  background: radial-gradient(circle, rgba(29, 191, 193, 0.4) 0%, rgba(29, 191, 193, 0.2) 50%, rgba(240, 248, 255, 0.6) 75%, transparent 85%) !important;
+  background: radial-gradient(circle, rgba(93, 135, 150, 0.4) 0%, rgba(93, 135, 150, 0.2) 50%, rgba(240, 248, 255, 0.6) 75%, transparent 85%) !important;
 }
 
 .card-device-img {
@@ -633,7 +638,7 @@ header .logo picture img {
 
 .modern-product-card:hover .card-device-img {
   transform: translateY(-12px) scale(1.04) !important;
-  filter: drop-shadow(0 28px 45px rgba(29, 191, 193, 0.28)) !important;
+  filter: drop-shadow(0 28px 45px rgba(93, 135, 150, 0.28)) !important;
 }
 
 .card-content-wrap {
@@ -683,13 +688,13 @@ header .logo picture img {
   width: 22px !important;
   height: 22px !important;
   border-radius: 50% !important;
-  background: linear-gradient(135deg, #1dbfc1 0%, #1dbfc1 100%) !important;
+  background: linear-gradient(135deg, #5d8796 0%, #5d8796 100%) !important;
   color: #ffffff !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   flex-shrink: 0 !important;
-  box-shadow: 0 3px 8px rgba(29, 191, 193, 0.35) !important;
+  box-shadow: 0 3px 8px rgba(93, 135, 150, 0.35) !important;
 }
 
 .spec-icon-check svg {
@@ -712,7 +717,7 @@ header .logo picture img {
   justify-content: center !important;
   gap: 10px !important;
   padding: 16px 24px !important;
-  background: linear-gradient(135deg, var(--brand-blue) 0%, #169b9d 100%) !important;
+  background: #1e232e !important;
   color: #ffffff !important;
   font-size: 13.5px !important;
   font-weight: 700 !important;
@@ -721,16 +726,16 @@ header .logo picture img {
   border-radius: 10px !important;
   border: none !important;
   text-decoration: none !important;
-  box-shadow: 0 6px 20px rgba(29, 191, 193, 0.3) !important;
+  box-shadow: 0 6px 20px rgba(93, 135, 150, 0.3) !important;
   transition: all 0.25s ease !important;
   cursor: pointer !important;
 }
 
 .card-btn-primary:hover {
-  background: linear-gradient(135deg, var(--brand-blue-hover) 0%, #0077a8 100%) !important;
+  background: #5d8796 !important;
   color: #ffffff !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 10px 28px rgba(29, 191, 193, 0.45) !important;
+  box-shadow: 0 10px 28px rgba(93, 135, 150, 0.45) !important;
 }
 
 .card-btn-secondary {
@@ -746,7 +751,7 @@ header .logo picture img {
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
   border-radius: 10px !important;
-  border: 2px solid var(--brand-blue) !important;
+  border: 1.5px solid #5d8796 !important;
   text-decoration: none !important;
   transition: all 0.25s ease !important;
   cursor: pointer !important;
@@ -757,7 +762,7 @@ header .logo picture img {
   color: #ffffff !important;
   background-color: var(--brand-blue) !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 6px 18px rgba(29, 191, 193, 0.25) !important;
+  box-shadow: 0 6px 18px rgba(93, 135, 150, 0.25) !important;
 }
 
 /* =======================================================
@@ -782,8 +787,8 @@ header .logo picture img {
   align-items: center !important;
   gap: 8px !important;
   padding: 10px 24px !important;
-  background: linear-gradient(135deg, rgba(29, 191, 193, 0.08) 0%, rgba(29, 191, 193, 0.16) 100%) !important;
-  border: 1.5px solid rgba(29, 191, 193, 0.35) !important;
+  background: #edf4f7 !important;
+  border: 1px solid #b6cbd2 !important;
   color: var(--brand-blue) !important;
   font-size: 13px !important;
   font-weight: 800 !important;
@@ -791,7 +796,7 @@ header .logo picture img {
   letter-spacing: 1.5px !important;
   border-radius: 50px !important;
   margin-bottom: 20px !important;
-  box-shadow: 0 4px 15px rgba(29, 191, 193, 0.08) !important;
+  box-shadow: 0 4px 15px rgba(93, 135, 150, 0.08) !important;
 }
 
 .why-us-header h2 {
@@ -849,8 +854,8 @@ header .logo picture img {
 
 .modern-why-card:hover {
   transform: translateY(-10px) !important;
-  border-color: rgba(29, 191, 193, 0.45) !important;
-  box-shadow: 0 25px 60px rgba(29, 191, 193, 0.16) !important;
+  border-color: rgba(93, 135, 150, 0.45) !important;
+  box-shadow: 0 25px 60px rgba(93, 135, 150, 0.16) !important;
 }
 
 .modern-why-card:hover::before {
@@ -861,14 +866,14 @@ header .logo picture img {
   width: 82px !important;
   height: 82px !important;
   border-radius: 22px !important;
-  background: linear-gradient(135deg, rgba(29, 191, 193, 0.12) 0%, rgba(29, 191, 193, 0.22) 100%) !important;
-  border: 2px solid rgba(29, 191, 193, 0.4) !important;
+  background: linear-gradient(135deg, rgba(93, 135, 150, 0.12) 0%, rgba(93, 135, 150, 0.22) 100%) !important;
+  border: 2px solid rgba(93, 135, 150, 0.4) !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   margin-bottom: 28px !important;
   color: var(--brand-blue) !important;
-  box-shadow: 0 10px 24px rgba(29, 191, 193, 0.15) !important;
+  box-shadow: 0 10px 24px rgba(93, 135, 150, 0.15) !important;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background 0.4s ease, box-shadow 0.4s ease, color 0.4s ease !important;
   animation: iconIdleFloat 4s ease-in-out infinite !important;
 }
@@ -900,7 +905,7 @@ header .logo picture img {
 .modern-why-card:hover .why-icon-pod {
   background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-cyan) 100%) !important;
   border-color: transparent !important;
-  box-shadow: 0 16px 32px rgba(29, 191, 193, 0.45) !important;
+  box-shadow: 0 16px 32px rgba(93, 135, 150, 0.45) !important;
   transform: translateY(-6px) scale(1.1) rotate(6deg) !important;
 }
 
@@ -952,8 +957,8 @@ header .logo picture img {
   align-items: center !important;
   gap: 8px !important;
   padding: 10px 24px !important;
-  background: linear-gradient(135deg, rgba(29, 191, 193, 0.1) 0%, rgba(29, 191, 193, 0.18) 100%) !important;
-  border: 1.5px solid rgba(29, 191, 193, 0.35) !important;
+  background: #edf4f7 !important;
+  border: 1px solid #b6cbd2 !important;
   color: var(--brand-blue) !important;
   font-size: 12.5px !important;
   font-weight: 800 !important;
@@ -961,7 +966,7 @@ header .logo picture img {
   letter-spacing: 1.5px !important;
   border-radius: 50px !important;
   margin-bottom: 20px !important;
-  box-shadow: 0 4px 15px rgba(29, 191, 193, 0.1) !important;
+  box-shadow: 0 4px 15px rgba(93, 135, 150, 0.1) !important;
 }
 
 .presentation-header h2 {
@@ -995,7 +1000,7 @@ header .logo picture img {
   position: relative !important;
   border-radius: 28px !important;
   padding: 3px !important;
-  background: linear-gradient(135deg, rgba(29, 191, 193, 0.4) 0%, rgba(29, 191, 193, 0.1) 50%, rgba(109, 252, 255, 0.5) 100%) !important;
+  background: linear-gradient(135deg, rgba(93, 135, 150, 0.4) 0%, rgba(93, 135, 150, 0.1) 50%, rgba(109, 252, 255, 0.5) 100%) !important;
   box-shadow: 0 25px 65px rgba(0, 40, 80, 0.18) !important;
   overflow: hidden !important;
   transition: transform 0.4s ease, box-shadow 0.4s ease !important;
@@ -1007,7 +1012,7 @@ header .logo picture img {
 
 .presentation-form-card:hover {
   transform: translateY(-5px) !important;
-  box-shadow: 0 35px 80px rgba(29, 191, 193, 0.28) !important;
+  box-shadow: 0 35px 80px rgba(93, 135, 150, 0.28) !important;
 }
 
 .shimmer-border-halo {
@@ -1016,7 +1021,7 @@ header .logo picture img {
   left: -50% !important;
   width: 200% !important;
   height: 200% !important;
-  background: conic-gradient(from 0deg, transparent 0deg, rgba(29, 191, 193, 0.6) 60deg, transparent 120deg, rgba(109, 252, 255, 0.8) 240deg, transparent 300deg) !important;
+  background: conic-gradient(from 0deg, transparent 0deg, rgba(93, 135, 150, 0.6) 60deg, transparent 120deg, rgba(109, 252, 255, 0.8) 240deg, transparent 300deg) !important;
   animation: rotateShimmerHalo 8s linear infinite !important;
   z-index: 1 !important;
   pointer-events: none !important;
@@ -1044,8 +1049,8 @@ header .logo picture img {
   align-items: center !important;
   gap: 8px !important;
   padding: 6px 16px !important;
-  background: rgba(29, 191, 193, 0.15) !important;
-  border: 1px solid rgba(29, 191, 193, 0.35) !important;
+  background: rgba(93, 135, 150, 0.15) !important;
+  border: 1px solid rgba(93, 135, 150, 0.35) !important;
   border-radius: 50px !important;
   color: var(--brand-cyan) !important;
   font-size: 11.5px !important;
@@ -1084,7 +1089,7 @@ header .logo picture img {
   align-items: flex-start !important;
   gap: 10px !important;
   padding: 12px 16px !important;
-  background: rgba(29, 191, 193, 0.08) !important;
+  background: rgba(93, 135, 150, 0.08) !important;
   border-left: 3px solid var(--brand-cyan) !important;
   border-radius: 8px !important;
   color: #cbd5e1 !important;
@@ -1160,7 +1165,7 @@ header .logo picture img {
 .luxury-form-input:focus {
   background: rgba(255, 255, 255, 0.1) !important;
   border-color: var(--brand-cyan) !important;
-  box-shadow: 0 0 20px rgba(29, 191, 193, 0.3) !important;
+  box-shadow: 0 0 20px rgba(93, 135, 150, 0.3) !important;
 }
 
 .luxury-form-input:focus + .input-icon,
@@ -1209,10 +1214,10 @@ header .logo picture img {
 
 .messenger-pill:hover,
 .messenger-pill.active {
-  background: rgba(29, 191, 193, 0.15) !important;
+  background: rgba(93, 135, 150, 0.15) !important;
   border-color: var(--brand-cyan) !important;
   color: #ffffff !important;
-  box-shadow: 0 0 15px rgba(29, 191, 193, 0.2) !important;
+  box-shadow: 0 0 15px rgba(93, 135, 150, 0.2) !important;
 }
 
 .form-row-2col {
@@ -1229,7 +1234,7 @@ header .logo picture img {
   align-items: center !important;
   justify-content: center !important;
   gap: 12px !important;
-  background: linear-gradient(135deg, var(--brand-blue) 0%, #169b9d 50%, #1dbfc1 100%) !important;
+  background: linear-gradient(135deg, var(--brand-blue) 0%, #4d7280 50%, #5d8796 100%) !important;
   color: #ffffff !important;
   border: none !important;
   border-radius: 12px !important;
@@ -1241,13 +1246,13 @@ header .logo picture img {
   cursor: pointer !important;
   overflow: hidden !important;
   margin-top: 10px !important;
-  box-shadow: 0 10px 30px rgba(29, 191, 193, 0.4) !important;
+  box-shadow: 0 10px 30px rgba(93, 135, 150, 0.4) !important;
   transition: all 0.3s ease !important;
 }
 
 .shimmer-submit-btn:hover {
   transform: translateY(-2px) !important;
-  box-shadow: 0 14px 40px rgba(29, 191, 193, 0.55) !important;
+  box-shadow: 0 14px 40px rgba(93, 135, 150, 0.55) !important;
 }
 
 .btn-arrow {
@@ -1292,7 +1297,7 @@ header .logo picture img {
   transform: translate(-50%, -50%) !important;
   width: 100% !important;
   height: 100% !important;
-  background: radial-gradient(circle, rgba(29, 191, 193, 0.25) 0%, rgba(29, 191, 193, 0.1) 50%, transparent 75%) !important;
+  background: radial-gradient(circle, rgba(93, 135, 150, 0.25) 0%, rgba(93, 135, 150, 0.1) 50%, transparent 75%) !important;
   border-radius: 28px !important;
   z-index: 1 !important;
   pointer-events: none !important;
@@ -1307,7 +1312,7 @@ header .logo picture img {
   flex: 1 1 auto !important;
   border-radius: 26px !important;
   overflow: hidden !important;
-  border: 2px solid rgba(29, 191, 193, 0.4) !important;
+  border: 2px solid rgba(93, 135, 150, 0.4) !important;
   box-shadow: 0 25px 65px rgba(0, 40, 80, 0.2) !important;
   background-color: #0f172a !important;
   display: block !important;
@@ -1336,7 +1341,7 @@ header .logo picture img {
   padding: 10px 20px !important;
   background: rgba(15, 23, 42, 0.82) !important;
   backdrop-filter: blur(12px) !important;
-  border: 1px solid rgba(29, 191, 193, 0.4) !important;
+  border: 1px solid rgba(93, 135, 150, 0.4) !important;
   border-radius: 50px !important;
   color: #ffffff !important;
   font-size: 12.5px !important;
@@ -1386,8 +1391,8 @@ header .logo picture img {
   width: 40px !important;
   height: 40px !important;
   border-radius: 12px !important;
-  background: linear-gradient(135deg, rgba(29, 191, 193, 0.2) 0%, rgba(29, 191, 193, 0.35) 100%) !important;
-  border: 1px solid rgba(29, 191, 193, 0.5) !important;
+  background: linear-gradient(135deg, rgba(93, 135, 150, 0.2) 0%, rgba(93, 135, 150, 0.35) 100%) !important;
+  border: 1px solid rgba(93, 135, 150, 0.5) !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -1434,8 +1439,8 @@ header .logo picture img {
   align-items: center !important;
   gap: 8px !important;
   padding: 10px 24px !important;
-  background: linear-gradient(135deg, rgba(29, 191, 193, 0.08) 0%, rgba(29, 191, 193, 0.16) 100%) !important;
-  border: 1.5px solid rgba(29, 191, 193, 0.35) !important;
+  background: #edf4f7 !important;
+  border: 1px solid #b6cbd2 !important;
   color: var(--brand-blue) !important;
   font-size: 12.5px !important;
   font-weight: 800 !important;
@@ -1443,7 +1448,7 @@ header .logo picture img {
   letter-spacing: 1.5px !important;
   border-radius: 50px !important;
   margin-bottom: 20px !important;
-  box-shadow: 0 4px 15px rgba(29, 191, 193, 0.08) !important;
+  box-shadow: 0 4px 15px rgba(93, 135, 150, 0.08) !important;
 }
 
 .partners-header h2 {
@@ -1506,8 +1511,8 @@ header .logo picture img {
 
 .modern-partner-card:hover {
   transform: translateY(-10px) scale(1.02) !important;
-  border-color: rgba(29, 191, 193, 0.5) !important;
-  box-shadow: 0 25px 55px rgba(29, 191, 193, 0.2) !important;
+  border-color: rgba(93, 135, 150, 0.5) !important;
+  box-shadow: 0 25px 55px rgba(93, 135, 150, 0.2) !important;
 }
 
 .partner-card-img-wrap {
@@ -1545,7 +1550,7 @@ header .logo picture img {
   padding: 6px 14px !important;
   background: rgba(15, 23, 42, 0.78) !important;
   backdrop-filter: blur(10px) !important;
-  border: 1px solid rgba(29, 191, 193, 0.4) !important;
+  border: 1px solid rgba(93, 135, 150, 0.4) !important;
   border-radius: 50px !important;
   color: #ffffff !important;
   font-size: 11.5px !important;
@@ -1559,7 +1564,7 @@ header .logo picture img {
 }
 
 .modern-partner-card:hover .partner-verified-badge {
-  background: rgba(29, 191, 193, 0.88) !important;
+  background: rgba(93, 135, 150, 0.88) !important;
   border-color: var(--brand-cyan) !important;
 }
 
@@ -1625,8 +1630,8 @@ header .logo picture img {
   align-items: center !important;
   gap: 8px !important;
   padding: 8px 22px !important;
-  background: rgba(29, 191, 193, 0.08) !important;
-  border: 1.5px solid rgba(29, 191, 193, 0.3) !important;
+  background: rgba(93, 135, 150, 0.08) !important;
+  border: 1.5px solid rgba(93, 135, 150, 0.3) !important;
   border-radius: 50px !important;
   color: var(--brand-blue) !important;
   font-size: 12px !important;
@@ -1724,7 +1729,7 @@ header .logo picture img {
   justify-content: center !important;
   flex-shrink: 0 !important;
   margin-top: 3px !important;
-  box-shadow: 0 3px 8px rgba(29, 191, 193, 0.35) !important;
+  box-shadow: 0 3px 8px rgba(93, 135, 150, 0.35) !important;
 }
 
 .seo-check-icon svg {
@@ -1828,11 +1833,11 @@ header .logo picture img {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background: linear-gradient(135deg, var(--brand-blue) 0%, #169b9d 100%);
+  background: #1e232e;
   color: #ffffff;
   padding: 18px 28px;
   border-radius: 12px;
-  box-shadow: 0 15px 35px rgba(29, 191, 193, 0.35);
+  box-shadow: 0 15px 35px rgba(93, 135, 150, 0.35);
   z-index: 100001;
   font-size: 15px;
   font-weight: 600;

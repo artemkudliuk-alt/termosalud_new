@@ -195,7 +195,7 @@ function cleanHtml(raw, pageName) {
             <!-- Card 2: ZIONIC -->
             <div class="modern-product-card" data-aos="fade-up" data-aos-delay="200">
               <div class="card-top-meta">
-                <span class="card-badge badge-accent-cyan">RF + Ротаційний масаж</span>
+                <span class="card-badge">RF + Ротаційний масаж</span>
                 <span class="card-origin">Іспанія • MARP Technology</span>
               </div>
 
