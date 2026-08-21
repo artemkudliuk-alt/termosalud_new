@@ -1,6 +1,10 @@
 /* Termosalud Authentic Pastel & Luxury Medical Palette (Pixel-Matched to termosalud.com) */
 
 :root {
+  /* Dynamic Active Font Families (Switchable via Interactive Dock) */
+  --active-font: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --active-heading-font: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
   /* Dominant Neutrals (72.8% White, 9.4% Soft Gray) */
   --bg-pure: #ffffff;
   --bg-soft-gray: #f7f9fa;
@@ -45,6 +49,7 @@
   position: relative;
   display: inline-block;
   color: #1e232e !important;
+  font-family: var(--active-heading-font) !important;
 }
 
 .first-word-stripe::after {
@@ -60,7 +65,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: var(--active-font) !important;
   background-color: #ffffff;
   height: auto !important;
 }
@@ -68,13 +73,38 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--active-font) !important;
   color: var(--text-dark);
   background-color: #ffffff !important;
   height: auto !important;
   min-height: 100vh !important;
   overflow-x: hidden !important;
   overflow-y: visible !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.hero-clean-title,
+.our-prods-header h2,
+.card-device-title,
+.why-us-header h2,
+.why-card-title,
+.presentation-header h2,
+.form-title,
+.partners-header h2,
+.partner-title,
+.seo-main-title,
+.seo-sub-title,
+.product-name,
+.btn-text,
+.card-btn-primary,
+.card-btn-secondary,
+.shimmer-submit-btn,
+.badge-strong {
+  font-family: var(--active-heading-font) !important;
+}
+
+p, span, li, a, button, input, label, textarea {
+  font-family: var(--active-font);
 }
 
 /* Ensure images fit nicely */
@@ -2208,6 +2238,150 @@ footer {
     gap: 10px !important;
     text-align: center !important;
     flex-wrap: wrap !important;
+  }
+}
+
+/* =======================================================
+   INTERACTIVE FONT PICKER DOCK (10 Curated Cyrillic Fonts)
+   ======================================================= */
+.font-picker-dock {
+  position: fixed !important;
+  bottom: 24px !important;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(0) !important;
+  z-index: 999999 !important;
+  display: flex !important;
+  align-items: center !important;
+  background: rgba(24, 29, 38, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1.5px solid rgba(182, 203, 210, 0.28) !important;
+  border-radius: 50px !important;
+  padding: 6px 10px 6px 18px !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 25px rgba(93, 135, 150, 0.2) !important;
+  max-width: 96vw !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.font-picker-dock.minimized {
+  padding: 6px !important;
+  border-radius: 50px !important;
+}
+
+.font-dock-label {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  color: #ffffff !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+  padding-right: 14px !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.15) !important;
+  margin-right: 10px !important;
+}
+
+.font-dock-label svg {
+  color: #5d8796 !important;
+}
+
+.font-dock-options-wrap {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  overflow-x: auto !important;
+  scrollbar-width: none !important;
+  max-width: 780px !important;
+  padding: 2px 0 !important;
+}
+
+.font-dock-options-wrap::-webkit-scrollbar {
+  display: none !important;
+}
+
+.font-opt-btn {
+  background: rgba(255, 255, 255, 0.07) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #cbd5e1 !important;
+  padding: 7px 14px !important;
+  border-radius: 30px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.font-opt-btn:hover {
+  background: rgba(93, 135, 150, 0.3) !important;
+  border-color: #5d8796 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px) !important;
+}
+
+.font-opt-btn.active {
+  background: #5d8796 !important;
+  border-color: #5d8796 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(93, 135, 150, 0.5) !important;
+}
+
+.font-opt-tag {
+  font-size: 9.5px !important;
+  opacity: 0.75 !important;
+  font-weight: 500 !important;
+}
+
+.font-dock-toggle-btn {
+  background: transparent !important;
+  border: none !important;
+  color: #94a3b8 !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  margin-left: 6px !important;
+  transition: all 0.25s ease !important;
+  flex-shrink: 0 !important;
+}
+
+.font-dock-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+}
+
+.font-picker-dock.minimized .font-dock-label,
+.font-picker-dock.minimized .font-dock-options-wrap {
+  display: none !important;
+}
+
+.font-picker-dock.minimized .font-dock-toggle-btn {
+  margin: 0 !important;
+  width: 44px !important;
+  height: 44px !important;
+  background: #5d8796 !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 20px rgba(93, 135, 150, 0.45) !important;
+}
+
+@media (max-width: 991px) {
+  .font-picker-dock {
+    bottom: 14px !important;
+    padding: 6px 8px 6px 12px !important;
+  }
+  .font-dock-label {
+    display: none !important;
+  }
+  .font-dock-options-wrap {
+    max-width: 82vw !important;
   }
 }
 

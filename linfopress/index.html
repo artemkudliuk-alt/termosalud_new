@@ -28,7 +28,7 @@ name="msapplication-TileImage" content="/wp-content/uploads/2026/03/favicon-opti
 	})(window,document,'script','dataLayer','GTM-WHX3C89D');</script> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Mulish:wght@300;400;500;600;700;800;900&family=Onest:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Unbounded:wght@300;400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/src/css/custom.css">
 
 </head><body
@@ -695,6 +695,98 @@ var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","s
 			$(this).replaceWith(video);
 		});
 	});</script> 
+  
+    <!-- Interactive Font Picker Dock (10 Curated Cyrillic Font Families) -->
+    <div id="font-picker-widget" class="font-picker-dock">
+      <div class="font-dock-label">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg>
+        <span>Шрифт сайту</span>
+      </div>
+      <div class="font-dock-options-wrap">
+        <button class="font-opt-btn active" data-font="montserrat" data-family="'Montserrat', sans-serif">
+          <span>Montserrat</span>
+          <span class="font-opt-tag">Оригінал</span>
+        </button>
+        <button class="font-opt-btn" data-font="manrope" data-family="'Manrope', sans-serif">
+          <span>Manrope</span>
+          <span class="font-opt-tag">Swiss Tech</span>
+        </button>
+        <button class="font-opt-btn" data-font="jakarta" data-family="'Plus Jakarta Sans', sans-serif">
+          <span>Jakarta Sans</span>
+          <span class="font-opt-tag">Modern</span>
+        </button>
+        <button class="font-opt-btn" data-font="inter" data-family="'Inter', sans-serif">
+          <span>Inter</span>
+          <span class="font-opt-tag">Pixel Clear</span>
+        </button>
+        <button class="font-opt-btn" data-font="onest" data-family="'Onest', sans-serif">
+          <span>Onest</span>
+          <span class="font-opt-tag">Кирилиця Pro</span>
+        </button>
+        <button class="font-opt-btn" data-font="outfit" data-family="'Outfit', sans-serif">
+          <span>Outfit</span>
+          <span class="font-opt-tag">Aesthetic</span>
+        </button>
+        <button class="font-opt-btn" data-font="golos" data-family="'Golos Text', sans-serif">
+          <span>Golos</span>
+          <span class="font-opt-tag">Editorial</span>
+        </button>
+        <button class="font-opt-btn" data-font="unbounded" data-family="'Unbounded', sans-serif">
+          <span>Unbounded</span>
+          <span class="font-opt-tag">Hi-Tech</span>
+        </button>
+        <button class="font-opt-btn" data-font="playfair" data-family="'Playfair Display', serif" data-heading="'Playfair Display', serif" data-body="'Montserrat', sans-serif">
+          <span>Playfair + Luxe</span>
+          <span class="font-opt-tag">Fashion Serif</span>
+        </button>
+        <button class="font-opt-btn" data-font="mulish" data-family="'Mulish', sans-serif">
+          <span>Mulish</span>
+          <span class="font-opt-tag">Minimal</span>
+        </button>
+      </div>
+      <button id="font-dock-toggle" class="font-dock-toggle-btn" title="Згорнути / Розгорнути меню шрифтів">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <script>
+      (function() {
+        const saved = localStorage.getItem('termosalud_font') || 'montserrat';
+        const widget = document.getElementById('font-picker-widget');
+        const btns = document.querySelectorAll('.font-opt-btn');
+        const toggle = document.getElementById('font-dock-toggle');
+
+        function applyFont(fontKey) {
+          const btn = document.querySelector('.font-opt-btn[data-font="' + fontKey + '"]');
+          if (!btn) return;
+          btns.forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+
+          const bodyFamily = btn.getAttribute('data-body') || btn.getAttribute('data-family');
+          const headingFamily = btn.getAttribute('data-heading') || btn.getAttribute('data-family');
+
+          document.documentElement.style.setProperty('--active-font', bodyFamily);
+          document.documentElement.style.setProperty('--active-heading-font', headingFamily);
+          localStorage.setItem('termosalud_font', fontKey);
+        }
+
+        if (saved) applyFont(saved);
+
+        btns.forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            applyFont(btn.getAttribute('data-font'));
+          });
+        });
+
+        if (toggle && widget) {
+          toggle.addEventListener('click', function() {
+            const isMin = widget.classList.toggle('minimized');
+            toggle.innerHTML = isMin ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg>' : '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+          });
+        }
+      })();
+    </script>
+  
   <script type="module" src="/src/js/main.js"></script>
 
 </body></html>
