@@ -2,5 +2,23 @@
   "version": 2,
   "buildCommand": "",
   "outputDirectory": ".",
-  "installCommand": ""
+  "installCommand": "",
+  "rewrites": [
+    {
+      "source": "/wp-content/:path*",
+      "destination": "/public/wp-content/:path*"
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about-us/index.html"
+    },
+    {
+      "source": "/zionic",
+      "destination": "/zionic/index.html"
+    },
+    {
+      "source": "/linfopress",
+      "destination": "/linfopress/index.html"
+    }
+  ]
 }
