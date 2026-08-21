@@ -123,7 +123,7 @@ function cleanHtml(raw, pageName) {
         <div class="container">
           <div class="our-prods-header" data-aos="fade-up">
             <div class="our-prods-badge">Інноваційні технології Termosalud</div>
-            <h2><span class="first-word-stripe">Флагманське</span> обладнання для клінік</h2>
+            <h2>Флагманське обладнання для клінік</h2>
             <p>Преміальні апаратні рішення з високою рентабельністю, швидкою окупністю та доведеною клінічною ефективністю</p>
           </div>
 
@@ -237,7 +237,7 @@ function cleanHtml(raw, pageName) {
         <div class="container">
           <div class="why-us-header" data-aos="fade-up">
             <div class="why-us-badge">Надійний партнер вашої клініки</div>
-            <h2><span class="first-word-stripe">Чому</span> провідні клініки обирають Termosalud</h2>
+            <h2>Чому провідні клініки обирають Termosalud</h2>
             <p>Повний комплекс підтримки бізнесу: від оригінального сертифікованого обладнання до навчання лікарів та маркетингу</p>
           </div>
 
@@ -361,7 +361,7 @@ function cleanHtml(raw, pageName) {
         <div class="container">
           <div class="presentation-header" data-aos="fade-up">
             <div class="presentation-badge">Персональний тест-драйв</div>
-            <h2><span class="first-word-stripe">Замовте</span> презентацію та пробну процедуру</h2>
+            <h2>Замовте презентацію та пробну процедуру</h2>
             <p>Оцініть можливості та результативність обладнання Termosalud у вашій клініці або в нашому демонстраційному центрі</p>
           </div>
 
@@ -483,7 +483,7 @@ function cleanHtml(raw, pageName) {
         <div class="container">
           <div class="partners-header" data-aos="fade-up">
             <div class="partners-badge">Довіра лідерів ринку</div>
-            <h2><span class="first-word-stripe">Провідні</span> клініки України обирають Termosalud</h2>
+            <h2>Провідні клініки України обирають Termosalud</h2>
             <p>Провідні медичні центри, клініки естетичної медицини та преміальні SPA-комплекси, що обрали технології Termosalud</p>
           </div>
         </div>
@@ -703,7 +703,7 @@ function cleanHtml(raw, pageName) {
               <span>Експертиза та якість</span>
             </div>
             
-            <h2 class="seo-main-title blur-reveal"><span class="first-word-stripe">Преміальне</span> косметологічне обладнання для естетичної медицини в Україні</h2>
+            <h2 class="seo-main-title blur-reveal">Преміальне косметологічне обладнання для естетичної медицини в Україні</h2>
             
             <p class="seo-lead-p blur-reveal">
               Сучасний ринок естетичної медицини диктує найвищі стандарти якості. Пацієнти обирають клініки, які пропонують безпечні, комфортні та результативні процедури з науково доведеною дією. Компанія <strong>Termosalud Україна</strong> — ваш надійний стратегічний партнер та офіційний ексклюзивний дистриб'ютор провідного іспанського обладнання на ринку України.
@@ -773,7 +773,7 @@ function cleanHtml(raw, pageName) {
               </ul>
             </div>
 
-            <h2 class="seo-second-title blur-reveal"><span class="first-word-stripe">Інвестиції</span> в успішне майбутнє вашої клініки</h2>
+            <h2 class="seo-second-title blur-reveal">Інвестиції в успішне майбутнє вашої клініки</h2>
             
             <p class="blur-reveal">
               Розвиток напрямку апаратної корекції тіла та пресотерапії — один із найприбутковіших векторів сучасної естетичної медицини. Пацієнти все частіше обирають безпечні та приємні неінвазивні процедури з миттєвим видимим ефектом. Обладнання Termosalud формує стабільно високу лояльність та забезпечує регулярні візити пацієнтів.
