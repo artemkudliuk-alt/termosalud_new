@@ -863,18 +863,18 @@ header .logo picture img {
 }
 
 .why-icon-pod {
-  width: 82px !important;
-  height: 82px !important;
-  border-radius: 22px !important;
-  background: linear-gradient(135deg, rgba(93, 135, 150, 0.12) 0%, rgba(93, 135, 150, 0.22) 100%) !important;
-  border: 2px solid rgba(93, 135, 150, 0.4) !important;
+  width: 76px !important;
+  height: 76px !important;
+  border-radius: 20px !important;
+  background: linear-gradient(135deg, #ffffff 0%, #edf4f7 100%) !important;
+  border: 1.5px solid #dce7eb !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  margin-bottom: 28px !important;
-  color: var(--brand-blue) !important;
-  box-shadow: 0 10px 24px rgba(93, 135, 150, 0.15) !important;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background 0.4s ease, box-shadow 0.4s ease, color 0.4s ease !important;
+  margin-bottom: 26px !important;
+  color: #5d8796 !important;
+  box-shadow: 0 10px 25px rgba(93, 135, 150, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), background 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease !important;
   animation: iconIdleFloat 4s ease-in-out infinite !important;
 }
 
@@ -887,30 +887,31 @@ header .logo picture img {
 
 @keyframes iconIdleFloat {
   0%, 100% {
-    transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px);
   }
   50% {
-    transform: translateY(-5px) rotate(2.5deg);
+    transform: translateY(-4px);
   }
 }
 
-.why-icon-pod svg {
-  width: 40px !important;
-  height: 40px !important;
-  stroke: var(--brand-blue) !important;
-  stroke-width: 2.2 !important;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), stroke 0.4s ease !important;
+.why-icon-pod svg,
+.why-icon-pod svg.duotone-icon {
+  width: 42px !important;
+  height: 42px !important;
+  display: block !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 .modern-why-card:hover .why-icon-pod {
-  background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-cyan) 100%) !important;
-  border-color: transparent !important;
-  box-shadow: 0 16px 32px rgba(93, 135, 150, 0.45) !important;
-  transform: translateY(-6px) scale(1.1) rotate(6deg) !important;
+  background: linear-gradient(135deg, #1e232e 0%, #161b24 100%) !important;
+  border-color: #5d8796 !important;
+  color: #b6cbd2 !important;
+  box-shadow: 0 16px 35px rgba(30, 35, 46, 0.25) !important;
+  transform: translateY(-6px) scale(1.06) !important;
 }
 
-.modern-why-card:hover .why-icon-pod svg {
-  stroke: #ffffff !important;
+.modern-why-card:hover .why-icon-pod svg,
+.modern-why-card:hover .why-icon-pod svg.duotone-icon {
   transform: scale(1.08) !important;
 }
 
