@@ -380,26 +380,49 @@ function initBentoSpotlights() {
 }
 
 /**
- * 12. Screen 3 to Screen 4 Optical Blur & Curtain Slide Transition
+ * 12. Screen 3 Sticky Pin & Screen 4 Curtain Sheet Slide-Over Optical Blur
  */
 function initScreen3BlurTransition() {
   const s3 = document.getElementById('why-us');
   const s4 = document.querySelector('.application-presentation');
   if (!s3 || !s4) return;
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting && entry.intersectionRatio > 0.05) {
-        s3.classList.add('is-blurred-out');
-      } else {
-        s3.classList.remove('is-blurred-out');
-      }
-    });
-  }, {
-    threshold: [0, 0.05, 0.15, 0.3],
-    rootMargin: '0px 0px -40px 0px'
-  });
+  const container = s3.querySelector('.bento-container');
+  if (!container) return;
 
-  observer.observe(s4);
+  let ticking = false;
+
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        const s4Rect = s4.getBoundingClientRect();
+        const winHeight = window.innerHeight;
+
+        // When Screen 4 begins rising from bottom edge over Screen 3
+        if (s4Rect.top < winHeight && s4Rect.top > -s4Rect.height) {
+          const overlap = winHeight - s4Rect.top;
+          const progress = Math.min(1, Math.max(0, overlap / (winHeight * 0.65)));
+          const blurPx = (progress * 12).toFixed(1);
+          const scale = (1 - progress * 0.035).toFixed(3);
+          const opacity = (1 - progress * 0.35).toFixed(2);
+
+          container.style.filter = progress > 0.01 ? `blur(${blurPx}px)` : 'none';
+          container.style.transform = progress > 0.01 ? `scale(${scale})` : 'none';
+          container.style.opacity = `${opacity}`;
+        } else if (s4Rect.top >= winHeight) {
+          container.style.filter = 'none';
+          container.style.transform = 'none';
+          container.style.opacity = '1';
+        }
+
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  onScroll();
 }
 
