@@ -349,19 +349,23 @@ header .logo picture img {
   color: #54595f !important;
   font-weight: 800 !important;
   width: fit-content !important;
-  padding-bottom: 6px !important;
-  margin-bottom: 4px !important;
+  padding: 0 4px !important;
+  margin-bottom: 6px !important;
+  z-index: 2 !important;
 }
 
 .hero-clean-title .word-empower::after {
   content: '' !important;
   position: absolute !important;
-  bottom: 0px !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: 4px !important;
-  border-radius: 2px !important;
-  background: #5d8796 !important;
+  bottom: 8px !important;
+  left: -8px !important;
+  right: -12px !important;
+  height: 38% !important;
+  background: #ffffff !important;
+  border: none !important;
+  border-radius: 0px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+  z-index: -1 !important;
 }
 
 .hero-clean-title .word-beauty,
@@ -859,6 +863,14 @@ header .logo picture img {
   position: relative !important;
   margin: 0 !important;
   border: none !important;
+  transition: filter 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease !important;
+  will-change: filter, transform;
+}
+
+.why-us-bento-section.is-blurred-out {
+  filter: blur(8px) !important;
+  opacity: 0.9 !important;
+  transform: scale(0.985) !important;
 }
 
 .bento-container {
@@ -1026,14 +1038,44 @@ header .logo picture img {
   align-items: center !important;
   justify-content: center !important;
   color: #5d8796 !important;
-  transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease !important;
+  transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .bento-card:hover .bento-icon-pod {
   background: #1e232e !important;
   border-color: #5d8796 !important;
-  color: #b6cbd2 !important;
+  color: #ffffff !important;
   transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(30, 35, 46, 0.25) !important;
+}
+
+.bento-card:hover .bento-svg path,
+.bento-card:hover .bento-svg rect,
+.bento-card:hover .bento-svg circle,
+.bento-card:hover .bento-svg ellipse {
+  stroke: #ffffff !important;
+}
+
+.bento-card:hover .bento-svg [fill="#5d8796"],
+.bento-card:hover .bento-svg [fill="rgba(93,135,150,0.06)"],
+.bento-card:hover .bento-svg [fill="rgba(93,135,150,0.1)"] {
+  fill: rgba(255, 255, 255, 0.2) !important;
+}
+
+.bento-card:hover .bento-svg .bar-anim-1,
+.bento-card:hover .bento-svg .bar-anim-2,
+.bento-card:hover .bento-svg .bar-anim-3 {
+  fill: #ffffff !important;
+}
+
+.bento-card:hover .bento-svg [fill="#ffff00"] {
+  fill: #ffff00 !important;
+  stroke: none !important;
+}
+
+.bento-card:hover .bento-svg .arrow-growth,
+.bento-card:hover .bento-svg .arrow-tip {
+  stroke: #68d391 !important;
 }
 
 .bento-svg {

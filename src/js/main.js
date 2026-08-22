@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMessengerPills();
   initBlurRevealOnScroll();
   initBentoSpotlights();
+  initScreen3BlurTransition();
 });
 
 /**
@@ -377,3 +378,28 @@ function initBentoSpotlights() {
     });
   });
 }
+
+/**
+ * 12. Screen 3 to Screen 4 Optical Blur & Curtain Slide Transition
+ */
+function initScreen3BlurTransition() {
+  const s3 = document.getElementById('why-us');
+  const s4 = document.querySelector('.application-presentation');
+  if (!s3 || !s4) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting && entry.intersectionRatio > 0.05) {
+        s3.classList.add('is-blurred-out');
+      } else {
+        s3.classList.remove('is-blurred-out');
+      }
+    });
+  }, {
+    threshold: [0, 0.05, 0.15, 0.3],
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  observer.observe(s4);
+}
+
