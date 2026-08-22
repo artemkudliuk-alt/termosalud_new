@@ -380,107 +380,61 @@ function initBentoSpotlights() {
 }
 
 /**
- * 12. Screen 3 Sticky Pin & Screen 4 One-Scroll Curtain Sheet Snap
+ * 12. Screen 3 Sticky Pin & Screen 4 Smooth 4-Scroll Curtain Layering
  */
 function initScreen3BlurTransition() {
+  const track = document.getElementById('why-us-track');
   const s3 = document.getElementById('why-us');
   const s4 = document.querySelector('.application-presentation');
   if (!s3 || !s4) return;
 
   const container = s3.querySelector('.bento-container');
-  let isSnapping = false;
+  if (!container) return;
 
-  // Progressive optical blur on scroll
-  function updateBlur() {
+  let ticking = false;
+
+  function updateVisuals() {
     const s4Rect = s4.getBoundingClientRect();
     const winHeight = window.innerHeight;
 
-    if (container) {
-      if (s4Rect.top < winHeight && s4Rect.top > 0) {
-        const overlap = winHeight - s4Rect.top;
-        const progress = Math.min(1, Math.max(0, overlap / (winHeight * 0.7)));
-        const blurPx = (progress * 12).toFixed(1);
-        const scale = (1 - progress * 0.04).toFixed(3);
-        const opacity = (1 - progress * 0.35).toFixed(2);
+    // As Screen 4 approaches and slides over Screen 3 (from bottom of viewport up to top)
+    if (s4Rect.top < winHeight && s4Rect.top > 0) {
+      const overlap = winHeight - s4Rect.top;
+      // Smooth progress across the 4-scroll travel distance
+      const rawProgress = overlap / winHeight;
+      const progress = Math.min(1, Math.max(0, rawProgress));
+      
+      const blurPx = (progress * 14).toFixed(1);
+      const scale = (1 - progress * 0.04).toFixed(3);
+      const opacity = (1 - progress * 0.35).toFixed(2);
 
-        container.style.filter = progress > 0.01 ? `blur(${blurPx}px)` : 'none';
-        container.style.transform = progress > 0.01 ? `scale(${scale})` : 'none';
-        container.style.opacity = `${opacity}`;
-      } else if (s4Rect.top >= winHeight) {
-        container.style.filter = 'none';
-        container.style.transform = 'none';
-        container.style.opacity = '1';
-      } else {
-        container.style.filter = 'blur(12px)';
-        container.style.transform = 'scale(0.96)';
-        container.style.opacity = '0.65';
-      }
+      container.style.filter = progress > 0.01 ? `blur(${blurPx}px)` : 'none';
+      container.style.transform = progress > 0.01 ? `scale(${scale})` : 'none';
+      container.style.opacity = `${opacity}`;
+    } else if (s4Rect.top >= winHeight) {
+      container.style.filter = 'none';
+      container.style.transform = 'none';
+      container.style.opacity = '1';
+    } else {
+      container.style.filter = 'blur(14px)';
+      container.style.transform = 'scale(0.96)';
+      container.style.opacity = '0.65';
     }
   }
 
-  window.addEventListener('scroll', updateBlur, { passive: true });
-  window.addEventListener('resize', updateBlur, { passive: true });
-  updateBlur();
-
-  // One-scroll wheel listener to snap smoothly between Screen 3 and Screen 4
-  window.addEventListener('wheel', (e) => {
-    if (isSnapping) return;
-
-    const s3Rect = s3.getBoundingClientRect();
-    const s4Rect = s4.getBoundingClientRect();
-    const winHeight = window.innerHeight;
-
-    // Case 1: User is viewing Screen 3 (near top=0) and scrolls DOWN
-    if (Math.abs(s3Rect.top) < 100 && e.deltaY > 20 && s4Rect.top > winHeight * 0.5) {
-      e.preventDefault();
-      isSnapping = true;
-      const targetY = s4.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({
-        top: targetY,
-        behavior: 'smooth'
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        updateVisuals();
+        ticking = false;
       });
-      setTimeout(() => {
-        isSnapping = false;
-      }, 800);
+      ticking = true;
     }
-    // Case 2: User is at the very top of Screen 4 and scrolls UP
-    else if (Math.abs(s4Rect.top) < 40 && e.deltaY < -20) {
-      e.preventDefault();
-      isSnapping = true;
-      const targetY = s3.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({
-        top: targetY,
-        behavior: 'smooth'
-      });
-      setTimeout(() => {
-        isSnapping = false;
-      }, 800);
-    }
-  }, { passive: false });
+  }
 
-  // Touch gestures for mobile / touchpads
-  let touchStartY = 0;
-  window.addEventListener('touchstart', (e) => {
-    touchStartY = e.touches[0].clientY;
-  }, { passive: true });
-
-  window.addEventListener('touchmove', (e) => {
-    if (isSnapping || !touchStartY) return;
-    const touchEndY = e.touches[0].clientY;
-    const diff = touchStartY - touchEndY;
-    const s3Rect = s3.getBoundingClientRect();
-    const s4Rect = s4.getBoundingClientRect();
-    const winHeight = window.innerHeight;
-
-    if (Math.abs(s3Rect.top) < 80 && diff > 35 && s4Rect.top > winHeight * 0.5) {
-      isSnapping = true;
-      const targetY = s4.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({
-        top: targetY,
-        behavior: 'smooth'
-      });
-      setTimeout(() => { isSnapping = false; }, 800);
-    }
-  }, { passive: true });
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  updateVisuals();
 }
+
 
