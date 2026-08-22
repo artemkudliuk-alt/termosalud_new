@@ -97,7 +97,7 @@ body {
   background-color: #ffffff !important;
   height: auto !important;
   min-height: 100vh !important;
-  overflow-x: hidden !important;
+  overflow-x: clip !important;
   overflow-y: visible !important;
 }
 
@@ -862,7 +862,7 @@ header .logo picture img {
   position: relative !important;
   margin: 0 !important;
   border: none !important;
-  padding: 80px 0 80px 0 !important;
+  padding: 60px 0 60px 0 !important;
   z-index: 10 !important;
   box-sizing: border-box !important;
 }
@@ -871,63 +871,66 @@ header .logo picture img {
   .why-us-bento-section {
     position: sticky !important;
     top: 0 !important;
-    min-height: 100vh !important;
+    height: 100vh !important;
+    min-height: 680px !important;
+    max-height: 100vh !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
-    padding: 40px 0 40px 0 !important;
+    padding: 16px 0 !important;
+    overflow: hidden !important;
   }
 }
 
 .bento-container {
-  max-width: 1440px !important;
+  max-width: 1400px !important;
   width: 100% !important;
   margin: 0 auto !important;
-  padding: 0 40px !important;
+  padding: 0 32px !important;
   box-sizing: border-box !important;
-  transition: filter 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease !important;
+  transition: filter 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease !important;
   will-change: filter, transform, opacity;
 }
 
 .why-us-header {
   text-align: center !important;
   max-width: 860px !important;
-  margin: 0 auto 32px auto !important;
+  margin: 0 auto 16px auto !important;
 }
 
 .why-us-badge {
   display: inline-flex !important;
   align-items: center !important;
   gap: 8px !important;
-  padding: 6px 18px !important;
+  padding: 5px 16px !important;
   background: #edf4f7 !important;
   border: 1px solid #b6cbd2 !important;
   color: var(--brand-blue) !important;
-  font-size: 11.5px !important;
+  font-size: 11px !important;
   font-weight: 800 !important;
   text-transform: uppercase !important;
   letter-spacing: 1.5px !important;
   border-radius: 50px !important;
-  margin-bottom: 12px !important;
+  margin-bottom: 8px !important;
   box-shadow: 0 4px 15px rgba(93, 135, 150, 0.08) !important;
 }
 
 .why-us-header h2 {
   font-family: var(--active-heading-font) !important;
-  font-size: clamp(28px, 3.8vw, 42px) !important;
+  font-size: clamp(24px, 2.6vw, 34px) !important;
   font-weight: 900 !important;
   color: var(--brand-navy) !important;
-  margin: 0 0 12px 0 !important;
+  margin: 0 0 6px 0 !important;
   line-height: 1.15 !important;
   letter-spacing: -0.5px !important;
 }
 
 .why-us-header p {
-  font-size: 15px !important;
+  font-size: 13.5px !important;
   color: var(--brand-slate) !important;
-  line-height: 1.55 !important;
+  line-height: 1.45 !important;
   margin: 0 auto !important;
-  max-width: 720px !important;
+  max-width: 680px !important;
 }
 
 /* Swiss Bento Grid Layout (6 Pillars Architecture) */
@@ -935,7 +938,7 @@ header .logo picture img {
   display: grid !important;
   grid-template-columns: 1.15fr 1fr 1fr !important;
   grid-template-rows: auto auto auto !important;
-  gap: 24px !important;
+  gap: 14px !important;
   position: relative !important;
 }
 
@@ -945,8 +948,8 @@ header .logo picture img {
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
   border-radius: 0px !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03) !important;
-  padding: 36px 32px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03) !important;
+  padding: 20px 22px !important;
   box-sizing: border-box !important;
   overflow: hidden !important;
   display: flex !important;
@@ -957,8 +960,8 @@ header .logo picture img {
 
 .bento-card:hover {
   border-color: #5d8796 !important;
-  transform: translateY(-4px) !important;
-  box-shadow: 0 20px 45px rgba(93, 135, 150, 0.12) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 16px 36px rgba(93, 135, 150, 0.12) !important;
 }
 
 /* Interactive Cursor Spotlight Glare */
@@ -966,7 +969,7 @@ header .logo picture img {
   position: absolute !important;
   inset: 0 !important;
   pointer-events: none !important;
-  background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(93, 135, 150, 0.12), transparent 60%) !important;
+  background: radial-gradient(500px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(93, 135, 150, 0.12), transparent 60%) !important;
   opacity: 0 !important;
   transition: opacity 0.35s ease !important;
   z-index: 1 !important;
@@ -991,7 +994,7 @@ header .logo picture img {
   grid-row: 1 / 3 !important;
   background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%) !important;
   border-left: 4px solid #5d8796 !important;
-  padding: 40px 34px !important;
+  padding: 24px 24px !important;
 }
 
 /* Bento Safety Card (Top Right, Spans 2 Columns) */
@@ -1000,6 +1003,7 @@ header .logo picture img {
   grid-row: 1 / 2 !important;
   background: linear-gradient(135deg, #ffffff 0%, #edf4f7 100%) !important;
   border-top: 3px solid #5d8796 !important;
+  padding: 20px 22px !important;
 }
 
 /* Mini Cards (Middle Right) */
