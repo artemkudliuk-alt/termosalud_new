@@ -182,7 +182,7 @@ function cleanHtml(raw, pageName) {
       </section>
     `;
 
-    // Modern Screen 3: Architectural Swiss Bento Grid with Spotlight Glare & Micro-Interactions (Awwwards Grade)
+    // Modern Screen 3: Architectural Swiss Bento Grid with Spotlight Glare & Bespoke Animated SVGs (Awwwards Grade)
     const modernWhyUsSection = `
       <!-- Screen 3: Architectural Swiss Bento Grid (Awwwards Luxury Medical Design) -->
       <section class="why-us-bento-section" id="why-us">
@@ -195,21 +195,33 @@ function cleanHtml(raw, pageName) {
             <p>Повний комплекс підтримки бізнесу: від оригінального сертифікованого обладнання до навчання лікарів та маркетингу</p>
           </div>
 
-          <!-- Asymmetric Bento Grid -->
+          <!-- Asymmetric Bento Grid (6 Pillars Architecture) -->
           <div class="swiss-bento-grid">
 
-            <!-- Bento 1 (Hero Left Module, 58% span / 2 rows): High Profitability & ROI -->
+            <!-- Bento 1 (Hero Left Module, Spans 2 Rows): High Profitability & ROI -->
             <div class="bento-card bento-hero-card" data-aos="fade-up" data-aos-delay="50">
               <div class="bento-card-spotlight"></div>
               <div class="bento-card-inner">
                 <div class="bento-top-meta">
-                  <span class="bento-index">01 / ФІНАНСОВА ЕФЕКТИВНІСТЬ</span>
+                  <div class="bento-meta-left">
+                    <div class="bento-icon-pod pod-finance">
+                      <svg class="bento-svg" viewBox="0 0 32 32" fill="none">
+                        <rect x="3" y="4" width="26" height="24" rx="0" stroke="#5d8796" stroke-width="1.8" fill="rgba(93,135,150,0.06)"/>
+                        <rect class="bar-anim-1" x="7" y="17" width="3.5" height="7" fill="#5d8796" opacity="0.4"/>
+                        <rect class="bar-anim-2" x="14" y="13" width="3.5" height="11" fill="#5d8796" opacity="0.7"/>
+                        <rect class="bar-anim-3" x="21" y="9" width="3.5" height="15" fill="#5d8796"/>
+                        <path class="arrow-growth" d="M7 15L14 10L19 12L24.5 6" stroke="#2f855a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="arrow-tip" d="M20.5 6H24.5V10" stroke="#2f855a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <span class="bento-index">01 / ФІНАНСОВА ЕФЕКТИВНІСТЬ</span>
+                  </div>
                   <span class="bento-pill-tag">Швидкий ROI</span>
                 </div>
                 
-                <h3 class="bento-title">Висока рентабельність та окупність</h3>
+                <h3 class="bento-title">Висока рентабельність</h3>
                 <p class="bento-desc">
-                  Ефективна бізнес-інвестиція з прогнозованою рентабельністю. Стабільно високий попит на процедури Linfopress та Zionic забезпечує щоденний потік пацієнтів та повне повернення інвестицій у рекордні терміни.
+                  Ефективна інвестиція зі швидкою окупністю від 3–4 місяців. Стабільно високий попит пацієнтів на процедури моделювання тіла гарантує щоденний прогнозований прибуток.
                 </p>
 
                 <!-- Interactive Live ROI Stat Box -->
@@ -222,14 +234,12 @@ function cleanHtml(raw, pageName) {
                     <span class="roi-subtext">Середній термін повної окупності</span>
                   </div>
                   
-                  <div class="roi-graph-col">
-                    <div class="roi-graph-track">
-                      <div class="roi-graph-bar"></div>
-                    </div>
-                    <div class="roi-graph-meta">
-                      <span>Старт: 0 міс.</span>
-                      <span class="roi-badge-highlight">+340% ROI за 1 рік</span>
-                    </div>
+                  <div class="roi-graph-track">
+                    <div class="roi-graph-bar"></div>
+                  </div>
+                  <div class="roi-graph-meta">
+                    <span>Старт: 0 міс.</span>
+                    <span class="roi-badge-highlight">+340% ROI за 1 рік</span>
                   </div>
                 </div>
 
@@ -251,18 +261,28 @@ function cleanHtml(raw, pageName) {
               </div>
             </div>
 
-            <!-- Bento 2 (Top Right Module, 42% span): Medical Safety FDA & CE -->
+            <!-- Bento 2 (Top Right Module, Spans 2 Columns): Medical Safety FDA & CE -->
             <div class="bento-card bento-safety-card" data-aos="fade-up" data-aos-delay="150">
               <div class="bento-card-spotlight"></div>
               <div class="bento-card-inner">
                 <div class="bento-top-meta">
-                  <span class="bento-index">02 / СЕРТИФІКАЦІЯ</span>
+                  <div class="bento-meta-left">
+                    <div class="bento-icon-pod pod-safety">
+                      <svg class="bento-svg" viewBox="0 0 32 32" fill="none">
+                        <path class="shield-contour" d="M16 3L6 7.5V15.5C6 22.5 10.5 27.5 16 29C21.5 27.5 26 22.5 26 15.5V7.5L16 3Z" stroke="#5d8796" stroke-width="1.8" fill="rgba(93,135,150,0.06)" stroke-linejoin="round"/>
+                        <path class="ecg-line" d="M10 16.5H12.5L14.5 11.5L17.5 21L19.5 16.5H22" stroke="#5d8796" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle class="shield-dot" cx="22.5" cy="8.5" r="3.5" fill="#1e232e" stroke="#5d8796" stroke-width="1.2"/>
+                        <path d="M21.2 8.5L22.2 9.5L24 7.5" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <span class="bento-index">02 / СЕРТИФІКАЦІЯ</span>
+                  </div>
                   <span class="bento-pill-tag tag-safety">Доказова медицина</span>
                 </div>
                 
                 <h3 class="bento-title">Медична безпека (FDA, CE)</h3>
                 <p class="bento-desc">
-                  Безпека на засадах доказової медицини. Обладнання має найвищі міжнародні сертифікати якості США, Європи та України. Ризики ускладнень зведені до нуля.
+                  Безпека на засадах доказової медицини. Обладнання має найвищі міжнародні сертифікати якості США (FDA), Європи (CE) та України. Ризики ускладнень зведені до нуля.
                 </p>
 
                 <!-- Stamp Badges Grid -->
@@ -287,12 +307,24 @@ function cleanHtml(raw, pageName) {
               </div>
             </div>
 
-            <!-- Bento 3 (Bottom Right - Left): Global Recognition -->
-            <div class="bento-card bento-mini-card" data-aos="fade-up" data-aos-delay="250">
+            <!-- Bento 3 (Mid Right - Col 2): Global Recognition -->
+            <div class="bento-card bento-mini-card" data-aos="fade-up" data-aos-delay="200">
               <div class="bento-card-spotlight"></div>
               <div class="bento-card-inner">
                 <div class="bento-top-meta">
-                  <span class="bento-index">03 / СВІТ</span>
+                  <div class="bento-meta-left">
+                    <div class="bento-icon-pod pod-global">
+                      <svg class="bento-svg" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="11.5" stroke="#5d8796" stroke-width="1.6" fill="rgba(93,135,150,0.06)"/>
+                        <ellipse class="globe-lat" cx="16" cy="16" rx="5" ry="11.5" stroke="#5d8796" stroke-width="1.3" opacity="0.6"/>
+                        <path d="M5 12C9 13.5 13 14 16 14C19 14 23 13.5 27 12" stroke="#5d8796" stroke-width="1.3" opacity="0.6"/>
+                        <path d="M5 20C9 18.5 13 18 16 18C19 18 23 18.5 27 20" stroke="#5d8796" stroke-width="1.3" opacity="0.6"/>
+                        <circle class="orbit-star-pulse" cx="23.5" cy="9.5" r="4.5" fill="#1e232e" stroke="#5d8796" stroke-width="1.2"/>
+                        <path d="M23.5 7.5L24.2 8.8L25.6 9L24.5 10L24.8 11.5L23.5 10.8L22.2 11.5L22.5 10L21.4 9L22.8 8.8L23.5 7.5Z" fill="#ffff00"/>
+                      </svg>
+                    </div>
+                    <span class="bento-index">03 / СВІТ</span>
+                  </div>
                 </div>
                 <div class="bento-stat-hero">
                   <span class="bento-stat-num">40+</span>
@@ -300,25 +332,90 @@ function cleanHtml(raw, pageName) {
                 </div>
                 <h4 class="bento-subhead">Світове визнання</h4>
                 <p class="bento-micro-desc">
-                  Понад 40 країн обирають Termosalud. Бренд №1 в Іспанії для провідних клінік естетичної медицини.
+                  Апарати Termosalud визнані лідерами в клініках Європи та США. Висока клінічна ефективність та хай-тек дизайн зробили їх вибором №1.
                 </p>
               </div>
             </div>
 
-            <!-- Bento 4 (Bottom Right - Right): Service & Academy -->
-            <div class="bento-card bento-mini-card" data-aos="fade-up" data-aos-delay="350">
+            <!-- Bento 4 (Mid Right - Col 3): Academy & Training -->
+            <div class="bento-card bento-mini-card" data-aos="fade-up" data-aos-delay="250">
               <div class="bento-card-spotlight"></div>
               <div class="bento-card-inner">
                 <div class="bento-top-meta">
-                  <span class="bento-index">04 / СЕРВІС</span>
+                  <div class="bento-meta-left">
+                    <div class="bento-icon-pod pod-academy">
+                      <svg class="bento-svg" viewBox="0 0 32 32" fill="none">
+                        <path class="cap-poly" d="M16 4.5L3.5 10.5L16 16.5L28.5 10.5L16 4.5Z" stroke="#5d8796" stroke-width="1.8" fill="rgba(93,135,150,0.06)" stroke-linejoin="round"/>
+                        <path d="M8 13.5V19.5C8 22 11.5 24.5 16 24.5C20.5 24.5 24 22 24 19.5V13.5" stroke="#5d8796" stroke-width="1.6" stroke-linecap="round"/>
+                        <path class="laser-beam-anim" d="M26.5 11.5V21" stroke="#5d8796" stroke-width="1.8" stroke-linecap="round"/>
+                        <circle cx="26.5" cy="22.5" r="1.5" fill="#5d8796"/>
+                        <circle class="stylus-core-glow" cx="16" cy="16.5" r="3.5" fill="#1e232e" stroke="#5d8796" stroke-width="1.2"/>
+                        <path d="M16 15V18M14.5 16.5H17.5" stroke="#ffff00" stroke-width="1.4" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <span class="bento-index">04 / АКАДЕМІЯ</span>
+                  </div>
                 </div>
                 <div class="bento-stat-hero">
-                  <span class="bento-stat-num">24/7</span>
-                  <span class="bento-stat-lbl">Сервіс в Україні</span>
+                  <span class="bento-stat-num">100%</span>
+                  <span class="bento-stat-lbl">Постановка руки</span>
                 </div>
-                <h4 class="bento-subhead">Академія та підтримка</h4>
+                <h4 class="bento-subhead">Академія та навчання</h4>
                 <p class="bento-micro-desc">
-                  Власний склад комплектуючих, підмінний фонд апаратів та навчальний центр з постановкою руки лікаря.
+                  Авторська система підготовки фахівців. Базові та поглиблені тренінги, передача протоколів лікування та закордонні стажування.
+                </p>
+              </div>
+            </div>
+
+            <!-- Bento 5 (Bottom Row Left, Spans 1.5 Col): 24/7 Official Service -->
+            <div class="bento-card bento-wide-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="bento-card-spotlight"></div>
+              <div class="bento-card-inner">
+                <div class="bento-top-meta">
+                  <div class="bento-meta-left">
+                    <div class="bento-icon-pod pod-service">
+                      <svg class="bento-svg" viewBox="0 0 32 32" fill="none">
+                        <path class="gear-rotate-anim" d="M14 4H18L18.7 6.4C19.4 6.7 20.1 7.1 20.7 7.6L23 6.7L25.5 9.2L24.6 11.5C25.1 12.1 25.5 12.8 25.8 13.5L28.2 14.2V17.8L25.8 18.5C25.5 19.2 25.1 19.9 24.6 20.5L25.5 22.8L23 25.3L20.7 24.4C20.1 24.9 19.4 25.3 18.7 25.6L18 28H14L13.3 25.6C12.6 25.3 11.9 24.9 11.3 24.4L9 25.3L6.5 22.8L7.4 20.5C6.9 19.9 6.5 19.2 6.2 18.5L3.8 17.8V14.2L6.2 13.5C6.5 12.8 6.9 12.1 7.4 11.5L6.5 9.2L9 6.7L11.3 7.6C11.9 7.1 12.6 6.7 13.3 6.4L14 4Z" stroke="#5d8796" stroke-width="1.6" fill="rgba(93,135,150,0.06)" stroke-linejoin="round"/>
+                        <circle cx="16" cy="16" r="5.5" fill="#1e232e" stroke="#5d8796" stroke-width="1.2"/>
+                        <path class="clock-needle-anim" d="M16 13V16L18 17.5" stroke="#ffff00" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <span class="bento-index">05 / ОФІЦІЙНИЙ СЕРВІС</span>
+                  </div>
+                  <span class="bento-pill-tag">24/7 Підтримка</span>
+                </div>
+                <h4 class="bento-subhead">Офіційний сервіс 24/7 та підмінний фонд</h4>
+                <p class="bento-micro-desc">
+                  Пряма гарантія від виробника, власний склад оригінальних комплектуючих в Україні, оперативний виїзд сертифікованого інженера та наявність підмінного фонду апаратів без простоїв для клініки.
+                </p>
+              </div>
+            </div>
+
+            <!-- Bento 6 (Bottom Row Right, Spans 1.5 Col): Expert Team -->
+            <div class="bento-card bento-wide-card" data-aos="fade-up" data-aos-delay="350">
+              <div class="bento-card-spotlight"></div>
+              <div class="bento-card-inner">
+                <div class="bento-top-meta">
+                  <div class="bento-meta-left">
+                    <div class="bento-icon-pod pod-team">
+                      <svg class="bento-svg" viewBox="0 0 32 32" fill="none">
+                        <circle cx="8" cy="12" r="3" stroke="#5d8796" stroke-width="1.4" fill="rgba(93,135,150,0.06)"/>
+                        <path d="M3 23C3 19.5 5.5 17.5 8 17.5C9.5 17.5 11 18.2 12 19.5" stroke="#5d8796" stroke-width="1.4" stroke-linecap="round"/>
+                        <circle cx="24" cy="12" r="3" stroke="#5d8796" stroke-width="1.4" fill="rgba(93,135,150,0.06)"/>
+                        <path d="M29 23C29 19.5 26.5 17.5 24 17.5C22.5 17.5 21 18.2 20 19.5" stroke="#5d8796" stroke-width="1.4" stroke-linecap="round"/>
+                        <circle cx="16" cy="9.5" r="4" stroke="#5d8796" stroke-width="1.7" fill="rgba(93,135,150,0.1)"/>
+                        <path d="M9.5 24.5C9.5 20.5 12.5 18 16 18C19.5 18 22.5 20.5 22.5 24.5" stroke="#5d8796" stroke-width="1.7" stroke-linecap="round"/>
+                        <circle class="expert-diamond-shine" cx="22.5" cy="21.5" r="4" fill="#1e232e" stroke="#5d8796" stroke-width="1.2"/>
+                        <path d="M22.5 19L23.2 20.5L24.8 20.8L23.6 22L23.9 23.5L22.5 22.7L21.1 23.5L21.4 22L20.2 20.8L21.8 20.5L22.5 19Z" fill="#ffff00"/>
+                      </svg>
+                    </div>
+                    <span class="bento-index">06 / КОМАНДА ЕКСПЕРТІВ</span>
+                  </div>
+                  <span class="bento-pill-tag">15+ років досвіду</span>
+                </div>
+                <h4 class="bento-subhead">Команда експертів та запуск клінік</h4>
+                <p class="bento-micro-desc">
+                  Понад 15 років успішного досвіду в індустрії естетичної медицини. Наші лікарі-тренери та консультанти допомогли запустити та масштабувати сотні провідних клінік в Україні.
                 </p>
               </div>
             </div>
