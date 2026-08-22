@@ -116,9 +116,9 @@ function cleanHtml(raw, pageName) {
       </section>
     `;
 
-    // Modern Screen 2: Clean 4K Video Showcase on Pure White Background (Frameless, 70px margins, Centered Header in 30vh gap)
+    // Modern Screen 2: Clean 4K Video Showcase on Pure White Background with Sharp Glass Horizontal Overlays
     const modernScreen2Section = `
-      <!-- Screen 2: Clean 4K Video Showcase on Pure White Canvas with Centered Header -->
+      <!-- Screen 2: Clean 4K Video Showcase on Pure White Canvas with Centered Header and Sharp Glass Overlays -->
       <section id="our-products" class="our-prods-clean-video">
         <div class="our-prods-header" data-aos="fade-up">
           <div class="our-prods-badge">Інноваційні технології Termosalud</div>
@@ -131,6 +131,49 @@ function cleanHtml(raw, pageName) {
             <source src="/wp-content/uploads/2026/03/2screen.mp4" type="video/mp4">
             <source src="/2screen.mp4" type="video/mp4">
           </video>
+
+          <!-- Top-Left Sharp Glass Horizontal Card: Linfopress Evolution PRO (pinned to left edge) -->
+          <div class="sharp-glass-card card-linfopress-top" data-aos="fade-right">
+            <div class="sharp-card-head">
+              <span class="sharp-badge badge-linfo">Пресотерапія 4-го покоління</span>
+              <span class="sharp-tag">24 Сектори</span>
+            </div>
+            <h3 class="sharp-title">Linfopress <span>EVOLUTION PRO</span></h3>
+            <ul class="sharp-bullets">
+              <li><span class="sharp-check">✓</span> 24 незалежні сектори послідовного тиску</li>
+              <li><span class="sharp-check">✓</span> Медична сертифікація безпеки CE Medical</li>
+              <li><span class="sharp-check">✓</span> Високий попит та щоденний прибуток</li>
+            </ul>
+            <div class="sharp-btn-row">
+              <a href="/linfopress/" class="sharp-btn-primary">
+                <span>Дізнатись більше</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <button class="sharp-btn-secondary header-btn" data-target="#popup_request">Тест-драйв</button>
+            </div>
+          </div>
+
+          <!-- Bottom-Right Sharp Glass Horizontal Card: ZIONIC MARP System (pinned to right edge) -->
+          <div class="sharp-glass-card card-zionic-bottom" data-aos="fade-left">
+            <div class="sharp-card-head">
+              <span class="sharp-badge badge-zionic">MARP + RF Technology</span>
+              <span class="sharp-tag">Made in Spain</span>
+            </div>
+            <h3 class="sharp-title">ZIONIC <span>MARP SYSTEM</span></h3>
+            <ul class="sharp-bullets">
+              <li><span class="sharp-check">✓</span> Одночасна дія: ліполіз, ліфтинг та тонус</li>
+              <li><span class="sharp-check">✓</span> Безболісно та без реабілітації для пацієнта</li>
+              <li><span class="sharp-check">✓</span> Швидка окупність від 3 до 4 місяців</li>
+            </ul>
+            <div class="sharp-btn-row">
+              <a href="/zionic/" class="sharp-btn-primary">
+                <span>Дізнатись більше</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <button class="sharp-btn-secondary header-btn" data-target="#popup_request">Тест-драйв</button>
+            </div>
+          </div>
+
         </div>
       </section>
     `;
