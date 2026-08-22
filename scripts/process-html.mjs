@@ -116,10 +116,16 @@ function cleanHtml(raw, pageName) {
       </section>
     `;
 
-    // Modern Screen 2: Clean 4K Video Showcase on Pure White Background (Frameless, 100px margins)
+    // Modern Screen 2: Clean 4K Video Showcase on Pure White Background (Frameless, 70px margins, Centered Header in 30vh gap)
     const modernScreen2Section = `
-      <!-- Screen 2: Clean 4K Video Showcase on Pure White Canvas -->
+      <!-- Screen 2: Clean 4K Video Showcase on Pure White Canvas with Centered Header -->
       <section id="our-products" class="our-prods-clean-video">
+        <div class="our-prods-header" data-aos="fade-up">
+          <div class="our-prods-badge">Інноваційні технології Termosalud</div>
+          <h2>Флагманське обладнання для клінік</h2>
+          <p>Преміальні апаратні рішення з високою рентабельністю, швидкою окупністю та доведеною клінічною ефективністю</p>
+        </div>
+
         <div class="clean-video-wrapper">
           <video autoplay loop muted playsinline class="clean-video-player" preload="auto">
             <source src="/wp-content/uploads/2026/03/2screen.mp4" type="video/mp4">

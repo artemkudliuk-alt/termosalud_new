@@ -533,12 +533,54 @@ header .logo picture img {
   width: 100% !important;
   background: #ffffff !important;
   margin: 0 !important;
-  padding: 23vh 70px 14vh 70px !important;
+  padding: 8vh 70px 14vh 70px !important;
   box-sizing: border-box !important;
   display: flex !important;
+  flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
   border: none !important;
+}
+
+.our-prods-header {
+  text-align: center !important;
+  max-width: 860px !important;
+  margin: 0 auto 8vh auto !important;
+}
+
+.our-prods-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 8px 22px !important;
+  background: #edf4f7 !important;
+  border: 1px solid #b6cbd2 !important;
+  color: var(--brand-blue) !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  border-radius: 50px !important;
+  margin-bottom: 16px !important;
+  box-shadow: 0 4px 15px rgba(93, 135, 150, 0.1) !important;
+}
+
+.our-prods-header h2 {
+  font-family: var(--active-heading-font) !important;
+  font-size: clamp(32px, 4.2vw, 46px) !important;
+  font-weight: 900 !important;
+  color: var(--brand-navy) !important;
+  margin: 0 0 14px 0 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.5px !important;
+}
+
+.our-prods-header p {
+  font-size: 16.5px !important;
+  color: var(--brand-slate) !important;
+  line-height: 1.6 !important;
+  margin: 0 auto !important;
+  max-width: 780px !important;
 }
 
 .clean-video-wrapper {
@@ -569,13 +611,16 @@ header .logo picture img {
 
 @media (max-width: 1080px) {
   .our-prods-clean-video {
-    padding: 10vh 40px 8vh 40px !important;
+    padding: 6vh 40px 8vh 40px !important;
+  }
+  .our-prods-header {
+    margin-bottom: 5vh !important;
   }
 }
 
 @media (max-width: 640px) {
   .our-prods-clean-video {
-    padding: 6vh 16px 5vh 16px !important;
+    padding: 5vh 16px 5vh 16px !important;
   }
 }
 
