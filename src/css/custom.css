@@ -606,10 +606,9 @@ header .logo picture img {
   position: relative !important;
   width: 100% !important;
   max-width: 1600px !important;
+  aspect-ratio: 16 / 9 !important;
   margin: 0 auto !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: block !important;
   background: transparent !important;
   border: none !important;
   border-radius: 0 !important;
@@ -618,10 +617,11 @@ header .logo picture img {
 }
 
 .clean-video-player {
+  position: absolute !important;
+  inset: 0 !important;
   width: 100% !important;
-  height: auto !important;
-  max-height: 85vh !important;
-  object-fit: contain !important;
+  height: 100% !important;
+  object-fit: cover !important;
   border: none !important;
   border-radius: 0 !important;
   box-shadow: none !important;
@@ -629,10 +629,10 @@ header .logo picture img {
 }
 
 /* =======================================================
-   BORDERLESS CORNER TYPOGRAPHY OVER SUBTLE CORNER VIGNETTES
+   BORDERLESS CORNER TYPOGRAPHY OVER COMPACT CORNER VIGNETTES
    ======================================================= */
 
-/* Subtle Soft Corner Vignette Overlays */
+/* Compact Soft Corner Vignette Overlays - Strictly inside the video, matching text height */
 .corner-vignette {
   position: absolute !important;
   pointer-events: none !important;
@@ -642,24 +642,26 @@ header .logo picture img {
 .corner-vignette.corner-vignette-tl {
   top: 0 !important;
   left: 0 !important;
-  width: 55% !important;
-  height: 55% !important;
-  background: radial-gradient(circle at 0% 0%, rgba(10, 15, 22, 0.72) 0%, rgba(10, 15, 22, 0.35) 45%, transparent 80%) !important;
+  width: 440px !important;
+  max-width: 42% !important;
+  height: 290px !important;
+  background: radial-gradient(ellipse at 0% 0%, rgba(10, 15, 22, 0.72) 0%, rgba(10, 15, 22, 0.35) 55%, transparent 100%) !important;
 }
 
 .corner-vignette.corner-vignette-br {
   bottom: 0 !important;
   right: 0 !important;
-  width: 55% !important;
-  height: 55% !important;
-  background: radial-gradient(circle at 100% 100%, rgba(10, 15, 22, 0.72) 0%, rgba(10, 15, 22, 0.35) 45%, transparent 80%) !important;
+  width: 440px !important;
+  max-width: 42% !important;
+  height: 290px !important;
+  background: radial-gradient(ellipse at 100% 100%, rgba(10, 15, 22, 0.72) 0%, rgba(10, 15, 22, 0.35) 55%, transparent 100%) !important;
 }
 
 /* Borderless Corner Typography Container */
 .video-corner-content {
   position: absolute !important;
-  width: 390px !important;
-  max-width: 45% !important;
+  width: 380px !important;
+  max-width: 38% !important;
   z-index: 5 !important;
   color: #ffffff !important;
   box-sizing: border-box !important;
@@ -667,15 +669,15 @@ header .logo picture img {
 
 /* Top-Left: Linfopress Evolution PRO */
 .video-corner-content.corner-linfopress-top {
-  top: 32px !important;
-  left: 36px !important;
+  top: 22px !important;
+  left: 26px !important;
   text-align: left !important;
 }
 
 /* Bottom-Right: ZIONIC MARP System */
 .video-corner-content.corner-zionic-bottom {
-  bottom: 32px !important;
-  right: 36px !important;
+  bottom: 22px !important;
+  right: 26px !important;
   text-align: left !important;
 }
 
