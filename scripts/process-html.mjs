@@ -592,9 +592,13 @@ function cleanHtml(raw, pageName) {
                 <img src="/wp-content/uploads/2026/03/lclcinic-optimized.jpg" alt="L'Clinic" class="partner-img">
                 <div class="partner-card-overlay">
                   <span class="partner-verified-badge">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span class="partner-live-dot"></span>
                     <span>Партнер Termosalud</span>
                   </span>
+                  <div class="partner-action-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <span>Переглянути</span>
+                  </div>
                 </div>
               </div>
               <div class="partner-card-info">
@@ -609,9 +613,13 @@ function cleanHtml(raw, pageName) {
                 <img src="/wp-content/uploads/2026/03/medspa-optimized.jpg" alt="Expert Med SPA" class="partner-img">
                 <div class="partner-card-overlay">
                   <span class="partner-verified-badge">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span class="partner-live-dot"></span>
                     <span>Партнер Termosalud</span>
                   </span>
+                  <div class="partner-action-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <span>Переглянути</span>
+                  </div>
                 </div>
               </div>
               <div class="partner-card-info">
@@ -626,9 +634,13 @@ function cleanHtml(raw, pageName) {
                 <img src="/wp-content/uploads/2026/03/osonya-optimized.jpg" alt="Комплекс Осоння Карпати" class="partner-img">
                 <div class="partner-card-overlay">
                   <span class="partner-verified-badge">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span class="partner-live-dot"></span>
                     <span>Партнер Termosalud</span>
                   </span>
+                  <div class="partner-action-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <span>Переглянути</span>
+                  </div>
                 </div>
               </div>
               <div class="partner-card-info">
@@ -643,9 +655,13 @@ function cleanHtml(raw, pageName) {
                 <img src="/wp-content/uploads/2026/03/tisa-optimized.jpg" alt="Санаторій Гірська Тиса" class="partner-img">
                 <div class="partner-card-overlay">
                   <span class="partner-verified-badge">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span class="partner-live-dot"></span>
                     <span>Партнер Termosalud</span>
                   </span>
+                  <div class="partner-action-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <span>Переглянути</span>
+                  </div>
                 </div>
               </div>
               <div class="partner-card-info">
@@ -660,9 +676,13 @@ function cleanHtml(raw, pageName) {
                 <img src="/wp-content/uploads/2026/03/iya-optimized.jpg" alt="IYA Clinic" class="partner-img">
                 <div class="partner-card-overlay">
                   <span class="partner-verified-badge">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span class="partner-live-dot"></span>
                     <span>Партнер Termosalud</span>
                   </span>
+                  <div class="partner-action-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <span>Переглянути</span>
+                  </div>
                 </div>
               </div>
               <div class="partner-card-info">
@@ -677,9 +697,13 @@ function cleanHtml(raw, pageName) {
                 <img src="/wp-content/uploads/2026/03/stethethic-optimized.jpg" alt="St Esthetic" class="partner-img">
                 <div class="partner-card-overlay">
                   <span class="partner-verified-badge">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span class="partner-live-dot"></span>
                     <span>Партнер Termosalud</span>
                   </span>
+                  <div class="partner-action-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <span>Переглянути</span>
+                  </div>
                 </div>
               </div>
               <div class="partner-card-info">
@@ -694,9 +718,13 @@ function cleanHtml(raw, pageName) {
                 <img src="/wp-content/uploads/2026/03/lclcinic-optimized.jpg" alt="L'Clinic" class="partner-img">
                 <div class="partner-card-overlay">
                   <span class="partner-verified-badge">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span class="partner-live-dot"></span>
                     <span>Партнер Termosalud</span>
                   </span>
+                  <div class="partner-action-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <span>Переглянути</span>
+                  </div>
                 </div>
               </div>
               <div class="partner-card-info">
@@ -710,9 +738,13 @@ function cleanHtml(raw, pageName) {
                 <img src="/wp-content/uploads/2026/03/medspa-optimized.jpg" alt="Expert Med SPA" class="partner-img">
                 <div class="partner-card-overlay">
                   <span class="partner-verified-badge">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span class="partner-live-dot"></span>
                     <span>Партнер Termosalud</span>
                   </span>
+                  <div class="partner-action-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <span>Переглянути</span>
+                  </div>
                 </div>
               </div>
               <div class="partner-card-info">
@@ -726,9 +758,13 @@ function cleanHtml(raw, pageName) {
                 <img src="/wp-content/uploads/2026/03/osonya-optimized.jpg" alt="Комплекс Осоння Карпати" class="partner-img">
                 <div class="partner-card-overlay">
                   <span class="partner-verified-badge">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span class="partner-live-dot"></span>
                     <span>Партнер Termosalud</span>
                   </span>
+                  <div class="partner-action-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <span>Переглянути</span>
+                  </div>
                 </div>
               </div>
               <div class="partner-card-info">
@@ -742,9 +778,13 @@ function cleanHtml(raw, pageName) {
                 <img src="/wp-content/uploads/2026/03/tisa-optimized.jpg" alt="Санаторій Гірська Тиса" class="partner-img">
                 <div class="partner-card-overlay">
                   <span class="partner-verified-badge">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span class="partner-live-dot"></span>
                     <span>Партнер Termosalud</span>
                   </span>
+                  <div class="partner-action-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <span>Переглянути</span>
+                  </div>
                 </div>
               </div>
               <div class="partner-card-info">
@@ -758,9 +798,13 @@ function cleanHtml(raw, pageName) {
                 <img src="/wp-content/uploads/2026/03/iya-optimized.jpg" alt="IYA Clinic" class="partner-img">
                 <div class="partner-card-overlay">
                   <span class="partner-verified-badge">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span class="partner-live-dot"></span>
                     <span>Партнер Termosalud</span>
                   </span>
+                  <div class="partner-action-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <span>Переглянути</span>
+                  </div>
                 </div>
               </div>
               <div class="partner-card-info">
@@ -774,9 +818,13 @@ function cleanHtml(raw, pageName) {
                 <img src="/wp-content/uploads/2026/03/stethethic-optimized.jpg" alt="St Esthetic" class="partner-img">
                 <div class="partner-card-overlay">
                   <span class="partner-verified-badge">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span class="partner-live-dot"></span>
                     <span>Партнер Termosalud</span>
                   </span>
+                  <div class="partner-action-tag">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <span>Переглянути</span>
+                  </div>
                 </div>
               </div>
               <div class="partner-card-info">
