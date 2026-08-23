@@ -1441,19 +1441,19 @@ header .logo picture img {
    SCREEN 4: APPLICATION PRESENTATION (Full-Width Living 21:9 Banner Stage)
    ======================================================= */
 .application-presentation {
-  padding: 80px 0 100px 0 !important;
+  padding: 60px 0 80px 0 !important;
   background: #ffffff !important;
   position: relative !important;
   z-index: 50 !important;
   overflow: hidden !important;
-  box-shadow: 0 -25px 60px rgba(0, 0, 0, 0.05), 0 -8px 20px rgba(0, 0, 0, 0.02) !important;
-  border-top: 1px solid #e2e8f0 !important;
+  box-shadow: none !important;
+  border-top: none !important;
 }
 
 .presentation-header {
   text-align: center !important;
   max-width: 880px !important;
-  margin: 0 auto 35px auto !important;
+  margin: 0 auto 30px auto !important;
   padding: 0 20px !important;
 }
 
@@ -1491,15 +1491,16 @@ header .logo picture img {
   margin: 0 !important;
 }
 
-/* Full-Width Living Banner */
+/* Full-Width Living Banner (Zero lines top/bottom) */
 .fullwidth-living-banner {
   position: relative !important;
   width: 100% !important;
   min-height: 580px !important;
-  background-color: #f8fafc !important;
+  background-color: #ffffff !important;
   overflow: hidden !important;
-  border-top: 1px solid #e2e8f0 !important;
-  border-bottom: 1px solid #e2e8f0 !important;
+  border: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
   display: flex !important;
   align-items: center !important;
 }
@@ -1524,39 +1525,38 @@ header .logo picture img {
   align-items: center !important;
   min-height: 580px !important;
   width: 100% !important;
-  padding: 24px 32px !important;
+  padding: 24px 60px 24px 32px !important;
 }
 
 .banner-form-overlay-wrap {
   width: 100% !important;
-  max-width: 490px !important;
+  max-width: 480px !important;
+  margin-right: 30px !important;
 }
 
-/* Minimalist Compact Pastel Concierge Card */
+/* Seamless Minimalist Form (No Box, No Card Shadow/Border) */
 .pastel-concierge-card {
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(16px) !important;
-  border: 1px solid rgba(226, 232, 240, 0.95) !important;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  border: none !important;
   border-radius: 0px !important;
-  padding: 24px 26px !important;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.02) !important;
-  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  padding: 0 !important;
+  box-shadow: none !important;
 }
 
 .pastel-concierge-card:hover {
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08) !important;
-  border-color: #cbd5e1 !important;
+  box-shadow: none !important;
 }
 
 .form-header-meta {
   margin-bottom: 12px !important;
-  border-bottom: 1px solid #e2e8f0 !important;
-  padding-bottom: 8px !important;
+  border-bottom: none !important;
+  padding-bottom: 4px !important;
 }
 
 .meta-tag {
   display: inline-block !important;
-  font-size: 9.5px !important;
+  font-size: 10px !important;
   font-weight: 800 !important;
   color: #5d8796 !important;
   letter-spacing: 1.5px !important;
@@ -1566,7 +1566,7 @@ header .logo picture img {
 
 .form-title {
   font-family: var(--active-heading-font) !important;
-  font-size: 18.5px !important;
+  font-size: 20px !important;
   font-weight: 900 !important;
   color: #0f172a !important;
   margin: 0 !important;
@@ -1575,7 +1575,7 @@ header .logo picture img {
 
 /* Format Switcher */
 .format-switcher-wrap {
-  margin-bottom: 11px !important;
+  margin-bottom: 12px !important;
 }
 
 .format-label {
@@ -1710,7 +1710,7 @@ header .logo picture img {
 
 .luxury-form-input {
   width: 100% !important;
-  height: 39px !important;
+  height: 40px !important;
   background: #ffffff !important;
   border: 1px solid #cbd5e1 !important;
   border-radius: 0px !important;
@@ -1833,8 +1833,8 @@ header .logo picture img {
   align-items: center !important;
   gap: 6px !important;
   margin-top: 10px !important;
-  padding-top: 10px !important;
-  border-top: 1px solid #e2e8f0 !important;
+  padding-top: 6px !important;
+  border-top: none !important;
 }
 
 .trust-bullet-item {
@@ -1863,6 +1863,7 @@ header .logo picture img {
   }
   .banner-form-overlay-wrap {
     max-width: 100% !important;
+    margin-right: 0 !important;
   }
 }
 
