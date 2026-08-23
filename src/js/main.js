@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBlurRevealOnScroll();
   initBentoSpotlights();
   initScreen3BlurTransition();
+  initScreen4InteractiveStudio();
 });
 
 /**
@@ -440,5 +441,64 @@ function initScreen3BlurTransition() {
   window.addEventListener('resize', onScroll, { passive: true });
   updateVisuals();
 }
+
+/**
+ * 13. Screen 4 Interactive Masterclass Studio (Format Switcher, Device Selector & Hotspots)
+ */
+function initScreen4InteractiveStudio() {
+  const section = document.getElementById('presentation-section');
+  if (!section) return;
+
+  // 1. Format Switcher (Clinic vs Showroom)
+  const formatButtons = section.querySelectorAll('.format-tab-btn');
+  const cityInput = section.querySelector('#pres_city');
+
+  formatButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      formatButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const format = btn.getAttribute('data-format');
+      if (cityInput) {
+        if (format === 'showroom') {
+          cityInput.value = 'м. Київ (Демо-центр)';
+        } else if (cityInput.value === 'м. Київ (Демо-центр)') {
+          cityInput.value = '';
+        }
+      }
+    });
+  });
+
+  // 2. Device Selector Pills
+  const devicePills = section.querySelectorAll('.device-pill');
+  devicePills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      devicePills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      const radio = pill.querySelector('.device-radio');
+      if (radio) radio.checked = true;
+    });
+  });
+
+  // 3. Interactive Clinical Hotspots
+  const hotspots = section.querySelectorAll('.clinical-hotspot');
+  hotspots.forEach(hotspot => {
+    const trigger = hotspot.querySelector('.hotspot-trigger');
+    if (!trigger) return;
+
+    trigger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isActive = hotspot.classList.contains('active');
+      hotspots.forEach(h => h.classList.remove('active'));
+      if (!isActive) hotspot.classList.add('active');
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.clinical-hotspot')) {
+      hotspots.forEach(h => h.classList.remove('active'));
+    }
+  });
+}
+
 
 

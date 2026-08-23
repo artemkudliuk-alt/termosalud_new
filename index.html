@@ -475,9 +475,11 @@ class=center>
         </div>
       </section>
     </div>
-      <!-- Screen 4: Modern Presentation & Test-Drive Section -->
-      <section class="application-presentation">
+      <!-- Screen 4: Interactive Masterclass & Test-Drive Studio -->
+      <section class="application-presentation" id="presentation-section">
         <div class="container">
+          
+          <!-- Header -->
           <div class="presentation-header" data-aos="fade-up">
             <div class="presentation-badge">Персональний тест-драйв</div>
             <h2>Замовте презентацію та пробну процедуру</h2>
@@ -485,31 +487,85 @@ class=center>
           </div>
 
           <div class="presentation-grid-wrap">
-            <!-- Left Column: Shimmering Animated Luxury Form Card -->
+            
+            <!-- Left Column: Luxury Clinical Booking Studio Card -->
             <div class="presentation-form-card" data-aos="fade-up-right" data-aos-delay="100">
               <div class="shimmer-border-halo"></div>
               <div class="form-card-inner">
-                <div class="form-top-badge">
-                  <span class="pulse-dot"></span>
-                  <span>Ексклюзивно для фахівців</span>
+                
+                <!-- Format Switcher: Clinic vs Showroom -->
+                <div class="format-switcher-wrap">
+                  <span class="format-label">Формат презентації:</span>
+                  <div class="format-switcher">
+                    <button type="button" class="format-tab-btn active" data-format="clinic">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg>
+                      <span>У вашій клініці (Виїзд)</span>
+                    </button>
+                    <button type="button" class="format-tab-btn" data-format="showroom">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></svg>
+                      <span>Шоурум Termosalud (Київ)</span>
+                    </button>
+                  </div>
                 </div>
-                <h3 class="form-title">Заявка на тест-драйв апаратів</h3>
+
+                <!-- Device Selector Pills -->
+                <div class="device-selector-wrap">
+                  <span class="format-label">Оберіть обладнання для тесту:</span>
+                  <div class="device-pills-row">
+                    <label class="device-pill active">
+                      <input type="radio" name="target_device" value="Zionic" checked class="device-radio">
+                      <span class="device-pill-dot dot-cyan"></span>
+                      <span>Zionic (MARP + RF)</span>
+                    </label>
+                    <label class="device-pill">
+                      <input type="radio" name="target_device" value="Linfopress" class="device-radio">
+                      <span class="device-pill-dot dot-emerald"></span>
+                      <span>Linfopress Evolution Pro</span>
+                    </label>
+                    <label class="device-pill">
+                      <input type="radio" name="target_device" value="Both" class="device-radio">
+                      <span class="device-pill-dot dot-gold"></span>
+                      <span>Обидва апарати</span>
+                    </label>
+                  </div>
+                </div>
+
                 <div class="form-notice">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></circle><path d="M12 7V12" stroke-width="2.2" stroke-linecap="round"></path><circle cx="12" cy="16" r="1" fill="currentColor"></circle></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></circle><path d="M12 7V12" stroke-width="2.2" stroke-linecap="round"></path><circle cx="12" cy="16" r="1" fill="currentColor"></circle></svg>
                   <span>Увага! Консультуємо виключно керівників та лікарів клінік естетичної медицини.</span>
                 </div>
 
+                <!-- Main Booking Form -->
                 <form class="presentation-clean-form" onsubmit="event.preventDefault(); document.querySelector('.form-success-toast')?.classList.add('show'); setTimeout(() => document.querySelector('.form-success-toast')?.classList.remove('show'), 4000);">
+                  
                   <div class="form-group-item">
-                    <label class="form-label-text" for="pres_name">Ваше ім'я</label>
+                    <label class="form-label-text" for="pres_name">Ваше ім'я та посада</label>
                     <div class="input-with-icon">
                       <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="7.5" r="4.5" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></circle><path d="M4.5 20C4.5 16 8 14 12 14C16 14 19.5 16 19.5 20" stroke-width="1.8" stroke-linecap="round"></path></svg>
-                      <input type="text" id="pres_name" placeholder="Ім'я та прізвище" required class="luxury-form-input">
+                      <input type="text" id="pres_name" placeholder="Наприклад: Наталія, головний лікар" required class="luxury-form-input">
+                    </div>
+                  </div>
+
+                  <div class="form-row-2col">
+                    <div class="form-group-item">
+                      <label class="form-label-text" for="pres_phone">Телефон</label>
+                      <div class="input-with-icon">
+                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="6" y="2" width="12" height="20" rx="3" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></rect><circle cx="12" cy="18" r="1" fill="currentColor"></circle><path d="M10 5H14" stroke-width="1.5" stroke-linecap="round"></path></svg>
+                        <input type="tel" id="pres_phone" placeholder="+380" required class="luxury-form-input">
+                      </div>
+                    </div>
+
+                    <div class="form-group-item">
+                      <label class="form-label-text" for="pres_city">Місто / Клініка</label>
+                      <div class="input-with-icon">
+                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 21.5C12 21.5 19 14.5 19 9.5C19 5.5 16 2.5 12 2.5C8 2.5 5 5.5 5 9.5C5 14.5 12 21.5 12 21.5Z" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></path><circle cx="12" cy="9.5" r="2.5" stroke-width="1.6" fill="currentColor"></circle></svg>
+                        <input type="text" id="pres_city" placeholder="Київ / Назва клініки" required class="luxury-form-input">
+                      </div>
                     </div>
                   </div>
 
                   <div class="form-group-item">
-                    <label class="form-label-text">Зручний месенджер для зв'язку</label>
+                    <label class="form-label-text">Зручний месенджер для підтвердження</label>
                     <div class="messenger-pills-row">
                       <label class="messenger-pill active">
                         <input type="radio" name="messenger" value="Whatsapp" checked class="messenger-radio">
@@ -529,67 +585,89 @@ class=center>
                     </div>
                   </div>
 
-                  <div class="form-row-2col">
-                    <div class="form-group-item">
-                      <label class="form-label-text" for="pres_phone">Телефон</label>
-                      <div class="input-with-icon">
-                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="6" y="2" width="12" height="20" rx="3" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></rect><circle cx="12" cy="18" r="1" fill="currentColor"></circle><path d="M10 5H14" stroke-width="1.5" stroke-linecap="round"></path></svg>
-                        <input type="tel" id="pres_phone" placeholder="+380" required class="luxury-form-input">
-                      </div>
-                    </div>
-
-                    <div class="form-group-item">
-                      <label class="form-label-text" for="pres_city">Місто</label>
-                      <div class="input-with-icon">
-                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 21.5C12 21.5 19 14.5 19 9.5C19 5.5 16 2.5 12 2.5C8 2.5 5 5.5 5 9.5C5 14.5 12 21.5 12 21.5Z" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></path><circle cx="12" cy="9.5" r="2.5" stroke-width="1.6" fill="currentColor"></circle></svg>
-                        <input type="text" id="pres_city" placeholder="Ваше місто" required class="luxury-form-input">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-group-item">
-                    <label class="form-label-text" for="pres_email">Email (необов'язково)</label>
-                    <div class="input-with-icon">
-                      <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="5" width="18" height="14" rx="3" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></rect><path d="M3 7L12 13L21 7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                      <input type="email" id="pres_email" placeholder="example@clinic.com" class="luxury-form-input">
-                    </div>
-                  </div>
-
                   <button type="submit" class="shimmer-submit-btn">
-                    <span class="btn-text">ЗАМОВИТИ ПРЕЗЕНТАЦІЮ</span>
+                    <span class="btn-text">ЗАБРОНЮВАТИ ТЕСТ-ДРАЙВ</span>
                     <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                     <span class="btn-sweep-light"></span>
                   </button>
+
+                  <!-- Trust Highlights under CTA -->
+                  <div class="form-trust-bullets">
+                    <div class="trust-bullet-item">
+                      <span class="bullet-check">✓</span>
+                      <span>0 ₴ за виїзд та організацію</span>
+                    </div>
+                    <div class="trust-bullet-item">
+                      <span class="bullet-check">✓</span>
+                      <span>Процедури на ваших пацієнтах</span>
+                    </div>
+                    <div class="trust-bullet-item">
+                      <span class="bullet-check">✓</span>
+                      <span>Сертифікат для персоналу</span>
+                    </div>
+                  </div>
                 </form>
               </div>
             </div>
 
-            <!-- Right Column: Cinematic Presentation Masterclass Image with Floating Badges -->
+            <!-- Right Column: Interactive Masterclass Stage with 3 Live Hotspots -->
             <div class="presentation-media-card" data-aos="fade-up-left" data-aos-delay="200">
               <div class="media-ambient-halo"></div>
               <div class="media-image-container">
                 <img src="/wp-content/themes/zionic/assets/images/presentation.webp" alt="Termosalud Masterclass Presentation" class="cinematic-presentation-img">
                 
-                <!-- Floating Glass Badge: Top -->
-                <div class="floating-glass-pill top-right">
-                  <div class="pill-icon-wrap">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="13" r="8" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></circle><path d="M12 9V13L15 15" stroke-width="2" stroke-linecap="round"></path><path d="M10 2.5H14" stroke-width="2" stroke-linecap="round"></path></svg>
+                <!-- Live Interactive Hotspots on Image -->
+                <!-- Hotspot 1: Doctor Hand Position -->
+                <div class="clinical-hotspot hotspot-training" style="top: 32%; left: 36%;">
+                  <button type="button" class="hotspot-trigger" aria-label="Постановка руки тренером">
+                    <span class="hotspot-pulse"></span>
+                    <span class="hotspot-core">1</span>
+                  </button>
+                  <div class="hotspot-card">
+                    <div class="hotspot-badge">1-ON-1 ТРЕНІНГ</div>
+                    <div class="hotspot-title">Постановка руки лікаря</div>
+                    <p class="hotspot-text">Сертифікований методист Termosalud відпрацює правильний хват та кут ротації маніпули на ваших пацієнтах.</p>
                   </div>
-                  <span>Практичний майстер-клас 1-on-1</span>
                 </div>
 
-                <!-- Floating Glass Badge: Bottom -->
-                <div class="floating-glass-card bottom-left">
-                  <div class="badge-star-icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10" stroke-width="1.6" opacity="0.4"></circle><path d="M12 4.5L14 8.8L18.5 9.4L15.2 12.5L16 17L12 14.8L8 17L8.8 12.5L5.5 9.4L10 8.8L12 4.5Z" fill="#ffff00" stroke="#1e232e" stroke-width="1.2" stroke-linejoin="round"></path></svg>
-                  </div>
-                  <div class="badge-content-text">
-                    <div class="badge-strong">Офіційний тренер Termosalud</div>
-                    <div class="badge-sub">Постановка руки лікаря та клінічні протоколи</div>
+                <!-- Hotspot 2: Live Patient Results -->
+                <div class="clinical-hotspot hotspot-patient" style="top: 68%; left: 62%;">
+                  <button type="button" class="hotspot-trigger" aria-label="Клінічні результати">
+                    <span class="hotspot-pulse"></span>
+                    <span class="hotspot-core">2</span>
+                  </button>
+                  <div class="hotspot-card">
+                    <div class="hotspot-badge">ДОКАЗОВИЙ ЕФЕКТ</div>
+                    <div class="hotspot-title">Тест на ваших пацієнтах</div>
+                    <p class="hotspot-text">Оцінка миттєвого лімфодренажного результату та комфорту процедури одразу після першого сеансу.</p>
                   </div>
                 </div>
+
+                <!-- Hotspot 3: Business Financial Brief -->
+                <div class="clinical-hotspot hotspot-finance" style="top: 22%; right: 14%;">
+                  <button type="button" class="hotspot-trigger" aria-label="Бізнес-розрахунок">
+                    <span class="hotspot-pulse"></span>
+                    <span class="hotspot-core">3</span>
+                  </button>
+                  <div class="hotspot-card">
+                    <div class="hotspot-badge">ФІНАНСОВИЙ ПЛАН</div>
+                    <div class="hotspot-title">Розрахунок для клініки</div>
+                    <p class="hotspot-text">Аналіз вартості процедур у вашому місті та індивідуальний розрахунок окупності від 3 місяців.</p>
+                  </div>
+                </div>
+
+                <!-- Floating Glass Card: Bottom Live Status -->
+                <div class="floating-glass-card bottom-left">
+                  <div class="live-status-dot-pulse"></div>
+                  <div class="badge-content-text">
+                    <div class="badge-strong">Доступно 2 виїзних слоти цього тижня</div>
+                    <div class="badge-sub">Офіційний виїзд тренера з демонстраційним апаратом</div>
+                  </div>
+                </div>
+
               </div>
             </div>
+
           </div>
         </div>
       </section>
