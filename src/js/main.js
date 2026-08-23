@@ -380,10 +380,9 @@ function initBentoSpotlights() {
 }
 
 /**
- * 12. Screen 3 Sticky Pin & Screen 4 Smooth 4-Scroll Curtain Layering
+ * 12. Screen 3 Clean Unclipped Flow & Screen 4 Smooth Curtain Slide-Over
  */
 function initScreen3BlurTransition() {
-  const track = document.getElementById('why-us-track');
   const s3 = document.getElementById('why-us');
   const s4 = document.querySelector('.application-presentation');
   if (!s3 || !s4) return;
@@ -397,28 +396,33 @@ function initScreen3BlurTransition() {
     const s4Rect = s4.getBoundingClientRect();
     const winHeight = window.innerHeight;
 
-    // As Screen 4 approaches and slides over Screen 3 (from bottom of viewport up to top)
+    // Blur only activates when Screen 4 rises up to cover the bento section
     if (s4Rect.top < winHeight && s4Rect.top > 0) {
       const overlap = winHeight - s4Rect.top;
-      // Smooth progress across the 4-scroll travel distance
-      const rawProgress = overlap / winHeight;
-      const progress = Math.min(1, Math.max(0, rawProgress));
+      // Start softening as Screen 4 glides over
+      const progress = Math.min(1, Math.max(0, overlap / (winHeight * 0.75)));
       
-      const blurPx = (progress * 14).toFixed(1);
-      const scale = (1 - progress * 0.04).toFixed(3);
-      const opacity = (1 - progress * 0.35).toFixed(2);
+      const blurPx = (progress * 12).toFixed(1);
+      const scale = (1 - progress * 0.03).toFixed(3);
+      const opacity = (1 - progress * 0.3).toFixed(2);
 
-      container.style.filter = progress > 0.01 ? `blur(${blurPx}px)` : 'none';
-      container.style.transform = progress > 0.01 ? `scale(${scale})` : 'none';
-      container.style.opacity = `${opacity}`;
+      if (progress > 0.02) {
+        container.style.filter = `blur(${blurPx}px)`;
+        container.style.transform = `scale(${scale})`;
+        container.style.opacity = `${opacity}`;
+      } else {
+        container.style.filter = 'none';
+        container.style.transform = 'none';
+        container.style.opacity = '1';
+      }
     } else if (s4Rect.top >= winHeight) {
       container.style.filter = 'none';
       container.style.transform = 'none';
       container.style.opacity = '1';
     } else {
-      container.style.filter = 'blur(14px)';
-      container.style.transform = 'scale(0.96)';
-      container.style.opacity = '0.65';
+      container.style.filter = 'blur(12px)';
+      container.style.transform = 'scale(0.97)';
+      container.style.opacity = '0.7';
     }
   }
 
