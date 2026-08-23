@@ -1531,7 +1531,7 @@ header .logo picture img {
 .banner-form-overlay-wrap {
   width: 100% !important;
   max-width: 480px !important;
-  margin-right: 30px !important;
+  margin-right: 80px !important;
 }
 
 /* Seamless Minimalist Form (No Box, No Card Shadow/Border) */
