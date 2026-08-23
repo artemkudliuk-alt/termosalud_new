@@ -446,9 +446,9 @@ header .logo picture img {
 }
 
 .product-name {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: var(--active-heading-font) !important;
   font-size: 32px !important;
-  font-weight: 900 !important;
+  font-weight: var(--s1-title-weight, 900) !important;
   color: #111111 !important;
   line-height: 1.1 !important;
   margin: 0 !important;
@@ -603,7 +603,7 @@ header .logo picture img {
 .our-prods-header h2 {
   font-family: var(--active-heading-font) !important;
   font-size: clamp(32px, 4.2vw, 46px) !important;
-  font-weight: 900 !important;
+  font-weight: var(--s2-title-weight, 700) !important;
   color: var(--brand-navy) !important;
   margin: 0 0 14px 0 !important;
   line-height: 1.2 !important;
@@ -1214,7 +1214,7 @@ header .logo picture img {
 .bento-title {
   font-family: var(--active-heading-font) !important;
   font-size: 23px !important;
-  font-weight: 900 !important;
+  font-weight: var(--s3-title-weight, 700) !important;
   color: var(--brand-navy) !important;
   margin: 0 0 12px 0 !important;
   line-height: 1.25 !important;
@@ -2212,7 +2212,7 @@ header .logo picture img {
 .partner-title {
   font-family: var(--active-heading-font) !important;
   font-size: 17.5px !important;
-  font-weight: 800 !important;
+  font-weight: var(--s5-title-weight, 700) !important;
   color: var(--brand-navy) !important;
   margin: 0 !important;
   transition: color 0.25s ease !important;
@@ -2381,7 +2381,7 @@ header .logo picture img {
 .pillar-body h4 {
   font-family: var(--active-heading-font) !important;
   font-size: 16px !important;
-  font-weight: 800 !important;
+  font-weight: var(--s6-title-weight, 700) !important;
   color: #0f172a !important;
   margin: 0 0 6px 0 !important;
 }
@@ -2768,6 +2768,78 @@ footer {
     text-align: center !important;
     flex-wrap: wrap !important;
   }
+}
+
+/* =======================================================
+   UNIVERSAL PER-SCREEN HEADING TYPOGRAPHY CASCADE
+   ======================================================= */
+/* Screen 1: Hero Titles & Product Slider */
+.hero-clean-section h1,
+.hero-clean-section h2,
+.hero-clean-section h3,
+.hero-clean-title,
+.hero-clean-title .word-empower,
+.hero-clean-title .word-beauty,
+.hero-clean-title .word-together,
+.product-name,
+.product-card h3 {
+  font-family: var(--active-heading-font) !important;
+  font-weight: var(--s1-title-weight, 900) !important;
+}
+
+/* Screen 2: Products Header & Video Corner Overlays */
+#our-products h1,
+#our-products h2,
+#our-products h3,
+.our-prods-header h2,
+.corner-title,
+.corner-title span {
+  font-family: var(--active-heading-font) !important;
+  font-weight: var(--s2-title-weight, 700) !important;
+}
+
+/* Screen 3: Why Us Header & Bento Cards */
+.why-us-bento-section h1,
+.why-us-bento-section h2,
+.why-us-bento-section h3,
+.why-us-header h2,
+.bento-title,
+.bento-card h3 {
+  font-family: var(--active-heading-font) !important;
+  font-weight: var(--s3-title-weight, 700) !important;
+}
+
+/* Screen 4: Presentation Header & Form Title */
+#presentation-section h1,
+#presentation-section h2,
+#presentation-section h3,
+.presentation-header h2,
+.form-title,
+.pastel-concierge-card h3 {
+  font-family: var(--active-heading-font) !important;
+  font-weight: var(--s4-title-weight, 700) !important;
+}
+
+/* Screen 5: Partners Carousel Header & Clinic Cards */
+.partners h1,
+.partners h2,
+.partners h3,
+.partners-header h2,
+.partner-title,
+.modern-partner-card h3 {
+  font-family: var(--active-heading-font) !important;
+  font-weight: var(--s5-title-weight, 700) !important;
+}
+
+/* Screen 6: Editorial Main Title & Narrative Pillars */
+.seo_text h1,
+.seo_text h2,
+.seo_text h3,
+.seo_text h4,
+.editorial-main-title,
+.pillar-body h4 {
+  font-family: var(--active-heading-font) !important;
+  font-weight: var(--s6-title-weight, 700) !important;
 }
 
 /* =======================================================
