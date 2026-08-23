@@ -5,6 +5,14 @@
   --active-font: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --active-heading-font: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
+  /* Per-Screen Heading Weights & Typography Variables */
+  --s1-title-weight: 900;
+  --s2-title-weight: 700;
+  --s3-title-weight: 700;
+  --s4-title-weight: 700;
+  --s5-title-weight: 700;
+  --s6-title-weight: 700;
+
   /* Dominant Neutrals (72.8% White, 9.4% Soft Gray) */
   --bg-pure: #ffffff;
   --bg-soft-gray: #f7f9fa;
@@ -335,9 +343,9 @@ header .logo picture img {
 }
 
 .hero-clean-title {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: var(--active-heading-font) !important;
   font-size: clamp(34px, 4.2vw, 56px) !important;
-  font-weight: 900 !important;
+  font-weight: var(--s1-title-weight, 900) !important;
   line-height: 1.05 !important;
   letter-spacing: -0.5px !important;
   margin: 0 0 20px 0 !important;
@@ -351,7 +359,7 @@ header .logo picture img {
   position: relative !important;
   display: inline-block !important;
   color: #54595f !important;
-  font-weight: 800 !important;
+  font-weight: var(--s1-title-weight, 800) !important;
   width: fit-content !important;
   padding: 0 4px !important;
   margin-bottom: 6px !important;
@@ -375,7 +383,7 @@ header .logo picture img {
 .hero-clean-title .word-beauty,
 .hero-clean-title .word-together {
   color: #111111 !important;
-  font-weight: 900 !important;
+  font-weight: var(--s1-title-weight, 900) !important;
 }
 
 .hero-clean-subtitle {
@@ -732,7 +740,7 @@ header .logo picture img {
 .corner-title {
   font-family: var(--active-heading-font) !important;
   font-size: clamp(22px, 2vw, 26px) !important;
-  font-weight: 900 !important;
+  font-weight: var(--s2-title-weight, 800) !important;
   color: #ffffff !important;
   margin: 0 0 10px 0 !important;
   line-height: 1.15 !important;
@@ -920,7 +928,7 @@ header .logo picture img {
 .why-us-header h2 {
   font-family: var(--active-heading-font) !important;
   font-size: clamp(28px, 3.2vw, 42px) !important;
-  font-weight: 900 !important;
+  font-weight: var(--s3-title-weight, 700) !important;
   color: var(--brand-navy) !important;
   margin: 0 0 10px 0 !important;
   line-height: 1.2 !important;
@@ -1481,7 +1489,7 @@ header .logo picture img {
 .presentation-header h2 {
   font-family: var(--active-heading-font) !important;
   font-size: clamp(30px, 3.8vw, 44px) !important;
-  font-weight: 900 !important;
+  font-weight: var(--s4-title-weight, 700) !important;
   color: var(--brand-navy) !important;
   margin: 0 0 12px 0 !important;
   line-height: 1.2 !important;
@@ -1572,7 +1580,7 @@ header .logo picture img {
 .form-title {
   font-family: var(--active-heading-font) !important;
   font-size: 20px !important;
-  font-weight: 900 !important;
+  font-weight: var(--s4-title-weight, 800) !important;
   color: #0f172a !important;
   margin: 0 !important;
   line-height: 1.25 !important;
@@ -1995,7 +2003,7 @@ header .logo picture img {
 .partners-header h2 {
   font-family: var(--active-heading-font) !important;
   font-size: clamp(28px, 3.5vw, 42px) !important;
-  font-weight: 900 !important;
+  font-weight: var(--s5-title-weight, 700) !important;
   color: var(--brand-navy) !important;
   margin: 0 0 12px 0 !important;
   line-height: 1.2 !important;
@@ -2268,7 +2276,7 @@ header .logo picture img {
 .editorial-main-title {
   font-family: var(--active-heading-font) !important;
   font-size: clamp(30px, 3.4vw, 44px) !important;
-  font-weight: 900 !important;
+  font-weight: var(--s6-title-weight, 700) !important;
   color: var(--brand-navy) !important;
   line-height: 1.2 !important;
   margin: 0 0 28px 0 !important;
@@ -2760,5 +2768,235 @@ footer {
     text-align: center !important;
     flex-wrap: wrap !important;
   }
+}
+
+/* =======================================================
+   MINIMALIST FLOATING TYPOGRAPHY & HEADING INSPECTOR
+   ======================================================= */
+.typography-studio-widget {
+  position: fixed !important;
+  bottom: 22px !important;
+  right: 22px !important;
+  z-index: 999999 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+.typography-studio-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 8px 16px !important;
+  background: rgba(24, 29, 38, 0.94) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1.5px solid rgba(182, 203, 210, 0.35) !important;
+  border-radius: 50px !important;
+  color: #ffffff !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  cursor: pointer !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(93, 135, 150, 0.25) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.typography-studio-btn:hover {
+  background: #5d8796 !important;
+  border-color: #5d8796 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 14px 35px rgba(93, 135, 150, 0.5) !important;
+}
+
+.typography-studio-btn svg {
+  color: #5d8796 !important;
+  transition: color 0.2s ease, transform 0.25s ease !important;
+}
+
+.typography-studio-btn:hover svg {
+  color: #ffffff !important;
+}
+
+.typography-studio-widget.open .typography-studio-btn .chevron-icon {
+  transform: rotate(180deg) !important;
+}
+
+/* Floating Dropdown Panel */
+.typography-studio-panel {
+  display: none !important;
+  position: absolute !important;
+  bottom: calc(100% + 12px) !important;
+  right: 0 !important;
+  width: 320px !important;
+  max-width: calc(100vw - 32px) !important;
+  background: rgba(20, 25, 34, 0.96) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  border: 1.5px solid rgba(182, 203, 210, 0.25) !important;
+  border-radius: 16px !important;
+  padding: 18px 20px !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 30px rgba(93, 135, 150, 0.15) !important;
+  box-sizing: border-box !important;
+  flex-direction: column !important;
+  gap: 14px !important;
+  color: #ffffff !important;
+  animation: studioPanelPop 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+}
+
+.typography-studio-widget.open .typography-studio-panel {
+  display: flex !important;
+}
+
+@keyframes studioPanelPop {
+  0% { opacity: 0; transform: translateY(10px) scale(0.96); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.studio-panel-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding-bottom: 10px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.studio-panel-title {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  letter-spacing: 0.4px !important;
+  text-transform: uppercase !important;
+}
+
+.studio-panel-close {
+  background: transparent !important;
+  border: none !important;
+  color: #94a3b8 !important;
+  width: 26px !important;
+  height: 26px !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.2s ease !important;
+}
+
+.studio-panel-close:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  color: #ffffff !important;
+}
+
+.studio-field-group {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+}
+
+.studio-field-label {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #94a3b8 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.6px !important;
+}
+
+.studio-field-label span.highlight-val {
+  color: #5d8796 !important;
+  font-weight: 800 !important;
+  text-transform: none !important;
+}
+
+.studio-select {
+  width: 100% !important;
+  height: 36px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  border-radius: 8px !important;
+  color: #ffffff !important;
+  padding: 0 10px !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  outline: none !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.studio-select option {
+  background: #181d26 !important;
+  color: #ffffff !important;
+  padding: 8px !important;
+}
+
+.studio-select:focus {
+  border-color: #5d8796 !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Weight Segmented Pills */
+.studio-weight-pills {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr) !important;
+  gap: 3px !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  padding: 3px !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.studio-weight-btn {
+  background: transparent !important;
+  border: none !important;
+  color: #94a3b8 !important;
+  padding: 6px 0 !important;
+  font-size: 10.5px !important;
+  font-weight: 700 !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  transition: all 0.2s ease !important;
+}
+
+.studio-weight-btn:hover {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.studio-weight-btn.active {
+  background: #5d8796 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(93, 135, 150, 0.4) !important;
+}
+
+/* Presets Bar */
+.studio-presets-row {
+  display: flex !important;
+  gap: 6px !important;
+  margin-top: 4px !important;
+}
+
+.studio-preset-btn {
+  flex: 1 !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 6px !important;
+  color: #cbd5e1 !important;
+  padding: 6px 4px !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  transition: all 0.2s ease !important;
+}
+
+.studio-preset-btn:hover {
+  background: rgba(93, 135, 150, 0.3) !important;
+  border-color: #5d8796 !important;
+  color: #ffffff !important;
 }
 
