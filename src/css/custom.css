@@ -1438,10 +1438,10 @@ header .logo picture img {
 }
 
 /* =======================================================
-   SCREEN 4: APPLICATION PRESENTATION (21:9 Panoramic Stage & Pastel Concierge Studio)
+   SCREEN 4: APPLICATION PRESENTATION (Full-Width Living 21:9 Banner Stage)
    ======================================================= */
 .application-presentation {
-  padding: 90px 0 110px 0 !important;
+  padding: 80px 0 100px 0 !important;
   background: #ffffff !important;
   position: relative !important;
   z-index: 50 !important;
@@ -1453,7 +1453,7 @@ header .logo picture img {
 .presentation-header {
   text-align: center !important;
   max-width: 880px !important;
-  margin: 0 auto 40px auto !important;
+  margin: 0 auto 35px auto !important;
   padding: 0 20px !important;
 }
 
@@ -1491,142 +1491,66 @@ header .logo picture img {
   margin: 0 !important;
 }
 
-.panoramic-viewport-container {
-  max-width: 1540px !important;
-  margin: 0 auto !important;
-  padding: 0 24px !important;
-}
-
-/* 21:9 Panoramic Stage Card */
-.panoramic-stage-card {
-  display: grid !important;
-  grid-template-columns: 1.15fr 0.95fr !important;
-  background: #f8fafc !important;
-  border: 1px solid #e2e8f0 !important;
-  border-radius: 0px !important;
-  overflow: hidden !important;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.04) !important;
-  min-height: 560px !important;
-  align-items: stretch !important;
-}
-
-/* Left Half: Treatment Visual & Live Video Layer */
-.panoramic-media-col {
+/* Full-Width Living Banner */
+.fullwidth-living-banner {
   position: relative !important;
   width: 100% !important;
-  height: 100% !important;
-  background: #ffffff !important;
+  min-height: 620px !important;
+  background-color: #f8fafc !important;
   overflow: hidden !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-}
-
-.panoramic-media-inner {
-  position: relative !important;
-  width: 100% !important;
-  height: 100% !important;
+  border-top: 1px solid #e2e8f0 !important;
+  border-bottom: 1px solid #e2e8f0 !important;
   display: flex !important;
   align-items: center !important;
 }
 
-.panoramic-treatment-img {
+.living-banner-bg-img {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
   object-position: left center !important;
   display: block !important;
-  transition: transform 0.6s ease !important;
+  z-index: 1 !important;
 }
 
-.panoramic-media-col:hover .panoramic-treatment-img {
-  transform: scale(1.02) !important;
-}
-
-.panoramic-video-pill {
-  position: absolute !important;
-  top: 24px !important;
-  left: 24px !important;
-  display: flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-  padding: 6px 14px !important;
-  background: rgba(15, 23, 42, 0.82) !important;
-  backdrop-filter: blur(10px) !important;
-  color: #ffffff !important;
-  font-size: 10px !important;
-  font-weight: 800 !important;
-  letter-spacing: 1px !important;
+.living-banner-content-container {
+  position: relative !important;
   z-index: 5 !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
-}
-
-.panoramic-play-trigger {
-  position: absolute !important;
-  bottom: 24px !important;
-  left: 24px !important;
   display: flex !important;
+  justify-content: flex-end !important;
   align-items: center !important;
-  gap: 12px !important;
-  padding: 8px 18px 8px 10px !important;
-  background: rgba(255, 255, 255, 0.94) !important;
-  backdrop-filter: blur(12px) !important;
-  border: 1px solid #cbd5e1 !important;
-  border-radius: 50px !important;
-  color: #0f172a !important;
-  text-decoration: none !important;
-  font-size: 12px !important;
-  font-weight: 800 !important;
-  z-index: 5 !important;
-  transition: all 0.3s ease !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
-}
-
-.panoramic-play-trigger:hover {
-  background: #1e232e !important;
-  color: #ffffff !important;
-  border-color: #1e232e !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18) !important;
-}
-
-.play-btn-circle {
-  width: 32px !important;
-  height: 32px !important;
-  border-radius: 50% !important;
-  background: #5d8796 !important;
-  color: #ffffff !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  flex-shrink: 0 !important;
-  transition: background 0.3s ease !important;
-}
-
-.panoramic-play-trigger:hover .play-btn-circle {
-  background: #ffffff !important;
-  color: #1e232e !important;
-}
-
-/* Right Half: Pastel Concierge Form */
-.panoramic-form-col {
-  background: #f8fafc !important;
-  padding: 36px 40px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  border-left: 1px solid #e2e8f0 !important;
-  box-sizing: border-box !important;
-}
-
-.pastel-form-container {
   width: 100% !important;
+  padding: 40px 20px !important;
+}
+
+.banner-form-overlay-wrap {
+  width: 100% !important;
+  max-width: 530px !important;
+}
+
+/* Pastel Grey Concierge Card */
+.pastel-concierge-card {
+  background: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(226, 232, 240, 0.95) !important;
+  border-radius: 0px !important;
+  padding: 32px 34px !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06), 0 4px 15px rgba(0, 0, 0, 0.02) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.pastel-concierge-card:hover {
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.09) !important;
+  border-color: #cbd5e1 !important;
 }
 
 .form-header-meta {
-  margin-bottom: 18px !important;
+  margin-bottom: 16px !important;
   border-bottom: 1px solid #e2e8f0 !important;
-  padding-bottom: 14px !important;
+  padding-bottom: 12px !important;
 }
 
 .meta-tag {
@@ -1650,12 +1574,12 @@ header .logo picture img {
 
 /* Format Switcher */
 .format-switcher-wrap {
-  margin-bottom: 16px !important;
+  margin-bottom: 14px !important;
 }
 
 .format-label {
   display: block !important;
-  font-size: 11px !important;
+  font-size: 10.5px !important;
   font-weight: 800 !important;
   color: #64748b !important;
   text-transform: uppercase !important;
@@ -1676,8 +1600,8 @@ header .logo picture img {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 7px !important;
-  padding: 9px 10px !important;
+  gap: 6px !important;
+  padding: 8px 10px !important;
   background: transparent !important;
   border: none !important;
   color: #64748b !important;
@@ -1696,22 +1620,22 @@ header .logo picture img {
 
 /* Device Selector Pills */
 .device-selector-wrap {
-  margin-bottom: 18px !important;
+  margin-bottom: 16px !important;
 }
 
 .device-pills-row {
   display: flex !important;
-  gap: 7px !important;
+  gap: 6px !important;
   flex-wrap: wrap !important;
 }
 
 .device-pill {
-  flex: 1 1 calc(33.333% - 7px) !important;
+  flex: 1 1 calc(33.333% - 6px) !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   gap: 6px !important;
-  padding: 8px 8px !important;
+  padding: 8px 6px !important;
   background: #f8fafc !important;
   border: 1px solid #e2e8f0 !important;
   border-radius: 0px !important;
@@ -1749,7 +1673,7 @@ header .logo picture img {
 .presentation-clean-form {
   display: flex !important;
   flex-direction: column !important;
-  gap: 14px !important;
+  gap: 13px !important;
 }
 
 .form-group-item {
@@ -1774,7 +1698,7 @@ header .logo picture img {
 .input-icon {
   position: absolute !important;
   top: 50% !important;
-  left: 14px !important;
+  left: 13px !important;
   transform: translateY(-50%) !important;
   width: 16px !important;
   height: 16px !important;
@@ -1812,7 +1736,7 @@ header .logo picture img {
 
 .messenger-pills-row {
   display: flex !important;
-  gap: 7px !important;
+  gap: 6px !important;
   flex-wrap: wrap !important;
 }
 
@@ -1925,17 +1849,17 @@ header .logo picture img {
   font-weight: 900 !important;
 }
 
-@media (max-width: 1024px) {
-  .panoramic-stage-card {
-    grid-template-columns: 1fr !important;
+@media (max-width: 991px) {
+  .fullwidth-living-banner {
+    min-height: auto !important;
+    padding: 30px 0 !important;
   }
-  .panoramic-media-col {
-    min-height: 380px !important;
+  .living-banner-content-container {
+    justify-content: center !important;
+    padding: 0 16px !important;
   }
-  .panoramic-form-col {
-    border-left: none !important;
-    border-top: 1px solid #e2e8f0 !important;
-    padding: 28px 22px !important;
+  .banner-form-overlay-wrap {
+    max-width: 100% !important;
   }
 }
 
