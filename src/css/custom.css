@@ -87,6 +87,8 @@ html {
   font-family: var(--active-font) !important;
   background-color: #ffffff;
   height: auto !important;
+  overflow-x: hidden !important;
+  width: 100% !important;
 }
 
 body {
@@ -97,8 +99,10 @@ body {
   background-color: #ffffff !important;
   height: auto !important;
   min-height: 100vh !important;
-  overflow-x: clip !important;
+  overflow-x: hidden !important;
   overflow-y: visible !important;
+  width: 100% !important;
+  position: relative !important;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -1530,8 +1534,8 @@ header .logo picture img {
 
 .banner-form-overlay-wrap {
   width: 100% !important;
-  max-width: 480px !important;
-  margin-right: 80px !important;
+  max-width: 440px !important;
+  margin-right: clamp(10px, 3vw, 50px) !important;
 }
 
 /* Seamless Minimalist Form (No Box, No Card Shadow/Border) */
@@ -1542,6 +1546,7 @@ header .logo picture img {
   border-radius: 0px !important;
   padding: 0 !important;
   box-shadow: none !important;
+  transition: all 0.3s ease !important;
 }
 
 .pastel-concierge-card:hover {
@@ -1851,19 +1856,106 @@ header .logo picture img {
   font-weight: 900 !important;
 }
 
-@media (max-width: 991px) {
+/* =======================================================
+   RESPONSIVE ADAPTATION: SCREEN 4 LIVING BANNER
+   ======================================================= */
+
+/* Medium Desktop & Laptops (992px - 1279px) */
+@media (min-width: 992px) and (max-width: 1279px) {
   .fullwidth-living-banner {
-    min-height: auto !important;
-    padding: 24px 0 !important;
+    min-height: 560px !important;
   }
   .living-banner-content-container {
-    justify-content: center !important;
-    padding: 0 16px !important;
-    min-height: auto !important;
+    min-height: 560px !important;
+    padding: 20px 30px 20px 20px !important;
   }
   .banner-form-overlay-wrap {
-    max-width: 100% !important;
+    max-width: 420px !important;
+    margin-right: 15px !important;
+  }
+  .pastel-concierge-card {
+    background: rgba(255, 255, 255, 0.94) !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    border: 1px solid rgba(226, 232, 240, 0.85) !important;
+    padding: 22px 20px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07) !important;
+  }
+}
+
+/* Tablets & Mobile (< 992px): Stacked Clean Editorial Layout */
+@media (max-width: 991px) {
+  .application-presentation {
+    padding: 40px 0 60px 0 !important;
+  }
+  .fullwidth-living-banner {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: auto !important;
+    background-color: #f8fafc !important;
+    padding: 0 !important;
+  }
+  .living-banner-bg-img {
+    position: relative !important;
+    width: 100% !important;
+    height: 260px !important;
+    max-height: 320px !important;
+    object-fit: cover !important;
+    object-position: 25% center !important;
+    display: block !important;
+  }
+  .living-banner-content-container {
+    position: relative !important;
+    width: 100% !important;
+    min-height: auto !important;
+    padding: 20px 16px 28px 16px !important;
+    justify-content: center !important;
+    display: flex !important;
+  }
+  .banner-form-overlay-wrap {
+    max-width: 540px !important;
+    width: 100% !important;
     margin-right: 0 !important;
+  }
+  .pastel-concierge-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    padding: 24px 18px !important;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.05) !important;
+  }
+  .form-title {
+    font-size: 19px !important;
+  }
+}
+
+/* Small Mobile (< 520px) */
+@media (max-width: 520px) {
+  .living-banner-bg-img {
+    height: 200px !important;
+  }
+  .pastel-concierge-card {
+    padding: 18px 14px !important;
+  }
+  .form-row-2col {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+  .device-pills-row {
+    gap: 4px !important;
+  }
+  .device-pill {
+    flex: 1 1 100% !important;
+    padding: 8px 10px !important;
+    font-size: 11px !important;
+  }
+  .messenger-pill {
+    flex: 1 1 calc(50% - 4px) !important;
+    padding: 8px 10px !important;
+  }
+  .form-trust-bullets {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
   }
 }
 
