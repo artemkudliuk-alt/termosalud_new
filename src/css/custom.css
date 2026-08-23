@@ -1495,7 +1495,7 @@ header .logo picture img {
 .fullwidth-living-banner {
   position: relative !important;
   width: 100% !important;
-  min-height: 620px !important;
+  min-height: 580px !important;
   background-color: #f8fafc !important;
   overflow: hidden !important;
   border-top: 1px solid #e2e8f0 !important;
@@ -1522,50 +1522,51 @@ header .logo picture img {
   display: flex !important;
   justify-content: flex-end !important;
   align-items: center !important;
+  min-height: 580px !important;
   width: 100% !important;
-  padding: 40px 20px !important;
+  padding: 24px 32px !important;
 }
 
 .banner-form-overlay-wrap {
   width: 100% !important;
-  max-width: 530px !important;
+  max-width: 490px !important;
 }
 
-/* Pastel Grey Concierge Card */
+/* Minimalist Compact Pastel Concierge Card */
 .pastel-concierge-card {
-  background: rgba(255, 255, 255, 0.94) !important;
-  backdrop-filter: blur(20px) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(16px) !important;
   border: 1px solid rgba(226, 232, 240, 0.95) !important;
   border-radius: 0px !important;
-  padding: 32px 34px !important;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06), 0 4px 15px rgba(0, 0, 0, 0.02) !important;
+  padding: 24px 26px !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.02) !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .pastel-concierge-card:hover {
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.09) !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08) !important;
   border-color: #cbd5e1 !important;
 }
 
 .form-header-meta {
-  margin-bottom: 16px !important;
+  margin-bottom: 12px !important;
   border-bottom: 1px solid #e2e8f0 !important;
-  padding-bottom: 12px !important;
+  padding-bottom: 8px !important;
 }
 
 .meta-tag {
   display: inline-block !important;
-  font-size: 10.5px !important;
+  font-size: 9.5px !important;
   font-weight: 800 !important;
   color: #5d8796 !important;
   letter-spacing: 1.5px !important;
   text-transform: uppercase !important;
-  margin-bottom: 4px !important;
+  margin-bottom: 2px !important;
 }
 
 .form-title {
   font-family: var(--active-heading-font) !important;
-  font-size: 21px !important;
+  font-size: 18.5px !important;
   font-weight: 900 !important;
   color: #0f172a !important;
   margin: 0 !important;
@@ -1574,25 +1575,25 @@ header .logo picture img {
 
 /* Format Switcher */
 .format-switcher-wrap {
-  margin-bottom: 14px !important;
+  margin-bottom: 11px !important;
 }
 
 .format-label {
   display: block !important;
-  font-size: 10.5px !important;
+  font-size: 10px !important;
   font-weight: 800 !important;
   color: #64748b !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.8px !important;
-  margin-bottom: 6px !important;
+  letter-spacing: 0.7px !important;
+  margin-bottom: 4px !important;
 }
 
 .format-switcher {
   display: flex !important;
   background: #f1f5f9 !important;
   border: 1px solid #e2e8f0 !important;
-  padding: 3px !important;
-  gap: 4px !important;
+  padding: 2.5px !important;
+  gap: 3px !important;
 }
 
 .format-tab-btn {
@@ -1601,12 +1602,12 @@ header .logo picture img {
   align-items: center !important;
   justify-content: center !important;
   gap: 6px !important;
-  padding: 8px 10px !important;
+  padding: 7px 8px !important;
   background: transparent !important;
   border: none !important;
   color: #64748b !important;
   font-family: inherit !important;
-  font-size: 11.5px !important;
+  font-size: 11px !important;
   font-weight: 700 !important;
   cursor: pointer !important;
   transition: all 0.25s ease !important;
@@ -1615,32 +1616,32 @@ header .logo picture img {
 .format-tab-btn.active {
   background: #ffffff !important;
   color: #0f172a !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06) !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
 }
 
 /* Device Selector Pills */
 .device-selector-wrap {
-  margin-bottom: 16px !important;
+  margin-bottom: 12px !important;
 }
 
 .device-pills-row {
   display: flex !important;
-  gap: 6px !important;
+  gap: 5px !important;
   flex-wrap: wrap !important;
 }
 
 .device-pill {
-  flex: 1 1 calc(33.333% - 6px) !important;
+  flex: 1 1 calc(33.333% - 5px) !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 6px !important;
-  padding: 8px 6px !important;
+  gap: 5px !important;
+  padding: 6.5px 4px !important;
   background: #f8fafc !important;
   border: 1px solid #e2e8f0 !important;
   border-radius: 0px !important;
   color: #475569 !important;
-  font-size: 11px !important;
+  font-size: 10.5px !important;
   font-weight: 700 !important;
   cursor: pointer !important;
   transition: all 0.25s ease !important;
@@ -1653,8 +1654,8 @@ header .logo picture img {
 }
 
 .device-pill-dot {
-  width: 6px !important;
-  height: 6px !important;
+  width: 5.5px !important;
+  height: 5.5px !important;
   border-radius: 50% !important;
   flex-shrink: 0 !important;
 }
@@ -1673,21 +1674,21 @@ header .logo picture img {
 .presentation-clean-form {
   display: flex !important;
   flex-direction: column !important;
-  gap: 13px !important;
+  gap: 10px !important;
 }
 
 .form-group-item {
   display: flex !important;
   flex-direction: column !important;
-  gap: 5px !important;
+  gap: 3.5px !important;
 }
 
 .form-label-text {
-  font-size: 10.5px !important;
+  font-size: 9.5px !important;
   font-weight: 800 !important;
   color: #64748b !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.8px !important;
+  letter-spacing: 0.7px !important;
 }
 
 .input-with-icon {
@@ -1698,10 +1699,10 @@ header .logo picture img {
 .input-icon {
   position: absolute !important;
   top: 50% !important;
-  left: 13px !important;
+  left: 11px !important;
   transform: translateY(-50%) !important;
-  width: 16px !important;
-  height: 16px !important;
+  width: 15px !important;
+  height: 15px !important;
   stroke: #94a3b8 !important;
   pointer-events: none !important;
   transition: stroke 0.25s ease !important;
@@ -1709,14 +1710,14 @@ header .logo picture img {
 
 .luxury-form-input {
   width: 100% !important;
-  height: 44px !important;
+  height: 39px !important;
   background: #ffffff !important;
   border: 1px solid #cbd5e1 !important;
   border-radius: 0px !important;
-  padding: 0 14px 0 38px !important;
+  padding: 0 12px 0 34px !important;
   color: #0f172a !important;
   font-family: inherit !important;
-  font-size: 13.5px !important;
+  font-size: 13px !important;
   font-weight: 500 !important;
   outline: none !important;
   box-sizing: border-box !important;
@@ -1726,6 +1727,7 @@ header .logo picture img {
 .luxury-form-input::placeholder {
   color: #94a3b8 !important;
   font-weight: 400 !important;
+  font-size: 12.5px !important;
 }
 
 .luxury-form-input:focus {
@@ -1736,7 +1738,7 @@ header .logo picture img {
 
 .messenger-pills-row {
   display: flex !important;
-  gap: 6px !important;
+  gap: 5px !important;
   flex-wrap: wrap !important;
 }
 
@@ -1745,13 +1747,13 @@ header .logo picture img {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 6px !important;
-  padding: 8px 10px !important;
+  gap: 5px !important;
+  padding: 6.5px 8px !important;
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
   border-radius: 0px !important;
   color: #475569 !important;
-  font-size: 12px !important;
+  font-size: 11.5px !important;
   font-weight: 700 !important;
   cursor: pointer !important;
   transition: all 0.25s ease !important;
@@ -1763,8 +1765,8 @@ header .logo picture img {
 }
 
 .pill-dot {
-  width: 6px !important;
-  height: 6px !important;
+  width: 5.5px !important;
+  height: 5.5px !important;
   border-radius: 50% !important;
   flex-shrink: 0 !important;
 }
@@ -1783,37 +1785,37 @@ header .logo picture img {
 .form-row-2col {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
-  gap: 12px !important;
+  gap: 10px !important;
 }
 
 .shimmer-submit-btn {
   position: relative !important;
   width: 100% !important;
-  height: 48px !important;
+  height: 44px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 10px !important;
+  gap: 8px !important;
   background: #1e232e !important;
   color: #ffffff !important;
   border: none !important;
   border-radius: 0px !important;
   font-family: inherit !important;
-  font-size: 13px !important;
+  font-size: 12px !important;
   font-weight: 900 !important;
-  letter-spacing: 1.2px !important;
+  letter-spacing: 1.1px !important;
   text-transform: uppercase !important;
   cursor: pointer !important;
   overflow: hidden !important;
-  margin-top: 4px !important;
-  box-shadow: 0 8px 20px rgba(30, 35, 46, 0.2) !important;
+  margin-top: 2px !important;
+  box-shadow: 0 6px 16px rgba(30, 35, 46, 0.18) !important;
   transition: all 0.3s ease !important;
 }
 
 .shimmer-submit-btn:hover {
   background: #5d8796 !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 12px 25px rgba(93, 135, 150, 0.35) !important;
+  box-shadow: 0 10px 22px rgba(93, 135, 150, 0.3) !important;
 }
 
 .btn-arrow {
@@ -1829,17 +1831,17 @@ header .logo picture img {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
-  gap: 8px !important;
-  margin-top: 12px !important;
-  padding-top: 12px !important;
+  gap: 6px !important;
+  margin-top: 10px !important;
+  padding-top: 10px !important;
   border-top: 1px solid #e2e8f0 !important;
 }
 
 .trust-bullet-item {
   display: flex !important;
   align-items: center !important;
-  gap: 5px !important;
-  font-size: 11px !important;
+  gap: 4px !important;
+  font-size: 10.5px !important;
   font-weight: 600 !important;
   color: #64748b !important;
 }
@@ -1852,11 +1854,12 @@ header .logo picture img {
 @media (max-width: 991px) {
   .fullwidth-living-banner {
     min-height: auto !important;
-    padding: 30px 0 !important;
+    padding: 24px 0 !important;
   }
   .living-banner-content-container {
     justify-content: center !important;
     padding: 0 16px !important;
+    min-height: auto !important;
   }
   .banner-form-overlay-wrap {
     max-width: 100% !important;

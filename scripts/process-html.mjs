@@ -443,9 +443,9 @@ function cleanHtml(raw, pageName) {
         <div class="fullwidth-living-banner" data-aos="fade-up" data-aos-delay="100">
           
           <!-- Full-Width Background Image Layer -->
-          <img src="/wp-content/themes/zionic/assets/images/zionic_banner_21_9_clean.png" alt="Zionic Pro Max Treatment" class="living-banner-bg-img">
+          <img src="/wp-content/themes/zionic/assets/images/photo_form.png" alt="Zionic Pro Max Treatment" class="living-banner-bg-img">
           
-          <!-- Content Container with Form Floating on the Right -->
+          <!-- Content Container with Form Floating Centered on the Right -->
           <div class="container living-banner-content-container">
             <div class="banner-form-overlay-wrap">
               <div class="pastel-concierge-card">
