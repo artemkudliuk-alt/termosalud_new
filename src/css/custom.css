@@ -28,14 +28,14 @@
   /* Pastel Muted Colors (2.9% Ice-Slate, 1.5% Steel-Blue) */
   --pastel-ice: #edf4f7;
   --pastel-slate-blue: #b6cbd2;
-  --brand-steel: #5d8796;
+  --brand-steel: #1e232e;
   --brand-steel-hover: #4d7280;
   --brand-steel-dark: #3f5d69;
   
-  --brand-primary: #5d8796;
-  --brand-blue: #5d8796;
+  --brand-primary: #1e232e;
+  --brand-blue: #1e232e;
   --brand-blue-hover: #4d7280;
-  --brand-cyan: #5d8796;
+  --brand-cyan: #1e232e;
   --brand-slate: #54595f;
 
   /* Typography & Muted Grays */
@@ -46,7 +46,7 @@
   --text-light: #94a3b8;
 
   /* Micro Accents (<0.1%) */
-  --accent-stripe: #5d8796;
+  --accent-stripe: #1e232e;
   --brand-yellow: #ffff00;
 }
 
@@ -87,7 +87,7 @@ button,
   width: 100%;
   height: 3.5px;
   border-radius: 2px;
-  background: #5d8796 !important;
+  background: #1e232e !important;
 }
 
 html {
@@ -581,7 +581,7 @@ header .logo:hover img {
   align-items: center !important;
   justify-content: center !important;
   padding: 14px !important;
-  box-shadow: 0 12px 30px rgba(93, 135, 150, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 12px 30px rgba(30, 35, 46, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
   flex-shrink: 0 !important;
   transition: transform 0.4s ease !important;
 }
@@ -662,9 +662,9 @@ header .logo:hover img {
 }
 
 .slider-dot.active {
-  background: #5d8796 !important;
-  border-color: #5d8796 !important;
-  box-shadow: 0 2px 8px rgba(93, 135, 150, 0.45) !important;
+  background: #1e232e !important;
+  border-color: #1e232e !important;
+  box-shadow: 0 2px 8px rgba(30, 35, 46, 0.45) !important;
 }
 
 .slider-dot.active::after {
@@ -716,7 +716,7 @@ header .logo:hover img {
   letter-spacing: 1.5px !important;
   border-radius: 50px !important;
   margin-bottom: 16px !important;
-  box-shadow: 0 4px 15px rgba(93, 135, 150, 0.1) !important;
+  box-shadow: 0 4px 15px rgba(30, 35, 46, 0.1) !important;
 }
 
 .our-prods-header h2 {
@@ -1263,7 +1263,7 @@ header .logo:hover img {
   letter-spacing: 1.5px !important;
   border-radius: 50px !important;
   margin-bottom: 12px !important;
-  box-shadow: 0 4px 15px rgba(93, 135, 150, 0.08) !important;
+  box-shadow: 0 4px 15px rgba(30, 35, 46, 0.08) !important;
 }
 
 .why-us-header h2 {
@@ -1310,9 +1310,9 @@ header .logo:hover img {
 }
 
 .bento-card:hover {
-  border-color: #5d8796 !important;
+  border-color: #1e232e !important;
   transform: translateY(-3px) !important;
-  box-shadow: 0 16px 36px rgba(93, 135, 150, 0.12) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08) !important;
 }
 
 /* Interactive Cursor Spotlight Glare */
@@ -1320,7 +1320,7 @@ header .logo:hover img {
   position: absolute !important;
   inset: 0 !important;
   pointer-events: none !important;
-  background: radial-gradient(500px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(93, 135, 150, 0.12), transparent 60%) !important;
+  background: radial-gradient(500px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(30, 35, 46, 0.12), transparent 60%) !important;
   opacity: 0 !important;
   transition: opacity 0.35s ease !important;
   z-index: 1 !important;
@@ -1344,7 +1344,7 @@ header .logo:hover img {
   grid-column: 1 / 2 !important;
   grid-row: 1 / 3 !important;
   background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%) !important;
-  border-left: 4px solid #5d8796 !important;
+  border-left: 4px solid #1e232e !important;
   padding: 24px 24px !important;
 }
 
@@ -1353,7 +1353,7 @@ header .logo:hover img {
   grid-column: 2 / 4 !important;
   grid-row: 1 / 2 !important;
   background: linear-gradient(135deg, #ffffff 0%, #edf4f7 100%) !important;
-  border-top: 3px solid #5d8796 !important;
+  border-top: 3px solid #1e232e !important;
   padding: 20px 22px !important;
 }
 
@@ -1396,18 +1396,18 @@ header .logo:hover img {
   width: 44px !important;
   height: 44px !important;
   border-radius: 0px !important;
-  background: #edf4f7 !important;
-  border: 1px solid #c9dbe1 !important;
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  color: #5d8796 !important;
+  color: #1e232e !important;
   transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .bento-card:hover .bento-icon-pod {
   background: #1e232e !important;
-  border-color: #5d8796 !important;
+  border-color: #1e232e !important;
   color: #ffffff !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 6px 18px rgba(30, 35, 46, 0.25) !important;
@@ -1420,9 +1420,9 @@ header .logo:hover img {
   stroke: #ffffff !important;
 }
 
-.bento-card:hover .bento-svg [fill="#5d8796"],
-.bento-card:hover .bento-svg [fill="rgba(93,135,150,0.06)"],
-.bento-card:hover .bento-svg [fill="rgba(93,135,150,0.1)"] {
+.bento-card:hover .bento-svg [fill="#1e232e"],
+.bento-card:hover .bento-svg [fill="rgba(30, 35, 46, 0.06)"],
+.bento-card:hover .bento-svg [fill="rgba(30, 35, 46, 0.1)"] {
   fill: rgba(255, 255, 255, 0.2) !important;
 }
 
@@ -1532,7 +1532,7 @@ header .logo:hover img {
   font-size: 11px !important;
   font-weight: 800 !important;
   letter-spacing: 1.5px !important;
-  color: #5d8796 !important;
+  color: #475569 !important;
   text-transform: uppercase !important;
 }
 
@@ -1540,8 +1540,9 @@ header .logo:hover img {
   font-size: 11px !important;
   font-weight: 700 !important;
   padding: 4px 10px !important;
-  background: rgba(93, 135, 150, 0.15) !important;
-  color: #3b5f6d !important;
+  background: #f1f5f9 !important;
+  color: #1e232e !important;
+  border: 1px solid #e2e8f0 !important;
   border-radius: 0px !important;
   text-transform: uppercase !important;
   letter-spacing: 0.8px !important;
@@ -1605,7 +1606,7 @@ header .logo:hover img {
 .num-label {
   font-size: 12px !important;
   font-weight: 800 !important;
-  color: #5d8796 !important;
+  color: #475569 !important;
   letter-spacing: 1px !important;
 }
 
@@ -1626,7 +1627,7 @@ header .logo:hover img {
 .roi-graph-bar {
   width: 85% !important;
   height: 100% !important;
-  background: linear-gradient(90deg, #5d8796 0%, #2f855a 100%) !important;
+  background: #1e232e !important;
   animation: roiGrow 2.5s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
 }
 
@@ -1645,8 +1646,9 @@ header .logo:hover img {
 }
 
 .roi-badge-highlight {
-  color: #22543d !important;
-  background: #c6f6d5 !important;
+  color: #1e232e !important;
+  background: #f1f5f9 !important;
+  border: 1px solid #e2e8f0 !important;
   padding: 3px 8px !important;
   font-weight: 800 !important;
 }
@@ -1668,7 +1670,7 @@ header .logo:hover img {
 }
 
 .bento-check {
-  color: #5d8796 !important;
+  color: #1e232e !important;
   font-weight: 900 !important;
   font-size: 13px !important;
 }
@@ -1693,7 +1695,7 @@ header .logo:hover img {
 }
 
 .cert-seal:hover {
-  border-color: #5d8796 !important;
+  border-color: #1e232e !important;
   transform: translateY(-3px) !important;
 }
 
@@ -1815,16 +1817,16 @@ header .logo:hover img {
   align-items: center !important;
   gap: 8px !important;
   padding: 7px 20px !important;
-  background: #edf4f7 !important;
-  border: 1px solid #b6cbd2 !important;
-  color: var(--brand-blue) !important;
+  background: #f1f5f9 !important;
+  border: 1px solid #cbd5e1 !important;
+  color: #1e232e !important;
   font-size: 11px !important;
   font-weight: 800 !important;
   text-transform: uppercase !important;
   letter-spacing: 1.5px !important;
   border-radius: 50px !important;
   margin-bottom: 14px !important;
-  box-shadow: 0 4px 15px rgba(93, 135, 150, 0.08) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04) !important;
 }
 
 .presentation-header h2 {
@@ -1908,7 +1910,7 @@ header .logo:hover img {
   display: inline-block !important;
   font-size: 10px !important;
   font-weight: 800 !important;
-  color: #5d8796 !important;
+  color: #475569 !important;
   letter-spacing: 1.5px !important;
   text-transform: uppercase !important;
   margin-bottom: 2px !important;
@@ -2016,7 +2018,7 @@ header .logo:hover img {
 .device-pill:hover,
 .device-pill.active {
   background: #edf4f7 !important;
-  border-color: #5d8796 !important;
+  border-color: #1e232e !important;
   color: #0f172a !important;
 }
 
@@ -2081,8 +2083,8 @@ header .logo:hover img {
 
 .luxury-form-input:focus {
   background: #ffffff !important;
-  border-color: #5d8796 !important;
-  box-shadow: 0 0 0 3px rgba(93, 135, 150, 0.15) !important;
+  border-color: #1e232e !important;
+  box-shadow: 0 0 0 3px rgba(30, 35, 46, 0.15) !important;
 }
 
 .messenger-pills-row {
@@ -2127,7 +2129,7 @@ header .logo:hover img {
 .messenger-pill:hover,
 .messenger-pill.active {
   background: #edf4f7 !important;
-  border-color: #5d8796 !important;
+  border-color: #1e232e !important;
   color: #0f172a !important;
 }
 
@@ -2256,7 +2258,7 @@ header .logo:hover img {
   letter-spacing: 1.5px !important;
   border-radius: 50px !important;
   margin-bottom: 20px !important;
-  box-shadow: 0 4px 15px rgba(93, 135, 150, 0.08) !important;
+  box-shadow: 0 4px 15px rgba(30, 35, 46, 0.08) !important;
 }
 
 .partners-header h2 {
@@ -2318,8 +2320,8 @@ header .logo:hover img {
 /* Hover Lift & Sleek Edge Accent */
 .modern-partner-card:hover {
   transform: translateY(-8px) !important;
-  border-color: #5d8796 !important;
-  box-shadow: 0 20px 40px rgba(93, 135, 150, 0.18), 0 0 0 1px #5d8796 !important;
+  border-color: #1e232e !important;
+  box-shadow: 0 20px 40px rgba(30, 35, 46, 0.18), 0 0 0 1px #1e232e !important;
 }
 
 .partner-card-img-wrap {
@@ -2416,7 +2418,7 @@ header .logo:hover img {
 }
 
 .modern-partner-card:hover .partner-verified-badge {
-  background: rgba(93, 135, 150, 0.92) !important;
+  background: rgba(30, 35, 46, 0.92) !important;
   border-color: #ffffff !important;
   transform: translateX(4px) !important;
 }
@@ -2441,7 +2443,7 @@ header .logo:hover img {
 }
 
 .partner-action-tag svg {
-  color: #5d8796 !important;
+  color: #1e232e !important;
   transition: transform 0.3s ease !important;
 }
 
@@ -2528,10 +2530,10 @@ header .logo:hover img {
   align-items: center !important;
   gap: 8px !important;
   padding: 6px 16px !important;
-  background: #edf4f7 !important;
-  border: 1px solid #b6cbd2 !important;
+  background: #f1f5f9 !important;
+  border: 1px solid #cbd5e1 !important;
   border-radius: 0px !important;
-  color: var(--brand-blue) !important;
+  color: #1e232e !important;
   font-size: 11px !important;
   font-weight: 800 !important;
   text-transform: uppercase !important;
@@ -2783,7 +2785,7 @@ header .logo:hover img {
   color: #ffffff;
   padding: 18px 28px;
   border-radius: 12px;
-  box-shadow: 0 15px 35px rgba(93, 135, 150, 0.35);
+  box-shadow: 0 15px 35px rgba(30, 35, 46, 0.35);
   z-index: 100001;
   font-size: 15px;
   font-weight: 600;
