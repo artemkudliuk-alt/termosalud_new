@@ -139,74 +139,27 @@ function cleanHtml(raw, pageName) {
         <!-- Dynamic 70/30 Split Hero Container -->
         <div class="split-hero-container" id="split-devices-hero">
           
-          <!-- ================= ЛІВА СТОРОНА: Linfopress Evolution PRO ================= -->
+          <!-- ================= ЛІВА СТОРОНА (30% за замовчуванням): Zionic MARP System ================= -->
           <div
-            class="split-panel split-panel-left is-expanded"
-            data-device="linfopress"
-          >
-            <!-- Фонове медіа (Відео / Фото-заглушка) -->
-            <div class="split-bg-media">
-              <video autoplay loop muted playsinline class="split-video" preload="auto">
-                <source src="/2screen.mp4" type="video/mp4">
-              </video>
-              <img
-                src="/wp-content/uploads/2026/03/linfopress-optimized.png"
-                alt="Linfopress Evolution PRO"
-                class="split-img-fallback"
-              />
-            </div>
-
-            <!-- Затемнення фону -->
-            <div class="split-overlay"></div>
-
-            <!-- Контент лівої сторони -->
-            <div class="split-content">
-              <div class="split-badge-row">
-                <span class="split-badge badge-linfo">✦ ПРЕСОТЕРАПІЯ 4-ГО ПОКОЛІННЯ</span>
-                <span class="split-tag">24 СЕКТОРИ</span>
-              </div>
-              
-              <h3 class="split-title">Linfopress <span>EVOLUTION PRO</span></h3>
-              
-              <ul class="split-bullets">
-                <li><span class="split-check">✓</span> 24 незалежні сектори послідовного тиску</li>
-                <li><span class="split-check">✓</span> Медична сертифікація безпеки CE Medical</li>
-                <li><span class="split-check">✓</span> Високий попит та щоденний прибуток</li>
-              </ul>
-
-              <div class="split-btn-group">
-                <a href="/linfopress/" class="split-btn split-btn-primary">
-                  <span>Дізнатись більше</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </a>
-                <button class="split-btn split-btn-secondary header-btn" data-target="#popup_request">
-                  Тест-драйв
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- ================= ПРАВА СТОРОНА: Zionic MARP System ================= -->
-          <div
-            class="split-panel split-panel-right is-collapsed"
+            class="split-panel split-panel-left is-collapsed"
             data-device="zionic"
           >
-            <!-- Фонове медіа (Відео / Фото-заглушка) -->
+            <!-- Фонове медіа (Відео + Фото) -->
             <div class="split-bg-media">
               <video autoplay loop muted playsinline class="split-video" preload="auto">
-                <source src="/2screen.mp4" type="video/mp4">
+                <source src="/zionic.mp4" type="video/mp4">
               </video>
               <img
-                src="/wp-content/uploads/2026/03/zionic-optimized.png"
+                src="/photo_zionic.png"
                 alt="Zionic MARP System"
                 class="split-img-fallback"
               />
             </div>
 
-            <!-- Затемнення фону -->
+            <!-- Легке затемнення фону (~2-5%) -->
             <div class="split-overlay"></div>
 
-            <!-- Контент правої сторони -->
+            <!-- Контент лівої сторони (Zionic) -->
             <div class="split-content">
               <div class="split-badge-row">
                 <span class="split-badge badge-zionic">✦ MARP + RF TECHNOLOGY</span>
@@ -222,17 +175,61 @@ function cleanHtml(raw, pageName) {
               </ul>
 
               <div class="split-btn-group">
-                <a href="/zionic/" class="split-btn split-btn-primary">
-                  <span>Дізнатись більше</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                <a href="/zionic/" class="split-btn split-btn-ghost">
+                  ДІЗНАТИСЬ БІЛЬШЕ
                 </a>
-                <button class="split-btn split-btn-secondary header-btn" data-target="#popup_request">
-                  Тест-драйв
+                <button class="split-btn split-btn-ghost-muted header-btn" data-target="#popup_request">
+                  ТЕСТ-ДРАЙВ
                 </button>
               </div>
             </div>
           </div>
 
+          <!-- ================= ПРАВА СТОРОНА (70% за замовчуванням): Linfopress Evolution PRO ================= -->
+          <div
+            class="split-panel split-panel-right is-expanded"
+            data-device="linfopress"
+          >
+            <!-- Фонове медіа (Відео + Фото) -->
+            <div class="split-bg-media">
+              <video autoplay loop muted playsinline class="split-video" preload="auto">
+                <source src="/limfo.mp4" type="video/mp4">
+              </video>
+              <img
+                src="/photo_limfo.png"
+                alt="Linfopress Evolution PRO"
+                class="split-img-fallback"
+              />
+            </div>
+
+            <!-- Легке затемнення фону (~2-5%) -->
+            <div class="split-overlay"></div>
+
+            <!-- Контент правої сторони (Linfopress) -->
+            <div class="split-content">
+              <div class="split-badge-row">
+                <span class="split-badge badge-linfo">✦ ПРЕСОТЕРАПІЯ 4-ГО ПОКОЛІННЯ</span>
+                <span class="split-tag">24 СЕКТОРИ</span>
+              </div>
+              
+              <h3 class="split-title">Linfopress <span>EVOLUTION PRO</span></h3>
+              
+              <ul class="split-bullets">
+                <li><span class="split-check">✓</span> 24 незалежні сектори послідовного тиску</li>
+                <li><span class="split-check">✓</span> Медична сертифікація безпеки CE Medical</li>
+                <li><span class="split-check">✓</span> Високий попит та щоденний прибуток</li>
+              </ul>
+
+              <div class="split-btn-group">
+                <a href="/linfopress/" class="split-btn split-btn-ghost">
+                  ДІЗНАТИСЬ БІЛЬШЕ
+                </a>
+                <button class="split-btn split-btn-ghost-muted header-btn" data-target="#popup_request">
+                  ТЕСТ-ДРАЙВ
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     `;
