@@ -789,7 +789,7 @@ header .logo:hover img {
 /* 70% активна сторона / 30% неактивна */
 .split-panel.is-expanded {
   flex: 7 !important; /* 70% ширини */
-  align-items: flex-start !important;
+  align-items: flex-end !important; /* Опущено вниз */
 }
 
 .split-panel.is-collapsed {
@@ -958,16 +958,18 @@ header .logo:hover img {
   box-shadow: 0 28px 60px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.35) !important;
 }
 
-/* Ліва сторона 70%: притиснута впритул до лівого краю (margin-left: 0) */
+/* Ліва сторона 70%: внизу ліворуч з рівним охайним відступом 24px */
 .split-panel-left.is-expanded .split-content {
-  margin: 24px auto 0 0 !important;
-  border-left: none !important;
+  margin: auto auto 24px 24px !important;
+  border: 1px solid rgba(160, 185, 200, 0.3) !important;
+  border-top: 1px solid rgba(190, 215, 228, 0.5) !important;
 }
 
-/* Права сторона 70%: притиснута впритул до правого краю (margin-right: 0) */
+/* Права сторона 70%: внизу праворуч з рівним охайним відступом 24px */
 .split-panel-right.is-expanded .split-content {
-  margin: 24px 0 0 auto !important;
-  border-right: none !important;
+  margin: auto 24px 24px auto !important;
+  border: 1px solid rgba(160, 185, 200, 0.3) !important;
+  border-top: 1px solid rgba(190, 215, 228, 0.5) !important;
 }
 
 .split-panel.is-expanded .split-title {
@@ -1017,7 +1019,7 @@ header .logo:hover img {
 
 /* Ліва сторона 30% (Zionic): внизу праворуч з охайним відступом 44px від низу */
 .split-panel-left.is-collapsed .split-content {
-  margin: auto 24px 44px auto !important;
+  margin: auto 24px 24px auto !important;
   align-items: flex-end !important;
   text-align: right !important;
 }
@@ -1032,7 +1034,7 @@ header .logo:hover img {
 
 /* Права сторона 30% (Linfopress): внизу ліворуч з охайним відступом 44px від низу */
 .split-panel-right.is-collapsed .split-content {
-  margin: auto auto 44px 24px !important;
+  margin: auto auto 24px 24px !important;
   align-items: flex-start !important;
   text-align: left !important;
 }
