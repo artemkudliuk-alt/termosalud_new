@@ -546,7 +546,7 @@ function cleanHtml(raw, pageName) {
         <!-- Full Living Banner Stage Container (Uncropped Photo + Clean Form) -->
         <div class="fullwidth-living-banner">
           <img
-            src="/photo_form.png"
+            src="/photo_form.png?v=1787583676177"
             class="living-banner-bg-img"
             alt="Termosalud Test Drive Presentation"
           />
