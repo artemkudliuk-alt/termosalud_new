@@ -2167,8 +2167,16 @@ header .logo:hover img {
   }
 }
 
+/* Lock background scrolling when modal is open */
+html.modal-open-lock,
+body.modal-open-lock {
+  overflow: hidden !important;
+  height: 100% !important;
+  touch-action: none !important;
+}
+
 /* =======================================================
-   STATE-OF-THE-ART SPANISH LIQUID GLASS POP-UP MODAL (1-Screen Fit, No Scrollbars)
+   STATE-OF-THE-ART SPANISH LIQUID GLASS POP-UP MODAL
    ======================================================= */
 .glass-popup-modal,
 .popup.glass-popup-modal {
@@ -2190,7 +2198,10 @@ header .logo:hover img {
   box-sizing: border-box !important;
   border-radius: 0px !important;
   background: transparent !important;
-  overflow: hidden !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  overscroll-behavior: contain !important;
+  touch-action: pan-y !important;
   transition: opacity 0.25s ease, visibility 0.25s ease !important;
 }
 
@@ -2219,7 +2230,7 @@ header .logo:hover img {
   padding: 0 !important;
   cursor: pointer !important;
   z-index: 1 !important;
-  overflow: hidden !important;
+  overscroll-behavior: contain !important;
   animation: modalFadeIn 0.3s ease !important;
 }
 
@@ -2232,25 +2243,33 @@ header .logo:hover img {
   position: relative !important;
   z-index: 5 !important;
   width: 100% !important;
-  max-width: 550px !important;
+  max-width: 540px !important;
+  margin: auto !important;
   max-height: calc(100vh - 24px) !important;
-  overflow: hidden !important;
-  overflow-y: hidden !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  overscroll-behavior: contain !important;
+  touch-action: pan-y !important;
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
   border-radius: 0px !important;
   padding: 20px 24px 16px 24px !important;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35) !important;
   box-sizing: border-box !important;
-  scrollbar-width: none !important;
-  -ms-overflow-style: none !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: #cbd5e1 transparent !important;
   animation: modalGlassReveal 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 .glass-modal-card::-webkit-scrollbar {
-  display: none !important;
-  width: 0 !important;
-  height: 0 !important;
+  width: 4px !important;
+}
+.glass-modal-card::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+.glass-modal-card::-webkit-scrollbar-thumb {
+  background: #cbd5e1 !important;
+  border-radius: 4px !important;
 }
 
 @keyframes modalGlassReveal {
@@ -2605,20 +2624,77 @@ header .logo:hover img {
 
 @media (max-width: 520px) {
   .glass-modal-card {
-    padding: 28px 20px !important;
+    padding: 16px 14px 14px 14px !important;
+    max-height: calc(100vh - 20px) !important;
+  }
+  .glass-modal-header {
+    margin-bottom: 6px !important;
+    padding-right: 28px !important;
+  }
+  .glass-modal-title {
+    font-size: 17px !important;
+    line-height: 1.15 !important;
+  }
+  .glass-modal-subtitle {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+  }
+  .glass-modal-form {
+    gap: 5px !important;
+  }
+  .glass-modal-card .format-switcher-wrap {
+    margin-bottom: 5px !important;
+  }
+  .glass-modal-card .format-tab-btn {
+    padding: 4.5px 6px !important;
+    font-size: 10.5px !important;
+  }
+  .glass-modal-card .device-selector-wrap {
+    margin-bottom: 5px !important;
+  }
+  .glass-modal-card .device-pills-row {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 3px !important;
+  }
+  .glass-modal-card .device-pill {
+    padding: 4px 3px !important;
+    font-size: 10px !important;
+    flex: 1 1 0 !important;
+  }
+  .glass-modal-card .form-group-item {
+    gap: 1.5px !important;
+  }
+  .glass-modal-card .luxury-form-input {
+    height: 34px !important;
+    font-size: 12px !important;
+  }
+  .glass-modal-card .form-row-2col {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 5px !important;
+  }
+  .glass-modal-card .messenger-pill {
+    padding: 4px 4px !important;
+    font-size: 10px !important;
+  }
+  .glass-modal-card .modal-submit-btn {
+    height: 38px !important;
+    font-size: 10.5px !important;
+    margin-top: 2px !important;
+  }
+  .glass-modal-card .form-trust-bullets {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    gap: 2px !important;
+    margin-top: 3px !important;
+  }
+  .glass-modal-card .trust-bullet-item {
+    font-size: 8.5px !important;
   }
   .glass-cta-hero-card {
-    padding: 28px 20px !important;
-  }
-  .form-row-2col {
-    grid-template-columns: 1fr !important;
-  }
-  .device-pills-row {
-    flex-direction: column !important;
-  }
-  .form-trust-bullets {
-    flex-direction: column !important;
-    align-items: flex-start !important;
+    padding: 24px 16px !important;
   }
 }
 /* =======================================================
@@ -3768,42 +3844,42 @@ footer {
 
 
 
-  .format-tab-btn {
+  .application-presentation .format-tab-btn {
     font-size: 11px !important;
     padding: 6px 8px !important;
   }
 
-  .device-pills-row {
+  .application-presentation .device-pills-row {
     flex-direction: column !important;
     gap: 5px !important;
   }
 
-  .device-pill {
+  .application-presentation .device-pill {
     padding: 8px !important;
     font-size: 12px !important;
   }
 
-  .form-row-2col {
+  .application-presentation .form-row-2col {
     grid-template-columns: 1fr !important;
     gap: 8px !important;
   }
 
-  .luxury-form-input {
+  .application-presentation .luxury-form-input {
     height: 46px !important;
     font-size: 14px !important;
   }
 
-  .messenger-pill {
+  .application-presentation .messenger-pill {
     padding: 8px 6px !important;
     font-size: 11.5px !important;
   }
 
-  .shimmer-submit-btn {
+  .application-presentation .shimmer-submit-btn {
     height: 48px !important;
     font-size: 12px !important;
   }
 
-  .form-trust-bullets {
+  .application-presentation .form-trust-bullets {
     flex-direction: column !important;
     align-items: flex-start !important;
     gap: 4px !important;

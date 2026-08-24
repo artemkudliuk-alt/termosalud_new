@@ -108,13 +108,15 @@ function initPopupModals() {
 function openPopup(popup) {
   popup.classList.add('is-active', 'show');
   popup.style.display = 'flex';
-  document.body.style.overflow = 'hidden';
+  document.documentElement.classList.add('modal-open-lock');
+  document.body.classList.add('modal-open-lock');
 }
 
 function closePopup(popup) {
   popup.classList.remove('is-active', 'show');
   popup.style.display = 'none';
-  document.body.style.overflow = '';
+  document.documentElement.classList.remove('modal-open-lock');
+  document.body.classList.remove('modal-open-lock');
 }
 
 /**
