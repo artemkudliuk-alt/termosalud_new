@@ -586,6 +586,14 @@ function initBentoAccordion() {
   if (!bentoGrid) return;
 
   const cards = bentoGrid.querySelectorAll('.bento-card');
+  if (cards.length === 0) return;
+
+  // Guarantee first card (01 / Фінансова вигода) is open by default on page load
+  const hasOpenCard = Array.from(cards).some((c) => c.classList.contains('is-open'));
+  if (!hasOpenCard && cards[0]) {
+    cards[0].classList.add('is-open');
+  }
+
   cards.forEach((card) => {
     const toggle = card.querySelector('.bento-accordion-toggle');
     if (!toggle) return;
