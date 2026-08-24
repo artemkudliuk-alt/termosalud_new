@@ -1095,10 +1095,17 @@ function cleanHtml(raw, pageName) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Onest:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/css/custom.css">
+  <link rel="stylesheet" href="/src/css/custom.css?v=${Date.now()}">
+  <style>
+    .split-title, .split-title *, .split-panel .split-title, .split-panel h3, .split-content .split-title, .split-content h3 {
+      color: #f1f5f9 !important;
+      text-shadow: 0 2px 14px rgba(0, 0, 0, 0.85) !important;
+    }
+    .split-title span {
+      color: #cbd5e1 !important;
+    }
+  </style>
 `;
-
-  const typographyStudioHtml = "";
 
   const footerInject = `
   <script type="module" src="/src/js/main.js"></script>
@@ -1115,6 +1122,7 @@ function cleanHtml(raw, pageName) {
 
   return html;
 }
+
 
 for (const p of pages) {
   const rawFile = path.join(rootDir, 'docs/research/raw_html', `${p.name}.html`);

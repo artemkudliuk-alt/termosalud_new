@@ -975,9 +975,9 @@ header .logo:hover img {
   font-weight: 700 !important;
   line-height: 1.15 !important;
   margin-bottom: 12px !important;
-  color: #ffffff !important;
+  color: #f1f5f9 !important;
   letter-spacing: -0.5px !important;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35) !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.75) !important;
 }
 
 .split-panel.is-expanded .split-title span {
@@ -1034,9 +1034,9 @@ header .logo:hover img {
   font-weight: 700 !important;
   line-height: 1.15 !important;
   margin-bottom: 12px !important;
-  color: #ffffff !important;
+  color: #f1f5f9 !important;
   letter-spacing: -0.5px !important;
-  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.85) !important;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.9) !important;
 }
 
 /* Права сторона 30% (Linfopress): внизу ліворуч з охайним відступом 44px від низу */
@@ -1056,9 +1056,9 @@ header .logo:hover img {
   font-weight: 700 !important;
   line-height: 1.15 !important;
   margin-bottom: 12px !important;
-  color: #ffffff !important;
+  color: #f1f5f9 !important;
   letter-spacing: -0.5px !important;
-  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.85) !important;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.9) !important;
 }
 
 /* Заголовок на 30%: В 2 РАЗИ БІЛЬШИЙ, В ДВА РЯДКИ */
@@ -1068,9 +1068,9 @@ header .logo:hover img {
   font-weight: 700 !important;
   line-height: 1.15 !important;
   margin-bottom: 12px !important;
-  color: #ffffff !important;
+  color: #f1f5f9 !important;
   letter-spacing: -0.5px !important;
-  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.85) !important;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.9) !important;
 }
 
 .split-panel.is-collapsed .split-title span {
@@ -3081,3 +3081,20 @@ footer {
 /* =======================================================
    UNIVERSAL PER-SCREEN HEADING TYPOGRAPHY CASCADE
    ======================================================= */
+
+
+/* Global Screen 2 Light Silver-White Title Enforcement */
+.split-title,
+.split-title *,
+.split-panel .split-title,
+.split-panel h3,
+.split-content .split-title,
+.split-content h3 {
+  color: #f1f5f9 !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.75) !important;
+}
+
+.split-title span {
+  color: #cbd5e1 !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.75) !important;
+}
