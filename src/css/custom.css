@@ -2076,47 +2076,309 @@ header .logo:hover img {
   box-sizing: border-box !important;
 }
 
-.banner-form-overlay-wrap {
+.banner-cta-floating-wrap {
   width: 100% !important;
   max-width: 480px !important;
   margin: 0 !important;
   box-sizing: border-box !important;
 }
 
-/* Seamless Minimalist Form */
-.pastel-concierge-card {
-  background: transparent !important;
-  border: none !important;
-  padding: 0 !important;
-  box-shadow: none !important;
+/* =======================================================
+   SCREEN 4: ATTENTION-GRABBING GLASS CTA CARD (White Space on Photo)
+   ======================================================= */
+.glass-cta-hero-card {
+  position: relative !important;
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.95) !important;
+  border-radius: 0px !important;
+  padding: 38px 34px !important;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.12),
+              inset 0 1px 0 rgba(255, 255, 255, 1) !important;
+  overflow: hidden !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 
-.form-header-meta {
+.glass-cta-hero-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.18),
+              inset 0 1px 0 rgba(255, 255, 255, 1) !important;
+}
+
+.glass-card-shimmer {
+  position: absolute !important;
+  top: 0 !important;
+  left: -150% !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  ) !important;
+  transform: skewX(-20deg) !important;
+  animation: glassCardShimmerSweep 5s ease-in-out infinite !important;
+  pointer-events: none !important;
+}
+
+@keyframes glassCardShimmerSweep {
+  0% { left: -150%; opacity: 0; }
+  20% { left: 150%; opacity: 1; }
+  100% { left: 150%; opacity: 0; }
+}
+
+.glass-card-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+  font-size: 10.5px !important;
+  font-weight: 800 !important;
+  color: #475569 !important;
+  letter-spacing: 1.5px !important;
+  text-transform: uppercase !important;
   margin-bottom: 12px !important;
-  border-bottom: none !important;
-  padding-bottom: 4px !important;
 }
 
-.meta-tag {
-  display: inline-block !important;
+.pulse-spark {
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 50% !important;
+  background: #10b981 !important;
+  box-shadow: 0 0 8px #10b981 !important;
+  animation: liveSparkPulse 2s infinite !important;
+}
+
+@keyframes liveSparkPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.6; }
+}
+
+.glass-card-title {
+  font-family: var(--active-heading-font) !important;
+  font-size: clamp(22px, 2.2vw, 28px) !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+  margin: 0 0 10px 0 !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.3px !important;
+}
+
+.glass-card-desc {
+  font-size: 14.5px !important;
+  color: #475569 !important;
+  line-height: 1.6 !important;
+  margin: 0 0 20px 0 !important;
+}
+
+.glass-card-points {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  margin-bottom: 24px !important;
+}
+
+.point-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  color: #334155 !important;
+}
+
+.point-check {
+  color: #059669 !important;
+  font-weight: 900 !important;
+  font-size: 13px !important;
+}
+
+/* Attention-Grabbing Animated Living Stage Button */
+.living-stage-glass-btn {
+  position: relative !important;
+  width: 100% !important;
+  height: 52px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  background: #1e232e !important;
+  color: #ffffff !important;
+  border: 1px solid #1e232e !important;
+  border-radius: 0px !important;
+  font-family: inherit !important;
+  font-size: 12.5px !important;
+  font-weight: 900 !important;
+  letter-spacing: 1.2px !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  box-sizing: border-box !important;
+  transition: all 0.25s ease !important;
+}
+
+.living-stage-glass-btn.pulse-attention {
+  animation: pulseAttentionGlow 2.5s infinite !important;
+}
+
+@keyframes pulseAttentionGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(30, 35, 46, 0.5), 0 8px 24px rgba(30, 35, 46, 0.25);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(30, 35, 46, 0), 0 8px 24px rgba(30, 35, 46, 0.25);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(30, 35, 46, 0), 0 8px 24px rgba(30, 35, 46, 0.25);
+  }
+}
+
+.living-stage-glass-btn:hover {
+  background: #000000 !important;
+  border-color: #000000 !important;
+  transform: translateY(-2px) scale(1.01) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4) !important;
+}
+
+.living-stage-glass-btn:hover .btn-arrow {
+  transform: translateX(4px) !important;
+}
+
+/* =======================================================
+   STATE-OF-THE-ART SPANISH LIQUID GLASS POP-UP MODAL
+   ======================================================= */
+.glass-popup-modal {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 100000 !important;
+  display: none !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
+  box-sizing: border-box !important;
+}
+
+.glass-popup-modal.is-active,
+.glass-popup-modal.show {
+  display: flex !important;
+}
+
+.glass-modal-backdrop {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(14, 18, 25, 0.78) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  cursor: pointer !important;
+  animation: modalFadeIn 0.3s ease !important;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.glass-modal-card {
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
+  max-width: 580px !important;
+  max-height: 90vh !important;
+  overflow-y: auto !important;
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.95) !important;
+  border-radius: 0px !important;
+  padding: 36px 32px !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35) !important;
+  box-sizing: border-box !important;
+  animation: modalGlassReveal 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+@keyframes modalGlassReveal {
+  from {
+    transform: scale(0.92) translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.glass-modal-close {
+  position: absolute !important;
+  top: 18px !important;
+  right: 18px !important;
+  width: 36px !important;
+  height: 36px !important;
+  background: #f1f5f9 !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 0px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  color: #0f172a !important;
+  z-index: 10 !important;
+  padding: 0 !important;
+}
+
+.glass-modal-close:hover {
+  background: #0f172a !important;
+  border-color: #0f172a !important;
+  color: #ffffff !important;
+  transform: rotate(90deg) !important;
+}
+
+.glass-modal-header {
+  margin-bottom: 16px !important;
+  padding-right: 36px !important;
+}
+
+.glass-modal-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
   font-size: 10px !important;
   font-weight: 800 !important;
   color: #475569 !important;
   letter-spacing: 1.5px !important;
   text-transform: uppercase !important;
-  margin-bottom: 2px !important;
+  margin-bottom: 4px !important;
 }
 
-.form-title {
+.glass-modal-title {
   font-family: var(--active-heading-font) !important;
-  font-size: 20px !important;
+  font-size: 22px !important;
   font-weight: 800 !important;
   color: #0f172a !important;
-  margin: 0 !important;
+  margin: 0 0 6px 0 !important;
   line-height: 1.25 !important;
 }
 
-/* Format Switcher */
+.glass-modal-subtitle {
+  font-size: 13px !important;
+  color: #64748b !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
+}
+
+.glass-modal-form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+/* Modal Format Switcher & Pills */
 .format-switcher-wrap {
   margin-bottom: 12px !important;
 }
@@ -2162,7 +2424,6 @@ header .logo:hover img {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06) !important;
 }
 
-/* Device Selector */
 .device-selector-wrap {
   margin-bottom: 12px !important;
 }
@@ -2213,12 +2474,6 @@ header .logo:hover img {
   color: #0f172a !important;
 }
 
-.presentation-clean-form {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 10px !important;
-}
-
 .form-group-item {
   display: flex !important;
   flex-direction: column !important;
@@ -2252,7 +2507,7 @@ header .logo:hover img {
 
 .luxury-form-input {
   width: 100% !important;
-  height: 40px !important;
+  height: 42px !important;
   background: #ffffff !important;
   border: 1px solid #cbd5e1 !important;
   border-radius: 0px !important;
@@ -2330,10 +2585,11 @@ header .logo:hover img {
   gap: 10px !important;
 }
 
+.modal-submit-btn,
 .shimmer-submit-btn {
   position: relative !important;
   width: 100% !important;
-  height: 44px !important;
+  height: 48px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -2349,13 +2605,14 @@ header .logo:hover img {
   text-transform: uppercase !important;
   cursor: pointer !important;
   overflow: hidden !important;
-  margin-top: 2px !important;
+  margin-top: 4px !important;
   box-shadow: 0 6px 16px rgba(30, 35, 46, 0.18) !important;
   transition: all 0.3s ease !important;
 }
 
+.modal-submit-btn:hover,
 .shimmer-submit-btn:hover {
-  background: #1e232e !important;
+  background: #000000 !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 10px 22px rgba(30, 35, 46, 0.3) !important;
 }
@@ -2364,11 +2621,11 @@ header .logo:hover img {
   transition: transform 0.25s ease !important;
 }
 
+.modal-submit-btn:hover .btn-arrow,
 .shimmer-submit-btn:hover .btn-arrow {
   transform: translateX(4px) !important;
 }
 
-/* Trust Highlights under Form */
 .form-trust-bullets {
   display: flex !important;
   justify-content: space-between !important;
@@ -2411,13 +2668,19 @@ header .logo:hover img {
     padding: 24px 20px !important;
     min-height: auto !important;
   }
-  .banner-form-overlay-wrap {
+  .banner-cta-floating-wrap {
     max-width: 540px !important;
     margin: 0 !important;
   }
 }
 
 @media (max-width: 520px) {
+  .glass-modal-card {
+    padding: 28px 20px !important;
+  }
+  .glass-cta-hero-card {
+    padding: 28px 20px !important;
+  }
   .form-row-2col {
     grid-template-columns: 1fr !important;
   }

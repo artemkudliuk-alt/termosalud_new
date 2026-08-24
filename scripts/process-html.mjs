@@ -683,7 +683,7 @@ function cleanHtml(raw, pageName) {
       </section>
     `;
 
-    // Modern Screen 4: Full-Width 21:9 Living Banner Stage (Background Image covers full width | Form overlaid on the right)
+    // Modern Screen 4: Full-Width 21:9 Living Banner Stage (Uncropped Photo + Animated Glass CTA Card on the Right)
     const modernPresentationSection = `
       <!-- Screen 4: Full Uncropped Living Stage Presentation & Test-Drive -->
       <section class="application-presentation" id="presentation-section">
@@ -697,7 +697,7 @@ function cleanHtml(raw, pageName) {
           </div>
         </div>
 
-        <!-- Full Living Banner Stage Container (Uncropped Photo + Clean Form) -->
+        <!-- Full Living Banner Stage Container (Uncropped Photo + Attention-Grabbing Glass CTA on the Right) -->
         <div class="fullwidth-living-banner">
           <img
             src="/photo_form.png?v=1787583676177"
@@ -706,127 +706,44 @@ function cleanHtml(raw, pageName) {
           />
           
           <div class="living-banner-content-container">
-            <div class="banner-form-overlay-wrap">
-              <div class="pastel-concierge-card">
+            <div class="banner-cta-floating-wrap" data-aos="fade-left" data-aos-delay="100">
+              <div class="glass-cta-hero-card">
+                <div class="glass-card-shimmer"></div>
                 
-                <div class="form-header-meta">
-                  <span class="meta-tag">ЕКСКЛЮЗИВ ДЛЯ КЛІНІК</span>
-                  <h3 class="form-title">Заявка на виїзний тест-драйв</h3>
+                <div class="glass-card-badge">
+                  <span class="pulse-spark"></span>
+                  <span>ЕКСКЛЮЗИВ ДЛЯ КЛІНІК</span>
                 </div>
 
-                <!-- Format Switcher: Clinic vs Showroom -->
-                <div class="format-switcher-wrap">
-                  <span class="format-label">Формат презентації:</span>
-                  <div class="format-switcher">
-                    <button type="button" class="format-tab-btn active" data-format="clinic">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg>
-                      <span>У вашій клініці (Виїзд)</span>
-                    </button>
-                    <button type="button" class="format-tab-btn" data-format="showroom">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></svg>
-                      <span>Шоурум (Київ)</span>
-                    </button>
+                <h3 class="glass-card-title">Виїзний тест-драйв у вашій клініці</h3>
+                <p class="glass-card-desc">
+                  Доставимо інноваційне обладнання <strong>Zionic</strong> або <strong>Linfopress</strong> безкоштовно та проведемо показові процедури на ваших пацієнтах.
+                </p>
+
+                <!-- Key Benefits Points -->
+                <div class="glass-card-points">
+                  <div class="point-item">
+                    <span class="point-check">✓</span>
+                    <span>0 ₴ за виїзд та доставку</span>
                   </div>
-                </div>
-
-                <!-- Device Selector Pills -->
-                <div class="device-selector-wrap">
-                  <span class="format-label">Оберіть обладнання для тесту:</span>
-                  <div class="device-pills-row">
-                    <label class="device-pill active">
-                      <input type="radio" name="target_device" value="Zionic" checked class="device-radio">
-                      <span class="device-pill-dot dot-cyan"></span>
-                      <span>Zionic (MARP + RF)</span>
-                    </label>
-                    <label class="device-pill">
-                      <input type="radio" name="target_device" value="Linfopress" class="device-radio">
-                      <span class="device-pill-dot dot-emerald"></span>
-                      <span>Linfopress Pro</span>
-                    </label>
-                    <label class="device-pill">
-                      <input type="radio" name="target_device" value="Both" class="device-radio">
-                      <span class="device-pill-dot dot-gold"></span>
-                      <span>Обидва апарати</span>
-                    </label>
+                  <div class="point-item">
+                    <span class="point-check">✓</span>
+                    <span>Тестування на пацієнтах клініки</span>
+                  </div>
+                  <div class="point-item">
+                    <span class="point-check">✓</span>
+                    <span>Без жодних зобов'язань покупки</span>
                   </div>
                 </div>
 
-                <!-- Main Booking Form -->
-                <form class="presentation-clean-form" onsubmit="event.preventDefault(); document.querySelector('.form-success-toast')?.classList.add('show'); setTimeout(() => document.querySelector('.form-success-toast')?.classList.remove('show'), 4000);">
-                  
-                  <div class="form-group-item">
-                    <label class="form-label-text" for="pres_name">Ваше ім'я та посада</label>
-                    <div class="input-with-icon">
-                      <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="7.5" r="4.5" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></circle><path d="M4.5 20C4.5 16 8 14 12 14C16 14 19.5 16 19.5 20" stroke-width="1.8" stroke-linecap="round"></path></svg>
-                      <input type="text" id="pres_name" placeholder="Наприклад: Наталія, головний лікар" required class="luxury-form-input">
-                    </div>
-                  </div>
-
-                  <div class="form-row-2col">
-                    <div class="form-group-item">
-                      <label class="form-label-text" for="pres_phone">Телефон</label>
-                      <div class="input-with-icon">
-                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="6" y="2" width="12" height="20" rx="3" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></rect><circle cx="12" cy="18" r="1" fill="currentColor"></circle><path d="M10 5H14" stroke-width="1.5" stroke-linecap="round"></path></svg>
-                        <input type="tel" id="pres_phone" placeholder="+380" required class="luxury-form-input">
-                      </div>
-                    </div>
-
-                    <div class="form-group-item">
-                      <label class="form-label-text" for="pres_city">Місто / Назва клініки</label>
-                      <div class="input-with-icon">
-                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 21.5C12 21.5 19 14.5 19 9.5C19 5.5 16 2.5 12 2.5C8 2.5 5 5.5 5 9.5C5 14.5 12 21.5 12 21.5Z" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></path><circle cx="12" cy="9.5" r="2.5" stroke-width="1.6" fill="currentColor"></circle></svg>
-                        <input type="text" id="pres_city" placeholder="Київ / Назва клініки" required class="luxury-form-input">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-group-item">
-                    <label class="form-label-text">Зручний месенджер для підтвердження</label>
-                    <div class="messenger-pills-row">
-                      <label class="messenger-pill active">
-                        <input type="radio" name="messenger" value="Whatsapp" checked class="messenger-radio">
-                        <span class="pill-dot dot-green"></span>
-                        <span>WhatsApp</span>
-                      </label>
-                      <label class="messenger-pill">
-                        <input type="radio" name="messenger" value="Viber" class="messenger-radio">
-                        <span class="pill-dot dot-purple"></span>
-                        <span>Viber</span>
-                      </label>
-                      <label class="messenger-pill">
-                        <input type="radio" name="messenger" value="Telegram" class="messenger-radio">
-                        <span class="pill-dot dot-blue"></span>
-                        <span>Telegram</span>
-                      </label>
-                    </div>
-                  </div>
-
-                  <button type="submit" class="shimmer-submit-btn">
-                    <span class="btn-text">ЗАБРОНЮВАТИ ВИЇЗНИЙ ТЕСТ-ДРАЙВ</span>
-                    <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                  </button>
-
-                  <!-- Trust Highlights under CTA -->
-                  <div class="form-trust-bullets">
-                    <div class="trust-bullet-item">
-                      <span class="bullet-check">✓</span>
-                      <span>0 ₴ за виїзд та доставку</span>
-                    </div>
-                    <div class="trust-bullet-item">
-                      <span class="bullet-check">✓</span>
-                      <span>Тест на ваших пацієнтах</span>
-                    </div>
-                    <div class="trust-bullet-item">
-                      <span class="bullet-check">✓</span>
-                      <span>Сертифікат для персоналу</span>
-                    </div>
-                  </div>
-                </form>
-
+                <!-- Animated Interactive CTA Trigger Button -->
+                <button type="button" class="living-stage-glass-btn pulse-attention" data-target="#popup_request">
+                  <span class="btn-text">ЗАМОВИТИ ТЕСТ-ДРАЙВ</span>
+                  <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
               </div>
             </div>
           </div>
-
         </div>
       </section>
     `;
@@ -1249,7 +1166,141 @@ function cleanHtml(raw, pageName) {
     </button>
   `;
 
-  html = html.replace(/<footer[\s\S]*?<\/footer>/i, modernCompactFooter);
+  // State-Of-The-Art Spanish Liquid Glass Pop-Up Modal (Universal for all pages)
+  const modernGlassPopupModal = `
+    <!-- State-Of-The-Art Spanish Liquid Glass Pop-Up Modal -->
+    <div id="popup_request" class="popup glass-popup-modal" role="dialog" aria-modal="true" aria-labelledby="glassModalTitle">
+      <div class="glass-modal-backdrop popup_close"></div>
+      <div class="glass-modal-card">
+        <button type="button" class="glass-modal-close popup_close" aria-label="Закрити">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+
+        <div class="glass-modal-header">
+          <div class="glass-modal-badge">
+            <span class="pulse-spark"></span>
+            <span>ЕКСКЛЮЗИВ ДЛЯ КЛІНІК</span>
+          </div>
+          <h3 id="glassModalTitle" class="glass-modal-title">Заявка на виїзний тест-драйв</h3>
+          <p class="glass-modal-subtitle">
+            Протестуйте преміальне обладнання Termosalud безпосередньо у вашій клініці або в нашому демонстраційному центрі в Києві
+          </p>
+        </div>
+
+        <!-- Format Switcher: Clinic vs Showroom -->
+        <div class="format-switcher-wrap">
+          <span class="format-label">Формат тестування:</span>
+          <div class="format-switcher">
+            <button type="button" class="format-tab-btn active" data-format="clinic">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg>
+              <span>У вашій клініці (Виїзд)</span>
+            </button>
+            <button type="button" class="format-tab-btn" data-format="showroom">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></svg>
+              <span>Шоурум (Київ)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Device Selector Pills -->
+        <div class="device-selector-wrap">
+          <span class="format-label">Оберіть апарат для тесту:</span>
+          <div class="device-pills-row">
+            <label class="device-pill active">
+              <input type="radio" name="modal_device" value="Zionic" checked class="device-radio">
+              <span class="device-pill-dot dot-cyan"></span>
+              <span>Zionic (MARP + RF)</span>
+            </label>
+            <label class="device-pill">
+              <input type="radio" name="modal_device" value="Linfopress" class="device-radio">
+              <span class="device-pill-dot dot-emerald"></span>
+              <span>Linfopress Pro</span>
+            </label>
+            <label class="device-pill">
+              <input type="radio" name="modal_device" value="Both" class="device-radio">
+              <span class="device-pill-dot dot-gold"></span>
+              <span>Обидва апарати</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Main Booking Form -->
+        <form class="glass-modal-form" onsubmit="event.preventDefault(); document.getElementById('popup_request')?.classList.remove('is-active', 'show'); document.querySelector('.form-success-toast')?.classList.add('show'); setTimeout(() => document.querySelector('.form-success-toast')?.classList.remove('show'), 4000);">
+          <div class="form-group-item">
+            <label class="form-label-text" for="modal_name">Ваше ім'я та посада</label>
+            <div class="input-with-icon">
+              <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="7.5" r="4.5" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></circle><path d="M4.5 20C4.5 16 8 14 12 14C16 14 19.5 16 19.5 20" stroke-width="1.8" stroke-linecap="round"></path></svg>
+              <input type="text" id="modal_name" placeholder="Наприклад: Наталія, головний лікар" required class="luxury-form-input">
+            </div>
+          </div>
+
+          <div class="form-row-2col">
+            <div class="form-group-item">
+              <label class="form-label-text" for="modal_phone">Телефон</label>
+              <div class="input-with-icon">
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="6" y="2" width="12" height="20" rx="3" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></rect><circle cx="12" cy="18" r="1" fill="currentColor"></circle><path d="M10 5H14" stroke-width="1.5" stroke-linecap="round"></path></svg>
+                <input type="tel" id="modal_phone" placeholder="+380" required class="luxury-form-input">
+              </div>
+            </div>
+
+            <div class="form-group-item">
+              <label class="form-label-text" for="modal_city">Місто / Назва клініки</label>
+              <div class="input-with-icon">
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 21.5C12 21.5 19 14.5 19 9.5C19 5.5 16 2.5 12 2.5C8 2.5 5 5.5 5 9.5C5 14.5 12 21.5 12 21.5Z" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></path><circle cx="12" cy="9.5" r="2.5" stroke-width="1.6" fill="currentColor"></circle></svg>
+                <input type="text" id="modal_city" placeholder="Київ / Назва клініки" required class="luxury-form-input">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group-item">
+            <label class="form-label-text">Зручний месенджер для підтвердження</label>
+            <div class="messenger-pills-row">
+              <label class="messenger-pill active">
+                <input type="radio" name="modal_messenger" value="Whatsapp" checked class="messenger-radio">
+                <span class="pill-dot dot-green"></span>
+                <span>WhatsApp</span>
+              </label>
+              <label class="messenger-pill">
+                <input type="radio" name="modal_messenger" value="Viber" class="messenger-radio">
+                <span class="pill-dot dot-purple"></span>
+                <span>Viber</span>
+              </label>
+              <label class="messenger-pill">
+                <input type="radio" name="modal_messenger" value="Telegram" class="messenger-radio">
+                <span class="pill-dot dot-blue"></span>
+                <span>Telegram</span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="shimmer-submit-btn modal-submit-btn">
+            <span class="btn-text">ЗАБРОНЮВАТИ ВИЇЗНИЙ ТЕСТ-ДРАЙВ</span>
+            <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+
+          <div class="form-trust-bullets">
+            <div class="trust-bullet-item">
+              <span class="bullet-check">✓</span>
+              <span>0 ₴ за виїзд та доставку</span>
+            </div>
+            <div class="trust-bullet-item">
+              <span class="bullet-check">✓</span>
+              <span>Тест на ваших пацієнтах</span>
+            </div>
+            <div class="trust-bullet-item">
+              <span class="bullet-check">✓</span>
+              <span>Без зобов'язань покупки</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  `;
+
+  // Remove old raw popup if present
+  html = html.replace(/<div[\s\n]+id="?popup_request"?[\s\S]*?<\/div>[\s\n]*<\/div>/i, '');
+
+  html = html.replace(/<footer[\s\S]*?<\/footer>/i, `${modernCompactFooter}\n${modernGlassPopupModal}`);
 
   // Add styles & Google Fonts
   const headInject = `

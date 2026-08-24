@@ -26,7 +26,7 @@ name="msapplication-TileImage" content="/wp-content/uploads/2026/03/favicon-opti
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Onest:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/css/custom.css?v=1787599472531">
+  <link rel="stylesheet" href="/src/css/custom.css?v=1787599644320">
   <style>
     .split-title, .split-title *, .split-panel .split-title, .split-panel h3, .split-content .split-title, .split-content h3 {
       color: #f1f5f9 !important;
@@ -356,39 +356,137 @@ style=display:none;width:0px;height:0px; src="about:blank" name=gform_ajax_frame
         <path d="M18 15l-6-6-6 6"/>
       </svg>
     </button>
+  
+
+    <!-- State-Of-The-Art Spanish Liquid Glass Pop-Up Modal -->
+    <div id="popup_request" class="popup glass-popup-modal" role="dialog" aria-modal="true" aria-labelledby="glassModalTitle">
+      <div class="glass-modal-backdrop popup_close"></div>
+      <div class="glass-modal-card">
+        <button type="button" class="glass-modal-close popup_close" aria-label="Закрити">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+
+        <div class="glass-modal-header">
+          <div class="glass-modal-badge">
+            <span class="pulse-spark"></span>
+            <span>ЕКСКЛЮЗИВ ДЛЯ КЛІНІК</span>
+          </div>
+          <h3 id="glassModalTitle" class="glass-modal-title">Заявка на виїзний тест-драйв</h3>
+          <p class="glass-modal-subtitle">
+            Протестуйте преміальне обладнання Termosalud безпосередньо у вашій клініці або в нашому демонстраційному центрі в Києві
+          </p>
+        </div>
+
+        <!-- Format Switcher: Clinic vs Showroom -->
+        <div class="format-switcher-wrap">
+          <span class="format-label">Формат тестування:</span>
+          <div class="format-switcher">
+            <button type="button" class="format-tab-btn active" data-format="clinic">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg>
+              <span>У вашій клініці (Виїзд)</span>
+            </button>
+            <button type="button" class="format-tab-btn" data-format="showroom">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></svg>
+              <span>Шоурум (Київ)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Device Selector Pills -->
+        <div class="device-selector-wrap">
+          <span class="format-label">Оберіть апарат для тесту:</span>
+          <div class="device-pills-row">
+            <label class="device-pill active">
+              <input type="radio" name="modal_device" value="Zionic" checked class="device-radio">
+              <span class="device-pill-dot dot-cyan"></span>
+              <span>Zionic (MARP + RF)</span>
+            </label>
+            <label class="device-pill">
+              <input type="radio" name="modal_device" value="Linfopress" class="device-radio">
+              <span class="device-pill-dot dot-emerald"></span>
+              <span>Linfopress Pro</span>
+            </label>
+            <label class="device-pill">
+              <input type="radio" name="modal_device" value="Both" class="device-radio">
+              <span class="device-pill-dot dot-gold"></span>
+              <span>Обидва апарати</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Main Booking Form -->
+        <form class="glass-modal-form" onsubmit="event.preventDefault(); document.getElementById('popup_request')?.classList.remove('is-active', 'show'); document.querySelector('.form-success-toast')?.classList.add('show'); setTimeout(() => document.querySelector('.form-success-toast')?.classList.remove('show'), 4000);">
+          <div class="form-group-item">
+            <label class="form-label-text" for="modal_name">Ваше ім'я та посада</label>
+            <div class="input-with-icon">
+              <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="7.5" r="4.5" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></circle><path d="M4.5 20C4.5 16 8 14 12 14C16 14 19.5 16 19.5 20" stroke-width="1.8" stroke-linecap="round"></path></svg>
+              <input type="text" id="modal_name" placeholder="Наприклад: Наталія, головний лікар" required class="luxury-form-input">
+            </div>
+          </div>
+
+          <div class="form-row-2col">
+            <div class="form-group-item">
+              <label class="form-label-text" for="modal_phone">Телефон</label>
+              <div class="input-with-icon">
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="6" y="2" width="12" height="20" rx="3" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></rect><circle cx="12" cy="18" r="1" fill="currentColor"></circle><path d="M10 5H14" stroke-width="1.5" stroke-linecap="round"></path></svg>
+                <input type="tel" id="modal_phone" placeholder="+380" required class="luxury-form-input">
+              </div>
+            </div>
+
+            <div class="form-group-item">
+              <label class="form-label-text" for="modal_city">Місто / Назва клініки</label>
+              <div class="input-with-icon">
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 21.5C12 21.5 19 14.5 19 9.5C19 5.5 16 2.5 12 2.5C8 2.5 5 5.5 5 9.5C5 14.5 12 21.5 12 21.5Z" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></path><circle cx="12" cy="9.5" r="2.5" stroke-width="1.6" fill="currentColor"></circle></svg>
+                <input type="text" id="modal_city" placeholder="Київ / Назва клініки" required class="luxury-form-input">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group-item">
+            <label class="form-label-text">Зручний месенджер для підтвердження</label>
+            <div class="messenger-pills-row">
+              <label class="messenger-pill active">
+                <input type="radio" name="modal_messenger" value="Whatsapp" checked class="messenger-radio">
+                <span class="pill-dot dot-green"></span>
+                <span>WhatsApp</span>
+              </label>
+              <label class="messenger-pill">
+                <input type="radio" name="modal_messenger" value="Viber" class="messenger-radio">
+                <span class="pill-dot dot-purple"></span>
+                <span>Viber</span>
+              </label>
+              <label class="messenger-pill">
+                <input type="radio" name="modal_messenger" value="Telegram" class="messenger-radio">
+                <span class="pill-dot dot-blue"></span>
+                <span>Telegram</span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="shimmer-submit-btn modal-submit-btn">
+            <span class="btn-text">ЗАБРОНЮВАТИ ВИЇЗНИЙ ТЕСТ-ДРАЙВ</span>
+            <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+
+          <div class="form-trust-bullets">
+            <div class="trust-bullet-item">
+              <span class="bullet-check">✓</span>
+              <span>0 ₴ за виїзд та доставку</span>
+            </div>
+            <div class="trust-bullet-item">
+              <span class="bullet-check">✓</span>
+              <span>Тест на ваших пацієнтах</span>
+            </div>
+            <div class="trust-bullet-item">
+              <span class="bullet-check">✓</span>
+              <span>Без зобов'язань покупки</span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </div><div
-class=overlay></div><div
-id=popup_request class=popup><div
-class=popup_wrap>
-<button
-class=popup_close>
-<svg
-width=36 height=36 viewBox="0 0 48 48" fill=none xmlns=http://www.w3.org/2000/svg>
-<path
-d="M12.6862 9.85784C12.5014 9.66779 12.2807 9.51635 12.037 9.41233C11.7932 9.30831 11.5311 9.25377 11.2661 9.2519C11.0011 9.25003 10.7383 9.30085 10.493 9.40141C10.2478 9.50197 10.025 9.65028 9.8376 9.8377C9.65018 10.0251 9.50188 10.2479 9.40131 10.4931C9.30075 10.7384 9.24993 11.0011 9.2518 11.2662C9.25368 11.5312 9.30821 11.7933 9.41223 12.037C9.51625 12.2808 9.66769 12.5015 9.85774 12.6863L35.3136 38.1421C35.4983 38.3322 35.719 38.4836 35.9628 38.5876C36.2066 38.6916 36.4686 38.7462 36.7337 38.748C36.9987 38.7499 37.2615 38.6991 37.5067 38.5985C37.7519 38.498 37.9747 38.3497 38.1622 38.1622C38.3496 37.9748 38.4979 37.752 38.5984 37.5068C38.699 37.2616 38.7498 36.9988 38.7479 36.7338C38.7461 36.4687 38.6915 36.2067 38.5875 35.9629C38.4835 35.7191 38.3321 35.4984 38.142 35.3137L12.6862 9.85784Z" fill=#FFFF00></path>
-<path
-d="M9.85832 35.3138C9.66827 35.4986 9.51684 35.7193 9.41282 35.963C9.30879 36.2068 9.25426 36.4689 9.25239 36.7339C9.25051 36.9989 9.30134 37.2617 9.4019 37.507C9.50246 37.7522 9.65076 37.975 9.83818 38.1624C10.0256 38.3498 10.2484 38.4981 10.4936 38.5987C10.7389 38.6992 11.0016 38.7501 11.2667 38.7482C11.5317 38.7463 11.7938 38.6918 12.0375 38.5878C12.2813 38.4837 12.502 38.3323 12.6868 38.1423L38.1426 12.6864C38.3326 12.5017 38.4841 12.281 38.5881 12.0372C38.6921 11.7934 38.7467 11.5314 38.7485 11.2663C38.7504 11.0013 38.6996 10.7385 38.599 10.4933C38.4985 10.2481 38.3502 10.0253 38.1627 9.83784C37.9753 9.65042 37.7525 9.50212 37.5073 9.40156C37.2621 9.30099 36.9993 9.25018 36.7342 9.25205C36.4692 9.25392 36.2072 9.30845 35.9634 9.41247C35.7196 9.5165 35.4989 9.66793 35.3142 9.85799L9.85832 35.3138Z" fill=#FFFF00></path>
-</svg>
-</button><div
-class=application-p-left><div
-class=app-video-bg>
-<img
-class="app-video-bg-img " loading="eager" src="/wp-content/uploads/2026/04/video-placeholder-optimized.png" alt><div
-class=app-video-content><div
-class=application-p-left-text-1>Заявка на презентацію та безкоштовну пробну процедуру</div><div
-class=application-p-left-text-2>Увага! Консультуємо лише професіоналів косметологічної галузі. Ми не надаємо жодних косметологічних послуг!</div><div
-class=application-p-left-form><div
-class='gf_browser_chrome gform_wrapper gform-theme gform-theme--foundation gform-theme--framework gform-theme--orbital' data-form-theme=orbital data-form-index=0 id=gform_wrapper_3 ><style>/*<![CDATA[*/#gform_wrapper_3[data-form-index="0"].gform-theme,[data-parent-form="3_0"]{--gform-theme-color-primary:#204ce5;--gform-theme-color-primary-rgb:32, 76, 229;--gform-theme-color-primary-contrast:#fff;--gform-theme-color-primary-contrast-rgb:255, 255, 255;--gform-theme-color-primary-darker:#001AB3;--gform-theme-color-primary-lighter:#527EFF;--gform-theme-color-secondary:#fff;--gform-theme-color-secondary-rgb:255, 255, 255;--gform-theme-color-secondary-contrast:#112337;--gform-theme-color-secondary-contrast-rgb:17, 35, 55;--gform-theme-color-secondary-darker:#F5F5F5;--gform-theme-color-secondary-lighter:#FFF;--gform-theme-color-outside-control-light:rgba(17, 35, 55, 0.1);--gform-theme-color-outside-control-light-rgb:17, 35, 55;--gform-theme-color-outside-control-light-darker:rgba(104, 110, 119, 0.35);--gform-theme-color-outside-control-light-lighter:#F5F5F5;--gform-theme-color-outside-control-dark:#585e6a;--gform-theme-color-outside-control-dark-rgb:88, 94, 106;--gform-theme-color-outside-control-dark-darker:#112337;--gform-theme-color-outside-control-dark-lighter:rgba(17, 35, 55, 0.65);--gform-theme-color-inside-control:#fff;--gform-theme-color-inside-control-rgb:255, 255, 255;--gform-theme-color-inside-control-contrast:#112337;--gform-theme-color-inside-control-contrast-rgb:17, 35, 55;--gform-theme-color-inside-control-darker:#F5F5F5;--gform-theme-color-inside-control-lighter:#FFF;--gform-theme-color-inside-control-primary:#204ce5;--gform-theme-color-inside-control-primary-rgb:32, 76, 229;--gform-theme-color-inside-control-primary-contrast:#fff;--gform-theme-color-inside-control-primary-contrast-rgb:255, 255, 255;--gform-theme-color-inside-control-primary-darker:#001AB3;--gform-theme-color-inside-control-primary-lighter:#527EFF;--gform-theme-color-inside-control-light:rgba(17, 35, 55, 0.1);--gform-theme-color-inside-control-light-rgb:17, 35, 55;--gform-theme-color-inside-control-light-darker:rgba(104, 110, 119, 0.35);--gform-theme-color-inside-control-light-lighter:#F5F5F5;--gform-theme-color-inside-control-dark:#585e6a;--gform-theme-color-inside-control-dark-rgb:88, 94, 106;--gform-theme-color-inside-control-dark-darker:#112337;--gform-theme-color-inside-control-dark-lighter:rgba(17, 35, 55, 0.65);--gform-theme-border-radius:3px;--gform-theme-font-size-secondary:14px;--gform-theme-font-size-tertiary:13px;--gform-theme-icon-control-number:url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 0C4.26522 5.96046e-08 4.51957 0.105357 4.70711 0.292893L7.70711 3.29289C8.09763 3.68342 8.09763 4.31658 7.70711 4.70711C7.31658 5.09763 6.68342 5.09763 6.29289 4.70711L4 2.41421L1.70711 4.70711C1.31658 5.09763 0.683417 5.09763 0.292893 4.70711C-0.0976311 4.31658 -0.097631 3.68342 0.292893 3.29289L3.29289 0.292893C3.48043 0.105357 3.73478 0 4 0ZM0.292893 9.29289C0.683417 8.90237 1.31658 8.90237 1.70711 9.29289L4 11.5858L6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289C8.09763 9.68342 8.09763 10.3166 7.70711 10.7071L4.70711 13.7071C4.31658 14.0976 3.68342 14.0976 3.29289 13.7071L0.292893 10.7071C-0.0976311 10.3166 -0.0976311 9.68342 0.292893 9.29289Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gform-theme-icon-control-select:url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.292893 0.292893C0.683417 -0.097631 1.31658 -0.097631 1.70711 0.292893L5 3.58579L8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893C10.0976 0.683417 10.0976 1.31658 9.70711 1.70711L5.70711 5.70711C5.31658 6.09763 4.68342 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gform-theme-icon-control-search:url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='640' height='640'%3E%3Cpath d='M256 128c-70.692 0-128 57.308-128 128 0 70.691 57.308 128 128 128 70.691 0 128-57.309 128-128 0-70.692-57.309-128-128-128zM64 256c0-106.039 85.961-192 192-192s192 85.961 192 192c0 41.466-13.146 79.863-35.498 111.248l154.125 154.125c12.496 12.496 12.496 32.758 0 45.254s-32.758 12.496-45.254 0L367.248 412.502C335.862 434.854 297.467 448 256 448c-106.039 0-192-85.962-192-192z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gform-theme-control-border-color:#686e77;--gform-theme-control-size:var(--gform-theme-control-size-md);--gform-theme-control-label-color-primary:#112337;--gform-theme-control-label-color-secondary:#112337;--gform-theme-control-choice-size:var(--gform-theme-control-choice-size-md);--gform-theme-control-checkbox-check-size:var(--gform-theme-control-checkbox-check-size-md);--gform-theme-control-radio-check-size:var(--gform-theme-control-radio-check-size-md);--gform-theme-control-button-font-size:var(--gform-theme-control-button-font-size-md);--gform-theme-control-button-padding-inline:var(--gform-theme-control-button-padding-inline-md);--gform-theme-control-button-size:var(--gform-theme-control-button-size-md);--gform-theme-control-button-border-color-secondary:#686e77;--gform-theme-control-file-button-background-color-hover:#EBEBEB;--gform-theme-field-page-steps-number-color:rgba(17, 35, 55, 0.8)}/*]]>*/</style><div
-id=gf_3 class=gform_anchor tabindex=-1></div><form
-method=post enctype=multipart/form-data target=gform_ajax_frame_3 id=gform_3  action=/about-us/#gf_3 data-formid=3 ><div
-class='gform-body gform_body'><div
-id=gform_fields_3 class='gform_fields top_label form_sublabel_below description_below'><div
-id=field_3_1  class="gfield gfield--type-text gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible"  data-js-reload=field_3_1><label
-class='gfield_label gform-field-label' for=input_3_1 >Ім&#039;я<span
-class=gfield_required><span
-class="gfield_required gfield_required_text">(Обов&#039;язково)</span></span></label><div
-class='ginput_container ginput_container_text'><input
-name=input_1 id=input_3_1 type=text value class=large    placeholder=Ім&#039;я aria-required=true aria-invalid=false></div></div><fieldset
+class=overlay></div><fieldset
 id=field_3_6  class="gfield gfield--type-radio gfield--type-choice gfield--width-full field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible"  data-js-reload=field_3_6><legend
 class='gfield_label gform-field-label'  >Месенжер</legend><div
 class='ginput_container ginput_container_radio'><div

@@ -23,14 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /**
- * 1. Popup Modals (Lead capture / Presentation request)
+ * 1. Popup Modals (Liquid Glass Lead capture / Presentation request)
  */
 function initPopupModals() {
   const popup = document.getElementById('popup_request');
   if (!popup) return;
 
   document.addEventListener('click', (e) => {
-    const trigger = e.target.closest('a, button, [data-target="#popup_request"], [data-bs-target="#popup_request"], .header-btn, .btn-presentation');
+    const trigger = e.target.closest('a, button, [data-target="#popup_request"], [data-bs-target="#popup_request"], .header-btn, .living-stage-glass-btn, .btn-presentation');
     if (!trigger) return;
 
     const href = trigger.getAttribute('href') || '';
@@ -41,7 +41,9 @@ function initPopupModals() {
       href === '#popup_request' ||
       target === '#popup_request' ||
       trigger.classList.contains('header-btn') ||
+      trigger.classList.contains('living-stage-glass-btn') ||
       text.includes('презентац') ||
+      text.includes('тест-драйв') ||
       text.includes('заявка')
     ) {
       if (trigger.closest('#popup_request') && trigger.type === 'submit') return;
@@ -51,13 +53,17 @@ function initPopupModals() {
     }
   });
 
-  const closeBtn = popup.querySelector('.popup_close, .close');
-  if (closeBtn) {
-    closeBtn.addEventListener('click', () => closePopup(popup));
-  }
+  // Multiple close buttons (backdrop, X button, etc.)
+  const closeBtns = popup.querySelectorAll('.popup_close, .glass-modal-close, .close');
+  closeBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      closePopup(popup);
+    });
+  });
 
   popup.addEventListener('click', (e) => {
-    if (e.target === popup) {
+    if (e.target === popup || e.target.classList.contains('glass-modal-backdrop')) {
       closePopup(popup);
     }
   });
@@ -66,6 +72,37 @@ function initPopupModals() {
     if (e.key === 'Escape' && (popup.classList.contains('is-active') || popup.classList.contains('show'))) {
       closePopup(popup);
     }
+  });
+
+  // Format Switcher inside Modal (Clinic vs Showroom)
+  const formatBtns = popup.querySelectorAll('.format-tab-btn');
+  formatBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      formatBtns.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+
+  // Device Selector Pills inside Modal
+  const devicePills = popup.querySelectorAll('.device-pill');
+  devicePills.forEach((pill) => {
+    pill.addEventListener('click', () => {
+      devicePills.forEach((p) => p.classList.remove('active'));
+      pill.classList.add('active');
+      const radio = pill.querySelector('input[type="radio"]');
+      if (radio) radio.checked = true;
+    });
+  });
+
+  // Messenger Pills inside Modal
+  const messengerPills = popup.querySelectorAll('.messenger-pill');
+  messengerPills.forEach((pill) => {
+    pill.addEventListener('click', () => {
+      messengerPills.forEach((p) => p.classList.remove('active'));
+      pill.classList.add('active');
+      const radio = pill.querySelector('input[type="radio"]');
+      if (radio) radio.checked = true;
+    });
   });
 }
 
