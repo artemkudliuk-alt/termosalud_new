@@ -551,7 +551,7 @@ function cleanHtml(raw, pageName) {
             alt="Termosalud Test Drive Presentation"
           />
           
-          <div class="container living-banner-content-container">
+          <div class="living-banner-content-container">
             <div class="banner-form-overlay-wrap">
               <div class="pastel-concierge-card">
                 
