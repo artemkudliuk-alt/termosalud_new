@@ -988,15 +988,16 @@ function cleanHtml(raw, pageName) {
 
         <!-- Full-Width Panoramic Video Container -->
         <div class="diagonal-video-wrapper">
-          <iframe
-            class="diagonal-video-iframe"
-            src="https://www.youtube-nocookie.com/embed/4p1ZrFF888c?autoplay=1&mute=1&controls=0&loop=1&playlist=4p1ZrFF888c&playsinline=1&rel=0&modestbranding=1&enablejsapi=1&start=37"
-            title="ZIONIC Treatment Clinical Procedure | Termosalud"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <video
+            class="diagonal-video-player"
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="auto"
+          >
+            <source src="/zionic_treatment_video.mp4" type="video/mp4">
+          </video>
 
           <!-- Soft Cinematic Vignette Overlay -->
           <div class="diagonal-video-overlay"></div>

@@ -2912,6 +2912,17 @@ footer {
   justify-content: center !important;
 }
 
+.diagonal-video-player {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transform: translate(-50%, -50%) !important;
+  pointer-events: none !important;
+}
+
 .diagonal-video-iframe {
   position: absolute !important;
   top: 50% !important;
