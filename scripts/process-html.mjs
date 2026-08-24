@@ -974,51 +974,6 @@ function cleanHtml(raw, pageName) {
       </section>
     `;
 
-    // Authentic Diagonal Panoramic Treatment Video Section (Cloned from termosalud.com/en/professionals/zionic/)
-    const modernDiagonalVideoSection = `
-      <!-- Authentic Diagonal Panoramic Treatment Video Section (Cloned from termosalud.com/en/professionals/zionic/) -->
-      <section class="diagonal-video-section" id="treatment-showcase-video">
-        
-        <!-- Top Diagonal Shape Divider (White Tilt) -->
-        <div class="diagonal-shape-divider diagonal-shape-top" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-            <path fill="#ffffff" d="M0,6V0h1000v100L0,6z"></path>
-          </svg>
-        </div>
-
-        <!-- Full-Width Panoramic Video Container -->
-        <div class="diagonal-video-wrapper">
-          <video
-            class="diagonal-video-player"
-            autoplay
-            loop
-            muted
-            playsinline
-            preload="auto"
-          >
-            <source src="/zionic_treatment_video.mp4" type="video/mp4">
-          </video>
-
-          <!-- Soft Cinematic Vignette Overlay -->
-          <div class="diagonal-video-overlay"></div>
-
-          <!-- Center Interactive Floating Badge -->
-          <div class="diagonal-video-badge" data-aos="zoom-in">
-            <div class="video-live-pulse-dot"></div>
-            <span>КЛІНІЧНИЙ ПРОТОКОЛ TERMOSALUD ZIONIC MARP</span>
-          </div>
-        </div>
-
-        <!-- Bottom Diagonal Shape Divider (White Tilt) -->
-        <div class="diagonal-shape-divider diagonal-shape-bottom" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-            <path fill="#ffffff" d="M0,6V0h1000v100L0,6z"></path>
-          </svg>
-        </div>
-
-      </section>
-    `;
-
     // Inject Hero clean section after header
     html = html.replace('</header>', `</header>\n${heroCleanSection}`);
 
@@ -1031,8 +986,8 @@ function cleanHtml(raw, pageName) {
     // Replace old application-presentation block completely up to partners (removes old duplicate photo container)
     html = html.replace(/<div[\s\n]+class=application-presentation>[\s\S]*?(?=<div[\s\n]+class=partners>)/i, `${modernPresentationSection}\n`);
 
-    // Replace old partners block and seo_text block with modern versions + diagonal video showcase
-    html = html.replace(/<div[\s\n]+class=partners>[\s\S]*?<section[\s\n]+class="seo_text\s*"[\s\S]*?<\/section>/i, `${modernPartnersSection}\n${modernSeoSection}\n${modernDiagonalVideoSection}`);
+    // Replace old partners block and seo_text block with modern versions
+    html = html.replace(/<div[\s\n]+class=partners>[\s\S]*?<section[\s\n]+class="seo_text\s*"[\s\S]*?<\/section>/i, `${modernPartnersSection}\n${modernSeoSection}`);
   }
 
   // Modern Ultra-Compact Single-Line Footer (Universal for all pages)
