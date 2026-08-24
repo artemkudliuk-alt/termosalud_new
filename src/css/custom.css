@@ -2201,6 +2201,51 @@ header .logo:hover img {
   }
 }
 
+/* Mobile: Shrink test-drive CTA button & stack below image */
+@media (max-width: 768px) {
+  .fullwidth-living-banner {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .living-banner-bg-img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .living-banner-content-container {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 20px 16px !important;
+    justify-content: center !important;
+  }
+
+  .living-stage-glass-btn {
+    min-width: 0 !important;
+    width: 100% !important;
+    padding: 14px 20px !important;
+    gap: 10px !important;
+  }
+
+  .btn-line-1,
+  .btn-line-2 {
+    font-size: 11px !important;
+    letter-spacing: 0.8px !important;
+  }
+
+  .living-stage-glass-btn .pulse-spark {
+    width: 8px !important;
+    height: 8px !important;
+  }
+
+  .living-stage-glass-btn .btn-arrow {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}
+
 /* Lock background scrolling when modal is open */
 html.modal-open-lock,
 body.modal-open-lock {
