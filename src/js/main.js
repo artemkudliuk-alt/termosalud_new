@@ -287,15 +287,15 @@ function initSmoothScroll() {
  */
 function initHeroProductSlider() {
   const slides = document.querySelectorAll('.hero-product-slide');
-  const dots = document.querySelectorAll('.slider-dot');
-  if (!slides.length || !dots.length) return;
+  const controls = document.querySelectorAll('.slider-arrow, .slider-dot');
+  if (!slides.length || !controls.length) return;
 
   let current = 0;
   let timer = null;
 
   function showSlide(index) {
     slides.forEach((s, i) => s.classList.toggle('active', i === index));
-    dots.forEach((d, i) => d.classList.toggle('active', i === index));
+    controls.forEach((c, i) => c.classList.toggle('active', i === index));
     current = index;
   }
 
@@ -305,15 +305,22 @@ function initHeroProductSlider() {
 
   function startTimer() {
     stopTimer();
-    timer = setInterval(nextSlide, 4000);
+    timer = setInterval(nextSlide, 4500);
   }
 
   function stopTimer() {
     if (timer) clearInterval(timer);
   }
 
-  dots.forEach((dot, i) => {
-    dot.addEventListener('click', () => {
+  controls.forEach((control, i) => {
+    // Switch immediately on hover (mouseenter)
+    control.addEventListener('mouseenter', () => {
+      showSlide(i);
+      stopTimer();
+    });
+
+    // Also support click
+    control.addEventListener('click', () => {
       showSlide(i);
       startTimer();
     });

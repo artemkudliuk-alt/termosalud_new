@@ -475,7 +475,7 @@ header .logo picture img {
   letter-spacing: 1.5px !important;
   text-transform: uppercase !important;
   border: 1.5px solid #5d8796 !important;
-  border-radius: 6px !important;
+  border-radius: 0px !important;
   text-decoration: none !important;
   transition: all 0.25s ease !important;
   cursor: pointer !important;
@@ -523,6 +523,51 @@ header .logo picture img {
   filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.1)) !important;
 }
 
+.hero-slider-arrows {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.slider-arrow {
+  width: 30px !important;
+  height: 30px !important;
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1.5px solid #b6cbd2 !important;
+  border-radius: 0px !important;
+  color: #5d8796 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+  padding: 0 !important;
+  box-shadow: 0 4px 12px rgba(93, 135, 150, 0.12) !important;
+}
+
+.slider-arrow svg {
+  stroke: #5d8796 !important;
+  transition: all 0.25s ease !important;
+}
+
+.slider-arrow.active,
+.slider-arrow:hover {
+  background: #5d8796 !important;
+  border-color: #5d8796 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(93, 135, 150, 0.4) !important;
+  transform: scale(1.08) !important;
+}
+
+.slider-arrow.active svg,
+.slider-arrow:hover svg {
+  stroke: #ffffff !important;
+}
+
 .hero-slider-dots {
   display: flex !important;
   flex-direction: column !important;
@@ -533,7 +578,7 @@ header .logo picture img {
 .slider-dot {
   width: 14px !important;
   height: 14px !important;
-  border-radius: 2px !important;
+  border-radius: 0px !important;
   background: transparent !important;
   border: 1.5px solid #b6cbd2 !important;
   position: relative !important;
