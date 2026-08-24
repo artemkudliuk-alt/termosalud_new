@@ -2041,44 +2041,37 @@ header .logo:hover img {
   position: relative !important;
   width: 100% !important;
   max-width: 100% !important;
-  min-height: clamp(540px, 42vw, 680px) !important;
   background-color: #ffffff !important;
   overflow: hidden !important;
   border: none !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
+  display: block !important;
 }
 
 .living-banner-bg-img {
-  position: absolute !important;
-  top: 0 !important;
-  left: 0 !important;
   width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: left center !important;
+  height: auto !important;
   display: block !important;
-  z-index: 1 !important;
+  object-fit: contain !important;
   pointer-events: none !important;
 }
 
 .living-banner-content-container {
-  position: relative !important;
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  width: 48% !important;
+  height: 100% !important;
   z-index: 5 !important;
   display: flex !important;
-  justify-content: flex-end !important;
+  justify-content: center !important;
   align-items: center !important;
-  min-height: clamp(540px, 42vw, 680px) !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  padding: 24px clamp(24px, 5vw, 100px) !important;
+  padding: 0 30px !important;
   box-sizing: border-box !important;
 }
 
 .banner-cta-floating-wrap {
   width: auto !important;
-  max-width: 460px !important;
+  max-width: 100% !important;
   margin: 0 !important;
   display: flex !important;
   align-items: center !important;
@@ -2163,23 +2156,35 @@ header .logo:hover img {
 /* =======================================================
    STATE-OF-THE-ART SPANISH LIQUID GLASS POP-UP MODAL
    ======================================================= */
-.glass-popup-modal {
+.glass-popup-modal,
+.popup.glass-popup-modal {
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
   width: 100vw !important;
   height: 100vh !important;
+  transform: none !important;
+  margin: 0 !important;
   z-index: 100000 !important;
   display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
   align-items: center !important;
   justify-content: center !important;
   padding: 20px !important;
   box-sizing: border-box !important;
+  transition: opacity 0.25s ease, visibility 0.25s ease !important;
 }
 
 .glass-popup-modal.is-active,
-.glass-popup-modal.show {
+.glass-popup-modal.show,
+.popup.glass-popup-modal.is-active,
+.popup.glass-popup-modal.show {
   display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .glass-modal-backdrop {

@@ -1289,7 +1289,7 @@ function cleanHtml(raw, pageName) {
   // Remove old raw WordPress popup completely
   html = html.replace(/<div[\s\n]+id="?popup_request"?[\s\S]*?(?=<script[\s\n]+type=speculationrules|<script[\s\n]+src=|\n*<\/body>)/i, '');
 
-  html = html.replace(/<footer[\s\S]*?<\/footer>/i, `${modernLuxuryFooter}\n${modernGlassPopupModal}`);
+  html = html.replace(/<footer[\s\S]*?<\/footer>/i, modernLuxuryFooter);
 
   // Add styles & Google Fonts
   const headInject = `
@@ -1309,6 +1309,7 @@ function cleanHtml(raw, pageName) {
 `;
 
   const footerInject = `
+  ${modernGlassPopupModal}
   <script type="module" src="/src/js/main.js"></script>
 `;
 
