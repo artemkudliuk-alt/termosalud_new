@@ -414,11 +414,13 @@ function cleanHtml(raw, pageName) {
                     </div>
                     <div class="bento-meta-text">
                       <span class="bento-index">01 / ФІНАНСОВА ВИГОДА</span>
-                      <h3 class="bento-title">Вигода</h3>
+                      <div class="bento-title-row">
+                        <h3 class="bento-title">Вигода</h3>
+                        <span class="bento-pill-tag">Швидкий ROI</span>
+                      </div>
                     </div>
                   </div>
                   <div class="bento-meta-right">
-                    <span class="bento-pill-tag">Швидкий ROI</span>
                     <span class="bento-chevron" aria-label="Розгорнути">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </span>
@@ -486,11 +488,13 @@ function cleanHtml(raw, pageName) {
                     </div>
                     <div class="bento-meta-text">
                       <span class="bento-index">02 / КЛІНІЧНА БЕЗПЕКА</span>
-                      <h3 class="bento-title">Безпека</h3>
+                      <div class="bento-title-row">
+                        <h3 class="bento-title">Безпека</h3>
+                        <span class="bento-pill-tag tag-safety">Доказова медицина</span>
+                      </div>
                     </div>
                   </div>
                   <div class="bento-meta-right">
-                    <span class="bento-pill-tag tag-safety">Доказова медицина</span>
                     <span class="bento-chevron" aria-label="Розгорнути">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </span>
@@ -562,11 +566,13 @@ function cleanHtml(raw, pageName) {
                     </div>
                     <div class="bento-meta-text">
                       <span class="bento-index">03 / МІЖНАРОДНЕ ВИЗНАННЯ</span>
-                      <h3 class="bento-title">Популярність</h3>
+                      <div class="bento-title-row">
+                        <h3 class="bento-title">Популярність</h3>
+                        <span class="bento-pill-tag">40+ Країн</span>
+                      </div>
                     </div>
                   </div>
                   <div class="bento-meta-right">
-                    <span class="bento-pill-tag">40+ Країн</span>
                     <span class="bento-chevron" aria-label="Розгорнути">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </span>
@@ -625,11 +631,13 @@ function cleanHtml(raw, pageName) {
                     </div>
                     <div class="bento-meta-text">
                       <span class="bento-index">04 / АКАДЕМІЯ TERMOSALUD</span>
-                      <h3 class="bento-title">Навчання</h3>
+                      <div class="bento-title-row">
+                        <h3 class="bento-title">Навчання</h3>
+                        <span class="bento-pill-tag">100% Практика</span>
+                      </div>
                     </div>
                   </div>
                   <div class="bento-meta-right">
-                    <span class="bento-pill-tag">100% Практика</span>
                     <span class="bento-chevron" aria-label="Розгорнути">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </span>
@@ -685,11 +693,13 @@ function cleanHtml(raw, pageName) {
                     </div>
                     <div class="bento-meta-text">
                       <span class="bento-index">05 / СЕРВІСНИЙ СУПРОВІД</span>
-                      <h3 class="bento-title">Сервіс</h3>
+                      <div class="bento-title-row">
+                        <h3 class="bento-title">Сервіс</h3>
+                        <span class="bento-pill-tag">24/7 Сервіс</span>
+                      </div>
                     </div>
                   </div>
                   <div class="bento-meta-right">
-                    <span class="bento-pill-tag">24/7 Сервіс</span>
                     <span class="bento-chevron" aria-label="Розгорнути">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </span>
@@ -750,11 +760,13 @@ function cleanHtml(raw, pageName) {
                     </div>
                     <div class="bento-meta-text">
                       <span class="bento-index">06 / ЕКСПЕРТИЗА ТА ДОСВІД</span>
-                      <h3 class="bento-title">Професіоналізм</h3>
+                      <div class="bento-title-row">
+                        <h3 class="bento-title">Професіоналізм</h3>
+                        <span class="bento-pill-tag">Експертна підтримка</span>
+                      </div>
                     </div>
                   </div>
                   <div class="bento-meta-right">
-                    <span class="bento-pill-tag">Експертна підтримка</span>
                     <span class="bento-chevron" aria-label="Розгорнути">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                     </span>
