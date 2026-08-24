@@ -697,7 +697,7 @@ function cleanHtml(raw, pageName) {
           </div>
         </div>
 
-        <!-- Full Living Banner Stage Container (Uncropped Photo + Attention-Grabbing Glass CTA on the Right) -->
+        <!-- Full Living Banner Stage Container (Uncropped Photo + Floating Attention-Grabbing CTA Button on the Right) -->
         <div class="fullwidth-living-banner">
           <img
             src="/photo_form.png?v=1787583676177"
@@ -707,41 +707,11 @@ function cleanHtml(raw, pageName) {
           
           <div class="living-banner-content-container">
             <div class="banner-cta-floating-wrap" data-aos="fade-left" data-aos-delay="100">
-              <div class="glass-cta-hero-card">
-                <div class="glass-card-shimmer"></div>
-                
-                <div class="glass-card-badge">
-                  <span class="pulse-spark"></span>
-                  <span>ЕКСКЛЮЗИВ ДЛЯ КЛІНІК</span>
-                </div>
-
-                <h3 class="glass-card-title">Виїзний тест-драйв у вашій клініці</h3>
-                <p class="glass-card-desc">
-                  Доставимо інноваційне обладнання <strong>Zionic</strong> або <strong>Linfopress</strong> безкоштовно та проведемо показові процедури на ваших пацієнтах.
-                </p>
-
-                <!-- Key Benefits Points -->
-                <div class="glass-card-points">
-                  <div class="point-item">
-                    <span class="point-check">✓</span>
-                    <span>0 ₴ за виїзд та доставку</span>
-                  </div>
-                  <div class="point-item">
-                    <span class="point-check">✓</span>
-                    <span>Тестування на пацієнтах клініки</span>
-                  </div>
-                  <div class="point-item">
-                    <span class="point-check">✓</span>
-                    <span>Без жодних зобов'язань покупки</span>
-                  </div>
-                </div>
-
-                <!-- Animated Interactive CTA Trigger Button -->
-                <button type="button" class="living-stage-glass-btn pulse-attention" data-target="#popup_request">
-                  <span class="btn-text">ЗАМОВИТИ ТЕСТ-ДРАЙВ</span>
-                  <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </button>
-              </div>
+              <button type="button" class="living-stage-glass-btn pulse-attention" data-target="#popup_request" aria-label="Замовити виїзний тест-драйв">
+                <span class="pulse-spark"></span>
+                <span class="btn-text">ЗАМОВИТИ ВИЇЗНИЙ ТЕСТ-ДРАЙВ</span>
+                <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
             </div>
           </div>
         </div>
@@ -1316,8 +1286,8 @@ function cleanHtml(raw, pageName) {
     </div>
   `;
 
-  // Remove old raw popup if present
-  html = html.replace(/<div[\s\n]+id="?popup_request"?[\s\S]*?<\/div>[\s\n]*<\/div>/i, '');
+  // Remove old raw WordPress popup completely
+  html = html.replace(/<div[\s\n]+id="?popup_request"?[\s\S]*?(?=<script[\s\n]+type=speculationrules|<script[\s\n]+src=|\n*<\/body>)/i, '');
 
   html = html.replace(/<footer[\s\S]*?<\/footer>/i, `${modernLuxuryFooter}\n${modernGlassPopupModal}`);
 
