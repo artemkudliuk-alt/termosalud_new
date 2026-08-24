@@ -723,7 +723,7 @@ header .logo picture img {
   flex: 3 !important; /* 30% ширини */
 }
 
-/* Фонове медіа (Відео або Картинка) */
+/* Фонове медіа: 70% = Відео, 30% = Фотографія */
 .split-bg-media {
   position: absolute !important;
   inset: 0 !important;
@@ -732,28 +732,54 @@ header .logo picture img {
   z-index: 1 !important;
   pointer-events: none !important;
   overflow: hidden !important;
+  background-color: #0b0f17 !important;
 }
 
-.split-video,
-.split-img-fallback {
+.split-video {
+  position: absolute !important;
+  inset: 0 !important;
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
   object-position: center center !important;
-  transition: transform 0.8s ease, filter 0.8s ease !important;
+  opacity: 0 !important;
+  z-index: 2 !important;
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s ease !important;
 }
 
-.split-panel-left .split-video {
-  object-position: 25% center !important;
+.split-img-fallback {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 25% !important;
+  opacity: 1 !important;
+  z-index: 1 !important;
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s ease !important;
 }
 
-.split-panel-right .split-video {
-  object-position: 75% center !important;
+/* 70% Розгорнута сторона: плавно проявляється ВІДЕО */
+.split-panel.is-expanded .split-video {
+  opacity: 1 !important;
+}
+
+.split-panel.is-expanded .split-img-fallback {
+  opacity: 0.15 !important;
+}
+
+/* 30% Згорнута сторона: показується чітка ФОТОГРАФІЯ */
+.split-panel.is-collapsed .split-video {
+  opacity: 0 !important;
+}
+
+.split-panel.is-collapsed .split-img-fallback {
+  opacity: 1 !important;
 }
 
 .split-panel:hover .split-video,
 .split-panel:hover .split-img-fallback {
-  transform: scale(1.04) !important; /* Легкий живий зум фону */
+  transform: scale(1.03) !important;
 }
 
 /* Тонування / Затемнення (~2-5% делікатне затемнення) */

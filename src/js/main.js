@@ -518,28 +518,40 @@ function initSplitHero() {
   const panels = container.querySelectorAll('.split-panel');
   if (!panels.length) return;
 
+  function setActivePanel(activePanel) {
+    panels.forEach(p => {
+      const isAct = (p === activePanel);
+      p.classList.toggle('is-expanded', isAct);
+      p.classList.toggle('is-collapsed', !isAct);
+      const video = p.querySelector('video');
+      if (video) {
+        if (isAct) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      }
+    });
+  }
+
   panels.forEach(panel => {
     // Hover (Desktop)
     panel.addEventListener('mouseenter', () => {
-      panels.forEach(p => {
-        p.classList.remove('is-expanded');
-        p.classList.add('is-collapsed');
-      });
-      panel.classList.add('is-expanded');
-      panel.classList.remove('is-collapsed');
+      setActivePanel(panel);
     });
 
     // Click / Tap (Mobile & Desktop)
     panel.addEventListener('click', (e) => {
       // Allow button and anchor clicks to work naturally
       if (e.target.closest('a') || e.target.closest('button')) return;
-
-      panels.forEach(p => {
-        p.classList.remove('is-expanded');
-        p.classList.add('is-collapsed');
-      });
-      panel.classList.add('is-expanded');
-      panel.classList.remove('is-collapsed');
+      setActivePanel(panel);
     });
   });
+
+  // Initial state check
+  const initialActive = container.querySelector('.split-panel.is-expanded') || panels[0];
+  if (initialActive) {
+    const activeVideo = initialActive.querySelector('video');
+    if (activeVideo) activeVideo.play().catch(() => {});
+  }
 }
