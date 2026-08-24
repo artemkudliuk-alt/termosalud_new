@@ -995,10 +995,10 @@ header .logo:hover img {
   transition: opacity 0.5s ease 0.15s, transform 0.5s ease 0.15s, max-height 0.5s ease !important;
 }
 
-/* ================== 30% ЗГОРНУТИЙ СТАН: ВЕЛИКИЙ 2-РЯДКОВИЙ ТЕКСТ ================== */
+/* ================== 30% ЗГОРНУТИЙ СТАН: ВЕЛИКИЙ 2-РЯДКОВИЙ ТЕКСТ ВНИЗУ ================== */
 .split-panel.is-collapsed {
   flex: 3 !important; /* 30% ширини */
-  align-items: center !important; /* Центрування по висоті в зоні корпусу */
+  align-items: flex-end !important; /* Опущено вниз */
 }
 
 .split-panel.is-collapsed .split-content {
@@ -1014,9 +1014,9 @@ header .logo:hover img {
   pointer-events: none !important;
 }
 
-/* Ліва сторона 30% (Zionic): притиснута праворуч у зоні корпусу (Screenshot 2) */
+/* Ліва сторона 30% (Zionic): внизу праворуч з охайним відступом 44px від низу */
 .split-panel-left.is-collapsed .split-content {
-  margin: auto 24px auto auto !important;
+  margin: auto 24px 44px auto !important;
   align-items: flex-end !important;
   text-align: right !important;
 }
@@ -1029,9 +1029,9 @@ header .logo:hover img {
   text-align: right !important;
 }
 
-/* Права сторона 30% (Linfopress): притиснута ліворуч у зоні корпусу (Screenshot 1) */
+/* Права сторона 30% (Linfopress): внизу ліворуч з охайним відступом 44px від низу */
 .split-panel-right.is-collapsed .split-content {
-  margin: auto auto auto 24px !important;
+  margin: auto auto 44px 24px !important;
   align-items: flex-start !important;
   text-align: left !important;
 }
