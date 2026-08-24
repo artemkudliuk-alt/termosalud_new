@@ -1240,6 +1240,13 @@ function cleanHtml(raw, pageName) {
         </div>
       </div>
     </footer>
+
+    <!-- Minimalist Scroll-to-Top Button (Sharp Spanish Luxury) -->
+    <button class="scroll-to-top" id="scrollToTopBtn" aria-label="Піднятися нагору">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6"/>
+      </svg>
+    </button>
   `;
 
   html = html.replace(/<footer[\s\S]*?<\/footer>/i, modernCompactFooter);

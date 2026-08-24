@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSplitHero();
   initMobileBrandSwitcher();
   initBentoAccordion();
+  initScrollToTop();
 });
 
 /**
@@ -627,4 +628,34 @@ function initBentoAccordion() {
     });
   });
 }
+
+/**
+ * 17. Scroll to Top Button
+ */
+function initScrollToTop() {
+  const btn = document.getElementById('scrollToTopBtn') || document.querySelector('.scroll-to-top');
+  if (!btn) return;
+
+  const handleScroll = () => {
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop || window.scrollY || 0;
+    if (scrollY > 250) {
+      btn.classList.add('is-visible');
+    } else {
+      btn.classList.remove('is-visible');
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  document.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
+
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+
 
