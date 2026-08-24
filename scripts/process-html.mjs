@@ -697,7 +697,7 @@ function cleanHtml(raw, pageName) {
           </div>
         </div>
 
-        <!-- Full Living Banner Stage Container (Uncropped Photo + Floating Attention-Grabbing CTA Button on the Right) -->
+        <!-- Full Living Banner Stage Container (Uncropped Photo + Floating Button Embedded on the Right) -->
         <div class="fullwidth-living-banner">
           <img
             src="/photo_form.png?v=1787583676177"
@@ -706,11 +706,14 @@ function cleanHtml(raw, pageName) {
           />
           
           <div class="living-banner-content-container">
-            <div class="banner-cta-floating-wrap" data-aos="fade-left" data-aos-delay="100">
+            <div class="banner-cta-floating-wrap">
               <button type="button" class="living-stage-glass-btn pulse-attention" data-target="#popup_request" aria-label="Замовити виїзний тест-драйв">
                 <span class="pulse-spark"></span>
-                <span class="btn-text">ЗАМОВИТИ ВИЇЗНИЙ ТЕСТ-ДРАЙВ</span>
-                <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                <span class="btn-text-stacked">
+                  <span class="btn-line-1">ЗАМОВИТИ ВИЇЗНИЙ</span>
+                  <span class="btn-line-2">ТЕСТ-ДРАЙВ</span>
+                </span>
+                <svg class="btn-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </button>
             </div>
           </div>
