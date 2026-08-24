@@ -1740,16 +1740,20 @@ header .logo:hover img {
 
 .roi-metric-col {
   display: flex !important;
-  align-items: baseline !important;
-  justify-content: space-between !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 4px !important;
   border-bottom: 1px solid #f1f5f9 !important;
-  padding-bottom: 8px !important;
+  padding-bottom: 10px !important;
+  width: 100% !important;
 }
 
 .roi-big-number {
   display: flex !important;
   align-items: baseline !important;
-  gap: 6px !important;
+  gap: 8px !important;
+  white-space: nowrap !important;
+  flex-wrap: nowrap !important;
 }
 
 .num-highlight {
@@ -1758,19 +1762,25 @@ header .logo:hover img {
   font-weight: 900 !important;
   color: #0f172a !important;
   line-height: 1 !important;
+  white-space: nowrap !important;
+  letter-spacing: -0.5px !important;
+  display: inline-block !important;
 }
 
 .num-label {
-  font-size: 11px !important;
+  font-size: 12px !important;
   font-weight: 800 !important;
   color: #64748b !important;
   letter-spacing: 1px !important;
+  white-space: nowrap !important;
+  text-transform: uppercase !important;
 }
 
 .roi-subtext {
-  font-size: 11.5px !important;
+  font-size: 12px !important;
   font-weight: 600 !important;
   color: #64748b !important;
+  line-height: 1.35 !important;
 }
 
 .roi-graph-track {
@@ -1791,6 +1801,7 @@ header .logo:hover img {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
+  gap: 8px !important;
   font-size: 11px !important;
   font-weight: 700 !important;
   color: #64748b !important;
@@ -1802,6 +1813,7 @@ header .logo:hover img {
   border: 1px solid #e2e8f0 !important;
   padding: 3px 8px !important;
   font-weight: 800 !important;
+  white-space: nowrap !important;
 }
 
 /* Certificate Seals Grid (Row 2) */
@@ -1861,6 +1873,7 @@ header .logo:hover img {
   font-weight: 900 !important;
   color: #0f172a !important;
   line-height: 1 !important;
+  white-space: nowrap !important;
 }
 
 .stat-highlight-label {
@@ -1876,32 +1889,90 @@ header .logo:hover img {
 }
 
 @media (max-width: 768px) {
+  .why-us-bento-section {
+    padding: 40px 0 !important;
+  }
+  .bento-container {
+    padding: 0 16px !important;
+  }
   .bento-collapse-grid {
     grid-template-columns: 1fr !important;
-    gap: 16px !important;
+    gap: 14px !important;
   }
   .bento-top-meta {
-    padding: 14px 16px !important;
+    padding: 12px 14px !important;
   }
   .bento-meta-left {
     gap: 10px !important;
   }
+  .bento-icon-pod {
+    width: 38px !important;
+    height: 38px !important;
+  }
+  .bento-index {
+    font-size: 9px !important;
+  }
   .bento-title {
     font-size: 15px !important;
+    margin: 0 !important;
   }
   .bento-pill-tag {
-    font-size: 9.5px !important;
-    padding: 3px 8px !important;
+    font-size: 9px !important;
+    padding: 3px 6px !important;
+    white-space: nowrap !important;
   }
   .bento-chevron {
     width: 28px !important;
     height: 28px !important;
   }
   .bento-card.is-open .bento-body-collapse {
-    padding: 8px 16px 18px 16px !important;
+    padding: 10px 14px 18px 14px !important;
+  }
+  .bento-desc {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 12px !important;
+  }
+  .bento-feature-item {
+    font-size: 12px !important;
+  }
+  .bento-roi-display {
+    padding: 14px 14px !important;
+    gap: 10px !important;
+  }
+  .num-highlight {
+    font-size: 30px !important;
+  }
+  .num-label {
+    font-size: 11px !important;
+  }
+  .roi-subtext {
+    font-size: 11px !important;
   }
   .bento-cert-grid {
-    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 6px !important;
+  }
+  .cert-seal {
+    padding: 10px 4px !important;
+  }
+  .seal-code {
+    font-size: 12px !important;
+  }
+  .seal-name {
+    font-size: 8.5px !important;
+  }
+  .bento-stat-hero-box {
+    padding: 16px 14px !important;
+  }
+  .stat-big-highlight {
+    font-size: 32px !important;
+  }
+  .stat-highlight-label {
+    font-size: 11.5px !important;
+  }
+  .stat-sub-highlight {
+    font-size: 10.5px !important;
   }
 }
 
