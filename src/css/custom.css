@@ -908,20 +908,20 @@ header .logo:hover img {
   transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-/* ================== 70% РОЗГОРНУТИЙ СТАН: КОМПАКТНА GLASSMORPHISM ПЛАШКА ВПРИТУЛ ДО КРАЮ ================== */
+/* ================== 70% РОЗГОРНУТИЙ СТАН: ПЛАШКА В СІРО-СИНЬОМУ ПАСТЕЛЬНОМУ ВІДТІНКУ ================== */
 .split-panel.is-expanded .split-content {
   max-width: 390px !important;
   width: auto !important;
   padding: 22px 24px !important;
   text-align: left !important;
   align-items: flex-start !important;
-  background: rgba(14, 22, 34, 0.68) !important;
-  backdrop-filter: blur(24px) saturate(180%) !important;
-  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.22) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.45) !important;
+  background: linear-gradient(135deg, rgba(46, 58, 70, 0.76) 0%, rgba(34, 44, 54, 0.72) 100%) !important;
+  backdrop-filter: blur(20px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(140%) !important;
+  border: 1px solid rgba(160, 185, 200, 0.3) !important;
+  border-top: 1px solid rgba(190, 215, 228, 0.5) !important;
   border-radius: 0px !important;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45), 0 4px 16px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.38), 0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
   opacity: 1 !important;
   transform: scale(1) !important;
   pointer-events: auto !important;
@@ -930,7 +930,7 @@ header .logo:hover img {
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-/* Делікатний світловий відблиск (блик) при наведенні */
+/* Делікатний світловий відблиск при наведенні */
 .split-panel.is-expanded .split-content::after {
   content: "" !important;
   position: absolute !important;
@@ -941,7 +941,7 @@ header .logo:hover img {
   background: linear-gradient(
     60deg,
     transparent 35%,
-    rgba(255, 255, 255, 0.14) 50%,
+    rgba(255, 255, 255, 0.12) 50%,
     transparent 65%
   ) !important;
   transform: translateX(-100%) translateY(-100%) rotate(30deg) !important;
@@ -954,8 +954,8 @@ header .logo:hover img {
 }
 
 .split-panel.is-expanded .split-content:hover {
-  border-color: rgba(255, 255, 255, 0.45) !important;
-  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.55), inset 0 1px 1px rgba(255, 255, 255, 0.4) !important;
+  border-color: rgba(190, 215, 230, 0.55) !important;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.35) !important;
 }
 
 /* Ліва сторона 70%: притиснута впритул до лівого краю (margin-left: 0) */
@@ -1081,7 +1081,7 @@ header .logo:hover img {
   transition: opacity 0.3s ease, transform 0.4s ease, max-height 0.4s ease, margin 0.4s ease !important;
 }
 
-/* Badges (Pastel Muted Slate Aesthetic from Original Termosalud) */
+/* Badges (Пастельний сіро-сталевий з ніжним синім відтінком) */
 .split-badge-row {
   display: flex !important;
   align-items: center !important;
@@ -1102,15 +1102,15 @@ header .logo:hover img {
 }
 
 .split-badge.badge-linfo {
-  background: rgba(141, 164, 175, 0.35) !important;
-  border: 1px solid rgba(255, 255, 255, 0.3) !important;
-  color: #ffffff !important;
+  background: rgba(70, 90, 105, 0.4) !important;
+  border: 1px solid rgba(170, 195, 210, 0.35) !important;
+  color: #f1f5f9 !important;
 }
 
 .split-badge.badge-zionic {
-  background: rgba(163, 181, 188, 0.35) !important;
-  border: 1px solid rgba(255, 255, 255, 0.3) !important;
-  color: #ffffff !important;
+  background: rgba(75, 95, 110, 0.4) !important;
+  border: 1px solid rgba(170, 195, 210, 0.35) !important;
+  color: #f1f5f9 !important;
 }
 
 .split-tag {
@@ -1119,13 +1119,13 @@ header .logo:hover img {
   font-weight: 600 !important;
   letter-spacing: 0.8px !important;
   text-transform: uppercase !important;
-  background: rgba(255, 255, 255, 0.14) !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(170, 195, 210, 0.3) !important;
+  color: #e2e8f0 !important;
   border-radius: 0px !important;
 }
 
-/* Булети — тонкий витончений шрифт як у підзаголовків */
+/* Булети — тонкий витончений шрифт */
 .split-bullets {
   list-style: none !important;
   padding: 0 !important;
@@ -1137,7 +1137,7 @@ header .logo:hover img {
 
 .split-bullets li {
   font-size: 13px !important;
-  font-weight: 350 !important; /* Тонкий основний текст */
+  font-weight: 350 !important;
   color: rgba(255, 255, 255, 0.88) !important;
   display: flex !important;
   align-items: center !important;
@@ -1154,7 +1154,7 @@ header .logo:hover img {
   flex-shrink: 0 !important;
 }
 
-/* Кнопки (SYMMED ELITE AESTHETIC — Мінімалістичні з гострими кутами) */
+/* Кнопки (SYMMED ELITE AESTHETIC — Мінімалістичні з гострими кутами в сіро-сталевих контурах) */
 .split-btn-group {
   display: flex !important;
   gap: 10px !important;
@@ -1171,7 +1171,7 @@ header .logo:hover img {
   letter-spacing: 1.4px !important;
   text-transform: uppercase !important;
   text-decoration: none !important;
-  border-radius: 0px !important; /* Гострі кути */
+  border-radius: 0px !important;
   cursor: pointer !important;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
   position: relative !important;
@@ -1181,25 +1181,25 @@ header .logo:hover img {
 .split-btn-ghost {
   background: transparent !important;
   color: #ffffff !important;
-  border: 1px solid rgba(255, 255, 255, 0.85) !important;
+  border: 1px solid rgba(220, 235, 245, 0.7) !important;
 }
 
 .split-btn-ghost:hover {
   background: #ffffff !important;
-  color: #0b0f17 !important;
+  color: #1e232e !important;
   border-color: #ffffff !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4) !important;
 }
 
 .split-btn-ghost-muted {
-  background: rgba(255, 255, 255, 0.08) !important;
-  color: rgba(255, 255, 255, 0.85) !important;
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: rgba(240, 246, 250, 0.85) !important;
+  border: 1px solid rgba(170, 195, 210, 0.35) !important;
 }
 
 .split-btn-ghost-muted:hover {
-  background: rgba(255, 255, 255, 0.22) !important;
+  background: rgba(255, 255, 255, 0.18) !important;
   color: #ffffff !important;
   border-color: rgba(255, 255, 255, 0.6) !important;
   transform: translateY(-2px) !important;
