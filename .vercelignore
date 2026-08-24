@@ -1,0 +1,20 @@
+# Large unneeded video archives and backups
+Новая папка/
+docs/
+*.bak
+*.tmp
+*.log
+scratch/
+zionic_treatment_video.mp4
+Masaje rotacional con radiofrecuencia _ Remodelaciуn corporal _ Zionic.mp4
+Presoterapia para el drenaje y la eliminaciуn de lнquidos _ Linfopress Evolution PRo.mp4
+63d78579297f4a1391898ece245c7624.mp4
+f99820b9-3d78-4368-a313-79e1da8e9453.mp4
+public/wp-content/themes/zionic/assets/images/why-this-video.mp4
+public/zionic_treatment_video.mp4
+
+# Development & Git
+.git/
+.gemini/
+node_modules/
+dist/

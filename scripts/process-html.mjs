@@ -60,6 +60,8 @@ function cleanHtml(raw, pageName) {
 
 
   let html = raw;
+  // Remove canonical links that cause Vite build EISDIR error
+  html = html.replace(/<link[\s\S]*?rel=["']?canonical["']?[\s\S]*?>/gi, '');
 
   // Domain replacements
   html = html.replaceAll('https://termosalud.com.ua/about-us/', '/about-us/');
