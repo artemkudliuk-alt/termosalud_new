@@ -975,8 +975,9 @@ header .logo:hover img {
   font-weight: 700 !important;
   line-height: 1.15 !important;
   margin-bottom: 12px !important;
-  color: #1e232e !important;
+  color: #ffffff !important;
   letter-spacing: -0.5px !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35) !important;
 }
 
 .split-panel.is-expanded .split-title span {
@@ -1033,8 +1034,9 @@ header .logo:hover img {
   font-weight: 700 !important;
   line-height: 1.15 !important;
   margin-bottom: 12px !important;
-  color: #1e232e !important;
+  color: #ffffff !important;
   letter-spacing: -0.5px !important;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.85) !important;
 }
 
 /* Права сторона 30% (Linfopress): внизу ліворуч з охайним відступом 44px від низу */
@@ -1054,8 +1056,9 @@ header .logo:hover img {
   font-weight: 700 !important;
   line-height: 1.15 !important;
   margin-bottom: 12px !important;
-  color: #1e232e !important;
+  color: #ffffff !important;
   letter-spacing: -0.5px !important;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.85) !important;
 }
 
 /* Заголовок на 30%: В 2 РАЗИ БІЛЬШИЙ, В ДВА РЯДКИ */
@@ -1065,8 +1068,9 @@ header .logo:hover img {
   font-weight: 700 !important;
   line-height: 1.15 !important;
   margin-bottom: 12px !important;
-  color: #1e232e !important;
+  color: #ffffff !important;
   letter-spacing: -0.5px !important;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.85) !important;
 }
 
 .split-panel.is-collapsed .split-title span {
