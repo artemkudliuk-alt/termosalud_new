@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initMessengerPills();
   initBlurRevealOnScroll();
   initBentoSpotlights();
-  initScreen3BlurTransition();
   initScreen4InteractiveStudio();
   initSplitHero();
   initMobileBrandSwitcher();
@@ -439,67 +438,7 @@ function initBentoSpotlights() {
   });
 }
 
-/**
- * 12. Screen 3 Clean Unclipped Flow & Screen 4 Smooth Curtain Slide-Over
- */
-function initScreen3BlurTransition() {
-  const s3 = document.getElementById('why-us');
-  const s4 = document.querySelector('.application-presentation');
-  if (!s3 || !s4) return;
 
-  const container = s3.querySelector('.bento-container');
-  if (!container) return;
-
-  let ticking = false;
-
-  function updateVisuals() {
-    const s4Rect = s4.getBoundingClientRect();
-    const winHeight = window.innerHeight;
-
-    // Blur only activates when Screen 4 rises up to cover the bento section
-    if (s4Rect.top < winHeight && s4Rect.top > 0) {
-      const overlap = winHeight - s4Rect.top;
-      // Start softening as Screen 4 glides over
-      const progress = Math.min(1, Math.max(0, overlap / (winHeight * 0.75)));
-      
-      const blurPx = (progress * 12).toFixed(1);
-      const scale = (1 - progress * 0.03).toFixed(3);
-      const opacity = (1 - progress * 0.3).toFixed(2);
-
-      if (progress > 0.02) {
-        container.style.filter = `blur(${blurPx}px)`;
-        container.style.transform = `scale(${scale})`;
-        container.style.opacity = `${opacity}`;
-      } else {
-        container.style.filter = 'none';
-        container.style.transform = 'none';
-        container.style.opacity = '1';
-      }
-    } else if (s4Rect.top >= winHeight) {
-      container.style.filter = 'none';
-      container.style.transform = 'none';
-      container.style.opacity = '1';
-    } else {
-      container.style.filter = 'blur(12px)';
-      container.style.transform = 'scale(0.97)';
-      container.style.opacity = '0.7';
-    }
-  }
-
-  function onScroll() {
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        updateVisuals();
-        ticking = false;
-      });
-      ticking = true;
-    }
-  }
-
-  window.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', onScroll, { passive: true });
-  updateVisuals();
-}
 
 /**
  * 13. Screen 4 Interactive Masterclass Studio (Format Switcher, Device Selector & Hotspots)

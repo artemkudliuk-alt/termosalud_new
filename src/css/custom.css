@@ -1417,13 +1417,15 @@ header .logo:hover img {
 }
 
 .bento-container {
-  max-width: 1400px !important;
+  max-width: 1080px !important;
   width: 100% !important;
   margin: 0 auto !important;
   padding: 0 32px !important;
   box-sizing: border-box !important;
-  transition: filter 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease !important;
-  will-change: filter, transform, opacity;
+  filter: none !important;
+  -webkit-filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .why-us-header {
