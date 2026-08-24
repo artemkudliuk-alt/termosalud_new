@@ -57,7 +57,7 @@ name="msapplication-TileImage" content="/wp-content/uploads/2026/03/favicon-opti
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Onest:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/css/custom.css?v=1787584069096">
+  <link rel="stylesheet" href="/src/css/custom.css?v=1787584336085">
   <style>
     .split-title, .split-title *, .split-panel .split-title, .split-panel h3, .split-content .split-title, .split-content h3 {
       color: #f1f5f9 !important;
@@ -183,7 +183,7 @@ class=content>
     
   <div
 class=center>
-      <!-- Screen 2: Interactive Split Screen Showcase (70/30 Dynamic Hover/Click Expand) -->
+      <!-- Screen 2: Interactive Split Screen Showcase (Desktop 70/30 + Mobile Brand Tabs & Vertical Video) -->
       <section id="our-products" class="our-prods-split-section">
         
         <!-- Header Above Split Container -->
@@ -193,8 +193,8 @@ class=center>
           <p>Преміальні апаратні рішення з високою рентабельністю, швидкою окупністю та доведеною клінічною ефективністю</p>
         </div>
 
-        <!-- Dynamic 70/30 Split Hero Container -->
-        <div class="split-hero-container" id="split-devices-hero">
+        <!-- Dynamic 70/30 Split Hero Container (Desktop) -->
+        <div class="split-hero-container desktop-only-split" id="split-devices-hero">
           
           <!-- ================= ЛІВА СТОРОНА (30% за замовчуванням): Zionic MARP System ================= -->
           <div
@@ -203,7 +203,7 @@ class=center>
           >
             <!-- Фонове медіа (Відео + Фото) -->
             <div class="split-bg-media">
-              <video autoplay loop muted playsinline class="split-video" preload="auto">
+              <video autoplay loop muted playsinline class="split-video" preload="auto" poster="/photo_zionic.png">
                 <source src="/zionic.mp4" type="video/mp4">
               </video>
               <img
@@ -213,10 +213,8 @@ class=center>
               />
             </div>
 
-            <!-- Легке затемнення фону (~2-5%) -->
             <div class="split-overlay"></div>
 
-            <!-- Контент лівої сторони (Zionic) -->
             <div class="split-content">
               <div class="split-badge-row">
                 <span class="split-badge badge-zionic">✦ MARP + RF TECHNOLOGY</span>
@@ -247,9 +245,8 @@ class=center>
             class="split-panel split-panel-right is-expanded"
             data-device="linfopress"
           >
-            <!-- Фонове медіа (Відео + Фото) -->
             <div class="split-bg-media">
-              <video autoplay loop muted playsinline class="split-video" preload="auto">
+              <video autoplay loop muted playsinline class="split-video" preload="auto" poster="/photo_limfo.png">
                 <source src="/limfo.mp4" type="video/mp4">
               </video>
               <img
@@ -259,10 +256,8 @@ class=center>
               />
             </div>
 
-            <!-- Легке затемнення фону (~2-5%) -->
             <div class="split-overlay"></div>
 
-            <!-- Контент правої сторони (Linfopress) -->
             <div class="split-content">
               <div class="split-badge-row">
                 <span class="split-badge badge-linfo">✦ ПРЕСОТЕРАПІЯ 4-ГО ПОКОЛІННЯ</span>
@@ -288,8 +283,84 @@ class=center>
             </div>
           </div>
         </div>
+
+        <!-- ================= МОБІЛЬНА ВЕРСІЯ (Перемикач брендів + Повноекранне вертикальне відео) ================= -->
+        <div class="mobile-device-showcase mobile-only-showcase" id="mobile-device-showcase">
+          <!-- Перемикач брендів зверху -->
+          <div class="mobile-brand-switcher">
+            <button class="mobile-brand-tab active" data-tab="zionic" aria-label="Zionic MARP System">
+              <span>✦ ZIONIC MARP + RF</span>
+            </button>
+            <button class="mobile-brand-tab" data-tab="linfopress" aria-label="Linfopress Evolution PRO">
+              <span>✦ LINFOPRESS PRO</span>
+            </button>
+          </div>
+
+          <!-- Сцена вертикального відео -->
+          <div class="mobile-video-stage">
+            <!-- 1. Панель Zionic -->
+            <div class="mobile-device-panel active" data-panel="zionic">
+              <div class="mobile-video-wrap">
+                <video autoplay loop muted playsinline class="mobile-vertical-video" preload="auto" poster="/photo_zionic.png">
+                  <source src="/zionic.mp4" type="video/mp4">
+                </video>
+                <div class="mobile-video-overlay"></div>
+              </div>
+              <div class="mobile-device-card">
+                <div class="split-badge-row">
+                  <span class="split-badge badge-zionic">✦ MARP + RF TECHNOLOGY</span>
+                  <span class="split-tag">MADE IN SPAIN</span>
+                </div>
+                <h3 class="split-title">ZIONIC <span>MARP SYSTEM</span></h3>
+                <ul class="split-bullets">
+                  <li><span class="split-check">✓</span> Одночасна дія: ліполіз, ліфтинг та тонус</li>
+                  <li><span class="split-check">✓</span> Безболісно та без реабілітації для пацієнта</li>
+                  <li><span class="split-check">✓</span> Швидка окупність від 3 до 4 місяців</li>
+                </ul>
+                <div class="split-btn-group">
+                  <a href="/zionic/" class="split-btn split-btn-ghost">
+                    ДІЗНАТИСЬ БІЛЬШЕ
+                  </a>
+                  <button class="split-btn split-btn-ghost-muted header-btn" data-target="#popup_request">
+                    ТЕСТ-ДРАЙВ
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Панель Linfopress -->
+            <div class="mobile-device-panel" data-panel="linfopress">
+              <div class="mobile-video-wrap">
+                <video loop muted playsinline class="mobile-vertical-video" preload="auto" poster="/photo_limfo.png">
+                  <source src="/limfo.mp4" type="video/mp4">
+                </video>
+                <div class="mobile-video-overlay"></div>
+              </div>
+              <div class="mobile-device-card">
+                <div class="split-badge-row">
+                  <span class="split-badge badge-linfo">✦ ПРЕСОТЕРАПІЯ 4-ГО ПОКОЛІННЯ</span>
+                  <span class="split-tag">24 СЕКТОРИ</span>
+                </div>
+                <h3 class="split-title">Linfopress <span>EVOLUTION PRO</span></h3>
+                <ul class="split-bullets">
+                  <li><span class="split-check">✓</span> 24 незалежні сектори послідовного тиску</li>
+                  <li><span class="split-check">✓</span> Медична сертифікація безпеки CE Medical</li>
+                  <li><span class="split-check">✓</span> Високий попит та щоденний прибуток</li>
+                </ul>
+                <div class="split-btn-group">
+                  <a href="/linfopress/" class="split-btn split-btn-ghost">
+                    ДІЗНАТИСЬ БІЛЬШЕ
+                  </a>
+                  <button class="split-btn split-btn-ghost-muted header-btn" data-target="#popup_request">
+                    ТЕСТ-ДРАЙВ
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-    
+
       <!-- Screen 3: Architectural Swiss Bento Grid (Full Height, Generous Spacing, Unclipped Cards) -->
       <section class="why-us-bento-section" id="why-us">
         <div class="bento-container">
