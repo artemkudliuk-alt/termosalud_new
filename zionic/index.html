@@ -35,77 +35,47 @@ name="msapplication-TileImage" content="/wp-content/uploads/2026/03/favicon-opti
 class=template-zionic>
 <div
 class=wrapper><div
-class=content><header
-class=header>
-<a
-href="https://termosalud.com.ua" class=logo>
-<picture>
-<source
-srcset=/wp-content/themes/zionic/assets/images/logo.svg media="(min-width: 992px)">
-<img
-src="/wp-content/themes/zionic/assets/images/logo-mobile.png" alt>
-</picture>
-</a><div
-class=header-center><div
-class=header-block-another><div
-class=custom-select-logo><div
-class=select-display onclick=toggleSelect()>
-<img
-class=lazyload loading="eager" src="/wp-content/themes/zionic/assets/images/zionic.svg" alt>
-<svg
-class=select-arrow width=16 height=16 viewBox="0 0 16 16" fill=none xmlns=http://www.w3.org/2000/svg>
-<path
-d="M13.8621 4.20374L8 10.3207L2.13793 4.20374C1.87759 3.93209 1.45559 3.93209 1.19525 4.20374C0.934916 4.4754 0.934916 4.91575 1.19525 5.1874L7.52866 11.7962C7.659 11.9322 7.82933 12 8 12C8.17067 12 8.341 11.9322 8.47134 11.7962L14.8047 5.1874C15.0651 4.91575 15.0651 4.4754 14.8047 4.20374C14.5444 3.93209 14.1224 3.93209 13.8621 4.20374Z" fill=#6DFCFF />
-</svg></div><div
-class=select-options id=selectOptions>
-<a
-href="/linfopress/" class=option-item>
-<img
-class=lazyload loading="eager" src="/wp-content/themes/zionic/assets/images/linfopress.svg" alt>
-</a>
-<a
-href="/zionic/" class=option-item>
-<img
-class=lazyload loading="eager" src="/wp-content/themes/zionic/assets/images/zionic.svg" alt>
-</a></div></div> <script>function toggleSelect() {
-                        const options = document.getElementById('selectOptions');
-                        const arrow = document.querySelector('.select-arrow');
-                        options.classList.toggle('open');
-                        arrow.classList.toggle('open');
-                    }
-                    document.addEventListener('click', (e) => {
-                        const select = document.querySelector('.custom-select-logo');
-                        if (!select.contains(e.target)) {
-                            document.getElementById('selectOptions').classList.remove('open');
-                            document.querySelector('.select-arrow').classList.remove('open');
-                        }
-                    });</script> <ul
-class=header-ul>
-<li><a
-href="#technologies">Технології</a></li>
-<li><a
-href="#manipula">Оснащення</a></li>
-<li><a
-href="#beast">Чому Zionic</a></li>
-<li><a
-href="#indications">Показання</a></li>
-<li><a
-href="#advantages">Переваги</a></li>
-<li><a
-href="#application">Стати партнером</a></li></ul></div></div>
-<a
-class=header-phone href="tel:+380937205277">
-<img
-src="/wp-content/themes/zionic/assets/images/phone-zionic.svg" alt>
-+380 93 720 52 77 </a><div
-class=header-mob>
-<a
-href="https://t.me/EstetPartners" target=_blank>
-<img
-class=lazyload loading="eager" src="/wp-content/themes/zionic/assets/images/telegram-zionic.svg" alt>
-</a>
-<button
-data-popup=popup_request>Заявка<br>на презентацію</button></div></header><div
+class=content>
+    <header class="header">
+      <!-- Logo Left -->
+      <a href="/" class="logo" aria-label="Termosalud">
+        <picture>
+          <source srcset="/wp-content/themes/zionic/assets/images/logo.svg" media="(min-width: 992px)">
+          <img src="/wp-content/themes/zionic/assets/images/logo.svg" alt="Termosalud Medical & Aesthetic">
+        </picture>
+      </a>
+
+      <!-- Menu Navigation Center / Right -->
+      <div class="header-center">
+        <nav class="header-block-on-main">
+          <ul>
+            <li><a href="/zionic/">Zionic</a></li>
+            <li><a href="/linfopress/">Linfopress</a></li>
+            <li><a href="#why-us">Переваги</a></li>
+            <li><a href="/about-us/">Про нас</a></li>
+            <li><a href="#about-brand">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Phone & CTA Right -->
+      <div class="header-right-actions">
+        <a class="header-phone" href="tel:+380937205277">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>+380 93 720 52 77</span>
+        </a>
+
+        <div class="header-mob">
+          <a href="https://t.me/EstetPartners" target="_blank" rel="noopener noreferrer" class="header-tg" aria-label="Telegram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </a>
+          <button class="header-btn" data-target="#popup_request">
+            Заявка на презентацію
+          </button>
+        </div>
+      </div>
+    </header>
+  <div
 class=center><div
 class="another-pages-banner _zionic">
 <picture>

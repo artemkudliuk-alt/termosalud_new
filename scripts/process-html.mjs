@@ -14,6 +14,51 @@ const pages = [
 ];
 
 function cleanHtml(raw, pageName) {
+
+  // Clean Minimalist Header (Matching Original Termosalud Spanish Aesthetic)
+  const modernHeaderHtml = `
+    <header class="header">
+      <!-- Logo Left -->
+      <a href="/" class="logo" aria-label="Termosalud">
+        <picture>
+          <source srcset="/wp-content/themes/zionic/assets/images/logo.svg" media="(min-width: 992px)">
+          <img src="/wp-content/themes/zionic/assets/images/logo.svg" alt="Termosalud Medical & Aesthetic">
+        </picture>
+      </a>
+
+      <!-- Menu Navigation Center / Right -->
+      <div class="header-center">
+        <nav class="header-block-on-main">
+          <ul>
+            <li><a href="/zionic/">Zionic</a></li>
+            <li><a href="/linfopress/">Linfopress</a></li>
+            <li><a href="#why-us">Переваги</a></li>
+            <li><a href="/about-us/">Про нас</a></li>
+            <li><a href="#about-brand">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Phone & CTA Right -->
+      <div class="header-right-actions">
+        <a class="header-phone" href="tel:+380937205277">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>+380 93 720 52 77</span>
+        </a>
+
+        <div class="header-mob">
+          <a href="https://t.me/EstetPartners" target="_blank" rel="noopener noreferrer" class="header-tg" aria-label="Telegram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </a>
+          <button class="header-btn" data-target="#popup_request">
+            Заявка на презентацію
+          </button>
+        </div>
+      </div>
+    </header>
+  `;
+
+
   let html = raw;
 
   // Domain replacements
@@ -53,7 +98,14 @@ function cleanHtml(raw, pageName) {
   html = html.replace(/<noscript><iframe[^>]*googletagmanager[\s\S]*?<\/noscript>/gi, '');
 
   // If page is index, inject clean Hero, Option 1 Modern Split Cards, Animated Why Us section, Presentation section, Partners carousel, and Scroll-Revealed SEO text
+  // Inject modern header across all pages
+  html = html.replace(/<header[\s\S]*?<\/header>/i, modernHeaderHtml);
+
   if (pageName === 'index') {
+    
+    // Clean Minimalist Header (Matching Original Termosalud Spanish Aesthetic)
+    
+
     const heroCleanSection = `
       <!-- Screen 1: Clean 4K Hero Video Banner (Ukrainian Title, English Device Names) -->
       <section class="hero-clean-section">

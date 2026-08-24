@@ -146,25 +146,30 @@ img {
 }
 
 /* =======================================================
-   ORIGINAL HEADER (Dark Slate #1E232E)
+   HEADER: CLEAN SPANISH MEDICAL LUXURY (Matching Original Termosalud)
    ======================================================= */
 header,
 header.header,
 .header {
-  height: 54px !important;
-  background: #1e232e !important;
+  height: 70px !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
   border: none !important;
-  border-radius: 8px !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25) !important;
-  margin: 10px 16px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-radius: 0px !important;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.025) !important;
+  margin: 0 !important;
+  width: 100% !important;
   position: sticky !important;
-  top: 10px !important;
+  top: 0 !important;
   z-index: 1000 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  padding: 0 24px !important;
+  padding: 0 32px !important;
   box-sizing: border-box !important;
+  transition: all 0.3s ease !important;
 }
 
 header .logo {
@@ -175,10 +180,15 @@ header .logo {
 
 header .logo img,
 header .logo picture img {
-  height: 26px !important;
+  height: 22px !important;
   width: auto !important;
   display: block !important;
-  filter: none !important;
+  filter: brightness(0) !important; /* Pure crisp charcoal matching original site */
+  opacity: 0.9 !important;
+  transition: opacity 0.2s ease !important;
+}
+
+header .logo:hover img {
   opacity: 1 !important;
 }
 
@@ -198,7 +208,7 @@ header .logo picture img {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
-  gap: 32px !important;
+  gap: 22px !important;
   list-style: none !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -213,78 +223,141 @@ header .logo picture img {
 .header-block-on-main ul li a {
   display: flex !important;
   align-items: center !important;
-  color: #ffffff !important;
-  font-weight: 700 !important;
-  font-size: 14.5px !important;
+  color: #475569 !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  letter-spacing: 0.3px !important;
   text-decoration: none !important;
-  transition: opacity 0.2s ease !important;
+  transition: color 0.2s ease, opacity 0.2s ease !important;
+  white-space: nowrap !important;
 }
 
 .header-block-on-main ul li a:hover {
-  opacity: 0.8 !important;
+  color: #0f172a !important;
 }
 
-.header-block-on-main ul li a img {
-  height: 20px !important;
-  width: auto !important;
-  display: block !important;
-  filter: none !important;
-  opacity: 1 !important;
-}
-
-.header-block-on-main ul li span {
-  color: #ffff00 !important;
-  font-size: 12px !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.5px !important;
-  text-transform: uppercase !important;
+.header-right-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  flex-shrink: 0 !important;
 }
 
 .header-phone {
   display: inline-flex !important;
   align-items: center !important;
-  gap: 8px !important;
-  color: #ffffff !important;
-  font-size: 15px !important;
-  font-weight: 700 !important;
+  gap: 6px !important;
+  color: #334155 !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.3px !important;
   text-decoration: none !important;
   flex-shrink: 0 !important;
+  transition: color 0.2s ease !important;
+  white-space: nowrap !important;
 }
 
-.header-phone img {
-  width: 18px !important;
-  height: 18px !important;
-  display: block !important;
-  filter: none !important;
-  opacity: 1 !important;
+.header-phone svg {
+  stroke: #475569 !important;
 }
 
 .header-phone:hover {
-  color: #ffffff !important;
-  opacity: 0.9 !important;
+  color: #0f172a !important;
 }
 
 .header-mob {
-  display: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.header-tg {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 30px !important;
+  height: 30px !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border-radius: 0px !important;
+  color: #1e232e !important;
+  transition: all 0.2s ease !important;
+}
+
+.header-tg:hover {
+  background: #1e232e !important;
+  color: #ffffff !important;
+}
+
+.header-btn {
+  background: transparent !important;
+  border: 1px solid #1e232e !important;
+  color: #1e232e !important;
+  border-radius: 0px !important;
+  padding: 7px 15px !important;
+  font-size: 10.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+  white-space: nowrap !important;
+}
+
+.header-btn:hover {
+  background: #1e232e !important;
+  color: #ffffff !important;
 }
 
 @media (max-width: 991px) {
   header,
   header.header,
   .header {
-    height: 52px !important;
     padding: 0 16px !important;
-    margin: 8px 10px !important;
+  }
+
+  .header-block-on-main ul {
+    gap: 14px !important;
+  }
+
+  .header-block-on-main ul li a {
+    font-size: 12px !important;
+  }
+
+  .header-phone {
+    font-size: 11.5px !important;
+  }
+
+  .header-btn {
+    padding: 6px 12px !important;
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  header,
+  header.header,
+  .header {
+    height: 58px !important;
+    padding: 0 16px !important;
+    margin: 0 !important;
+    border-radius: 0px !important;
   }
 
   .header-center {
     display: none !important;
   }
 
+  .header-phone {
+    display: none !important;
+  }
+
   .header-mob {
     display: flex !important;
-    align-items: center !important;
-    gap: 12px !important;
+  }
+
+  .header-btn {
+    padding: 6px 12px !important;
+    font-size: 10px !important;
   }
 }
 
