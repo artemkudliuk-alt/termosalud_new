@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBentoSpotlights();
   initScreen3BlurTransition();
   initScreen4InteractiveStudio();
+  initSplitHero();
 });
 
 /**
@@ -500,5 +501,38 @@ function initScreen4InteractiveStudio() {
   });
 }
 
+/**
+ * 14. Screen 2 Interactive Split Hero (70/30 Dynamic Hover/Tap Expand)
+ */
+function initSplitHero() {
+  const container = document.getElementById('split-devices-hero');
+  if (!container) return;
 
+  const panels = container.querySelectorAll('.split-panel');
+  if (!panels.length) return;
 
+  panels.forEach(panel => {
+    // Hover (Desktop)
+    panel.addEventListener('mouseenter', () => {
+      panels.forEach(p => {
+        p.classList.remove('is-expanded');
+        p.classList.add('is-collapsed');
+      });
+      panel.classList.add('is-expanded');
+      panel.classList.remove('is-collapsed');
+    });
+
+    // Click / Tap (Mobile & Desktop)
+    panel.addEventListener('click', (e) => {
+      // Allow button and anchor clicks to work naturally
+      if (e.target.closest('a') || e.target.closest('button')) return;
+
+      panels.forEach(p => {
+        p.classList.remove('is-expanded');
+        p.classList.add('is-collapsed');
+      });
+      panel.classList.add('is-expanded');
+      panel.classList.remove('is-collapsed');
+    });
+  });
+}
