@@ -865,7 +865,7 @@ header .logo:hover img {
 .our-prods-header {
   text-align: center !important;
   max-width: 860px !important;
-  margin: 0 auto 40px auto !important;
+  margin: 0 auto 54px auto !important;
 }
 
 .our-prods-badge {
@@ -881,7 +881,7 @@ header .logo:hover img {
   text-transform: uppercase !important;
   letter-spacing: 1.5px !important;
   border-radius: 50px !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 22px !important;
   box-shadow: 0 4px 15px rgba(30, 35, 46, 0.1) !important;
 }
 
@@ -890,7 +890,7 @@ header .logo:hover img {
   font-size: clamp(32px, 4.2vw, 46px) !important;
   font-weight: var(--s2-title-weight, 700) !important;
   color: var(--brand-navy) !important;
-  margin: 0 0 14px 0 !important;
+  margin: 0 0 18px 0 !important;
   line-height: 1.2 !important;
   letter-spacing: -0.5px !important;
 }
@@ -907,7 +907,7 @@ header .logo:hover img {
    SCREEN 2: INTERACTIVE SPLIT SCREEN SHOWCASE (70/30 FLEX ACCORDION)
    ======================================================= */
 .our-prods-split-section {
-  padding: 50px 0 0 0 !important;
+  padding: 90px 0 0 0 !important;
   background: #ffffff !important;
   position: relative !important;
   box-sizing: border-box !important;
@@ -918,7 +918,7 @@ header .logo:hover img {
 
 .our-prods-header {
   max-width: 900px !important;
-  margin: 0 auto 34px auto !important;
+  margin: 0 auto 52px auto !important;
   padding: 0 24px !important;
   text-align: center !important;
 }
@@ -1429,7 +1429,7 @@ header .logo:hover img {
 .why-us-header {
   text-align: center !important;
   max-width: 860px !important;
-  margin: 0 auto 36px auto !important;
+  margin: 0 auto 56px auto !important;
 }
 
 .why-us-badge {
@@ -1445,7 +1445,7 @@ header .logo:hover img {
   text-transform: uppercase !important;
   letter-spacing: 1.5px !important;
   border-radius: 50px !important;
-  margin-bottom: 12px !important;
+  margin-bottom: 20px !important;
   box-shadow: 0 4px 15px rgba(30, 35, 46, 0.08) !important;
 }
 
@@ -1454,7 +1454,7 @@ header .logo:hover img {
   font-size: clamp(28px, 3.2vw, 42px) !important;
   font-weight: var(--s3-title-weight, 700) !important;
   color: var(--brand-navy) !important;
-  margin: 0 0 10px 0 !important;
+  margin: 0 0 16px 0 !important;
   line-height: 1.2 !important;
   letter-spacing: -0.5px !important;
 }
@@ -1998,7 +1998,7 @@ header .logo:hover img {
 .presentation-header {
   text-align: center !important;
   max-width: 880px !important;
-  margin: 0 auto clamp(24px, 3vh, 36px) auto !important;
+  margin: 0 auto 56px auto !important;
   padding: 0 20px !important;
 }
 
@@ -2015,7 +2015,7 @@ header .logo:hover img {
   text-transform: uppercase !important;
   letter-spacing: 1.5px !important;
   border-radius: 50px !important;
-  margin-bottom: 14px !important;
+  margin-bottom: 20px !important;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04) !important;
 }
 
@@ -2024,7 +2024,7 @@ header .logo:hover img {
   font-size: clamp(30px, 3.8vw, 44px) !important;
   font-weight: 800 !important;
   color: var(--brand-navy) !important;
-  margin: 0 0 12px 0 !important;
+  margin: 0 0 16px 0 !important;
   line-height: 1.2 !important;
   letter-spacing: -0.5px !important;
 }
@@ -4246,45 +4246,31 @@ footer {
   }
 
   /* 2. SCREEN 2: Brand Switcher & Full-Width Vertical Video */
-  #our-products {
-    padding: 36px 0 44px 0 !important;
+  #our-products,
+  .our-prods-split-section {
+    padding: 64px 0 44px 0 !important;
   }
 
   .our-prods-header {
-    margin-bottom: 20px !important;
-    padding: 0 16px !important;
+    margin-bottom: 24px !important;
+    padding: 0 20px !important;
     text-align: center !important;
   }
 
+  .our-prods-badge {
+    margin-bottom: 18px !important;
+  }
+
   .our-prods-header h2 {
-    font-size: clamp(22px, 6vw, 28px) !important;
-    margin-bottom: 8px !important;
+    font-size: clamp(24px, 6vw, 30px) !important;
+    margin-bottom: 14px !important;
+    line-height: 1.25 !important;
   }
 
   .our-prods-header p {
     font-size: 13.5px !important;
-    line-height: 1.45 !important;
-  }
-
-  /* 2. SCREEN 2: Brand Switcher & Full-Width Vertical Video (Monochrome, Sharp 0px Corners, Transparent Buttons) */
-  #our-products {
-    padding: 30px 0 36px 0 !important;
-  }
-
-  .our-prods-header {
-    margin-bottom: 16px !important;
-    padding: 0 16px !important;
-    text-align: center !important;
-  }
-
-  .our-prods-header h2 {
-    font-size: clamp(22px, 6vw, 28px) !important;
-    margin-bottom: 8px !important;
-  }
-
-  .our-prods-header p {
-    font-size: 13px !important;
-    line-height: 1.45 !important;
+    line-height: 1.55 !important;
+    margin: 0 auto !important;
   }
 
   .mobile-device-showcase {
@@ -4299,8 +4285,9 @@ footer {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    gap: 8px !important;
-    margin-bottom: 14px !important;
+    gap: 10px !important;
+    margin-top: 24px !important;
+    margin-bottom: 30px !important;
     padding: 0 16px !important;
     width: 100% !important;
     box-sizing: border-box !important;
