@@ -541,28 +541,29 @@ header .logo:hover img {
   align-items: center !important;
   gap: 10px !important;
   padding: 10px 22px !important;
-  background-color: #ffffff !important;
+  background-color: transparent !important;
   color: #1e232e !important;
-  font-size: 12px !important;
-  font-weight: 800 !important;
+  font-size: 11.5px !important;
+  font-weight: 700 !important;
   letter-spacing: 1.5px !important;
   text-transform: uppercase !important;
-  border: 1.5px solid #5d8796 !important;
+  border: 1px solid #1e232e !important;
   border-radius: 0px !important;
   text-decoration: none !important;
-  transition: all 0.25s ease !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
   cursor: pointer !important;
 }
 
 .product-btn svg {
-  stroke: #5d8796 !important;
+  stroke: #1e232e !important;
   transition: transform 0.25s ease !important;
 }
 
 .product-btn:hover {
-  background-color: #5d8796 !important;
-  border-color: #5d8796 !important;
+  background-color: #1e232e !important;
+  border-color: #1e232e !important;
   color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2) !important;
 }
 
 .product-btn:hover svg {
@@ -605,35 +606,35 @@ header .logo:hover img {
 }
 
 .slider-arrow {
-  width: 30px !important;
-  height: 30px !important;
-  background: rgba(255, 255, 255, 0.92) !important;
+  width: 32px !important;
+  height: 32px !important;
+  background: transparent !important;
   backdrop-filter: blur(8px) !important;
   -webkit-backdrop-filter: blur(8px) !important;
-  border: 1.5px solid #b6cbd2 !important;
+  border: 1px solid rgba(30, 35, 46, 0.25) !important;
   border-radius: 0px !important;
-  color: #5d8796 !important;
+  color: #1e232e !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   cursor: pointer !important;
   transition: all 0.25s ease !important;
   padding: 0 !important;
-  box-shadow: 0 4px 12px rgba(93, 135, 150, 0.12) !important;
+  box-shadow: none !important;
 }
 
 .slider-arrow svg {
-  stroke: #5d8796 !important;
+  stroke: #1e232e !important;
   transition: all 0.25s ease !important;
 }
 
 .slider-arrow.active,
 .slider-arrow:hover {
-  background: #5d8796 !important;
-  border-color: #5d8796 !important;
+  background: #1e232e !important;
+  border-color: #1e232e !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 14px rgba(93, 135, 150, 0.4) !important;
-  transform: scale(1.08) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25) !important;
+  transform: scale(1.04) !important;
 }
 
 .slider-arrow.active svg,
@@ -2164,9 +2165,9 @@ header .logo:hover img {
 }
 
 .shimmer-submit-btn:hover {
-  background: #5d8796 !important;
+  background: #1e232e !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 10px 22px rgba(93, 135, 150, 0.3) !important;
+  box-shadow: 0 10px 22px rgba(30, 35, 46, 0.3) !important;
 }
 
 .btn-arrow {
