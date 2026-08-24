@@ -907,49 +907,83 @@ header .logo:hover img {
   transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-/* ================== 70% РОЗГОРНУТИЙ СТАН: ПРЕМИАЛЬНА GLASSMORPHISM ПЛАШКА В КУТКАХ ================== */
+/* ================== 70% РОЗГОРНУТИЙ СТАН: КОМПАКТНА GLASSMORPHISM ПЛАШКА ВПРИТУЛ ДО КРАЮ ================== */
 .split-panel.is-expanded .split-content {
-  max-width: 480px !important;
-  width: calc(100% - 64px) !important;
-  padding: 30px 34px !important;
+  max-width: 390px !important;
+  width: auto !important;
+  padding: 22px 24px !important;
   text-align: left !important;
   align-items: flex-start !important;
-  background: rgba(14, 22, 34, 0.65) !important;
+  background: rgba(14, 22, 34, 0.68) !important;
   backdrop-filter: blur(24px) saturate(180%) !important;
   -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
   border: 1px solid rgba(255, 255, 255, 0.22) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.45) !important;
   border-radius: 0px !important;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45), 0 4px 16px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
   opacity: 1 !important;
   transform: scale(1) !important;
   pointer-events: auto !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-/* Ліва сторона 70%: верхній лівий кут */
+/* Делікатний світловий відблиск (блик) при наведенні */
+.split-panel.is-expanded .split-content::after {
+  content: "" !important;
+  position: absolute !important;
+  top: -50% !important;
+  left: -50% !important;
+  width: 200% !important;
+  height: 200% !important;
+  background: linear-gradient(
+    60deg,
+    transparent 35%,
+    rgba(255, 255, 255, 0.14) 50%,
+    transparent 65%
+  ) !important;
+  transform: translateX(-100%) translateY(-100%) rotate(30deg) !important;
+  transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  pointer-events: none !important;
+}
+
+.split-panel.is-expanded .split-content:hover::after {
+  transform: translateX(100%) translateY(100%) rotate(30deg) !important;
+}
+
+.split-panel.is-expanded .split-content:hover {
+  border-color: rgba(255, 255, 255, 0.45) !important;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.55), inset 0 1px 1px rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Ліва сторона 70%: притиснута впритул до лівого краю (margin-left: 0) */
 .split-panel-left.is-expanded .split-content {
-  margin: 32px 0 0 32px !important;
+  margin: 24px auto 0 0 !important;
+  border-left: none !important;
 }
 
-/* Права сторона 70%: верхній правий кут */
+/* Права сторона 70%: притиснута впритул до правого краю (margin-right: 0) */
 .split-panel-right.is-expanded .split-content {
-  margin: 32px 32px 0 0 !important;
+  margin: 24px 0 0 auto !important;
+  border-right: none !important;
 }
 
 .split-panel.is-expanded .split-title {
-  font-size: clamp(24px, 2.5vw, 36px) !important;
+  font-size: clamp(22px, 2.2vw, 28px) !important;
   line-height: 1.15 !important;
-  margin: 0 0 16px 0 !important;
+  margin: 0 0 10px 0 !important;
+  letter-spacing: -0.3px !important;
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5) !important;
 }
 
 .split-panel.is-expanded .split-title span {
-  font-size: 0.55em !important;
-  font-weight: 800 !important;
-  color: rgba(255, 255, 255, 0.9) !important;
-  letter-spacing: 1.5px !important;
+  font-size: 0.52em !important;
+  font-weight: 700 !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  letter-spacing: 1.2px !important;
   text-transform: uppercase !important;
-  margin-left: 8px !important;
+  margin-left: 6px !important;
   display: inline-block !important;
 }
 
@@ -1050,16 +1084,16 @@ header .logo:hover img {
 .split-badge-row {
   display: flex !important;
   align-items: center !important;
-  gap: 10px !important;
+  gap: 8px !important;
   flex-wrap: wrap !important;
-  margin-bottom: 14px !important;
+  margin-bottom: 10px !important;
 }
 
 .split-badge {
-  padding: 6px 14px !important;
-  font-size: 11px !important;
-  font-weight: 800 !important;
-  letter-spacing: 1.2px !important;
+  padding: 4px 10px !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.8px !important;
   text-transform: uppercase !important;
   border-radius: 0px !important;
   backdrop-filter: blur(8px) !important;
@@ -1067,60 +1101,62 @@ header .logo:hover img {
 }
 
 .split-badge.badge-linfo {
-  background: rgba(141, 164, 175, 0.45) !important;
-  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  background: rgba(141, 164, 175, 0.35) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
   color: #ffffff !important;
 }
 
 .split-badge.badge-zionic {
-  background: rgba(163, 181, 188, 0.45) !important;
-  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  background: rgba(163, 181, 188, 0.35) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
   color: #ffffff !important;
 }
 
 .split-tag {
-  padding: 6px 12px !important;
-  font-size: 10.5px !important;
-  font-weight: 700 !important;
-  letter-spacing: 1px !important;
+  padding: 4px 8px !important;
+  font-size: 9.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.8px !important;
   text-transform: uppercase !important;
-  background: rgba(255, 255, 255, 0.18) !important;
-  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  background: rgba(255, 255, 255, 0.14) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
   color: #ffffff !important;
   border-radius: 0px !important;
 }
 
-/* Булети */
+/* Булети — тонкий витончений шрифт як у підзаголовків */
 .split-bullets {
   list-style: none !important;
   padding: 0 !important;
-  margin: 0 0 24px 0 !important;
+  margin: 0 0 16px 0 !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 10px !important;
+  gap: 6px !important;
 }
 
 .split-bullets li {
-  font-size: 14px !important;
-  font-weight: 500 !important;
-  color: rgba(255, 255, 255, 0.95) !important;
+  font-size: 13px !important;
+  font-weight: 350 !important; /* Тонкий основний текст */
+  color: rgba(255, 255, 255, 0.88) !important;
   display: flex !important;
   align-items: center !important;
-  gap: 10px !important;
-  line-height: 1.4 !important;
+  gap: 8px !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0.15px !important;
 }
 
 .split-check {
   color: #a3b5bc !important;
-  font-weight: 800 !important;
-  font-size: 16px !important;
+  font-weight: 400 !important;
+  font-size: 13.5px !important;
+  opacity: 0.85 !important;
   flex-shrink: 0 !important;
 }
 
 /* Кнопки (SYMMED ELITE AESTHETIC — Мінімалістичні з гострими кутами) */
 .split-btn-group {
   display: flex !important;
-  gap: 14px !important;
+  gap: 10px !important;
   flex-wrap: wrap !important;
 }
 
@@ -1128,10 +1164,10 @@ header .logo:hover img {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  padding: 11px 22px !important;
-  font-size: 11px !important;
-  font-weight: 700 !important;
-  letter-spacing: 1.5px !important;
+  padding: 9px 18px !important;
+  font-size: 10.5px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1.4px !important;
   text-transform: uppercase !important;
   text-decoration: none !important;
   border-radius: 0px !important; /* Гострі кути */
