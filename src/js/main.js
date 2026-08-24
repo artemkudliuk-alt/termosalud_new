@@ -640,7 +640,7 @@ function initMobileBrandSwitcher() {
 }
 
 /**
- * 16. Screen 3 Liquid Glass Mirror Accordion (Mobile & Tablet)
+ * 16. Screen 3 Interactive 6-Row Benefits Dropdown Accordion (Desktop & Mobile)
  */
 function initBentoAccordion() {
   const bentoGrid = document.querySelector('.swiss-bento-grid');
@@ -652,11 +652,10 @@ function initBentoAccordion() {
     if (!toggle) return;
 
     toggle.addEventListener('click', (e) => {
-      if (window.innerWidth > 991) return;
-
+      e.preventDefault();
       const isCurrentlyOpen = card.classList.contains('is-open');
 
-      // Close other cards for sleek single-panel mirror view
+      // Close all other cards for a sleek single-expanded accordion view
       cards.forEach((c) => {
         if (c !== card) c.classList.remove('is-open');
       });
