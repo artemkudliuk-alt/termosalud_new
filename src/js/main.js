@@ -177,19 +177,30 @@ function initFaqAccordions() {
  * 4. Mobile Navigation Drawer
  */
 function initMobileMenu() {
-  const burger = document.querySelector('.burger, .header_burger, .menu-toggle, .navbar-toggler, .header-burger');
-  const nav = document.querySelector('.header-nav, .mobile_menu, .navbar-collapse, .header-menu, .header-ul');
+  const burger = document.querySelector('#custom-burger-btn, .custom-burger-btn, .burger, .header_burger, .menu-toggle, .navbar-toggler, .header-burger');
+  const nav = document.querySelector('#mobile-nav-panel, .header-center, .header-nav, .mobile_menu, .navbar-collapse, .header-menu, .header-ul');
 
   if (burger && nav) {
-    burger.addEventListener('click', () => {
-      burger.classList.toggle('active');
-      nav.classList.toggle('active');
+    burger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isActive = burger.classList.toggle('active');
+      nav.classList.toggle('active', isActive);
+      burger.setAttribute('aria-expanded', isActive ? 'true' : 'false');
     });
 
-    nav.querySelectorAll('a').forEach((link) => {
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target) && !burger.contains(e.target)) {
+        burger.classList.remove('active');
+        nav.classList.remove('active');
+        burger.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    nav.querySelectorAll('a, button').forEach((link) => {
       link.addEventListener('click', () => {
         burger.classList.remove('active');
         nav.classList.remove('active');
+        burger.setAttribute('aria-expanded', 'false');
       });
     });
   }
