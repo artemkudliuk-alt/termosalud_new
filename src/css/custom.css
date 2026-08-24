@@ -3419,116 +3419,190 @@ header .logo:hover img {
 }
 
 /* =======================================================
-   MODERN ULTRA-COMPACT 1-LINE FOOTER
+   MODERN LUXURY SPANISH FOOTER (Centered Logo + 2 Columns)
    ======================================================= */
-.modern-compact-footer,
-footer.modern-compact-footer,
+.modern-luxury-footer,
+footer.modern-luxury-footer,
 footer {
-  background: #1e232e !important;
+  background: #0f172a !important;
   border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
-  padding: 16px 0 !important;
+  padding: 56px 0 28px 0 !important;
   color: #94a3b8 !important;
   position: relative !important;
   z-index: 10 !important;
   display: block !important;
-  font-size: 13px !important;
+  font-size: 13.5px !important;
 }
 
-.compact-footer-line {
+.footer-container {
+  max-width: 880px !important;
+  margin: 0 auto !important;
+  padding: 0 24px !important;
+  box-sizing: border-box !important;
+}
+
+/* 1. Top: Centered Logo Block */
+.footer-brand-centered {
   display: flex !important;
+  flex-direction: column !important;
   align-items: center !important;
-  justify-content: space-between !important;
-  gap: 20px !important;
-  flex-wrap: nowrap !important;
-  width: 100% !important;
+  text-align: center !important;
+  margin-bottom: 36px !important;
+  padding-bottom: 28px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 
-.footer-left {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 12px !important;
-  white-space: nowrap !important;
-  flex-shrink: 0 !important;
+.footer-main-logo {
+  display: inline-block !important;
+  margin-bottom: 10px !important;
+  transition: opacity 0.2s ease !important;
 }
 
-.compact-footer-logo img {
-  height: 20px !important;
+.footer-main-logo:hover {
+  opacity: 0.85 !important;
+}
+
+.footer-main-logo img {
+  height: 24px !important;
   width: auto !important;
   display: block !important;
   filter: brightness(0) invert(1) !important;
 }
 
-.footer-divider {
-  color: rgba(255, 255, 255, 0.2) !important;
-  font-size: 11px !important;
-  user-select: none !important;
-}
-
-.compact-footer-copy {
-  font-size: 12.5px !important;
+.footer-brand-sub {
+  font-size: 12px !important;
   color: #64748b !important;
+  letter-spacing: 0.8px !important;
   margin: 0 !important;
-  white-space: nowrap !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
 }
 
-.compact-footer-nav {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 22px !important;
-  white-space: nowrap !important;
-  flex-shrink: 0 !important;
+/* 2. Middle: 2 Balanced Structured Columns */
+.footer-two-columns {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 40px !important;
+  margin-bottom: 36px !important;
 }
 
-.compact-footer-nav a {
-  color: #cbd5e1 !important;
-  font-size: 13px !important;
-  font-weight: 500 !important;
-  text-decoration: none !important;
-  transition: color 0.2s ease !important;
+.footer-col {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  text-align: left !important;
 }
 
-.compact-footer-nav a:hover {
-  color: var(--brand-cyan) !important;
-}
-
-.compact-footer-contacts {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 12px !important;
-  white-space: nowrap !important;
-  flex-shrink: 0 !important;
-}
-
-.compact-footer-link {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 6px !important;
-  color: #cbd5e1 !important;
+.footer-col-title {
+  font-family: var(--active-heading-font) !important;
   font-size: 12.5px !important;
-  font-weight: 500 !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  margin: 0 0 16px 0 !important;
+}
+
+.footer-links-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+}
+
+.footer-links-list a {
+  color: #94a3b8 !important;
   text-decoration: none !important;
+  font-size: 13.5px !important;
+  transition: all 0.2s ease !important;
+  font-weight: 500 !important;
+  display: inline-block !important;
+}
+
+.footer-links-list a:hover {
+  color: #ffffff !important;
+  transform: translateX(4px) !important;
+}
+
+.footer-contact-items {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+.footer-contact-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  color: #94a3b8 !important;
+  text-decoration: none !important;
+  font-size: 13.5px !important;
   transition: color 0.2s ease !important;
 }
 
-.compact-footer-link svg {
-  stroke: var(--brand-cyan) !important;
-  transition: stroke 0.2s ease !important;
+.footer-contact-item svg {
+  color: #38bdf8 !important;
+  flex-shrink: 0 !important;
 }
 
-.compact-footer-link:hover {
+.footer-contact-item:hover {
   color: #ffffff !important;
 }
 
-.compact-footer-link:hover svg {
-  stroke: #ffffff !important;
+.footer-location-text {
+  color: #64748b !important;
 }
 
-@media (max-width: 767px) {
-  .compact-footer-line {
+/* 3. Bottom: Fine Copyright Bar */
+.footer-bottom-bar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding-top: 22px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.06) !important;
+  font-size: 12px !important;
+  color: #64748b !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+}
+
+.footer-bottom-bar p {
+  margin: 0 !important;
+}
+
+.footer-made-in {
+  color: #475569 !important;
+}
+
+@media (max-width: 600px) {
+  .modern-luxury-footer {
+    padding: 40px 0 24px 0 !important;
+  }
+  .footer-brand-centered {
+    margin-bottom: 28px !important;
+    padding-bottom: 20px !important;
+  }
+  .footer-two-columns {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px !important;
+    margin-bottom: 28px !important;
+  }
+  .footer-col-title {
+    font-size: 11px !important;
+    margin-bottom: 12px !important;
+  }
+  .footer-links-list a,
+  .footer-contact-item {
+    font-size: 12px !important;
+    gap: 6px !important;
+  }
+  .footer-bottom-bar {
     flex-direction: column !important;
-    gap: 10px !important;
+    align-items: center !important;
     text-align: center !important;
-    flex-wrap: wrap !important;
+    gap: 6px !important;
   }
 }
 

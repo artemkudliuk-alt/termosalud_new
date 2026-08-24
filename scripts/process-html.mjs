@@ -1119,42 +1119,61 @@ function cleanHtml(raw, pageName) {
     html = html.replace(/<div[\s\n]+class=partners>[\s\S]*?<section[\s\n]+class="seo_text\s*"[\s\S]*?<\/section>/i, `${modernPartnersSection}\n${modernSeoSection}`);
   }
 
-  // Modern Ultra-Compact Single-Line Footer (Universal for all pages)
-  const modernCompactFooter = `
-    <!-- Modern Sleek 1-Line Footer -->
-    <footer class="modern-compact-footer">
-      <div class="container-fluid" style="max-width: 1480px; margin: 0 auto; padding: 0 24px;">
-        <div class="compact-footer-line">
-          <!-- Left: Logo & Copyright -->
-          <div class="footer-left">
-            <a href="/" class="compact-footer-logo">
-              <img src="/wp-content/themes/zionic/assets/images/footer-logo.svg" alt="Termosalud">
-            </a>
-            <span class="footer-divider">•</span>
-            <span class="compact-footer-copy">© 2026 Termosalud Україна</span>
-          </div>
-
-          <!-- Middle: Navigation -->
-          <nav class="compact-footer-nav">
-            <a href="#our-products">Обладнання</a>
-            <a href="/zionic/">ZIONIC</a>
-            <a href="/linfopress/">LINFOPRESS</a>
-            <a href="/about-us/">Про нас</a>
-          </nav>
-
-          <!-- Right: Direct Inline Contacts -->
-          <div class="compact-footer-contacts">
-            <a href="tel:+380937205277" class="compact-footer-link">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              <span>+380 93 720 52 77</span>
-            </a>
-            <span class="footer-divider">•</span>
-            <a href="mailto:shop@termosalud.com.ua" class="compact-footer-link">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              <span>shop@termosalud.com.ua</span>
-            </a>
-          </div>
+  // Modern Luxury Spanish Footer (Centered Logo + 2 Balanced Structured Columns)
+  const modernLuxuryFooter = `
+    <!-- Modern Luxury Spanish Footer -->
+    <footer class="modern-luxury-footer">
+      <div class="footer-container">
+        
+        <!-- 1. Top: Centered Luxury Brand Block -->
+        <div class="footer-brand-centered">
+          <a href="/" class="footer-main-logo">
+            <img src="/wp-content/themes/zionic/assets/images/footer-logo.svg" alt="Termosalud Medical & Aesthetic">
+          </a>
+          <p class="footer-brand-sub">Офіційний ексклюзивний дистриб'ютор в Україні</p>
         </div>
+
+        <!-- 2. Middle: 2 Balanced Structured Columns -->
+        <div class="footer-two-columns">
+          
+          <!-- Column 1: Navigation & Equipment -->
+          <div class="footer-col footer-col-nav">
+            <h4 class="footer-col-title">Обладнання</h4>
+            <ul class="footer-links-list">
+              <li><a href="#our-products">Все обладнання</a></li>
+              <li><a href="/zionic/">Zionic (MARP + RF)</a></li>
+              <li><a href="/linfopress/">Linfopress Pro</a></li>
+              <li><a href="/about-us/">Про нас</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 2: Direct Contacts & Support -->
+          <div class="footer-col footer-col-contacts">
+            <h4 class="footer-col-title">Контакти</h4>
+            <div class="footer-contact-items">
+              <a href="tel:+380937205277" class="footer-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>+380 93 720 52 77</span>
+              </a>
+              <a href="mailto:shop@termosalud.com.ua" class="footer-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>shop@termosalud.com.ua</span>
+              </a>
+              <div class="footer-contact-item footer-location-text">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Київ, шоурум та сервіс</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 3. Bottom: Fine Copyright Bar -->
+        <div class="footer-bottom-bar">
+          <p>© 2026 Termosalud Україна. Всі права захищені.</p>
+          <p class="footer-made-in">Розроблено в Іспанії • 100% Європейська якість</p>
+        </div>
+
       </div>
     </footer>
 
@@ -1300,7 +1319,7 @@ function cleanHtml(raw, pageName) {
   // Remove old raw popup if present
   html = html.replace(/<div[\s\n]+id="?popup_request"?[\s\S]*?<\/div>[\s\n]*<\/div>/i, '');
 
-  html = html.replace(/<footer[\s\S]*?<\/footer>/i, `${modernCompactFooter}\n${modernGlassPopupModal}`);
+  html = html.replace(/<footer[\s\S]*?<\/footer>/i, `${modernLuxuryFooter}\n${modernGlassPopupModal}`);
 
   // Add styles & Google Fonts
   const headInject = `
