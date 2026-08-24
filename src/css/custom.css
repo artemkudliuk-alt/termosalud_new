@@ -314,15 +314,20 @@ header .logo:hover img {
   header.header,
   .header {
     height: 58px !important;
-    padding: 0 14px !important;
+    padding: 0 20px !important;
     margin: 0 !important;
+    width: 100% !important;
+    max-width: 100vw !important;
     border-radius: 0px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
     position: sticky !important;
     top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
     z-index: 1000 !important;
+    box-sizing: border-box !important;
   }
 
   /* 1. Left: Compact Presentation Button */
@@ -331,10 +336,12 @@ header .logo:hover img {
     align-items: center !important;
     justify-content: flex-start !important;
     flex: 1 1 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .header-btn-compact {
-    padding: 6px 10px !important;
+    padding: 6px 12px !important;
     font-size: 9.5px !important;
     font-weight: 700 !important;
     letter-spacing: 0.5px !important;
@@ -348,6 +355,7 @@ header .logo:hover img {
     width: auto !important;
     max-width: 120px !important;
     box-sizing: border-box !important;
+    margin: 0 !important;
   }
 
   .header-btn-compact:hover {
@@ -363,6 +371,7 @@ header .logo:hover img {
     justify-content: center !important;
     flex: 0 0 auto !important;
     margin: 0 auto !important;
+    padding: 0 !important;
   }
 
   header .logo img,
@@ -378,6 +387,8 @@ header .logo:hover img {
     justify-content: flex-end !important;
     flex: 1 1 0 !important;
     gap: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .desktop-only-phone,
@@ -391,14 +402,14 @@ header .logo:hover img {
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-between !important;
-    width: 22px !important;
-    height: 15px !important;
+    width: 24px !important;
+    height: 16px !important;
     background: transparent !important;
     border: none !important;
     padding: 0 !important;
     cursor: pointer !important;
     z-index: 1001 !important;
-    margin-left: auto !important;
+    margin: 0 !important;
   }
 
   /* Black Burger Stripes (Zero Yellow) */
@@ -412,7 +423,7 @@ header .logo:hover img {
   }
 
   .custom-burger-btn.active span:nth-child(1) {
-    transform: translateY(6.5px) rotate(45deg) !important;
+    transform: translateY(7px) rotate(45deg) !important;
   }
 
   .custom-burger-btn.active span:nth-child(2) {
@@ -420,7 +431,7 @@ header .logo:hover img {
   }
 
   .custom-burger-btn.active span:nth-child(3) {
-    transform: translateY(-6.5px) rotate(-45deg) !important;
+    transform: translateY(-7px) rotate(-45deg) !important;
   }
 
   .gamburger {
@@ -2847,39 +2858,6 @@ header .logo:hover img {
   flex-shrink: 0 !important;
 }
 
-.pillar-body h4 {
-  font-family: var(--active-heading-font) !important;
-  font-size: clamp(14.5px, 1.1vw, 16.5px) !important;
-  font-weight: 800 !important;
-  color: #1e232e !important;
-  margin: 0 0 4px 0 !important;
-  line-height: 1.3 !important;
-}
-
-.pillar-body p {
-  font-size: 13px !important;
-  color: #64748b !important;
-  line-height: 1.55 !important;
-  margin: 0 !important;
-}
-
-.editorial-conclusion {
-  font-size: 14.5px !important;
-  line-height: 1.7 !important;
-  color: #475569 !important;
-  margin: 0 !important;
-}
-
-@media (max-width: 991px) {
-  .editorial-grid-layout {
-    grid-template-columns: 1fr !important;
-    gap: 36px !important;
-  }
-  .editorial-left-col {
-    position: static !important;
-  }
-}
-
 /* =======================================================
    BLUR-IN SCROLL REVEAL ANIMATION
    ======================================================= */
@@ -2997,23 +2975,12 @@ header .logo:hover img {
 }
 
 /* Responsive adjustments */
-@media (max-width: 1199px) {
-  .modern-why-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 28px !important;
-  }
-
-  .modern-partner-card {
-    flex: 0 0 300px !important;
-  }
-}
-
 @media (max-width: 991px) {
   header,
   header.header,
   .header {
-    margin: 10px 15px !important;
-    padding: 0 16px !important;
+    margin: 0 !important;
+    padding: 0 20px !important;
   }
 
   .hero-clean-section {
@@ -3041,6 +3008,23 @@ header .logo:hover img {
   .hero-right-col {
     justify-content: center !important;
     width: 100% !important;
+  }
+}
+
+.editorial-conclusion {
+  font-size: 14.5px !important;
+  line-height: 1.7 !important;
+  color: #475569 !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .editorial-grid-layout {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+  }
+  .editorial-left-col {
+    position: static !important;
   }
 
   .hero-product-slide {
