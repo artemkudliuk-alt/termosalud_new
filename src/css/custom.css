@@ -3098,3 +3098,382 @@ footer {
   color: #cbd5e1 !important;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.75) !important;
 }
+
+
+/* =======================================================
+   COMPREHENSIVE MOBILE & TABLET RESPONSIVE SYSTEM
+   (Pixel-Perfect, Zero Horizontal Scroll, 360px - 768px)
+   ======================================================= */
+
+@media (max-width: 768px) {
+  /* 0. Global Mobile Containment */
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+  }
+
+  .container,
+  .bento-container,
+  .seo_text .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+  }
+
+  /* 1. Header & Global Badges */
+  .site-header {
+    padding: 10px 16px !important;
+  }
+
+  .seo-badge,
+  .presentation-badge,
+  .partners-badge {
+    font-size: 10px !important;
+    padding: 5px 14px !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* 2. Screen 1: Hero Section */
+  .hero-clean-section {
+    padding: clamp(24px, 4vh, 40px) 0 clamp(32px, 5vh, 50px) 0 !important;
+    min-height: auto !important;
+  }
+
+  .hero-clean-title {
+    font-size: clamp(28px, 7.8vw, 38px) !important;
+    line-height: 1.04 !important;
+    letter-spacing: -0.5px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .hero-clean-desc {
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+    max-width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+
+  .hero-product-slider-wrapper {
+    margin-top: 16px !important;
+  }
+
+  .hero-product-card {
+    padding: 14px 12px !important;
+    min-width: 250px !important;
+  }
+
+  /* 3. Screen 2: Interactive Split Showcase (Mobile Stack) */
+  #our-products {
+    padding: 40px 0 50px 0 !important;
+  }
+
+  .our-prods-header h2 {
+    font-size: clamp(24px, 6.5vw, 32px) !important;
+    margin-bottom: 10px !important;
+  }
+
+  .our-prods-header p {
+    font-size: 14px !important;
+  }
+
+  .split-screen-container {
+    flex-direction: column !important;
+    height: auto !important;
+    min-height: auto !important;
+    gap: 16px !important;
+    padding: 0 16px !important;
+  }
+
+  .split-panel {
+    width: 100% !important;
+    height: 400px !important;
+    flex: none !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+  }
+
+  .split-panel .split-content {
+    margin: 12px !important;
+    max-width: calc(100% - 24px) !important;
+    padding: 16px 14px !important;
+    border-radius: 10px !important;
+    background: rgba(18, 22, 29, 0.92) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  .split-panel .split-title {
+    font-size: 20px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .split-panel .split-title span {
+    font-size: 0.55em !important;
+    margin-left: 4px !important;
+  }
+
+  .split-panel .split-bullets {
+    display: flex !important;
+    max-height: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    gap: 5px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .split-bullet-item {
+    font-size: 12px !important;
+  }
+
+  .split-panel .split-btn-group {
+    display: flex !important;
+    max-height: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    width: 100% !important;
+    gap: 6px !important;
+  }
+
+  .split-btn-primary,
+  .split-btn-secondary {
+    flex: 1 !important;
+    height: 38px !important;
+    font-size: 10.5px !important;
+    padding: 0 8px !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  /* 4. Screen 3: Bento Grid (Single Column Stack) */
+  .why-us-bento-section {
+    padding: 40px 0 50px 0 !important;
+  }
+
+  .why-us-header h2 {
+    font-size: clamp(24px, 6.5vw, 32px) !important;
+    margin-bottom: 10px !important;
+  }
+
+  .why-us-header p {
+    font-size: 14px !important;
+  }
+
+  .swiss-bento-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .bento-hero-card,
+  .bento-safety-card,
+  .bento-mini-card,
+  .bento-wide-card {
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+    padding: 18px 16px !important;
+  }
+
+  .bento-title {
+    font-size: 19px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .bento-desc {
+    font-size: 13.5px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .bento-cert-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px !important;
+  }
+
+  .cert-seal {
+    padding: 10px 6px !important;
+  }
+
+  .seal-code {
+    font-size: 12px !important;
+  }
+
+  .seal-name {
+    font-size: 9px !important;
+  }
+
+  /* 5. Screen 4: Application Presentation & Form */
+  .application-presentation {
+    padding: 40px 0 50px 0 !important;
+  }
+
+  .presentation-header h2 {
+    font-size: clamp(24px, 6.5vw, 32px) !important;
+    margin-bottom: 10px !important;
+  }
+
+  .presentation-header p {
+    font-size: 14px !important;
+  }
+
+  .fullwidth-living-banner {
+    flex-direction: column !important;
+    min-height: auto !important;
+    background: transparent !important;
+  }
+
+  .living-banner-bg-img {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 280px !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    margin-bottom: 12px !important;
+  }
+
+  .living-banner-content-container {
+    position: relative !important;
+    width: 100% !important;
+    min-height: auto !important;
+    padding: 0 16px !important;
+    justify-content: center !important;
+  }
+
+  .banner-form-overlay-wrap {
+    max-width: 100% !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+    padding: 20px 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .form-title {
+    font-size: 18px !important;
+  }
+
+  .format-tab-btn {
+    font-size: 11px !important;
+    padding: 6px 8px !important;
+  }
+
+  .device-pills-row {
+    flex-direction: column !important;
+    gap: 5px !important;
+  }
+
+  .device-pill {
+    padding: 8px !important;
+    font-size: 12px !important;
+  }
+
+  .form-row-2col {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+
+  .luxury-form-input {
+    height: 46px !important;
+    font-size: 14px !important;
+  }
+
+  .messenger-pill {
+    padding: 8px 6px !important;
+    font-size: 11.5px !important;
+  }
+
+  .shimmer-submit-btn {
+    height: 48px !important;
+    font-size: 12px !important;
+  }
+
+  .form-trust-bullets {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+  }
+
+  /* 6. Screen 5: Partners */
+  .partners {
+    padding: 40px 0 50px 0 !important;
+  }
+
+  .partners-header h2 {
+    font-size: clamp(24px, 6.5vw, 32px) !important;
+    margin-bottom: 10px !important;
+  }
+
+  .partners-header p {
+    font-size: 14px !important;
+  }
+
+  /* 7. Screen 6: Manifest & SEO */
+  .seo_text {
+    padding: 40px 0 50px 0 !important;
+  }
+
+  .editorial-main-title {
+    font-size: clamp(22px, 6vw, 30px) !important;
+    margin-bottom: 16px !important;
+  }
+
+  .editorial-stats-row {
+    gap: 20px !important;
+    margin-bottom: 20px !important;
+    flex-wrap: wrap !important;
+  }
+
+  .stat-num {
+    font-size: 30px !important;
+  }
+
+  .stat-lbl {
+    font-size: 11.5px !important;
+  }
+
+  .editorial-lead-text {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 24px !important;
+  }
+
+  .pillar-item {
+    gap: 12px !important;
+    padding-bottom: 14px !important;
+  }
+
+  .pillar-num {
+    font-size: 18px !important;
+  }
+
+  .pillar-body h4 {
+    font-size: 14.5px !important;
+  }
+
+  .pillar-body p {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-clean-title {
+    font-size: 26px !important;
+  }
+
+  .split-panel {
+    height: 380px !important;
+  }
+
+  .split-panel .split-title {
+    font-size: 18px !important;
+  }
+
+  .format-switcher {
+    flex-direction: column !important;
+  }
+
+  .messenger-pills-row {
+    flex-direction: column !important;
+  }
+}
