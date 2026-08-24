@@ -382,7 +382,7 @@ function cleanHtml(raw, pageName) {
 
     // Modern Screen 3: Architectural Swiss Bento Grid with 100% Authentic Text from Original Site (Awwwards Grade)
     const modernWhyUsSection = `
-      <!-- Screen 3: Architectural Swiss Bento Grid (Full Height, Generous Spacing, Unclipped Cards) -->
+      <!-- Screen 3: Architectural Swiss Bento Grid (Full Height Desktop / Liquid Glass Mirror Accordion Mobile) -->
       <section class="why-us-bento-section" id="why-us">
         <div class="bento-container">
           
@@ -393,14 +393,14 @@ function cleanHtml(raw, pageName) {
             <p>Повний комплекс підтримки бізнесу: від оригінального сертифікованого обладнання до навчання лікарів та маркетингу</p>
           </div>
 
-          <!-- Asymmetric Bento Grid (6 Pillars Architecture) -->
+          <!-- Asymmetric Bento Grid (6 Pillars Architecture / Mobile Mirror Accordion) -->
           <div class="swiss-bento-grid">
 
-            <!-- Bento 1 (Hero Left Module, Spans 2 Rows): Вигода -->
-            <div class="bento-card bento-hero-card" data-aos="fade-up" data-aos-delay="50">
+            <!-- Bento 1: Вигода -->
+            <div class="bento-card bento-hero-card is-open" data-card="01" data-aos="fade-up" data-aos-delay="50">
               <div class="bento-card-spotlight"></div>
               <div class="bento-card-inner">
-                <div class="bento-top-meta">
+                <div class="bento-top-meta bento-accordion-toggle">
                   <div class="bento-meta-left">
                     <div class="bento-icon-pod pod-finance">
                       <svg class="bento-svg" viewBox="0 0 32 32" fill="none">
@@ -412,58 +412,67 @@ function cleanHtml(raw, pageName) {
                         <path class="arrow-tip" d="M20.5 6H24.5V10" stroke="#2f855a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                     </div>
-                    <span class="bento-index">01 / ФІНАНСОВА ВИГОДА</span>
+                    <div class="bento-meta-text">
+                      <span class="bento-index">01 / ФІНАНСОВА ВИГОДА</span>
+                      <h3 class="bento-title">Вигода</h3>
+                    </div>
                   </div>
-                  <span class="bento-pill-tag">Швидкий ROI</span>
+                  <div class="bento-meta-right">
+                    <span class="bento-pill-tag">Швидкий ROI</span>
+                    <span class="bento-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </span>
+                  </div>
                 </div>
                 
-                <h3 class="bento-title">Вигода</h3>
-                <p class="bento-desc">
-                  Ефективна інвестиція, що швидко окупається для клініки та лікаря. Постійний високий попит пацієнтів на послуги моделювання тіла та пресотерапії забезпечує швидку окупність апаратів Zionic та Linfopress Evolution Pro.
-                </p>
+                <div class="bento-body-collapse">
+                  <p class="bento-desc">
+                    Ефективна інвестиція, що швидко окупається для клініки та лікаря. Постійний високий попит пацієнтів на послуги моделювання тіла та пресотерапії забезпечує швидку окупність апаратів Zionic та Linfopress Evolution Pro.
+                  </p>
 
-                <!-- Interactive Live ROI Stat Box -->
-                <div class="bento-roi-display">
-                  <div class="roi-metric-col">
-                    <div class="roi-big-number">
-                      <span class="num-highlight">3–4</span>
-                      <span class="num-label">МІСЯЦІ</span>
+                  <!-- Interactive Live ROI Stat Box -->
+                  <div class="bento-roi-display">
+                    <div class="roi-metric-col">
+                      <div class="roi-big-number">
+                        <span class="num-highlight">3–4</span>
+                        <span class="num-label">МІСЯЦІ</span>
+                      </div>
+                      <span class="roi-subtext">Середній термін повної окупності</span>
                     </div>
-                    <span class="roi-subtext">Середній термін повної окупності</span>
+                    
+                    <div class="roi-graph-track">
+                      <div class="roi-graph-bar"></div>
+                    </div>
+                    <div class="roi-graph-meta">
+                      <span>Старт: 0 міс.</span>
+                      <span class="roi-badge-highlight">+340% ROI за 1 рік</span>
+                    </div>
                   </div>
-                  
-                  <div class="roi-graph-track">
-                    <div class="roi-graph-bar"></div>
-                  </div>
-                  <div class="roi-graph-meta">
-                    <span>Старт: 0 міс.</span>
-                    <span class="roi-badge-highlight">+340% ROI за 1 рік</span>
-                  </div>
-                </div>
 
-                <!-- Feature Checkpoints -->
-                <div class="bento-feature-pills">
-                  <div class="bento-feature-item">
-                    <span class="bento-check">✓</span>
-                    <span>Постійний щоденний попит пацієнтів</span>
-                  </div>
-                  <div class="bento-feature-item">
-                    <span class="bento-check">✓</span>
-                    <span>Швидка окупність для лікаря та клініки</span>
-                  </div>
-                  <div class="bento-feature-item">
-                    <span class="bento-check">✓</span>
-                    <span>Готові фінансові моделі прибутковості</span>
+                  <!-- Feature Checkpoints -->
+                  <div class="bento-feature-pills">
+                    <div class="bento-feature-item">
+                      <span class="bento-check">✓</span>
+                      <span>Постійний щоденний попит пацієнтів</span>
+                    </div>
+                    <div class="bento-feature-item">
+                      <span class="bento-check">✓</span>
+                      <span>Швидка окупність для лікаря та клініки</span>
+                    </div>
+                    <div class="bento-feature-item">
+                      <span class="bento-check">✓</span>
+                      <span>Готові фінансові моделі прибутковості</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Bento 2 (Top Right Module, Spans 2 Columns): Безпека -->
-            <div class="bento-card bento-safety-card" data-aos="fade-up" data-aos-delay="150">
+            <!-- Bento 2: Безпека -->
+            <div class="bento-card bento-safety-card" data-card="02" data-aos="fade-up" data-aos-delay="150">
               <div class="bento-card-spotlight"></div>
               <div class="bento-card-inner">
-                <div class="bento-top-meta">
+                <div class="bento-top-meta bento-accordion-toggle">
                   <div class="bento-meta-left">
                     <div class="bento-icon-pod pod-safety">
                       <svg class="bento-svg" viewBox="0 0 32 32" fill="none">
@@ -473,43 +482,52 @@ function cleanHtml(raw, pageName) {
                         <path d="M21.2 8.5L22.2 9.5L24 7.5" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                     </div>
-                    <span class="bento-index">02 / КЛІНІЧНА БЕЗПЕКА</span>
+                    <div class="bento-meta-text">
+                      <span class="bento-index">02 / КЛІНІЧНА БЕЗПЕКА</span>
+                      <h3 class="bento-title">Безпека</h3>
+                    </div>
                   </div>
-                  <span class="bento-pill-tag tag-safety">Доказова медицина</span>
+                  <div class="bento-meta-right">
+                    <span class="bento-pill-tag tag-safety">Доказова медицина</span>
+                    <span class="bento-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </span>
+                  </div>
                 </div>
                 
-                <h3 class="bento-title">Безпека</h3>
-                <p class="bento-desc">
-                  Безпека, що базується на принципах медицини. Наявність найвищих стандартів сертифікації США, Азії, України, Європи. Відсутність ризиків ускладнень підтверджено клінічними дослідженнями.
-                </p>
+                <div class="bento-body-collapse">
+                  <p class="bento-desc">
+                    Безпека, що базується на принципах медицини. Наявність найвищих стандартів сертифікації США, Азії, України, Європи. Відсутність ризиків ускладнень підтверджено клінічними дослідженнями.
+                  </p>
 
-                <!-- Stamp Badges Grid -->
-                <div class="bento-cert-grid">
-                  <div class="cert-seal">
-                    <span class="seal-code">FDA</span>
-                    <span class="seal-name">США Approved</span>
-                  </div>
-                  <div class="cert-seal">
-                    <span class="seal-code">CE 0120</span>
-                    <span class="seal-name">Medical Directive</span>
-                  </div>
-                  <div class="cert-seal">
-                    <span class="seal-code">ISO 13485</span>
-                    <span class="seal-name">Quality Standard</span>
-                  </div>
-                  <div class="cert-seal">
-                    <span class="seal-code">UA MED</span>
-                    <span class="seal-name">Сертифіковано</span>
+                  <!-- Stamp Badges Grid -->
+                  <div class="bento-cert-grid">
+                    <div class="cert-seal">
+                      <span class="seal-code">FDA</span>
+                      <span class="seal-name">США Approved</span>
+                    </div>
+                    <div class="cert-seal">
+                      <span class="seal-code">CE 0120</span>
+                      <span class="seal-name">Medical Directive</span>
+                    </div>
+                    <div class="cert-seal">
+                      <span class="seal-code">ISO 13485</span>
+                      <span class="seal-name">Quality Standard</span>
+                    </div>
+                    <div class="cert-seal">
+                      <span class="seal-code">UA MED</span>
+                      <span class="seal-name">Сертифіковано</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Bento 3 (Mid Right - Col 2): Популярність -->
-            <div class="bento-card bento-mini-card" data-aos="fade-up" data-aos-delay="200">
+            <!-- Bento 3: Популярність -->
+            <div class="bento-card bento-mini-card" data-card="03" data-aos="fade-up" data-aos-delay="200">
               <div class="bento-card-spotlight"></div>
               <div class="bento-card-inner">
-                <div class="bento-top-meta">
+                <div class="bento-top-meta bento-accordion-toggle">
                   <div class="bento-meta-left">
                     <div class="bento-icon-pod pod-global">
                       <svg class="bento-svg" viewBox="0 0 32 32" fill="none">
@@ -521,25 +539,36 @@ function cleanHtml(raw, pageName) {
                         <path d="M23.5 7.5L24.2 8.8L25.6 9L24.5 10L24.8 11.5L23.5 10.8L22.2 11.5L22.5 10L21.4 9L22.8 8.8L23.5 7.5Z" fill="#ffff00"/>
                       </svg>
                     </div>
-                    <span class="bento-index">03 / СВІТ</span>
+                    <div class="bento-meta-text">
+                      <span class="bento-index">03 / СВІТ</span>
+                      <h4 class="bento-subhead bento-title">Популярність</h4>
+                    </div>
+                  </div>
+                  <div class="bento-meta-right">
+                    <span class="bento-pill-tag">40+ Країн</span>
+                    <span class="bento-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </span>
                   </div>
                 </div>
-                <div class="bento-stat-hero">
-                  <span class="bento-stat-num">40+</span>
-                  <span class="bento-stat-lbl">Країн світу</span>
+                
+                <div class="bento-body-collapse">
+                  <div class="bento-stat-hero">
+                    <span class="bento-stat-num">40+</span>
+                    <span class="bento-stat-lbl">Країн світу</span>
+                  </div>
+                  <p class="bento-micro-desc">
+                    Апарати компанії Termosalud вже давно стали популярними в клініках Європи та США. Їхня висока ефективність та надійність, висока безпека та медична сертифікація, а також модний хай-тек дизайн і дорогі матеріали зробили Zionic та Linfopress найбажанішими апаратами серед фахівців та пацієнтів. Тепер ці апарати працюють і в провідних клініках України.
+                  </p>
                 </div>
-                <h4 class="bento-subhead">Популярність</h4>
-                <p class="bento-micro-desc">
-                  Апарати компанії Termosalud вже давно стали популярними в клініках Європи та США. Їхня висока ефективність та надійність, висока безпека та медична сертифікація, а також модний хай-тек дизайн і дорогі матеріали зробили Zionic та Linfopress найбажанішими апаратами серед фахівців та пацієнтів. Тепер ці апарати працюють і в провідних клініках України.
-                </p>
               </div>
             </div>
 
-            <!-- Bento 4 (Mid Right - Col 3): Навчання -->
-            <div class="bento-card bento-mini-card" data-aos="fade-up" data-aos-delay="250">
+            <!-- Bento 4: Навчання -->
+            <div class="bento-card bento-mini-card" data-card="04" data-aos="fade-up" data-aos-delay="250">
               <div class="bento-card-spotlight"></div>
               <div class="bento-card-inner">
-                <div class="bento-top-meta">
+                <div class="bento-top-meta bento-accordion-toggle">
                   <div class="bento-meta-left">
                     <div class="bento-icon-pod pod-academy">
                       <svg class="bento-svg" viewBox="0 0 32 32" fill="none">
@@ -551,25 +580,36 @@ function cleanHtml(raw, pageName) {
                         <path d="M16 15V18M14.5 16.5H17.5" stroke="#ffff00" stroke-width="1.4" stroke-linecap="round"/>
                       </svg>
                     </div>
-                    <span class="bento-index">04 / АКАДЕМІЯ</span>
+                    <div class="bento-meta-text">
+                      <span class="bento-index">04 / АКАДЕМІЯ</span>
+                      <h4 class="bento-subhead bento-title">Навчання</h4>
+                    </div>
+                  </div>
+                  <div class="bento-meta-right">
+                    <span class="bento-pill-tag">100% Практика</span>
+                    <span class="bento-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </span>
                   </div>
                 </div>
-                <div class="bento-stat-hero">
-                  <span class="bento-stat-num">100%</span>
-                  <span class="bento-stat-lbl">Постановка руки</span>
+                
+                <div class="bento-body-collapse">
+                  <div class="bento-stat-hero">
+                    <span class="bento-stat-num">100%</span>
+                    <span class="bento-stat-lbl">Постановка руки</span>
+                  </div>
+                  <p class="bento-micro-desc">
+                    Система навчання, заснована на експертному досвіді та передовій науці. Високий професійний рівень стартових та повторних навчань для партнерів. Закордонні стажування у найкращих клініках та тренінгових центрах.
+                  </p>
                 </div>
-                <h4 class="bento-subhead">Навчання</h4>
-                <p class="bento-micro-desc">
-                  Система навчання, заснована на експертному досвіді та передовій науці. Високий професійний рівень стартових та повторних навчань для партнерів. Закордонні стажування у найкращих клініках та тренінгових центрах.
-                </p>
               </div>
             </div>
 
-            <!-- Bento 5 (Bottom Row Left, Spans 1.5 Col): Сервіс -->
-            <div class="bento-card bento-wide-card" data-aos="fade-up" data-aos-delay="300">
+            <!-- Bento 5: Сервіс -->
+            <div class="bento-card bento-wide-card" data-card="05" data-aos="fade-up" data-aos-delay="300">
               <div class="bento-card-spotlight"></div>
               <div class="bento-card-inner">
-                <div class="bento-top-meta">
+                <div class="bento-top-meta bento-accordion-toggle">
                   <div class="bento-meta-left">
                     <div class="bento-icon-pod pod-service">
                       <svg class="bento-svg" viewBox="0 0 32 32" fill="none">
@@ -578,22 +618,32 @@ function cleanHtml(raw, pageName) {
                         <path class="clock-needle-anim" d="M16 13V16L18 17.5" stroke="#ffff00" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                     </div>
-                    <span class="bento-index">05 / ПІДТРИМКА</span>
+                    <div class="bento-meta-text">
+                      <span class="bento-index">05 / ПІДТРИМКА</span>
+                      <h4 class="bento-subhead bento-title">Сервіс</h4>
+                    </div>
                   </div>
-                  <span class="bento-pill-tag">24/7 Сервіс</span>
+                  <div class="bento-meta-right">
+                    <span class="bento-pill-tag">24/7 Сервіс</span>
+                    <span class="bento-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </span>
+                  </div>
                 </div>
-                <h4 class="bento-subhead">Сервіс</h4>
-                <p class="bento-micro-desc">
-                  Найвищі стандарти сервісного супроводу як важлива складова партнерських взаємовідносин. Висококваліфіковані фахівці у всіх підрозділах компанії забезпечують найкращі умови для комфортної співпраці з преміальними брендами.
-                </p>
+                
+                <div class="bento-body-collapse">
+                  <p class="bento-micro-desc">
+                    Найвищі стандарти сервісного супроводу як важлива складова партнерських взаємовідносин. Висококваліфіковані фахівці у всіх підрозділах компанії забезпечують найкращі умови для комфортної співпраці з преміальними брендами.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <!-- Bento 6 (Bottom Row Right, Spans 1.5 Col): Професіоналізм -->
-            <div class="bento-card bento-wide-card" data-aos="fade-up" data-aos-delay="350">
+            <!-- Bento 6: Професіоналізм -->
+            <div class="bento-card bento-wide-card" data-card="06" data-aos="fade-up" data-aos-delay="350">
               <div class="bento-card-spotlight"></div>
               <div class="bento-card-inner">
-                <div class="bento-top-meta">
+                <div class="bento-top-meta bento-accordion-toggle">
                   <div class="bento-meta-left">
                     <div class="bento-icon-pod pod-team">
                       <svg class="bento-svg" viewBox="0 0 32 32" fill="none">
@@ -607,14 +657,24 @@ function cleanHtml(raw, pageName) {
                         <path d="M22.5 19L23.2 20.5L24.8 20.8L23.6 22L23.9 23.5L22.5 22.7L21.1 23.5L21.4 22L20.2 20.8L21.8 20.5L22.5 19Z" fill="#ffff00"/>
                       </svg>
                     </div>
-                    <span class="bento-index">06 / ЕКСПЕРТИЗА</span>
+                    <div class="bento-meta-text">
+                      <span class="bento-index">06 / ЕКСПЕРТИЗА</span>
+                      <h4 class="bento-subhead bento-title">Професіоналізм</h4>
+                    </div>
                   </div>
-                  <span class="bento-pill-tag">Експертна підтримка</span>
+                  <div class="bento-meta-right">
+                    <span class="bento-pill-tag">Експертна підтримка</span>
+                    <span class="bento-chevron">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </span>
+                  </div>
                 </div>
-                <h4 class="bento-subhead">Професіоналізм</h4>
-                <p class="bento-micro-desc">
-                  Ми — професіонали з багаторічним досвідом в індустрії, які безперервно підвищують кваліфікацію, здобувають нові знання та ефективно впроваджують їх у свою роботу. Наші лікарі, менеджери, інженери за десятки років роботи допомогли побудувати та розвинути велику кількість успішних бізнесів у сфері естетичної медицини. Таким чином ми гарантуємо всебічну експертну підтримку на кожному етапі розвитку вашої клініки.
-                </p>
+                
+                <div class="bento-body-collapse">
+                  <p class="bento-micro-desc">
+                    Ми — професіонали з багаторічним досвідом в індустрії, які безперервно підвищують кваліфікацію, здобувають нові знання та ефективно впроваджують їх у свою роботу. Наші лікарі, менеджери, інженери за десятки років роботи допомогли побудувати та розвинути велику кількість успішних бізнесів у сфері естетичної медицини. Таким чином ми гарантуємо всебічну експертну підтримку на кожному етапі розвитку вашої клініки.
+                  </p>
+                </div>
               </div>
             </div>
 

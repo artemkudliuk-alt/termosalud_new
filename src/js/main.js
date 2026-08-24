@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScreen4InteractiveStudio();
   initSplitHero();
   initMobileBrandSwitcher();
+  initBentoAccordion();
 });
 
 /**
@@ -599,3 +600,31 @@ function initMobileBrandSwitcher() {
     });
   });
 }
+
+/**
+ * 16. Screen 3 Liquid Glass Mirror Accordion (Mobile & Tablet)
+ */
+function initBentoAccordion() {
+  const bentoGrid = document.querySelector('.swiss-bento-grid');
+  if (!bentoGrid) return;
+
+  const cards = bentoGrid.querySelectorAll('.bento-card');
+  cards.forEach((card) => {
+    const toggle = card.querySelector('.bento-accordion-toggle');
+    if (!toggle) return;
+
+    toggle.addEventListener('click', (e) => {
+      if (window.innerWidth > 991) return;
+
+      const isCurrentlyOpen = card.classList.contains('is-open');
+
+      // Close other cards for sleek single-panel mirror view
+      cards.forEach((c) => {
+        if (c !== card) c.classList.remove('is-open');
+      });
+
+      card.classList.toggle('is-open', !isCurrentlyOpen);
+    });
+  });
+}
+
