@@ -2097,17 +2097,16 @@ header .logo:hover img {
 }
 
 /* =======================================================
-   STATE-OF-THE-ART SPANISH LIQUID GLASS POP-UP MODAL
+   STATE-OF-THE-ART SPANISH LIQUID GLASS POP-UP MODAL (1-Screen Fit, No Scrollbars)
    ======================================================= */
 .glass-popup-modal,
 .popup.glass-popup-modal {
   position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  width: 100vw !important;
-  height: 100vh !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
   transform: none !important;
   margin: 0 !important;
   z-index: 100000 !important;
@@ -2116,10 +2115,11 @@ header .logo:hover img {
   opacity: 0 !important;
   align-items: center !important;
   justify-content: center !important;
-  padding: 20px !important;
+  padding: 16px !important;
   box-sizing: border-box !important;
   border-radius: 0px !important;
   background: transparent !important;
+  overflow: hidden !important;
   transition: opacity 0.25s ease, visibility 0.25s ease !important;
 }
 
@@ -2134,12 +2134,11 @@ header .logo:hover img {
 
 .glass-modal-backdrop {
   position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  width: 100vw !important;
-  height: 100vh !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
   background: rgba(14, 18, 25, 0.78) !important;
   backdrop-filter: blur(16px) !important;
   -webkit-backdrop-filter: blur(16px) !important;
@@ -2149,6 +2148,7 @@ header .logo:hover img {
   padding: 0 !important;
   cursor: pointer !important;
   z-index: 1 !important;
+  overflow: hidden !important;
   animation: modalFadeIn 0.3s ease !important;
 }
 
@@ -2161,21 +2161,30 @@ header .logo:hover img {
   position: relative !important;
   z-index: 5 !important;
   width: 100% !important;
-  max-width: 580px !important;
-  max-height: 90vh !important;
-  overflow-y: auto !important;
+  max-width: 550px !important;
+  max-height: calc(100vh - 24px) !important;
+  overflow: hidden !important;
+  overflow-y: hidden !important;
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
   border-radius: 0px !important;
-  padding: 36px 32px !important;
+  padding: 20px 24px 16px 24px !important;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35) !important;
   box-sizing: border-box !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
   animation: modalGlassReveal 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.glass-modal-card::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
 }
 
 @keyframes modalGlassReveal {
   from {
-    transform: scale(0.92) translateY(20px);
+    transform: scale(0.94) translateY(12px);
     opacity: 0;
   }
   to {
@@ -2186,10 +2195,10 @@ header .logo:hover img {
 
 .glass-modal-close {
   position: absolute !important;
-  top: 18px !important;
-  right: 18px !important;
-  width: 36px !important;
-  height: 36px !important;
+  top: 12px !important;
+  right: 12px !important;
+  width: 30px !important;
+  height: 30px !important;
   background: #f1f5f9 !important;
   border: 1px solid #e2e8f0 !important;
   border-radius: 0px !important;
@@ -2211,64 +2220,64 @@ header .logo:hover img {
 }
 
 .glass-modal-header {
-  margin-bottom: 16px !important;
-  padding-right: 36px !important;
+  margin-bottom: 8px !important;
+  padding-right: 32px !important;
 }
 
 .glass-modal-badge {
   display: inline-flex !important;
   align-items: center !important;
-  gap: 6px !important;
-  font-size: 10px !important;
+  gap: 5px !important;
+  font-size: 9px !important;
   font-weight: 800 !important;
   color: #475569 !important;
   letter-spacing: 1.5px !important;
   text-transform: uppercase !important;
-  margin-bottom: 4px !important;
+  margin-bottom: 2px !important;
 }
 
 .glass-modal-title {
-  font-family: var(--active-heading-font) !important;
-  font-size: 22px !important;
+  font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
+  font-size: 19px !important;
   font-weight: 800 !important;
   color: #0f172a !important;
-  margin: 0 0 6px 0 !important;
-  line-height: 1.25 !important;
+  margin: 0 0 3px 0 !important;
+  line-height: 1.2 !important;
 }
 
 .glass-modal-subtitle {
-  font-size: 13px !important;
+  font-size: 11.5px !important;
   color: #64748b !important;
-  line-height: 1.5 !important;
+  line-height: 1.35 !important;
   margin: 0 !important;
 }
 
 .glass-modal-form {
   display: flex !important;
   flex-direction: column !important;
-  gap: 12px !important;
+  gap: 6px !important;
 }
 
 /* Modal Format Switcher & Pills */
 .format-switcher-wrap {
-  margin-bottom: 12px !important;
+  margin-bottom: 6px !important;
 }
 
 .format-label {
   display: block !important;
-  font-size: 10px !important;
+  font-size: 9px !important;
   font-weight: 800 !important;
   color: #64748b !important;
   text-transform: uppercase !important;
   letter-spacing: 0.7px !important;
-  margin-bottom: 4px !important;
+  margin-bottom: 2px !important;
 }
 
 .format-switcher {
   display: flex !important;
   background: #f1f5f9 !important;
   border: 1px solid #e2e8f0 !important;
-  padding: 2.5px !important;
+  padding: 2px !important;
   gap: 3px !important;
 }
 
@@ -2277,12 +2286,12 @@ header .logo:hover img {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 6px !important;
-  padding: 7px 10px !important;
+  gap: 5px !important;
+  padding: 5px 8px !important;
   background: transparent !important;
   border: none !important;
   color: #64748b !important;
-  font-size: 11.5px !important;
+  font-size: 11px !important;
   font-weight: 700 !important;
   cursor: pointer !important;
   transition: all 0.25s ease !important;
@@ -2296,12 +2305,12 @@ header .logo:hover img {
 }
 
 .device-selector-wrap {
-  margin-bottom: 12px !important;
+  margin-bottom: 6px !important;
 }
 
 .device-pills-row {
   display: flex !important;
-  gap: 6px !important;
+  gap: 4px !important;
 }
 
 .device-pill {
@@ -2309,13 +2318,13 @@ header .logo:hover img {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 5px !important;
-  padding: 6.5px 8px !important;
+  gap: 4px !important;
+  padding: 4.5px 6px !important;
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
   border-radius: 0px !important;
   color: #475569 !important;
-  font-size: 11.5px !important;
+  font-size: 10.5px !important;
   font-weight: 700 !important;
   cursor: pointer !important;
   transition: all 0.25s ease !important;
@@ -2328,8 +2337,8 @@ header .logo:hover img {
 }
 
 .device-pill-dot {
-  width: 5.5px !important;
-  height: 5.5px !important;
+  width: 5px !important;
+  height: 5px !important;
   border-radius: 50% !important;
   flex-shrink: 0 !important;
 }
@@ -2348,11 +2357,11 @@ header .logo:hover img {
 .form-group-item {
   display: flex !important;
   flex-direction: column !important;
-  gap: 3.5px !important;
+  gap: 2px !important;
 }
 
 .form-label-text {
-  font-size: 9.5px !important;
+  font-size: 8.5px !important;
   font-weight: 800 !important;
   color: #64748b !important;
   text-transform: uppercase !important;
@@ -2367,10 +2376,10 @@ header .logo:hover img {
 .input-icon {
   position: absolute !important;
   top: 50% !important;
-  left: 11px !important;
+  left: 10px !important;
   transform: translateY(-50%) !important;
-  width: 15px !important;
-  height: 15px !important;
+  width: 13px !important;
+  height: 13px !important;
   stroke: #94a3b8 !important;
   pointer-events: none !important;
   transition: stroke 0.25s ease !important;
@@ -2378,14 +2387,14 @@ header .logo:hover img {
 
 .luxury-form-input {
   width: 100% !important;
-  height: 42px !important;
+  height: 35px !important;
   background: #ffffff !important;
   border: 1px solid #cbd5e1 !important;
   border-radius: 0px !important;
-  padding: 0 12px 0 34px !important;
+  padding: 0 10px 0 28px !important;
   color: #0f172a !important;
   font-family: inherit !important;
-  font-size: 13px !important;
+  font-size: 12px !important;
   font-weight: 500 !important;
   outline: none !important;
   box-sizing: border-box !important;
@@ -2395,18 +2404,18 @@ header .logo:hover img {
 .luxury-form-input::placeholder {
   color: #94a3b8 !important;
   font-weight: 400 !important;
-  font-size: 12.5px !important;
+  font-size: 11.5px !important;
 }
 
 .luxury-form-input:focus {
   background: #ffffff !important;
   border-color: #1e232e !important;
-  box-shadow: 0 0 0 3px rgba(30, 35, 46, 0.12) !important;
+  box-shadow: 0 0 0 2px rgba(30, 35, 46, 0.1) !important;
 }
 
 .messenger-pills-row {
   display: flex !important;
-  gap: 5px !important;
+  gap: 4px !important;
   flex-wrap: wrap !important;
 }
 
@@ -2415,13 +2424,13 @@ header .logo:hover img {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 5px !important;
-  padding: 6.5px 8px !important;
+  gap: 4px !important;
+  padding: 4.5px 6px !important;
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
   border-radius: 0px !important;
   color: #475569 !important;
-  font-size: 11.5px !important;
+  font-size: 10.5px !important;
   font-weight: 700 !important;
   cursor: pointer !important;
   transition: all 0.25s ease !important;
@@ -2433,8 +2442,8 @@ header .logo:hover img {
 }
 
 .pill-dot {
-  width: 5.5px !important;
-  height: 5.5px !important;
+  width: 5px !important;
+  height: 5px !important;
   border-radius: 50% !important;
   flex-shrink: 0 !important;
 }
@@ -2453,14 +2462,14 @@ header .logo:hover img {
 .form-row-2col {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
-  gap: 10px !important;
+  gap: 6px !important;
 }
 
 .modal-submit-btn,
 .shimmer-submit-btn {
   position: relative !important;
   width: 100% !important;
-  height: 48px !important;
+  height: 40px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -2470,15 +2479,15 @@ header .logo:hover img {
   border: none !important;
   border-radius: 0px !important;
   font-family: inherit !important;
-  font-size: 12px !important;
+  font-size: 11px !important;
   font-weight: 900 !important;
-  letter-spacing: 1.1px !important;
+  letter-spacing: 1px !important;
   text-transform: uppercase !important;
   cursor: pointer !important;
   overflow: hidden !important;
-  margin-top: 4px !important;
-  box-shadow: 0 6px 16px rgba(30, 35, 46, 0.18) !important;
-  transition: all 0.3s ease !important;
+  margin-top: 2px !important;
+  box-shadow: 0 4px 14px rgba(30, 35, 46, 0.18) !important;
+  transition: all 0.25s ease !important;
 }
 
 .modal-submit-btn:hover,
@@ -2501,17 +2510,17 @@ header .logo:hover img {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
-  gap: 6px !important;
-  margin-top: 10px !important;
-  padding-top: 6px !important;
+  gap: 4px !important;
+  margin-top: 6px !important;
+  padding-top: 2px !important;
   border-top: none !important;
 }
 
 .trust-bullet-item {
   display: flex !important;
   align-items: center !important;
-  gap: 4px !important;
-  font-size: 10.5px !important;
+  gap: 3px !important;
+  font-size: 10px !important;
   font-weight: 600 !important;
   color: #64748b !important;
 }
