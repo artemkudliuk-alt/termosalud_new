@@ -531,7 +531,7 @@ function cleanHtml(raw, pageName) {
 
     // Modern Screen 4: Full-Width 21:9 Living Banner Stage (Background Image covers full width | Form overlaid on the right)
     const modernPresentationSection = `
-      <!-- Screen 4: Zero-Collision Living Stage Presentation & Test-Drive -->
+      <!-- Screen 4: Full Uncropped Living Stage Presentation & Test-Drive -->
       <section class="application-presentation" id="presentation-section">
         
         <!-- Section Header -->
@@ -543,21 +543,16 @@ function cleanHtml(raw, pageName) {
           </div>
         </div>
 
-        <!-- 2-Column Responsive Living Stage Container (Zero Overlap Guaranteed) -->
-        <div class="presentation-stage-card">
-          <div class="presentation-split-grid">
-            
-            <!-- Left Column: Patient & Apparatus Visual Stage -->
-            <div class="presentation-visual-wrap">
-              <img
-                src="/photo_form.png"
-                class="presentation-visual-img"
-                alt="Termosalud Test Drive Presentation"
-              />
-            </div>
-
-            <!-- Right Column: Booking Form -->
-            <div class="presentation-form-wrap">
+        <!-- Full Living Banner Stage Container (Uncropped Photo + Clean Form) -->
+        <div class="fullwidth-living-banner">
+          <img
+            src="/photo_form.png"
+            class="living-banner-bg-img"
+            alt="Termosalud Test Drive Presentation"
+          />
+          
+          <div class="container living-banner-content-container">
+            <div class="banner-form-overlay-wrap">
               <div class="pastel-concierge-card">
                 
                 <div class="form-header-meta">
@@ -676,8 +671,8 @@ function cleanHtml(raw, pageName) {
 
               </div>
             </div>
-
           </div>
+
         </div>
       </section>
     `;
