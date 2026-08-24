@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileBrandSwitcher();
   initBentoAccordion();
   initScrollToTop();
+  initPartnersDraggableCarousel();
 });
 
 /**
@@ -642,5 +643,162 @@ function initScrollToTop() {
     });
   });
 }
+
+/**
+ * 18. Interactive Partners Draggable & Swipeable Carousel
+ */
+function initPartnersDraggableCarousel() {
+  const wrap = document.querySelector('.modern-partners-carousel-wrap');
+  if (!wrap) return;
+  const track = wrap.querySelector('.partners-marquee-track');
+  if (!track) return;
+
+  // Turn off static CSS animation so JS has silky smooth 60fps physics control
+  track.style.animation = 'none';
+
+  let currentX = 0;
+  let autoSpeed = -0.7; // default gentle drift
+  let velocity = 0;
+  let isHovered = false;
+  let isDragging = false;
+  let startX = 0;
+  let lastX = 0;
+  let dragDistance = 0;
+  let animationFrameId = null;
+
+  // Measure half-width of the track for seamless wrap-around loop
+  const getHalfWidth = () => {
+    return track.scrollWidth / 2 || 1200;
+  };
+
+  const tick = () => {
+    const halfWidth = getHalfWidth();
+
+    if (!isDragging) {
+      // Smooth momentum / flick deceleration
+      if (Math.abs(velocity) > 0.05) {
+        velocity *= 0.93;
+      } else {
+        velocity = 0;
+      }
+
+      const speed = velocity !== 0 ? velocity : (isHovered ? 0 : autoSpeed);
+      currentX += speed;
+
+      // Wrap around seamlessly
+      while (currentX <= -halfWidth) {
+        currentX += halfWidth;
+      }
+      while (currentX > 0) {
+        currentX -= halfWidth;
+      }
+
+      track.style.transform = `translate3d(${currentX}px, 0, 0)`;
+    }
+
+    animationFrameId = requestAnimationFrame(tick);
+  };
+
+  animationFrameId = requestAnimationFrame(tick);
+
+  // Mouse & Touch Drag Handlers
+  const onStart = (clientX) => {
+    isDragging = true;
+    startX = clientX;
+    lastX = clientX;
+    dragDistance = 0;
+    velocity = 0;
+    wrap.classList.add('is-dragging');
+  };
+
+  const onMove = (clientX) => {
+    if (!isDragging) return;
+    const deltaX = clientX - lastX;
+    lastX = clientX;
+    dragDistance += Math.abs(deltaX);
+
+    currentX += deltaX;
+    velocity = deltaX * 0.75; // Capture swipe velocity for flick release
+
+    const halfWidth = getHalfWidth();
+    while (currentX <= -halfWidth) {
+      currentX += halfWidth;
+    }
+    while (currentX > 0) {
+      currentX -= halfWidth;
+    }
+
+    track.style.transform = `translate3d(${currentX}px, 0, 0)`;
+  };
+
+  const onEnd = () => {
+    if (!isDragging) return;
+    isDragging = false;
+    wrap.classList.remove('is-dragging');
+  };
+
+  // Mouse drag listeners
+  wrap.addEventListener('mousedown', (e) => {
+    if (e.button !== 0) return;
+    onStart(e.clientX);
+  });
+
+  window.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+      onMove(e.clientX);
+    }
+  });
+
+  window.addEventListener('mouseup', () => {
+    if (isDragging) {
+      onEnd();
+    }
+  });
+
+  // Touch swipe listeners for mobile
+  wrap.addEventListener('touchstart', (e) => {
+    if (e.touches && e.touches.length === 1) {
+      onStart(e.touches[0].clientX);
+    }
+  }, { passive: true });
+
+  window.addEventListener('touchmove', (e) => {
+    if (isDragging && e.touches && e.touches.length === 1) {
+      onMove(e.touches[0].clientX);
+    }
+  }, { passive: true });
+
+  window.addEventListener('touchend', () => {
+    if (isDragging) {
+      onEnd();
+    }
+  });
+
+  window.addEventListener('touchcancel', () => {
+    if (isDragging) {
+      onEnd();
+    }
+  });
+
+  // Hover detection (pauses auto-scroll on desktop)
+  wrap.addEventListener('mouseenter', () => {
+    isHovered = true;
+  });
+
+  wrap.addEventListener('mouseleave', () => {
+    isHovered = false;
+  });
+
+  // Prevent link click when dragging/swiping
+  wrap.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      if (dragDistance > 8) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    });
+  });
+}
+
 
 
