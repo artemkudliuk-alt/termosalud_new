@@ -1162,7 +1162,7 @@ function cleanHtml(raw, pageName) {
   const modernGlassPopupModal = `
     <!-- State-Of-The-Art Spanish Liquid Glass Pop-Up Modal -->
     <div id="popup_request" class="popup glass-popup-modal" role="dialog" aria-modal="true" aria-labelledby="glassModalTitle">
-      <div class="glass-modal-backdrop popup_close"></div>
+      <div class="glass-modal-backdrop" data-close-modal></div>
       <div class="glass-modal-card">
         <button type="button" class="glass-modal-close popup_close" aria-label="Закрити">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>

@@ -2194,6 +2194,8 @@ header .logo:hover img {
   justify-content: center !important;
   padding: 20px !important;
   box-sizing: border-box !important;
+  border-radius: 0px !important;
+  background: transparent !important;
   transition: opacity 0.25s ease, visibility 0.25s ease !important;
 }
 
@@ -2207,15 +2209,22 @@ header .logo:hover img {
 }
 
 .glass-modal-backdrop {
-  position: absolute !important;
+  position: fixed !important;
   top: 0 !important;
   left: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
   background: rgba(14, 18, 25, 0.78) !important;
   backdrop-filter: blur(16px) !important;
   -webkit-backdrop-filter: blur(16px) !important;
+  border-radius: 0px !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
   cursor: pointer !important;
+  z-index: 1 !important;
   animation: modalFadeIn 0.3s ease !important;
 }
 
@@ -2226,15 +2235,13 @@ header .logo:hover img {
 
 .glass-modal-card {
   position: relative !important;
-  z-index: 2 !important;
+  z-index: 5 !important;
   width: 100% !important;
   max-width: 580px !important;
   max-height: 90vh !important;
   overflow-y: auto !important;
-  background: rgba(255, 255, 255, 0.98) !important;
-  backdrop-filter: blur(24px) !important;
-  -webkit-backdrop-filter: blur(24px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.95) !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
   border-radius: 0px !important;
   padding: 36px 32px !important;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35) !important;
