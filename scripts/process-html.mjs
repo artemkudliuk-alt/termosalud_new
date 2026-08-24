@@ -397,7 +397,7 @@ function cleanHtml(raw, pageName) {
           <div class="swiss-bento-grid">
 
             <!-- Row 1: Вигода -->
-            <div class="bento-card is-open" data-card="01" data-aos="fade-up" data-aos-delay="50">
+            <div class="bento-card is-open" data-card="01">
               <div class="bento-card-spotlight"></div>
               <div class="bento-card-inner">
                 <div class="bento-top-meta bento-accordion-toggle">
@@ -471,7 +471,7 @@ function cleanHtml(raw, pageName) {
             </div>
 
             <!-- Row 2: Безпека -->
-            <div class="bento-card" data-card="02" data-aos="fade-up" data-aos-delay="100">
+            <div class="bento-card" data-card="02">
               <div class="bento-card-spotlight"></div>
               <div class="bento-card-inner">
                 <div class="bento-top-meta bento-accordion-toggle">
@@ -545,7 +545,7 @@ function cleanHtml(raw, pageName) {
             </div>
 
             <!-- Row 3: Популярність -->
-            <div class="bento-card" data-card="03" data-aos="fade-up" data-aos-delay="150">
+            <div class="bento-card" data-card="03">
               <div class="bento-card-spotlight"></div>
               <div class="bento-card-inner">
                 <div class="bento-top-meta bento-accordion-toggle">
@@ -608,7 +608,7 @@ function cleanHtml(raw, pageName) {
             </div>
 
             <!-- Row 4: Навчання -->
-            <div class="bento-card" data-card="04" data-aos="fade-up" data-aos-delay="200">
+            <div class="bento-card" data-card="04">
               <div class="bento-card-spotlight"></div>
               <div class="bento-card-inner">
                 <div class="bento-top-meta bento-accordion-toggle">
@@ -671,7 +671,7 @@ function cleanHtml(raw, pageName) {
             </div>
 
             <!-- Row 5: Сервіс -->
-            <div class="bento-card" data-card="05" data-aos="fade-up" data-aos-delay="250">
+            <div class="bento-card" data-card="05">
               <div class="bento-card-spotlight"></div>
               <div class="bento-card-inner">
                 <div class="bento-top-meta bento-accordion-toggle">
@@ -731,7 +731,7 @@ function cleanHtml(raw, pageName) {
             </div>
 
             <!-- Row 6: Професіоналізм -->
-            <div class="bento-card" data-card="06" data-aos="fade-up" data-aos-delay="300">
+            <div class="bento-card" data-card="06">
               <div class="bento-card-spotlight"></div>
               <div class="bento-card-inner">
                 <div class="bento-top-meta bento-accordion-toggle">

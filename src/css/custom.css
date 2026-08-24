@@ -1492,7 +1492,7 @@ header .logo:hover img {
   margin: 0 auto !important;
 }
 
-/* Base Accordion Row Card */
+/* Base Accordion Row Card - Immediate static presence (No AOS fade/blur) */
 .bento-card {
   position: relative !important;
   background: #ffffff !important;
@@ -1503,13 +1503,16 @@ header .logo:hover img {
   overflow: hidden !important;
   display: flex !important;
   flex-direction: column !important;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease, background 0.25s ease !important;
+  opacity: 1 !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+  transform: none !important;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease !important;
 }
 
 .bento-card:hover {
   border-color: #0f172a !important;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06) !important;
-  transform: translateY(-1px) !important;
 }
 
 .bento-card.is-open {
