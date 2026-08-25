@@ -3551,10 +3551,10 @@ body.modal-open-lock {
 .modern-luxury-footer,
 footer.modern-luxury-footer,
 footer {
-  background: #1e232e !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background: #54595f !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
   padding: 56px 0 28px 0 !important;
-  color: #cbd5e1 !important;
+  color: #f1f5f9 !important;
   position: relative !important;
   z-index: 10 !important;
   display: block !important;
@@ -3576,7 +3576,7 @@ footer {
   text-align: center !important;
   margin-bottom: 36px !important;
   padding-bottom: 28px !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
 }
 
 .footer-main-logo {
@@ -3598,7 +3598,7 @@ footer {
 
 .footer-brand-sub {
   font-size: 12px !important;
-  color: #94a3b8 !important;
+  color: #e2e8f0 !important;
   letter-spacing: 0.8px !important;
   margin: 0 !important;
   font-weight: 600 !important;
@@ -3640,7 +3640,8 @@ footer {
 }
 
 .footer-links-list a {
-  color: #cbd5e1 !important;
+  color: #ffffff !important;
+  opacity: 0.9 !important;
   text-decoration: none !important;
   font-size: 13.5px !important;
   transition: all 0.2s ease !important;
@@ -3650,6 +3651,7 @@ footer {
 
 .footer-links-list a:hover {
   color: #ffffff !important;
+  opacity: 1 !important;
   transform: translateX(4px) !important;
 }
 
@@ -3663,27 +3665,30 @@ footer {
   display: flex !important;
   align-items: center !important;
   gap: 10px !important;
-  color: #cbd5e1 !important;
+  color: #ffffff !important;
+  opacity: 0.9 !important;
   text-decoration: none !important;
   font-size: 13.5px !important;
-  transition: color 0.2s ease !important;
+  transition: all 0.2s ease !important;
 }
 
 .footer-contact-item svg {
-  color: #94a3b8 !important;
+  color: #ffffff !important;
+  opacity: 0.85 !important;
   flex-shrink: 0 !important;
 }
 
 .footer-contact-item:hover {
   color: #ffffff !important;
+  opacity: 1 !important;
 }
 
 .footer-contact-item:hover svg {
-  color: #ffffff !important;
+  opacity: 1 !important;
 }
 
 .footer-location-text {
-  color: #94a3b8 !important;
+  color: #f1f5f9 !important;
 }
 
 /* 3. Bottom: Fine Copyright Bar */
@@ -3692,9 +3697,9 @@ footer {
   justify-content: space-between !important;
   align-items: center !important;
   padding-top: 22px !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
   font-size: 12px !important;
-  color: #94a3b8 !important;
+  color: #e2e8f0 !important;
   flex-wrap: wrap !important;
   gap: 10px !important;
 }
@@ -3704,7 +3709,7 @@ footer {
 }
 
 .footer-made-in {
-  color: #64748b !important;
+  color: #cbd5e1 !important;
 }
 
 @media (max-width: 600px) {
@@ -4633,10 +4638,10 @@ footer {
   right: 20px !important;
   width: 40px !important;
   height: 40px !important;
-  background: rgba(30, 35, 46, 0.92) !important;
+  background: rgba(84, 89, 95, 0.92) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
   border-radius: 0px !important;
   color: #ffffff !important;
   display: flex !important;
@@ -4662,7 +4667,7 @@ footer {
 }
 
 .scroll-to-top:hover {
-  background: #161a22 !important;
+  background: #3f4348 !important;
   border-color: #ffffff !important;
   transform: translateY(-3px) !important;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
