@@ -850,10 +850,22 @@ function cleanHtml(raw, pageName) {
                   </div>
                 </div>
               </div>
+
+              <!-- Mobile-Only CTA Trigger Button (Opens Full Pop-Up Modal on Mobile) -->
+              <div class="presentation-mobile-cta-wrap">
+                <button type="button" class="living-stage-glass-btn pulse-attention" data-target="#popup_request" aria-label="Замовити виїзний тест-драйв">
+                  <span class="pulse-spark"></span>
+                  <span class="btn-text-stacked">
+                    <span class="btn-line-1">ЗАМОВИТИ ВИЇЗНИЙ</span>
+                    <span class="btn-line-2">ТЕСТ-ДРАЙВ</span>
+                  </span>
+                  <svg class="btn-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
             </div>
 
-            <!-- Right Column: Open High-Converting Booking Form -->
-            <div class="presentation-form-col">
+            <!-- Right Column: Open High-Converting Booking Form (Desktop Only) -->
+            <div class="presentation-form-col desktop-only-form">
               <div class="presentation-form-card">
                 <div class="form-card-header">
                   <h3 class="form-card-title">Заявка на виїзний тест-драйв</h3>

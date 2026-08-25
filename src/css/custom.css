@@ -2210,19 +2210,121 @@ header .logo:hover img {
   margin: 0 !important;
 }
 
-.presentation-open-form {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 8px !important;
+.presentation-mobile-cta-wrap {
+  display: none !important;
+}
+
+@media (min-width: 861px) {
+  .presentation-form-col.desktop-only-form {
+    display: flex !important;
+  }
+  .presentation-mobile-cta-wrap {
+    display: none !important;
+  }
 }
 
 @media (max-width: 860px) {
   .presentation-stage-grid {
     grid-template-columns: 1fr !important;
-    gap: 24px !important;
+    gap: 0 !important;
+    max-width: 480px !important;
   }
+  
   .presentation-photo-frame {
     height: 220px !important;
+  }
+
+  .presentation-form-col.desktop-only-form {
+    display: none !important;
+  }
+
+  .presentation-mobile-cta-wrap {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 18px 16px 22px 16px !important;
+    background: #ffffff !important;
+    border-top: 1px solid #e2e8f0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .living-stage-glass-btn {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+    padding: 14px 20px !important;
+    width: 100% !important;
+    max-width: 400px !important;
+    min-width: 0 !important;
+    background: #0c121e !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 0px !important;
+    cursor: pointer !important;
+    box-sizing: border-box !important;
+    box-shadow: 0 12px 35px rgba(12, 18, 30, 0.25) !important;
+  }
+
+  .living-stage-glass-btn .pulse-spark {
+    width: 9px !important;
+    height: 9px !important;
+    border-radius: 50% !important;
+    background: #10b981 !important;
+    box-shadow: 0 0 10px #10b981, 0 0 20px rgba(16, 185, 129, 0.7) !important;
+    animation: liveSparkPulse 2s infinite !important;
+    flex-shrink: 0 !important;
+  }
+
+  .btn-text-stacked {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    gap: 3px !important;
+    flex: 1 !important;
+  }
+
+  .btn-line-1,
+  .btn-line-2 {
+    font-family: 'Montserrat', 'Inter', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.8px !important;
+    color: #ffffff !important;
+    line-height: 1.2 !important;
+    text-transform: uppercase !important;
+    white-space: nowrap !important;
+  }
+
+  .living-stage-glass-btn .btn-arrow {
+    width: 16px !important;
+    height: 16px !important;
+    stroke: #ffffff !important;
+    flex-shrink: 0 !important;
+  }
+
+  .living-stage-glass-btn.pulse-attention {
+    animation: pulseAttentionGlow 3s infinite !important;
+  }
+}
+
+@keyframes liveSparkPulse {
+  0%, 100% { transform: scale(1); opacity: 1; filter: drop-shadow(0 0 4px #10b981); }
+  50% { transform: scale(1.25); opacity: 0.75; filter: drop-shadow(0 0 10px #10b981); }
+}
+
+@keyframes pulseAttentionGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4), 0 12px 35px rgba(12, 18, 30, 0.25);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(16, 185, 129, 0), 0 16px 45px rgba(12, 18, 30, 0.35);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0), 0 12px 35px rgba(12, 18, 30, 0.25);
   }
 }
 
