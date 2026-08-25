@@ -816,7 +816,7 @@ function cleanHtml(raw, pageName) {
             <div class="presentation-visual-col">
               <div class="presentation-photo-frame">
                 <img
-                  src="/photo_form.png?v=1787583676177"
+                  src="/photo_form.png?v=1787685047"
                   class="presentation-showcase-img"
                   alt="Termosalud Test Drive Presentation"
                 />
