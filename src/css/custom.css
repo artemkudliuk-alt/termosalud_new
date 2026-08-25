@@ -2196,32 +2196,33 @@ header .logo:hover img {
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
   border-radius: 0px !important;
-  padding: 24px 26px !important;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.05) !important;
+  padding: 32px 34px 28px 34px !important;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.05) !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 10px !important;
   height: 100% !important;
   box-sizing: border-box !important;
+  justify-content: space-between !important;
 }
 
 .form-card-header {
-  margin-bottom: 2px !important;
+  margin-bottom: 20px !important;
 }
 
 .form-card-title {
   font-family: var(--active-heading-font) !important;
-  font-size: 18px !important;
-  font-weight: 800 !important;
+  font-size: 21px !important;
+  font-weight: 500 !important;
   color: #1e232e !important;
-  margin: 0 0 3px 0 !important;
+  margin: 0 0 6px 0 !important;
   letter-spacing: -0.3px !important;
+  line-height: 1.25 !important;
 }
 
 .form-card-subtitle {
-  font-size: 11.5px !important;
+  font-size: 13px !important;
   color: #64748b !important;
-  line-height: 1.4 !important;
+  line-height: 1.45 !important;
   margin: 0 !important;
 }
 
@@ -2518,33 +2519,36 @@ body.modal-open-lock {
   margin: 0 !important;
 }
 
-.glass-modal-form {
+.glass-modal-form,
+.presentation-open-form {
   display: flex !important;
   flex-direction: column !important;
-  gap: 6px !important;
+  gap: 0 !important;
 }
 
 /* Modal Format Switcher & Pills */
 .format-switcher-wrap {
-  margin-bottom: 6px !important;
+  margin-bottom: 16px !important;
 }
 
-.format-label {
+.format-label,
+.form-label-text {
   display: block !important;
-  font-size: 9px !important;
-  font-weight: 800 !important;
-  color: #64748b !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #475569 !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.7px !important;
-  margin-bottom: 2px !important;
+  letter-spacing: 0.8px !important;
+  margin-bottom: 7px !important;
+  line-height: 1.3 !important;
 }
 
 .format-switcher {
   display: flex !important;
   background: #f1f5f9 !important;
   border: 1px solid #e2e8f0 !important;
-  padding: 2px !important;
-  gap: 3px !important;
+  padding: 3px !important;
+  gap: 4px !important;
 }
 
 .format-tab-btn {
@@ -2552,13 +2556,13 @@ body.modal-open-lock {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 5px !important;
-  padding: 5px 8px !important;
+  gap: 6px !important;
+  padding: 8px 12px !important;
   background: transparent !important;
   border: none !important;
   color: #64748b !important;
-  font-size: 11px !important;
-  font-weight: 700 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
   cursor: pointer !important;
   transition: all 0.25s ease !important;
   border-radius: 0px !important;
@@ -2571,27 +2575,27 @@ body.modal-open-lock {
 }
 
 .device-selector-wrap {
-  margin-bottom: 6px !important;
+  margin-bottom: 16px !important;
 }
 
 .device-pills-row {
-  display: flex !important;
-  gap: 4px !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 6px !important;
 }
 
 .device-pill {
-  flex: 1 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 4px !important;
-  padding: 4.5px 6px !important;
+  gap: 6px !important;
+  padding: 8.5px 6px !important;
   background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #cbd5e1 !important;
   border-radius: 0px !important;
   color: #475569 !important;
-  font-size: 10.5px !important;
-  font-weight: 700 !important;
+  font-size: 11.5px !important;
+  font-weight: 600 !important;
   cursor: pointer !important;
   transition: all 0.25s ease !important;
   user-select: none !important;
@@ -2623,15 +2627,7 @@ body.modal-open-lock {
 .form-group-item {
   display: flex !important;
   flex-direction: column !important;
-  gap: 2px !important;
-}
-
-.form-label-text {
-  font-size: 8.5px !important;
-  font-weight: 800 !important;
-  color: #64748b !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.7px !important;
+  margin-bottom: 15px !important;
 }
 
 .input-with-icon {
@@ -2642,10 +2638,10 @@ body.modal-open-lock {
 .input-icon {
   position: absolute !important;
   top: 50% !important;
-  left: 10px !important;
+  left: 12px !important;
   transform: translateY(-50%) !important;
-  width: 13px !important;
-  height: 13px !important;
+  width: 15px !important;
+  height: 15px !important;
   stroke: #94a3b8 !important;
   pointer-events: none !important;
   transition: stroke 0.25s ease !important;
@@ -2653,14 +2649,14 @@ body.modal-open-lock {
 
 .luxury-form-input {
   width: 100% !important;
-  height: 35px !important;
+  height: 42px !important;
   background: #ffffff !important;
   border: 1px solid #cbd5e1 !important;
   border-radius: 0px !important;
-  padding: 0 10px 0 28px !important;
+  padding: 0 12px 0 34px !important;
   color: #0f172a !important;
   font-family: inherit !important;
-  font-size: 12px !important;
+  font-size: 13px !important;
   font-weight: 500 !important;
   outline: none !important;
   box-sizing: border-box !important;
@@ -2670,7 +2666,7 @@ body.modal-open-lock {
 .luxury-form-input::placeholder {
   color: #94a3b8 !important;
   font-weight: 400 !important;
-  font-size: 11.5px !important;
+  font-size: 12px !important;
 }
 
 .luxury-form-input:focus {
@@ -2680,24 +2676,23 @@ body.modal-open-lock {
 }
 
 .messenger-pills-row {
-  display: flex !important;
-  gap: 4px !important;
-  flex-wrap: wrap !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 6px !important;
 }
 
 .messenger-pill {
-  flex: 1 1 auto !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 4px !important;
-  padding: 4.5px 6px !important;
+  gap: 6px !important;
+  padding: 8.5px 6px !important;
   background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #cbd5e1 !important;
   border-radius: 0px !important;
   color: #475569 !important;
-  font-size: 10.5px !important;
-  font-weight: 700 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
   cursor: pointer !important;
   transition: all 0.25s ease !important;
   user-select: none !important;
@@ -2728,14 +2723,19 @@ body.modal-open-lock {
 .form-row-2col {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
-  gap: 6px !important;
+  gap: 12px !important;
+  margin-bottom: 0 !important;
+}
+
+.form-row-2col .form-group-item {
+  margin-bottom: 15px !important;
 }
 
 .modal-submit-btn,
 .shimmer-submit-btn {
   position: relative !important;
   width: 100% !important;
-  height: 40px !important;
+  height: 48px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -2745,13 +2745,13 @@ body.modal-open-lock {
   border: none !important;
   border-radius: 0px !important;
   font-family: inherit !important;
-  font-size: 11px !important;
-  font-weight: 900 !important;
+  font-size: 12.5px !important;
+  font-weight: 800 !important;
   letter-spacing: 1px !important;
   text-transform: uppercase !important;
   cursor: pointer !important;
   overflow: hidden !important;
-  margin-top: 2px !important;
+  margin-top: 4px !important;
   box-shadow: 0 4px 14px rgba(30, 35, 46, 0.18) !important;
   transition: all 0.25s ease !important;
 }
