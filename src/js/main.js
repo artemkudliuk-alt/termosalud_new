@@ -551,34 +551,29 @@ function initSplitHero() {
 
 
 /**
- * 15. Mobile Brand Switcher & Vertical Video Stage
+ * 15. Mobile Device Vertical Video Playback (Sequential Autoplay on Scroll)
  */
 function initMobileBrandSwitcher() {
   const showcase = document.getElementById('mobile-device-showcase');
   if (!showcase) return;
 
-  const tabs = showcase.querySelectorAll('.mobile-brand-tab');
-  const panels = showcase.querySelectorAll('.mobile-device-panel');
-
-  tabs.forEach((tab) => {
-    tab.addEventListener('click', () => {
-      const target = tab.getAttribute('data-tab');
-      tabs.forEach((t) => t.classList.toggle('active', t === tab));
-      panels.forEach((p) => {
-        const isMatch = p.getAttribute('data-panel') === target;
-        p.classList.toggle('active', isMatch);
-        const vid = p.querySelector('video');
-        if (vid) {
-          if (isMatch) {
-            vid.currentTime = 0;
-            vid.play().catch(() => {});
-          } else {
-            vid.pause();
-          }
+  const videos = showcase.querySelectorAll('.mobile-vertical-video');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const vid = entry.target;
+        if (entry.isIntersecting) {
+          vid.play().catch(() => {});
+        } else {
+          vid.pause();
         }
       });
-    });
-  });
+    }, { threshold: 0.2 });
+
+    videos.forEach((vid) => observer.observe(vid));
+  } else {
+    videos.forEach((vid) => vid.play().catch(() => {}));
+  }
 }
 
 /**

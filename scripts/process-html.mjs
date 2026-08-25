@@ -302,77 +302,64 @@ function cleanHtml(raw, pageName) {
           </div>
         </div>
 
-        <!-- ================= МОБІЛЬНА ВЕРСІЯ (Перемикач брендів + Повноекранне вертикальне відео) ================= -->
+        <!-- ================= МОБІЛЬНА ВЕРСІЯ (Вертикальне відео один за одним) ================= -->
         <div class="mobile-device-showcase mobile-only-showcase" id="mobile-device-showcase">
-          <!-- Перемикач брендів зверху -->
-          <div class="mobile-brand-switcher">
-            <button class="mobile-brand-tab active" data-tab="zionic" aria-label="Zionic MARP System">
-              <span>✦ ZIONIC MARP + RF</span>
-            </button>
-            <button class="mobile-brand-tab" data-tab="linfopress" aria-label="Linfopress Evolution PRO">
-              <span>✦ LINFOPRESS PRO</span>
-            </button>
-          </div>
-
-          <!-- Сцена вертикального відео -->
-          <div class="mobile-video-stage">
-            <!-- 1. Панель Zionic -->
-            <div class="mobile-device-panel active" data-panel="zionic">
-              <div class="mobile-video-wrap">
-                <video autoplay loop muted playsinline class="mobile-vertical-video" preload="auto" poster="/photo_zionic.png">
-                  <source src="/zionic.mp4" type="video/mp4">
-                </video>
-                <div class="mobile-video-overlay"></div>
+          <!-- 1. Блок Zionic -->
+          <div class="mobile-device-panel" data-panel="zionic">
+            <div class="mobile-video-wrap">
+              <video autoplay loop muted playsinline class="mobile-vertical-video" preload="auto" poster="/photo_zionic.png">
+                <source src="/zionic.mp4" type="video/mp4">
+              </video>
+              <div class="mobile-video-overlay"></div>
+            </div>
+            <div class="mobile-device-card">
+              <div class="split-badge-row">
+                <span class="split-badge badge-zionic">✦ MARP + RF TECHNOLOGY</span>
+                <span class="split-tag">MADE IN SPAIN</span>
               </div>
-              <div class="mobile-device-card">
-                <div class="split-badge-row">
-                  <span class="split-badge badge-zionic">✦ MARP + RF TECHNOLOGY</span>
-                  <span class="split-tag">MADE IN SPAIN</span>
-                </div>
-                <h3 class="split-title">ZIONIC <span>MARP SYSTEM</span></h3>
-                <ul class="split-bullets">
-                  <li><span class="split-check">✓</span> Одночасна дія: ліполіз, ліфтинг та тонус</li>
-                  <li><span class="split-check">✓</span> Безболісно та без реабілітації для пацієнта</li>
-                  <li><span class="split-check">✓</span> Швидка окупність від 3 до 4 місяців</li>
-                </ul>
-                <div class="split-btn-group">
-                  <a href="/zionic/" class="split-btn split-btn-ghost">
-                    ДІЗНАТИСЬ БІЛЬШЕ
-                  </a>
-                  <button class="split-btn split-btn-ghost-muted header-btn" data-target="#popup_request">
-                    ТЕСТ-ДРАЙВ
-                  </button>
-                </div>
+              <h3 class="split-title">ZIONIC <span>MARP SYSTEM</span></h3>
+              <ul class="split-bullets">
+                <li><span class="split-check">✓</span> Одночасна дія: ліполіз, ліфтинг та тонус</li>
+                <li><span class="split-check">✓</span> Безболісно та без реабілітації для пацієнта</li>
+                <li><span class="split-check">✓</span> Швидка окупність від 3 до 4 місяців</li>
+              </ul>
+              <div class="split-btn-group">
+                <a href="/zionic/" class="split-btn split-btn-ghost">
+                  ДІЗНАТИСЬ БІЛЬШЕ
+                </a>
+                <button class="split-btn split-btn-ghost-muted header-btn" data-target="#popup_request">
+                  ТЕСТ-ДРАЙВ
+                </button>
               </div>
             </div>
+          </div>
 
-            <!-- 2. Панель Linfopress -->
-            <div class="mobile-device-panel" data-panel="linfopress">
-              <div class="mobile-video-wrap">
-                <video loop muted playsinline class="mobile-vertical-video" preload="auto" poster="/photo_limfo.png">
-                  <source src="/limfo.mp4" type="video/mp4">
-                </video>
-                <div class="mobile-video-overlay"></div>
+          <!-- 2. Блок Linfopress -->
+          <div class="mobile-device-panel" data-panel="linfopress">
+            <div class="mobile-video-wrap">
+              <video autoplay loop muted playsinline class="mobile-vertical-video" preload="auto" poster="/photo_limfo.png">
+                <source src="/limfo.mp4" type="video/mp4">
+              </video>
+              <div class="mobile-video-overlay"></div>
+            </div>
+            <div class="mobile-device-card">
+              <div class="split-badge-row">
+                <span class="split-badge badge-linfo">✦ ПРЕСОТЕРАПІЯ 4-ГО ПОКОЛІННЯ</span>
+                <span class="split-tag">24 СЕКТОРИ</span>
               </div>
-              <div class="mobile-device-card">
-                <div class="split-badge-row">
-                  <span class="split-badge badge-linfo">✦ ПРЕСОТЕРАПІЯ 4-ГО ПОКОЛІННЯ</span>
-                  <span class="split-tag">24 СЕКТОРИ</span>
-                </div>
-                <h3 class="split-title">Linfopress <span>EVOLUTION PRO</span></h3>
-                <ul class="split-bullets">
-                  <li><span class="split-check">✓</span> 24 незалежні сектори послідовного тиску</li>
-                  <li><span class="split-check">✓</span> Медична сертифікація безпеки CE Medical</li>
-                  <li><span class="split-check">✓</span> Високий попит та щоденний прибуток</li>
-                </ul>
-                <div class="split-btn-group">
-                  <a href="/linfopress/" class="split-btn split-btn-ghost">
-                    ДІЗНАТИСЬ БІЛЬШЕ
-                  </a>
-                  <button class="split-btn split-btn-ghost-muted header-btn" data-target="#popup_request">
-                    ТЕСТ-ДРАЙВ
-                  </button>
-                </div>
+              <h3 class="split-title">Linfopress <span>EVOLUTION PRO</span></h3>
+              <ul class="split-bullets">
+                <li><span class="split-check">✓</span> 24 незалежні сектори послідовного тиску</li>
+                <li><span class="split-check">✓</span> Медична сертифікація безпеки CE Medical</li>
+                <li><span class="split-check">✓</span> Високий попит та щоденний прибуток</li>
+              </ul>
+              <div class="split-btn-group">
+                <a href="/linfopress/" class="split-btn split-btn-ghost">
+                  ДІЗНАТИСЬ БІЛЬШЕ
+                </a>
+                <button class="split-btn split-btn-ghost-muted header-btn" data-target="#popup_request">
+                  ТЕСТ-ДРАЙВ
+                </button>
               </div>
             </div>
           </div>
