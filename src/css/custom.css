@@ -4124,9 +4124,9 @@ footer {
 .mobile-video-wrap {
   position: relative !important;
   width: 100% !important;
-  height: 75vh !important;
-  min-height: 520px !important;
-  max-height: 720px !important;
+  height: 58vh !important;
+  min-height: 400px !important;
+  max-height: 550px !important;
   overflow: hidden !important;
   border-radius: 0px !important;
   background: #000000 !important;
@@ -4441,9 +4441,9 @@ footer {
   .mobile-video-wrap {
     position: relative !important;
     width: 100% !important;
-    height: 75vh !important;
-    min-height: 500px !important;
-    max-height: 720px !important;
+    height: 58vh !important;
+    min-height: 400px !important;
+    max-height: 550px !important;
     overflow: hidden !important;
     border-radius: 0px !important;
     background: #000000 !important;
