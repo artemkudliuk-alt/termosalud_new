@@ -2083,21 +2083,25 @@ header .logo:hover img {
   border-radius: 0px !important;
   overflow: hidden !important;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04) !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
 }
 
+/* Photo Frame: 70% of the left block */
 .presentation-photo-frame {
   position: relative !important;
   width: 100% !important;
-  height: 250px !important;
+  flex: 0 0 68% !important;
+  min-height: 380px !important;
   overflow: hidden !important;
-  background: #0f172a !important;
+  background: #f8fafc !important;
 }
 
 .presentation-showcase-img {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
-  object-position: center !important;
+  object-position: 22% 35% !important;
   display: block !important;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
@@ -2109,7 +2113,7 @@ header .logo:hover img {
 .presentation-photo-overlay {
   position: absolute !important;
   inset: 0 !important;
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.05) 0%, rgba(15, 23, 42, 0.45) 100%) !important;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0) 0%, rgba(15, 23, 42, 0.25) 100%) !important;
   pointer-events: none !important;
 }
 
@@ -2120,7 +2124,7 @@ header .logo:hover img {
   display: inline-flex !important;
   align-items: center !important;
   gap: 8px !important;
-  padding: 6px 12px !important;
+  padding: 6px 14px !important;
   background: rgba(15, 23, 42, 0.88) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
@@ -2140,14 +2144,16 @@ header .logo:hover img {
   box-shadow: 0 0 8px #10b981 !important;
 }
 
+/* Trust Features: remaining 30% of the left block */
 .presentation-trust-features {
-  padding: 22px 24px !important;
+  padding: 20px 24px !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 16px !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
   background: #ffffff !important;
   flex: 1 !important;
-  justify-content: center !important;
+  box-sizing: border-box !important;
 }
 
 .trust-feature-item {
@@ -2157,12 +2163,12 @@ header .logo:hover img {
 }
 
 .trust-feature-item .trust-icon {
-  width: 20px !important;
-  height: 20px !important;
+  width: 18px !important;
+  height: 18px !important;
   border-radius: 0px !important;
   background: #1e232e !important;
   color: #ffffff !important;
-  font-size: 11px !important;
+  font-size: 10.5px !important;
   font-weight: 800 !important;
   display: flex !important;
   align-items: center !important;
@@ -2172,7 +2178,7 @@ header .logo:hover img {
 }
 
 .trust-feature-item strong {
-  font-size: 13px !important;
+  font-size: 12.5px !important;
   font-weight: 700 !important;
   color: #1e232e !important;
   line-height: 1.3 !important;
@@ -2182,9 +2188,9 @@ header .logo:hover img {
 .trust-feature-item span {
   font-size: 11.5px !important;
   color: #64748b !important;
-  line-height: 1.4 !important;
+  line-height: 1.35 !important;
   display: block !important;
-  margin-top: 2px !important;
+  margin-top: 1px !important;
 }
 
 .presentation-form-col {
@@ -2247,7 +2253,9 @@ header .logo:hover img {
   }
   
   .presentation-photo-frame {
-    height: 220px !important;
+    flex: none !important;
+    height: 260px !important;
+    min-height: 260px !important;
   }
 
   .presentation-form-col.desktop-only-form {
