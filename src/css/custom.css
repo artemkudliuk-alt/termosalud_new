@@ -7,11 +7,11 @@
 
   /* Per-Screen Heading Weights & Typography Variables */
   --s1-title-weight: 900;
-  --s2-title-weight: 700;
+  --s2-title-weight: 500;
   --s3-title-weight: 500;
-  --s4-title-weight: 800;
-  --s5-title-weight: 600;
-  --s6-title-weight: 900;
+  --s4-title-weight: 500;
+  --s5-title-weight: 500;
+  --s6-title-weight: 500;
 
   /* Dominant Neutrals (72.8% White, 9.4% Soft Gray) */
   --bg-pure: #ffffff;
@@ -136,6 +136,21 @@ h1, h2, h3, h4, h5, h6,
 
 p, span, li, a, button, input, label, textarea {
   font-family: var(--active-font);
+}
+
+/* All Section Headings (Except Hero) use Clean Medium 500 Weight (Pixel-Matched to Design Direction) */
+section:not(.hero-clean-section):not(.hero-banner):not(.hero) h2,
+.our-prods-header h2,
+.why-us-header h2,
+.presentation-header h2,
+.partners-header h2,
+.editorial-main-title,
+.seo-main-title,
+.about-section h2,
+.technology-section h2,
+.faq-section h2,
+.big-title {
+  font-weight: 500 !important;
 }
 
 /* Ensure images fit nicely */
@@ -888,7 +903,7 @@ header .logo:hover img {
 .our-prods-header h2 {
   font-family: var(--active-heading-font) !important;
   font-size: clamp(32px, 4.2vw, 46px) !important;
-  font-weight: var(--s2-title-weight, 700) !important;
+  font-weight: 500 !important;
   color: var(--brand-navy) !important;
   margin: 0 0 18px 0 !important;
   line-height: 1.2 !important;
@@ -1454,7 +1469,7 @@ header .logo:hover img {
 .why-us-header h2 {
   font-family: var(--active-heading-font) !important;
   font-size: clamp(28px, 3.2vw, 42px) !important;
-  font-weight: var(--s3-title-weight, 700) !important;
+  font-weight: 500 !important;
   color: var(--brand-navy) !important;
   margin: 0 0 16px 0 !important;
   line-height: 1.2 !important;
@@ -2034,7 +2049,7 @@ header .logo:hover img {
 .presentation-header h2 {
   font-family: var(--active-heading-font) !important;
   font-size: clamp(28px, 3.5vw, 42px) !important;
-  font-weight: 800 !important;
+  font-weight: 500 !important;
   color: var(--brand-navy) !important;
   margin: 0 0 14px 0 !important;
   line-height: 1.2 !important;
@@ -2894,7 +2909,7 @@ body.modal-open-lock {
 .partners-header h2 {
   font-family: var(--active-heading-font) !important;
   font-size: clamp(28px, 3.5vw, 42px) !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   color: var(--brand-navy) !important;
   margin: 0 0 12px 0 !important;
   line-height: 1.2 !important;
@@ -3206,7 +3221,7 @@ body.modal-open-lock {
 .editorial-main-title {
   font-family: var(--active-heading-font) !important;
   font-size: clamp(30px, 3.6vw, 44px) !important;
-  font-weight: 900 !important;
+  font-weight: 500 !important;
   color: var(--brand-navy) !important;
   line-height: 1.15 !important;
   margin: 0 0 24px 0 !important;
