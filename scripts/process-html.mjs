@@ -18,14 +18,16 @@ function cleanHtml(raw, pageName) {
   // Clean Minimalist Header (Matching Original Termosalud Spanish Aesthetic)
   const modernHeaderHtml = `
     <header class="header">
-      <!-- 1. Mobile Left: Compact Presentation Button -->
-      <div class="header-left-cta">
-        <button class="header-btn header-btn-compact" data-target="#popup_request">
-          ПРЕЗЕНТАЦІЯ
+      <!-- 1. Mobile Left: Black Hamburger Menu Button (Hidden on Desktop) -->
+      <div class="header-left-nav">
+        <button class="custom-burger-btn" id="custom-burger-btn" aria-label="Меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
 
-      <!-- 2. Logo: Centered on Mobile, Left-aligned on Desktop -->
+      <!-- 2. Logo: Left-aligned on Desktop, Centered on Mobile -->
       <a href="/" class="logo header-logo" aria-label="Termosalud">
         <picture>
           <source srcset="/wp-content/themes/zionic/assets/images/logo.svg" media="(min-width: 992px)">
@@ -58,7 +60,7 @@ function cleanHtml(raw, pageName) {
         </div>
       </div>
 
-      <!-- 4. Header Right: Desktop Phone & CTA + Mobile Black Hamburger Button -->
+      <!-- 4. Header Right: Desktop Phone & CTA + Mobile Presentation Button -->
       <div class="header-right-actions">
         <a class="header-phone desktop-only-phone" href="tel:+380937205277">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
@@ -69,11 +71,9 @@ function cleanHtml(raw, pageName) {
           Заявка на презентацію
         </button>
 
-        <!-- Black Hamburger Menu Button (Right on Mobile) -->
-        <button class="custom-burger-btn" id="custom-burger-btn" aria-label="Меню" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
+        <!-- Compact Presentation Button on Mobile (Right side) -->
+        <button class="header-btn header-btn-compact mobile-only-cta" data-target="#popup_request">
+          ПРЕЗЕНТАЦІЯ
         </button>
       </div>
     </header>
