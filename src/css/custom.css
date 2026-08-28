@@ -3905,54 +3905,55 @@ footer {
   }
 
   .hero-clean-title {
-    font-size: clamp(26px, 7.5vw, 36px) !important;
-    line-height: 1.1 !important;
+    font-size: clamp(30px, 8.5vw, 42px) !important;
+    line-height: 1.12 !important;
     letter-spacing: -0.5px !important;
-    margin-bottom: 14px !important;
+    margin-bottom: 16px !important;
   }
 
   .hero-clean-desc {
-    font-size: 15px !important;
-    line-height: 1.55 !important;
+    font-size: 16.5px !important;
+    line-height: 1.6 !important;
     max-width: 100% !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 24px !important;
   }
 
   .hero-product-slider-wrapper {
-    margin-top: 16px !important;
+    margin-top: 18px !important;
   }
 
   .hero-product-card {
-    padding: 14px 12px !important;
-    min-width: 250px !important;
+    padding: 16px 14px !important;
+    min-width: 260px !important;
   }
 
   /* 3. Screen 2: Interactive Split Showcase (Mobile Stack) */
   #our-products {
-    padding: 44px 0 54px 0 !important;
+    padding: 48px 0 60px 0 !important;
   }
 
   .our-prods-header h2 {
-    font-size: clamp(25px, 6.5vw, 32px) !important;
-    margin-bottom: 12px !important;
+    font-size: clamp(28px, 7.5vw, 36px) !important;
+    margin-bottom: 14px !important;
+    line-height: 1.2 !important;
   }
 
   .our-prods-header p {
-    font-size: 15px !important;
-    line-height: 1.55 !important;
+    font-size: 16.5px !important;
+    line-height: 1.6 !important;
   }
 
   .split-screen-container {
     flex-direction: column !important;
     height: auto !important;
     min-height: auto !important;
-    gap: 18px !important;
+    gap: 20px !important;
     padding: 0 16px !important;
   }
 
   .split-panel {
     width: 100% !important;
-    height: 420px !important;
+    height: 440px !important;
     flex: none !important;
     border-radius: 0px !important;
     overflow: hidden !important;
@@ -3961,7 +3962,7 @@ footer {
   .split-panel .split-content {
     margin: 12px !important;
     max-width: calc(100% - 24px) !important;
-    padding: 18px 16px !important;
+    padding: 20px 18px !important;
     border-radius: 0px !important;
     background: rgba(18, 22, 29, 0.94) !important;
     backdrop-filter: blur(16px) !important;
@@ -3970,13 +3971,13 @@ footer {
   }
 
   .split-panel .split-title {
-    font-size: 22px !important;
-    margin-bottom: 10px !important;
+    font-size: 26px !important;
+    margin-bottom: 12px !important;
   }
 
   .split-panel .split-title span {
     font-size: 0.6em !important;
-    margin-left: 4px !important;
+    margin-left: 6px !important;
     font-weight: 700 !important;
   }
 
@@ -3985,13 +3986,13 @@ footer {
     max-height: none !important;
     opacity: 1 !important;
     transform: none !important;
-    gap: 8px !important;
-    margin-bottom: 16px !important;
+    gap: 10px !important;
+    margin-bottom: 18px !important;
   }
 
   .split-bullet-item {
-    font-size: 14.5px !important;
-    line-height: 1.45 !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
   }
 
   .split-panel .split-btn-group {
@@ -4000,300 +4001,353 @@ footer {
     opacity: 1 !important;
     transform: none !important;
     width: 100% !important;
-    gap: 8px !important;
+    gap: 10px !important;
   }
 
   .split-btn-primary,
   .split-btn-secondary {
     flex: 1 !important;
-    height: 44px !important;
-    font-size: 12px !important;
-    padding: 0 10px !important;
-    letter-spacing: 0.6px !important;
+    height: 50px !important;
+    font-size: 13.5px !important;
+    padding: 0 12px !important;
+    letter-spacing: 0.8px !important;
     font-weight: 800 !important;
   }
 
   /* 4. Screen 3: Bento Grid (Single Column Stack) */
   .why-us-bento-section {
-    padding: 44px 0 54px 0 !important;
+    padding: 48px 0 60px 0 !important;
   }
 
   .why-us-header h2 {
-    font-size: clamp(25px, 6.5vw, 32px) !important;
-    margin-bottom: 12px !important;
+    font-size: clamp(28px, 7.5vw, 36px) !important;
+    margin-bottom: 14px !important;
+    line-height: 1.2 !important;
   }
 
   .why-us-header p {
-    font-size: 15px !important;
-    line-height: 1.55 !important;
+    font-size: 16.5px !important;
+    line-height: 1.6 !important;
   }
 
   .swiss-bento-grid {
     display: flex !important;
     flex-direction: column !important;
+    gap: 14px !important;
+  }
+
+  .bento-top-meta {
+    padding: 18px 16px !important;
     gap: 12px !important;
   }
 
+  .bento-icon-pod {
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+  }
+
+  .bento-svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
   .bento-index {
-    font-size: 11.5px !important;
+    font-size: 12.5px !important;
     font-weight: 800 !important;
-    letter-spacing: 1px !important;
+    letter-spacing: 1.2px !important;
+  }
+
+  .bento-title-row {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    flex-wrap: wrap !important;
   }
 
   .bento-title {
-    font-size: 19px !important;
+    font-size: 22px !important;
     font-weight: 700 !important;
     margin-bottom: 0 !important;
   }
 
   .bento-pill-tag {
-    font-size: 12px !important;
-    font-weight: 700 !important;
-    padding: 4.5px 10px !important;
+    font-size: 13.5px !important;
+    font-weight: 800 !important;
+    padding: 5px 12px !important;
     white-space: normal !important;
     line-height: 1.3 !important;
+    border: 1px solid #cbd5e1 !important;
+  }
+
+  .bento-pill-tag.tag-consumables {
+    background: #059669 !important;
+    color: #ffffff !important;
+    border: 1px solid #047857 !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  .bento-chevron {
+    width: 38px !important;
+    height: 38px !important;
   }
 
   .bento-desc {
-    font-size: 14.5px !important;
-    line-height: 1.6 !important;
-    margin-bottom: 16px !important;
-    color: #334155 !important;
+    font-size: 16px !important;
+    line-height: 1.65 !important;
+    margin-bottom: 18px !important;
+    color: #1e293b !important;
   }
 
-  .bento-feature-item {
-    font-size: 14.5px !important;
-    line-height: 1.45 !important;
+  .bento-feature-pills {
     gap: 10px !important;
   }
 
+  .bento-feature-item {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    gap: 12px !important;
+  }
+
   .bento-check {
-    font-size: 15px !important;
+    font-size: 18px !important;
     font-weight: 900 !important;
   }
 
   .bento-cert-grid {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 10px !important;
+    gap: 12px !important;
   }
 
   .cert-seal {
-    padding: 12px 8px !important;
+    padding: 14px 10px !important;
   }
 
   .seal-code {
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-weight: 900 !important;
   }
 
   .seal-name {
-    font-size: 11px !important;
+    font-size: 12.5px !important;
     font-weight: 700 !important;
   }
 
   .roi-big-number .num-highlight {
-    font-size: 38px !important;
+    font-size: 44px !important;
     font-weight: 900 !important;
   }
 
   .roi-big-number .num-label {
-    font-size: 13.5px !important;
+    font-size: 15px !important;
     font-weight: 800 !important;
   }
 
   .roi-subtext {
-    font-size: 13.5px !important;
+    font-size: 15px !important;
     font-weight: 600 !important;
   }
 
   .roi-graph-meta {
-    font-size: 13px !important;
+    font-size: 14.5px !important;
     font-weight: 700 !important;
   }
 
   .roi-badge-highlight {
-    font-size: 13px !important;
-    font-weight: 800 !important;
-    padding: 5px 10px !important;
+    font-size: 15px !important;
+    font-weight: 900 !important;
+    padding: 7px 14px !important;
     background: #0f172a !important;
     color: #ffffff !important;
     border: 1px solid #0f172a !important;
   }
 
   .stat-big-highlight {
-    font-size: 40px !important;
+    font-size: 46px !important;
     font-weight: 900 !important;
   }
 
   .stat-highlight-label {
-    font-size: 13px !important;
+    font-size: 14.5px !important;
     font-weight: 700 !important;
   }
 
   /* 5. Screen 4: Application Presentation & Form */
   .application-presentation {
-    padding: 44px 0 54px 0 !important;
+    padding: 48px 0 60px 0 !important;
   }
 
   .presentation-header h2 {
-    font-size: clamp(25px, 6.5vw, 32px) !important;
-    margin-bottom: 12px !important;
+    font-size: clamp(28px, 7.5vw, 36px) !important;
+    margin-bottom: 14px !important;
+    line-height: 1.2 !important;
   }
 
   .presentation-header p {
-    font-size: 15px !important;
-    line-height: 1.55 !important;
+    font-size: 16.5px !important;
+    line-height: 1.6 !important;
   }
 
   .presentation-floating-tag {
-    font-size: 11.5px !important;
-    font-weight: 700 !important;
-    padding: 6px 12px !important;
+    font-size: 12.5px !important;
+    font-weight: 800 !important;
+    padding: 7px 14px !important;
   }
 
   .trust-feature-item strong {
-    font-size: 14.5px !important;
+    font-size: 16px !important;
+    line-height: 1.35 !important;
   }
 
   .trust-feature-item span {
-    font-size: 13.5px !important;
-    line-height: 1.45 !important;
+    font-size: 14.5px !important;
+    line-height: 1.5 !important;
+  }
+
+  .trust-feature-item .trust-icon {
+    width: 22px !important;
+    height: 22px !important;
+    font-size: 13px !important;
   }
 
   .application-presentation .format-label,
   .application-presentation .form-label-text {
-    font-size: 12px !important;
+    font-size: 13px !important;
     font-weight: 800 !important;
   }
 
   .application-presentation .format-tab-btn {
-    font-size: 12.5px !important;
-    padding: 8px 10px !important;
+    font-size: 13.5px !important;
+    padding: 10px 12px !important;
     font-weight: 700 !important;
   }
 
   .application-presentation .device-pills-row {
     grid-template-columns: repeat(3, 1fr) !important;
-    gap: 6px !important;
+    gap: 8px !important;
   }
 
   .application-presentation .device-pill {
-    padding: 9px 6px !important;
-    font-size: 12.5px !important;
+    padding: 10px 6px !important;
+    font-size: 13.5px !important;
     font-weight: 700 !important;
   }
 
   .application-presentation .form-row-2col {
     grid-template-columns: 1fr !important;
-    gap: 10px !important;
+    gap: 12px !important;
   }
 
   .application-presentation .luxury-form-input {
-    height: 48px !important;
-    font-size: 15px !important;
+    height: 50px !important;
+    font-size: 16px !important;
   }
 
   .application-presentation .messenger-pills-row {
     grid-template-columns: repeat(3, 1fr) !important;
-    gap: 6px !important;
+    gap: 8px !important;
   }
 
   .application-presentation .messenger-pill {
-    padding: 9px 6px !important;
-    font-size: 12.5px !important;
+    padding: 10px 6px !important;
+    font-size: 13.5px !important;
     font-weight: 700 !important;
   }
 
   .application-presentation .shimmer-submit-btn,
   .application-presentation .modal-submit-btn {
-    height: 50px !important;
-    font-size: 13.5px !important;
+    height: 54px !important;
+    font-size: 14.5px !important;
     font-weight: 900 !important;
+    letter-spacing: 1px !important;
   }
 
   .application-presentation .living-stage-glass-btn {
-    height: 50px !important;
-    font-size: 13.5px !important;
+    height: 54px !important;
+    font-size: 14.5px !important;
     font-weight: 900 !important;
   }
 
   /* 6. Screen 5: Partners */
   .partners {
-    padding: 44px 0 54px 0 !important;
+    padding: 48px 0 60px 0 !important;
   }
 
   .partners-header h2 {
-    font-size: clamp(25px, 6.5vw, 32px) !important;
-    margin-bottom: 12px !important;
+    font-size: clamp(28px, 7.5vw, 36px) !important;
+    margin-bottom: 14px !important;
+    line-height: 1.2 !important;
   }
 
   .partners-header p {
-    font-size: 15px !important;
-    line-height: 1.55 !important;
+    font-size: 16.5px !important;
+    line-height: 1.6 !important;
   }
 
   /* 7. Screen 6: Manifest & SEO */
   .seo_text {
-    padding: 44px 0 54px 0 !important;
+    padding: 48px 0 60px 0 !important;
   }
 
   .editorial-main-title {
-    font-size: clamp(24px, 6vw, 32px) !important;
-    margin-bottom: 16px !important;
+    font-size: clamp(26px, 7vw, 34px) !important;
+    margin-bottom: 18px !important;
+    line-height: 1.2 !important;
   }
 
   .editorial-stats-row {
     gap: 20px !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 22px !important;
     flex-wrap: wrap !important;
   }
 
   .stat-num {
-    font-size: 32px !important;
+    font-size: 36px !important;
   }
 
   .stat-lbl {
-    font-size: 12.5px !important;
+    font-size: 13.5px !important;
     font-weight: 700 !important;
   }
 
   .editorial-lead-text {
-    font-size: 15px !important;
-    line-height: 1.65 !important;
-    margin-bottom: 24px !important;
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+    margin-bottom: 26px !important;
   }
 
   .pillar-item {
-    gap: 14px !important;
-    padding-bottom: 16px !important;
+    gap: 16px !important;
+    padding-bottom: 18px !important;
   }
 
   .pillar-num {
-    font-size: 20px !important;
+    font-size: 22px !important;
   }
 
   .pillar-body h4 {
-    font-size: 16px !important;
-    font-weight: 700 !important;
+    font-size: 17px !important;
+    font-weight: 800 !important;
   }
 
   .pillar-body p {
-    font-size: 14.5px !important;
-    line-height: 1.6 !important;
+    font-size: 15.5px !important;
+    line-height: 1.65 !important;
   }
 }
 
 @media (max-width: 480px) {
   .hero-clean-title {
-    font-size: 26px !important;
+    font-size: 28px !important;
   }
 
   .split-panel {
-    height: 400px !important;
+    height: 420px !important;
   }
 
   .split-panel .split-title {
-    font-size: 20px !important;
+    font-size: 24px !important;
   }
 }
 
@@ -4687,20 +4741,20 @@ footer {
 
   .mobile-device-card .split-badge,
   .mobile-device-card .split-tag {
-    background: rgba(255, 255, 255, 0.1) !important;
-    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
     color: #ffffff !important;
     border-radius: 0px !important;
-    font-size: 12px !important;
-    font-weight: 700 !important;
-    padding: 5px 10px !important;
+    font-size: 13.5px !important;
+    font-weight: 800 !important;
+    padding: 6px 12px !important;
     letter-spacing: 0.6px !important;
     text-transform: uppercase !important;
   }
 
   .mobile-device-card .split-title {
     font-family: 'Montserrat', sans-serif !important;
-    font-size: 24px !important;
+    font-size: 26px !important;
     font-weight: 800 !important;
     color: #ffffff !important;
     line-height: 1.2 !important;
@@ -4712,33 +4766,33 @@ footer {
     font-size: 0.6em !important;
     font-weight: 700 !important;
     color: #e2e8f0 !important;
-    margin-left: 4px !important;
+    margin-left: 6px !important;
   }
 
   .mobile-device-card .split-bullets {
     list-style: none !important;
     padding: 0 !important;
-    margin: 0 0 20px 0 !important;
+    margin: 0 0 22px 0 !important;
     display: flex !important;
     flex-direction: column !important;
-    gap: 10px !important;
+    gap: 12px !important;
   }
 
   .mobile-device-card .split-bullets li {
     font-family: 'Montserrat', sans-serif !important;
-    font-size: 14.5px !important;
+    font-size: 16px !important;
     color: #f1f5f9 !important;
-    line-height: 1.45 !important;
+    line-height: 1.5 !important;
     display: flex !important;
     align-items: center !important;
-    gap: 10px !important;
+    gap: 12px !important;
   }
 
   /* Monochrome silver/white checkmark */
   .mobile-device-card .split-check {
     color: #10b981 !important;
     font-weight: 900 !important;
-    font-size: 15px !important;
+    font-size: 18px !important;
   }
 
   .mobile-device-card .split-btn-group {
@@ -4750,13 +4804,13 @@ footer {
   /* Buttons */
   .mobile-device-card .split-btn {
     flex: 1 !important;
-    height: 48px !important;
+    height: 52px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     font-family: 'Montserrat', sans-serif !important;
-    font-size: 12.5px !important;
-    font-weight: 800 !important;
+    font-size: 13.5px !important;
+    font-weight: 900 !important;
     letter-spacing: 0.8px !important;
     border-radius: 0px !important;
     text-decoration: none !important;

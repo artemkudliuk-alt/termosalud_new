@@ -401,7 +401,8 @@ function cleanHtml(raw, pageName) {
                       <span class="bento-index">01 / ФІНАНСОВА ВИГОДА</span>
                       <div class="bento-title-row">
                         <h3 class="bento-title">Вигода</h3>
-                        <span class="bento-pill-tag">Швидкий ROI • 0 розхідників</span>
+                        <span class="bento-pill-tag tag-consumables">НЕМАЄ РОЗХІДНИКІВ</span>
+                        <span class="bento-pill-tag">Швидкий ROI</span>
                       </div>
                     </div>
                   </div>
@@ -421,7 +422,7 @@ function cleanHtml(raw, pageName) {
                       <div class="bento-feature-pills">
                         <div class="bento-feature-item">
                           <span class="bento-check">✓</span>
-                          <span><strong>Без витратних матеріалів:</strong> 0 грн додаткових витрат на процедури</span>
+                          <span><strong>НЕМАЄ РОЗХІДНИКІВ:</strong> 0 грн додаткових витрат на процедури</span>
                         </div>
                         <div class="bento-feature-item">
                           <span class="bento-check">✓</span>
