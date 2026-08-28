@@ -57,7 +57,7 @@ name="msapplication-TileImage" content="/wp-content/uploads/2026/03/favicon-opti
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Onest:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/css/custom.css?v=1787910868626">
+  <link rel="stylesheet" href="/src/css/custom.css?v=1787911477118">
   <style>
     .split-title, .split-title *, .split-panel .split-title, .split-panel h3, .split-content .split-title, .split-content h3 {
       color: #f1f5f9 !important;
@@ -204,167 +204,117 @@ class=content>
     
   <div
 class=center>
-      <!-- Screen 2: Interactive Split Screen Showcase (Desktop 70/30 + Mobile Brand Tabs & Vertical Video) -->
-      <section id="our-products" class="our-prods-split-section">
-        
-        <!-- Header Above Split Container -->
-        <div class="our-prods-header" data-aos="fade-up">
-          <h2>Флагманське обладнання для клінік</h2>
-          <p>Преміальні апаратні рішення з високою рентабельністю, швидкою окупністю та доведеною клінічною ефективністю</p>
-        </div>
-
-        <!-- Dynamic 70/30 Split Hero Container (Desktop) -->
-        <div class="split-hero-container desktop-only-split" id="split-devices-hero">
+      <!-- Screen 2: Flagship Equipment Showcase (Zionic Showcase with Cinematic Video Banner + Description + YouTube Live Demo) -->
+      <section id="our-products" class="zionic-showcase-section">
+        <div class="container">
           
-          <!-- ================= ЛІВА СТОРОНА (30% за замовчуванням): Zionic MARP System ================= -->
-          <div
-            class="split-panel split-panel-left is-collapsed"
-            data-device="zionic"
-          >
-            <!-- Фонове медіа (Відео + Фото) -->
-            <div class="split-bg-media">
-              <video autoplay loop muted playsinline class="split-video" preload="auto" poster="/photo_zionic.png">
+          <!-- 1. Main Section Header -->
+          <div class="zionic-section-header" data-aos="fade-up">
+            <span class="zionic-section-badge">✦ ФЛАГМАНСЬКЕ ОБЛАДНАННЯ ДЛЯ КЛІНІК</span>
+            <h2>Інноваційні технології Termosalud</h2>
+            <p>Преміальні апаратні рішення з високою рентабельністю, швидкою окупністю та доведеною клінічною ефективністю</p>
+          </div>
+
+          <!-- 2. Cinematic Video Banner with Centered Title Overlay -->
+          <div class="zionic-video-banner-card" data-aos="fade-up">
+            <div class="video-banner-media">
+              <video autoplay loop muted playsinline class="video-banner-bg" preload="auto" poster="/photo_zionic.png">
                 <source src="/zionic.mp4" type="video/mp4">
               </video>
-              <img
-                src="/photo_zionic.png"
-                alt="Zionic MARP System"
-                class="split-img-fallback"
-              />
+              <div class="video-banner-overlay"></div>
             </div>
-
-            <div class="split-overlay"></div>
-
-            <div class="split-content">
-              <div class="split-badge-row">
-                <span class="split-badge badge-zionic">✦ MARP + RF TECHNOLOGY</span>
-                <span class="split-tag">MADE IN SPAIN</span>
-              </div>
-              
-              <h3 class="split-title">ZIONIC <span>MARP SYSTEM</span></h3>
-              
-              <ul class="split-bullets">
-                <li><span class="split-check">✓</span> Одночасна дія: ліполіз, ліфтинг та тонус</li>
-                <li><span class="split-check">✓</span> Безболісно та без реабілітації для пацієнта</li>
-                <li><span class="split-check">✓</span> Швидка окупність від 3 до 4 місяців</li>
-              </ul>
-
-              <div class="split-btn-group">
-                <a href="/zionic/" class="split-btn split-btn-ghost">
-                  ДІЗНАТИСЬ БІЛЬШЕ
-                </a>
-                <button class="split-btn split-btn-ghost-muted header-btn" data-target="#popup_request">
-                  ТЕСТ-ДРАЙВ
-                </button>
-              </div>
+            <div class="video-banner-content">
+              <span class="video-banner-tag">✦ MADE IN SPAIN • МЕДИЧНА СЕРТИФІКАЦІЯ CE</span>
+              <h3 class="video-banner-title">ZIONIC <span>MARP SYSTEM</span></h3>
+              <p class="video-banner-subtitle">Перша система ротаційної активної дії та радіочастотного ліполізу</p>
             </div>
           </div>
 
-          <!-- ================= ПРАВА СТОРОНА (70% за замовчуванням): Linfopress Evolution PRO ================= -->
-          <div
-            class="split-panel split-panel-right is-expanded"
-            data-device="linfopress"
-          >
-            <div class="split-bg-media">
-              <video autoplay loop muted playsinline class="split-video" preload="auto" poster="/photo_limfo.png">
-                <source src="/limfo.mp4" type="video/mp4">
-              </video>
-              <img
-                src="/photo_limfo.png"
-                alt="Linfopress Evolution PRO"
-                class="split-img-fallback"
-              />
-            </div>
-
-            <div class="split-overlay"></div>
-
-            <div class="split-content">
-              <div class="split-badge-row">
-                <span class="split-badge badge-linfo">✦ ПРЕСОТЕРАПІЯ 4-ГО ПОКОЛІННЯ</span>
-                <span class="split-tag">24 СЕКТОРИ</span>
-              </div>
+          <!-- 3. Description, Key Benefits & Actions Block -->
+          <div class="zionic-desc-block" data-aos="fade-up">
+            <div class="zionic-desc-grid">
               
-              <h3 class="split-title">Linfopress <span>EVOLUTION PRO</span></h3>
-              
-              <ul class="split-bullets">
-                <li><span class="split-check">✓</span> 24 незалежні сектори послідовного тиску</li>
-                <li><span class="split-check">✓</span> Медична сертифікація безпеки CE Medical</li>
-                <li><span class="split-check">✓</span> Високий попит та щоденний прибуток</li>
-              </ul>
-
-              <div class="split-btn-group">
-                <a href="/linfopress/" class="split-btn split-btn-ghost">
-                  ДІЗНАТИСЬ БІЛЬШЕ
-                </a>
-                <button class="split-btn split-btn-ghost-muted header-btn" data-target="#popup_request">
-                  ТЕСТ-ДРАЙВ
-                </button>
+              <div class="zionic-desc-left">
+                <div class="tech-tag-row">
+                  <span class="tech-tag">MARP TECHNOLOGY</span>
+                  <span class="tech-tag">RESISTIVE RF</span>
+                  <span class="tech-tag tag-emerald">0 ГРН РОЗХІДНИКІВ</span>
+                </div>
+                <h4 class="zionic-desc-headline">Глибока трансформація тіла без болю та реабілітації</h4>
+                <p class="zionic-desc-text">
+                  Zionic об'єднує глибокий ротаційний масаж активною дією (MARP) та резистивний радіочастотний ліполіз в одній маніпулі. Технологія діє одночасно на 4 рівні тканин: епідерміс, дерму, гіподерму та м'язовий каркас, забезпечуючи видимий результат уже після першого сеансу.
+                </p>
+                
+                <div class="zionic-action-btns">
+                  <a href="/zionic/" class="zionic-btn-primary">
+                    <span>ДІЗНАТИСЬ БІЛЬШЕ ПРО ZIONIC</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </a>
+                  <button class="zionic-btn-secondary header-btn" data-target="#popup_request">
+                    <span>ЗАМОВИТИ ТЕСТ-ДРАЙВ</span>
+                  </button>
+                </div>
               </div>
+
+              <div class="zionic-desc-right">
+                <div class="zionic-bullets-card">
+                  <h5 class="bullets-card-title">Ключові переваги для бізнесу та пацієнтів:</h5>
+                  <ul class="zionic-feature-list">
+                    <li>
+                      <span class="feature-bullet-icon">✓</span>
+                      <div>
+                        <strong>Потрійна синергетична дія:</strong>
+                        <span>одночасний ліполіз, підтяжка шкіри та зміцнення м'язового тонусу.</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="feature-bullet-icon">✓</span>
+                      <div>
+                        <strong>0 грн додаткових витрат:</strong>
+                        <span>повна відсутність обов'язкових розхідних матеріалів — максимальна маржинальність процедури.</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="feature-bullet-icon">✓</span>
+                      <div>
+                        <strong>Швидка окупність інвестицій:</strong>
+                        <span>повернення вартості апарату всього за 3–4 місяці стабільної роботи клініки.</span>
+                      </div>
+                    </li>
+                    <li>
+                      <span class="feature-bullet-icon">✓</span>
+                      <div>
+                        <strong>100% безпека та комфорт:</strong>
+                        <span>неінвазивний протокол без болю, синців і періоду відновлення.</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
             </div>
           </div>
-        </div>
 
-        <!-- ================= МОБІЛЬНА ВЕРСІЯ (Вертикальне відео один за одним) ================= -->
-        <div class="mobile-device-showcase mobile-only-showcase" id="mobile-device-showcase">
-          <!-- 1. Блок Zionic -->
-          <div class="mobile-device-panel" data-panel="zionic">
-            <div class="mobile-video-wrap">
-              <video autoplay loop muted playsinline class="mobile-vertical-video" preload="auto" poster="/photo_zionic.png">
-                <source src="/zionic.mp4" type="video/mp4">
-              </video>
-              <div class="mobile-video-overlay"></div>
+          <!-- 4. Embedded YouTube Video Presentation -->
+          <div class="zionic-youtube-section" data-aos="fade-up">
+            <div class="youtube-header">
+              <span class="youtube-badge">✦ КЛІНІЧНИЙ ПРОТОКОЛ НАЖИВО</span>
+              <h3>Демонстрація процедури ZIONIC у дії</h3>
+              <p>Оцініть процес роботи апарату, механіку впливу ротаційної маніпули та реальні відчуття пацієнта під час сеансу</p>
             </div>
-            <div class="mobile-device-card">
-              <div class="split-badge-row">
-                <span class="split-badge badge-zionic">✦ MARP + RF TECHNOLOGY</span>
-                <span class="split-tag">MADE IN SPAIN</span>
-              </div>
-              <h3 class="split-title">ZIONIC <span>MARP SYSTEM</span></h3>
-              <ul class="split-bullets">
-                <li><span class="split-check">✓</span> Одночасна дія: ліполіз, ліфтинг та тонус</li>
-                <li><span class="split-check">✓</span> Безболісно та без реабілітації для пацієнта</li>
-                <li><span class="split-check">✓</span> Швидка окупність від 3 до 4 місяців</li>
-              </ul>
-              <div class="split-btn-group">
-                <a href="/zionic/" class="split-btn split-btn-ghost">
-                  ДІЗНАТИСЬ БІЛЬШЕ
-                </a>
-                <button class="split-btn split-btn-ghost-muted header-btn" data-target="#popup_request">
-                  ТЕСТ-ДРАЙВ
-                </button>
-              </div>
+            
+            <div class="youtube-player-frame">
+              <iframe 
+                src="https://www.youtube-nocookie.com/embed/cqskAxvFlxY?rel=0&modestbranding=1" 
+                title="ZIONIC Medical Treatment Demonstration" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen
+                loading="lazy">
+              </iframe>
             </div>
           </div>
 
-          <!-- 2. Блок Linfopress -->
-          <div class="mobile-device-panel" data-panel="linfopress">
-            <div class="mobile-video-wrap">
-              <video autoplay loop muted playsinline class="mobile-vertical-video" preload="auto" poster="/photo_limfo.png">
-                <source src="/limfo.mp4" type="video/mp4">
-              </video>
-              <div class="mobile-video-overlay"></div>
-            </div>
-            <div class="mobile-device-card">
-              <div class="split-badge-row">
-                <span class="split-badge badge-linfo">✦ ПРЕСОТЕРАПІЯ 4-ГО ПОКОЛІННЯ</span>
-                <span class="split-tag">24 СЕКТОРИ</span>
-              </div>
-              <h3 class="split-title">Linfopress <span>EVOLUTION PRO</span></h3>
-              <ul class="split-bullets">
-                <li><span class="split-check">✓</span> 24 незалежні сектори послідовного тиску</li>
-                <li><span class="split-check">✓</span> Медична сертифікація безпеки CE Medical</li>
-                <li><span class="split-check">✓</span> Високий попит та щоденний прибуток</li>
-              </ul>
-              <div class="split-btn-group">
-                <a href="/linfopress/" class="split-btn split-btn-ghost">
-                  ДІЗНАТИСЬ БІЛЬШЕ
-                </a>
-                <button class="split-btn split-btn-ghost-muted header-btn" data-target="#popup_request">
-                  ТЕСТ-ДРАЙВ
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     

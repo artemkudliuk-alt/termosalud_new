@@ -925,490 +925,367 @@ header .logo:hover img {
 }
 
 /* =======================================================
-   SCREEN 2: INTERACTIVE SPLIT SCREEN SHOWCASE (70/30 FLEX ACCORDION)
+   SCREEN 2: FLAGSHIP ZIONIC SHOWCASE (Video Banner + Description + YouTube Live Demo)
    ======================================================= */
-.our-prods-split-section {
-  padding: 90px 0 0 0 !important;
+.zionic-showcase-section {
+  padding: 90px 0 80px 0 !important;
   background: #ffffff !important;
   position: relative !important;
   box-sizing: border-box !important;
   overflow: hidden !important;
   width: 100% !important;
-  max-width: 100% !important;
 }
 
-.our-prods-header {
-  max-width: 900px !important;
-  margin: 0 auto 52px auto !important;
-  padding: 0 24px !important;
+.zionic-section-header {
+  max-width: 860px !important;
+  margin: 0 auto 44px auto !important;
+  padding: 0 20px !important;
   text-align: center !important;
 }
 
-.split-hero-container {
-  position: relative !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  height: 82vh !important;
-  min-height: 640px !important;
-  display: flex !important;
-  overflow: hidden !important;
-  background-color: #0b0f17 !important;
-  border-radius: 0px !important;
-  border: none !important;
-  border-top: 1px solid rgba(226, 232, 240, 0.8) !important;
-  box-shadow: none !important;
-}
-
-/* Базова панель */
-.split-panel {
-  position: relative !important;
-  height: 100% !important;
-  overflow: hidden !important;
-  cursor: pointer !important;
-  display: flex !important;
-  /* Плавна швейцарська анімація зміни ширини */
-  transition: flex 0.75s cubic-bezier(0.25, 1, 0.5, 1), transform 0.75s ease !important;
-  will-change: flex !important;
-  box-sizing: border-box !important;
-}
-
-/* 70% активна сторона / 30% неактивна */
-.split-panel.is-expanded {
-  flex: 7 !important; /* 70% ширини */
-  align-items: flex-end !important; /* Опущено вниз */
-}
-
-.split-panel.is-collapsed {
-  flex: 3 !important; /* 30% ширини */
-  align-items: flex-end !important; /* Внизу на 30% */
-}
-
-/* Ліва панель: 70% у верхньому лівому кутку, 30% внизу притиснута праворуч */
-.split-panel-left {
-  border-right: 1px solid rgba(255, 255, 255, 0.2) !important;
-}
-
-.split-panel-left.is-expanded {
-  justify-content: flex-start !important;
-}
-
-.split-panel-left.is-collapsed {
-  justify-content: flex-end !important;
-}
-
-/* Права панель: 70% у верхньому правому кутку, 30% внизу притиснута ліворуч */
-.split-panel-right.is-expanded {
-  justify-content: flex-end !important;
-}
-
-.split-panel-right.is-collapsed {
-  justify-content: flex-start !important;
-}
-
-/* Фонове медіа: 70% = Відео, 30% = Фотографія */
-.split-bg-media {
-  position: absolute !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  z-index: 1 !important;
-  pointer-events: none !important;
-  overflow: hidden !important;
-  background-color: #0b0f17 !important;
-}
-
-.split-video {
-  position: absolute !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center center !important;
-  opacity: 0 !important;
-  z-index: 2 !important;
-  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s ease !important;
-}
-
-.split-img-fallback {
-  position: absolute !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center 25% !important;
-  opacity: 1 !important;
-  z-index: 1 !important;
-  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s ease !important;
-}
-
-/* 70% Розгорнута сторона: плавно проявляється ВІДЕО */
-.split-panel.is-expanded .split-video {
-  opacity: 1 !important;
-}
-
-.split-panel.is-expanded .split-img-fallback {
-  opacity: 0.15 !important;
-}
-
-/* 30% Згорнута сторона: показується чітка ФОТОГРАФІЯ */
-.split-panel.is-collapsed .split-video {
-  opacity: 0 !important;
-}
-
-.split-panel.is-collapsed .split-img-fallback {
-  opacity: 1 !important;
-}
-
-.split-panel:hover .split-video,
-.split-panel:hover .split-img-fallback {
-  transform: scale(1.03) !important;
-}
-
-/* Тонування / Затемнення (~2-5% делікатне затемнення) */
-.split-overlay {
-  position: absolute !important;
-  inset: 0 !important;
-  z-index: 2 !important;
-  transition: background 0.6s ease, backdrop-filter 0.6s ease !important;
-  pointer-events: none !important;
-}
-
-/* 70% активна сторона — повністю світла з делікатним захисним градієнтом (~2-5%) */
-.split-panel.is-expanded .split-overlay {
-  background: linear-gradient(180deg, rgba(10, 14, 20, 0.02) 0%, rgba(10, 14, 20, 0.14) 100%) !important;
-}
-
-/* 30% згорнута сторона — м'яке тонування (~15%) */
-.split-panel.is-collapsed .split-overlay {
-  background: rgba(10, 14, 20, 0.18) !important;
-}
-
-/* Контентний блок */
-.split-content {
-  position: relative !important;
-  z-index: 3 !important;
-  color: #ffffff !important;
-  display: flex !important;
-  flex-direction: column !important;
-  box-sizing: border-box !important;
-  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
-
-/* ================== 70% РОЗГОРНУТИЙ СТАН: ПЛАШКА В СІРО-СИНЬОМУ ПАСТЕЛЬНОМУ ВІДТІНКУ ================== */
-.split-panel.is-expanded .split-content {
-  max-width: 390px !important;
-  width: auto !important;
-  padding: 22px 24px !important;
-  text-align: left !important;
-  align-items: flex-start !important;
-  background: linear-gradient(135deg, rgba(46, 58, 70, 0.76) 0%, rgba(34, 44, 54, 0.72) 100%) !important;
-  backdrop-filter: blur(20px) saturate(140%) !important;
-  -webkit-backdrop-filter: blur(20px) saturate(140%) !important;
-  border: 1px solid rgba(160, 185, 200, 0.3) !important;
-  border-top: 1px solid rgba(190, 215, 228, 0.5) !important;
-  border-radius: 0px !important;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.38), 0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
-  opacity: 1 !important;
-  transform: scale(1) !important;
-  pointer-events: auto !important;
-  position: relative !important;
-  overflow: hidden !important;
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
-
-/* Делікатний світловий відблиск при наведенні */
-.split-panel.is-expanded .split-content::after {
-  content: "" !important;
-  position: absolute !important;
-  top: -50% !important;
-  left: -50% !important;
-  width: 200% !important;
-  height: 200% !important;
-  background: linear-gradient(
-    60deg,
-    transparent 35%,
-    rgba(255, 255, 255, 0.12) 50%,
-    transparent 65%
-  ) !important;
-  transform: translateX(-100%) translateY(-100%) rotate(30deg) !important;
-  transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  pointer-events: none !important;
-}
-
-.split-panel.is-expanded .split-content:hover::after {
-  transform: translateX(100%) translateY(100%) rotate(30deg) !important;
-}
-
-.split-panel.is-expanded .split-content:hover {
-  border-color: rgba(190, 215, 230, 0.55) !important;
-  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.35) !important;
-}
-
-/* Ліва сторона 70%: внизу ліворуч з рівним охайним відступом 24px */
-.split-panel-left.is-expanded .split-content {
-  margin: auto auto 24px 24px !important;
-  border: 1px solid rgba(160, 185, 200, 0.3) !important;
-  border-top: 1px solid rgba(190, 215, 228, 0.5) !important;
-}
-
-/* Права сторона 70%: внизу праворуч з рівним охайним відступом 24px */
-.split-panel-right.is-expanded .split-content {
-  margin: auto 24px 24px auto !important;
-  border: 1px solid rgba(160, 185, 200, 0.3) !important;
-  border-top: 1px solid rgba(190, 215, 228, 0.5) !important;
-}
-
-.split-panel.is-expanded .split-title {
-  font-family: var(--active-heading-font) !important;
-  font-size: clamp(24px, 2.6vw, 36px) !important;
-  font-weight: 700 !important;
-  line-height: 1.15 !important;
-  margin-bottom: 12px !important;
-  color: #f1f5f9 !important;
-  letter-spacing: -0.5px !important;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.75) !important;
-}
-
-.split-panel.is-expanded .split-title span {
-  font-size: 0.52em !important;
-  font-weight: 700 !important;
-  color: rgba(255, 255, 255, 0.88) !important;
+.zionic-section-badge {
+  display: inline-block !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
   letter-spacing: 1.2px !important;
   text-transform: uppercase !important;
-  margin-left: 6px !important;
-  display: inline-block !important;
+  color: #0f172a !important;
+  background: #f1f5f9 !important;
+  border: 1px solid #e2e8f0 !important;
+  padding: 6px 16px !important;
+  border-radius: 20px !important;
+  margin-bottom: 14px !important;
 }
 
-.split-panel.is-expanded .split-bullets,
-.split-panel.is-expanded .split-btn-group {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-  max-height: 400px !important;
-  transition: opacity 0.5s ease 0.15s, transform 0.5s ease 0.15s, max-height 0.5s ease !important;
-}
-
-/* ================== 30% ЗГОРНУТИЙ СТАН: ВЕЛИКИЙ 2-РЯДКОВИЙ ТЕКСТ ВНИЗУ ================== */
-.split-panel.is-collapsed {
-  flex: 3 !important; /* 30% ширини */
-  align-items: flex-end !important; /* Опущено вниз */
-}
-
-.split-panel.is-collapsed .split-content {
-  background: transparent !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  max-width: 92% !important;
-  width: auto !important;
-  opacity: 1 !important;
-  pointer-events: none !important;
-}
-
-/* Ліва сторона 30% (Zionic): внизу праворуч з охайним відступом 44px від низу */
-.split-panel-left.is-collapsed .split-content {
-  margin: auto 24px 24px auto !important;
-  align-items: flex-end !important;
-  text-align: right !important;
-}
-
-.split-panel-left.is-collapsed .split-badge-row {
-  justify-content: flex-end !important;
-}
-
-.split-panel-left.is-collapsed .split-title {
+.zionic-section-header h2 {
   font-family: var(--active-heading-font) !important;
-  font-size: clamp(24px, 2.6vw, 36px) !important;
-  font-weight: 700 !important;
-  line-height: 1.15 !important;
-  margin-bottom: 12px !important;
-  color: #f1f5f9 !important;
+  font-size: clamp(32px, 3.2vw, 42px) !important;
+  font-weight: 500 !important;
+  color: #0f172a !important;
+  line-height: 1.2 !important;
+  margin: 0 0 14px 0 !important;
   letter-spacing: -0.5px !important;
-  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.9) !important;
 }
 
-/* Права сторона 30% (Linfopress): внизу ліворуч з охайним відступом 44px від низу */
-.split-panel-right.is-collapsed .split-content {
-  margin: auto auto 24px 24px !important;
-  align-items: flex-start !important;
-  text-align: left !important;
+.zionic-section-header p {
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  color: #475569 !important;
+  margin: 0 auto !important;
+  max-width: 720px !important;
 }
 
-.split-panel-right.is-collapsed .split-badge-row {
-  justify-content: flex-start !important;
-}
-
-.split-panel-right.is-collapsed .split-title {
-  font-family: var(--active-heading-font) !important;
-  font-size: clamp(24px, 2.6vw, 36px) !important;
-  font-weight: 700 !important;
-  line-height: 1.15 !important;
-  margin-bottom: 12px !important;
-  color: #f1f5f9 !important;
-  letter-spacing: -0.5px !important;
-  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.9) !important;
-}
-
-/* Заголовок на 30%: В 2 РАЗИ БІЛЬШИЙ, В ДВА РЯДКИ */
-.split-panel.is-collapsed .split-title {
-  font-family: var(--active-heading-font) !important;
-  font-size: clamp(24px, 2.6vw, 36px) !important;
-  font-weight: 700 !important;
-  line-height: 1.15 !important;
-  margin-bottom: 12px !important;
-  color: #f1f5f9 !important;
-  letter-spacing: -0.5px !important;
-  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.9) !important;
-}
-
-.split-panel.is-collapsed .split-title span {
-  display: block !important; /* Два рядки */
-  font-size: 0.52em !important;
-  font-weight: 800 !important;
-  color: rgba(255, 255, 255, 0.95) !important;
-  letter-spacing: 2px !important;
-  text-transform: uppercase !important;
-  margin-top: 6px !important;
-  margin-left: 0 !important;
-  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.85) !important;
-}
-
-/* Булети та кнопки сховані на 30% */
-.split-panel.is-collapsed .split-bullets,
-.split-panel.is-collapsed .split-btn-group {
-  opacity: 0 !important;
-  transform: translateY(14px) !important;
-  max-height: 0 !important;
-  margin: 0 !important;
+/* 2. Cinematic Video Banner Card with Centered Title Overlay */
+.zionic-video-banner-card {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 1140px !important;
+  height: 480px !important;
+  margin: 0 auto 52px auto !important;
+  border-radius: 20px !important;
   overflow: hidden !important;
-  pointer-events: none !important;
-  transition: opacity 0.3s ease, transform 0.4s ease, max-height 0.4s ease, margin 0.4s ease !important;
-}
-
-/* Badges (Пастельний сіро-сталевий з ніжним синім відтінком) */
-.split-badge-row {
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.18) !important;
+  border: 1px solid rgba(15, 23, 42, 0.08) !important;
+  background: #0b0f17 !important;
   display: flex !important;
   align-items: center !important;
-  gap: 8px !important;
-  flex-wrap: wrap !important;
-  margin-bottom: 10px !important;
+  justify-content: center !important;
 }
 
-.split-badge {
-  padding: 4px 10px !important;
-  font-size: 10px !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.8px !important;
-  text-transform: uppercase !important;
-  border-radius: 0px !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
+.video-banner-media {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1 !important;
+  overflow: hidden !important;
 }
 
-.split-badge.badge-linfo {
-  background: rgba(70, 90, 105, 0.4) !important;
-  border: 1px solid rgba(170, 195, 210, 0.35) !important;
-  color: #f1f5f9 !important;
+.video-banner-bg {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
 }
 
-.split-badge.badge-zionic {
-  background: rgba(75, 95, 110, 0.4) !important;
-  border: 1px solid rgba(170, 195, 210, 0.35) !important;
-  color: #f1f5f9 !important;
+.video-banner-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.35) 0%, rgba(15, 23, 42, 0.78) 100%) !important;
+  z-index: 2 !important;
 }
 
-.split-tag {
-  padding: 4px 8px !important;
-  font-size: 9.5px !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.8px !important;
-  text-transform: uppercase !important;
-  background: rgba(255, 255, 255, 0.08) !important;
-  border: 1px solid rgba(170, 195, 210, 0.3) !important;
-  color: #e2e8f0 !important;
-  border-radius: 0px !important;
-}
-
-/* Булети — тонкий витончений шрифт */
-.split-bullets {
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 0 16px 0 !important;
+.video-banner-content {
+  position: relative !important;
+  z-index: 3 !important;
+  text-align: center !important;
+  padding: 32px 24px !important;
+  max-width: 820px !important;
+  margin: 0 auto !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 6px !important;
-}
-
-.split-bullets li {
-  font-size: 13px !important;
-  font-weight: 350 !important;
-  color: rgba(255, 255, 255, 0.88) !important;
-  display: flex !important;
   align-items: center !important;
-  gap: 8px !important;
-  line-height: 1.35 !important;
-  letter-spacing: 0.15px !important;
+  justify-content: center !important;
 }
 
-.split-check {
-  color: #a3b5bc !important;
-  font-weight: 400 !important;
-  font-size: 13.5px !important;
-  opacity: 0.85 !important;
-  flex-shrink: 0 !important;
+.video-banner-tag {
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.4px !important;
+  color: #38bdf8 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 12px !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6) !important;
 }
 
-/* Кнопки (SYMMED ELITE AESTHETIC — Мінімалістичні з гострими кутами в сіро-сталевих контурах) */
-.split-btn-group {
+.video-banner-title {
+  font-family: var(--active-heading-font) !important;
+  font-size: clamp(32px, 4.4vw, 54px) !important;
+  font-weight: 900 !important;
+  color: #ffffff !important;
+  line-height: 1.1 !important;
+  margin: 0 0 14px 0 !important;
+  letter-spacing: -0.5px !important;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.75) !important;
+}
+
+.video-banner-title span {
+  color: #cbd5e1 !important;
+  font-weight: 700 !important;
+}
+
+.video-banner-subtitle {
+  font-size: clamp(16px, 1.8vw, 20px) !important;
+  line-height: 1.5 !important;
+  color: #f1f5f9 !important;
+  margin: 0 auto !important;
+  max-width: 640px !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* 3. Description Block (2 Columns Grid) */
+.zionic-desc-block {
+  max-width: 1140px !important;
+  margin: 0 auto 64px auto !important;
+}
+
+.zionic-desc-grid {
+  display: grid !important;
+  grid-template-columns: 1.1fr 0.9fr !important;
+  gap: 40px !important;
+  align-items: stretch !important;
+}
+
+.zionic-desc-left {
   display: flex !important;
-  gap: 10px !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.tech-tag-row {
+  display: flex !important;
+  gap: 8px !important;
+  flex-wrap: wrap !important;
+  margin-bottom: 18px !important;
+}
+
+.tech-tag {
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  padding: 5px 12px !important;
+  background: #f1f5f9 !important;
+  color: #1e293b !important;
+  border-radius: 6px !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+}
+
+.tech-tag.tag-emerald {
+  background: #059669 !important;
+  color: #ffffff !important;
+  font-weight: 900 !important;
+}
+
+.zionic-desc-headline {
+  font-family: var(--active-heading-font) !important;
+  font-size: clamp(24px, 2.2vw, 30px) !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  line-height: 1.25 !important;
+  margin: 0 0 16px 0 !important;
+}
+
+.zionic-desc-text {
+  font-size: 17px !important;
+  line-height: 1.7 !important;
+  color: #334155 !important;
+  margin: 0 0 28px 0 !important;
+}
+
+.zionic-action-btns {
+  display: flex !important;
+  gap: 14px !important;
   flex-wrap: wrap !important;
 }
 
-.split-btn {
+.zionic-btn-primary {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  background: #0f172a !important;
+  color: #ffffff !important;
+  padding: 14px 28px !important;
+  font-size: 14.5px !important;
+  font-weight: 800 !important;
+  border-radius: 12px !important;
+  text-decoration: none !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.2) !important;
+  letter-spacing: 0.6px !important;
+}
+
+.zionic-btn-primary:hover {
+  background: #1e293b !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.3) !important;
+}
+
+.zionic-btn-secondary {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  padding: 9px 18px !important;
-  font-size: 10.5px !important;
-  font-weight: 600 !important;
-  letter-spacing: 1.4px !important;
-  text-transform: uppercase !important;
-  text-decoration: none !important;
-  border-radius: 0px !important;
-  cursor: pointer !important;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  position: relative !important;
-  overflow: hidden !important;
-}
-
-.split-btn-ghost {
   background: transparent !important;
+  color: #0f172a !important;
+  border: 1.5px solid #0f172a !important;
+  padding: 14px 28px !important;
+  font-size: 14.5px !important;
+  font-weight: 800 !important;
+  border-radius: 12px !important;
+  cursor: pointer !important;
+  transition: all 0.25s ease !important;
+  letter-spacing: 0.6px !important;
+}
+
+.zionic-btn-secondary:hover {
+  background: #0f172a !important;
   color: #ffffff !important;
-  border: 1px solid rgba(220, 235, 245, 0.7) !important;
-}
-
-.split-btn-ghost:hover {
-  background: #ffffff !important;
-  color: #1e232e !important;
-  border-color: #ffffff !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4) !important;
 }
 
-.split-btn-ghost-muted {
-  background: rgba(255, 255, 255, 0.06) !important;
-  color: rgba(240, 246, 250, 0.85) !important;
-  border: 1px solid rgba(170, 195, 210, 0.35) !important;
+.zionic-bullets-card {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 18px !important;
+  padding: 28px 26px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04) !important;
 }
 
-.split-btn-ghost-muted:hover {
-  background: rgba(255, 255, 255, 0.18) !important;
+.bullets-card-title {
+  font-family: var(--active-heading-font) !important;
+  font-size: 17.5px !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+  margin: 0 0 18px 0 !important;
+}
+
+.zionic-feature-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+}
+
+.zionic-feature-list li {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+  font-size: 16px !important;
+  line-height: 1.55 !important;
+  color: #334155 !important;
+}
+
+.feature-bullet-icon {
+  color: #059669 !important;
+  font-weight: 900 !important;
+  font-size: 18px !important;
+  line-height: 1.3 !important;
+  flex-shrink: 0 !important;
+}
+
+.zionic-feature-list li strong {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+  display: inline !important;
+}
+
+/* 4. Embedded YouTube Video Presentation */
+.zionic-youtube-section {
+  background: #0f172a !important;
+  border-radius: 24px !important;
+  padding: 48px 36px !important;
   color: #ffffff !important;
-  border-color: rgba(255, 255, 255, 0.6) !important;
-  transform: translateY(-2px) !important;
+  text-align: center !important;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.35) !important;
+  max-width: 1140px !important;
+  margin: 0 auto !important;
+}
+
+.youtube-header {
+  max-width: 720px !important;
+  margin: 0 auto 32px auto !important;
+}
+
+.youtube-badge {
+  font-size: 12.5px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.5px !important;
+  color: #38bdf8 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 10px !important;
+  display: inline-block !important;
+}
+
+.youtube-header h3 {
+  font-family: var(--active-heading-font) !important;
+  font-size: clamp(26px, 2.6vw, 36px) !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  line-height: 1.2 !important;
+  margin: 0 0 12px 0 !important;
+}
+
+.youtube-header p {
+  font-size: 16.5px !important;
+  color: #94a3b8 !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+.youtube-player-frame {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 920px !important;
+  margin: 0 auto !important;
+  padding-top: 56.25% !important; /* 16:9 Aspect Ratio */
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  background: #000000 !important;
+}
+
+.youtube-player-frame iframe {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
 }
 
 /* =======================================================
@@ -3990,86 +3867,153 @@ footer {
     padding: 48px 0 60px 0 !important;
   }
 
-  .our-prods-header h2 {
+  /* 3. Screen 2: Flagship Zionic Showcase (Mobile Optimized) */
+  .zionic-showcase-section {
+    padding: 48px 0 60px 0 !important;
+  }
+
+  .zionic-section-header {
+    margin-bottom: 28px !important;
+    padding: 0 16px !important;
+  }
+
+  .zionic-section-badge {
+    font-size: 11px !important;
+    padding: 5px 12px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .zionic-section-header h2 {
     font-size: clamp(32px, 8.8vw, 40px) !important;
     margin-bottom: 14px !important;
     line-height: 1.18 !important;
   }
 
-  .our-prods-header p {
-    font-size: 17px !important;
+  .zionic-section-header p {
+    font-size: 16.5px !important;
     line-height: 1.6 !important;
   }
 
-  .split-screen-container {
+  .zionic-video-banner-card {
+    height: 340px !important;
+    border-radius: 16px !important;
+    margin-bottom: 36px !important;
+  }
+
+  .video-banner-content {
+    padding: 20px 16px !important;
+  }
+
+  .video-banner-tag {
+    font-size: 11.5px !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .video-banner-title {
+    font-size: clamp(28px, 8vw, 38px) !important;
+    line-height: 1.12 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .video-banner-subtitle {
+    font-size: 15.5px !important;
+    line-height: 1.45 !important;
+  }
+
+  .zionic-desc-block {
+    margin-bottom: 48px !important;
+  }
+
+  .zionic-desc-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .tech-tag-row {
+    margin-bottom: 14px !important;
+    gap: 6px !important;
+  }
+
+  .tech-tag {
+    font-size: 11.5px !important;
+    padding: 4px 10px !important;
+  }
+
+  .zionic-desc-headline {
+    font-size: 23px !important;
+    line-height: 1.28 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .zionic-desc-text {
+    font-size: 16.5px !important;
+    line-height: 1.65 !important;
+    margin-bottom: 24px !important;
+  }
+
+  .zionic-action-btns {
     flex-direction: column !important;
-    height: auto !important;
-    min-height: auto !important;
-    gap: 20px !important;
+    width: 100% !important;
+    gap: 12px !important;
+  }
+
+  .zionic-btn-primary,
+  .zionic-btn-secondary {
+    width: 100% !important;
+    height: 52px !important;
+    font-size: 14.5px !important;
+    justify-content: center !important;
     padding: 0 16px !important;
   }
 
-  .split-panel {
-    width: 100% !important;
-    height: 440px !important;
-    flex: none !important;
-    border-radius: 0px !important;
-    overflow: hidden !important;
+  .zionic-bullets-card {
+    padding: 22px 18px !important;
+    border-radius: 16px !important;
   }
 
-  .split-panel .split-content {
-    margin: 12px !important;
-    max-width: calc(100% - 24px) !important;
-    padding: 20px 18px !important;
-    border-radius: 0px !important;
-    background: rgba(18, 22, 29, 0.94) !important;
-    backdrop-filter: blur(16px) !important;
-    -webkit-backdrop-filter: blur(16px) !important;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+  .bullets-card-title {
+    font-size: 17px !important;
+    margin-bottom: 16px !important;
   }
 
-  .split-panel .split-title {
-    font-size: 28px !important;
-    margin-bottom: 12px !important;
+  .zionic-feature-list {
+    gap: 14px !important;
   }
 
-  .split-panel .split-title span {
-    font-size: 0.6em !important;
-    margin-left: 6px !important;
-    font-weight: 700 !important;
-  }
-
-  .split-panel .split-bullets {
-    display: flex !important;
-    max-height: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-    gap: 10px !important;
-    margin-bottom: 18px !important;
-  }
-
-  .split-bullet-item {
-    font-size: 16.5px !important;
+  .zionic-feature-list li {
+    font-size: 16px !important;
     line-height: 1.5 !important;
-  }
-
-  .split-panel .split-btn-group {
-    display: flex !important;
-    max-height: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-    width: 100% !important;
     gap: 10px !important;
   }
 
-  .split-btn-primary,
-  .split-btn-secondary {
-    flex: 1 !important;
-    height: 52px !important;
-    font-size: 14px !important;
-    padding: 0 12px !important;
-    letter-spacing: 0.8px !important;
-    font-weight: 800 !important;
+  .zionic-youtube-section {
+    padding: 32px 16px !important;
+    border-radius: 18px !important;
+  }
+
+  .youtube-header {
+    margin-bottom: 22px !important;
+  }
+
+  .youtube-badge {
+    font-size: 11.5px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .youtube-header h3 {
+    font-size: clamp(24px, 6.8vw, 30px) !important;
+    margin-bottom: 10px !important;
+    line-height: 1.2 !important;
+  }
+
+  .youtube-header p {
+    font-size: 15.5px !important;
+    line-height: 1.55 !important;
+  }
+
+  .youtube-player-frame {
+    border-radius: 12px !important;
   }
 
   /* 4. Screen 3: Bento Grid (Single Column Stack) */
@@ -4760,217 +4704,6 @@ footer {
     border-color: #0f172a !important;
   }
 
-  /* 2. SCREEN 2: Brand Switcher & Full-Width Vertical Video */
-  #our-products,
-  .our-prods-split-section {
-    padding: 64px 0 48px 0 !important;
-  }
-
-  .our-prods-header {
-    margin-bottom: 28px !important;
-    padding: 0 20px !important;
-    text-align: center !important;
-  }
-
-  .our-prods-badge {
-    font-size: 13.5px !important;
-    font-weight: 800 !important;
-    padding: 8px 18px !important;
-    margin-bottom: 18px !important;
-  }
-
-  .our-prods-header h2 {
-    font-size: clamp(32px, 8.8vw, 40px) !important;
-    margin-bottom: 14px !important;
-    line-height: 1.18 !important;
-  }
-
-  .our-prods-header p {
-    font-size: 16.5px !important;
-    line-height: 1.6 !important;
-    margin: 0 auto !important;
-  }
-
-  .mobile-device-showcase {
-    width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-  }
-
-  /* Brand switcher sharp tabs */
-  .mobile-device-showcase {
-    width: 100% !important;
-    padding: 0 !important;
-    margin: 20px 0 0 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 40px !important;
-    box-sizing: border-box !important;
-  }
-
-  /* Vertical Full-Screen Video Block for Each Device */
-  .mobile-device-panel {
-    display: block !important;
-    position: relative !important;
-    width: 100% !important;
-    border-radius: 0px !important;
-    overflow: hidden !important;
-    background: #0f131a !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
-  }
-
-  .mobile-video-wrap {
-    position: relative !important;
-    width: 100% !important;
-    height: 58vh !important;
-    min-height: 400px !important;
-    max-height: 550px !important;
-    overflow: hidden !important;
-    border-radius: 0px !important;
-    background: #000000 !important;
-  }
-
-  .mobile-vertical-video {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center !important;
-    display: block !important;
-    border-radius: 0px !important;
-  }
-
-  .mobile-video-overlay {
-    display: block !important;
-    position: absolute !important;
-    inset: 0 !important;
-    pointer-events: none !important;
-    background: linear-gradient(180deg, rgba(15, 19, 26, 0.05) 0%, rgba(15, 19, 26, 0.2) 45%, rgba(15, 19, 26, 0.85) 85%, #0f131a 100%) !important;
-    z-index: 2 !important;
-  }
-
-  /* Information Card placed below the video (Sharp, Monochrome, High Contrast) */
-  .mobile-device-card {
-    position: relative !important;
-    width: 100% !important;
-    padding: 24px 20px 28px 20px !important;
-    box-sizing: border-box !important;
-    z-index: 5 !important;
-    background: #0f131a !important;
-    color: #ffffff !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
-    border-radius: 0px !important;
-  }
-
-  .mobile-device-card .split-badge-row {
-    display: flex !important;
-    align-items: center !important;
-    gap: 8px !important;
-    margin-bottom: 12px !important;
-    flex-wrap: wrap !important;
-  }
-
-  .mobile-device-card .split-badge,
-  .mobile-device-card .split-tag {
-    background: rgba(255, 255, 255, 0.12) !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
-    color: #ffffff !important;
-    border-radius: 0px !important;
-    font-size: 13.5px !important;
-    font-weight: 800 !important;
-    padding: 6px 12px !important;
-    letter-spacing: 0.6px !important;
-    text-transform: uppercase !important;
-  }
-
-  .mobile-device-card .split-title {
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 26px !important;
-    font-weight: 800 !important;
-    color: #ffffff !important;
-    line-height: 1.2 !important;
-    margin: 0 0 14px 0 !important;
-    letter-spacing: 0.2px !important;
-  }
-
-  .mobile-device-card .split-title span {
-    font-size: 0.6em !important;
-    font-weight: 700 !important;
-    color: #e2e8f0 !important;
-    margin-left: 6px !important;
-  }
-
-  .mobile-device-card .split-bullets {
-    list-style: none !important;
-    padding: 0 !important;
-    margin: 0 0 22px 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 12px !important;
-  }
-
-  .mobile-device-card .split-bullets li {
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 16px !important;
-    color: #f1f5f9 !important;
-    line-height: 1.5 !important;
-    display: flex !important;
-    align-items: center !important;
-    gap: 12px !important;
-  }
-
-  /* Monochrome silver/white checkmark */
-  .mobile-device-card .split-check {
-    color: #10b981 !important;
-    font-weight: 900 !important;
-    font-size: 18px !important;
-  }
-
-  .mobile-device-card .split-btn-group {
-    display: flex !important;
-    gap: 10px !important;
-    width: 100% !important;
-  }
-
-  /* Buttons */
-  .mobile-device-card .split-btn {
-    flex: 1 !important;
-    height: 52px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 13.5px !important;
-    font-weight: 900 !important;
-    letter-spacing: 0.8px !important;
-    border-radius: 0px !important;
-    text-decoration: none !important;
-    text-transform: uppercase !important;
-    transition: all 0.2s ease !important;
-    cursor: pointer !important;
-  }
-
-  .mobile-device-card .split-btn-ghost {
-    background: #ffffff !important;
-    color: #0f172a !important;
-    border: 1px solid #ffffff !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
-  }
-
-  .mobile-device-card .split-btn-ghost:hover {
-    background: #e2e8f0 !important;
-  }
-
-  .mobile-device-card .split-btn-ghost-muted {
-    background: transparent !important;
-    color: #ffffff !important;
-    border: 1px solid rgba(255, 255, 255, 0.4) !important;
-  }
-
-  .mobile-device-card .split-btn-ghost-muted:hover {
-    background: rgba(255, 255, 255, 0.12) !important;
-    border-color: #ffffff !important;
-  }
 }
 
 /* =======================================================
