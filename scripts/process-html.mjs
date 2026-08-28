@@ -336,7 +336,7 @@ function cleanHtml(raw, pageName) {
         <div class="bento-container">
           
           <!-- Header -->
-          <div class="why-us-header" data-aos="fade-up">
+          <div class="why-us-header">
             <h2>Чому провідні клініки обирають Termosalud</h2>
             <p>Повний комплекс підтримки бізнесу: від оригінального сертифікованого обладнання до навчання лікарів та маркетингу</p>
           </div>
@@ -772,13 +772,13 @@ function cleanHtml(raw, pageName) {
         
         <!-- Section Header -->
         <div class="container">
-          <div class="presentation-header" data-aos="fade-up">
+          <div class="presentation-header">
             <h2>Замовте презентацію та пробну процедуру</h2>
             <p>Оцініть можливості та результативність обладнання Termosalud у вашій клініці або в нашому демонстраційному центрі</p>
           </div>
 
           <!-- 2-Column Stage: Left Visual + Right Open Interactive Form -->
-          <div class="presentation-stage-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="presentation-stage-grid">
             
             <!-- Left Column: Visual Media Card with Photo & Trust Highlights -->
             <div class="presentation-visual-col">
@@ -943,13 +943,13 @@ function cleanHtml(raw, pageName) {
       <!-- Screen 5: Modern Partners Carousel with Ambient Glowing Cards -->
       <section class="partners">
         <div class="container">
-          <div class="partners-header" data-aos="fade-up">
+          <div class="partners-header">
             <h2>Провідні клініки України обирають Termosalud</h2>
             <p>Провідні медичні центри, клініки естетичної медицини та преміальні SPA-комплекси, що обрали технології Termosalud</p>
           </div>
         </div>
 
-        <div class="modern-partners-carousel-wrap" data-aos="fade-up" data-aos-delay="100">
+        <div class="modern-partners-carousel-wrap">
           <div class="partners-marquee-track">
             <!-- Item 1: L'Clinic -->
             <a href="https://share.google/hXAf7ws08CGnL6BBG" target="_blank" rel="noopener noreferrer" class="modern-partner-card">
