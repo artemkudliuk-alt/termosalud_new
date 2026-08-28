@@ -4797,16 +4797,17 @@ footer {
     display: block !important;
   }
 
-  /* 1. SCREEN 1: Hero Centering & Clean Typography Layout */
+  /* 1. SCREEN 1: Hero Lower Typography Layout */
   .hero-clean-section {
     position: relative !important;
     width: 100% !important;
-    height: auto !important;
-    min-height: calc(100svh - 58px) !important;
+    height: calc(100svh - 58px) !important;
+    height: calc(100dvh - 58px) !important;
+    min-height: 520px !important;
     padding: 0 !important;
     margin: 0 !important;
     display: flex !important;
-    align-items: flex-start !important;
+    align-items: flex-end !important;
     justify-content: center !important;
     overflow: hidden !important;
     box-sizing: border-box !important;
@@ -4819,20 +4820,20 @@ footer {
     height: auto !important;
     max-width: 360px !important;
     margin: 0 auto !important;
-    padding: 16px 16px 40px 16px !important;
+    padding: 0 16px 54px 16px !important;
     display: flex !important;
     flex-direction: column !important;
-    justify-content: flex-start !important;
+    justify-content: flex-end !important;
     align-items: center !important;
     box-sizing: border-box !important;
   }
 
-  /* Block 1: Top Typography */
+  /* Block 1: Lower Typography */
   .hero-left-col {
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 auto !important;
-    padding-top: 8px !important;
+    padding: 0 !important;
     text-align: center !important;
     display: flex !important;
     flex-direction: column !important;
@@ -4841,21 +4842,22 @@ footer {
   }
 
   .hero-clean-title {
-    font-size: clamp(34px, 9.5vw, 44px) !important;
+    font-size: clamp(32px, 9vw, 42px) !important;
     line-height: 1.1 !important;
     letter-spacing: -0.5px !important;
     text-align: center !important;
-    margin: 0 auto 16px auto !important;
+    margin: 0 auto 12px auto !important;
     width: 100% !important;
   }
 
   .hero-clean-subtitle {
-    font-size: 16px !important;
-    line-height: 1.55 !important;
+    font-size: 15.5px !important;
+    line-height: 1.5 !important;
     text-align: center !important;
-    margin: 12px auto 0 auto !important;
-    max-width: 320px !important;
-    color: #334155 !important;
+    margin: 0 auto !important;
+    max-width: 330px !important;
+    color: #1e293b !important;
+    font-weight: 500 !important;
   }
 
   /* Block 2: Bottom Interactive Device Card - Hidden on Mobile */
