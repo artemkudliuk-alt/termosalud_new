@@ -97,6 +97,8 @@ html {
   height: auto !important;
   overflow-x: hidden !important;
   width: 100% !important;
+  max-width: 100vw !important;
+  box-sizing: border-box !important;
 }
 
 body {
@@ -110,7 +112,22 @@ body {
   overflow-x: hidden !important;
   overflow-y: visible !important;
   width: 100% !important;
+  max-width: 100vw !important;
   position: relative !important;
+  box-sizing: border-box !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box !important;
+}
+
+img, video, iframe, picture, svg {
+  max-width: 100%;
+}
+
+p, span, h1, h2, h3, h4, h5, h6, a, li, button {
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -323,6 +340,30 @@ header .logo:hover img {
   display: none !important;
   opacity: 0 !important;
   pointer-events: none !important;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  header,
+  header.header,
+  .header {
+    padding: 0 16px !important;
+  }
+  .header-block-on-main ul {
+    gap: 14px !important;
+  }
+  .header-block-on-main ul li a {
+    font-size: 12px !important;
+  }
+  .header-right-actions {
+    gap: 10px !important;
+  }
+  .header-phone {
+    font-size: 11.5px !important;
+  }
+  .header-btn {
+    padding: 6px 10px !important;
+    font-size: 9.5px !important;
+  }
 }
 
 /* =======================================================
@@ -4775,6 +4816,65 @@ footer {
     right: 16px !important;
     width: 36px !important;
     height: 36px !important;
+  }
+}
+
+/* =======================================================
+   SMALL SMARTPHONES RESILIENCE (<375px: iPhone SE, Galaxy Fold)
+   ======================================================= */
+@media (max-width: 374px) {
+  header,
+  header.header,
+  .header {
+    padding: 0 10px !important;
+    height: 52px !important;
+  }
+
+  header .logo,
+  .header-logo {
+    margin: 0 0 0 8px !important;
+  }
+
+  header .logo img,
+  header .logo picture img {
+    height: 18px !important;
+    max-height: 18px !important;
+  }
+
+  .header-btn-compact {
+    padding: 4px 7px !important;
+    font-size: 9.5px !important;
+    height: 28px !important;
+    min-height: 28px !important;
+  }
+
+  .hero-clean-title {
+    font-size: clamp(28px, 8vw, 34px) !important;
+  }
+
+  .hero-clean-subtitle {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+
+  .video-banner-title {
+    font-size: clamp(20px, 7vw, 28px) !important;
+  }
+
+  .zionic-compact-card .split-title {
+    font-size: clamp(20px, 6.5vw, 26px) !important;
+  }
+
+  .zionic-compact-card .split-btn {
+    height: 48px !important;
+    min-height: 48px !important;
+    font-size: 12.5px !important;
+  }
+
+  .why-us-header h2,
+  .presentation-header h2,
+  .partners-header h2 {
+    font-size: clamp(26px, 7.5vw, 32px) !important;
   }
 }
 
