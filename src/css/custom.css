@@ -313,7 +313,9 @@ header .logo:hover img {
   color: #ffffff !important;
 }
 
-.custom-burger-btn {
+.custom-burger-btn,
+.header-left-nav,
+.mobile-only-cta {
   display: none !important;
 }
 
@@ -352,7 +354,7 @@ header .logo:hover img {
     display: flex !important;
     align-items: center !important;
     justify-content: flex-start !important;
-    flex: 1 1 0 !important;
+    flex: 0 0 auto !important;
     margin: 0 !important;
     padding: 0 !important;
   }
@@ -371,20 +373,21 @@ header .logo:hover img {
     margin: 0 !important;
   }
 
-  /* 2. Center: Logo */
+  /* 2. Center-Left: Logo (Enlarged & Shifted Left) */
   header .logo,
   .header-logo {
     display: flex !important;
     align-items: center !important;
-    justify-content: center !important;
-    flex: 0 0 auto !important;
-    margin: 0 auto !important;
+    justify-content: flex-start !important;
+    flex: 1 1 auto !important;
+    margin: 0 0 0 12px !important;
     padding: 0 !important;
   }
 
   header .logo img,
   header .logo picture img {
-    height: 18px !important;
+    height: 21px !important;
+    max-height: 21px !important;
     width: auto !important;
   }
 
@@ -393,7 +396,7 @@ header .logo:hover img {
     display: flex !important;
     align-items: center !important;
     justify-content: flex-end !important;
-    flex: 1 1 0 !important;
+    flex: 0 0 auto !important;
     gap: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -411,19 +414,23 @@ header .logo:hover img {
   }
 
   .header-btn-compact {
-    padding: 7px 14px !important;
-    font-size: 13px !important;
+    padding: 5px 10px !important;
+    font-size: 10.5px !important;
     font-weight: 800 !important;
-    letter-spacing: 0.8px !important;
+    letter-spacing: 0.6px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     background: transparent !important;
-    border: 1px solid #1e232e !important;
+    border: 1.2px solid #1e232e !important;
     color: #1e232e !important;
     border-radius: 0px !important;
     white-space: nowrap !important;
     text-transform: uppercase !important;
     cursor: pointer !important;
     width: auto !important;
-    max-width: 150px !important;
     box-sizing: border-box !important;
     margin: 0 !important;
   }
@@ -647,11 +654,11 @@ header .logo:hover img {
 }
 
 .hero-clean-subtitle {
-  font-size: 14px !important;
+  font-size: 19px !important;
   font-weight: 400 !important;
-  line-height: 1.55 !important;
-  color: #54595f !important;
-  max-width: 360px !important;
+  line-height: 1.6 !important;
+  color: #475569 !important;
+  max-width: 440px !important;
   margin: 0 !important;
 }
 
@@ -968,28 +975,37 @@ header .logo:hover img {
 }
 
 .zionic-section-header p {
-  font-size: 18px !important;
+  font-size: 19px !important;
   line-height: 1.6 !important;
   color: #475569 !important;
   margin: 0 auto !important;
-  max-width: 720px !important;
+  max-width: 800px !important;
 }
 
-/* 2. Cinematic Video Banner Card with Centered Title Overlay */
-.zionic-video-banner-card {
+/* 2. Full-Width 100% Video Banner (No Darkening, Single Centered Title) */
+.zionic-video-banner-fullwidth {
   position: relative !important;
   width: 100% !important;
-  max-width: 1140px !important;
-  height: 480px !important;
-  margin: 0 auto 52px auto !important;
-  border-radius: 20px !important;
+  max-width: 100vw !important;
+  height: clamp(380px, 48vh, 540px) !important;
+  margin: 0 0 54px 0 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0px !important;
   overflow: hidden !important;
-  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.18) !important;
-  border: 1px solid rgba(15, 23, 42, 0.08) !important;
-  background: #0b0f17 !important;
+  background: #000000 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+}
+
+.video-banner-media,
+.video-banner-bg,
+.video-banner-overlay {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .video-banner-media {
@@ -1011,7 +1027,7 @@ header .logo:hover img {
 .video-banner-overlay {
   position: absolute !important;
   inset: 0 !important;
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.35) 0%, rgba(15, 23, 42, 0.78) 100%) !important;
+  background: transparent !important; /* Zero Darkening */
   z-index: 2 !important;
 }
 
@@ -1019,8 +1035,8 @@ header .logo:hover img {
   position: relative !important;
   z-index: 3 !important;
   text-align: center !important;
-  padding: 32px 24px !important;
-  max-width: 820px !important;
+  padding: 24px !important;
+  max-width: 1000px !important;
   margin: 0 auto !important;
   display: flex !important;
   flex-direction: column !important;
@@ -1028,264 +1044,242 @@ header .logo:hover img {
   justify-content: center !important;
 }
 
-.video-banner-tag {
-  font-size: 13px !important;
-  font-weight: 800 !important;
-  letter-spacing: 1.4px !important;
-  color: #38bdf8 !important;
-  text-transform: uppercase !important;
-  margin-bottom: 12px !important;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6) !important;
-}
-
 .video-banner-title {
-  font-family: var(--active-heading-font) !important;
-  font-size: clamp(32px, 4.4vw, 54px) !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: clamp(34px, 4vw, 56px) !important;
   font-weight: 900 !important;
   color: #ffffff !important;
   line-height: 1.1 !important;
-  margin: 0 0 14px 0 !important;
-  letter-spacing: -0.5px !important;
-  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.75) !important;
+  margin: 0 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9) !important;
 }
 
-.video-banner-title span {
-  color: #cbd5e1 !important;
-  font-weight: 700 !important;
+/* 3. Duo Container: Left Compact Card + Right YouTube Video (1:1 Symmetric Match) */
+.zionic-duo-wrapper {
+  margin: 0 0 72px 0 !important;
 }
 
-.video-banner-subtitle {
-  font-size: clamp(16px, 1.8vw, 20px) !important;
-  line-height: 1.5 !important;
-  color: #f1f5f9 !important;
-  margin: 0 auto !important;
-  max-width: 640px !important;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7) !important;
-}
-
-/* 3. Description Block (2 Columns Grid) */
-.zionic-desc-block {
-  max-width: 1140px !important;
-  margin: 0 auto 64px auto !important;
-}
-
-.zionic-desc-grid {
+.zionic-duo-container {
   display: grid !important;
-  grid-template-columns: 1.1fr 0.9fr !important;
-  gap: 40px !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 32px !important;
   align-items: stretch !important;
+  max-width: 1140px !important;
+  margin: 0 auto !important;
 }
 
-.zionic-desc-left {
+.zionic-duo-container.duo-reverse {
+  grid-template-columns: 1fr 1fr !important;
+}
+
+.linfo-video-banner-fullwidth {
+  margin: 0 0 54px 0 !important;
+}
+
+/* Left Column: Compact Luxury Dark Card (#54595f) - Equal Height Match */
+.zionic-compact-card {
+  background: #54595f !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  border-radius: 0px !important;
+  padding: 32px 28px !important;
+  box-sizing: border-box !important;
+  color: #ffffff !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15) !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: center !important;
+  justify-content: space-between !important;
+  height: 100% !important;
 }
 
-.tech-tag-row {
+.zionic-compact-card .split-badge-row {
   display: flex !important;
+  align-items: center !important;
   gap: 8px !important;
+  margin-bottom: 16px !important;
   flex-wrap: wrap !important;
-  margin-bottom: 18px !important;
 }
 
-.tech-tag {
-  font-size: 12px !important;
+.zionic-compact-card .split-badge,
+.zionic-compact-card .split-tag {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+  border-radius: 0px !important;
+  font-size: 11.5px !important;
   font-weight: 800 !important;
   padding: 5px 12px !important;
-  background: #f1f5f9 !important;
-  color: #1e293b !important;
-  border-radius: 6px !important;
   letter-spacing: 0.8px !important;
   text-transform: uppercase !important;
 }
 
-.tech-tag.tag-emerald {
-  background: #059669 !important;
-  color: #ffffff !important;
+.zionic-compact-card .split-title {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: clamp(24px, 2.1vw, 29px) !important;
   font-weight: 900 !important;
-}
-
-.zionic-desc-headline {
-  font-family: var(--active-heading-font) !important;
-  font-size: clamp(24px, 2.2vw, 30px) !important;
-  font-weight: 700 !important;
-  color: #0f172a !important;
-  line-height: 1.25 !important;
+  color: #ffffff !important;
+  line-height: 1.15 !important;
   margin: 0 0 16px 0 !important;
+  letter-spacing: -0.3px !important;
 }
 
-.zionic-desc-text {
-  font-size: 17px !important;
-  line-height: 1.7 !important;
-  color: #334155 !important;
-  margin: 0 0 28px 0 !important;
+.zionic-compact-card .split-title span {
+  font-size: 0.65em !important;
+  font-weight: 700 !important;
+  color: #cbd5e1 !important;
+  margin-left: 8px !important;
 }
 
-.zionic-action-btns {
-  display: flex !important;
-  gap: 14px !important;
-  flex-wrap: wrap !important;
-}
-
-.zionic-btn-primary {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 10px !important;
-  background: #0f172a !important;
-  color: #ffffff !important;
-  padding: 14px 28px !important;
-  font-size: 14.5px !important;
-  font-weight: 800 !important;
-  border-radius: 12px !important;
-  text-decoration: none !important;
-  transition: all 0.25s ease !important;
-  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.2) !important;
-  letter-spacing: 0.6px !important;
-}
-
-.zionic-btn-primary:hover {
-  background: #1e293b !important;
-  color: #ffffff !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.3) !important;
-}
-
-.zionic-btn-secondary {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  background: transparent !important;
-  color: #0f172a !important;
-  border: 1.5px solid #0f172a !important;
-  padding: 14px 28px !important;
-  font-size: 14.5px !important;
-  font-weight: 800 !important;
-  border-radius: 12px !important;
-  cursor: pointer !important;
-  transition: all 0.25s ease !important;
-  letter-spacing: 0.6px !important;
-}
-
-.zionic-btn-secondary:hover {
-  background: #0f172a !important;
-  color: #ffffff !important;
-  transform: translateY(-2px) !important;
-}
-
-.zionic-bullets-card {
-  background: #f8fafc !important;
-  border: 1px solid #e2e8f0 !important;
-  border-radius: 18px !important;
-  padding: 28px 26px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04) !important;
-}
-
-.bullets-card-title {
-  font-family: var(--active-heading-font) !important;
-  font-size: 17.5px !important;
-  font-weight: 800 !important;
-  color: #0f172a !important;
-  margin: 0 0 18px 0 !important;
-}
-
-.zionic-feature-list {
+.zionic-compact-card .split-bullets {
   list-style: none !important;
   padding: 0 !important;
-  margin: 0 !important;
+  margin: 0 0 24px 0 !important;
   display: flex !important;
   flex-direction: column !important;
-  gap: 16px !important;
-}
-
-.zionic-feature-list li {
-  display: flex !important;
-  align-items: flex-start !important;
   gap: 12px !important;
-  font-size: 16px !important;
-  line-height: 1.55 !important;
-  color: #334155 !important;
 }
 
-.feature-bullet-icon {
-  color: #059669 !important;
+.zionic-compact-card .split-bullets li {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 15.5px !important;
+  color: #f1f5f9 !important;
+  line-height: 1.45 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.zionic-compact-card .split-check {
+  color: #ffffff !important;
   font-weight: 900 !important;
-  font-size: 18px !important;
-  line-height: 1.3 !important;
-  flex-shrink: 0 !important;
+  font-size: 16px !important;
 }
 
-.zionic-feature-list li strong {
-  color: #0f172a !important;
-  font-weight: 700 !important;
-  display: inline !important;
+.zionic-compact-card .split-btn-group {
+  display: flex !important;
+  gap: 14px !important;
+  width: 100% !important;
+  margin-top: auto !important;
 }
 
-/* 4. Embedded YouTube Video Presentation */
-.zionic-youtube-section {
-  background: #0f172a !important;
-  border-radius: 24px !important;
-  padding: 48px 36px !important;
-  color: #ffffff !important;
-  text-align: center !important;
-  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.35) !important;
-  max-width: 1140px !important;
-  margin: 0 auto !important;
-}
-
-.youtube-header {
-  max-width: 720px !important;
-  margin: 0 auto 32px auto !important;
-}
-
-.youtube-badge {
-  font-size: 12.5px !important;
-  font-weight: 800 !important;
-  letter-spacing: 1.5px !important;
-  color: #38bdf8 !important;
+.zionic-compact-card .split-btn {
+  flex: 1 !important;
+  height: 52px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.8px !important;
+  border-radius: 0px !important;
+  text-decoration: none !important;
   text-transform: uppercase !important;
-  margin-bottom: 10px !important;
-  display: inline-block !important;
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+  border-width: 2px !important;
 }
 
-.youtube-header h3 {
-  font-family: var(--active-heading-font) !important;
-  font-size: clamp(26px, 2.6vw, 36px) !important;
-  font-weight: 700 !important;
+.zionic-compact-card .split-btn-ghost {
+  background: #ffffff !important;
+  color: #1e232e !important;
+  border: 2px solid #ffffff !important;
+}
+
+.zionic-compact-card .split-btn-ghost:hover {
+  background: #e2e8f0 !important;
+  border-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+.zionic-compact-card .split-btn-ghost-muted {
+  background: transparent !important;
   color: #ffffff !important;
-  line-height: 1.2 !important;
-  margin: 0 0 12px 0 !important;
+  border: 2px solid #ffffff !important;
 }
 
-.youtube-header p {
-  font-size: 16.5px !important;
-  color: #94a3b8 !important;
-  line-height: 1.6 !important;
-  margin: 0 !important;
+.zionic-compact-card .split-btn-ghost-muted:hover {
+  background: rgba(255, 255, 255, 0.18) !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
 }
 
-.youtube-player-frame {
+/* Right Column: Sleek YouTube Video Wrapper with Play-Only Facade (Equal Height Match) */
+.zionic-youtube-compact-wrapper {
   position: relative !important;
   width: 100% !important;
-  max-width: 920px !important;
-  margin: 0 auto !important;
-  padding-top: 56.25% !important; /* 16:9 Aspect Ratio */
-  border-radius: 16px !important;
+  height: 100% !important;
+  min-height: 320px !important;
+  border-radius: 0px !important;
   overflow: hidden !important;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5) !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.2) !important;
+  border: 1px solid rgba(15, 23, 42, 0.12) !important;
   background: #000000 !important;
+  cursor: pointer !important;
 }
 
-.youtube-player-frame iframe {
+.video-facade-cover {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-size: cover !important;
+  background-position: center !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 2 !important;
+}
+
+.video-facade-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(0, 0, 0, 0.22) !important;
+  transition: background 0.3s ease !important;
+}
+
+.video-facade-play {
+  position: relative !important;
+  z-index: 5 !important;
+  width: 68px !important;
+  height: 68px !important;
+  border-radius: 50% !important;
+  background: rgba(15, 23, 42, 0.88) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 2px solid rgba(255, 255, 255, 0.85) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #ffffff !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.video-facade-play svg {
+  margin-left: 3px !important;
+}
+
+.zionic-youtube-compact-wrapper:hover .video-facade-play {
+  transform: scale(1.1) !important;
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6) !important;
+}
+
+.zionic-youtube-compact-wrapper:hover .video-facade-overlay {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+.zionic-youtube-compact-wrapper iframe {
   position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
   height: 100% !important;
   border: none !important;
+  z-index: 10 !important;
 }
 
 /* =======================================================
@@ -1360,11 +1354,11 @@ header .logo:hover img {
 }
 
 .why-us-header p {
-  font-size: 15px !important;
-  color: var(--brand-slate) !important;
-  line-height: 1.55 !important;
+  font-size: 19px !important;
+  color: #475569 !important;
+  line-height: 1.6 !important;
   margin: 0 auto !important;
-  max-width: 720px !important;
+  max-width: 800px !important;
 }
 
 /* =======================================================
@@ -1953,10 +1947,11 @@ header .logo:hover img {
 }
 
 .presentation-header p {
-  font-size: 15px !important;
-  color: var(--brand-slate) !important;
+  font-size: 19px !important;
+  color: #475569 !important;
   line-height: 1.6 !important;
   margin: 0 auto !important;
+  max-width: 800px !important;
 }
 
 /* 2-Column Presentation Grid */
@@ -2824,10 +2819,11 @@ body.modal-open-lock {
 }
 
 .partners-header p {
-  font-size: 15px !important;
-  color: var(--brand-slate) !important;
-  line-height: 1.65 !important;
-  margin: 0 !important;
+  font-size: 19px !important;
+  color: #475569 !important;
+  line-height: 1.6 !important;
+  margin: 0 auto !important;
+  max-width: 800px !important;
 }
 
 .modern-partners-carousel-wrap {
@@ -3889,131 +3885,144 @@ footer {
     line-height: 1.18 !important;
   }
 
+  .zionic-section-header {
+    margin-bottom: 26px !important;
+    padding: 0 16px !important;
+    border: none !important;
+    outline: none !important;
+  }
+
   .zionic-section-header p {
     font-size: 16.5px !important;
     line-height: 1.6 !important;
   }
 
-  .zionic-video-banner-card {
-    height: 340px !important;
-    border-radius: 16px !important;
-    margin-bottom: 36px !important;
+  .zionic-video-banner-fullwidth {
+    height: clamp(260px, 42vw, 340px) !important;
+    margin: 0 !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
   }
 
   .video-banner-content {
-    padding: 20px 16px !important;
-  }
-
-  .video-banner-tag {
-    font-size: 11.5px !important;
-    letter-spacing: 1px !important;
-    margin-bottom: 8px !important;
+    padding: 16px !important;
   }
 
   .video-banner-title {
-    font-size: clamp(28px, 8vw, 38px) !important;
+    font-size: clamp(26px, 7.5vw, 38px) !important;
     line-height: 1.12 !important;
-    margin-bottom: 10px !important;
   }
 
-  .video-banner-subtitle {
-    font-size: 15.5px !important;
-    line-height: 1.45 !important;
-  }
-
-  .zionic-desc-block {
-    margin-bottom: 48px !important;
-  }
-
-  .zionic-desc-grid {
-    grid-template-columns: 1fr !important;
-    gap: 28px !important;
-  }
-
-  .tech-tag-row {
-    margin-bottom: 14px !important;
-    gap: 6px !important;
-  }
-
-  .tech-tag {
-    font-size: 11.5px !important;
-    padding: 4px 10px !important;
-  }
-
-  .zionic-desc-headline {
-    font-size: 23px !important;
-    line-height: 1.28 !important;
-    margin-bottom: 14px !important;
-  }
-
-  .zionic-desc-text {
-    font-size: 16.5px !important;
-    line-height: 1.65 !important;
-    margin-bottom: 24px !important;
-  }
-
-  .zionic-action-btns {
-    flex-direction: column !important;
+  /* Mobile: Full Grey Seamless Section from banner to banner (#54595f) */
+  .zionic-grey-wrapper {
+    background: #54595f !important;
+    padding: 32px 0 36px 0 !important;
+    margin: 0 !important;
     width: 100% !important;
-    gap: 12px !important;
+    border: none !important;
   }
 
-  .zionic-btn-primary,
-  .zionic-btn-secondary {
-    width: 100% !important;
-    height: 52px !important;
-    font-size: 14.5px !important;
-    justify-content: center !important;
+  .zionic-grey-wrapper .container {
     padding: 0 16px !important;
   }
 
-  .zionic-bullets-card {
-    padding: 22px 18px !important;
-    border-radius: 16px !important;
+  .zionic-duo-container {
+    grid-template-columns: 1fr !important;
+    gap: 0px !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
-  .bullets-card-title {
-    font-size: 17px !important;
-    margin-bottom: 16px !important;
+  .zionic-duo-container.duo-reverse {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0px !important;
   }
 
-  .zionic-feature-list {
+  .zionic-duo-container.duo-reverse .zionic-compact-card {
+    order: 1 !important;
+  }
+
+  .zionic-duo-container.duo-reverse .zionic-youtube-compact-wrapper {
+    order: 2 !important;
+  }
+
+  .zionic-compact-card {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .zionic-compact-card .split-badge,
+  .zionic-compact-card .split-tag {
+    font-size: 11px !important;
+    padding: 4px 10px !important;
+    background: rgba(255, 255, 255, 0.14) !important;
+    border-color: rgba(255, 255, 255, 0.35) !important;
+  }
+
+  .zionic-compact-card .split-title {
+    font-size: clamp(26px, 7.5vw, 32px) !important;
+    margin: 0 0 16px 0 !important;
+  }
+
+  .zionic-compact-card .split-bullets {
     gap: 14px !important;
+    margin-bottom: 24px !important;
   }
 
-  .zionic-feature-list li {
+  .zionic-compact-card .split-bullets li {
     font-size: 16px !important;
+    color: #ffffff !important;
     line-height: 1.5 !important;
-    gap: 10px !important;
   }
 
-  .zionic-youtube-section {
-    padding: 32px 16px !important;
-    border-radius: 18px !important;
+  .zionic-compact-card .split-btn-group {
+    flex-direction: column !important;
+    gap: 12px !important;
+    margin-top: 24px !important;
+    margin-bottom: 28px !important;
   }
 
-  .youtube-header {
-    margin-bottom: 22px !important;
+  .zionic-compact-card .split-btn {
+    width: 100% !important;
+    height: 56px !important;
+    min-height: 56px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 14px !important;
+    font-weight: 900 !important;
+    letter-spacing: 1px !important;
+    border-width: 2px !important;
   }
 
-  .youtube-badge {
-    font-size: 11.5px !important;
-    margin-bottom: 8px !important;
+  .zionic-compact-card .split-btn-ghost {
+    background: #ffffff !important;
+    color: #1e232e !important;
+    border: 2px solid #ffffff !important;
   }
 
-  .youtube-header h3 {
-    font-size: clamp(24px, 6.8vw, 30px) !important;
-    margin-bottom: 10px !important;
-    line-height: 1.2 !important;
+  .zionic-compact-card .split-btn-ghost-muted {
+    background: transparent !important;
+    color: #ffffff !important;
+    border: 2px solid #ffffff !important;
   }
 
-  .youtube-header p {
-    font-size: 15.5px !important;
-    line-height: 1.55 !important;
+  .zionic-youtube-compact-wrapper {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-top: 56.25% !important;
+    border-radius: 0px !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
   }
 
-  .youtube-player-frame {
-    border-radius: 12px !important;
+  .linfo-video-banner-fullwidth {
+    margin-top: 0 !important;
   }
 
   /* 4. Screen 3: Bento Grid (Single Column Stack) */
