@@ -3822,33 +3822,78 @@ footer {
   color: #cbd5e1 !important;
 }
 
-@media (max-width: 600px) {
-  .modern-luxury-footer {
-    padding: 40px 0 24px 0 !important;
+@media (max-width: 991px) {
+  .modern-luxury-footer,
+  footer.modern-luxury-footer,
+  footer {
+    padding: 48px 0 32px 0 !important;
+  }
+  .footer-container {
+    padding: 0 20px !important;
   }
   .footer-brand-centered {
-    margin-bottom: 28px !important;
-    padding-bottom: 20px !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    margin-bottom: 32px !important;
+    padding-bottom: 24px !important;
+  }
+  .footer-brand-sub {
+    font-size: 13.5px !important;
+    line-height: 1.4 !important;
+    text-align: left !important;
+    letter-spacing: 0.5px !important;
   }
   .footer-two-columns {
-    grid-template-columns: 1fr 1fr !important;
-    gap: 20px !important;
-    margin-bottom: 28px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+    margin-bottom: 32px !important;
+  }
+  .footer-col {
+    align-items: flex-start !important;
+    text-align: left !important;
+    width: 100% !important;
   }
   .footer-col-title {
-    font-size: 11px !important;
-    margin-bottom: 12px !important;
+    font-size: 17px !important;
+    font-weight: 800 !important;
+    margin-bottom: 14px !important;
+    letter-spacing: 1px !important;
   }
-  .footer-links-list a,
+  .footer-links-list {
+    gap: 12px !important;
+    width: 100% !important;
+  }
+  .footer-links-list a {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+  .footer-contact-items {
+    gap: 14px !important;
+    width: 100% !important;
+  }
   .footer-contact-item {
-    font-size: 12px !important;
-    gap: 6px !important;
+    font-size: 16px !important;
+    gap: 12px !important;
+    line-height: 1.45 !important;
+    word-break: break-word !important;
+  }
+  .footer-contact-item svg {
+    width: 18px !important;
+    height: 18px !important;
   }
   .footer-bottom-bar {
+    display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    gap: 6px !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    gap: 8px !important;
+    padding-top: 20px !important;
+  }
+  .footer-bottom-bar p {
+    font-size: 14.5px !important;
+    line-height: 1.5 !important;
+    text-align: left !important;
   }
 }
 
