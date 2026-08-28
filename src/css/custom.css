@@ -411,10 +411,10 @@ header .logo:hover img {
   }
 
   .header-btn-compact {
-    padding: 6px 12px !important;
-    font-size: 9.5px !important;
-    font-weight: 700 !important;
-    letter-spacing: 0.5px !important;
+    padding: 7px 14px !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.8px !important;
     background: transparent !important;
     border: 1px solid #1e232e !important;
     color: #1e232e !important;
@@ -423,7 +423,7 @@ header .logo:hover img {
     text-transform: uppercase !important;
     cursor: pointer !important;
     width: auto !important;
-    max-width: 120px !important;
+    max-width: 150px !important;
     box-sizing: border-box !important;
     margin: 0 !important;
   }
@@ -4298,6 +4298,32 @@ footer {
     line-height: 1.6 !important;
   }
 
+  .partner-card-info {
+    padding: 16px 14px !important;
+  }
+
+  .partner-title {
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    margin-bottom: 6px !important;
+  }
+
+  .partner-category {
+    font-size: 14.5px !important;
+    font-weight: 600 !important;
+    color: #475569 !important;
+  }
+
+  .partner-verified-badge span {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+  }
+
+  .partner-action-tag span {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+  }
+
   /* 7. Screen 6: Manifest & SEO */
   .seo_text {
     padding: 48px 0 60px 0 !important;
@@ -4309,58 +4335,102 @@ footer {
     line-height: 1.18 !important;
   }
 
-  .editorial-stats-row {
-    gap: 20px !important;
-    margin-bottom: 22px !important;
-    flex-wrap: wrap !important;
+  .editorial-quote-card {
+    padding: 20px 18px !important;
+    margin-bottom: 24px !important;
   }
 
-  .stat-num {
-    font-size: 38px !important;
+  .editorial-quote-card p {
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+    font-weight: 600 !important;
+    color: #0f172a !important;
+    margin-bottom: 10px !important;
   }
 
-  .stat-lbl {
-    font-size: 14px !important;
+  .editorial-quote-author {
+    font-size: 13.5px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.8px !important;
+    color: #475569 !important;
+  }
+
+  .editorial-stat-badges {
+    gap: 24px !important;
+    margin-bottom: 28px !important;
+  }
+
+  .stat-badge-item .stat-num {
+    font-size: 42px !important;
+    font-weight: 900 !important;
+    line-height: 1.1 !important;
+  }
+
+  .stat-badge-item .stat-label {
+    font-size: 14.5px !important;
     font-weight: 700 !important;
+    color: #475569 !important;
   }
 
+  .editorial-lead-p,
   .editorial-lead-text {
-    font-size: 16.5px !important;
+    font-size: 17px !important;
     line-height: 1.7 !important;
-    margin-bottom: 26px !important;
+    font-weight: 500 !important;
+    color: #1e293b !important;
+    margin-bottom: 28px !important;
   }
 
-  .pillar-item {
+  .editorial-pillars-list {
+    gap: 22px !important;
+  }
+
+  .editorial-pillar-row {
     gap: 16px !important;
-    padding-bottom: 18px !important;
+    padding-bottom: 20px !important;
   }
 
   .pillar-num {
-    font-size: 24px !important;
+    font-size: 26px !important;
+    font-weight: 900 !important;
   }
 
   .pillar-body h4 {
-    font-size: 18px !important;
+    font-size: 19px !important;
     font-weight: 800 !important;
+    margin-bottom: 8px !important;
+    line-height: 1.3 !important;
   }
 
   .pillar-body p {
+    font-size: 16.5px !important;
+    line-height: 1.6 !important;
+    color: #334155 !important;
+  }
+
+  .editorial-conclusion {
+    font-size: 16.5px !important;
+    line-height: 1.65 !important;
+  }
+
+  /* 8. Footer on Mobile */
+  footer, .footer {
+    padding: 48px 0 36px 0 !important;
+  }
+
+  footer h3, footer h4, .footer-title, .footer-col-title {
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    margin-bottom: 14px !important;
+  }
+
+  footer p, footer li, footer a, .footer-link, .footer-contact-item {
     font-size: 16px !important;
     line-height: 1.65 !important;
   }
-}
 
-@media (max-width: 480px) {
-  .hero-clean-title {
-    font-size: 28px !important;
-  }
-
-  .split-panel {
-    height: 420px !important;
-  }
-
-  .split-panel .split-title {
-    font-size: 24px !important;
+  footer .footer-bottom, .copyright {
+    font-size: 14px !important;
   }
 }
 
