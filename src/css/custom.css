@@ -2305,16 +2305,71 @@ header .logo:hover img {
 }
 
 @media (max-width: 860px) {
+  .application-presentation .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .presentation-header {
+    padding: 0 20px !important;
+    margin-bottom: 24px !important;
+  }
+
   .presentation-stage-grid {
     grid-template-columns: 1fr !important;
     gap: 0 !important;
-    max-width: 480px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   
+  .presentation-visual-col {
+    width: 100% !important;
+    max-width: 100% !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+  }
+
   .presentation-photo-frame {
     flex: none !important;
-    height: 260px !important;
-    min-height: 260px !important;
+    width: 100% !important;
+    height: clamp(240px, 58vw, 320px) !important;
+    min-height: 240px !important;
+    border-radius: 0 !important;
+  }
+
+  .presentation-showcase-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .presentation-trust-features {
+    padding: 28px 20px 20px 20px !important;
+    background: #ffffff !important;
+    border: none !important;
+    gap: 20px !important;
+  }
+
+  .trust-feature-item {
+    gap: 14px !important;
+  }
+
+  .trust-feature-item strong {
+    font-size: 17px !important;
+    font-weight: 800 !important;
+    line-height: 1.35 !important;
+    margin-bottom: 4px !important;
+  }
+
+  .trust-feature-item span {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    color: #475569 !important;
   }
 
   .presentation-form-col.desktop-only-form {
@@ -2324,9 +2379,9 @@ header .logo:hover img {
   .presentation-mobile-cta-wrap {
     display: flex !important;
     justify-content: center !important;
-    padding: 18px 16px 22px 16px !important;
+    padding: 16px 20px 28px 20px !important;
     background: #ffffff !important;
-    border-top: 1px solid #e2e8f0 !important;
+    border-top: 1px solid #f1f5f9 !important;
     width: 100% !important;
     box-sizing: border-box !important;
   }
@@ -2336,28 +2391,30 @@ header .logo:hover img {
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
-    gap: 12px !important;
-    padding: 14px 20px !important;
+    gap: 14px !important;
+    padding: 14px 20px 14px 20px !important;
     width: 100% !important;
-    max-width: 400px !important;
-    min-width: 0 !important;
+    max-width: 100% !important;
+    min-height: 56px !important;
+    height: auto !important;
     background: #0c121e !important;
     color: #ffffff !important;
     border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    border-radius: 0px !important;
+    border-radius: 12px !important;
     cursor: pointer !important;
     box-sizing: border-box !important;
     box-shadow: 0 12px 35px rgba(12, 18, 30, 0.25) !important;
   }
 
   .living-stage-glass-btn .pulse-spark {
-    width: 9px !important;
-    height: 9px !important;
+    width: 10px !important;
+    height: 10px !important;
     border-radius: 50% !important;
     background: #10b981 !important;
     box-shadow: 0 0 10px #10b981, 0 0 20px rgba(16, 185, 129, 0.7) !important;
     animation: liveSparkPulse 2s infinite !important;
     flex-shrink: 0 !important;
+    margin-left: 2px !important;
   }
 
   .btn-text-stacked {
@@ -2367,7 +2424,7 @@ header .logo:hover img {
     justify-content: center !important;
     text-align: center !important;
     gap: 3px !important;
-    flex: 1 !important;
+    flex: 1 1 auto !important;
   }
 
   .btn-line-1,
@@ -2387,6 +2444,7 @@ header .logo:hover img {
     height: 20px !important;
     stroke: #ffffff !important;
     flex-shrink: 0 !important;
+    margin-right: 2px !important;
   }
 
   .living-stage-glass-btn.pulse-attention {
@@ -4274,6 +4332,46 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.25) !important;
   }
 
+  .video-facade-play {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .video-facade-play svg {
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: 2px !important;
+  }
+
+  .expert-thumb-info {
+    right: 10px !important;
+    bottom: 8px !important;
+    max-width: 40% !important;
+    gap: 2px !important;
+    text-align: right !important;
+  }
+
+  .expert-thumb-badge {
+    font-size: 7.5px !important;
+    padding: 2px 5px !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 1px !important;
+  }
+
+  .expert-thumb-title {
+    font-size: clamp(11.5px, 3.2vw, 14px) !important;
+    line-height: 1.12 !important;
+    letter-spacing: -0.2px !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95) !important;
+  }
+
+  .expert-thumb-subtitle {
+    font-size: 8.5px !important;
+    line-height: 1.2 !important;
+    color: #e2e8f0 !important;
+    margin-top: 1px !important;
+  }
+
   .linfo-video-banner-fullwidth {
     margin-top: 36px !important;
   }
@@ -4570,9 +4668,8 @@ footer {
   }
 
   .application-presentation .living-stage-glass-btn {
-    height: 54px !important;
-    font-size: 15px !important;
-    font-weight: 900 !important;
+    min-height: 56px !important;
+    height: auto !important;
   }
 
   /* 6. Screen 5: Partners */
