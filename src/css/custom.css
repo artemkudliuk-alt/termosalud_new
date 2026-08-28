@@ -1929,105 +1929,118 @@ header .logo:hover img {
   color: #64748b !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .why-us-bento-section {
-    padding: 40px 0 !important;
+    padding: 48px 0 !important;
   }
   .bento-container {
     padding: 0 16px !important;
   }
   .bento-collapse-grid {
     grid-template-columns: 1fr !important;
-    gap: 14px !important;
+    gap: 16px !important;
   }
   .bento-top-meta {
-    padding: 12px 14px !important;
-    gap: 8px !important;
+    padding: 16px 14px !important;
+    gap: 10px !important;
   }
   .bento-meta-left {
-    gap: 10px !important;
+    gap: 12px !important;
     min-width: 0 !important;
   }
   .bento-icon-pod {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+  }
+  .bento-meta-text {
+    gap: 4px !important;
+    min-width: 0 !important;
+  }
+  .bento-index {
+    font-size: 12.5px !important;
+    letter-spacing: 1px !important;
+    font-weight: 800 !important;
+  }
+  .bento-title-row {
+    gap: 8px !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+  }
+  .bento-title {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+  }
+  .bento-pill-tag {
+    font-size: 13.5px !important;
+    font-weight: 800 !important;
+    padding: 5px 12px !important;
+    letter-spacing: 0.5px !important;
+  }
+  .bento-chevron {
     width: 36px !important;
     height: 36px !important;
     min-width: 36px !important;
   }
-  .bento-meta-text {
-    gap: 2px !important;
-    min-width: 0 !important;
-  }
-  .bento-index {
-    font-size: 8.5px !important;
-    letter-spacing: 0.8px !important;
-  }
-  .bento-title-row {
-    gap: 6px !important;
-    align-items: center !important;
-  }
-  .bento-title {
-    font-size: 15px !important;
-    margin: 0 !important;
-  }
-  .bento-pill-tag {
-    font-size: 9px !important;
-    padding: 2.5px 7px !important;
-    letter-spacing: 0.4px !important;
-    white-space: nowrap !important;
-  }
-  .bento-chevron {
-    width: 28px !important;
-    height: 28px !important;
-    min-width: 28px !important;
-  }
   .bento-card.is-open .bento-body-collapse {
-    padding: 10px 14px 18px 14px !important;
+    padding: 14px 16px 22px 16px !important;
   }
   .bento-desc {
-    font-size: 13px !important;
-    line-height: 1.5 !important;
-    margin-bottom: 12px !important;
+    font-size: 16px !important;
+    line-height: 1.65 !important;
+    margin-bottom: 16px !important;
+    color: #1e293b !important;
   }
   .bento-feature-item {
-    font-size: 12px !important;
-  }
-  .bento-roi-display {
-    padding: 14px 14px !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
     gap: 10px !important;
   }
+  .bento-roi-display {
+    padding: 18px 16px !important;
+    gap: 14px !important;
+  }
   .num-highlight {
-    font-size: 30px !important;
+    font-size: 44px !important;
+    font-weight: 900 !important;
   }
   .num-label {
-    font-size: 11px !important;
+    font-size: 15px !important;
+    font-weight: 800 !important;
   }
   .roi-subtext {
-    font-size: 11px !important;
+    font-size: 14.5px !important;
+    font-weight: 600 !important;
   }
   .bento-cert-grid {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 6px !important;
+    gap: 10px !important;
   }
   .cert-seal {
-    padding: 10px 4px !important;
+    padding: 14px 10px !important;
   }
   .seal-code {
-    font-size: 12px !important;
+    font-size: 16px !important;
+    font-weight: 900 !important;
   }
   .seal-name {
-    font-size: 8.5px !important;
+    font-size: 12.5px !important;
+    font-weight: 700 !important;
   }
   .bento-stat-hero-box {
-    padding: 16px 14px !important;
+    padding: 20px 16px !important;
   }
   .stat-big-highlight {
-    font-size: 32px !important;
+    font-size: 46px !important;
+    font-weight: 900 !important;
   }
   .stat-highlight-label {
-    font-size: 11.5px !important;
+    font-size: 14.5px !important;
+    font-weight: 700 !important;
   }
   .stat-sub-highlight {
-    font-size: 10.5px !important;
+    font-size: 13.5px !important;
   }
 }
 
@@ -2323,7 +2336,7 @@ header .logo:hover img {
   .btn-line-1,
   .btn-line-2 {
     font-family: 'Montserrat', 'Inter', sans-serif !important;
-    font-size: 11px !important;
+    font-size: 13.5px !important;
     font-weight: 900 !important;
     letter-spacing: 0.8px !important;
     color: #ffffff !important;
@@ -2333,8 +2346,8 @@ header .logo:hover img {
   }
 
   .living-stage-glass-btn .btn-arrow {
-    width: 16px !important;
-    height: 16px !important;
+    width: 20px !important;
+    height: 20px !important;
     stroke: #ffffff !important;
     flex-shrink: 0 !important;
   }
@@ -3868,7 +3881,7 @@ footer {
    (Pixel-Perfect, Zero Horizontal Scroll, 360px - 768px)
    ======================================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   /* 0. Global Mobile Containment */
   html, body {
     overflow-x: hidden !important;
@@ -3905,14 +3918,14 @@ footer {
   }
 
   .hero-clean-title {
-    font-size: clamp(30px, 8.5vw, 42px) !important;
-    line-height: 1.12 !important;
+    font-size: clamp(34px, 9.5vw, 44px) !important;
+    line-height: 1.1 !important;
     letter-spacing: -0.5px !important;
     margin-bottom: 16px !important;
   }
 
   .hero-clean-desc {
-    font-size: 16.5px !important;
+    font-size: 17px !important;
     line-height: 1.6 !important;
     max-width: 100% !important;
     margin-bottom: 24px !important;
@@ -3933,13 +3946,13 @@ footer {
   }
 
   .our-prods-header h2 {
-    font-size: clamp(28px, 7.5vw, 36px) !important;
+    font-size: clamp(32px, 8.8vw, 40px) !important;
     margin-bottom: 14px !important;
-    line-height: 1.2 !important;
+    line-height: 1.18 !important;
   }
 
   .our-prods-header p {
-    font-size: 16.5px !important;
+    font-size: 17px !important;
     line-height: 1.6 !important;
   }
 
@@ -3971,7 +3984,7 @@ footer {
   }
 
   .split-panel .split-title {
-    font-size: 26px !important;
+    font-size: 28px !important;
     margin-bottom: 12px !important;
   }
 
@@ -3991,7 +4004,7 @@ footer {
   }
 
   .split-bullet-item {
-    font-size: 16px !important;
+    font-size: 16.5px !important;
     line-height: 1.5 !important;
   }
 
@@ -4007,8 +4020,8 @@ footer {
   .split-btn-primary,
   .split-btn-secondary {
     flex: 1 !important;
-    height: 50px !important;
-    font-size: 13.5px !important;
+    height: 52px !important;
+    font-size: 14px !important;
     padding: 0 12px !important;
     letter-spacing: 0.8px !important;
     font-weight: 800 !important;
@@ -4020,13 +4033,13 @@ footer {
   }
 
   .why-us-header h2 {
-    font-size: clamp(28px, 7.5vw, 36px) !important;
+    font-size: clamp(32px, 8.8vw, 40px) !important;
     margin-bottom: 14px !important;
-    line-height: 1.2 !important;
+    line-height: 1.18 !important;
   }
 
   .why-us-header p {
-    font-size: 16.5px !important;
+    font-size: 17px !important;
     line-height: 1.6 !important;
   }
 
@@ -4042,18 +4055,18 @@ footer {
   }
 
   .bento-icon-pod {
-    width: 46px !important;
-    height: 46px !important;
-    min-width: 46px !important;
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
   }
 
   .bento-svg {
-    width: 24px !important;
-    height: 24px !important;
+    width: 26px !important;
+    height: 26px !important;
   }
 
   .bento-index {
-    font-size: 12.5px !important;
+    font-size: 13px !important;
     font-weight: 800 !important;
     letter-spacing: 1.2px !important;
   }
@@ -4066,13 +4079,13 @@ footer {
   }
 
   .bento-title {
-    font-size: 22px !important;
+    font-size: 24px !important;
     font-weight: 700 !important;
     margin-bottom: 0 !important;
   }
 
   .bento-pill-tag {
-    font-size: 13.5px !important;
+    font-size: 14px !important;
     font-weight: 800 !important;
     padding: 5px 12px !important;
     white-space: normal !important;
@@ -4089,29 +4102,29 @@ footer {
   }
 
   .bento-chevron {
-    width: 38px !important;
-    height: 38px !important;
+    width: 40px !important;
+    height: 40px !important;
   }
 
   .bento-desc {
-    font-size: 16px !important;
+    font-size: 16.5px !important;
     line-height: 1.65 !important;
     margin-bottom: 18px !important;
     color: #1e293b !important;
   }
 
   .bento-feature-pills {
-    gap: 10px !important;
+    gap: 12px !important;
   }
 
   .bento-feature-item {
-    font-size: 16px !important;
+    font-size: 16.5px !important;
     line-height: 1.5 !important;
     gap: 12px !important;
   }
 
   .bento-check {
-    font-size: 18px !important;
+    font-size: 19px !important;
     font-weight: 900 !important;
   }
 
@@ -4125,51 +4138,51 @@ footer {
   }
 
   .seal-code {
-    font-size: 16px !important;
+    font-size: 17px !important;
     font-weight: 900 !important;
   }
 
   .seal-name {
-    font-size: 12.5px !important;
+    font-size: 13px !important;
     font-weight: 700 !important;
   }
 
   .roi-big-number .num-highlight {
-    font-size: 44px !important;
+    font-size: 48px !important;
     font-weight: 900 !important;
   }
 
   .roi-big-number .num-label {
-    font-size: 15px !important;
+    font-size: 16px !important;
     font-weight: 800 !important;
   }
 
   .roi-subtext {
-    font-size: 15px !important;
+    font-size: 15.5px !important;
     font-weight: 600 !important;
   }
 
   .roi-graph-meta {
-    font-size: 14.5px !important;
+    font-size: 15px !important;
     font-weight: 700 !important;
   }
 
   .roi-badge-highlight {
-    font-size: 15px !important;
+    font-size: 15.5px !important;
     font-weight: 900 !important;
-    padding: 7px 14px !important;
+    padding: 8px 16px !important;
     background: #0f172a !important;
     color: #ffffff !important;
     border: 1px solid #0f172a !important;
   }
 
   .stat-big-highlight {
-    font-size: 46px !important;
+    font-size: 48px !important;
     font-weight: 900 !important;
   }
 
   .stat-highlight-label {
-    font-size: 14.5px !important;
+    font-size: 15px !important;
     font-weight: 700 !important;
   }
 
@@ -4179,46 +4192,46 @@ footer {
   }
 
   .presentation-header h2 {
-    font-size: clamp(28px, 7.5vw, 36px) !important;
+    font-size: clamp(32px, 8.8vw, 40px) !important;
     margin-bottom: 14px !important;
-    line-height: 1.2 !important;
+    line-height: 1.18 !important;
   }
 
   .presentation-header p {
-    font-size: 16.5px !important;
+    font-size: 17px !important;
     line-height: 1.6 !important;
   }
 
   .presentation-floating-tag {
-    font-size: 12.5px !important;
+    font-size: 13px !important;
     font-weight: 800 !important;
     padding: 7px 14px !important;
   }
 
   .trust-feature-item strong {
-    font-size: 16px !important;
+    font-size: 16.5px !important;
     line-height: 1.35 !important;
   }
 
   .trust-feature-item span {
-    font-size: 14.5px !important;
+    font-size: 15px !important;
     line-height: 1.5 !important;
   }
 
   .trust-feature-item .trust-icon {
-    width: 22px !important;
-    height: 22px !important;
-    font-size: 13px !important;
+    width: 24px !important;
+    height: 24px !important;
+    font-size: 14px !important;
   }
 
   .application-presentation .format-label,
   .application-presentation .form-label-text {
-    font-size: 13px !important;
+    font-size: 13.5px !important;
     font-weight: 800 !important;
   }
 
   .application-presentation .format-tab-btn {
-    font-size: 13.5px !important;
+    font-size: 14px !important;
     padding: 10px 12px !important;
     font-weight: 700 !important;
   }
@@ -4230,7 +4243,7 @@ footer {
 
   .application-presentation .device-pill {
     padding: 10px 6px !important;
-    font-size: 13.5px !important;
+    font-size: 14px !important;
     font-weight: 700 !important;
   }
 
@@ -4240,8 +4253,8 @@ footer {
   }
 
   .application-presentation .luxury-form-input {
-    height: 50px !important;
-    font-size: 16px !important;
+    height: 52px !important;
+    font-size: 16.5px !important;
   }
 
   .application-presentation .messenger-pills-row {
@@ -4251,21 +4264,21 @@ footer {
 
   .application-presentation .messenger-pill {
     padding: 10px 6px !important;
-    font-size: 13.5px !important;
+    font-size: 14px !important;
     font-weight: 700 !important;
   }
 
   .application-presentation .shimmer-submit-btn,
   .application-presentation .modal-submit-btn {
     height: 54px !important;
-    font-size: 14.5px !important;
+    font-size: 15px !important;
     font-weight: 900 !important;
     letter-spacing: 1px !important;
   }
 
   .application-presentation .living-stage-glass-btn {
     height: 54px !important;
-    font-size: 14.5px !important;
+    font-size: 15px !important;
     font-weight: 900 !important;
   }
 
@@ -4275,13 +4288,13 @@ footer {
   }
 
   .partners-header h2 {
-    font-size: clamp(28px, 7.5vw, 36px) !important;
+    font-size: clamp(32px, 8.8vw, 40px) !important;
     margin-bottom: 14px !important;
-    line-height: 1.2 !important;
+    line-height: 1.18 !important;
   }
 
   .partners-header p {
-    font-size: 16.5px !important;
+    font-size: 17px !important;
     line-height: 1.6 !important;
   }
 
@@ -4291,9 +4304,9 @@ footer {
   }
 
   .editorial-main-title {
-    font-size: clamp(26px, 7vw, 34px) !important;
+    font-size: clamp(30px, 8.5vw, 38px) !important;
     margin-bottom: 18px !important;
-    line-height: 1.2 !important;
+    line-height: 1.18 !important;
   }
 
   .editorial-stats-row {
@@ -4303,16 +4316,16 @@ footer {
   }
 
   .stat-num {
-    font-size: 36px !important;
+    font-size: 38px !important;
   }
 
   .stat-lbl {
-    font-size: 13.5px !important;
+    font-size: 14px !important;
     font-weight: 700 !important;
   }
 
   .editorial-lead-text {
-    font-size: 16px !important;
+    font-size: 16.5px !important;
     line-height: 1.7 !important;
     margin-bottom: 26px !important;
   }
@@ -4323,16 +4336,16 @@ footer {
   }
 
   .pillar-num {
-    font-size: 22px !important;
+    font-size: 24px !important;
   }
 
   .pillar-body h4 {
-    font-size: 17px !important;
+    font-size: 18px !important;
     font-weight: 800 !important;
   }
 
   .pillar-body p {
-    font-size: 15.5px !important;
+    font-size: 16px !important;
     line-height: 1.65 !important;
   }
 }
@@ -4467,8 +4480,8 @@ footer {
   }
 
   .hero-clean-title {
-    font-size: clamp(30px, 8.2vw, 40px) !important;
-    line-height: 1.12 !important;
+    font-size: clamp(34px, 9.5vw, 44px) !important;
+    line-height: 1.1 !important;
     letter-spacing: -0.5px !important;
     text-align: center !important;
     margin: 0 auto 8px auto !important;
@@ -4652,9 +4665,9 @@ footer {
   }
 
   .our-prods-header h2 {
-    font-size: clamp(28px, 7.5vw, 36px) !important;
+    font-size: clamp(32px, 8.8vw, 40px) !important;
     margin-bottom: 14px !important;
-    line-height: 1.2 !important;
+    line-height: 1.18 !important;
   }
 
   .our-prods-header p {
