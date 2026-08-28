@@ -314,6 +314,18 @@ function initVideoPreviews() {
       v.play().catch(() => {});
     });
   });
+
+  // Interactive YouTube Compact Facades
+  document.addEventListener('click', (e) => {
+    const wrapper = e.target.closest('.zionic-youtube-compact-wrapper');
+    if (!wrapper || wrapper.classList.contains('is-active')) return;
+
+    const videoId = wrapper.getAttribute('data-video-id') || (wrapper.innerHTML.includes('_Fx-uUZqLEc') ? '_Fx-uUZqLEc' : 'cqskAxvFlxY');
+    const videoTitle = wrapper.getAttribute('data-video-title') || 'Termosalud Presentation';
+
+    wrapper.classList.add('is-active');
+    wrapper.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&controls=1" title="${videoTitle}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width: 100%; height: 100%; position: absolute; inset: 0; border: none;"></iframe>`;
+  });
 }
 
 /**
@@ -794,6 +806,3 @@ function initPartnersDraggableCarousel() {
     });
   });
 }
-
-
-

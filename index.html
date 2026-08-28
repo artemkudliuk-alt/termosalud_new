@@ -57,7 +57,7 @@ name="msapplication-TileImage" content="/wp-content/uploads/2026/03/favicon-opti
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Onest:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/css/custom.css?v=1787920478525">
+  <link rel="stylesheet" href="/src/css/custom.css?v=1787934397820">
   <style>
     .split-title, .split-title *, .split-panel .split-title, .split-panel h3, .split-content .split-title, .split-content h3 {
       color: #f1f5f9 !important;
@@ -215,119 +215,136 @@ class=center>
           </div>
         </div>
 
-        <!-- 2. Full-Width 100% Video Banner (No Darkening, Only Single Title) -->
-        <div class="zionic-video-banner-fullwidth">
-          <div class="video-banner-media">
-            <video autoplay loop muted playsinline class="video-banner-bg" preload="auto" poster="/photo_zionic.png">
-              <source src="/zionic.mp4" type="video/mp4">
-            </video>
-            <div class="video-banner-overlay"></div>
-          </div>
-          <div class="video-banner-content">
-            <h3 class="video-banner-title">ZIONIC MARP SYSTEM</h3>
-          </div>
-        </div>
-
-        <!-- 3. Zionic Duo Block (Card + Video) with #54595f Background -->
-        <div class="zionic-duo-wrapper zionic-grey-wrapper">
-          <div class="container">
-            <div class="zionic-duo-container">
-              
-              <!-- Left Column: Compact Luxury Monochrome Card -->
-              <div class="zionic-compact-card">
-                <div class="split-badge-row">
-                  <span class="split-badge">✦ MARP + RF TECHNOLOGY</span>
-                  <span class="split-tag">MADE IN SPAIN</span>
-                </div>
-                
-                <h3 class="split-title">ZIONIC <span>MARP SYSTEM</span></h3>
-                
-                <ul class="split-bullets">
-                  <li><span class="split-check">✓</span> Одночасна дія: ліполіз, ліфтинг та тонус</li>
-                  <li><span class="split-check">✓</span> Безболісно та без реабілітації для пацієнта</li>
-                  <li><span class="split-check">✓</span> Швидка окупність від 3 до 4 місяців</li>
-                </ul>
-
-                <div class="split-btn-group">
-                  <a href="/zionic/" class="split-btn split-btn-ghost">
-                    ДІЗНАТИСЬ БІЛЬШЕ
-                  </a>
-                  <button class="split-btn split-btn-ghost-muted header-btn" data-target="#popup_request">
-                    ТЕСТ-ДРАЙВ
-                  </button>
-                </div>
-              </div>
-
-              <!-- Right Column: Video Player with Play Button Only (No YouTube UI Clutter) -->
-              <div class="zionic-youtube-compact-wrapper" onclick="this.classList.add('is-active'); this.innerHTML = '<iframe src='https://www.youtube-nocookie.com/embed/cqskAxvFlxY?autoplay=1&rel=0&modestbranding=1&controls=1' title='ZIONIC MARP SYSTEM Presentation' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>';">
-                <div class="video-facade-cover" style="background-image: url('https://img.youtube.com/vi/cqskAxvFlxY/maxresdefault.jpg');">
-                  <div class="video-facade-overlay"></div>
-                  <div class="video-facade-play">
-                    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                  </div>
-                </div>
-              </div>
-
+        <!-- ================= 1. ZIONIC MONOLITH GREY BLOCK ================= -->
+        <div class="apparatus-monolith-block zionic-monolith" id="zionic-monolith-block">
+          
+          <!-- Full-Width 100% Video Banner -->
+          <div class="zionic-video-banner-fullwidth">
+            <div class="video-banner-media">
+              <video autoplay loop muted playsinline class="video-banner-bg" preload="auto" poster="/photo_zionic.png">
+                <source src="/zionic.mp4" type="video/mp4">
+              </video>
+              <div class="video-banner-overlay"></div>
+            </div>
+            <div class="video-banner-content">
+              <h3 class="video-banner-title">ZIONIC MARP SYSTEM</h3>
             </div>
           </div>
-        </div>
 
-        <!-- ================= LINFOPRESS EVOLUTION PRO BLOCK ================= -->
-        <!-- 4. Full-Width 100% Video Banner for Linfopress (No Darkening, Single Title) -->
-        <div class="zionic-video-banner-fullwidth linfo-video-banner-fullwidth">
-          <div class="video-banner-media">
-            <video autoplay loop muted playsinline class="video-banner-bg" preload="auto" poster="/photo_limfo.png">
-              <source src="/limfo.mp4" type="video/mp4">
-            </video>
-            <div class="video-banner-overlay"></div>
-          </div>
-          <div class="video-banner-content">
-            <h3 class="video-banner-title">LINFOPRESS EVOLUTION PRO</h3>
-          </div>
-        </div>
+          <!-- Zionic Duo Block (Card + Video) -->
+          <div class="zionic-duo-wrapper">
+            <div class="container">
+              <div class="zionic-duo-container">
+                
+                <!-- Left Column: Compact Luxury Monochrome Card -->
+                <div class="zionic-compact-card">
+                  <div class="split-badge-row">
+                    <span class="split-badge">✦ MARP + RF TECHNOLOGY</span>
+                    <span class="split-tag">MADE IN SPAIN</span>
+                  </div>
+                  
+                  <h3 class="split-title">ZIONIC <span>MARP SYSTEM</span></h3>
+                  
+                  <ul class="split-bullets">
+                    <li><span class="split-check">✓</span> Одночасна дія: ліполіз, ліфтинг та тонус</li>
+                    <li><span class="split-check">✓</span> Безболісно та без реабілітації для пацієнта</li>
+                    <li><span class="split-check">✓</span> Швидка окупність від 3 до 4 місяців</li>
+                  </ul>
 
-        <!-- 5. Linfopress Duo Block (Video + Card) with #54595f Background -->
-        <div class="zionic-duo-wrapper zionic-grey-wrapper">
-          <div class="container">
-            <div class="zionic-duo-container duo-reverse">
-              
-              <!-- Left Column: Video Player with Play Button Only -->
-              <div class="zionic-youtube-compact-wrapper" onclick="this.classList.add('is-active'); this.innerHTML = '<iframe src='https://www.youtube-nocookie.com/embed/_Fx-uUZqLEc?autoplay=1&rel=0&modestbranding=1&controls=1' title='LINFOPRESS EVOLUTION PRO Presentation' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>';">
-                <div class="video-facade-cover" style="background-image: url('https://img.youtube.com/vi/_Fx-uUZqLEc/hqdefault.jpg');">
-                  <div class="video-facade-overlay"></div>
-                  <div class="video-facade-play">
-                    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                  <div class="split-btn-group">
+                    <a href="/zionic/" class="split-btn split-btn-ghost">
+                      ДІЗНАТИСЬ БІЛЬШЕ
+                    </a>
+                    <button class="split-btn split-btn-ghost-muted header-btn" data-target="#popup_request">
+                      ТЕСТ-ДРАЙВ
+                    </button>
                   </div>
                 </div>
-              </div>
 
-              <!-- Right Column: Compact Luxury Monochrome Card -->
-              <div class="zionic-compact-card">
-                <div class="split-badge-row">
-                  <span class="split-badge">✦ 4-IN-1 CYCLIC PRESSOTHERAPY</span>
-                  <span class="split-tag">MADE IN SPAIN</span>
+                <!-- Right Column: Video Player with Play Button Only -->
+                <div class="zionic-youtube-compact-wrapper" data-video-id="cqskAxvFlxY" data-video-title="ZIONIC MARP SYSTEM Presentation">
+                  <div class="expert-video-thumb" style="background-image: url('/wp-content/uploads/2026/03/zionic_expert_cover.png'); background-position: center;">
+                    <div class="expert-thumb-info">
+                      <span class="expert-thumb-badge">ВІДЕООГЛЯД</span>
+                      <h4 class="expert-thumb-title">ЕКСПЕРТИ<br>ПРО ZIONIC</h4>
+                      <p class="expert-thumb-subtitle">Клінічний досвід L'Clinic</p>
+                    </div>
+                    <div class="video-facade-play">
+                      <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                  </div>
                 </div>
-                
-                <h3 class="split-title">LINFOPRESS <span>EVOLUTION PRO</span></h3>
-                
-                <ul class="split-bullets">
-                  <li><span class="split-check">✓</span> 24 незалежні пневмосектори з перекриттям</li>
-                  <li><span class="split-check">✓</span> Безперервний лімфодренаж та зняття набряків</li>
-                  <li><span class="split-check">✓</span> Автоматичне вимірювання артеріального тиску</li>
-                </ul>
 
-                <div class="split-btn-group">
-                  <a href="/linfopress/" class="split-btn split-btn-ghost">
-                    ДІЗНАТИСЬ БІЛЬШЕ
-                  </a>
-                  <button class="split-btn split-btn-ghost-muted header-btn" data-target="#popup_request">
-                    ТЕСТ-ДРАЙВ
-                  </button>
-                </div>
               </div>
-
             </div>
           </div>
+
+        </div>
+
+        <!-- ================= 2. LINFOPRESS MONOLITH GREY BLOCK ================= -->
+        <div class="apparatus-monolith-block linfopress-monolith" id="linfopress-monolith-block">
+          
+          <!-- Full-Width 100% Video Banner for Linfopress -->
+          <div class="zionic-video-banner-fullwidth linfo-video-banner-fullwidth">
+            <div class="video-banner-media">
+              <video autoplay loop muted playsinline class="video-banner-bg" preload="auto" poster="/photo_limfo.png">
+                <source src="/limfo.mp4" type="video/mp4">
+              </video>
+              <div class="video-banner-overlay"></div>
+            </div>
+            <div class="video-banner-content">
+              <h3 class="video-banner-title">LINFOPRESS EVOLUTION PRO</h3>
+            </div>
+          </div>
+
+          <!-- Linfopress Duo Block (Video + Card) -->
+          <div class="zionic-duo-wrapper">
+            <div class="container">
+              <div class="zionic-duo-container duo-reverse">
+                
+                <!-- Left Column: Video Player with Play Button Only -->
+                <div class="zionic-youtube-compact-wrapper" data-video-id="_Fx-uUZqLEc" data-video-title="LINFOPRESS EVOLUTION PRO Presentation">
+                  <div class="expert-video-thumb" style="background-image: url('/wp-content/uploads/2026/03/linfopress_expert_cover.png');">
+                    <div class="expert-thumb-info">
+                      <span class="expert-thumb-badge">ВІДЕООГЛЯД</span>
+                      <h4 class="expert-thumb-title">ЕКСПЕРТИ<br>ПРО LINFOPRESS</h4>
+                      <p class="expert-thumb-subtitle">Клінічний досвід L'Clinic</p>
+                    </div>
+                    <div class="video-facade-play">
+                      <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right Column: Compact Luxury Monochrome Card -->
+                <div class="zionic-compact-card">
+                  <div class="split-badge-row">
+                    <span class="split-badge">✦ 4-IN-1 CYCLIC PRESSOTHERAPY</span>
+                    <span class="split-tag">MADE IN SPAIN</span>
+                  </div>
+                  
+                  <h3 class="split-title">LINFOPRESS <span>EVOLUTION PRO</span></h3>
+                  
+                  <ul class="split-bullets">
+                    <li><span class="split-check">✓</span> 24 незалежні пневмосектори з перекриттям</li>
+                    <li><span class="split-check">✓</span> Безперервний лімфодренаж та зняття набряків</li>
+                    <li><span class="split-check">✓</span> Автоматичне вимірювання артеріального тиску</li>
+                  </ul>
+
+                  <div class="split-btn-group">
+                    <a href="/linfopress/" class="split-btn split-btn-ghost">
+                      ДІЗНАТИСЬ БІЛЬШЕ
+                    </a>
+                    <button class="split-btn split-btn-ghost-muted header-btn" data-target="#popup_request">
+                      ТЕСТ-ДРАЙВ
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
     
