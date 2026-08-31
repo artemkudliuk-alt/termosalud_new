@@ -320,7 +320,7 @@ function initVideoPreviews() {
     const wrapper = e.target.closest('.zionic-youtube-compact-wrapper');
     if (!wrapper || wrapper.classList.contains('is-active')) return;
 
-    const videoId = wrapper.getAttribute('data-video-id') || (wrapper.innerHTML.includes('_Fx-uUZqLEc') ? '_Fx-uUZqLEc' : 'cqskAxvFlxY');
+    const videoId = wrapper.getAttribute('data-video-id') || (wrapper.innerHTML.includes('LINFOPRESS') ? 'K1v77enueJ8' : 'CYsDii-PZ7s');
     const videoTitle = wrapper.getAttribute('data-video-title') || 'Termosalud Presentation';
 
     wrapper.classList.add('is-active');

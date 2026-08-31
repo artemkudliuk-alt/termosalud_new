@@ -137,16 +137,18 @@ function cleanHtml(raw, pageName) {
         </video>
 
         <div class="hero-clean-container">
-          <!-- Left Column: Title & Description in Ukrainian -->
+          <!-- Left Column: Title & Logo -->
           <div class="hero-left-col">
             <h1 class="hero-clean-title">
-              <span class="word-empower">ПІДСИЛЮЙТЕ</span>
-              <span class="word-beauty">КРАСУ</span>
-              <span class="word-together">РАЗОМ</span>
+              <span class="word-empower">НОВА</span>
+              <span class="word-beauty">ЕРА КРАСИ</span>
+              <span class="hero-subtext">
+                <span class="hero-subline">ЗА ДОПОМОГОЮ ПРЕМІАЛЬНИХ АПАРАТНИХ РІШЕНЬ</span>
+              </span>
             </h1>
-            <p class="hero-clean-subtitle">
-              Підсилюйте природну красу та здоров'я за допомогою найефективніших і найбезпечніших неінвазивних технологій.
-            </p>
+            <div class="hero-logo-wrap">
+              <img src="/wp-content/themes/zionic/assets/images/logo.svg" alt="Termosalud Medical & Aesthetic" class="hero-termosalud-logo">
+            </div>
           </div>
 
           <!-- Right Column: Interactive Product Showcase (English Device Names) -->
@@ -259,7 +261,7 @@ function cleanHtml(raw, pageName) {
                 </div>
 
                 <!-- Right Column: Video Player with Play Button Only -->
-                <div class="zionic-youtube-compact-wrapper" data-video-id="cqskAxvFlxY" data-video-title="ZIONIC MARP SYSTEM Presentation">
+                <div class="zionic-youtube-compact-wrapper" data-video-id="CYsDii-PZ7s" data-video-title="ZIONIC MARP SYSTEM Presentation">
                   <div class="expert-video-thumb" style="background-image: url('/wp-content/uploads/2026/03/zionic_expert_cover.png'); background-position: center;">
                     <div class="expert-thumb-info">
                       <span class="expert-thumb-badge">ВІДЕООГЛЯД</span>
@@ -300,7 +302,7 @@ function cleanHtml(raw, pageName) {
               <div class="zionic-duo-container duo-reverse">
                 
                 <!-- Left Column: Video Player with Play Button Only -->
-                <div class="zionic-youtube-compact-wrapper" data-video-id="_Fx-uUZqLEc" data-video-title="LINFOPRESS EVOLUTION PRO Presentation">
+                <div class="zionic-youtube-compact-wrapper" data-video-id="K1v77enueJ8" data-video-title="LINFOPRESS EVOLUTION PRO Presentation">
                   <div class="expert-video-thumb" style="background-image: url('/wp-content/uploads/2026/03/linfopress_expert_cover.png');">
                     <div class="expert-thumb-info">
                       <span class="expert-thumb-badge">ВІДЕООГЛЯД</span>
