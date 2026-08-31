@@ -721,16 +721,16 @@ header .logo:hover img {
 }
 
 .hero-logo-wrap {
-  margin-top: 24px !important;
+  margin-top: 28px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
 }
 
 .hero-termosalud-logo {
-  height: clamp(28px, 2.6vw, 38px) !important;
+  height: clamp(42px, 3.9vw, 57px) !important;
   width: auto !important;
-  max-width: 280px !important;
+  max-width: 420px !important;
   display: block !important;
   filter: brightness(0) opacity(0.85) !important;
 }
@@ -5032,13 +5032,13 @@ footer {
   }
 
   .hero-logo-wrap {
-    margin-top: 16px !important;
+    margin-top: 18px !important;
     justify-content: center !important;
   }
 
   .hero-termosalud-logo {
-    height: 24px !important;
-    max-width: 210px !important;
+    height: 36px !important;
+    max-width: 310px !important;
   }
 
   /* Block 2: Bottom Interactive Device Card - Hidden on Mobile */
