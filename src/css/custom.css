@@ -710,11 +710,11 @@ header .logo:hover img {
 
 .hero-clean-title .hero-subline {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
-  font-size: clamp(16px, 1.4vw, 20px) !important;
-  font-weight: 500 !important;
-  color: #64748b !important;
-  line-height: 1.4 !important;
-  letter-spacing: 0.4px !important;
+  font-size: clamp(19px, 1.8vw, 24px) !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0.6px !important;
   text-transform: uppercase !important;
   display: block !important;
   white-space: nowrap !important;
@@ -5021,14 +5021,14 @@ footer {
   }
 
   .hero-clean-title .hero-subline {
-    font-size: clamp(12px, 3.2vw, 15px) !important;
-    font-weight: 500 !important;
-    color: #64748b !important;
-    letter-spacing: 0.3px !important;
+    font-size: clamp(14px, 3.8vw, 17px) !important;
+    font-weight: 700 !important;
+    color: #1e293b !important;
+    letter-spacing: 0.5px !important;
     text-transform: uppercase !important;
     white-space: normal !important;
-    max-width: 340px !important;
-    line-height: 1.4 !important;
+    max-width: 360px !important;
+    line-height: 1.35 !important;
   }
 
   .hero-logo-wrap {

@@ -7,7 +7,10 @@ export default defineConfig({
   server: {
     port: 5173,
     open: false,
-    host: true
+    host: true,
+    headers: {
+      'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0'
+    }
   },
   build: {
     rollupOptions: {

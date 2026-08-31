@@ -1,6 +1,7 @@
 /**
  * Termosalud Interactive JavaScript Modules
  */
+import '../css/custom.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   initPopupModals();
