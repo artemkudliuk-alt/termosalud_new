@@ -2123,46 +2123,72 @@ function cleanHtml(raw, pageName) {
         </div>
       </section>
 
-      <!-- 2. ADVANCED COMPRESSION & PROCEDURE SHOWCASE (TOP INFO + WIDE BOTTOM IMAGE) -->
-      <section class="linfopress-pillars-section" id="linfopress-advantages">
+      <!-- 2. ADVANCED COMPRESSION & PROCEDURE SHOWCASE (OFFICIAL MINIMALIST ARCHITECTURE) -->
+      <section class="linfopress-advanced-section" id="linfopress-advantages">
         <div class="container">
           
-          <!-- 1. Top Centered Intro Box -->
-          <div class="zionic-section-header text-center">
-            <span class="section-kicker">ПЕРЕДОВА ПНЕВМАТИЧНА КОМПРЕСІЯ</span>
-            <h2>ПРЕСОТЕРАПІЯ ПЕРЕДОВОЇ КОМПРЕСІЇ</h2>
-            <p class="section-subtitle">
-              <strong>Linfopress Evolution PRO</strong> — це інноваційна система імпульсної пневматичної пресотерапії з технологією компресії, що точно відтворює природний фізіологічний відтік лімфи та венозної крові з видимим ефектом з першого сеансу.
+          <!-- 1. Top Centered Headline (No kicker) -->
+          <div class="linfopress-advanced-header">
+            <h2 class="linfopress-advanced-title">
+              ПРЕСОТЕРАПІЯ <span class="title-bold">ПЕРЕДОВОЇ КОМПРЕСІЇ</span>
+            </h2>
+            <p class="linfopress-advanced-desc">
+              <strong>Linfopress Evolution PRO</strong> — це система імпульсної пневматичної пресотерапії, що точно імітує фізіологічний рух кровообігу та лімфотоку. З клінічною ефективністю, видимою з першого сеансу, і без періоду відновлення.
             </p>
           </div>
 
-          <!-- 2. 4-Column Feature Pillars Grid On Top -->
-          <div class="linfopress-pillars-top-grid">
-            <div class="pillar-top-card">
-              <div class="pillar-top-num">01</div>
-              <h3 class="pillar-top-title">Клінічна ефективність</h3>
-              <p class="pillar-top-text">Видимий результат з 1-ї процедури: миттєве усунення набряків та відчуття легкості в тілі.</p>
+          <!-- 2. 4 Clean Frameless Feature Items (Matching Screenshot) -->
+          <div class="linfopress-frameless-features">
+            
+            <div class="frameless-feature-item">
+              <div class="feature-icon-wrapper">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <p class="feature-title">Клінічна ефективність</p>
+              <p class="feature-sub">видима з першого сеансу</p>
             </div>
-            <div class="pillar-top-card">
-              <div class="pillar-top-num">02</div>
-              <h3 class="pillar-top-title">Ідеальна комбінація</h3>
-              <p class="pillar-top-text">Повна сумісність з іншими апаратними та естетичними методиками для максимального результату.</p>
+
+            <div class="frameless-feature-item">
+              <div class="feature-icon-wrapper">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 11V7a2 2 0 0 1 2-2h4a2 2 0 0 0 2-2 2 2 0 0 1 4 0 2 2 0 0 0 2 2h4a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2 2 2 0 0 1 0 4 2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-4a2 2 0 0 0-2 2 2 2 0 0 1-4 0 2 2 0 0 0-2-2H6a2 2 0 0 1-2-2v-4a2 2 0 0 0-2-2 2 2 0 0 1 0-4 2 2 0 0 0 2-2z"></path>
+                </svg>
+              </div>
+              <p class="feature-title">Поєднується з іншими</p>
+              <p class="feature-sub">терапіями та технологіями</p>
             </div>
-            <div class="pillar-top-card">
-              <div class="pillar-top-num">03</div>
-              <h3 class="pillar-top-title">Система «Hands-Free»</h3>
-              <p class="pillar-top-text">100% автономна процедура без потреби постійної присутності персоналу в кабінеті.</p>
+
+            <div class="frameless-feature-item">
+              <div class="feature-icon-wrapper">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"></path>
+                  <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"></path>
+                  <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"></path>
+                  <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"></path>
+                </svg>
+              </div>
+              <p class="feature-title">Система</p>
+              <p class="feature-sub">«Вільні руки» (Hands-Free)</p>
             </div>
-            <div class="pillar-top-card">
-              <div class="pillar-top-num">04</div>
-              <h3 class="pillar-top-title">Клінічна безпека</h3>
-              <p class="pillar-top-text">Прецизійне регулювання градієнта тиску в кожній камері для захисту судинного русла.</p>
+
+            <div class="frameless-feature-item">
+              <div class="feature-icon-wrapper">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+              </div>
+              <p class="feature-title">Клінічна</p>
+              <p class="feature-sub">безпека</p>
             </div>
+
           </div>
 
-          <!-- 3. Wide Procedure Bed Image Underneath -->
-          <div class="linfopress-procedure-showcase-wrap">
-            <img src="/wp-content/uploads/linfopress_official/linfopress_procedure_bed.png" alt="Linfopress Evolution PRO Процедура на кушетці" class="linfopress-procedure-wide-img" loading="lazy">
+          <!-- 3. Stretched Wide Procedure Bed Image Underneath (No Borders, Full Width) -->
+          <div class="linfopress-procedure-stretch-wrap">
+            <img src="/wp-content/uploads/linfopress_official/new_photo_3.png" alt="Linfopress Evolution PRO Процедура на кушетці" class="linfopress-procedure-stretch-img" loading="lazy">
           </div>
 
         </div>

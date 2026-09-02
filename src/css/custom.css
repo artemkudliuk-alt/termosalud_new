@@ -7718,106 +7718,145 @@ footer {
 }
 
 /* ==========================================================================
-   2. Linfopress Pillars Section (Top Info Grid + Bottom Wide Image)
+   2. Linfopress Advanced Section (Frameless Minimalist Architecture)
    ========================================================================== */
-.linfopress-pillars-section {
-  padding: 90px 0 80px 0;
+.linfopress-advanced-section {
+  padding: 85px 0 0 0;
   background: #ffffff;
+  text-align: center;
 }
 
-.linfopress-pillars-top-grid {
+.linfopress-advanced-header {
+  max-width: 860px;
+  margin: 0 auto 50px auto;
+}
+
+.linfopress-advanced-title {
+  font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
+  font-size: clamp(26px, 3.2vw, 38px);
+  font-weight: 400;
+  color: #0f172a;
+  letter-spacing: 0.5px;
+  margin: 0 0 22px 0;
+  text-transform: uppercase;
+}
+
+.linfopress-advanced-title .title-bold {
+  font-weight: 900;
+}
+
+.linfopress-advanced-desc {
+  font-family: var(--active-body-font), 'Inter', sans-serif !important;
+  font-size: clamp(14.5px, 1.3vw, 16.5px);
+  color: #475569;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 780px;
+}
+
+.linfopress-frameless-features {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin: 48px 0 44px 0;
-  text-align: left;
+  gap: 32px;
+  max-width: 1060px;
+  margin: 0 auto 60px auto;
+  text-align: center;
 }
 
-.pillar-top-card {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 0px !important;
-  padding: 24px 20px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+.frameless-feature-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.pillar-top-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+.feature-icon-wrapper {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.frameless-feature-item:hover .feature-icon-wrapper {
+  transform: translateY(-3px);
+  background: #f1f5f9;
   border-color: #cbd5e1;
 }
 
-.pillar-top-num {
+.frameless-feature-item .feature-title {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
-  font-size: 13px;
-  font-weight: 900;
-  color: #64748b;
-  letter-spacing: 1.5px;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.pillar-top-title {
-  font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
-  font-size: 17px;
-  font-weight: 800;
+  font-size: 15.5px;
+  font-weight: 700;
   color: #0f172a;
-  margin: 0 0 10px 0;
   line-height: 1.3;
+  margin: 0 0 3px 0;
 }
 
-.pillar-top-text {
+.frameless-feature-item .feature-sub {
   font-family: var(--active-body-font), 'Inter', sans-serif !important;
-  font-size: 13.5px;
+  font-size: 14px;
   color: #64748b;
-  line-height: 1.6;
+  line-height: 1.4;
   margin: 0;
 }
 
-.linfopress-procedure-showcase-wrap {
+.linfopress-procedure-stretch-wrap {
   width: 100%;
-  border: 1px solid #e2e8f0;
-  border-radius: 0px !important;
+  margin: 0 auto;
   overflow: hidden;
-  background: #ffffff;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 10px;
 }
 
-.linfopress-procedure-wide-img {
+.linfopress-procedure-stretch-img {
   width: 100%;
   height: auto;
-  max-height: 520px;
+  max-height: 620px;
   object-fit: contain;
   display: block;
 }
 
 @media (max-width: 1024px) {
-  .linfopress-pillars-top-grid {
+  .linfopress-frameless-features {
     grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-    margin: 36px 0 36px 0;
+    gap: 28px 20px;
+    margin-bottom: 40px;
   }
 }
 
 @media (max-width: 768px) {
-  .linfopress-pillars-section {
-    padding: 60px 0 50px 0 !important;
+  .linfopress-advanced-section {
+    padding: 60px 0 0 0 !important;
   }
 
-  .linfopress-pillars-top-grid {
-    grid-template-columns: 1fr;
-    gap: 14px;
-    margin: 28px 0 28px 0;
+  .linfopress-advanced-header {
+    margin-bottom: 36px;
   }
 
-  .linfopress-procedure-showcase-wrap {
-    padding: 4px;
+  .linfopress-frameless-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 16px;
+    margin-bottom: 32px;
+  }
+
+  .feature-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 12px;
+  }
+
+  .frameless-feature-item .feature-title {
+    font-size: 14px;
+  }
+
+  .frameless-feature-item .feature-sub {
+    font-size: 12.5px;
   }
 }
 
