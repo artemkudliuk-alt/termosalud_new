@@ -6391,8 +6391,11 @@ footer {
 
 .results-gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
+  grid-template-columns: repeat(2, minmax(320px, 480px));
+  justify-content: center;
+  gap: 32px;
+  max-width: 1020px;
+  margin: 0 auto;
 }
 
 .result-card {
