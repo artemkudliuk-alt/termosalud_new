@@ -5436,17 +5436,17 @@ footer {
   line-height: inherit !important;
   width: fit-content !important;
   padding: 0 4px !important;
-  margin-bottom: 6px !important;
+  margin-bottom: 14px !important;
   z-index: 2 !important;
 }
 
 .zionic-hero-title .zionic-word-top::after {
   content: '' !important;
   position: absolute !important;
-  bottom: -4px !important;
+  bottom: 2px !important;
   left: -8px !important;
   right: -12px !important;
-  height: 38% !important;
+  height: 28% !important;
   background: #ffffff !important;
   border: none !important;
   border-radius: 0px !important;
