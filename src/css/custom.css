@@ -11369,3 +11369,48 @@ html, body {
   padding: 5px 12px !important;
   border-radius: 0 !important;
 }
+
+
+/* ==========================================================================
+   ZIONIC 5 REASONS / TREATMENTS FULLSCREEN INFOGRAPHIC SECTION
+   ========================================================================== */
+.zionic-treatments-fullscreen-section {
+  position: relative;
+  z-index: 15;
+  background: #ffffff;
+  padding: 100px 0 60px 0;
+  border-top: 1px solid #e4e4e7;
+  border-bottom: 1px solid #e4e4e7;
+  width: 100%;
+}
+
+.treatments-infographic-viewport {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.treatments-infographic-viewport img {
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  filter: contrast(1.03);
+}
+
+@media (max-width: 767px) {
+  .zionic-treatments-fullscreen-section {
+    padding: 70px 0 40px 0;
+  }
+  .treatments-infographic-viewport img {
+    max-width: 100%;
+  }
+}
