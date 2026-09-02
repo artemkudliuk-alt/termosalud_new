@@ -2894,27 +2894,27 @@ function cleanHtml(raw, pageName) {
             <div class="why-cards-col">
               <div class="why-cards-grid">
                 <div class="why-card-item">
-                  <span class="why-card-num">1</span>
+                  <span class="why-card-num">01</span>
                   <p class="why-card-text">Унікальна комбінація різних форм пресомасажу в одній програмі</p>
                 </div>
 
                 <div class="why-card-item">
-                  <span class="why-card-num">2</span>
+                  <span class="why-card-num">02</span>
                   <p class="why-card-text">Преміальна якість матеріалів виконання</p>
                 </div>
 
                 <div class="why-card-item">
-                  <span class="why-card-num">3</span>
+                  <span class="why-card-num">03</span>
                   <p class="why-card-text">Абсолютно унікальна куртка для пресомасажу холки і бочків</p>
                 </div>
 
                 <div class="why-card-item">
-                  <span class="why-card-num">4</span>
+                  <span class="why-card-num">04</span>
                   <p class="why-card-text">Найзручніший метод одягання манжет</p>
                 </div>
 
                 <div class="why-card-item">
-                  <span class="why-card-num">5</span>
+                  <span class="why-card-num">05</span>
                   <p class="why-card-text">Найінтенсивніший лімфодренажний масаж (завдяки підготовці та біоміметиці)</p>
                 </div>
               </div>
