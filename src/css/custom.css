@@ -13292,3 +13292,31 @@ footer {
   line-height: 1.6 !important;
   margin: 0 !important;
 }
+
+
+/* ==========================================================================
+   LINFOPRESS HERO OFFICIAL LOGO
+   ========================================================================== */
+.linfopress-hero-logo-wrap {
+  margin-bottom: 24px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+@media (max-width: 767px) {
+  .linfopress-hero-logo-wrap {
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+.linfopress-official-logo {
+  max-width: 320px !important;
+  width: auto !important;
+  height: auto !important;
+  max-height: 95px !important;
+  object-fit: contain !important;
+  display: block !important;
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.6)) !important;
+}
