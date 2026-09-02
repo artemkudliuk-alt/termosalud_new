@@ -1,26 +1,43 @@
 
 // ==========================================================================
-// CERTIFICATE FULLSCREEN LIGHTBOX HANDLERS
+// CERTIFICATE FULLSCREEN LIGHTBOX HANDLERS (ZERO SCROLL JUMP)
 // ==========================================================================
+window._savedCertScrollTop = 0;
+
 window.openCertLightbox = function(imgSrc, captionText) {
   const modal = document.getElementById('certLightboxModal');
   const img = document.getElementById('certLightboxImg');
   const caption = document.getElementById('certLightboxCaption');
   if (!modal || !img) return;
+
+  // Save current scroll position
+  window._savedCertScrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
   img.src = imgSrc;
   if (caption) caption.textContent = captionText || '';
+  
   modal.classList.add('is-open');
-  document.documentElement.classList.add('modal-open-lock');
-  document.body.classList.add('modal-open-lock');
 };
 
 window.closeCertLightbox = function(e) {
   if (e && e.target && e.target.closest('.cert-lightbox-dialog') && !e.target.classList.contains('cert-lightbox-close')) return;
+  if (e) {
+    if (typeof e.preventDefault === 'function') e.preventDefault();
+    if (typeof e.stopPropagation === 'function') e.stopPropagation();
+  }
+  
   const modal = document.getElementById('certLightboxModal');
   if (!modal) return;
+  
   modal.classList.remove('is-open');
-  document.documentElement.classList.remove('modal-open-lock');
-  document.body.classList.remove('modal-open-lock');
+
+  // Seamlessly restore scroll position without page jumping to top
+  if (typeof window._savedCertScrollTop === 'number') {
+    window.scrollTo({
+      top: window._savedCertScrollTop,
+      behavior: 'instant'
+    });
+  }
 };
 
 document.addEventListener('keydown', function(e) {
@@ -31,7 +48,6 @@ document.addEventListener('keydown', function(e) {
     }
   }
 });
-
 
 // SEO Article Toggle
 window.toggleZionicSeoArticle = function() {
