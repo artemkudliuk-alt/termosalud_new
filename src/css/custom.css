@@ -6887,6 +6887,303 @@ footer {
   }
 }
 
+/* ==========================================================================
+   ZIONIC DEDICATED MOBILE & TABLET RESPONSIVE SYSTEM (< 992px)
+   ========================================================================== */
+
+/* 1. Technical Infographic: Desktop vs Mobile Cards */
+.zionic-mobile-tech-block {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  /* Hide squished wide desktop graphic */
+  .desktop-infographic-wrap {
+    display: none !important;
+  }
+  /* Show clean Swiss architectural mobile tech cards */
+  .zionic-mobile-tech-block {
+    display: block !important;
+    width: 100%;
+    padding: 10px 0 20px 0;
+  }
+  .zionic-mobile-tech-header {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  .tech-mobile-kicker {
+    font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
+    font-size: 11.5px !important;
+    font-weight: 800 !important;
+    letter-spacing: 1.2px !important;
+    color: #54595f !important;
+    text-transform: uppercase !important;
+    display: block !important;
+    margin-bottom: 6px !important;
+  }
+  .tech-mobile-title {
+    font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 900 !important;
+    color: #1e232e !important;
+    margin: 0 !important;
+    line-height: 1.25 !important;
+  }
+  .zionic-mobile-tech-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+  }
+  .zionic-tech-card {
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 0px !important;
+    padding: 20px 18px !important;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.03) !important;
+  }
+  .tech-card-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin-bottom: 10px !important;
+  }
+  .tech-card-metric {
+    font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
+    font-size: 26px !important;
+    font-weight: 900 !important;
+    color: #1e232e !important;
+    line-height: 1 !important;
+  }
+  .tech-card-badge {
+    background: #f1f5f9 !important;
+    color: #54595f !important;
+    font-size: 11.5px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.8px !important;
+    padding: 4px 8px !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 0px !important;
+  }
+  .zionic-tech-card h4 {
+    font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 800 !important;
+    color: #1e232e !important;
+    margin: 0 0 8px 0 !important;
+  }
+  .zionic-tech-card p {
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+    color: #54595f !important;
+    margin: 0 !important;
+  }
+  .tech-mobile-diagram-preview {
+    margin-top: 18px !important;
+  }
+  .tech-view-full-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    padding: 13px 18px !important;
+    background: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    color: #1e232e !important;
+    font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    border-radius: 0px !important;
+  }
+
+  /* 2. Disable Curtain Sticky Locks on Mobile (< 992px) for Natural Smooth Touch Scrolling */
+  .zionic-curtain-stage,
+  .zionic-curtain-stage-2 {
+    height: auto !important;
+    min-height: 0 !important;
+    position: relative !important;
+  }
+  .zionic-fullwidth-infographic-section,
+  .zionic-accuracy-section {
+    position: relative !important;
+    top: auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    z-index: 1 !important;
+    padding: 60px 0 !important;
+    display: block !important;
+  }
+  .zionic-manipula-section,
+  .zionic-treatments-section {
+    position: relative !important;
+    top: auto !important;
+    margin-top: 0 !important;
+    box-shadow: none !important;
+    padding: 60px 0 !important;
+  }
+
+  /* 3. Section 2: 3D Manipula Showcase Stack Order */
+  .zionic-pillars-split-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+  .zionic-pillars-info-col {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .zionic-pillars-intro-box {
+    order: 1 !important;
+  }
+  .zionic-pillars-image-col {
+    order: 2 !important;
+    margin: 12px 0 20px 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .zionic-manipula-showcase-box {
+    max-width: 260px !important;
+    margin: 0 auto !important;
+  }
+  .zionic-manipula-zoom-img {
+    max-height: 200px !important;
+    width: auto !important;
+    object-fit: contain !important;
+  }
+  .zionic-minimal-pillars-list {
+    order: 3 !important;
+  }
+  .zionic-pillars-cta-wrap {
+    order: 4 !important;
+    margin-top: 24px !important;
+  }
+
+  /* 4. Section 6: Circular Anatomical Diagram */
+  .treatments-clean-circle-img {
+    max-width: 240px !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto 32px auto !important;
+  }
+  .treatments-swiss-layout {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  /* 5. Section 5: Accuracy & Video Cinema player */
+  .accuracy-cinematic-split {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+  }
+  .accuracy-cinema-player-box {
+    width: 100% !important;
+  }
+
+  /* 6. Section 4: Manipula Split */
+  .zionic-manipula-split-layout {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  /* 7. Section 8: Knowledge Hub (FAQ) - Sleek Horizontal Touch Ribbon */
+  .knowledge-filter-bar {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    padding: 4px 16px 14px 16px !important;
+    margin: 0 -16px 28px -16px !important;
+    gap: 8px !important;
+  }
+  .knowledge-filter-bar::-webkit-scrollbar {
+    display: none !important;
+  }
+  .knowledge-filter-btn {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+    font-size: 13.5px !important;
+    padding: 9px 16px !important;
+  }
+  .knowledge-trigger {
+    padding: 18px 16px !important;
+    gap: 12px !important;
+  }
+  .knowledge-left-meta {
+    gap: 12px !important;
+  }
+  .knowledge-num {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 14px !important;
+  }
+  .knowledge-action-icon {
+    width: 34px !important;
+    height: 34px !important;
+  }
+  .knowledge-body {
+    padding: 0 16px 20px 60px !important;
+  }
+
+  /* 8. Section 9: Application Form & Touch Optimization */
+  .presentation-stage-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .presentation-form-card {
+    padding: 24px 18px !important;
+  }
+  .format-switcher {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 4px !important;
+  }
+  .format-tab-btn {
+    padding: 11px 8px !important;
+    font-size: 12px !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  .form-row-2col {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .presentation-form-card .messenger-pills-row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+  }
+  .presentation-form-card .messenger-pill {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    justify-content: center !important;
+    padding: 11px 10px !important;
+    font-size: 13px !important;
+    border-radius: 0px !important;
+  }
+  .luxury-form-input {
+    min-height: 48px !important;
+    font-size: 15.5px !important;
+  }
+  .shimmer-submit-btn {
+    width: 100% !important;
+    min-height: 52px !important;
+    font-size: 15px !important;
+    justify-content: center !important;
+    padding: 14px 20px !important;
+  }
+  .zionic-direct-call-box {
+    padding: 14px 16px !important;
+    gap: 12px !important;
+  }
+  .direct-call-number {
+    font-size: 15px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .zionic-official-hero {
     min-height: auto;

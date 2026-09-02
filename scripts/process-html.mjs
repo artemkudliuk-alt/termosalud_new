@@ -1440,8 +1440,50 @@ function cleanHtml(raw, pageName) {
       <div class="zionic-curtain-stage">
         <!-- 3. FULL-WIDTH TECHNICAL INFOGRAPHIC (CLONED FROM TERMOSALUD) -->
         <section class="zionic-fullwidth-infographic-section" id="technologies">
-          <div class="zionic-infographic-fullwidth-container">
+          <div class="zionic-infographic-fullwidth-container desktop-infographic-wrap">
             <img src="/zionic_infografia_new.png" alt="Zionic Full-Width Technical Infographic" class="zionic-infographic-fullwidth-img" loading="lazy">
+          </div>
+
+          <!-- Mobile Adapted Technical Cards (Clean Swiss Architecture for Phones) -->
+          <div class="zionic-mobile-tech-block">
+            <div class="container">
+              <div class="zionic-mobile-tech-header">
+                <span class="tech-mobile-kicker">ТЕХНОЛОГІЧНА ПЕРЕВАГА</span>
+                <h3 class="tech-mobile-title">Запатентований синергічний вплив</h3>
+              </div>
+              <div class="zionic-mobile-tech-cards">
+                <div class="zionic-tech-card">
+                  <div class="tech-card-header">
+                    <span class="tech-card-metric">50 мм</span>
+                    <span class="tech-card-badge">Глибина</span>
+                  </div>
+                  <h4>Глибина проникнення до 5 см</h4>
+                  <p>Цілеспрямований прогрів гіподерми, фіброзних перемичок та прилеглих м'язових волокон без термічного опіку епідермісу.</p>
+                </div>
+                <div class="zionic-tech-card">
+                  <div class="tech-card-header">
+                    <span class="tech-card-metric">470 кГц</span>
+                    <span class="tech-card-badge">RF енергія</span>
+                  </div>
+                  <h4>Резистивний монополярний RF</h4>
+                  <p>Золотий медичний стандарт селективного ліполізу. Стимулює природний апоптоз адипоцитів і скорочення колагенового каркасу.</p>
+                </div>
+                <div class="zionic-tech-card">
+                  <div class="tech-card-header">
+                    <span class="tech-card-metric">MARP</span>
+                    <span class="tech-card-badge">Механіка</span>
+                  </div>
+                  <h4>Ротаційний масаж MARP</h4>
+                  <p>Інтенсивне тривимірне обертання роликів під сенсорним контролем тиску. Потужний лімфодренаж і вирівнювання рельєфу.</p>
+                </div>
+              </div>
+              <div class="tech-mobile-diagram-preview">
+                <a href="/zionic_infografia_new.png" target="_blank" class="tech-view-full-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>Дивитися повну інфографіку (HD)</span>
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
