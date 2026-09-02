@@ -1335,11 +1335,11 @@ function cleanHtml(raw, pageName) {
             </p>
 
             <div class="zionic-hero-actions">
-              <a href="#test-drive" class="zionic-primary-btn">
+              <a href="#test-drive-form" class="zionic-primary-btn">
                 <span>Замовити тест-драйв у клініку</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
-              <button type="button" class="zionic-secondary-btn" id="open_zionic_video_btn" data-video-id="CYsDii-PZ7s" onclick="window.openZionicVideoLightbox()">
+              <button type="button" class="zionic-secondary-btn" id="open_zionic_video_btn" data-video-id="cqskAxvFlxY" onclick="window.openZionicVideoLightbox('cqskAxvFlxY')">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                 <span>Відео-демонстрація</span>
               </button>
@@ -1840,14 +1840,14 @@ function cleanHtml(raw, pageName) {
       <!-- 8. PROCEDURE VIDEO BANNER -->
             <!-- 8. PROCEDURE VIDEO FULLSCREEN BANNER (EDGE-TO-EDGE) -->
             <!-- 8. PROCEDURE VIDEO FULLSCREEN BANNER (CIRCULAR PLAY ICON ONLY) -->
-      <section class="zionic-video-fullscreen-banner js-open-video-lightbox" id="procedure" data-video-id="cqskAxvFlxY">
+      <section class="zionic-video-fullscreen-banner" id="procedure" data-video-id="cqskAxvFlxY">
         <video autoplay loop muted playsinline poster="/wp-content/uploads/2026/03/procedure-2-optimized.jpg" class="video-fullscreen-bg">
           <source src="/wp-content/uploads/2026/03/tratamiento_de_remodelaciun_corporal_zionic_online_video_cutter.mp4" type="video/mp4">
         </video>
         <div class="video-fullscreen-vignette"></div>
 
         <div class="video-fullscreen-center-box">
-          <button type="button" class="lux-play-pure-circle-btn js-open-video-lightbox" data-video-id="cqskAxvFlxY" aria-label="Дивитись відео ZIONIC">
+          <button type="button" class="lux-play-pure-circle-btn" data-video-id="cqskAxvFlxY" aria-label="Дивитись відео ZIONIC" onclick="window.openZionicVideoLightbox('cqskAxvFlxY')">
             <span class="pure-pulse-ring"></span>
             <span class="pure-pulse-ring-outer"></span>
             <div class="pure-circle-inner">
@@ -1937,7 +1937,7 @@ function cleanHtml(raw, pageName) {
 
             <!-- Right Column: Open High-Converting Partnership Form -->
             <div class="presentation-form-col">
-              <div class="presentation-form-card">
+              <div class="presentation-form-card" id="test-drive-form">
                 <div class="form-card-header">
                   <span class="partner-card-kicker">ЗАЯВКА НА СПІВПРАЦЮ</span>
                   <h3 class="form-card-title">Заявка на презентацію ZIONIC</h3>
@@ -2271,11 +2271,11 @@ function cleanHtml(raw, pageName) {
             </p>
 
             <div class="linfopress-hero-actions">
-              <a href="#application" class="linfopress-primary-btn">
+              <a href="#application-form" class="linfopress-primary-btn">
                 <span>ЗАМОВИТИ ТЕСТ-ДРАЙВ У КЛІНІКУ</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
-              <button type="button" class="linfopress-secondary-btn" id="open-linfopress-video-btn" onclick="window.openLinfopressVideoLightbox()">
+              <button type="button" class="linfopress-secondary-btn" id="open-linfopress-video-btn" onclick="window.openLinfopressVideoLightbox('K1v77enueJ8')">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                 <span>ВІДЕО-ДЕМОНСТРАЦІЯ</span>
               </button>
@@ -3102,7 +3102,7 @@ function cleanHtml(raw, pageName) {
 
             <!-- Right Column: Open High-Converting Partnership Form -->
             <div class="presentation-form-col">
-              <div class="presentation-form-card">
+              <div class="presentation-form-card" id="application-form">
                 <div class="form-card-header">
                   <span class="partner-card-kicker">ЗАЯВКА НА СПІВПРАЦЮ</span>
                   <h3 class="form-card-title">Заявка на презентацію Linfopress</h3>

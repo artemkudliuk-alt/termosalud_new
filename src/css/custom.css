@@ -2329,6 +2329,7 @@ header .logo:hover img {
 }
 
 .presentation-form-card {
+  scroll-margin-top: 85px !important;
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
   border-radius: 0px !important;
@@ -2540,11 +2541,10 @@ header .logo:hover img {
   }
 }
 
-/* Lock background scrolling when modal is open */
+/* Lock background scrolling when modal is open without collapsing document height */
 html.modal-open-lock,
 body.modal-open-lock {
   overflow: hidden !important;
-  height: 100% !important;
   touch-action: none !important;
 }
 
@@ -7417,7 +7417,8 @@ footer {
    ZIONIC VIDEO LIGHTBOX MODAL (SWISS MEDICAL CINEMA POPUP)
    ========================================================================== */
 .zionic-video-lightbox {
-  position: relative !important;
+  position: fixed !important;
+  inset: 0 !important;
   top: 0 !important;
   left: 0 !important;
   width: 100vw !important;
@@ -7431,22 +7432,26 @@ footer {
   box-sizing: border-box !important;
 }
 
-.zionic-video-lightbox.show {
+.zionic-video-lightbox.show,
+.zionic-video-lightbox.is-active {
   display: flex !important;
 }
 
-.zionic-video-lightbox .glass-modal-backdrop {
-  position: absolute !important;
+.zionic-video-lightbox .glass-modal-backdrop,
+.zionic-video-lightbox .zionic-video-lightbox-backdrop {
+  position: fixed !important;
+  inset: 0 !important;
   top: 0 !important;
   left: 0 !important;
   width: 100% !important;
   height: 100% !important;
-  background: rgba(15, 23, 42, 0.88) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
+  background: rgba(15, 23, 42, 0.9) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
   cursor: pointer !important;
 }
 
+.zionic-video-lightbox-dialog,
 .zionic-video-lightbox-card {
   position: relative !important;
   width: 100% !important;

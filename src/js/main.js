@@ -540,7 +540,11 @@ function initSmoothScroll() {
 
     const targetId = anchor.getAttribute('href');
     if (targetId && targetId !== '#' && targetId !== '#popup_request') {
-      const targetElement = document.querySelector(targetId);
+      let targetElement = document.querySelector(targetId);
+      if (targetId === '#test-drive' || targetId === '#application') {
+        const formCard = targetElement ? (targetElement.querySelector('.presentation-form-card') || targetElement) : document.querySelector('.presentation-form-card');
+        if (formCard) targetElement = formCard;
+      }
       if (targetElement) {
         e.preventDefault();
         targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -1155,7 +1159,7 @@ function initZionicCurtainSlide() {
  * 19. Apparatus Video Lightbox Modal & Smooth Scroll to Application Form
  */
 window.openZionicVideoLightbox = function(videoId) {
-  const vid = videoId || 'CYsDii-PZ7s';
+  const vid = videoId || 'cqskAxvFlxY';
   const modal = document.getElementById('zionic_video_modal');
   const container = document.getElementById('zionic_modal_video_container');
   if (!modal || !container) return;
@@ -1168,8 +1172,7 @@ window.openZionicVideoLightbox = function(videoId) {
   `;
   modal.style.display = 'flex';
   modal.classList.add('is-active', 'show');
-  document.documentElement.classList.add('modal-open-lock');
-  document.body.classList.add('modal-open-lock');
+  // Intentionally NO modal-open-lock: keep page scroll position 100% frozen in place without snapping!
 };
 
 window.closeZionicVideoLightbox = function() {
@@ -1180,8 +1183,6 @@ window.closeZionicVideoLightbox = function() {
     modal.classList.remove('is-active', 'show');
   }
   if (container) container.innerHTML = '';
-  document.documentElement.classList.remove('modal-open-lock');
-  document.body.classList.remove('modal-open-lock');
 };
 
 window.openLinfopressVideoLightbox = function(videoId) {
@@ -1198,8 +1199,6 @@ window.openLinfopressVideoLightbox = function(videoId) {
   `;
   modal.style.display = 'flex';
   modal.classList.add('is-active', 'show');
-  document.documentElement.classList.add('modal-open-lock');
-  document.body.classList.add('modal-open-lock');
 };
 
 window.closeLinfopressVideoLightbox = function() {
@@ -1210,8 +1209,6 @@ window.closeLinfopressVideoLightbox = function() {
     modal.classList.remove('is-active', 'show');
   }
   if (container) container.innerHTML = '';
-  document.documentElement.classList.remove('modal-open-lock');
-  document.body.classList.remove('modal-open-lock');
 };
 
 function initZionicVideoModal() {
@@ -1229,23 +1226,17 @@ function initZionicVideoModal() {
         document.body.classList.remove('modal-open-lock');
         document.documentElement.classList.remove('modal-open-lock');
 
-        const targetEl = document.querySelector(href) || document.querySelector('.application-presentation') || document.querySelector('.presentation-form-card');
-        if (targetEl) {
-          const header = document.querySelector('.header');
-          const headerHeight = header ? header.offsetHeight : 72;
-          const targetY = targetEl.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-
-          window.scrollTo({
-            top: Math.max(0, targetY),
-            behavior: 'smooth'
-          });
+        const section = document.querySelector(href) || document.querySelector('.application-presentation');
+        const formCard = section ? (section.querySelector('.presentation-form-card') || section) : document.querySelector('.presentation-form-card');
+        if (formCard) {
+          formCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
         return;
       }
     }
 
     // 2. Video Demonstration Buttons
-    const openTrigger = e.target.closest('#open_zionic_video_btn, #open-linfopress-video-btn, .zionic-secondary-btn, .linfopress-secondary-btn, .lux-play-pure-circle-btn, [data-open-zionic-video]');
+    const openTrigger = e.target.closest('#open_zionic_video_btn, #open-linfopress-video-btn, .zionic-secondary-btn, .linfopress-secondary-btn, .lux-play-pure-circle-btn, [data-open-zionic-video], .js-open-video-lightbox');
     if (openTrigger) {
       e.preventDefault();
       e.stopPropagation();
@@ -1255,7 +1246,7 @@ function initZionicVideoModal() {
       if (isLinfopress) {
         window.openLinfopressVideoLightbox(videoId || 'K1v77enueJ8');
       } else {
-        window.openZionicVideoLightbox(videoId || 'CYsDii-PZ7s');
+        window.openZionicVideoLightbox(videoId || 'cqskAxvFlxY');
       }
       return;
     }
