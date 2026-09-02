@@ -2924,51 +2924,49 @@ function cleanHtml(raw, pageName) {
       </section>
 
       <!-- ==========================================================================
-           8.5. EQUIPMENT PACKAGE (#package)
+           8.5. EQUIPMENT PACKAGE (#package) - DARK LUXURY SHOWCASE
            ========================================================================== -->
       <section class="linfopress-package-section" id="package">
-        <div class="container">
-          <div class="linfopress-package-box">
-            <div class="package-header">
-              <h3 class="package-title">Комплект поставки</h3>
-              <p class="package-subtitle">Повна заводська комплектація обладнання для миттєвого старту роботи в клініці</p>
+        <div class="container package-container">
+          <div class="package-header">
+            <h2 class="package-title">Комплект поставки</h2>
+            <p class="package-subtitle">Повна заводська комплектація обладнання для миттєвого старту роботи в клініці</p>
+          </div>
+
+          <div class="package-items-grid">
+            <div class="package-item-card">
+              <div class="package-img-wrap">
+                <img src="/wp-content/uploads/2026/03/set1-optimized.png" alt="Апарат Linfopress PRO" loading="lazy">
+              </div>
+              <h4 class="package-item-name">Апарат Linfopress PRO</h4>
             </div>
 
-            <div class="package-items-grid">
-              <div class="package-item-card">
-                <div class="package-img-wrap">
-                  <img src="/wp-content/uploads/2026/03/set1-optimized.png" alt="Апарат Linfopress" loading="lazy">
-                </div>
-                <h4 class="package-item-name">Апарат Linfopress PRO</h4>
+            <div class="package-item-card">
+              <div class="package-img-wrap">
+                <img src="/wp-content/uploads/2026/03/set2-optimized.png" alt="Функціональний візок" loading="lazy">
               </div>
+              <h4 class="package-item-name">Функціональний візок</h4>
+            </div>
 
-              <div class="package-item-card">
-                <div class="package-img-wrap">
-                  <img src="/wp-content/uploads/2026/03/set2-optimized.png" alt="Функціональний візок" loading="lazy">
-                </div>
-                <h4 class="package-item-name">Функціональний візок</h4>
+            <div class="package-item-card">
+              <div class="package-img-wrap">
+                <img src="/wp-content/uploads/2026/03/pants2-optimized.jpg" alt="Манжети для ніг і пояс" loading="lazy">
               </div>
+              <h4 class="package-item-name">Манжети для ніг і пояс</h4>
+            </div>
 
-              <div class="package-item-card">
-                <div class="package-img-wrap">
-                  <img src="/wp-content/uploads/2026/03/pants2-optimized.jpg" alt="Манжети для ніг" loading="lazy">
-                </div>
-                <h4 class="package-item-name">Манжети для ніг і пояс</h4>
+            <div class="package-item-card">
+              <div class="package-img-wrap">
+                <img src="/wp-content/uploads/2026/03/shirt2-optimized.jpg" alt="Куртка для тулубу та холки" loading="lazy">
               </div>
+              <h4 class="package-item-name">Куртка для тулубу та холки</h4>
+            </div>
 
-              <div class="package-item-card">
-                <div class="package-img-wrap">
-                  <img src="/wp-content/uploads/2026/03/shirt2-optimized.jpg" alt="Куртка для тулубу" loading="lazy">
-                </div>
-                <h4 class="package-item-name">Куртка для тулубу та холки</h4>
+            <div class="package-item-card">
+              <div class="package-img-wrap">
+                <img src="/wp-content/uploads/2026/03/set5-optimized.png" alt="Дві манжети для рук" loading="lazy">
               </div>
-
-              <div class="package-item-card">
-                <div class="package-img-wrap">
-                  <img src="/wp-content/uploads/2026/03/set5-optimized.png" alt="Манжети для рук" loading="lazy">
-                </div>
-                <h4 class="package-item-name">Дві манжети для рук</h4>
-              </div>
+              <h4 class="package-item-name">Дві манжети для рук</h4>
             </div>
           </div>
         </div>
