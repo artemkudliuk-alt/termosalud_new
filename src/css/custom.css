@@ -11812,3 +11812,125 @@ html, body {
     opacity: 0;
   }
 }
+
+
+/* ==========================================================================
+   ZIONIC PARTNER & PRESENTATION STAGE (ORIGINAL CONTENT + LUXURY DESIGN)
+   ========================================================================== */
+.zionic-partner-stage-section {
+  position: relative;
+  z-index: 18;
+  background: #f4f4f5;
+  padding: 110px 0;
+  border-top: 1px solid #e4e4e7;
+  border-bottom: 1px solid #e4e4e7;
+}
+
+.zionic-partner-stage-section .presentation-stage-grid {
+  display: grid;
+  grid-template-columns: 48% 52%;
+  gap: 40px;
+  align-items: stretch;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .zionic-partner-stage-section .presentation-stage-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.presentation-photo-frame {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  border: 1px solid #e4e4e7;
+  background: #ffffff;
+  margin-bottom: 24px;
+}
+
+.presentation-photo-frame .presentation-showcase-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+}
+
+.partner-guarantees-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.guarantees-head-title {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  color: #111111 !important;
+  margin: 0 0 6px 0 !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+}
+
+.guarantee-item-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #ffffff;
+  border: 1px solid #e4e4e7;
+  padding: 14px 18px;
+  border-radius: 0 !important;
+  transition: all 0.25s ease;
+}
+
+.guarantee-item-row:hover {
+  border-color: #27272a;
+  transform: translateX(4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.guarantee-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  color: #111111;
+  background: #f4f4f5;
+  border: 1px solid #d4d4d8;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.guarantee-text strong {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  color: #111111;
+  margin-bottom: 3px;
+}
+
+.guarantee-text span {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #52525b;
+  line-height: 1.5;
+}
+
+.partner-card-kicker {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #71717a;
+  margin-bottom: 8px;
+}
