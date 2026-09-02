@@ -1323,6 +1323,441 @@ function cleanHtml(raw, pageName) {
     html = html.replace(/<div[\s\n]+class=partners>[\s\S]*?<section[\s\n]+class="seo_text\s*"[\s\S]*?<\/section>/i, `${modernPartnersSection}\n${modernSeoSection}`);
   }
 
+  // ==========================================
+  // ZIONIC SUBPAGE REDESIGN (OFFICIAL TERMOSALUD LUXURY ARCHITECTURE)
+  // ==========================================
+  if (pageName === 'zionic') {
+    const modernZionicHtml = `
+      <!-- 1. ZIONIC OFFICIAL LUXURY HERO -->
+      <section class="zionic-official-hero">
+        <div class="zionic-hero-bg-media">
+          <video autoplay loop muted playsinline class="zionic-hero-bg-video" preload="auto" poster="/photo_zionic.png">
+            <source src="/zionic.mp4" type="video/mp4">
+          </video>
+          <div class="zionic-hero-overlay"></div>
+        </div>
+
+        <div class="container zionic-hero-container">
+          <div class="zionic-hero-content">
+            <div class="zionic-hero-logo-wrap">
+              <img src="/wp-content/uploads/zionic_official/Zionic-Aesthetic-logotipo.png" alt="Zionic Aesthetic" class="zionic-official-logo">
+            </div>
+
+            <h1 class="zionic-hero-title">
+              <span class="zionic-word-top">НОВА ЕРА</span>
+              <span class="zionic-word-bottom">КОРЕКЦІЇ ТІЛА</span>
+            </h1>
+
+            <p class="zionic-hero-desc">
+              КОМБІНОВАНИЙ МОНОПОЛЯРНИЙ RF ТА РОТАЦІЙНИЙ МАСАЖ MARP
+            </p>
+
+            <div class="zionic-hero-actions">
+              <button class="zionic-primary-btn" data-target="#popup_request">
+                <span>Замовити тест-драйв у клініку</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+              <a href="#zionic-accuracy" class="zionic-secondary-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>Відео-демонстрація</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. PILLARS + 3D MANIPULA SHOWCASE (CLONED FROM TERMOSALUD WITH UKRAINIAN LOCALIZATION) -->
+      <section class="zionic-pillars-section" id="zionic-advantages">
+        <div class="container">
+          <div class="zionic-pillars-split-wrap">
+            
+            <!-- Left Column: Information & Minimalist Benefits -->
+            <div class="zionic-pillars-info-col">
+              <div class="zionic-pillars-intro-box">
+                <h2 class="zionic-pillars-headline">ШВИДКО + РЕНТАБЕЛЬНО</h2>
+                <p class="zionic-pillars-desc">
+                  Втілення 35 років інновацій іспанської естетичної медицини Termosalud. Синергія активного ротаційного масажу (MARP) та монополярного RF 470 кГц гарантує бездоганні клінічні результати для лідерів індустрії.
+                </p>
+              </div>
+
+              <!-- Minimalist Airy Highlights -->
+              <div class="zionic-minimal-pillars-list">
+                <!-- Point 1 -->
+                <div class="pillar-min-item">
+                  <div class="pillar-min-bullet">01</div>
+                  <div class="pillar-min-body">
+                    <h3 class="pillar-min-title">Висока рентабельність</h3>
+                    <p class="pillar-min-text">
+                      Швидка окупність інвестицій від 3 до 6 місяців, високий чек сеансу та відсутність дорогих витратних матеріалів.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="pillar-min-item">
+                  <div class="pillar-min-bullet">02</div>
+                  <div class="pillar-min-body">
+                    <h3 class="pillar-min-title">Запатентована технологія</h3>
+                    <p class="pillar-min-text">
+                      Перша у світі комбінована система резистивного RF 470 кГц та активного ротаційного масажу MARP під сенсорним контролем.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="pillar-min-item">
+                  <div class="pillar-min-bullet">03</div>
+                  <div class="pillar-min-body">
+                    <h3 class="pillar-min-title">Швидкі та стійкі результати</h3>
+                    <p class="pillar-min-text">
+                      Виразне зменшення об'ємів тіла, розгладження целюліту та потужний ліфтинг шкіри вже після 1-го сеансу.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CTA Button under left info -->
+              <div class="zionic-pillars-cta-wrap">
+                <button class="zionic-sharp-contact-btn" data-target="#popup_request">
+                  <span>ЗАМОВИТИ ПРЕЗЕНТАЦІЮ</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Column: Large 3D Manipula with Scroll Zoom Effect -->
+            <div class="zionic-pillars-image-col">
+              <div class="zionic-manipula-showcase-box">
+                <img src="/wp-content/uploads/zionic_official/ZIONIC-_manipulo2-copia-e1713857050153.png" alt="Zionic Deep Action Manipula 3D" class="zionic-manipula-zoom-img" id="zionic-scroll-manipula">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. FULL-WIDTH TECHNICAL INFOGRAPHIC (CLONED FROM TERMOSALUD) -->
+      <section class="zionic-fullwidth-infographic-section" id="technologies">
+        <div class="zionic-infographic-fullwidth-container">
+          <img src="/zionic_infografia_new.png" alt="Zionic Full-Width Technical Infographic" class="zionic-infographic-fullwidth-img" loading="lazy">
+        </div>
+      </section>
+
+      <!-- 4. MANIPULA DEEP ACTION BREAKDOWN (PREMIUM SWISS MEDICAL SPLIT) -->
+      <section class="zionic-manipula-section" id="manipula">
+        <div class="container">
+          <div class="zionic-section-header">
+            <h2>Маніпула Deep Action: Досконалість інженерії</h2>
+            <p class="section-subtitle">
+              Ергономічна конструкція зі змінними насадками для прицільної та комфортної роботи лікаря по будь-якій зоні тіла.
+            </p>
+          </div>
+
+          <div class="zionic-manipula-split-layout">
+            <!-- Left: Doctor Hands Photo with Pure Frame -->
+            <div class="zionic-manipula-media-col">
+              <div class="manipula-photo-frame">
+                <img src="/wp-content/uploads/zionic_official/manipulo-deep-action-1024x683.jpg" alt="Маніпула Deep Action Zionic у роботі лікаря" class="manipula-full-photo" loading="lazy">
+              </div>
+            </div>
+
+            <!-- Right: Swiss Minimalist Spec Rows -->
+            <div class="zionic-manipula-specs-col">
+              <div class="manipula-swiss-list">
+                
+                <div class="manipula-swiss-item">
+                  <div class="swiss-item-bullet">01</div>
+                  <div class="swiss-item-content">
+                    <h3 class="swiss-item-title">Змінні обертові насадки</h3>
+                    <p class="swiss-item-desc">Комплект зі змінних сфер різного діаметру для анатомічної адаптації під малі та великі зони тіла (живіт, стегна, сідниці, руки, спина).</p>
+                  </div>
+                </div>
+
+                <div class="manipula-swiss-item">
+                  <div class="swiss-item-bullet">02</div>
+                  <div class="swiss-item-content">
+                    <h3 class="swiss-item-title">Сенсорний 2,8" дисплей на ручці</h3>
+                    <p class="swiss-item-desc">Прямий контроль швидкості ротації, температури нагріву та потужності RF безпосередньо з маніпули під час сеансу без відволікання від пацієнта.</p>
+                  </div>
+                </div>
+
+                <div class="manipula-swiss-item">
+                  <div class="swiss-item-bullet">03</div>
+                  <div class="swiss-item-content">
+                    <h3 class="swiss-item-title">Потужність генератора до 200 Вт</h3>
+                    <p class="swiss-item-desc">Високоефективна резистивна діатермія забезпечує швидке досягнення терапевтичної гіпертермії (39–42°C) у глибоких шарах гіподерми.</p>
+                  </div>
+                </div>
+
+                <div class="manipula-swiss-item">
+                  <div class="swiss-item-bullet">04</div>
+                  <div class="swiss-item-content">
+                    <h3 class="swiss-item-title">Інтелектуальні сенсори безпеки</h3>
+                    <p class="swiss-item-desc">Постійний моніторинг температури та сили притискання з автоматичним захистом від перегріву для 100% безпеки та комфорту клієнта.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. ACCURACY & VIDEO DEMONSTRATION (CINEMATIC SPLIT SHOWCASE) -->
+      <section class="zionic-accuracy-section" id="zionic-accuracy">
+        <div class="container">
+          <div class="accuracy-cinematic-split">
+            
+            <!-- Left Column: Clinical Control Info -->
+            <div class="accuracy-info-col">
+              <h2 class="accuracy-title">ВІДТВОРЮВАНІСТЬ ТА ПРЕЦИЗІЙНА ТОЧНІСТЬ</h2>
+              <p class="accuracy-desc">
+                Інтуїтивний інтерфейс з відображенням параметрів у реальному часі дозволяє зберігати індивідуальні протоколи пацієнтів та відтворювати перевірені результати від сеансу до сеансу.
+              </p>
+
+              <div class="accuracy-highlights-list">
+                <div class="accuracy-highlight-item">
+                  <div class="accuracy-hl-bullet">01</div>
+                  <div class="accuracy-hl-text">
+                    <h4>Сенсорний контроль 470 кГц</h4>
+                    <p>Автоматичне калібрування потужності за показниками імпедансу тканин у реальному часі.</p>
+                  </div>
+                </div>
+
+                <div class="accuracy-highlight-item">
+                  <div class="accuracy-hl-bullet">02</div>
+                  <div class="accuracy-hl-text">
+                    <h4>100% повторюваність протоколів</h4>
+                    <p>Збереження персональних налаштувань пацієнта для гарантованого результату кожного разу.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accuracy-cta-row">
+                <button class="zionic-sharp-contact-btn zionic-btn-light" data-target="#popup_request">
+                  <span>ЗАМОВИТИ ПРЕЗЕНТАЦІЮ</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Column: 16:9 Cinematic Video Player Card -->
+            <div class="accuracy-video-col">
+              <div class="accuracy-cinema-player-box">
+                <div class="video-preview-wrapper" data-video-id="CYsDii-PZ7s">
+                  <img src="/wp-content/uploads/2026/03/zio-1.mp4_snapshot_00.02.383-optimized.jpg" alt="Відео демонстрація Zionic" class="accuracy-video-thumb">
+                  
+                  <div class="accuracy-play-pulse-btn">
+                    <div class="play-pulse-ring"></div>
+                    <div class="play-pulse-core">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+                    </div>
+                  </div>
+
+                  <div class="accuracy-video-bottom-bar">
+                    <span class="video-live-pill">LIVE ДЕМОНСТРАЦІЯ</span>
+                    <span class="video-caption-text">Процедура моделювання тіла ZIONIC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. TREATMENT AREAS & PROTOCOLS (SWISS MINIMALIST SPLIT) -->
+      <section class="zionic-treatments-section" id="treatment-areas">
+        <div class="container">
+          <div class="zionic-section-header">
+            <h2>Зони застосування та показання</h2>
+            <p class="section-subtitle">
+              Zionic розроблений для комплексної роботи з усім тілом та вирішення найпоширеніших естетичних завдань пацієнтів.
+            </p>
+          </div>
+
+          <div class="treatments-swiss-layout">
+            <!-- Left: Seamless Circle Image on Pure White Background (No Frame) -->
+            <div class="treatments-media-col">
+              <img src="/zionic_treatments_ukr.png" alt="Контуринг тіла Zionic - протоколи лікування" class="treatments-clean-circle-img" loading="lazy">
+            </div>
+
+            <!-- Right: Swiss Minimalist Rows -->
+            <div class="treatments-list-col">
+              <div class="treatments-swiss-list">
+
+                <!-- Item 01 -->
+                <div class="treatment-swiss-item">
+                  <div class="swiss-item-bullet">01</div>
+                  <div class="swiss-item-content">
+                    <h3 class="swiss-item-title">Зменшення жирових відкладень та ліполіз</h3>
+                    <p class="swiss-item-desc">Локальне розщеплення жирових клітин, зменшення об'ємів живота, боків і спини завдяки глибокому монополярному прогріву 470 кГц.</p>
+                  </div>
+                </div>
+
+                <!-- Item 02 -->
+                <div class="treatment-swiss-item">
+                  <div class="swiss-item-bullet">02</div>
+                  <div class="swiss-item-content">
+                    <h3 class="swiss-item-title">Антицелюлітна дія (Стадії I, II та III)</h3>
+                    <p class="swiss-item-desc">Глибоке розгладження фіброзних перемичок «апельсинової кірки», вирівнювання рельєфу та відновлення щільності стегон і сідниць.</p>
+                  </div>
+                </div>
+
+                <!-- Item 03 -->
+                <div class="treatment-swiss-item">
+                  <div class="swiss-item-bullet">03</div>
+                  <div class="swiss-item-content">
+                    <h3 class="swiss-item-title">Підтягнення шкіри та ефект «Push-Up»</h3>
+                    <p class="swiss-item-desc">Миттєве скорочення та стимуляція неоколагенезу, виразний ліфтинг сідниць, внутрішньої поверхні стегон та розтягнутої шкіри після пологів.</p>
+                  </div>
+                </div>
+
+                <!-- Item 04 -->
+                <div class="treatment-swiss-item">
+                  <div class="swiss-item-bullet">04</div>
+                  <div class="swiss-item-content">
+                    <h3 class="swiss-item-title">Активація кровообігу та лімфодренаж</h3>
+                    <p class="swiss-item-desc">Потужна активна ротація MARP стимулює судинне русло, ліквідує тканинний застій та прискорює виведення токсинів і надлишку рідини.</p>
+                  </div>
+                </div>
+
+                <!-- Item 05 -->
+                <div class="treatment-swiss-item">
+                  <div class="swiss-item-bullet">05</div>
+                  <div class="swiss-item-content">
+                    <h3 class="swiss-item-title">Ефект тонусування та ремоделювання</h3>
+                    <p class="swiss-item-desc">Усунення в'ялості в зоні трицепса, підтяжка контуру рук, зміцнення м'язово-апоневротичного каркаса всього тіла.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. CLINICAL RESULTS / BEFORE & AFTER -->
+      <section class="zionic-results-section" id="results">
+        <div class="container">
+          <div class="zionic-section-header">
+            <h2>Доведені результати лікування</h2>
+            <p class="section-subtitle">
+              Фотографії реальних пацієнтів після проходження стандартного курсу процедур на апараті ZIONIC.
+            </p>
+          </div>
+
+          <div class="results-gallery-grid">
+            <div class="result-card">
+              <div class="result-img-wrap">
+                <img src="/wp-content/uploads/zionic_official/Zionic_C.jpg" alt="Результат лікування целюліту стегон Zionic">
+              </div>
+              <div class="result-meta">
+                <h4>Корекція форми стегон та лікування целюліту</h4>
+                <div class="result-badge-row">
+                  <span class="badge-sessions">Курс: 8 сеансів</span>
+                  <span class="badge-tech">MARP + RF 470 кГц</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-card">
+              <div class="result-img-wrap">
+                <img src="/wp-content/uploads/zionic_official/Zionic_B-scaled.jpg" alt="Результат ремоделювання живота Zionic">
+              </div>
+              <div class="result-meta">
+                <h4>Підтяжка шкіри та зменшення об'єму живота</h4>
+                <div class="result-badge-row">
+                  <span class="badge-sessions">Курс: 6 сеансів</span>
+                  <span class="badge-tech">MARP + RF 470 кГц</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. FAQ ACCORDION -->
+      <section class="zionic-faq-section" id="faq">
+        <div class="container">
+          <div class="zionic-section-header">
+            <h2>Все, що потрібно знати про ZIONIC</h2>
+          </div>
+
+          <div class="faq-accordion-list">
+            <div class="faq-item">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span>Скільки процедур потрібно для отримання стійкого результату?</span>
+                <span class="faq-arrow">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Перші відчутні результати (покращення тургору шкіри, зменшення набряклості) помітні вже після 1–2 сеансів. Для стійкого та вираженого ефекту моделювання фігури та зменшення целюліту рекомендовано курс із 6–10 процедур з інтервалом 2–3 дні.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span>Чи болюча процедура для пацієнта?</span>
+                <span class="faq-arrow">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Процедура абсолютно безболісна та комфортна. Пацієнт відчуває приємне глибоке тепло від резистивного RF та розслабляючий масаж обертовими сферами. Завдяки сенсорному контролю виключено ризик перегріву або опіку.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span>Яка окупність апарата для клініки?</span>
+                <span class="faq-arrow">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Середній термін окупності становить від 3 до 6 місяців при навантаженні 3–4 пацієнти на день. Відсутність дорогих одноразових витратних матеріалів робить маржинальність кожної процедури понад 85%.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" aria-expanded="false">
+                <span>Чи проводиться навчання персоналу клініки?</span>
+                <span class="faq-arrow">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Так! При купівлі або оренді апарата сертифікований лікар-тренер Termosalud проводить повне очне практичне навчання спеціалістів вашої клініки з видачею офіційних сертифікатів та протоколів процедур.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. PARTNERSHIP & TEST DRIVE CTA -->
+      <section class="zionic-cta-banner-section" id="application">
+        <div class="container">
+          <div class="cta-luxury-card">
+            <div class="cta-card-content">
+              <span class="section-kicker kicker-light">ЕКСКЛЮЗИВНА ПРОПОЗИЦІЯ</span>
+              <h2>Замовте виїзний тест-драйв ZIONIC у вашу клініку</h2>
+              <p>
+                Привеземо апарат безпосередньо у вашу клініку, проведемо демонстрацію на ваших пацієнтах та розрахуємо персональну фінансову модель окупності для вашого міста.
+              </p>
+              <div class="cta-actions-row">
+                <button class="cta-white-btn" data-target="#popup_request">
+                  <span>Забронювати безкоштовний тест-драйв</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+                <a href="tel:+380937205277" class="cta-phone-link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  <span>+380 93 720 52 77</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    `;
+
+    // Replace the inner content of zionic page
+    html = html.replace(/<div[\s\n]+class=center>[\s\S]*?(?=<section[\s\n]+class="seo_text|<footer|$)/i, `<div class="zionic-main-page-wrapper">\n${modernZionicHtml}\n</div>\n`);
+  }
+
   // Modern Luxury Spanish Footer (Centered Logo + 2 Balanced Structured Columns)
   const modernLuxuryFooter = `
     <!-- Modern Luxury Spanish Footer -->

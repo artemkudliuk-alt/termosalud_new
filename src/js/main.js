@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBentoAccordion();
   initScrollToTop();
   initPartnersDraggableCarousel();
+  initZionicScrollManipula();
 });
 
 /**
@@ -194,24 +195,44 @@ function closeTechModal(modal) {
  */
 function initFaqAccordions() {
   document.addEventListener('click', (e) => {
-    const header = e.target.closest('.faq_item_title, .faq-title, .accordion-header, .faq_header, .faq-item h3, .faq-item-title');
+    const header = e.target.closest('.faq_item_title, .faq-title, .accordion-header, .faq_header, .faq-item h3, .faq-item-title, .faq-question-btn');
     if (!header) return;
 
     const item = header.closest('.faq_item, .accordion-item, .faq-box, .faq-item');
     if (!item) return;
 
-    const content = item.querySelector('.faq_item_content, .faq-answer, .accordion-collapse, .faq_content, .faq-text, p');
+    const content = item.querySelector('.faq_item_content, .faq-answer, .accordion-collapse, .faq_content, .faq-text');
     if (!content) return;
 
     const isOpen = item.classList.contains('active') || item.classList.contains('open');
 
     if (isOpen) {
       item.classList.remove('active', 'open');
-      if (content) content.style.maxHeight = null;
+      header.setAttribute('aria-expanded', 'false');
+      if (content) content.style.display = 'none';
     } else {
       item.classList.add('active', 'open');
-      if (content) content.style.maxHeight = (content.scrollHeight + 50) + 'px';
+      header.setAttribute('aria-expanded', 'true');
+      if (content) content.style.display = 'block';
     }
+  });
+
+  // Video embed on click for .video-preview-wrapper
+  document.addEventListener('click', (e) => {
+    const videoWrap = e.target.closest('.video-preview-wrapper');
+    if (!videoWrap) return;
+
+    const videoId = videoWrap.getAttribute('data-video-id') || 'CYsDii-PZ7s';
+    videoWrap.innerHTML = `
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:20px;background:#000;">
+        <iframe 
+          src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1" 
+          style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    `;
   });
 }
 
@@ -806,4 +827,41 @@ function initPartnersDraggableCarousel() {
       }
     });
   });
+}
+
+/**
+ * 12. Zionic 3D Manipula Scroll Zoom Animation
+ */
+function initZionicScrollManipula() {
+  const scrollManipula = document.getElementById('zionic-scroll-manipula');
+  const pillarsSection = document.querySelector('.zionic-pillars-section');
+
+  if (!scrollManipula || !pillarsSection) return;
+
+  let ticking = false;
+  const updateZoom = () => {
+    const rect = pillarsSection.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (rect.top < windowHeight && rect.bottom > 0) {
+      // Progress from 0 (entered from bottom) to 1 (passed top)
+      const progress = Math.min(Math.max((windowHeight - rect.top) / (windowHeight + rect.height), 0), 1);
+      // Smooth scale from 0.94 to 1.18 with subtle rotation
+      const scale = 0.94 + progress * 0.22;
+      const translateY = (progress - 0.5) * -35;
+      const rotate = (progress - 0.5) * -8;
+      scrollManipula.style.transform = `scale(${scale.toFixed(3)}) translateY(${translateY.toFixed(1)}px) rotate(${rotate.toFixed(1)}deg)`;
+    }
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(updateZoom);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Initial update
+  updateZoom();
 }
