@@ -16468,3 +16468,57 @@ html body.template-linfopress .linfopress-package-section h2,
     grid-template-columns: 1fr !important;
   }
 }
+
+
+/* ==========================================================================
+   RESTORE 1-TO-1 FULL CURTAIN SCREEN LAYERING WITH ZIONIC
+   ========================================================================== */
+@media (min-width: 992px) {
+  html body.template-linfopress .linfopress-hero-stage,
+  .linfopress-hero-stage {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0px !important;
+    left: 0 !important;
+    z-index: 1 !important;
+    width: 100% !important;
+    height: 100vh !important;
+    min-height: 700px !important;
+    overflow: hidden !important;
+  }
+
+  /* Screen 2 and subsequent sections layer continuously like a curtain */
+  html body.template-linfopress .linfopress-infinite-ticker-section,
+  .linfopress-infinite-ticker-section {
+    position: relative !important;
+    z-index: 10 !important;
+    box-shadow: 0 -35px 90px rgba(0, 0, 0, 0.85) !important;
+  }
+}
+
+
+/* ==========================================================================
+   SEAMLESS PURE WHITE TRANSITION TO DOCTOR REVIEW (NO GRAY, NO DIVIDER LINE)
+   ========================================================================== */
+.linfopress-matrix-section {
+  border-bottom: none !important;
+  padding-bottom: 60px !important;
+}
+
+.linfopress-doctor-section {
+  background: #ffffff !important; /* PURE WHITE CONTINUOUS BACKGROUND */
+  border: none !important;
+  padding: 0 0 0 0 !important;
+}
+
+.linfopress-doctor-section .doctor-header-container {
+  background: #ffffff !important;
+  margin-bottom: 40px !important;
+  padding-top: 40px !important;
+}
+
+.linfopress-doctor-fullscreen-stage {
+  border-top: none !important; /* REMOVE DIVIDER LINE COMPLETELY */
+  border-bottom: none !important;
+  border: none !important;
+}
