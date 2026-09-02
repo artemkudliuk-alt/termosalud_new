@@ -1328,6 +1328,7 @@ function cleanHtml(raw, pageName) {
   // ==========================================
   if (pageName === 'zionic') {
     const modernZionicHtml = `
+      <!-- 1. ZIONIC OFFICIAL LUXURY HERO -->
       <section class="zionic-official-hero">
         <div class="zionic-hero-bg-media">
           <video autoplay loop muted playsinline class="zionic-hero-bg-video" preload="auto">
@@ -1339,29 +1340,26 @@ function cleanHtml(raw, pageName) {
         <div class="container zionic-hero-container">
           <div class="zionic-hero-content">
             <div class="zionic-hero-logo-wrap">
-              <img src="/wp-content/themes/zionic/assets/images/zionic.svg" alt="Zionic" class="zionic-official-logo" width="180" height="38">
+              <img src="/wp-content/uploads/zionic_official/Zionic-Aesthetic-logotipo.png" alt="Zionic Aesthetic" class="zionic-official-logo">
             </div>
 
             <h1 class="zionic-hero-title">
-              <span>РЕЗИСТИВНИЙ</span>
-              <span>РАДІОЧАСТОТНИЙ</span>
-              <span>РОТАЦІЙНИЙ</span>
-              <span>ГЛИБОКИЙ</span>
-              <span>МАСАЖ</span>
+              <span class="zionic-word-top">НОВА ЕРА</span>
+              <span class="zionic-word-bottom">КОРЕКЦІЇ ТІЛА</span>
             </h1>
 
-            <p class="zionic-hero-subtitle">
-              Перший апарат, що поєднує технологію активного глибокого ротаційного масажу (MARP) з резистивною радіочастотою для корекції фігури.
+            <p class="zionic-hero-desc">
+              КОМБІНОВАНИЙ МОНОПОЛЯРНИЙ RF ТА РОТАЦІЙНИЙ МАСАЖ MARP
             </p>
 
             <div class="zionic-hero-actions">
-              <a href="#test-drive" class="zionic-btn-link-action">
-                <span>Замовити презентацію</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <a href="#application" class="zionic-primary-btn">
+                <span>Замовити тест-драйв у клініку</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
-              <button type="button" class="zionic-btn-video-badge js-open-video-lightbox" data-video-id="CYsDii-PZ7s">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                <span>Відео процедури</span>
+              <button type="button" class="zionic-secondary-btn" id="open_zionic_video_btn" data-video-id="CYsDii-PZ7s">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>Відео-демонстрація</span>
               </button>
             </div>
           </div>

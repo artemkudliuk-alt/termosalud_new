@@ -1,0 +1,141 @@
+.zionic-official-hero {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 72px);
+  min-height: calc(100dvh - 72px);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
+.zionic-hero-bg-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.zionic-hero-bg-img,
+.zionic-hero-bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.zionic-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.zionic-hero-container {
+  position: relative;
+  z-index: 3;
+}
+
+.zionic-hero-content {
+  max-width: 640px;
+  margin-left: clamp(24px, 5vw, 72px);
+}
+
+.zionic-hero-logo-wrap {
+  margin-bottom: 20px;
+}
+
+.zionic-official-logo {
+  height: clamp(56px, 5.2vw, 76px);
+  width: auto;
+  max-width: 300px;
+  display: block;
+}
+
+.zionic-hero-title {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
+  font-size: clamp(48px, 4.8vw, 76px) !important;
+  font-weight: 900 !important;
+  line-height: 1.02 !important;
+  letter-spacing: -1.5px !important;
+  margin: 0 !important;
+  text-transform: uppercase !important;
+  text-shadow: none !important;
+}
+
+.zionic-hero-title .zionic-word-top {
+  display: block !important;
+  white-space: nowrap !important;
+  color: #111111 !important;
+  font-weight: 900 !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  width: fit-content !important;
+  padding: 0 !important;
+  margin-bottom: 6px !important;
+}
+
+.zionic-hero-title .zionic-word-top::after {
+  display: none !important;
+}
+
+.zionic-hero-title .zionic-word-bottom {
+  color: #111111 !important;
+  font-weight: 900 !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  display: block !important;
+  white-space: nowrap !important;
+}
+
+.zionic-hero-desc {
+  font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
+  font-size: clamp(18px, 1.8vw, 23px) !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0.6px !important;
+  text-transform: uppercase !important;
+  margin: 16px 0 28px 0 !important;
+  max-width: 620px !important;
+  text-shadow: none !important;
+}
+
+.zionic-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.zionic-primary-btn {
+  height: 52px;
+  padding: 0 28px;
+  border-radius: 999px;
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.zionic-primary-btn:hover {
+  back
