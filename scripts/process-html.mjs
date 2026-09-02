@@ -1368,53 +1368,94 @@ function cleanHtml(raw, pageName) {
       </section>
 
       <!-- 2. 5-PILL HORIZONTAL LUXURY ADVANTAGES (MAIN PAGE & LINFOPRESS STYLE) -->
-      <section class="zionic-pillars-bar" id="advantages-icons">
-        <div class="container-fluid px-lg-5">
-          <div class="zionic-pillars-inner">
-            <div class="zionic-pillars-bg-video">
-              <video autoplay loop muted playsinline poster="/wp-content/uploads/2026/04/video-placeholder-optimized.png">
-                <source src="/wp-content/themes/zionic/assets/images/presentation-video.mp4" type="video/mp4">
-              </video>
-              <div class="zionic-pillars-overlay"></div>
-            </div>
+            <!-- 2. INFINITE MOVING LUXURY ADVANTAGES TICKER (PAUSES ON HOVER) -->
+      <section class="zionic-infinite-ticker-section" id="advantages-icons">
+        <div class="zionic-ticker-bg-media">
+          <video autoplay loop muted playsinline poster="/wp-content/uploads/2026/04/video-placeholder-optimized.png">
+            <source src="/wp-content/themes/zionic/assets/images/presentation-video.mp4" type="video/mp4">
+          </video>
+          <div class="zionic-ticker-overlay"></div>
+        </div>
 
-            <div class="zionic-pillars-grid">
-              <div class="pillar-pill-item">
-                <div class="pillar-icon-box">
-                  <img src="/wp-content/uploads/2026/03/icons8-highway_arrows-1.svg" alt="Максимальний ліфтинг" width="36" height="36">
-                </div>
+        <div class="zionic-ticker-viewport">
+          <div class="zionic-ticker-track">
+            <!-- SET 1 -->
+            <div class="zionic-ticker-item">
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-highway_arrows-1.svg" alt="Максимальний ліфтинг" width="48" height="48"></div>
+              <div class="pillar-text-content">
                 <h4 class="pillar-title">Максимальний ліфтинг</h4>
                 <p class="pillar-desc">Найглибший монополярний RF у поєднанні з ротаційним масажем MARP</p>
               </div>
+            </div>
 
-              <div class="pillar-pill-item">
-                <div class="pillar-icon-box">
-                  <img src="/wp-content/uploads/2026/03/icons8-working_mom-1.svg" alt="Персоналізація" width="36" height="36">
-                </div>
+            <div class="zionic-ticker-item">
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-working_mom-1.svg" alt="Персоналізація" width="48" height="48"></div>
+              <div class="pillar-text-content">
                 <h4 class="pillar-title">Персоналізація</h4>
                 <p class="pillar-desc">Автоматичний підбір індивідуальної програми під кожного пацієнта</p>
               </div>
+            </div>
 
-              <div class="pillar-pill-item">
-                <div class="pillar-icon-box">
-                  <img src="/wp-content/uploads/2026/03/icons8-venus_de_milo-1.svg" alt="Лікування целюліту" width="36" height="36">
-                </div>
+            <div class="zionic-ticker-item">
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-venus_de_milo-1.svg" alt="Лікування целюліту" width="48" height="48"></div>
+              <div class="pillar-text-content">
                 <h4 class="pillar-title">Лікування целюліту</h4>
                 <p class="pillar-desc">Ефективна дія при едематозних та фіброзних стадіях целюліту</p>
               </div>
+            </div>
 
-              <div class="pillar-pill-item">
-                <div class="pillar-icon-box">
-                  <img src="/wp-content/uploads/2026/03/icons8-waist-1.svg" alt="Моделювання фігури" width="36" height="36">
-                </div>
+            <div class="zionic-ticker-item">
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-waist-1.svg" alt="Моделювання фігури" width="48" height="48"></div>
+              <div class="pillar-text-content">
                 <h4 class="pillar-title">Моделювання фігури</h4>
                 <p class="pillar-desc">Найкомфортніший апарат для корекції силуету без болю та синців</p>
               </div>
+            </div>
 
-              <div class="pillar-pill-item">
-                <div class="pillar-icon-box">
-                  <img src="/wp-content/uploads/2026/03/icons8-trust-1.svg" alt="Реабілітація" width="36" height="36">
-                </div>
+            <div class="zionic-ticker-item">
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-trust-1.svg" alt="Реабілітація" width="48" height="48"></div>
+              <div class="pillar-text-content">
+                <h4 class="pillar-title">Реабілітація</h4>
+                <p class="pillar-desc">Швидке відновлення та підтяжка тканин після ліпосакцій</p>
+              </div>
+            </div>
+
+            <!-- SET 2 (DUPLICATE FOR SEAMLESS 100% INFINITE LOOP) -->
+            <div class="zionic-ticker-item">
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-highway_arrows-1.svg" alt="Максимальний ліфтинг" width="48" height="48"></div>
+              <div class="pillar-text-content">
+                <h4 class="pillar-title">Максимальний ліфтинг</h4>
+                <p class="pillar-desc">Найглибший монополярний RF у поєднанні з ротаційним масажем MARP</p>
+              </div>
+            </div>
+
+            <div class="zionic-ticker-item">
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-working_mom-1.svg" alt="Персоналізація" width="48" height="48"></div>
+              <div class="pillar-text-content">
+                <h4 class="pillar-title">Персоналізація</h4>
+                <p class="pillar-desc">Автоматичний підбір індивідуальної програми під кожного пацієнта</p>
+              </div>
+            </div>
+
+            <div class="zionic-ticker-item">
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-venus_de_milo-1.svg" alt="Лікування целюліту" width="48" height="48"></div>
+              <div class="pillar-text-content">
+                <h4 class="pillar-title">Лікування целюліту</h4>
+                <p class="pillar-desc">Ефективна дія при едематозних та фіброзних стадіях целюліту</p>
+              </div>
+            </div>
+
+            <div class="zionic-ticker-item">
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-waist-1.svg" alt="Моделювання фігури" width="48" height="48"></div>
+              <div class="pillar-text-content">
+                <h4 class="pillar-title">Моделювання фігури</h4>
+                <p class="pillar-desc">Найкомфортніший апарат для корекції силуету без болю та синців</p>
+              </div>
+            </div>
+
+            <div class="zionic-ticker-item">
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-trust-1.svg" alt="Реабілітація" width="48" height="48"></div>
+              <div class="pillar-text-content">
                 <h4 class="pillar-title">Реабілітація</h4>
                 <p class="pillar-desc">Швидке відновлення та підтяжка тканин після ліпосакцій</p>
               </div>
