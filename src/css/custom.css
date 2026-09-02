@@ -10904,3 +10904,300 @@ html, body {
 .case-switcher-btn.is-active .btn-tag {
   color: #d4d4d8;
 }
+
+
+/* ==========================================================================
+   ZIONIC VERTICAL COMPARE (TOP-TO-BOTTOM) + 6 SIDE SELECTION TILES
+   ========================================================================== */
+.zionic-ba-section {
+  background: #ffffff;
+  padding: 100px 0;
+  border-top: 1px solid #e4e4e7;
+  border-bottom: 1px solid #e4e4e7;
+}
+
+.zionic-split-results-layout {
+  display: grid;
+  grid-template-columns: 46% 54%;
+  gap: 40px;
+  align-items: start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .zionic-split-results-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* Left Column: Vertical Compare Viewport */
+.zionic-compare-left-col {
+  position: sticky;
+  top: 90px;
+}
+
+@media (max-width: 991px) {
+  .zionic-compare-left-col {
+    position: relative;
+    top: 0;
+  }
+}
+
+.zionic-vertical-compare-viewport {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 300 / 414; /* Exact vertical portrait ratio with ZERO empty space */
+  max-height: 640px;
+  background: #111111;
+  overflow: hidden;
+  border: 1px solid #27272a;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+  user-select: none;
+  cursor: ns-resize; /* Vertical cursor */
+}
+
+.vertical-img-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.vertical-img-layer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+.vertical-img-layer.layer-before {
+  clip-path: inset(0 0 50% 0); /* Top half shown initially */
+  z-index: 2;
+  will-change: clip-path;
+}
+
+.vertical-compare-tag {
+  position: absolute;
+  background: #111111;
+  border: 1px solid #3f3f46;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 11.5px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.5px !important;
+  padding: 5px 14px !important;
+  border-radius: 0 !important;
+  z-index: 4;
+}
+
+.tag-top {
+  top: 16px;
+  left: 16px;
+}
+
+.tag-bottom {
+  bottom: 16px;
+  right: 16px;
+}
+
+/* Horizontal Divider Line & Handle (Drags Up & Down) */
+.vertical-divider-handle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  background: #ffffff;
+  z-index: 5;
+  transform: translateY(-50%);
+  pointer-events: none;
+  will-change: top;
+}
+
+.vertical-divider-line {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+
+.vertical-handle-pill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  background: #111111;
+  border: 2px solid #ffffff;
+  border-radius: 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  gap: 1px;
+}
+
+.vertical-range-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: ns-resize;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+}
+
+/* Meta Bar Under Compare Screen */
+.compare-current-meta-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #111111;
+  border: 1px solid #27272a;
+  border-top: none;
+  padding: 16px 20px;
+  color: #ffffff;
+}
+
+.meta-current-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.meta-active-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  color: #a1a1aa;
+  letter-spacing: 1px;
+}
+
+.meta-active-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.meta-active-badge {
+  background: #18181b;
+  border: 1px solid #3f3f46;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11.5px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  padding: 4px 12px;
+}
+
+/* Right Column: 6 Rich Selection Tiles Grid (2 columns x 3 rows) */
+.zionic-result-tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 575px) {
+  .zionic-result-tiles-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.result-tile-card {
+  background: #f4f4f5;
+  border: 1px solid #e4e4e7;
+  padding: 24px 20px;
+  cursor: pointer;
+  border-radius: 0 !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.result-tile-card:hover {
+  background: #ffffff;
+  border-color: #27272a;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.result-tile-card.is-active {
+  background: #111111 !important;
+  border-color: #111111 !important;
+  color: #ffffff !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+.tile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.tile-number {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  color: #71717a;
+}
+
+.result-tile-card.is-active .tile-number {
+  color: #a1a1aa;
+}
+
+.tile-badge {
+  background: #ffffff;
+  border: 1px solid #d4d4d8;
+  color: #111111;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 0 !important;
+}
+
+.result-tile-card.is-active .tile-badge {
+  background: #18181b;
+  border-color: #3f3f46;
+  color: #ffffff;
+}
+
+.tile-title {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  color: #111111 !important;
+  margin: 0 0 8px 0 !important;
+  line-height: 1.25 !important;
+}
+
+.result-tile-card.is-active .tile-title {
+  color: #ffffff !important;
+}
+
+.tile-desc {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13.5px !important;
+  color: #52525b !important;
+  line-height: 1.55 !important;
+  margin: 0 !important;
+}
+
+.result-tile-card.is-active .tile-desc {
+  color: #d4d4d8 !important;
+}

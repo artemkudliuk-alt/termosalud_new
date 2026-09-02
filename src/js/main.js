@@ -1319,3 +1319,85 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+
+  // ==========================================================================
+  // ZIONIC VERTICAL BEFORE/AFTER COMPARISON (TOP-TO-BOTTOM)
+  // ==========================================================================
+  const vRange = document.getElementById('verticalRangeInput');
+  const vLayerBefore = document.getElementById('verticalCompareLayerBefore');
+  const vDividerHandle = document.getElementById('verticalDividerHandle');
+  const vViewport = document.getElementById('zionicVerticalCompareViewport');
+
+  if (vRange && vLayerBefore && vDividerHandle) {
+    function updateVCompare(val) {
+      const clamped = Math.max(0, Math.min(100, val));
+      vLayerBefore.style.clipPath = `inset(0 0 ${100 - clamped}% 0)`;
+      vDividerHandle.style.top = `${clamped}%`;
+    }
+
+    vRange.addEventListener('input', (e) => {
+      updateVCompare(e.target.value);
+    });
+
+    // Touch & Mouse direct vertical move
+    if (vViewport) {
+      let isVDown = false;
+      function handleVMove(clientY) {
+        const rect = vViewport.getBoundingClientRect();
+        const pos = ((clientY - rect.top) / rect.height) * 100;
+        vRange.value = pos;
+        updateVCompare(pos);
+      }
+
+      vViewport.addEventListener('mousedown', (e) => {
+        isVDown = true;
+        handleVMove(e.clientY);
+      });
+      window.addEventListener('mousemove', (e) => {
+        if (isVDown) handleVMove(e.clientY);
+      });
+      window.addEventListener('mouseup', () => { isVDown = false; });
+
+      vViewport.addEventListener('touchstart', (e) => {
+        if (e.touches.length > 0) handleVMove(e.touches[0].clientY);
+      }, { passive: true });
+      vViewport.addEventListener('touchmove', (e) => {
+        if (e.touches.length > 0) handleVMove(e.touches[0].clientY);
+      }, { passive: true });
+    }
+  }
+
+  // Result Tile Click Handlers
+  const resultTiles = document.querySelectorAll('.result-tile-card');
+  const vImgBefore = document.getElementById('compareImgBefore');
+  const vImgAfter = document.getElementById('compareImgAfter');
+  const vLiveNum = document.getElementById('liveCaseNum');
+  const vLiveTitle = document.getElementById('liveCaseTitle');
+  const vLiveBadge = document.getElementById('liveCaseBadge');
+
+  resultTiles.forEach((tile) => {
+    tile.addEventListener('click', () => {
+      resultTiles.forEach((t) => t.classList.remove('is-active'));
+      tile.classList.add('is-active');
+
+      const bSrc = tile.getAttribute('data-before');
+      const aSrc = tile.getAttribute('data-after');
+      const title = tile.getAttribute('data-title');
+      const num = tile.getAttribute('data-num');
+      const sessions = tile.getAttribute('data-sessions');
+
+      if (vImgBefore) vImgBefore.src = bSrc;
+      if (vImgAfter) vImgAfter.src = aSrc;
+      if (vLiveNum) vLiveNum.textContent = num;
+      if (vLiveTitle) vLiveTitle.textContent = title;
+      if (vLiveBadge) vLiveBadge.textContent = sessions;
+
+      // Reset slider to center 50%
+      if (vRange) {
+        vRange.value = 50;
+        if (vLayerBefore) vLayerBefore.style.clipPath = 'inset(0 0 50% 0)';
+        if (vDividerHandle) vDividerHandle.style.top = '50%';
+      }
+    });
+  });
