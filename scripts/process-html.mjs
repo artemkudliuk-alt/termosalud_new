@@ -2016,22 +2016,23 @@ function cleanHtml(raw, pageName) {
         </div>
       </section>
 
-      <!-- 10. FAQ ACCORDION (MAIN PAGE LUXURY STYLE) -->
+            <!-- 10. FAQ ACCORDION (MAIN PAGE LUXURY STYLE) -->
       <section class="zionic-faq-section" id="faq">
         <div class="container">
           <div class="section-header-centered">
             <span class="luxury-kicker">ВІДПОВІДІ НА ЗАПИТАННЯ</span>
             <h2 class="section-main-title">Часті питання про ZIONIC</h2>
+            <p class="section-main-sub">Ключові аспекти технології, протоколів та економіки обладнання</p>
           </div>
 
           <div class="faq-accordion-grid">
-            <div class="faq-accordion-card">
+            <div class="faq-accordion-card active">
               <button type="button" class="faq-toggle-header">
                 <span class="faq-q-text">Скільки процедур потрібно для помітного результату?</span>
-                <span class="faq-icon">+</span>
+                <span class="faq-icon">−</span>
               </button>
-              <div class="faq-answer-body">
-                <p>Перші зміни у тонусі шкіри та зняття набряклості помітні вже після 1–2 сеансів. Стійкий виражений ефект ремоделювання фігури досягається за курс із 6–10 процедур з інтервалом 2–3 рази на тиждень.</p>
+              <div class="faq-answer-body" style="display: block;">
+                <p>Перші зміни у тонусі шкіри та зняття набряклості помітні вже після 1–2 сеансів. Стійкий виражений ефект зменшення об'ємів та лікування целюліту досягається за курс із 6–10 процедур з інтервалом 2–3 рази на тиждень.</p>
               </div>
             </div>
 
@@ -2041,7 +2042,7 @@ function cleanHtml(raw, pageName) {
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer-body">
-                <p>Ні, процедура абсолютно безболісна та комфортна. Пацієнт відчуває приємне глибоке тепло та розслаблюючий механічний масаж без синців та гематом.</p>
+                <p>Ні, процедура абсолютно безболісна та фізіологічна. Пацієнт відчуває приємне глибоке тепло та розслаблюючий ротаційний масаж. Відсутні будь-які синці, печіння чи гематоми.</p>
               </div>
             </div>
 
@@ -2051,7 +2052,7 @@ function cleanHtml(raw, pageName) {
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer-body">
-                <p>Апарат не вимагає дорогих картриджів, одноразових костюмів або змінних лінз. Потрібен лише спеціальний контактний гліцериновий крем TermoSalud для ковзання маніпули та проведення RF.</p>
+                <p>Апарат не вимагає дорогих змінних картриджів або одноразових лінз. Використовується лише спеціальний контактний гліцериновий крем TermoSalud для ковзання маніпули та забезпечення провідності RF.</p>
               </div>
             </div>
 
@@ -2061,14 +2062,51 @@ function cleanHtml(raw, pageName) {
                 <span class="faq-icon">+</span>
               </button>
               <div class="faq-answer-body">
-                <p>TermoSalud надає 2 роки повної офіційної гарантії. Наш сервісний центр в Україні забезпечує технічну підтримку та надання підмінного апарату на час регламентних робіт.</p>
+                <p>TermoSalud надає 2 роки повної офіційної гарантії. Наш офіційний сервісний центр у Києві забезпечує постійну технічну підтримку та надання підмінного апарату на час регламентних робіт.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- 11. SEO & CERTIFICATES -->
+      <!-- 11. CERTIFICATES & QUALITY STANDARDS -->
+      <section class="zionic-certificates-section" id="certificates">
+        <div class="container">
+          <div class="section-header-centered">
+            <span class="luxury-kicker">МІЖНАРОДНА СЕРТИФІКАЦІЯ</span>
+            <h2 class="section-main-title">Безпека та медичні стандарти</h2>
+            <p class="section-main-sub">Обладнання TermoSalud відповідає найвищим світовим стандартам медичної галузі</p>
+          </div>
+
+          <div class="zionic-cert-cards-grid">
+            <div class="zionic-cert-card">
+              <div class="cert-card-badge">FDA</div>
+              <h4 class="cert-card-title">FDA Approved (США)</h4>
+              <p class="cert-card-desc">Офіційне схвалення Управлінням з контролю за продуктами та ліками США для неінвазивної корекції фігури.</p>
+            </div>
+
+            <div class="zionic-cert-card">
+              <div class="cert-card-badge">CE 0120</div>
+              <h4 class="cert-card-title">CE Medical Directive</h4>
+              <p class="cert-card-desc">Європейський сертифікат відповідності медичного обладнання найвищого класу безпеки та ефективності.</p>
+            </div>
+
+            <div class="zionic-cert-card">
+              <div class="cert-card-badge">ISO 13485</div>
+              <h4 class="cert-card-title">ISO 13485:2016</h4>
+              <p class="cert-card-desc">Міжнародний стандарт системи управління якістю для виробників медичних виробів та обладнання.</p>
+            </div>
+
+            <div class="zionic-cert-card">
+              <div class="cert-card-badge">UA MED</div>
+              <h4 class="cert-card-title">Сертифіковано в Україні</h4>
+              <p class="cert-card-desc">Повна відповідність Технічному регламенту щодо медичних виробів та реєстрація в МОЗ України.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 12. SEO INFORMATION SECTION -->
       <section class="zionic-seo-clean-section">
         <div class="container">
           <div class="seo-clean-box">
