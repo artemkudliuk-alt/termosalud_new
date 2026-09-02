@@ -1339,7 +1339,7 @@ function cleanHtml(raw, pageName) {
                 <span>Замовити тест-драйв у клініку</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
-              <button type="button" class="zionic-secondary-btn" id="open_zionic_video_btn" data-video-id="CYsDii-PZ7s">
+              <button type="button" class="zionic-secondary-btn" id="open_zionic_video_btn" data-video-id="CYsDii-PZ7s" onclick="window.openZionicVideoLightbox()">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                 <span>Відео-демонстрація</span>
               </button>
@@ -1856,6 +1856,15 @@ function cleanHtml(raw, pageName) {
           </button>
         </div>
       </section>
+
+      <!-- Zionic Video Modal Lightbox (for Hero button and direct popups) -->
+      <div id="zionic_video_modal" class="zionic-video-lightbox" role="dialog" aria-modal="true" style="display:none;">
+        <div class="zionic-video-lightbox-backdrop" data-close-video-modal onclick="window.closeZionicVideoLightbox()"></div>
+        <div class="zionic-video-lightbox-dialog">
+          <button type="button" class="zionic-video-lightbox-close" data-close-video-modal onclick="window.closeZionicVideoLightbox()" aria-label="Закрити">✕</button>
+          <div id="zionic_modal_video_container" class="zionic-video-lightbox-frame"></div>
+        </div>
+      </div>
 
       <!-- 9. TEST-DRIVE APPLICATION FORM (EXACT LUXURY MAIN PAGE FORM) -->
             <!-- 9. TEST-DRIVE APPLICATION STAGE (EXACT LUXURY MAIN PAGE ARCHITECTURE) -->

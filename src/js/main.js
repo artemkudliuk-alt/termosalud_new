@@ -148,10 +148,19 @@ function initPopupModals() {
     const target = trigger.getAttribute('data-target') || trigger.getAttribute('data-bs-target') || '';
     const text = (trigger.textContent || '').trim().toLowerCase();
 
+    // STRICT EXCLUSION: Never open popup modal for in-page form CTA buttons, video buttons, or anchor links!
     if (
       href === '#application' ||
+      href === '#test-drive' ||
+      href === '#presentation' ||
       trigger.classList.contains('zionic-primary-btn') ||
-      trigger.closest('#application')
+      trigger.classList.contains('linfopress-primary-btn') ||
+      trigger.classList.contains('zionic-secondary-btn') ||
+      trigger.classList.contains('linfopress-secondary-btn') ||
+      trigger.id === 'open_zionic_video_btn' ||
+      trigger.id === 'open-linfopress-video-btn' ||
+      trigger.closest('#application') ||
+      trigger.closest('#test-drive')
     ) {
       return;
     }
@@ -161,9 +170,9 @@ function initPopupModals() {
       target === '#popup_request' ||
       trigger.classList.contains('header-btn') ||
       trigger.classList.contains('living-stage-glass-btn') ||
-      text.includes('презентац') ||
-      text.includes('тест-драйв') ||
-      text.includes('заявка')
+      (text.includes('презентац') && !href.startsWith('#')) ||
+      (text.includes('тест-драйв') && !href.startsWith('#')) ||
+      (text.includes('заявка') && !href.startsWith('#'))
     ) {
       if (trigger.closest('#popup_request') && trigger.type === 'submit') return;
 
@@ -1043,150 +1052,132 @@ function initZionicScrollManipula() {
  * - Stage 2: Accuracy & Video (#zionic-accuracy) -> Treatments (#treatment-areas)
  */
 function initZionicCurtainSlide() {
-  function attachCurtainSlide(stageSelector, overlaySelector) {
-    const stage = document.querySelector(stageSelector);
-    const overlay = document.querySelector(overlaySelector);
-    if (!stage || !overlay) return;
-
-    let isSnapping = false;
-
-    window.addEventListener('wheel', (e) => {
-      if (isSnapping || window.innerWidth < 992) return;
-
-      const stageRect = stage.getBoundingClientRect();
-      const overlayRect = overlay.getBoundingClientRect();
-      const winHeight = window.innerHeight;
-
-      // Case 1: User is at the stage top and scrolls DOWN before overlay has covered
-      if (Math.abs(stageRect.top) < 80 && overlayRect.top > winHeight * 0.35 && e.deltaY > 15) {
-        e.preventDefault();
-        isSnapping = true;
-        const targetY = overlay.getBoundingClientRect().top + window.scrollY;
-        window.scrollTo({
-          top: targetY,
-          behavior: 'smooth'
-        });
-        setTimeout(() => {
-          isSnapping = false;
-        }, 700);
-      }
-      // Case 2: User is at the very top of overlay section and scrolls UP back to the pinned stage
-      else if (Math.abs(overlayRect.top) < 40 && e.deltaY < -15 && stageRect.top < -60) {
-        e.preventDefault();
-        isSnapping = true;
-        const targetY = stage.getBoundingClientRect().top + window.scrollY;
-        window.scrollTo({
-          top: targetY,
-          behavior: 'smooth'
-        });
-        setTimeout(() => {
-          isSnapping = false;
-        }, 700);
-      }
-    }, { passive: false });
-
-    // Touch support for tablets / touch devices
-    let touchStartY = 0;
-    window.addEventListener('touchstart', (e) => {
-      if (e.touches && e.touches[0]) {
-        touchStartY = e.touches[0].clientY;
-      }
-    }, { passive: true });
-
-    window.addEventListener('touchmove', (e) => {
-      if (isSnapping || !touchStartY || window.innerWidth < 992) return;
-      const touchEndY = e.touches[0].clientY;
-      const diff = touchStartY - touchEndY;
-      const stageRect = stage.getBoundingClientRect();
-      const overlayRect = overlay.getBoundingClientRect();
-      const winHeight = window.innerHeight;
-
-      if (Math.abs(stageRect.top) < 60 && diff > 30 && overlayRect.top > winHeight * 0.35) {
-        isSnapping = true;
-        const targetY = overlay.getBoundingClientRect().top + window.scrollY;
-        window.scrollTo({
-          top: targetY,
-          behavior: 'smooth'
-        });
-        setTimeout(() => { isSnapping = false; }, 700);
-      }
-    }, { passive: true });
-  }
-
-  attachCurtainSlide('.zionic-curtain-stage', '.zionic-manipula-section');
-  attachCurtainSlide('.zionic-curtain-stage-2', '.zionic-treatments-section');
+  // Disabled wheel and touch hijacking to ensure buttery-smooth unrestricted scrolling across all sections
+  return;
 }
 
 /**
  * 19. Apparatus Video Lightbox Modal & Smooth Scroll to Application Form
  */
+window.openZionicVideoLightbox = function(videoId) {
+  const vid = videoId || 'CYsDii-PZ7s';
+  const modal = document.getElementById('zionic_video_modal');
+  const container = document.getElementById('zionic_modal_video_container');
+  if (!modal || !container) return;
+  container.innerHTML = `
+    <iframe 
+      src="https://www.youtube-nocookie.com/embed/${vid}?autoplay=1&rel=0&modestbranding=1" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen style="width:100%; height:100%; border:none;">
+    </iframe>
+  `;
+  modal.style.display = 'flex';
+  modal.classList.add('is-active', 'show');
+  document.documentElement.classList.add('modal-open-lock');
+  document.body.classList.add('modal-open-lock');
+};
+
+window.closeZionicVideoLightbox = function() {
+  const modal = document.getElementById('zionic_video_modal');
+  const container = document.getElementById('zionic_modal_video_container');
+  if (modal) {
+    modal.style.display = 'none';
+    modal.classList.remove('is-active', 'show');
+  }
+  if (container) container.innerHTML = '';
+  document.documentElement.classList.remove('modal-open-lock');
+  document.body.classList.remove('modal-open-lock');
+};
+
+window.openLinfopressVideoLightbox = function(videoId) {
+  const vid = videoId || 'K1v77enueJ8';
+  const modal = document.getElementById('linfopress_video_modal');
+  const container = document.getElementById('linfopress_modal_video_container');
+  if (!modal || !container) return;
+  container.innerHTML = `
+    <iframe 
+      src="https://www.youtube-nocookie.com/embed/${vid}?autoplay=1&rel=0&modestbranding=1" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen style="width:100%; height:100%; border:none;">
+    </iframe>
+  `;
+  modal.style.display = 'flex';
+  modal.classList.add('is-active', 'show');
+  document.documentElement.classList.add('modal-open-lock');
+  document.body.classList.add('modal-open-lock');
+};
+
+window.closeLinfopressVideoLightbox = function() {
+  const modal = document.getElementById('linfopress_video_modal');
+  const container = document.getElementById('linfopress_modal_video_container');
+  if (modal) {
+    modal.style.display = 'none';
+    modal.classList.remove('is-active', 'show');
+  }
+  if (container) container.innerHTML = '';
+  document.documentElement.classList.remove('modal-open-lock');
+  document.body.classList.remove('modal-open-lock');
+};
+
 function initZionicVideoModal() {
-  function openVideo(videoId, modalId, containerId) {
-    const modal = document.getElementById(modalId || 'zionic_video_modal') || document.getElementById('linfopress_video_modal');
-    const container = document.getElementById(containerId || 'zionic_modal_video_container') || document.getElementById('linfopress_modal_video_container');
-    if (!modal || !container) return;
-
-    container.innerHTML = `
-      <iframe 
-        src="https://www.youtube.com/embed/${videoId || 'CYsDii-PZ7s'}?autoplay=1&rel=0&modestbranding=1" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
-    `;
-    modal.style.display = 'flex';
-    modal.classList.add('is-active', 'show');
-    document.documentElement.classList.add('modal-open-lock');
-    document.body.classList.add('modal-open-lock');
-  }
-
-  function closeVideo() {
-    const modals = document.querySelectorAll('#zionic_video_modal, #linfopress_video_modal, .zionic-video-lightbox');
-    modals.forEach((modal) => {
-      const container = modal.querySelector('.zionic-video-lightbox-frame');
-      if (container) container.innerHTML = '';
-      modal.style.display = 'none';
-      modal.classList.remove('is-active', 'show');
-    });
-    document.documentElement.classList.remove('modal-open-lock');
-    document.body.classList.remove('modal-open-lock');
-  }
-
+  // Global click delegator for Video Buttons and CTA Scroll
   document.addEventListener('click', (e) => {
-    const openTrigger = e.target.closest('#open_zionic_video_btn, #open-linfopress-video-btn, [data-open-zionic-video], .video-preview-wrapper');
-    if (openTrigger) {
-      e.preventDefault();
-      const videoId = openTrigger.getAttribute('data-video-id') || 'CYsDii-PZ7s';
-      const isLinfopress = document.getElementById('linfopress_video_modal') && !document.getElementById('zionic_video_modal');
-      const modalId = isLinfopress ? 'linfopress_video_modal' : 'zionic_video_modal';
-      const containerId = isLinfopress ? 'linfopress_modal_video_container' : 'zionic_modal_video_container';
-      openVideo(videoId, modalId, containerId);
-      return;
-    }
-
-    if (e.target.closest('[data-close-video-modal]') || e.target.classList.contains('zionic-video-lightbox')) {
-      closeVideo();
-      return;
-    }
-
-    const appLink = e.target.closest('a[href="#application"]');
-    if (appLink) {
-      const formCard = document.querySelector('.presentation-form-card') || document.getElementById('application');
-      if (formCard) {
+    // 1. Primary CTA Buttons (Scroll smoothly to in-page application form)
+    const ctaBtn = e.target.closest('.zionic-primary-btn, .linfopress-primary-btn, a[href="#test-drive"], a[href="#application"]');
+    if (ctaBtn) {
+      const href = ctaBtn.getAttribute('href') || (ctaBtn.classList.contains('zionic-primary-btn') ? '#test-drive' : '#application');
+      if (href && href.startsWith('#')) {
         e.preventDefault();
-        formCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        setTimeout(() => {
-          const firstInput = formCard.querySelector('input[name="name"], #zionic_stage_name, #linfopress_stage_name');
-          if (firstInput) {
-            firstInput.focus({ preventScroll: true });
-          }
-        }, 700);
+        e.stopPropagation();
+
+        // Release any modal locks so scrolling is 100% free
+        document.body.classList.remove('modal-open-lock');
+        document.documentElement.classList.remove('modal-open-lock');
+
+        const targetEl = document.querySelector(href) || document.querySelector('.application-presentation') || document.querySelector('.presentation-form-card');
+        if (targetEl) {
+          const header = document.querySelector('.header');
+          const headerHeight = header ? header.offsetHeight : 72;
+          const targetY = targetEl.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+          window.scrollTo({
+            top: Math.max(0, targetY),
+            behavior: 'smooth'
+          });
+        }
+        return;
       }
     }
-  });
 
+    // 2. Video Demonstration Buttons
+    const openTrigger = e.target.closest('#open_zionic_video_btn, #open-linfopress-video-btn, .zionic-secondary-btn, .linfopress-secondary-btn, .lux-play-pure-circle-btn, [data-open-zionic-video]');
+    if (openTrigger) {
+      e.preventDefault();
+      e.stopPropagation();
+      const videoId = openTrigger.getAttribute('data-video-id');
+      const isLinfopress = document.body.classList.contains('template-linfopress') || !!document.getElementById('linfopress_video_modal');
+
+      if (isLinfopress) {
+        window.openLinfopressVideoLightbox(videoId || 'K1v77enueJ8');
+      } else {
+        window.openZionicVideoLightbox(videoId || 'CYsDii-PZ7s');
+      }
+      return;
+    }
+
+    // 3. Video Modal Close Triggers
+    if (e.target.closest('[data-close-video-modal]') || e.target.classList.contains('zionic-video-lightbox')) {
+      window.closeZionicVideoLightbox();
+      window.closeLinfopressVideoLightbox();
+      return;
+    }
+  }, true);
+
+  // Close video on Escape
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      closeVideo();
+      window.closeZionicVideoLightbox();
+      window.closeLinfopressVideoLightbox();
     }
   });
 }
