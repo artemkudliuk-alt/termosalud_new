@@ -1942,85 +1942,86 @@ function cleanHtml(raw, pageName) {
                   <span class="trust-icon">✓</span>
                   <div>
                     <strong>Навчання лікарів та сертифікація</strong>
-                    <span>Повний супровід та авторські протоколи від сертифікованих тренерів Termosalud</span>
-                  </div>
-                </div>
+                    <span>Повний супровід та �          <!-- 2. 4 Clean Frameless Feature Items (Replicated in 2x Large Crisp Vector Geometry) -->
+          <div class="linfopress-frameless-features">
+            
+            <!-- Icon 1: Lightning Cycle -->
+            <div class="frameless-feature-item">
+              <div class="feature-icon-wrapper">
+                <svg width="76" height="76" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Circular Arrow Arcs -->
+                  <path d="M40 10C56.5685 10 70 23.4315 70 40C70 43.2 69.49 46.28 68.54 49.16" stroke="#000000" stroke-width="2.8" stroke-linecap="round"/>
+                  <path d="M40 70C23.4315 70 10 56.5685 10 40C10 36.8 10.51 33.72 11.46 30.84" stroke="#000000" stroke-width="2.8" stroke-linecap="round"/>
+                  <!-- Arrowheads -->
+                  <polygon points="5 32 12 25 19 32" stroke="#000000" stroke-width="2.5" stroke-linejoin="round" fill="#000000"/>
+                  <polygon points="75 48 68 55 61 48" stroke="#000000" stroke-width="2.5" stroke-linejoin="round" fill="#000000"/>
+                  <!-- Central Lightning Bolt -->
+                  <path d="M43 19L29 42H41L37 61L53 37H41L43 19Z" stroke="#000000" stroke-width="2.8" stroke-linejoin="round" fill="none"/>
+                </svg>
               </div>
-
-              <!-- Direct Contact Box -->
-              <div class="zionic-direct-call-box">
-                <div class="direct-call-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                </div>
-                <div class="direct-call-info">
-                  <span class="direct-call-label">Гаряча лінія для керівників та лікарів:</span>
-                  <a href="tel:+380937205277" class="direct-call-number">+380 93 720 52 77</a>
-                </div>
-              </div>
+              <p class="feature-title">Клінічна ефективність</p>
+              <p class="feature-sub">видима з першого сеансу</p>
             </div>
 
-            <!-- Right Column: Open High-Converting Booking Form -->
-            <div class="presentation-form-col">
-              <div class="presentation-form-card">
-                <div class="form-card-header">
-                  <h3 class="form-card-title">Заявка на виїзний тест-драйв</h3>
-                  <p class="form-card-subtitle">Заповніть форму, і наш фахівець узгодить з вами зручний день та формат тестування</p>
-                </div>
+            <!-- Icon 2: Interlocking Puzzle Pieces with Arc Brackets -->
+            <div class="frameless-feature-item">
+              <div class="feature-icon-wrapper">
+                <svg width="76" height="76" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Outer Arc Brackets -->
+                  <path d="M22 13C33 6 47 6 58 13" stroke="#000000" stroke-width="2.8" stroke-linecap="round"/>
+                  <path d="M58 67C47 74 33 74 22 67" stroke="#000000" stroke-width="2.8" stroke-linecap="round"/>
+                  <!-- 2 Jigsaw puzzle pieces interlocking diagonally -->
+                  <g transform="rotate(45 40 40)">
+                    <path d="M26 23H35C35 25.5 37 27.5 40 27.5C43 27.5 45 25.5 45 23H54V38C51.5 38 49.5 40 49.5 43C49.5 46 51.5 48 54 48V57H45C45 54.5 43 52.5 40 52.5C37 52.5 35 54.5 35 57H26V48C28.5 48 30.5 46 30.5 43C30.5 40 28.5 38 26 38V23Z" stroke="#000000" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26 40H36C36 37 38 35 41 35C44 35 46 37 46 40H54" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                </svg>
+              </div>
+              <p class="feature-title">Поєднується з іншими</p>
+              <p class="feature-sub">терапіями та технологіями</p>
+            </div>
 
-                <!-- Format Switcher: Clinic vs Showroom -->
-                <div class="format-switcher-wrap">
-                  <span class="format-label">Формат тестування:</span>
-                  <div class="format-switcher">
-                    <button type="button" class="format-tab-btn active" data-format="clinic">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg>
-                      <span>У вашій клініці (виїзд)</span>
-                    </button>
-                    <button type="button" class="format-tab-btn" data-format="showroom">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></svg>
-                      <span>У шоурумі (Київ)</span>
-                    </button>
-                  </div>
-                </div>
+            <!-- Icon 3: Open Palm with Sparkles -->
+            <div class="frameless-feature-item">
+              <div class="feature-icon-wrapper">
+                <svg width="76" height="76" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Hand Palm & 5 Fingers -->
+                  <path d="M31 70V38C31 36.3 32.3 35 34 35C35.7 35 37 36.3 37 38V28C37 26.3 38.3 25 40 25C41.7 25 43 26.3 43 28V26C43 24.3 44.3 23 46 23C47.7 23 49 24.3 49 26V30C49 28.3 50.3 27 52 27C53.7 27 55 28.3 55 30V48C55 58 48 70 38 70H31Z" stroke="#000000" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <!-- Thumb -->
+                  <path d="M31 54L22 44C20.8 42.5 22 40 24 40.5L31 43" stroke="#000000" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <!-- Wrist line -->
+                  <path d="M31 70H40" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+                  <!-- Palm creases -->
+                  <path d="M35 49C38 53 43 55 50 53" stroke="#000000" stroke-width="2.2" stroke-linecap="round"/>
+                  <!-- Sparkles -->
+                  <path d="M14 26L16.5 20L23 17.5L16.5 15L14 8.5L11.5 15L5 17.5L11.5 20L14 26Z" fill="#000000"/>
+                  <path d="M62 18L64 14L68 12L64 10L62 6L60 10L56 12L60 14L62 18Z" fill="#000000"/>
+                  <path d="M64 62L65.5 58L69.5 56.5L65.5 55L64 51L62.5 55L58.5 56.5L62.5 58L64 62Z" fill="#000000"/>
+                </svg>
+              </div>
+              <p class="feature-title">Система</p>
+              <p class="feature-sub">«Вільні руки» (Hands-Free)</p>
+            </div>
 
-                <!-- Main Booking Form -->
-                <form class="glass-modal-form zionic-stage-form" onsubmit="event.preventDefault(); document.querySelector('.form-success-toast')?.classList.add('show'); setTimeout(() => document.querySelector('.form-success-toast')?.classList.remove('show'), 4000);">
-                  <div class="form-group-item">
-                    <label class="form-label-text" for="zionic_stage_name">Ваше ім'я та посада</label>
-                    <div class="input-with-icon">
-                      <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="7.5" r="4.5" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></circle><path d="M4.5 20C4.5 16 8 14 12 14C16 14 19.5 16 19.5 20" stroke-width="1.8" stroke-linecap="round"></path></svg>
-                      <input type="text" id="zionic_stage_name" name="name" placeholder="Наприклад: Вікторія, головний лікар" required class="luxury-form-input">
-                    </div>
-                  </div>
+            <!-- Icon 4: Hand Supporting Shield with Checkmark -->
+            <div class="frameless-feature-item">
+              <div class="feature-icon-wrapper">
+                <svg width="76" height="76" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Shield with Checkmark -->
+                  <path d="M50 10L65 17V32C65 42 57 48 50 51C43 48 35 42 35 32V17L50 10Z" stroke="#000000" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M43 31L48 36L58 24" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <!-- Sleeve / Cuff -->
+                  <rect x="9" y="42" width="10" height="24" rx="2" stroke="#000000" stroke-width="2.8"/>
+                  <circle cx="14" cy="54" r="1.8" fill="#000000"/>
+                  <!-- Hand & Fingers supporting the shield -->
+                  <path d="M19 47H30L38 50H58C63 50 67 53 65 58L59 66H30L19 60" stroke="#000000" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <p class="feature-title">Клінічна</p>
+              <p class="feature-sub">безпека</p>
+            </div>
 
-                  <div class="form-row-2col">
-                    <div class="form-group-item">
-                      <label class="form-label-text" for="zionic_stage_phone">Телефон</label>
-                      <div class="input-with-icon">
-                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="6" y="2" width="12" height="20" rx="3" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></rect><circle cx="12" cy="18" r="1" fill="currentColor"></circle><path d="M10 5H14" stroke-width="1.5" stroke-linecap="round"></path></svg>
-                        <input type="tel" id="zionic_stage_phone" name="phone" placeholder="+380" required class="luxury-form-input">
-                      </div>
-                    </div>
-
-                    <div class="form-group-item">
-                      <label class="form-label-text" for="zionic_stage_city">Місто / Назва клініки</label>
-                      <div class="input-with-icon">
-                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 21.5C12 21.5 19 14.5 19 9.5C19 5.5 16 2.5 12 2.5C8 2.5 5 5.5 5 9.5C5 14.5 12 21.5 12 21.5Z" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></path><circle cx="12" cy="9.5" r="2.5" stroke-width="1.6" fill="currentColor"></circle></svg>
-                        <input type="text" id="zionic_stage_city" name="city" placeholder="Київ, Клініка..." required class="luxury-form-input">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-group-item">
-                    <label class="form-label-text">Зручний месенджер для підтвердження</label>
-                    <div class="messenger-pills-row">
-                      <label class="messenger-pill active">
-                        <input type="radio" name="zionic_stage_messenger" value="Whatsapp" checked class="messenger-radio">
-                        <span class="pill-dot dot-green"></span>
-                        <span>WhatsApp</span>
-                      </label>
-                      <label class="messenger-pill">
-                        <input type="radio" name="zionic_stage_messenger" value="Telegram" class="messenger-radio">
-                        <span class="pill-dot dot-blue"></span>
+          </div>                   <span class="pill-dot dot-blue"></span>
                         <span>Telegram</span>
                       </label>
                       <label class="messenger-pill">
@@ -2123,11 +2124,11 @@ function cleanHtml(raw, pageName) {
         </div>
       </section>
 
-      <!-- 2. ADVANCED COMPRESSION & PROCEDURE SHOWCASE (OFFICIAL MINIMALIST ARCHITECTURE) -->
+            <!-- 2. ADVANCED COMPRESSION & PROCEDURE SHOWCASE (TOP HEADER + FULL WIDTH IMAGE) -->
       <section class="linfopress-advanced-section" id="linfopress-advantages">
         <div class="container">
           
-          <!-- 1. Top Centered Headline (No kicker) -->
+          <!-- 1. Top Centered Headline (Clean, no extra clutter) -->
           <div class="linfopress-advanced-header">
             <h2 class="linfopress-advanced-title">
               ПРЕСОТЕРАПІЯ <span class="title-bold">ПЕРЕДОВОЇ КОМПРЕСІЇ</span>
@@ -2136,82 +2137,15 @@ function cleanHtml(raw, pageName) {
               <strong>Linfopress Evolution PRO</strong> — це система імпульсної пневматичної пресотерапії, що точно імітує фізіологічний рух кровообігу та лімфотоку. З клінічною ефективністю, видимою з першого сеансу, і без періоду відновлення.
             </p>
           </div>
-
-          <!-- 2. 4 Clean Frameless Feature Items (Replicated from Screenshot in Pure Black) -->
-          <div class="linfopress-frameless-features">
-            
-            <!-- Icon 1: Lightning Cycle -->
-            <div class="frameless-feature-item">
-              <div class="feature-icon-wrapper">
-                <svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M24 6C33.941 6 42 14.059 42 24C42 25.8 41.7 27.5 41.2 29.1" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M24 42C14.059 42 6 33.941 6 24C6 22.2 6.3 20.5 6.8 18.9" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M3 21L7 17L11 21" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M45 27L41 31L37 27" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M26 13L18 25H25L22 35L31 23H24L26 13Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <p class="feature-title">Клінічна ефективність</p>
-              <p class="feature-sub">видима з першого сеансу</p>
-            </div>
-
-            <!-- Icon 2: Interlocking Puzzle Pieces with Arc Brackets -->
-            <div class="frameless-feature-item">
-              <div class="feature-icon-wrapper">
-                <svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 9C19 4 29 4 36 9" stroke="#000000" stroke-width="1.8" stroke-linecap="round"/>
-                  <path d="M36 39C29 44 19 44 12 39" stroke="#000000" stroke-width="1.8" stroke-linecap="round"/>
-                  <g transform="rotate(45 24 24)">
-                    <path d="M16 16H22C22 17.6569 23.3431 19 25 19C26.6569 19 28 17.6569 28 16H34V22C32.3431 22 31 23.3431 31 25C31 26.6569 32.3431 28 34 28V34H28C28 32.3431 26.6569 31 25 31C23.3431 31 22 32.3431 22 34H16V28C17.6569 28 19 26.6569 19 25C19 23.3431 17.6569 22 16 22V16Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <line x1="16" y1="25" x2="34" y2="25" stroke="#000000" stroke-width="1.5" stroke-dasharray="2 2"/>
-                  </g>
-                </svg>
-              </div>
-              <p class="feature-title">Поєднується з іншими</p>
-              <p class="feature-sub">терапіями та технологіями</p>
-            </div>
-
-            <!-- Icon 3: Open Palm with Sparkles -->
-            <div class="frameless-feature-item">
-              <div class="feature-icon-wrapper">
-                <svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19 41V22C19 20.8954 19.8954 20 21 20C22.1046 20 23 20.8954 23 22V17C23 15.8954 23.8954 15 25 15C26.1046 15 27 15.8954 27 17V16C27 14.8954 27.8954 14 29 14C30.1046 14 31 14.8954 31 16V18C31 16.8954 31.8954 16 33 16C34.1046 16 35 16.8954 35 18V27C35 34.5 30 41 24 41H19Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M19 32L14 26C13.2 25 14 23.5 15.3 23.8L19 25.5" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M22 28C24 31 28 32 32 31" stroke="#000000" stroke-width="1.5" stroke-linecap="round"/>
-                  <path d="M9 18L10 14L14 13L10 12L9 8L8 12L4 13L8 14L9 18Z" fill="#000000"/>
-                  <path d="M38 12L39 10L41 9L39 8L38 6L37 8L35 9L37 10L38 12Z" fill="#000000"/>
-                  <path d="M37 38L38 35L41 34L38 33L37 30L36 33L33 34L36 35L37 38Z" fill="#000000"/>
-                </svg>
-              </div>
-              <p class="feature-title">Система</p>
-              <p class="feature-sub">«Вільні руки» (Hands-Free)</p>
-            </div>
-
-            <!-- Icon 4: Hand Supporting Shield with Checkmark -->
-            <div class="frameless-feature-item">
-              <div class="feature-icon-wrapper">
-                <svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M29 6L38 10V18C38 23.5 34 27.5 29 29C24 27.5 20 23.5 20 18V10L29 6Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M25 17L28 20L33 14" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <rect x="7" y="24" width="6" height="15" rx="1" stroke="#000000" stroke-width="2"/>
-                  <circle cx="10" cy="33" r="1" fill="#000000"/>
-                  <path d="M13 27H20L25 29H35C38 29 40 31 39 34L35 39H20L13 35" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <p class="feature-title">Клінічна</p>
-              <p class="feature-sub">безпека</p>
-            </div>
-
-          </div>
         </div>
 
-        <!-- 3. Stretched Wide Procedure Bed Image Underneath (Full Viewport Width 100vw, Edge to Edge) -->
+        <!-- 2. Stretched Wide Procedure Bed Image Underneath (Full Viewport Width 100vw, Edge to Edge) -->
         <div class="linfopress-procedure-stretch-wrap">
           <img src="/wp-content/uploads/linfopress_official/new_photo_3.png" alt="Linfopress Evolution PRO Процедура на кушетці" class="linfopress-procedure-stretch-img" loading="lazy">
         </div>
       </section>
 
-      <!-- 3. TECHNICAL SUIT ARCHITECTURE (24 SECTORS & COMFORT) -->
+            <!-- 3. TECHNICAL SUIT ARCHITECTURE (24 SECTORS & COMFORT) -->
       <section class="linfopress-tech-section" id="suit-technology">
         <div class="container">
           <div class="zionic-section-header">
@@ -2226,7 +2160,16 @@ function cleanHtml(raw, pageName) {
             <!-- Card 1 -->
             <div class="linfopress-card">
               <div class="linfopress-card-media">
-                <img src="/wp-content/uploads/linfopress_official/tech_24_chambers.png" alt="24 косі камери перекриття" loading="lazy">
+                <svg width="76" height="76" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Circular Arrow Arcs -->
+                  <path d="M40 10C56.5685 10 70 23.4315 70 40C70 43.2 69.49 46.28 68.54 49.16" stroke="#000000" stroke-width="2.8" stroke-linecap="round"/>
+                  <path d="M40 70C23.4315 70 10 56.5685 10 40C10 36.8 10.51 33.72 11.46 30.84" stroke="#000000" stroke-width="2.8" stroke-linecap="round"/>
+                  <!-- Arrowheads -->
+                  <polygon points="5 32 12 25 19 32" stroke="#000000" stroke-width="2.5" stroke-linejoin="round" fill="#000000"/>
+                  <polygon points="75 48 68 55 61 48" stroke="#000000" stroke-width="2.5" stroke-linejoin="round" fill="#000000"/>
+                  <!-- Central Lightning Bolt -->
+                  <path d="M43 19L29 42H41L37 61L53 37H41L43 19Z" stroke="#000000" stroke-width="2.8" stroke-linejoin="round" fill="none"/>
+                </svg>
               </div>
               <div class="linfopress-card-body">
                 <span class="linfopress-num">01</span>
@@ -2238,7 +2181,16 @@ function cleanHtml(raw, pageName) {
             <!-- Card 2 -->
             <div class="linfopress-card">
               <div class="linfopress-card-media">
-                <img src="/wp-content/uploads/linfopress_official/tech_pillow.png" alt="Ергономічний валик під шию" loading="lazy">
+                <svg width="76" height="76" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Outer Arc Brackets -->
+                  <path d="M22 13C33 6 47 6 58 13" stroke="#000000" stroke-width="2.8" stroke-linecap="round"/>
+                  <path d="M58 67C47 74 33 74 22 67" stroke="#000000" stroke-width="2.8" stroke-linecap="round"/>
+                  <!-- 2 Jigsaw puzzle pieces interlocking diagonally -->
+                  <g transform="rotate(45 40 40)">
+                    <path d="M26 23H35C35 25.5 37 27.5 40 27.5C43 27.5 45 25.5 45 23H54V38C51.5 38 49.5 40 49.5 43C49.5 46 51.5 48 54 48V57H45C45 54.5 43 52.5 40 52.5C37 52.5 35 54.5 35 57H26V48C28.5 48 30.5 46 30.5 43C30.5 40 28.5 38 26 38V23Z" stroke="#000000" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26 40H36C36 37 38 35 41 35C44 35 46 37 46 40H54" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                </svg>
               </div>
               <div class="linfopress-card-body">
                 <span class="linfopress-num">02</span>
@@ -2250,7 +2202,20 @@ function cleanHtml(raw, pageName) {
             <!-- Card 3 -->
             <div class="linfopress-card">
               <div class="linfopress-card-media">
-                <img src="/wp-content/uploads/linfopress_official/tech_ankle.png" alt="Вільна зона щиколотки" loading="lazy">
+                <svg width="76" height="76" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Hand Palm & 5 Fingers -->
+                  <path d="M31 70V38C31 36.3 32.3 35 34 35C35.7 35 37 36.3 37 38V28C37 26.3 38.3 25 40 25C41.7 25 43 26.3 43 28V26C43 24.3 44.3 23 46 23C47.7 23 49 24.3 49 26V30C49 28.3 50.3 27 52 27C53.7 27 55 28.3 55 30V48C55 58 48 70 38 70H31Z" stroke="#000000" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <!-- Thumb -->
+                  <path d="M31 54L22 44C20.8 42.5 22 40 24 40.5L31 43" stroke="#000000" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <!-- Wrist line -->
+                  <path d="M31 70H40" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+                  <!-- Palm creases -->
+                  <path d="M35 49C38 53 43 55 50 53" stroke="#000000" stroke-width="2.2" stroke-linecap="round"/>
+                  <!-- Sparkles -->
+                  <path d="M14 26L16.5 20L23 17.5L16.5 15L14 8.5L11.5 15L5 17.5L11.5 20L14 26Z" fill="#000000"/>
+                  <path d="M62 18L64 14L68 12L64 10L62 6L60 10L56 12L60 14L62 18Z" fill="#000000"/>
+                  <path d="M64 62L65.5 58L69.5 56.5L65.5 55L64 51L62.5 55L58.5 56.5L62.5 58L64 62Z" fill="#000000"/>
+                </svg>
               </div>
               <div class="linfopress-card-body">
                 <span class="linfopress-num">03</span>
@@ -2262,7 +2227,16 @@ function cleanHtml(raw, pageName) {
             <!-- Card 4 -->
             <div class="linfopress-card">
               <div class="linfopress-card-media">
-                <img src="/wp-content/uploads/linfopress_official/tech_sensors.png" alt="Сенсорний контроль та калібрування" loading="lazy">
+                <svg width="76" height="76" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Shield with Checkmark -->
+                  <path d="M50 10L65 17V32C65 42 57 48 50 51C43 48 35 42 35 32V17L50 10Z" stroke="#000000" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M43 31L48 36L58 24" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <!-- Sleeve / Cuff -->
+                  <rect x="9" y="42" width="10" height="24" rx="2" stroke="#000000" stroke-width="2.8"/>
+                  <circle cx="14" cy="54" r="1.8" fill="#000000"/>
+                  <!-- Hand & Fingers supporting the shield -->
+                  <path d="M19 47H30L38 50H58C63 50 67 53 65 58L59 66H30L19 60" stroke="#000000" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </div>
               <div class="linfopress-card-body">
                 <span class="linfopress-num">04</span>
