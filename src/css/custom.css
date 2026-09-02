@@ -7530,6 +7530,296 @@ footer {
   letter-spacing: 0.2px !important;
 }
 
+/* ==========================================================================
+   12. LINFOPRESS EVOLUTION PRO PAGE SPECIFIC STYLING
+   ========================================================================== */
+.linfopress-page-wrapper,
+.linfopress-main-page-wrapper {
+  background: #ffffff;
+}
+
+/* Linfopress Hero Overlay Adjustment */
+.linfopress-hero-section .zionic-hero-overlay {
+  background: radial-gradient(circle at 65% 50%, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.7) 40%, rgba(255,255,255,0.3) 100%) !important;
+}
+
+/* 3. Linfopress Tech Suit Section (4-column Grid) */
+.linfopress-tech-section {
+  padding: 90px 0 100px 0;
+  background: #ffffff;
+}
+
+.linfopress-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.linfopress-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0px !important;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.02);
+}
+
+.linfopress-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+  border-color: #cbd5e1;
+}
+
+.linfopress-card-media {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background: #f8fafc;
+  padding: 12px;
+}
+
+.linfopress-card-media img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.linfopress-num {
+  font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
+  font-size: 13px;
+  font-weight: 800;
+  color: #0284c7;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.linfopress-card-body h3 {
+  font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
+  font-size: 17px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+}
+
+.linfopress-card-body p {
+  font-family: var(--active-body-font), 'Inter', sans-serif !important;
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 4. Linfopress Animated Protocols Grid */
+.linfopress-protocols-section {
+  padding: 90px 0 100px 0;
+  background: #f8fafc;
+}
+
+.linfopress-protocols-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.protocol-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0px !important;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.03);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.protocol-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+}
+
+.protocol-gif-wrap {
+  height: 200px;
+  position: relative;
+  background: #0f172a;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.protocol-gif-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.protocol-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
+  font-size: 10.5px;
+  font-weight: 800;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.protocol-content {
+  padding: 22px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.protocol-content h3 {
+  font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 10px 0;
+  line-height: 1.25;
+}
+
+.protocol-desc {
+  font-family: var(--active-body-font), 'Inter', sans-serif !important;
+  font-size: 13.5px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.protocol-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.protocol-tags span {
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 4px 8px;
+  letter-spacing: 0.2px;
+}
+
+/* 7. Linfopress Adaptability Grid (3 Sizes) */
+.linfopress-adaptability-section {
+  padding: 90px 0 100px 0;
+  background: #ffffff;
+}
+
+.linfopress-sizes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.size-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0px !important;
+  padding: 24px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.02);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.size-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+.size-img-wrap {
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background: #f8fafc;
+  padding: 12px;
+}
+
+.size-img-wrap img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.size-badge {
+  font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
+  font-size: 11.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #0284c7;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.size-card-info h4 {
+  font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 10px 0;
+}
+
+.size-card-info p {
+  font-family: var(--active-body-font), 'Inter', sans-serif !important;
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Adaptations for Linfopress */
+@media (max-width: 1024px) {
+  .linfopress-tech-grid,
+  .linfopress-protocols-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .linfopress-tech-section,
+  .linfopress-protocols-section,
+  .linfopress-adaptability-section {
+    padding: 60px 0 70px 0 !important;
+  }
+
+  .linfopress-tech-grid,
+  .linfopress-protocols-grid,
+  .linfopress-sizes-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .linfopress-hero-section .zionic-hero-overlay {
+    background: radial-gradient(circle at center, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0.3) 100%) !important;
+  }
+
+  .protocol-gif-wrap {
+    height: 180px;
+  }
+}
+
 
 
 

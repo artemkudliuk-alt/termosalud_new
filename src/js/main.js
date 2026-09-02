@@ -1017,12 +1017,12 @@ function initZionicCurtainSlide() {
 }
 
 /**
- * 19. Zionic Video Lightbox Modal & Smooth Scroll to Application Form
+ * 19. Apparatus Video Lightbox Modal & Smooth Scroll to Application Form
  */
 function initZionicVideoModal() {
-  function openVideo(videoId) {
-    const modal = document.getElementById('zionic_video_modal');
-    const container = document.getElementById('zionic_modal_video_container');
+  function openVideo(videoId, modalId, containerId) {
+    const modal = document.getElementById(modalId || 'zionic_video_modal') || document.getElementById('linfopress_video_modal');
+    const container = document.getElementById(containerId || 'zionic_modal_video_container') || document.getElementById('linfopress_modal_video_container');
     if (!modal || !container) return;
 
     container.innerHTML = `
@@ -1039,27 +1039,30 @@ function initZionicVideoModal() {
   }
 
   function closeVideo() {
-    const modal = document.getElementById('zionic_video_modal');
-    const container = document.getElementById('zionic_modal_video_container');
-    if (container) container.innerHTML = '';
-    if (modal) {
+    const modals = document.querySelectorAll('#zionic_video_modal, #linfopress_video_modal, .zionic-video-lightbox');
+    modals.forEach((modal) => {
+      const container = modal.querySelector('.zionic-video-lightbox-frame');
+      if (container) container.innerHTML = '';
       modal.style.display = 'none';
       modal.classList.remove('is-active', 'show');
-    }
+    });
     document.documentElement.classList.remove('modal-open-lock');
     document.body.classList.remove('modal-open-lock');
   }
 
   document.addEventListener('click', (e) => {
-    const openTrigger = e.target.closest('#open_zionic_video_btn, [data-open-zionic-video]');
+    const openTrigger = e.target.closest('#open_zionic_video_btn, #open-linfopress-video-btn, [data-open-zionic-video], .video-preview-wrapper');
     if (openTrigger) {
       e.preventDefault();
       const videoId = openTrigger.getAttribute('data-video-id') || 'CYsDii-PZ7s';
-      openVideo(videoId);
+      const isLinfopress = document.getElementById('linfopress_video_modal') && !document.getElementById('zionic_video_modal');
+      const modalId = isLinfopress ? 'linfopress_video_modal' : 'zionic_video_modal';
+      const containerId = isLinfopress ? 'linfopress_modal_video_container' : 'zionic_modal_video_container';
+      openVideo(videoId, modalId, containerId);
       return;
     }
 
-    if (e.target.closest('[data-close-video-modal]') || e.target.id === 'zionic_video_modal') {
+    if (e.target.closest('[data-close-video-modal]') || e.target.classList.contains('zionic-video-lightbox')) {
       closeVideo();
       return;
     }
@@ -1071,7 +1074,7 @@ function initZionicVideoModal() {
         e.preventDefault();
         formCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
         setTimeout(() => {
-          const firstInput = formCard.querySelector('input[name="name"], #zionic_stage_name');
+          const firstInput = formCard.querySelector('input[name="name"], #zionic_stage_name, #linfopress_stage_name');
           if (firstInput) {
             firstInput.focus({ preventScroll: true });
           }
@@ -1081,8 +1084,7 @@ function initZionicVideoModal() {
   });
 
   window.addEventListener('keydown', (e) => {
-    const modal = document.getElementById('zionic_video_modal');
-    if (e.key === 'Escape' && modal && modal.classList.contains('show')) {
+    if (e.key === 'Escape') {
       closeVideo();
     }
   });

@@ -2079,6 +2079,802 @@ function cleanHtml(raw, pageName) {
     html = html.replace(/<div[\s\n]+class=center>[\s\S]*?(?=<footer|$)/i, `<div class="zionic-main-page-wrapper">\n${modernZionicHtml}\n</div>\n`);
   }
 
+  // Modern Linfopress Evolution PRO Page Structure (Cloned from Official Termosalud with Ukrainian Localization)
+  if (pageName === 'linfopress') {
+    const modernLinfopressHtml = `
+      <!-- 1. HERO STAGE (PREMIUM SWISS MEDICAL CLEAN CINEMA) -->
+      <section class="linfopress-hero-section zionic-hero-stage" id="hero">
+        <div class="zionic-hero-media-wrapper">
+          <picture>
+            <source srcset="/wp-content/uploads/2026/03/linfopress-main-banner-scaled-optimized.png" media="(min-width: 992px)">
+            <img src="/wp-content/uploads/2026/03/linfopress-main-banner-mob-optimized.png" alt="Linfopress Evolution PRO Termosalud" class="zionic-hero-media-img" loading="eager">
+          </picture>
+          <div class="zionic-hero-overlay"></div>
+        </div>
+
+        <div class="container zionic-hero-container">
+          <div class="zionic-hero-content-box">
+            <span class="zionic-hero-kicker">ПРЕСОТЕРАПІЯ ВІД СВІТОВОГО ЛІДЕРА TERMOSALUD</span>
+            <h1 class="zionic-hero-title">
+              <span class="zionic-word-top">LINFOPRESS</span>
+              <span class="zionic-word-bottom">EVOLUTION PRO</span>
+            </h1>
+            <p class="zionic-hero-desc">
+              Пресотерапія преміального рівня з біоміметичним пульсом для глибокого лімфодренажу, усунення набряків та комплексного моделювання тіла.
+            </p>
+
+            <div class="zionic-hero-actions">
+              <a href="#application" class="zionic-primary-btn">
+                <span>ЗАМОВИТИ ТЕСТ-ДРАЙВ</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <button class="zionic-secondary-btn" id="open-linfopress-video-btn" data-video-id="K1v77enueJ8">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>ВІДЕО-ДЕМОНСТРАЦІЯ</span>
+              </button>
+            </div>
+
+            <!-- Trust Bar / Key Specs -->
+            <div class="zionic-hero-trust-bar">
+              <div class="hero-trust-item">
+                <span class="hero-trust-metric">24</span>
+                <span class="hero-trust-label">Камери з косим перекриттям</span>
+              </div>
+              <div class="hero-trust-divider"></div>
+              <div class="hero-trust-item">
+                <span class="hero-trust-metric">100%</span>
+                <span class="hero-trust-label">Автономний сеанс hands-free</span>
+              </div>
+              <div class="hero-trust-divider"></div>
+              <div class="hero-trust-item">
+                <span class="hero-trust-metric">4</span>
+                <span class="hero-trust-label">Клінічні цикли компресії</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. PILLARS + UNIT SHOWCASE (CLONED FROM TERMOSALUD WITH UKRAINIAN LOCALIZATION) -->
+      <section class="zionic-pillars-section linfopress-pillars-section" id="linfopress-advantages">
+        <div class="container">
+          <div class="zionic-pillars-split-wrap">
+            
+            <!-- Left Column: Information & Minimalist Benefits -->
+            <div class="zionic-pillars-info-col">
+              <div class="zionic-pillars-intro-box">
+                <span class="section-kicker">ПЕРЕВАГИ ДЛЯ КЛІНІКИ ТА ЛІКАРЯ</span>
+                <h2 class="zionic-pillars-headline">АВТОНОМНІСТЬ + РЕНТАБЕЛЬНІСТЬ</h2>
+                <p class="zionic-pillars-desc">
+                  Втілення 35 років досвіду іспанської медичної інженерії Termosalud. Інтелектуальна пневматична компресія з біоміметичним пульсом, що ідеально поєднується з будь-якими апаратними та естетичними процедурами.
+                </p>
+              </div>
+
+              <!-- Minimalist Airy Highlights -->
+              <div class="zionic-minimal-pillars-list">
+                <!-- Point 1 -->
+                <div class="pillar-min-item">
+                  <div class="pillar-min-bullet">01</div>
+                  <div class="pillar-min-body">
+                    <h3 class="pillar-min-title">100% Заповнюваність кабінету</h3>
+                    <p class="pillar-min-text">
+                      Автономна процедура «hands-free», що не вимагає постійної присутності лікаря, забезпечуючи максимальну маржинальність без витратних матеріалів.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="pillar-min-item">
+                  <div class="pillar-min-bullet">02</div>
+                  <div class="pillar-min-body">
+                    <h3 class="pillar-min-title">Найбільший розмірний ряд на ринку</h3>
+                    <p class="pillar-min-text">
+                      Адаптивний костюм із 3 рівнями регулювання блискавок підходить для пацієнтів зростом від 1.50 м до 2.00 м та вагою до 58 розміру одягу.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="pillar-min-item">
+                  <div class="pillar-min-bullet">03</div>
+                  <div class="pillar-min-body">
+                    <h3 class="pillar-min-title">Швидкі результати з 1-го сеансу</h3>
+                    <p class="pillar-min-text">
+                      Миттєве зняття набряків, розвантаження венозного русла, лімфодренаж та відчуття неймовірної легкості в усьому тілі.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Column: Machine Unit Showcase -->
+            <div class="zionic-pillars-image-col">
+              <div class="zionic-manipula-showcase-box">
+                <img src="/wp-content/uploads/linfopress_official/linfopress_hero_machine.png" alt="Linfopress Evolution PRO Апарат та Костюм" class="zionic-manipula-zoom-img">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. TECHNICAL SUIT ARCHITECTURE (24 SECTORS & COMFORT) -->
+      <section class="linfopress-tech-section" id="suit-technology">
+        <div class="container">
+          <div class="zionic-section-header">
+            <span class="section-kicker">АНАТОМІЧНА ДОСКОНАЛІСТЬ</span>
+            <h2>24 ПЕРЕКРИВНІ СЕКЦІЇ ТА СИСТЕМА ДАТЧИКІВ</h2>
+            <p class="section-subtitle">
+              Унікальна конструкція костюма з косим перекриттям виключає зони зворотного тиску та гарантує фізіологічно точний відтік лімфи.
+            </p>
+          </div>
+
+          <div class="linfopress-tech-grid">
+            <!-- Card 1 -->
+            <div class="linfopress-card">
+              <div class="linfopress-card-media">
+                <img src="/wp-content/uploads/linfopress_official/tech_24_chambers.png" alt="24 косі камери перекриття" loading="lazy">
+              </div>
+              <div class="linfopress-card-body">
+                <span class="linfopress-num">01</span>
+                <h3>24 косі камери перекриття</h3>
+                <p>Особливе розташування секцій ялинкою запобігає розривам тиску та спрямовує рух рідини від периферії до центральних вузлів.</p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="linfopress-card">
+              <div class="linfopress-card-media">
+                <img src="/wp-content/uploads/linfopress_official/tech_pillow.png" alt="Ергономічний валик під шию" loading="lazy">
+              </div>
+              <div class="linfopress-card-body">
+                <span class="linfopress-num">02</span>
+                <h3>Ергономічний валик під шию</h3>
+                <p>Анатомічна подушка підтримує шийний відділ хребта, знімає напругу трапецієподібних м'язів та забезпечує повний релакс.</p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="linfopress-card">
+              <div class="linfopress-card-media">
+                <img src="/wp-content/uploads/linfopress_official/tech_ankle.png" alt="Вільна зона щиколотки" loading="lazy">
+              </div>
+              <div class="linfopress-card-body">
+                <span class="linfopress-num">03</span>
+                <h3>Вільна зона щиколотки</h3>
+                <p>Продумане звільнення гомілковостопного суглоба гарантує коректний венозний відтік без травмування судинної сітки.</p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="linfopress-card">
+              <div class="linfopress-card-media">
+                <img src="/wp-content/uploads/linfopress_official/tech_sensors.png" alt="Сенсорний контроль та калібрування" loading="lazy">
+              </div>
+              <div class="linfopress-card-body">
+                <span class="linfopress-num">04</span>
+                <h3>Сенсорне калібрування камер</h3>
+                <p>Мікропроцесорний контроль тиску в кожній окремій камері з індивідуальним налаштуванням під клінічні задачі пацієнта.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. ANIMATED PROTOCOL MODES (OFFICIAL TERMOSALUD GIFS) -->
+      <section class="linfopress-protocols-section" id="protocols">
+        <div class="container">
+          <div class="zionic-section-header">
+            <span class="section-kicker">КЛІНІЧНІ ПРОТОКОЛИ</span>
+            <h2>4 РЕЖИМИ БІОМІМЕТИЧНОГО ПУЛЬСУ</h2>
+            <p class="section-subtitle">
+              Запатентовані алгоритми пневмокомпресії, що точно відтворюють фізіологічні рухи венозного та лімфатичного повернення.
+            </p>
+          </div>
+
+          <div class="linfopress-protocols-grid">
+            <!-- Mode 1: Pre-Therapy -->
+            <div class="protocol-card">
+              <div class="protocol-gif-wrap">
+                <img src="/wp-content/uploads/linfopress_official/protocol_pretherapy.gif" alt="Протокол Pre-Therapy" loading="lazy">
+                <span class="protocol-badge">Етап 1: Підготовка</span>
+              </div>
+              <div class="protocol-content">
+                <h3>Pre-Therapy</h3>
+                <p class="protocol-desc">
+                  Розкриття основних лімфатичних колекторів. Рекомендовано як обов'язковий початковий цикл для прискорення дренажу перед інтенсивною терапією.
+                </p>
+                <div class="protocol-tags">
+                  <span>Відкриття вузлів</span>
+                  <span>Зняття спазму</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mode 2: Wave -->
+            <div class="protocol-card">
+              <div class="protocol-gif-wrap">
+                <img src="/wp-content/uploads/linfopress_official/protocol_wave.gif" alt="Протокол Wave" loading="lazy">
+                <span class="protocol-badge">Етап 2: Перистальтика</span>
+              </div>
+              <div class="protocol-content">
+                <h3>Wave (Хвильова дія)</h3>
+                <p class="protocol-desc">
+                  Послідовна компресія хвилями від дистальних ділянок до центру тіла. Створює потужний перистальтичний масаж для лікування целюліту та релаксації.
+                </p>
+                <div class="protocol-tags">
+                  <span>Антицелюліт</span>
+                  <span>М'язовий релакс</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mode 3: Lympha -->
+            <div class="protocol-card">
+              <div class="protocol-gif-wrap">
+                <img src="/wp-content/uploads/linfopress_official/protocol_lympha.gif" alt="Протокол Lympha" loading="lazy">
+                <span class="protocol-badge">Етап 3: Дренаж</span>
+              </div>
+              <div class="protocol-content">
+                <h3>Lympha (Градієнтний дренаж)</h3>
+                <p class="protocol-desc">
+                  Повні хвилі знизу вгору з поступовим зниженням тиску в напрямку цистерни Пекке. Найпотужніший терапевтичний вплив для виведення набряків.
+                </p>
+                <div class="protocol-tags">
+                  <span>Виведення рідини</span>
+                  <span>Детоксикація</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mode 4: Relaxing -->
+            <div class="protocol-card">
+              <div class="protocol-gif-wrap protocol-img-placeholder">
+                <img src="/wp-content/uploads/linfopress_official/linfopress_treatment_wide.png" alt="Протокол Relaxing" loading="lazy">
+                <span class="protocol-badge">Етап 4: Відновлення</span>
+              </div>
+              <div class="protocol-content">
+                <h3>Relaxing (Релаксація)</h3>
+                <p class="protocol-desc">
+                  Рівномірна заспокійлива дія на кожну камеру протягом сталого часу. Ідеально для фінішу сеансу, при втомі ніг, після вагітності чи інтенсивних тренувань.
+                </p>
+                <div class="protocol-tags">
+                  <span>Післяпологове відновлення</span>
+                  <span>Легкість ніг</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. ACCURACY & VIDEO DEMONSTRATION (CINEMATIC SPLIT SHOWCASE) -->
+      <section class="zionic-accuracy-section linfopress-accuracy-section" id="linfopress-video-section">
+        <div class="container">
+          <div class="accuracy-cinematic-split">
+            
+            <!-- Left Column: Clinical Control Info -->
+            <div class="accuracy-info-col">
+              <div class="accuracy-header-box">
+                <span class="section-kicker kicker-light">КЛІНІЧНИЙ КОНТРОЛЬ</span>
+                <h2 class="accuracy-title">БІОМІМЕТИЧНА ТОЧНІСТЬ ТА БЕЗПЕКА</h2>
+                <p class="accuracy-desc">
+                  Інтуїтивний сенсорний інтерфейс з відображенням параметрів тиску в реальному часі дозволяє зберігати індивідуальні програми пацієнтів та гарантувати 100% повторюваність результату.
+                </p>
+              </div>
+
+              <div class="accuracy-highlights-list">
+                <div class="accuracy-highlight-item">
+                  <div class="accuracy-hl-bullet">01</div>
+                  <div class="accuracy-hl-text">
+                    <h4>Сенсорне роздільне регулювання</h4>
+                    <p>Точний вибір тиску в кожній камері залежно від стану судинної сітки пацієнта.</p>
+                  </div>
+                </div>
+
+                <div class="accuracy-highlight-item">
+                  <div class="accuracy-hl-bullet">02</div>
+                  <div class="accuracy-hl-text">
+                    <h4>Повна автономність лікаря</h4>
+                    <p>Апарат проводить повний цикл терапії без необхідності ручного супроводу спеціаліста.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accuracy-cta-row">
+                <button class="zionic-sharp-contact-btn zionic-btn-light" data-target="#popup_request">
+                  <span>ЗАМОВИТИ ПРЕЗЕНТАЦІЮ</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Column: 16:9 Cinematic Video Player Card -->
+            <div class="accuracy-video-col">
+              <div class="accuracy-cinema-player-box">
+                <div class="video-preview-wrapper" data-video-id="K1v77enueJ8">
+                  <img src="/wp-content/uploads/linfopress_official/linfopress_treatment_wide.png" alt="Відео демонстрація Linfopress" class="accuracy-video-thumb">
+                  
+                  <div class="accuracy-play-pulse-btn">
+                    <div class="play-pulse-ring"></div>
+                    <div class="play-pulse-core">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+                    </div>
+                  </div>
+
+                  <div class="accuracy-video-bottom-bar">
+                    <span class="video-live-pill">LIVE ДЕМОНСТРАЦІЯ</span>
+                    <span class="video-caption-text">Процедура пресотерапії Linfopress Evolution PRO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. TREATMENT AREAS & INDICATIONS (SWISS MINIMALIST SPLIT) -->
+      <section class="zionic-treatments-section" id="treatment-indications">
+        <div class="container">
+          <div class="zionic-section-header">
+            <span class="section-kicker">СФЕРИ ЗАСТОСУВАННЯ</span>
+            <h2>ПОКАЗАННЯ ТА СИНЕРГІЯ З BODYCONTOURING</h2>
+            <p class="section-subtitle">
+              Linfopress Evolution PRO є ідеальним фізіологічним доповненням до будь-яких апаратних протоколів корекції фігури.
+            </p>
+          </div>
+
+          <div class="treatments-swiss-layout">
+            <!-- Left: Seamless Circle / Suit Photo -->
+            <div class="treatments-media-col">
+              <img src="/wp-content/uploads/linfopress_official/linfopress_suit_full.png" alt="Linfopress костюм для всього тіла" class="treatments-clean-circle-img" loading="lazy">
+            </div>
+
+            <!-- Right: Swiss Minimalist Rows -->
+            <div class="treatments-list-col">
+              <div class="treatments-swiss-list">
+
+                <!-- Item 01 -->
+                <div class="treatment-swiss-item">
+                  <div class="swiss-item-bullet">01</div>
+                  <div class="swiss-item-content">
+                    <h3 class="swiss-item-title">Лікування целюліту (Стадії I, II та III)</h3>
+                    <p class="swiss-item-desc">Розм'якшення щільних фіброзних перемичок, зняття інтерстиціального набряку та вирівнювання рельєфу стегон і сідниць.</p>
+                  </div>
+                </div>
+
+                <!-- Item 02 -->
+                <div class="treatment-swiss-item">
+                  <div class="swiss-item-bullet">02</div>
+                  <div class="swiss-item-content">
+                    <h3 class="swiss-item-title">Усунення затримки рідини та набряків</h3>
+                    <p class="swiss-item-desc">Швидка евакуація зайвої рідини та токсинів через стимуляцію лімфатичної системи всього тіла.</p>
+                  </div>
+                </div>
+
+                <!-- Item 03 -->
+                <div class="treatment-swiss-item">
+                  <div class="swiss-item-bullet">03</div>
+                  <div class="swiss-item-content">
+                    <h3 class="swiss-item-title">Синдром «важких ніг» та венозний застій</h3>
+                    <p class="swiss-item-desc">Покращення периферичного кровообігу, зняття напруги та втоми після тривалого стояння або перельотів.</p>
+                  </div>
+                </div>
+
+                <!-- Item 04 -->
+                <div class="treatment-swiss-item">
+                  <div class="swiss-item-bullet">04</div>
+                  <div class="swiss-item-content">
+                    <h3 class="swiss-item-title">Реабілітація після хірургії та ліпосакції</h3>
+                    <p class="swiss-item-desc">Прискорене загоєння тканин, профілактика сером і фіброзу, швидке розсмоктування гематом у післяопераційний період.</p>
+                  </div>
+                </div>
+
+                <!-- Item 05 -->
+                <div class="treatment-swiss-item">
+                  <div class="swiss-item-bullet">05</div>
+                  <div class="swiss-item-content">
+                    <h3 class="swiss-item-title">Синергія з ZIONIC, Criocuum та RF</h3>
+                    <p class="swiss-item-desc">Завершення процедур ліполізу та моделювання пресотерапією прискорює виведення зруйнованих адипоцитів у 2 рази.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. SUIT ADAPTABILITY (ALL SIZES & HEIGHTS) -->
+      <section class="linfopress-adaptability-section" id="suit-adaptability">
+        <div class="container">
+          <div class="zionic-section-header">
+            <span class="section-kicker">УНІВЕРСАЛЬНІСТЬ</span>
+            <h2>АДАПТАЦІЯ ДЛЯ БУДЬ-ЯКОЇ АНАТОМІЇ</h2>
+            <p class="section-subtitle">
+              Завдяки 3 рівням блискавок костюм ідеально сідає на будь-яку комплекцію пацієнта.
+            </p>
+          </div>
+
+          <div class="linfopress-sizes-grid">
+            <div class="size-card">
+              <div class="size-img-wrap">
+                <img src="/wp-content/uploads/linfopress_official/benefit_size_a.png" alt="Адаптація за зростом" loading="lazy">
+              </div>
+              <div class="size-card-info">
+                <span class="size-badge">Зріст</span>
+                <h4>Від 1,50 м до 2,00 м</h4>
+                <p>Анатомічні регулювання довжини штанин для точного попадання камер у лімфовузли.</p>
+              </div>
+            </div>
+
+            <div class="size-card">
+              <div class="size-img-wrap">
+                <img src="/wp-content/uploads/linfopress_official/benefit_size_b.png" alt="Адаптація за об'ємом" loading="lazy">
+              </div>
+              <div class="size-card-info">
+                <span class="size-badge">Об'єм</span>
+                <h4>Розміри одягу до 58</h4>
+                <p>Потрійна система блискавок дозволяє комфортно розмістити пацієнтів різної статури.</p>
+              </div>
+            </div>
+
+            <div class="size-card">
+              <div class="size-img-wrap">
+                <img src="/wp-content/uploads/linfopress_official/benefit_size_c.png" alt="Охоплення всього тіла" loading="lazy">
+              </div>
+              <div class="size-card-info">
+                <span class="size-badge">Комплекс</span>
+                <h4>Охоплення 100% зон тіла</h4>
+                <p>Стопи, литки, стегна, сідниці, живіт, спина та додаткові манжети для верхніх кінцівок.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. LINFOPRESS COMPREHENSIVE KNOWLEDGE & FAQ HUB -->
+      <section class="zionic-unified-info-section" id="faq">
+        <div class="container">
+          
+          <!-- Section Header -->
+          <div class="zionic-unified-header zionic-section-header">
+            <span class="section-kicker">ЕКСПЕРТИЗА ТА ВІДПОВІДІ</span>
+            <h2 class="unified-title">Все, що потрібно знати про LINFOPRESS EVOLUTION PRO</h2>
+            <p class="unified-subtitle">
+              Фінансова модель для клінік, технічні інновації, клінічні протоколи та відповіді на головні запитання
+            </p>
+          </div>
+
+          <!-- Single Unified Knowledge Container -->
+          <div class="zionic-unified-knowledge-card">
+            
+            <!-- Category Quick-Nav Filters (Smooth horizontal swipe ribbon) -->
+            <div class="knowledge-filter-bar">
+              <button type="button" class="knowledge-filter-btn active" data-filter="all">Всі теми</button>
+              <button type="button" class="knowledge-filter-btn" data-filter="business">Інвестиції та окупність</button>
+              <button type="button" class="knowledge-filter-btn" data-filter="tech">Технологія костюма</button>
+              <button type="button" class="knowledge-filter-btn" data-filter="clinical">Протоколи та безпека</button>
+              <button type="button" class="knowledge-filter-btn" data-filter="training">Навчання лікарів</button>
+            </div>
+
+            <!-- Unified Accordion Items List -->
+            <div class="knowledge-accordion-list">
+              
+              <!-- Item 1: Business & Investment -->
+              <div class="knowledge-item active" data-category="business">
+                <button type="button" class="knowledge-trigger" aria-expanded="true">
+                  <div class="knowledge-left-meta">
+                    <span class="knowledge-num">01</span>
+                    <div class="knowledge-title-wrap">
+                      <span class="knowledge-cat-tag">Рентабельність та інвестиції</span>
+                      <h3 class="knowledge-item-title">Чому покупка Linfopress Evolution PRO — це 100% автономне джерело прибутку клініки?</h3>
+                    </div>
+                  </div>
+                  <div class="knowledge-action-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19" class="icon-v"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  </div>
+                </button>
+                <div class="knowledge-body" style="display: block;">
+                  <div class="knowledge-body-inner">
+                    <p>
+                      Головна перевага Linfopress Evolution PRO полягає у концепції «hands-free»: лікар або асистент лише одягає костюм на пацієнта та обирає необхідну програму на сенсорному дисплеї, після чого апарат самостійно проводить повноцінний 30–45 хвилинний сеанс.
+                    </p>
+                    <p>
+                      <strong>Швидка окупність та нульові витратні матеріали:</strong> відсутність дорогих картриджів та висока пропускна здатність кабінету дозволяють повернути інвестиції вже за 2–4 місяці експлуатації, доповнюючи чеки процедур масажу, RF-ліфтингу чи кріоліполізу.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: Chamber Tech -->
+              <div class="knowledge-item" data-category="tech">
+                <button type="button" class="knowledge-trigger" aria-expanded="false">
+                  <div class="knowledge-left-meta">
+                    <span class="knowledge-num">02</span>
+                    <div class="knowledge-title-wrap">
+                      <span class="knowledge-cat-tag">Унікальна конструкція</span>
+                      <h3 class="knowledge-item-title">Чим косі перекривні камери Linfopress відрізняються від звичайної пресотерапії?</h3>
+                    </div>
+                  </div>
+                  <div class="knowledge-action-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19" class="icon-v"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  </div>
+                </button>
+                <div class="knowledge-body">
+                  <div class="knowledge-body-inner">
+                    <p>
+                      У звичайних бюджетних апаратах камери розташовані прямо паралельно, створюючи "сліпі зони" або зворотний рух лімфи при перемиканні секцій. У Linfopress Evolution PRO встановлено 24 незалежні камери у формі риб'ячої кістки (ялинкою) з частковим накладанням одна на одну.
+                    </p>
+                    <p>
+                      Це гарантує безперервну фізіологічну хвилю компресії, що жене застійну лімфу строго до пахових та підключичних колекторів без ризику судинного застою.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3: Clinical Protocols -->
+              <div class="knowledge-item" data-category="clinical">
+                <button type="button" class="knowledge-trigger" aria-expanded="false">
+                  <div class="knowledge-left-meta">
+                    <span class="knowledge-num">03</span>
+                    <div class="knowledge-title-wrap">
+                      <span class="knowledge-cat-tag">Клінічний протокол</span>
+                      <h3 class="knowledge-item-title">Скільки процедур потрібно для відчутного терапевтичного ефекту?</h3>
+                    </div>
+                  </div>
+                  <div class="knowledge-action-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19" class="icon-v"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  </div>
+                </button>
+                <div class="knowledge-body">
+                  <div class="knowledge-body-inner">
+                    <p>
+                      Зняття тяжкості в кінцівках та виведення надлишку рідини відчутні вже під час першого 30-хвилинного сеансу. Для закріплення стійкого антицелюлітного ефекту та профілактики варикозного застою призначається курс із 8–12 процедур з періодичністю 2–3 рази на тиждень.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4: Synergy -->
+              <div class="knowledge-item" data-category="clinical">
+                <button type="button" class="knowledge-trigger" aria-expanded="false">
+                  <div class="knowledge-left-meta">
+                    <span class="knowledge-num">04</span>
+                    <div class="knowledge-title-wrap">
+                      <span class="knowledge-cat-tag">Комбіновані програми</span>
+                      <h3 class="knowledge-item-title">Як Linfopress підсилює ефект апарату ZIONIC та кріоліполізу?</h3>
+                    </div>
+                  </div>
+                  <div class="knowledge-action-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19" class="icon-v"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  </div>
+                </button>
+                <div class="knowledge-body">
+                  <div class="knowledge-body-inner">
+                    <p>
+                      Після термо-механічного ліполізу (ZIONIC) або кріодеструкції жирових клітин вивільнені тригліцериди та токсини потрапляють у міжклітинний простір. Проведення сеансу Linfopress одразу після основної процедури прискорює їхній лімфатичний дренаж та елімінацію печінкою, подвоюючи видимий результат схуднення та попереджаючи інтоксикацію.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 5: Training & Certification -->
+              <div class="knowledge-item" data-category="training">
+                <button type="button" class="knowledge-trigger" aria-expanded="false">
+                  <div class="knowledge-left-meta">
+                    <span class="knowledge-num">05</span>
+                    <div class="knowledge-title-wrap">
+                      <span class="knowledge-cat-tag">Навчання та сервіс</span>
+                      <h3 class="knowledge-item-title">Чи надається офіційне практичне навчання лікарів клініки?</h3>
+                    </div>
+                  </div>
+                  <div class="knowledge-action-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19" class="icon-v"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  </div>
+                </button>
+                <div class="knowledge-body">
+                  <div class="knowledge-body-inner">
+                    <p>
+                      Так, Termosalud Україна надає безкоштовне очне навчання для спеціалістів та адміністраторів вашого медичного центру. Програма включає налаштування індивідуальних параметрів, вивчення протоколів ліпосакційного супроводу та видачу сертифікатів міжнародного зразка.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 9. TEST-DRIVE APPLICATION & PRESENTATION STAGE -->
+      <section class="application-presentation zionic-presentation-stage" id="application">
+        <div class="container">
+          <div class="presentation-header">
+            <span class="section-kicker">ТЕСТ-ДРАЙВ ТА ПРЕЗЕНТАЦІЯ</span>
+            <h2>Замовте виїзний тест-драйв Linfopress Evolution PRO у вашу клініку</h2>
+            <p>Оцініть можливості та результативність пресотерапії Termosalud безпосередньо у вашому кабінеті або в нашому шоурумі</p>
+          </div>
+
+          <!-- 2-Column Stage: Left Visual + Right Open Interactive Form -->
+          <div class="presentation-stage-grid">
+            
+            <!-- Left Column: Visual Media Card with Photo & Trust Highlights -->
+            <div class="presentation-visual-col">
+              <div class="presentation-photo-frame">
+                <img
+                  src="/wp-content/uploads/linfopress_official/linfopress_treatment_wide.png"
+                  class="presentation-showcase-img"
+                  alt="Linfopress Evolution PRO Тест-драйв"
+                  loading="lazy"
+                />
+                <div class="presentation-floating-tag">
+                  <span class="live-pulse-dot"></span>
+                  <span>Ексклюзивний тест-драйв для клінік</span>
+                </div>
+              </div>
+              
+              <div class="presentation-trust-features">
+                <div class="trust-feature-item">
+                  <span class="trust-icon">✓</span>
+                  <div>
+                    <strong>Безкоштовний виїзд до вашої клініки</strong>
+                    <span>Привеземо апарат та проведемо тест безпосередньо у вашому кабінеті</span>
+                  </div>
+                </div>
+                <div class="trust-feature-item">
+                  <span class="trust-icon">✓</span>
+                  <div>
+                    <strong>Розрахунок фінансової окупності</strong>
+                    <span>Персональний бізнес-план повернення інвестицій за 2–4 місяці</span>
+                  </div>
+                </div>
+                <div class="trust-feature-item">
+                  <span class="trust-icon">✓</span>
+                  <div>
+                    <strong>Навчання лікарів та сертифікація</strong>
+                    <span>Повний супровід та авторські протоколи від тренерів Termosalud</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Direct Contact Box -->
+              <div class="zionic-direct-call-box">
+                <div class="direct-call-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="direct-call-info">
+                  <span class="direct-call-label">Гаряча лінія для керівників та лікарів:</span>
+                  <a href="tel:+380937205277" class="direct-call-number">+380 93 720 52 77</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Open High-Converting Booking Form -->
+            <div class="presentation-form-col">
+              <div class="presentation-form-card">
+                <div class="form-card-header">
+                  <h3 class="form-card-title">Заявка на виїзний тест-драйв</h3>
+                  <p class="form-card-subtitle">Заповніть форму, і наш фахівець узгодить з вами зручний день та формат тестування</p>
+                </div>
+
+                <!-- Format Switcher: Clinic vs Showroom -->
+                <div class="format-switcher-wrap">
+                  <span class="format-label">Формат тестування:</span>
+                  <div class="format-switcher">
+                    <button type="button" class="format-tab-btn active" data-format="clinic">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg>
+                      <span>У вашій клініці (виїзд)</span>
+                    </button>
+                    <button type="button" class="format-tab-btn" data-format="showroom">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></svg>
+                      <span>У шоурумі (Київ)</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Main Booking Form -->
+                <form class="glass-modal-form zionic-stage-form" onsubmit="event.preventDefault(); document.querySelector('.form-success-toast')?.classList.add('show'); setTimeout(() => document.querySelector('.form-success-toast')?.classList.remove('show'), 4000);">
+                  <input type="hidden" name="requested_apparatus" value="Linfopress Evolution PRO">
+                  
+                  <div class="form-group-item">
+                    <label class="form-label-text" for="linfopress_stage_name">Ваше ім'я та посада</label>
+                    <div class="input-with-icon">
+                      <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="7.5" r="4.5" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></circle><path d="M4.5 20C4.5 16 8 14 12 14C16 14 19.5 16 19.5 20" stroke-width="1.8" stroke-linecap="round"></path></svg>
+                      <input type="text" id="linfopress_stage_name" name="name" placeholder="Наприклад: Вікторія, головний лікар" required class="luxury-form-input">
+                    </div>
+                  </div>
+
+                  <div class="form-row-2col">
+                    <div class="form-group-item">
+                      <label class="form-label-text" for="linfopress_stage_phone">Телефон</label>
+                      <div class="input-with-icon">
+                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="6" y="2" width="12" height="20" rx="3" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></rect><circle cx="12" cy="18" r="1" fill="currentColor"></circle><path d="M10 5H14" stroke-width="1.5" stroke-linecap="round"></path></svg>
+                        <input type="tel" id="linfopress_stage_phone" name="phone" placeholder="+380" required class="luxury-form-input">
+                      </div>
+                    </div>
+
+                    <div class="form-group-item">
+                      <label class="form-label-text" for="linfopress_stage_city">Місто / Назва клініки</label>
+                      <div class="input-with-icon">
+                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 21.5C12 21.5 19 14.5 19 9.5C19 5.5 16 2.5 12 2.5C8 2.5 5 5.5 5 9.5C5 14.5 12 21.5 12 21.5Z" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></path><circle cx="12" cy="9.5" r="2.5" stroke-width="1.6" fill="currentColor"></circle></svg>
+                        <input type="text" id="linfopress_stage_city" name="city" placeholder="Київ, Клініка..." required class="luxury-form-input">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group-item">
+                    <label class="form-label-text">Зручний месенджер для підтвердження</label>
+                    <div class="messenger-pills-row">
+                      <label class="messenger-pill active">
+                        <input type="radio" name="linfopress_stage_messenger" value="Whatsapp" checked class="messenger-radio">
+                        <span class="pill-dot dot-green"></span>
+                        <span>WhatsApp</span>
+                      </label>
+                      <label class="messenger-pill">
+                        <input type="radio" name="linfopress_stage_messenger" value="Telegram" class="messenger-radio">
+                        <span class="pill-dot dot-blue"></span>
+                        <span>Telegram</span>
+                      </label>
+                      <label class="messenger-pill">
+                        <input type="radio" name="linfopress_stage_messenger" value="Viber" class="messenger-radio">
+                        <span class="pill-dot dot-purple"></span>
+                        <span>Viber</span>
+                      </label>
+                      <label class="messenger-pill">
+                        <input type="radio" name="linfopress_stage_messenger" value="Call" class="messenger-radio">
+                        <span class="pill-dot dot-dark"></span>
+                        <span>Дзвінок</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="shimmer-submit-btn">
+                    <span>Замовити безкоштовний тест-драйв</span>
+                    <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </button>
+
+                  <div class="form-trust-bullets">
+                    <div class="trust-bullet-item">
+                      <span class="bullet-check">✓</span>
+                      <span>0 грн за виїзд та доставку</span>
+                    </div>
+                    <div class="trust-bullet-item">
+                      <span class="bullet-check">✓</span>
+                      <span>Без зобов'язань купівлі</span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- LINFOPRESS VIDEO LIGHTBOX MODAL -->
+      <div id="linfopress_video_modal" class="popup glass-popup-modal zionic-video-lightbox" role="dialog" aria-modal="true" style="display: none;">
+        <div class="glass-modal-backdrop" data-close-video-modal></div>
+        <div class="zionic-video-lightbox-card">
+          <button type="button" class="zionic-video-modal-close" data-close-video-modal aria-label="Закрити">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+          <div class="zionic-video-lightbox-frame" id="linfopress_modal_video_container"></div>
+          <div class="zionic-video-lightbox-caption">
+            <span class="video-live-pill">LIVE ДЕМОНСТРАЦІЯ</span>
+            <span class="video-lightbox-title">Клінічна пресотерапія LINFOPRESS EVOLUTION PRO</span>
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Replace the inner content of linfopress page
+    html = html.replace(/<div[\s\n]+class=center>[\s\S]*?(?=<footer|$)/i, `<div class="zionic-main-page-wrapper linfopress-main-page-wrapper">\n${modernLinfopressHtml}\n</div>\n`);
+  }
+
   // Modern Luxury Spanish Footer (Centered Logo + 2 Balanced Structured Columns)
   const modernLuxuryFooter = `
     <!-- Modern Luxury Spanish Footer -->
