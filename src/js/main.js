@@ -1,7 +1,6 @@
 /**
  * Termosalud Interactive JavaScript Modules
  */
-import '../css/custom.css';
 
 function initAll() {
   initPopupModals();
