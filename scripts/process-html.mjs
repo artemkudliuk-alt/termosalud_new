@@ -2855,48 +2855,59 @@ function cleanHtml(raw, pageName) {
       <!-- ==========================================================================
            8. WHY LINFOPRESS & EQUIPMENT PACKAGE (#why)
            ========================================================================== -->
-      <section class="linfopress-why-and-package-section" id="why">
-        <div class="container">
-          <div class="section-header-centered">
-            <h2 class="section-main-title">Чому саме Linfopress Evolution PRO</h2>
-            <p class="section-main-sub">
-              5 ключових технологічних причин інвестувати у флагман пресотерапії
-            </p>
+      <section class="linfopress-why-section" id="why">
+        <div class="why-this-video-bg">
+          <video autoplay muted loop playsinline class="why-bg-video">
+            <source src="/wp-content/themes/zionic/assets/images/why-this-video.mp4" type="video/mp4">
+          </video>
+          <div class="why-video-overlay"></div>
+        </div>
+
+        <div class="container why-inner-container">
+          <h2 class="why-main-title">Чому саме Linfopress Evolution PRO</h2>
+
+          <div class="why-showcase-row">
+            <!-- LEFT: GIRL MODEL ON WHITE STEPS -->
+            <div class="why-model-col">
+              <div class="why-model-img-wrap">
+                <img src="/wp-content/uploads/2026/03/why-this-img-optimized.png" alt="Чому саме Linfopress Evolution PRO - фото" class="why-model-img" loading="lazy">
+              </div>
+            </div>
+
+            <!-- RIGHT: 5 CARDS IN OUR SIGNATURE STYLE (GRAY BORDERS LIKE FOOTER #54595f) -->
+            <div class="why-cards-col">
+              <div class="why-cards-grid">
+                <div class="why-card-item">
+                  <span class="why-card-num">1</span>
+                  <p class="why-card-text">Унікальна комбінація різних форм пресомасажу в одній програмі</p>
+                </div>
+
+                <div class="why-card-item">
+                  <span class="why-card-num">2</span>
+                  <p class="why-card-text">Преміальна якість матеріалів виконання</p>
+                </div>
+
+                <div class="why-card-item">
+                  <span class="why-card-num">3</span>
+                  <p class="why-card-text">Абсолютно унікальна куртка для пресомасажу холки і бочків</p>
+                </div>
+
+                <div class="why-card-item">
+                  <span class="why-card-num">4</span>
+                  <p class="why-card-text">Найзручніший метод одягання манжет</p>
+                </div>
+
+                <div class="why-card-item">
+                  <span class="why-card-num">5</span>
+                  <p class="why-card-text">Найінтенсивніший лімфодренажний масаж (завдяки підготовці та біоміметиці)</p>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="why-benefits-grid">
-            <div class="why-bento-card">
-              <span class="why-num">01</span>
-              <h4 class="why-card-title">Унікальна комбінація форм пресомасажу</h4>
-              <p class="why-card-desc">Поєднання 4 послідовних фаз стискання в єдиній інтелектуальній програмі.</p>
-            </div>
-
-            <div class="why-bento-card">
-              <span class="why-num">02</span>
-              <h4 class="why-card-title">Преміальна якість матеріалів</h4>
-              <p class="why-card-desc">Високоміцна медична тканина з легким очищенням та зносостійкістю понад 10 років.</p>
-            </div>
-
-            <div class="why-bento-card">
-              <span class="why-num">03</span>
-              <h4 class="why-card-title">Унікальна куртка для холки та боків</h4>
-              <p class="why-card-desc">Єдиний у світі бандаж для опрацювання проблемних зон спини, грудей і love-handles.</p>
-            </div>
-
-            <div class="why-bento-card">
-              <span class="why-num">04</span>
-              <h4 class="why-card-title">Найзручніший метод одягання манжет</h4>
-              <p class="why-card-desc">Швидка підготовка пацієнта за 60 секунд завдяки ергономічним потрійним блискавкам.</p>
-            </div>
-
-            <div class="why-bento-card">
-              <span class="why-num">05</span>
-              <h4 class="why-card-title">Найінтенсивніший лімфодренажний масаж</h4>
-              <p class="why-card-desc">Глибокий та безпечний вплив завдяки автоматичному біоміметичному контролю тиску.</p>
-            </div>
-          </div>
-
-          <!-- EQUIPMENT PACKAGE -->
+      <!-- EQUIPMENT PACKAGE -->
           <div class="linfopress-package-box">
             <div class="package-header">
               <h3 class="package-title">Комплект поставки</h3>
