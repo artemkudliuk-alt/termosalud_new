@@ -2082,40 +2082,47 @@ function cleanHtml(raw, pageName) {
   // Modern Linfopress Evolution PRO Page Structure (Cloned from Official Termosalud with Ukrainian Localization)
   if (pageName === 'linfopress') {
     const modernLinfopressHtml = `
-      <!-- 1. HERO STAGE (PREMIUM SWISS MEDICAL CLEAN CINEMA) -->
-      <section class="linfopress-hero-section zionic-hero-stage" id="hero">
-        <div class="zionic-hero-media-wrapper">
-          <picture>
-            <source srcset="/wp-content/uploads/2026/03/linfopress-main-banner-scaled-optimized.png" media="(min-width: 992px)">
-            <img src="/wp-content/uploads/2026/03/linfopress-main-banner-mob-optimized.png" alt="Linfopress Evolution PRO Termosalud" class="zionic-hero-media-img" loading="eager">
-          </picture>
-          <div class="zionic-hero-overlay"></div>
+      <!-- 1. HERO STAGE (OFFICIAL BLACK LUXURY VIDEO HERO) -->
+      <section class="linfopress-hero-stage" id="hero">
+        <div class="linfopress-hero-media-wrapper">
+          <video autoplay loop muted playsinline class="linfopress-hero-video-bg" preload="auto" poster="/photo_limfo.png">
+            <source src="/limfo.mp4" type="video/mp4">
+          </video>
+          <div class="linfopress-hero-overlay"></div>
         </div>
 
-        <div class="container zionic-hero-container">
-          <div class="zionic-hero-content-box">
-            <span class="zionic-hero-kicker">ПРЕСОТЕРАПІЯ ВІД СВІТОВОГО ЛІДЕРА TERMOSALUD</span>
-            <h1 class="zionic-hero-title">
-              <span class="zionic-word-top">LINFOPRESS</span>
-              <span class="zionic-word-bottom">EVOLUTION PRO</span>
-            </h1>
-            <p class="zionic-hero-desc">
-              Пресотерапія преміального рівня з біоміметичним пульсом для глибокого лімфодренажу, усунення набряків та комплексного моделювання тіла.
-            </p>
+        <div class="container linfopress-hero-container">
+          <div class="linfopress-hero-content-box">
+            
+            <!-- Cloud Brand Outline Icon -->
+            <div class="linfopress-cloud-brand-icon">
+              <svg width="68" height="42" viewBox="0 0 68 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 38H52C59.732 38 66 31.732 66 24C66 16.7118 60.4439 10.7226 53.3087 10.0678C51.3411 4.24949 45.6601 0 39 0C30.4079 0 23.3276 6.72622 22.8465 15.2017C21.3197 14.4328 19.5934 14 17.7778 14C11.2731 14 6 19.2731 6 25.7778C6 26.6896 6.10372 27.5772 6.29969 28.4307C2.62886 29.8052 0 33.3768 0 37.5556C0 37.8048 0.00947094 38.0519 0.028169 38.2965" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
 
-            <div class="zionic-hero-actions">
-              <a href="#application" class="zionic-primary-btn">
+            <h1 class="linfopress-official-hero-title">
+              <span class="hero-word-primary">ТОЧНІСТЬ</span>
+              <span class="hero-yellow-bar"></span>
+              <span class="hero-word-secondary">КОМФОРТ</span>
+            </h1>
+
+            <h2 class="linfopress-official-hero-kicker">ПРЕСОТЕРАПІЯ З НАЙБІЛЬШИМ РОЗМІРНИМ РЯДОМ НА РИНКУ</h2>
+            <p class="linfopress-official-hero-desc">Ідеальне доповнення для комплексних процедур моделювання тіла та лімфодренажу</p>
+
+            <div class="linfopress-hero-actions">
+              <a href="#application" class="linfopress-btn-pill-white">
                 <span>ЗАМОВИТИ ТЕСТ-ДРАЙВ</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
-              <button class="zionic-secondary-btn" id="open-linfopress-video-btn" data-video-id="K1v77enueJ8">
+              <button class="linfopress-btn-ghost-dark" id="open-linfopress-video-btn" data-video-id="K1v77enueJ8">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                 <span>ВІДЕО-ДЕМОНСТРАЦІЯ</span>
               </button>
             </div>
 
             <!-- Trust Bar / Key Specs -->
-            <div class="zionic-hero-trust-bar">
+            <div class="linfopress-hero-trust-bar">
               <div class="hero-trust-item">
                 <span class="hero-trust-metric">24</span>
                 <span class="hero-trust-label">Камери з косим перекриттям</span>
@@ -2123,7 +2130,7 @@ function cleanHtml(raw, pageName) {
               <div class="hero-trust-divider"></div>
               <div class="hero-trust-item">
                 <span class="hero-trust-metric">100%</span>
-                <span class="hero-trust-label">Автономний сеанс hands-free</span>
+                <span class="hero-trust-label">Автономний сеанс Hands-Free</span>
               </div>
               <div class="hero-trust-divider"></div>
               <div class="hero-trust-item">
