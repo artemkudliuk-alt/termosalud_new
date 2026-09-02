@@ -5952,6 +5952,12 @@ footer {
   }
 }
 
+/* SECOND CURTAIN SLIDE STAGE (ACCURACY -> TREATMENTS) */
+.zionic-curtain-stage-2 {
+  position: relative;
+  width: 100%;
+}
+
 /* 6. ACCURACY & VIDEO CINEMATIC SPLIT SHOWCASE (STANDARDIZED MONOLITH GREY #54595f) */
 .zionic-accuracy-section {
   padding: 110px 0 !important;
@@ -5959,6 +5965,22 @@ footer {
   color: #ffffff;
   position: relative;
   overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .zionic-accuracy-section {
+    position: sticky !important;
+    top: 0 !important;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+    z-index: 1 !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 40px 0 !important;
+  }
 }
 
 .accuracy-cinematic-split {
@@ -6222,9 +6244,12 @@ footer {
 
 /* 7. TREATMENTS PROTOCOLS (SWISS MINIMALIST SPLIT ON WHITE) */
 .zionic-treatments-section {
+  position: relative !important;
+  z-index: 2 !important;
   padding: 120px 0 130px 0 !important;
   background: #ffffff !important;
   overflow: hidden;
+  box-shadow: 0 -25px 60px rgba(15, 23, 42, 0.08) !important;
 }
 
 .treatments-swiss-layout {

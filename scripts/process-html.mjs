@@ -1506,139 +1506,142 @@ function cleanHtml(raw, pageName) {
         </section>
       </div>
 
-      <!-- 5. ACCURACY & VIDEO DEMONSTRATION (CINEMATIC SPLIT SHOWCASE) -->
-      <section class="zionic-accuracy-section" id="zionic-accuracy">
-        <div class="container">
-          <div class="accuracy-cinematic-split">
-            
-            <!-- Left Column: Clinical Control Info -->
-            <div class="accuracy-info-col">
-              <h2 class="accuracy-title">ВІДТВОРЮВАНІСТЬ ТА ПРЕЦИЗІЙНА ТОЧНІСТЬ</h2>
-              <p class="accuracy-desc">
-                Інтуїтивний інтерфейс з відображенням параметрів у реальному часі дозволяє зберігати індивідуальні протоколи пацієнтів та відтворювати перевірені результати від сеансу до сеансу.
-              </p>
+      <!-- SECOND CURTAIN SLIDE STAGE: ACCURACY -> TREATMENTS -->
+      <div class="zionic-curtain-stage-2">
+        <!-- 5. ACCURACY & VIDEO DEMONSTRATION (CINEMATIC SPLIT SHOWCASE) -->
+        <section class="zionic-accuracy-section" id="zionic-accuracy">
+          <div class="container">
+            <div class="accuracy-cinematic-split">
+              
+              <!-- Left Column: Clinical Control Info -->
+              <div class="accuracy-info-col">
+                <h2 class="accuracy-title">ВІДТВОРЮВАНІСТЬ ТА ПРЕЦИЗІЙНА ТОЧНІСТЬ</h2>
+                <p class="accuracy-desc">
+                  Інтуїтивний інтерфейс з відображенням параметрів у реальному часі дозволяє зберігати індивідуальні протоколи пацієнтів та відтворювати перевірені результати від сеансу до сеансу.
+                </p>
 
-              <div class="accuracy-highlights-list">
-                <div class="accuracy-highlight-item">
-                  <div class="accuracy-hl-bullet">01</div>
-                  <div class="accuracy-hl-text">
-                    <h4>Сенсорний контроль 470 кГц</h4>
-                    <p>Автоматичне калібрування потужності за показниками імпедансу тканин у реальному часі.</p>
-                  </div>
-                </div>
-
-                <div class="accuracy-highlight-item">
-                  <div class="accuracy-hl-bullet">02</div>
-                  <div class="accuracy-hl-text">
-                    <h4>100% повторюваність протоколів</h4>
-                    <p>Збереження персональних налаштувань пацієнта для гарантованого результату кожного разу.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accuracy-cta-row">
-                <button class="zionic-sharp-contact-btn zionic-btn-light" data-target="#popup_request">
-                  <span>ЗАМОВИТИ ПРЕЗЕНТАЦІЮ</span>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </button>
-              </div>
-            </div>
-
-            <!-- Right Column: 16:9 Cinematic Video Player Card -->
-            <div class="accuracy-video-col">
-              <div class="accuracy-cinema-player-box">
-                <div class="video-preview-wrapper" data-video-id="CYsDii-PZ7s">
-                  <img src="/wp-content/uploads/2026/03/zio-1.mp4_snapshot_00.02.383-optimized.jpg" alt="Відео демонстрація Zionic" class="accuracy-video-thumb">
-                  
-                  <div class="accuracy-play-pulse-btn">
-                    <div class="play-pulse-ring"></div>
-                    <div class="play-pulse-core">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+                <div class="accuracy-highlights-list">
+                  <div class="accuracy-highlight-item">
+                    <div class="accuracy-hl-bullet">01</div>
+                    <div class="accuracy-hl-text">
+                      <h4>Сенсорний контроль 470 кГц</h4>
+                      <p>Автоматичне калібрування потужності за показниками імпедансу тканин у реальному часі.</p>
                     </div>
                   </div>
 
-                  <div class="accuracy-video-bottom-bar">
-                    <span class="video-live-pill">LIVE ДЕМОНСТРАЦІЯ</span>
-                    <span class="video-caption-text">Процедура моделювання тіла ZIONIC</span>
+                  <div class="accuracy-highlight-item">
+                    <div class="accuracy-hl-bullet">02</div>
+                    <div class="accuracy-hl-text">
+                      <h4>100% повторюваність протоколів</h4>
+                      <p>Збереження персональних налаштувань пацієнта для гарантованого результату кожного разу.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accuracy-cta-row">
+                  <button class="zionic-sharp-contact-btn zionic-btn-light" data-target="#popup_request">
+                    <span>ЗАМОВИТИ ПРЕЗЕНТАЦІЮ</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Right Column: 16:9 Cinematic Video Player Card -->
+              <div class="accuracy-video-col">
+                <div class="accuracy-cinema-player-box">
+                  <div class="video-preview-wrapper" data-video-id="CYsDii-PZ7s">
+                    <img src="/wp-content/uploads/2026/03/zio-1.mp4_snapshot_00.02.383-optimized.jpg" alt="Відео демонстрація Zionic" class="accuracy-video-thumb">
+                    
+                    <div class="accuracy-play-pulse-btn">
+                      <div class="play-pulse-ring"></div>
+                      <div class="play-pulse-core">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg>
+                      </div>
+                    </div>
+
+                    <div class="accuracy-video-bottom-bar">
+                      <span class="video-live-pill">LIVE ДЕМОНСТРАЦІЯ</span>
+                      <span class="video-caption-text">Процедура моделювання тіла ZIONIC</span>
+                    </div>
                   </div>
                 </div>
               </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- 6. TREATMENT AREAS & PROTOCOLS (SWISS MINIMALIST SPLIT) -->
+        <section class="zionic-treatments-section" id="treatment-areas">
+          <div class="container">
+            <div class="zionic-section-header">
+              <h2>Зони застосування та показання</h2>
+              <p class="section-subtitle">
+                Zionic розроблений для комплексної роботи з усім тілом та вирішення найпоширеніших естетичних завдань пацієнтів.
+              </p>
             </div>
 
-          </div>
-        </div>
-      </section>
+            <div class="treatments-swiss-layout">
+              <!-- Left: Seamless Circle Image on Pure White Background (No Frame) -->
+              <div class="treatments-media-col">
+                <img src="/zionic_treatments_ukr.png" alt="Контуринг тіла Zionic - протоколи лікування" class="treatments-clean-circle-img" loading="lazy">
+              </div>
 
-      <!-- 6. TREATMENT AREAS & PROTOCOLS (SWISS MINIMALIST SPLIT) -->
-      <section class="zionic-treatments-section" id="treatment-areas">
-        <div class="container">
-          <div class="zionic-section-header">
-            <h2>Зони застосування та показання</h2>
-            <p class="section-subtitle">
-              Zionic розроблений для комплексної роботи з усім тілом та вирішення найпоширеніших естетичних завдань пацієнтів.
-            </p>
-          </div>
+              <!-- Right: Swiss Minimalist Rows -->
+              <div class="treatments-list-col">
+                <div class="treatments-swiss-list">
 
-          <div class="treatments-swiss-layout">
-            <!-- Left: Seamless Circle Image on Pure White Background (No Frame) -->
-            <div class="treatments-media-col">
-              <img src="/zionic_treatments_ukr.png" alt="Контуринг тіла Zionic - протоколи лікування" class="treatments-clean-circle-img" loading="lazy">
-            </div>
-
-            <!-- Right: Swiss Minimalist Rows -->
-            <div class="treatments-list-col">
-              <div class="treatments-swiss-list">
-
-                <!-- Item 01 -->
-                <div class="treatment-swiss-item">
-                  <div class="swiss-item-bullet">01</div>
-                  <div class="swiss-item-content">
-                    <h3 class="swiss-item-title">Зменшення жирових відкладень та ліполіз</h3>
-                    <p class="swiss-item-desc">Локальне розщеплення жирових клітин, зменшення об'ємів живота, боків і спини завдяки глибокому монополярному прогріву 470 кГц.</p>
+                  <!-- Item 01 -->
+                  <div class="treatment-swiss-item">
+                    <div class="swiss-item-bullet">01</div>
+                    <div class="swiss-item-content">
+                      <h3 class="swiss-item-title">Зменшення жирових відкладень та ліполіз</h3>
+                      <p class="swiss-item-desc">Локальне розщеплення жирових клітин, зменшення об'ємів живота, боків і спини завдяки глибокому монополярному прогріву 470 кГц.</p>
+                    </div>
                   </div>
-                </div>
 
-                <!-- Item 02 -->
-                <div class="treatment-swiss-item">
-                  <div class="swiss-item-bullet">02</div>
-                  <div class="swiss-item-content">
-                    <h3 class="swiss-item-title">Антицелюлітна дія (Стадії I, II та III)</h3>
-                    <p class="swiss-item-desc">Глибоке розгладження фіброзних перемичок «апельсинової кірки», вирівнювання рельєфу та відновлення щільності стегон і сідниць.</p>
+                  <!-- Item 02 -->
+                  <div class="treatment-swiss-item">
+                    <div class="swiss-item-bullet">02</div>
+                    <div class="swiss-item-content">
+                      <h3 class="swiss-item-title">Антицелюлітна дія (Стадії I, II та III)</h3>
+                      <p class="swiss-item-desc">Глибоке розгладження фіброзних перемичок «апельсинової кірки», вирівнювання рельєфу та відновлення щільності стегон і сідниць.</p>
+                    </div>
                   </div>
-                </div>
 
-                <!-- Item 03 -->
-                <div class="treatment-swiss-item">
-                  <div class="swiss-item-bullet">03</div>
-                  <div class="swiss-item-content">
-                    <h3 class="swiss-item-title">Підтягнення шкіри та ефект «Push-Up»</h3>
-                    <p class="swiss-item-desc">Миттєве скорочення та стимуляція неоколагенезу, виразний ліфтинг сідниць, внутрішньої поверхні стегон та розтягнутої шкіри після пологів.</p>
+                  <!-- Item 03 -->
+                  <div class="treatment-swiss-item">
+                    <div class="swiss-item-bullet">03</div>
+                    <div class="swiss-item-content">
+                      <h3 class="swiss-item-title">Підтягнення шкіри та ефект «Push-Up»</h3>
+                      <p class="swiss-item-desc">Миттєве скорочення та стимуляція неоколагенезу, виразний ліфтинг сідниць, внутрішньої поверхні стегон та розтягнутої шкіри після пологів.</p>
+                    </div>
                   </div>
-                </div>
 
-                <!-- Item 04 -->
-                <div class="treatment-swiss-item">
-                  <div class="swiss-item-bullet">04</div>
-                  <div class="swiss-item-content">
-                    <h3 class="swiss-item-title">Активація кровообігу та лімфодренаж</h3>
-                    <p class="swiss-item-desc">Потужна активна ротація MARP стимулює судинне русло, ліквідує тканинний застій та прискорює виведення токсинів і надлишку рідини.</p>
+                  <!-- Item 04 -->
+                  <div class="treatment-swiss-item">
+                    <div class="swiss-item-bullet">04</div>
+                    <div class="swiss-item-content">
+                      <h3 class="swiss-item-title">Активація кровообігу та лімфодренаж</h3>
+                      <p class="swiss-item-desc">Потужна активна ротація MARP стимулює судинне русло, ліквідує тканинний застій та прискорює виведення токсинів і надлишку рідини.</p>
+                    </div>
                   </div>
-                </div>
 
-                <!-- Item 05 -->
-                <div class="treatment-swiss-item">
-                  <div class="swiss-item-bullet">05</div>
-                  <div class="swiss-item-content">
-                    <h3 class="swiss-item-title">Ефект тонусування та ремоделювання</h3>
-                    <p class="swiss-item-desc">Усунення в'ялості в зоні трицепса, підтяжка контуру рук, зміцнення м'язово-апоневротичного каркаса всього тіла.</p>
+                  <!-- Item 05 -->
+                  <div class="treatment-swiss-item">
+                    <div class="swiss-item-bullet">05</div>
+                    <div class="swiss-item-content">
+                      <h3 class="swiss-item-title">Ефект тонусування та ремоделювання</h3>
+                      <p class="swiss-item-desc">Усунення в'ялості в зоні трицепса, підтяжка контуру рук, зміцнення м'язово-апоневротичного каркаса всього тіла.</p>
+                    </div>
                   </div>
-                </div>
 
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <!-- 7. CLINICAL RESULTS / BEFORE & AFTER -->
       <section class="zionic-results-section" id="results">

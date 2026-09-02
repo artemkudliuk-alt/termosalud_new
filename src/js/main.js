@@ -922,76 +922,82 @@ function initZionicScrollManipula() {
 }
 
 /**
- * 18. Zionic Infographic to Manipula Curtain Slide Snap Transition
+ * 18. Zionic Multi-Stage Curtain Slide Snap Transitions
+ * - Stage 1: Infographic (#technologies) -> Manipula (#manipula)
+ * - Stage 2: Accuracy & Video (#zionic-accuracy) -> Treatments (#treatment-areas)
  */
 function initZionicCurtainSlide() {
-  const stage = document.querySelector('.zionic-curtain-stage');
-  const sInfo = document.querySelector('.zionic-fullwidth-infographic-section');
-  const sManipula = document.querySelector('.zionic-manipula-section');
-  if (!stage || !sInfo || !sManipula) return;
+  function attachCurtainSlide(stageSelector, overlaySelector) {
+    const stage = document.querySelector(stageSelector);
+    const overlay = document.querySelector(overlaySelector);
+    if (!stage || !overlay) return;
 
-  let isSnapping = false;
+    let isSnapping = false;
 
-  window.addEventListener('wheel', (e) => {
-    if (isSnapping || window.innerWidth < 992) return;
+    window.addEventListener('wheel', (e) => {
+      if (isSnapping || window.innerWidth < 992) return;
 
-    const stageRect = stage.getBoundingClientRect();
-    const manipulaRect = sManipula.getBoundingClientRect();
-    const winHeight = window.innerHeight;
+      const stageRect = stage.getBoundingClientRect();
+      const overlayRect = overlay.getBoundingClientRect();
+      const winHeight = window.innerHeight;
 
-    // Case 1: User is at the Infographic (stage top near 0) and scrolls DOWN before Manipula covers
-    if (Math.abs(stageRect.top) < 80 && manipulaRect.top > winHeight * 0.35 && e.deltaY > 15) {
-      e.preventDefault();
-      isSnapping = true;
-      const targetY = sManipula.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({
-        top: targetY,
-        behavior: 'smooth'
-      });
-      setTimeout(() => {
-        isSnapping = false;
-      }, 700);
-    }
-    // Case 2: User is at the very top of Manipula section and scrolls UP back to Infographic
-    else if (Math.abs(manipulaRect.top) < 40 && e.deltaY < -15 && stageRect.top < -60) {
-      e.preventDefault();
-      isSnapping = true;
-      const targetY = stage.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({
-        top: targetY,
-        behavior: 'smooth'
-      });
-      setTimeout(() => {
-        isSnapping = false;
-      }, 700);
-    }
-  }, { passive: false });
+      // Case 1: User is at the stage top and scrolls DOWN before overlay has covered
+      if (Math.abs(stageRect.top) < 80 && overlayRect.top > winHeight * 0.35 && e.deltaY > 15) {
+        e.preventDefault();
+        isSnapping = true;
+        const targetY = overlay.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: targetY,
+          behavior: 'smooth'
+        });
+        setTimeout(() => {
+          isSnapping = false;
+        }, 700);
+      }
+      // Case 2: User is at the very top of overlay section and scrolls UP back to the pinned stage
+      else if (Math.abs(overlayRect.top) < 40 && e.deltaY < -15 && stageRect.top < -60) {
+        e.preventDefault();
+        isSnapping = true;
+        const targetY = stage.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: targetY,
+          behavior: 'smooth'
+        });
+        setTimeout(() => {
+          isSnapping = false;
+        }, 700);
+      }
+    }, { passive: false });
 
-  // Touch support for tablets / touch devices
-  let touchStartY = 0;
-  window.addEventListener('touchstart', (e) => {
-    if (e.touches && e.touches[0]) {
-      touchStartY = e.touches[0].clientY;
-    }
-  }, { passive: true });
+    // Touch support for tablets / touch devices
+    let touchStartY = 0;
+    window.addEventListener('touchstart', (e) => {
+      if (e.touches && e.touches[0]) {
+        touchStartY = e.touches[0].clientY;
+      }
+    }, { passive: true });
 
-  window.addEventListener('touchmove', (e) => {
-    if (isSnapping || !touchStartY || window.innerWidth < 992) return;
-    const touchEndY = e.touches[0].clientY;
-    const diff = touchStartY - touchEndY;
-    const stageRect = stage.getBoundingClientRect();
-    const manipulaRect = sManipula.getBoundingClientRect();
-    const winHeight = window.innerHeight;
+    window.addEventListener('touchmove', (e) => {
+      if (isSnapping || !touchStartY || window.innerWidth < 992) return;
+      const touchEndY = e.touches[0].clientY;
+      const diff = touchStartY - touchEndY;
+      const stageRect = stage.getBoundingClientRect();
+      const overlayRect = overlay.getBoundingClientRect();
+      const winHeight = window.innerHeight;
 
-    if (Math.abs(stageRect.top) < 60 && diff > 30 && manipulaRect.top > winHeight * 0.35) {
-      isSnapping = true;
-      const targetY = sManipula.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({
-        top: targetY,
-        behavior: 'smooth'
-      });
-      setTimeout(() => { isSnapping = false; }, 700);
-    }
-  }, { passive: true });
+      if (Math.abs(stageRect.top) < 60 && diff > 30 && overlayRect.top > winHeight * 0.35) {
+        isSnapping = true;
+        const targetY = overlay.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: targetY,
+          behavior: 'smooth'
+        });
+        setTimeout(() => { isSnapping = false; }, 700);
+      }
+    }, { passive: true });
+  }
+
+  attachCurtainSlide('.zionic-curtain-stage', '.zionic-manipula-section');
+  attachCurtainSlide('.zionic-curtain-stage-2', '.zionic-treatments-section');
 }
 
