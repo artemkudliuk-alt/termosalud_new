@@ -6760,14 +6760,32 @@ footer {
   line-height: 1.65 !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .knowledge-filter-bar {
-    gap: 6px;
-    margin-bottom: 20px;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-x !important;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    padding: 6px 16px 14px 16px !important;
+    margin: 0 -16px 24px -16px !important;
+    gap: 8px !important;
+    justify-content: flex-start !important;
+    cursor: grab !important;
+  }
+  .knowledge-filter-bar::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
   }
   .knowledge-filter-btn {
-    font-size: 13px !important;
-    padding: 8px 16px;
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+    font-size: 13.5px !important;
+    padding: 10px 18px !important;
   }
   .knowledge-trigger {
     padding: 18px 16px;

@@ -23,6 +23,7 @@ function initAll() {
   initZionicScrollManipula();
   initZionicCurtainSlide();
   initZionicVideoModal();
+  initKnowledgeFilterSwipe();
 }
 
 if (document.readyState === 'loading') {
@@ -1084,6 +1085,52 @@ function initZionicVideoModal() {
     if (e.key === 'Escape' && modal && modal.classList.contains('show')) {
       closeVideo();
     }
+  });
+}
+
+/**
+ * 20. FAQ / Knowledge Hub Horizontal Touch & Drag Swiper
+ */
+function initKnowledgeFilterSwipe() {
+  const bar = document.querySelector('.knowledge-filter-bar');
+  if (!bar) return;
+
+  let isDown = false;
+  let startX = 0;
+  let scrollLeft = 0;
+  let hasMoved = false;
+
+  bar.addEventListener('mousedown', (e) => {
+    isDown = true;
+    hasMoved = false;
+    startX = e.pageX - bar.offsetLeft;
+    scrollLeft = bar.scrollLeft;
+    bar.style.cursor = 'grabbing';
+  });
+
+  window.addEventListener('mouseup', () => {
+    if (isDown) {
+      isDown = false;
+      bar.style.cursor = 'grab';
+    }
+  });
+
+  bar.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - bar.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    if (Math.abs(walk) > 5) hasMoved = true;
+    bar.scrollLeft = scrollLeft - walk;
+  });
+
+  bar.querySelectorAll('.knowledge-filter-btn').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      if (hasMoved) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    });
   });
 }
 
