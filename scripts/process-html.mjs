@@ -2244,7 +2244,7 @@ function cleanHtml(raw, pageName) {
           <div class="linfopress-hero-content-box">
             
             <div class="linfopress-hero-logo-wrap">
-              <img src="/LINFOPRESS-PRO-1.png" alt="Linfopress Evolution Pro" class="linfopress-official-logo" width="300" height="105" loading="eager">
+              <img src="/LINFOPRESS-PRO-1.png" alt="Linfopress Evolution Pro" class="linfopress-official-logo" width="220" height="48" loading="eager">
             </div>
 
             <h1 class="linfopress-official-hero-title">
@@ -2252,15 +2252,16 @@ function cleanHtml(raw, pageName) {
               <span class="hero-word-secondary">КОМФОРТ</span>
             </h1>
 
-            <p class="linfopress-official-hero-kicker">ПРЕСОТЕРАПІЯ З НАЙБІЛЬШИМ РОЗМІРНИМ РЯДОМ НА РИНКУ</p>
-            <p class="linfopress-official-hero-desc">Ідеальне доповнення для комплексних процедур моделювання тіла та лімфодренажу</p>
+            <p class="linfopress-hero-desc">
+              ПРЕСОТЕРАПІЯ З НАЙБІЛЬШИМ РОЗМІРНИМ РЯДОМ НА РИНКУ
+            </p>
 
             <div class="linfopress-hero-actions">
-              <a href="#application" class="linfopress-btn-pill-white">
-                <span>ЗАМОВИТИ ТЕСТ-ДРАЙВ</span>
+              <a href="#application" class="linfopress-primary-btn">
+                <span>ЗАМОВИТИ ТЕСТ-ДРАЙВ У КЛІНІКУ</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
-              <button class="linfopress-btn-ghost-dark" id="open-linfopress-video-btn" data-video-id="K1v77enueJ8" onclick="window.openLinfopressVideoLightbox()">
+              <button type="button" class="linfopress-secondary-btn" id="open-linfopress-video-btn" onclick="window.openLinfopressVideoLightbox()">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                 <span>ВІДЕО-ДЕМОНСТРАЦІЯ</span>
               </button>

@@ -14890,3 +14890,160 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
   height: 100% !important;
   border: none !important;
 }
+
+
+/* ==========================================================================
+   LINFOPRESS HERO - EXACT 1-TO-1 SPECIFICATION MATCH WITH ZIONIC HERO
+   ========================================================================== */
+.linfopress-hero-stage {
+  position: relative !important;
+  width: 100% !important;
+  min-height: 90vh !important;
+  background: #060709 !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 100px 0 !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+.linfopress-hero-container {
+  position: relative !important;
+  z-index: 3 !important;
+  width: 100% !important;
+  max-width: 1560px !important;
+  margin: 0 auto !important;
+  padding-left: 36px !important;
+  padding-right: 24px !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 991px) {
+  .linfopress-hero-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+.linfopress-hero-content-box {
+  max-width: 820px !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  transform: none !important;
+}
+
+/* 1. LOGO - Exact height 68px, matching Zionic */
+.linfopress-hero-logo-wrap {
+  margin-bottom: 24px !important;
+  margin-left: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.linfopress-official-logo {
+  height: 68px !important;
+  width: auto !important;
+  max-width: 320px !important;
+  display: block !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+
+/* 2. TITLE - clamp(56px, 6.4vw, 96px), weight 900, line-height 0.96, letter-spacing -2px, margin-bottom 20px */
+.linfopress-official-hero-title {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  font-family: 'Montserrat', 'Golos Text', sans-serif !important;
+  font-size: clamp(56px, 6.4vw, 96px) !important;
+  font-weight: 900 !important;
+  line-height: 0.96 !important;
+  letter-spacing: -2px !important;
+  margin: 0 0 20px 0 !important;
+  text-transform: uppercase !important;
+  text-shadow: none !important;
+  color: #ffffff !important;
+}
+
+.linfopress-official-hero-title span,
+.linfopress-official-hero-title .hero-word-primary,
+.linfopress-official-hero-title .hero-word-secondary {
+  display: block !important;
+  white-space: nowrap !important;
+  color: #ffffff !important;
+  font-weight: 900 !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  letter-spacing: inherit !important;
+}
+
+/* 3. DESC / SUBTITLE - clamp(16px, 1.6vw, 21px), weight 800, line-height 1.35, letter-spacing 0.8px, margin-bottom 32px */
+.linfopress-hero-desc {
+  font-family: 'Montserrat', 'Inter', sans-serif !important;
+  font-size: clamp(16px, 1.6vw, 21px) !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+  margin: 0 0 32px 0 !important;
+  max-width: 680px !important;
+}
+
+/* 4. ACTIONS & BUTTONS - Exact 1-to-1 match with Zionic (Sharp corners 0px, gap 20px, font 14px weight 800) */
+.linfopress-hero-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+  flex-wrap: wrap !important;
+}
+
+.linfopress-hero-actions .linfopress-primary-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  background: #ffffff !important;
+  color: #111111 !important;
+  border: 1px solid #ffffff !important;
+  border-radius: 0 !important;
+  padding: 16px 32px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.linfopress-hero-actions .linfopress-primary-btn:hover {
+  background: #e2e8f0 !important;
+  border-color: #e2e8f0 !important;
+  transform: translateY(-2px) !important;
+}
+
+.linfopress-hero-actions .linfopress-secondary-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(8px) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  border-radius: 0 !important;
+  padding: 16px 28px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.8px !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.linfopress-hero-actions .linfopress-secondary-btn:hover {
+  background: #ffffff !important;
+  color: #111111 !important;
+  border-color: #ffffff !important;
+  transform: translateY(-2px) !important;
+}
