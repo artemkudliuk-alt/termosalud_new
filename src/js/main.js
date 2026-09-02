@@ -925,21 +925,22 @@ function initZionicScrollManipula() {
  * 18. Zionic Infographic to Manipula Curtain Slide Snap Transition
  */
 function initZionicCurtainSlide() {
+  const stage = document.querySelector('.zionic-curtain-stage');
   const sInfo = document.querySelector('.zionic-fullwidth-infographic-section');
   const sManipula = document.querySelector('.zionic-manipula-section');
-  if (!sInfo || !sManipula) return;
+  if (!stage || !sInfo || !sManipula) return;
 
   let isSnapping = false;
 
   window.addEventListener('wheel', (e) => {
     if (isSnapping || window.innerWidth < 992) return;
 
-    const infoRect = sInfo.getBoundingClientRect();
+    const stageRect = stage.getBoundingClientRect();
     const manipulaRect = sManipula.getBoundingClientRect();
     const winHeight = window.innerHeight;
 
-    // Case 1: User is viewing Infographic (top near 0) and scrolls DOWN
-    if (Math.abs(infoRect.top) < 80 && e.deltaY > 15 && manipulaRect.top > winHeight * 0.35) {
+    // Case 1: User is at the Infographic (stage top near 0) and scrolls DOWN before Manipula covers
+    if (Math.abs(stageRect.top) < 80 && manipulaRect.top > winHeight * 0.35 && e.deltaY > 15) {
       e.preventDefault();
       isSnapping = true;
       const targetY = sManipula.getBoundingClientRect().top + window.scrollY;
@@ -949,20 +950,20 @@ function initZionicCurtainSlide() {
       });
       setTimeout(() => {
         isSnapping = false;
-      }, 750);
+      }, 700);
     }
-    // Case 2: User is at the top of Manipula section and scrolls UP
-    else if (Math.abs(manipulaRect.top) < 40 && e.deltaY < -15) {
+    // Case 2: User is at the very top of Manipula section and scrolls UP back to Infographic
+    else if (Math.abs(manipulaRect.top) < 40 && e.deltaY < -15 && stageRect.top < -60) {
       e.preventDefault();
       isSnapping = true;
-      const targetY = sInfo.getBoundingClientRect().top + window.scrollY;
+      const targetY = stage.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
         top: targetY,
         behavior: 'smooth'
       });
       setTimeout(() => {
         isSnapping = false;
-      }, 750);
+      }, 700);
     }
   }, { passive: false });
 
@@ -978,18 +979,18 @@ function initZionicCurtainSlide() {
     if (isSnapping || !touchStartY || window.innerWidth < 992) return;
     const touchEndY = e.touches[0].clientY;
     const diff = touchStartY - touchEndY;
-    const infoRect = sInfo.getBoundingClientRect();
+    const stageRect = stage.getBoundingClientRect();
     const manipulaRect = sManipula.getBoundingClientRect();
     const winHeight = window.innerHeight;
 
-    if (Math.abs(infoRect.top) < 60 && diff > 30 && manipulaRect.top > winHeight * 0.35) {
+    if (Math.abs(stageRect.top) < 60 && diff > 30 && manipulaRect.top > winHeight * 0.35) {
       isSnapping = true;
       const targetY = sManipula.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({
         top: targetY,
         behavior: 'smooth'
       });
-      setTimeout(() => { isSnapping = false; }, 750);
+      setTimeout(() => { isSnapping = false; }, 700);
     }
   }, { passive: true });
 }

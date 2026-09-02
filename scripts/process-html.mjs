@@ -1436,72 +1436,75 @@ function cleanHtml(raw, pageName) {
         </div>
       </section>
 
-      <!-- 3. FULL-WIDTH TECHNICAL INFOGRAPHIC (CLONED FROM TERMOSALUD) -->
-      <section class="zionic-fullwidth-infographic-section" id="technologies">
-        <div class="zionic-infographic-fullwidth-container">
-          <img src="/zionic_infografia_new.png" alt="Zionic Full-Width Technical Infographic" class="zionic-infographic-fullwidth-img" loading="lazy">
-        </div>
-      </section>
-
-      <!-- 4. MANIPULA DEEP ACTION BREAKDOWN (PREMIUM SWISS MEDICAL SPLIT) -->
-      <section class="zionic-manipula-section" id="manipula">
-        <div class="container">
-          <div class="zionic-section-header">
-            <h2>Маніпула Deep Action: Досконалість інженерії</h2>
-            <p class="section-subtitle">
-              Ергономічна конструкція зі змінними насадками для прицільної та комфортної роботи лікаря по будь-якій зоні тіла.
-            </p>
+      <!-- CURTAIN SLIDE STAGE: INFOGRAPHIC -> MANIPULA -->
+      <div class="zionic-curtain-stage">
+        <!-- 3. FULL-WIDTH TECHNICAL INFOGRAPHIC (CLONED FROM TERMOSALUD) -->
+        <section class="zionic-fullwidth-infographic-section" id="technologies">
+          <div class="zionic-infographic-fullwidth-container">
+            <img src="/zionic_infografia_new.png" alt="Zionic Full-Width Technical Infographic" class="zionic-infographic-fullwidth-img" loading="lazy">
           </div>
+        </section>
 
-          <div class="zionic-manipula-split-layout">
-            <!-- Left: Doctor Hands Photo with Pure Frame -->
-            <div class="zionic-manipula-media-col">
-              <div class="manipula-photo-frame">
-                <img src="/wp-content/uploads/zionic_official/manipulo-deep-action-1024x683.jpg" alt="Маніпула Deep Action Zionic у роботі лікаря" class="manipula-full-photo" loading="lazy">
-              </div>
+        <!-- 4. MANIPULA DEEP ACTION BREAKDOWN (PREMIUM SWISS MEDICAL SPLIT) -->
+        <section class="zionic-manipula-section" id="manipula">
+          <div class="container">
+            <div class="zionic-section-header">
+              <h2>Маніпула Deep Action: Досконалість інженерії</h2>
+              <p class="section-subtitle">
+                Ергономічна конструкція зі змінними насадками для прицільної та комфортної роботи лікаря по будь-якій зоні тіла.
+              </p>
             </div>
 
-            <!-- Right: Swiss Minimalist Spec Rows -->
-            <div class="zionic-manipula-specs-col">
-              <div class="manipula-swiss-list">
-                
-                <div class="manipula-swiss-item">
-                  <div class="swiss-item-bullet">01</div>
-                  <div class="swiss-item-content">
-                    <h3 class="swiss-item-title">Змінні обертові насадки</h3>
-                    <p class="swiss-item-desc">Комплект зі змінних сфер різного діаметру для анатомічної адаптації під малі та великі зони тіла (живіт, стегна, сідниці, руки, спина).</p>
-                  </div>
+            <div class="zionic-manipula-split-layout">
+              <!-- Left: Doctor Hands Photo with Pure Frame -->
+              <div class="zionic-manipula-media-col">
+                <div class="manipula-photo-frame">
+                  <img src="/wp-content/uploads/zionic_official/manipulo-deep-action-1024x683.jpg" alt="Маніпула Deep Action Zionic у роботі лікаря" class="manipula-full-photo" loading="lazy">
                 </div>
+              </div>
 
-                <div class="manipula-swiss-item">
-                  <div class="swiss-item-bullet">02</div>
-                  <div class="swiss-item-content">
-                    <h3 class="swiss-item-title">Сенсорний 2,8" дисплей на ручці</h3>
-                    <p class="swiss-item-desc">Прямий контроль швидкості ротації, температури нагріву та потужності RF безпосередньо з маніпули під час сеансу без відволікання від пацієнта.</p>
+              <!-- Right: Swiss Minimalist Spec Rows -->
+              <div class="zionic-manipula-specs-col">
+                <div class="manipula-swiss-list">
+                  
+                  <div class="manipula-swiss-item">
+                    <div class="swiss-item-bullet">01</div>
+                    <div class="swiss-item-content">
+                      <h3 class="swiss-item-title">Змінні обертові насадки</h3>
+                      <p class="swiss-item-desc">Комплект зі змінних сфер різного діаметру для анатомічної адаптації під малі та великі зони тіла (живіт, стегна, сідниці, руки, спина).</p>
+                    </div>
                   </div>
-                </div>
 
-                <div class="manipula-swiss-item">
-                  <div class="swiss-item-bullet">03</div>
-                  <div class="swiss-item-content">
-                    <h3 class="swiss-item-title">Потужність генератора до 200 Вт</h3>
-                    <p class="swiss-item-desc">Високоефективна резистивна діатермія забезпечує швидке досягнення терапевтичної гіпертермії (39–42°C) у глибоких шарах гіподерми.</p>
+                  <div class="manipula-swiss-item">
+                    <div class="swiss-item-bullet">02</div>
+                    <div class="swiss-item-content">
+                      <h3 class="swiss-item-title">Сенсорний 2,8" дисплей на ручці</h3>
+                      <p class="swiss-item-desc">Прямий контроль швидкості ротації, температури нагріву та потужності RF безпосередньо з маніпули під час сеансу без відволікання від пацієнта.</p>
+                    </div>
                   </div>
-                </div>
 
-                <div class="manipula-swiss-item">
-                  <div class="swiss-item-bullet">04</div>
-                  <div class="swiss-item-content">
-                    <h3 class="swiss-item-title">Інтелектуальні сенсори безпеки</h3>
-                    <p class="swiss-item-desc">Постійний моніторинг температури та сили притискання з автоматичним захистом від перегріву для 100% безпеки та комфорту клієнта.</p>
+                  <div class="manipula-swiss-item">
+                    <div class="swiss-item-bullet">03</div>
+                    <div class="swiss-item-content">
+                      <h3 class="swiss-item-title">Потужність генератора до 200 Вт</h3>
+                      <p class="swiss-item-desc">Високоефективна резистивна діатермія забезпечує швидке досягнення терапевтичної гіпертермії (39–42°C) у глибоких шарах гіподерми.</p>
+                    </div>
                   </div>
-                </div>
 
+                  <div class="manipula-swiss-item">
+                    <div class="swiss-item-bullet">04</div>
+                    <div class="swiss-item-content">
+                      <h3 class="swiss-item-title">Інтелектуальні сенсори безпеки</h3>
+                      <p class="swiss-item-desc">Постійний моніторинг температури та сили притискання з автоматичним захистом від перегріву для 100% безпеки та комфорту клієнта.</p>
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       <!-- 5. ACCURACY & VIDEO DEMONSTRATION (CINEMATIC SPLIT SHOWCASE) -->
       <section class="zionic-accuracy-section" id="zionic-accuracy">

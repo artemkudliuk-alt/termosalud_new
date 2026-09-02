@@ -5758,6 +5758,12 @@ footer {
   }
 }
 
+/* CURTAIN SLIDE STAGE (INFOGRAPHIC -> MANIPULA) */
+.zionic-curtain-stage {
+  position: relative;
+  width: 100%;
+}
+
 /* 4. FULL-WIDTH TECHNICAL INFOGRAPHIC SECTION (STICKY CURTAIN SLIDE) */
 .zionic-fullwidth-infographic-section {
   padding: 0 !important;
@@ -5779,7 +5785,7 @@ footer {
     height: 100vh !important;
     min-height: 100vh !important;
     max-height: 100vh !important;
-    z-index: 10 !important;
+    z-index: 1 !important;
     overflow: hidden !important;
   }
 }
@@ -5827,7 +5833,7 @@ footer {
 /* 5. MANIPULA DEEP ACTION SECTION (SLIDES OVER INFOGRAPHIC LIKE A CURTAIN) */
 .zionic-manipula-section {
   position: relative !important;
-  z-index: 20 !important;
+  z-index: 2 !important;
   padding: 140px 0 150px 0 !important;
   background: #f8fafc;
   overflow: hidden;
