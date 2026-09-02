@@ -1049,24 +1049,6 @@ function initZionicVideoModal() {
     document.body.classList.remove('modal-open-lock');
   }
 
-  function openInfographic() {
-    const modal = document.getElementById('zionic_infographic_modal');
-    if (!modal) return;
-    modal.style.display = 'flex';
-    modal.classList.add('is-active', 'show');
-    document.documentElement.classList.add('modal-open-lock');
-    document.body.classList.add('modal-open-lock');
-  }
-
-  function closeInfographic() {
-    const modal = document.getElementById('zionic_infographic_modal');
-    if (!modal) return;
-    modal.style.display = 'none';
-    modal.classList.remove('is-active', 'show');
-    document.documentElement.classList.remove('modal-open-lock');
-    document.body.classList.remove('modal-open-lock');
-  }
-
   document.addEventListener('click', (e) => {
     const openTrigger = e.target.closest('#open_zionic_video_btn, [data-open-zionic-video]');
     if (openTrigger) {
@@ -1078,18 +1060,6 @@ function initZionicVideoModal() {
 
     if (e.target.closest('[data-close-video-modal]') || e.target.id === 'zionic_video_modal') {
       closeVideo();
-      return;
-    }
-
-    const openInfoTrigger = e.target.closest('#open_infographic_modal_btn, .zionic-mobile-infographic-preview, [data-open-infographic]');
-    if (openInfoTrigger) {
-      e.preventDefault();
-      openInfographic();
-      return;
-    }
-
-    if (e.target.closest('[data-close-infographic-modal]') || e.target.id === 'zionic_infographic_modal') {
-      closeInfographic();
       return;
     }
 
@@ -1113,10 +1083,6 @@ function initZionicVideoModal() {
     const modal = document.getElementById('zionic_video_modal');
     if (e.key === 'Escape' && modal && modal.classList.contains('show')) {
       closeVideo();
-    }
-    const infoModal = document.getElementById('zionic_infographic_modal');
-    if (e.key === 'Escape' && infoModal && infoModal.classList.contains('show')) {
-      closeInfographic();
     }
   });
 }

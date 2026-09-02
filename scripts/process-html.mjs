@@ -1444,27 +1444,21 @@ function cleanHtml(raw, pageName) {
             <img src="/zionic_infografia_new.png" alt="Zionic Full-Width Technical Infographic" class="zionic-infographic-fullwidth-img" loading="lazy">
           </div>
 
-          <!-- Mobile Adapted Technical Showcase (Direct Infographic with Tap to Zoom + Clean Swiss Breakdown Cards) -->
+          <!-- Mobile Adapted Technical Showcase (Edge-to-Edge Infographic + Clean Swiss Breakdown Cards) -->
           <div class="zionic-mobile-tech-block">
             <div class="container">
               <div class="zionic-mobile-tech-header">
                 <span class="tech-mobile-kicker">ТЕХНОЛОГІЧНА ПЕРЕВАГА</span>
                 <h3 class="tech-mobile-title">Запатентований синергічний вплив</h3>
               </div>
+            </div>
 
-              <!-- Directly Visible Interactive Infographic Card with Zoom Action -->
-              <div class="zionic-mobile-infographic-preview" id="open_infographic_modal_btn">
-                <div class="infographic-preview-frame">
-                  <img src="/zionic_infografia_new.png" alt="Zionic Технічна інфографіка" class="infographic-preview-img" loading="lazy">
-                  <div class="infographic-zoom-overlay">
-                    <span class="infographic-zoom-badge">
-                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                      <span>Натисніть для збільшення (HD)</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
+            <!-- Edge-to-Edge Full-Width Infographic (No border, no frame, full width) -->
+            <div class="zionic-mobile-infographic-fullwidth">
+              <img src="/zionic_infografia_new.png" alt="Zionic Технічна інфографіка" class="mobile-infographic-edge-img" loading="lazy">
+            </div>
 
+            <div class="container">
               <div class="zionic-mobile-tech-cards">
                 <div class="zionic-tech-card">
                   <div class="tech-card-header">
@@ -2068,23 +2062,6 @@ function cleanHtml(raw, pageName) {
           <div class="zionic-video-lightbox-caption">
             <span class="video-live-pill">LIVE ДЕМОНСТРАЦІЯ</span>
             <span class="video-lightbox-title">Клінічна процедура моделювання тіла ZIONIC</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- ZIONIC INFOGRAPHIC FULLSCREEN LIGHTBOX MODAL -->
-      <div id="zionic_infographic_modal" class="zionic-infographic-lightbox" role="dialog" aria-modal="true" style="display: none;">
-        <div class="glass-modal-backdrop" data-close-infographic-modal></div>
-        <div class="infographic-lightbox-card">
-          <button type="button" class="infographic-lightbox-close" data-close-infographic-modal aria-label="Закрити">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-          </button>
-          <div class="infographic-lightbox-viewport">
-            <img src="/zionic_infografia_new.png" alt="Zionic Технічна інфографіка Full HD" class="infographic-lightbox-full-img">
-          </div>
-          <div class="infographic-lightbox-hint">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-            <span>Гортайте горизонтально для детального перегляду схеми</span>
           </div>
         </div>
       </div>
