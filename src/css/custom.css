@@ -10635,3 +10635,272 @@ html, body {
   box-shadow: none !important;
   border-bottom: none !important;
 }
+
+
+/* ==========================================================================
+   ZIONIC INTERACTIVE BEFORE / AFTER COMPARISON STAGE (SHARP LUXURY)
+   ========================================================================== */
+.zionic-ba-section {
+  background: #ffffff;
+  padding: 100px 0;
+  border-top: 1px solid #e4e4e7;
+  border-bottom: 1px solid #e4e4e7;
+}
+
+.zionic-compare-card-container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.zionic-compare-viewport {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  max-height: 580px;
+  background: #111111;
+  overflow: hidden;
+  border: 1px solid #18181b;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+  user-select: none;
+  cursor: ew-resize;
+}
+
+@media (max-width: 767px) {
+  .zionic-compare-viewport {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.compare-img-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.compare-img-layer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: #111111;
+  pointer-events: none;
+}
+
+.compare-img-layer.layer-before {
+  clip-path: inset(0 50% 0 0);
+  z-index: 2;
+  will-change: clip-path;
+}
+
+.compare-tag {
+  position: absolute;
+  top: 20px;
+  background: #000000;
+  border: 1px solid #27272a;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.5px !important;
+  padding: 6px 16px !important;
+  border-radius: 0 !important;
+  z-index: 4;
+}
+
+.tag-before {
+  left: 20px;
+}
+
+.tag-after {
+  right: 20px;
+}
+
+/* Draggable Divider */
+.compare-divider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #ffffff;
+  z-index: 5;
+  transform: translateX(-50%);
+  pointer-events: none;
+  will-change: left;
+}
+
+.divider-line {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+}
+
+.divider-pill-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  background: #111111;
+  border: 2px solid #ffffff;
+  border-radius: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+}
+
+.compare-range-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: ew-resize;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clinical Details Panel */
+.zionic-compare-meta-box {
+  background: #111111;
+  border: 1px solid #27272a;
+  border-top: none;
+  padding: 36px 44px;
+  color: #ffffff;
+}
+
+.meta-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.meta-case-number {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+  color: #a1a1aa !important;
+  text-transform: uppercase !important;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.meta-zone-title {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 26px !important;
+  font-weight: 900 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+  line-height: 1.2 !important;
+}
+
+.meta-protocol-badge {
+  background: #18181b;
+  border: 1px solid #3f3f46;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1px !important;
+  padding: 8px 18px !important;
+  border-radius: 0 !important;
+}
+
+.meta-zone-desc {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 17px !important;
+  color: #d4d4d8 !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+}
+
+/* 6 Cases Switcher Grid */
+.zionic-cases-switcher-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+}
+
+@media (max-width: 991px) {
+  .zionic-cases-switcher-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .zionic-cases-switcher-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.case-switcher-btn {
+  background: #f4f4f5;
+  border: 1px solid #e4e4e7;
+  padding: 16px 14px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 0 !important;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.case-switcher-btn:hover {
+  background: #e4e4e7;
+  border-color: #d4d4d8;
+  transform: translateY(-2px);
+}
+
+.case-switcher-btn.is-active {
+  background: #111111 !important;
+  border-color: #111111 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.case-switcher-btn .btn-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  color: #71717a;
+}
+
+.case-switcher-btn.is-active .btn-num {
+  color: #a1a1aa;
+}
+
+.case-switcher-btn .btn-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #111111;
+  line-height: 1.25;
+}
+
+.case-switcher-btn.is-active .btn-text {
+  color: #ffffff;
+}
+
+.case-switcher-btn .btn-tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #71717a;
+}
+
+.case-switcher-btn.is-active .btn-tag {
+  color: #d4d4d8;
+}

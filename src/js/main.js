@@ -1234,3 +1234,88 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+  // ==========================================================================
+  // ZIONIC INTERACTIVE BEFORE/AFTER SLIDER & CASE SWITCHER
+  // ==========================================================================
+  const compareRange = document.getElementById('compareRangeInput');
+  const layerBefore = document.getElementById('compareLayerBefore');
+  const dividerHandle = document.getElementById('compareDividerHandle');
+  const compareViewport = document.getElementById('zionicCompareViewport');
+
+  if (compareRange && layerBefore && dividerHandle) {
+    function updateCompare(val) {
+      const clamped = Math.max(0, Math.min(100, val));
+      layerBefore.style.clipPath = `inset(0 ${100 - clamped}% 0 0)`;
+      dividerHandle.style.left = `${clamped}%`;
+    }
+
+    compareRange.addEventListener('input', (e) => {
+      updateCompare(e.target.value);
+    });
+
+    // Touch & Mouse direct move
+    if (compareViewport) {
+      let isDown = false;
+      function handleMove(clientX) {
+        const rect = compareViewport.getBoundingClientRect();
+        const pos = ((clientX - rect.left) / rect.width) * 100;
+        compareRange.value = pos;
+        updateCompare(pos);
+      }
+
+      compareViewport.addEventListener('mousedown', (e) => {
+        isDown = true;
+        handleMove(e.clientX);
+      });
+      window.addEventListener('mousemove', (e) => {
+        if (isDown) handleMove(e.clientX);
+      });
+      window.addEventListener('mouseup', () => { isDown = false; });
+
+      compareViewport.addEventListener('touchstart', (e) => {
+        if (e.touches.length > 0) handleMove(e.touches[0].clientX);
+      }, { passive: true });
+      compareViewport.addEventListener('touchmove', (e) => {
+        if (e.touches.length > 0) handleMove(e.touches[0].clientX);
+      }, { passive: true });
+    }
+  }
+
+  // Case Switcher Buttons
+  const caseButtons = document.querySelectorAll('.case-switcher-btn');
+  const imgBefore = document.getElementById('compareImgBefore');
+  const imgAfter = document.getElementById('compareImgAfter');
+  const metaNum = document.getElementById('caseMetaNum');
+  const metaTitle = document.getElementById('caseMetaTitle');
+  const metaSessions = document.getElementById('caseMetaSessions');
+  const metaDesc = document.getElementById('caseMetaDesc');
+
+  caseButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      caseButtons.forEach((b) => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+
+      const bSrc = btn.getAttribute('data-before');
+      const aSrc = btn.getAttribute('data-after');
+      const title = btn.getAttribute('data-title');
+      const num = btn.getAttribute('data-num');
+      const sessions = btn.getAttribute('data-sessions');
+      const desc = btn.getAttribute('data-desc');
+
+      if (imgBefore) imgBefore.src = bSrc;
+      if (imgAfter) imgAfter.src = aSrc;
+      if (metaNum) metaNum.textContent = num;
+      if (metaTitle) metaTitle.textContent = title;
+      if (metaSessions) metaSessions.textContent = sessions;
+      if (metaDesc) metaDesc.textContent = desc;
+
+      // Reset slider to center 50%
+      if (compareRange) {
+        compareRange.value = 50;
+        if (layerBefore) layerBefore.style.clipPath = 'inset(0 50% 0 0)';
+        if (dividerHandle) dividerHandle.style.left = '50%';
+      }
+    });
+  });

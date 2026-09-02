@@ -1535,68 +1535,95 @@ function cleanHtml(raw, pageName) {
       </section>
 
       <!-- 5. CLINICAL BEFORE & AFTER SLIDER (MAIN PAGE SLIDER SYSTEM) -->
+            <!-- 4. INTERACTIVE CLINICAL BEFORE & AFTER COMPARISON STAGE -->
       <section class="zionic-ba-section" id="results">
         <div class="container">
           <div class="section-header-centered">
-            <span class="luxury-kicker">РЕЗУЛЬТАТИ ТЕРАПІЇ</span>
+            <span class="luxury-kicker">КЛІНІЧНИЙ ПРОТОКОЛ</span>
             <h2 class="section-main-title">Клінічно підтверджені результати</h2>
             <p class="section-main-sub">
-              Візуальні зміни вже після перших 2–3 процедур: чіткий контур, зменшення об'ємів та виражений ліфтинг шкіри
+              Перетягуйте повзунок для оцінки результатів терапії «До» та «Після» у різних анатомічних зонах
             </p>
           </div>
 
-          <div class="zionic-modern-gallery-slider">
-            <div class="zionic-gallery-track">
-              <div class="zionic-slide-item">
-                <div class="slide-img-frame">
-                  <img src="/wp-content/uploads/2026/03/ba-1-optimized.png" alt="Результати Zionic 1" loading="lazy">
-                </div>
-                <div class="slide-caption">Стегна та сідниці • 6 сеансів</div>
+          <!-- MAIN INTERACTIVE COMPARE STAGE -->
+          <div class="zionic-compare-card-container">
+            <div class="zionic-compare-viewport" id="zionicCompareViewport">
+              <!-- AFTER IMAGE (BOTTOM BASE) -->
+              <div class="compare-img-layer layer-after">
+                <img id="compareImgAfter" src="/wp-content/uploads/zionic_official/case_1_after.jpg" alt="Після процедури Zionic" draggable="false">
+                <span class="compare-tag tag-after">ПІСЛЯ</span>
               </div>
 
-              <div class="zionic-slide-item">
-                <div class="slide-img-frame">
-                  <img src="/wp-content/uploads/2026/03/ba-2-optimized.png" alt="Результати Zionic 2" loading="lazy">
-                </div>
-                <div class="slide-caption">Зменшення целюліту • 5 сеансів</div>
+              <!-- BEFORE IMAGE (TOP CLIPPED) -->
+              <div class="compare-img-layer layer-before" id="compareLayerBefore">
+                <img id="compareImgBefore" src="/wp-content/uploads/zionic_official/case_1_before.jpg" alt="До процедури Zionic" draggable="false">
+                <span class="compare-tag tag-before">ДО</span>
               </div>
 
-              <div class="zionic-slide-item">
-                <div class="slide-img-frame">
-                  <img src="/wp-content/uploads/2026/03/ba-3-optimized.png" alt="Результати Zionic 3" loading="lazy">
+              <!-- DRAGGABLE DIVIDER LINE & HANDLE -->
+              <div class="compare-divider-handle" id="compareDividerHandle">
+                <div class="divider-line"></div>
+                <div class="divider-pill-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
                 </div>
-                <div class="slide-caption">Підтяжка шкіри • 4 сеанси</div>
               </div>
 
-              <div class="zionic-slide-item">
-                <div class="slide-img-frame">
-                  <img src="/wp-content/uploads/2026/03/imgi_12_result-8-optimized.png" alt="Результати Zionic 4" loading="lazy">
-                </div>
-                <div class="slide-caption">Корекція зони галіфе • 6 сеансів</div>
-              </div>
-
-              <div class="zionic-slide-item">
-                <div class="slide-img-frame">
-                  <img src="/wp-content/uploads/2026/03/imgi_16_result-3-optimized.png" alt="Результати Zionic 5" loading="lazy">
-                </div>
-                <div class="slide-caption">Живіт та боки • 5 сеансів</div>
-              </div>
-
-              <div class="zionic-slide-item">
-                <div class="slide-img-frame">
-                  <img src="/wp-content/uploads/2026/03/imgi_14_result-1-optimized.png" alt="Результати Zionic 6" loading="lazy">
-                </div>
-                <div class="slide-caption">Тонус та пружність • 4 сеанси</div>
-              </div>
+              <!-- RANGE INPUT OVERLAY (ACCESSIBILITY & TOUCH DRAG) -->
+              <input type="range" min="0" max="100" value="50" class="compare-range-input" id="compareRangeInput" aria-label="Порівняння результатів До та Після">
             </div>
 
-            <div class="zionic-carousel-controls">
-              <button type="button" class="sharp-carousel-btn prev-btn" aria-label="Попереднє фото">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <!-- CLINICAL DETAILS PANEL -->
+            <div class="zionic-compare-meta-box">
+              <div class="meta-header-row">
+                <div class="meta-zone-info">
+                  <span class="meta-case-number" id="caseMetaNum">КЕЙС 01</span>
+                  <h3 class="meta-zone-title" id="caseMetaTitle">Стегна та сідниці</h3>
+                </div>
+                <div class="meta-protocol-badge" id="caseMetaSessions">6 СЕАНСІВ</div>
+              </div>
+              <p class="meta-zone-desc" id="caseMetaDesc">
+                Усунення локальних жирових відкладень та виражена підтяжка контуру сідниць. Зменшення окружності стегон на -4.5 см та розгладження шкіри.
+              </p>
+            </div>
+
+            <!-- 6 CASES SWITCHER NAV -->
+            <div class="zionic-cases-switcher-grid">
+              <button type="button" class="case-switcher-btn is-active" data-case="1" data-before="/wp-content/uploads/zionic_official/case_1_before.jpg" data-after="/wp-content/uploads/zionic_official/case_1_after.jpg" data-title="Стегна та сідниці" data-num="КЕЙС 01" data-sessions="6 СЕАНСІВ" data-desc="Усунення локальних жирових відкладень та виражена підтяжка контуру сідниць. Зменшення окружності стегон на -4.5 см та розгладження шкіри.">
+                <span class="btn-num">01</span>
+                <span class="btn-text">Стегна та сідниці</span>
+                <span class="btn-tag">6 сеансів</span>
               </button>
-              <div class="carousel-counter"><span class="current-slide">01</span> / <span class="total-slides">06</span></div>
-              <button type="button" class="sharp-carousel-btn next-btn" aria-label="Наступне фото">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+
+              <button type="button" class="case-switcher-btn" data-case="2" data-before="/wp-content/uploads/zionic_official/case_2_before.jpg" data-after="/wp-content/uploads/zionic_official/case_2_after.jpg" data-title="Зменшення целюліту" data-num="КЕЙС 02" data-sessions="5 СЕАНСІВ" data-desc="Помітне розгладження мікрорельєфу шкіри при фіброзному целюліті, усунення ефекту «апельсинової кірки» та відновлення мікроциркуляції.">
+                <span class="btn-num">02</span>
+                <span class="btn-text">Зменшення целюліту</span>
+                <span class="btn-tag">5 сеансів</span>
+              </button>
+
+              <button type="button" class="case-switcher-btn" data-case="3" data-before="/wp-content/uploads/zionic_official/case_3_before.jpg" data-after="/wp-content/uploads/zionic_official/case_3_after.jpg" data-title="Підтяжка та ліфтинг" data-num="КЕЙС 03" data-sessions="4 СЕАНСИ" data-desc="Потужне ущільнення в'ялої шкіри завдяки стимуляції синтезу колагену та еластину монополярним резистивним RF 470 кГц.">
+                <span class="btn-num">03</span>
+                <span class="btn-text">Підтяжка та ліфтинг</span>
+                <span class="btn-tag">4 сеанси</span>
+              </button>
+
+              <button type="button" class="case-switcher-btn" data-case="4" data-before="/wp-content/uploads/zionic_official/case_4_before.jpg" data-after="/wp-content/uploads/zionic_official/case_4_after.jpg" data-title="Корекція зони галіфе" data-num="КЕЙС 04" data-sessions="6 СЕАНСІВ" data-desc="Зменшення стійких жирових пасток на зовнішній поверхні стегон за рахунок MARP-ротації та глибокої діатермії.">
+                <span class="btn-num">04</span>
+                <span class="btn-text">Зона галіфе</span>
+                <span class="btn-tag">6 сеансів</span>
+              </button>
+
+              <button type="button" class="case-switcher-btn" data-case="5" data-before="/wp-content/uploads/zionic_official/case_5_before.jpg" data-after="/wp-content/uploads/zionic_official/case_5_after.jpg" data-title="Живіт та боки" data-num="КЕЙС 05" data-sessions="5 СЕАНСІВ" data-desc="Формування витонченої лінії талії, усунення набряків та глибокий дренаж вісцеральних і підшкірних зон.">
+                <span class="btn-num">05</span>
+                <span class="btn-text">Живіт та боки</span>
+                <span class="btn-tag">5 сеансів</span>
+              </button>
+
+              <button type="button" class="case-switcher-btn" data-case="6" data-before="/wp-content/uploads/zionic_official/case_6_before.jpg" data-after="/wp-content/uploads/zionic_official/case_6_after.jpg" data-title="Тонус та пружність" data-num="КЕЙС 06" data-sessions="4 СЕАНСИ" data-desc="Миттєвий та пролонгований ліфтинг тканин, покращення тургору та еластичності після ліполізу.">
+                <span class="btn-num">06</span>
+                <span class="btn-text">Тонус та пружність</span>
+                <span class="btn-tag">4 сеанси</span>
               </button>
             </div>
           </div>
