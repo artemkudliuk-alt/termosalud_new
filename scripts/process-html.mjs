@@ -1331,7 +1331,7 @@ function cleanHtml(raw, pageName) {
       <!-- 1. ZIONIC OFFICIAL LUXURY HERO -->
       <section class="zionic-official-hero">
         <div class="zionic-hero-bg-media">
-          <video autoplay loop muted playsinline class="zionic-hero-bg-video" preload="auto" poster="/photo_zionic.png">
+          <video autoplay loop muted playsinline class="zionic-hero-bg-video" preload="auto" poster="/zionic_hero_poster.jpg">
             <source src="/zionic.mp4" type="video/mp4">
           </video>
           <div class="zionic-hero-overlay"></div>
