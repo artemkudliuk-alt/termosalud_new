@@ -2230,9 +2230,11 @@ function cleanHtml(raw, pageName) {
   if (pageName === 'linfopress') {
     const modernLinfopressHtml = `
       <!-- ==========================================================================
-           1. HERO STAGE (OFFICIAL BLACK LUXURY VIDEO HERO)
+           1 & 2. HERO CURTAIN TRACK (ONLY SCREEN 2 SLIDES OVER SCREEN 1)
            ========================================================================== -->
-      <section class="linfopress-hero-stage" id="hero">
+      <div class="linfopress-hero-curtain-track">
+        <!-- 1. HERO STAGE (OFFICIAL BLACK LUXURY VIDEO HERO) -->
+        <section class="linfopress-hero-stage" id="hero">
         <div class="linfopress-hero-media-wrapper">
           <video autoplay loop muted playsinline class="linfopress-hero-video-bg" preload="auto" poster="/photo_limfo.png">
             <source src="/limfo.mp4" type="video/mp4">
@@ -2388,6 +2390,7 @@ function cleanHtml(raw, pageName) {
           </div>
         </div>
       </section>
+      </div>
 
 
       <!-- ==========================================================================
@@ -2925,7 +2928,11 @@ function cleanHtml(raw, pageName) {
         </div>
       </section>
 
-      <!-- EQUIPMENT PACKAGE -->
+      <!-- ==========================================================================
+           8.5. EQUIPMENT PACKAGE (#package)
+           ========================================================================== -->
+      <section class="linfopress-package-section" id="package">
+        <div class="container">
           <div class="linfopress-package-box">
             <div class="package-header">
               <h3 class="package-title">Комплект поставки</h3>
