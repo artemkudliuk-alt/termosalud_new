@@ -3171,22 +3171,20 @@ function cleanHtml(raw, pageName) {
 
 
       <!-- ==========================================================================
-           11. EXPANDABLE SEO CLEAN ARTICLE (.seo_text)
+           11. EXPANDABLE SEO ARTICLE (EXACT ZIONIC & MAIN PAGE EDITORIAL STYLE)
            ========================================================================== -->
-      <section class="linfopress-seo-clean-section" id="seo-article">
+      <section class="seo-clean-section linfopress-seo-clean-section" id="seo-article">
         <div class="container">
-          <div class="seo-clean-wrapper">
+          <div class="seo-article-card">
             <h2 class="seo-article-main-title">Купити апарат для пресотерапії Linfopress Evolution PRO: інновації в лімфодренажі</h2>
             
-            <p class="seo-lead-text">
-              Якісний апаратний лімфодренажний масаж — це базова та необхідна процедура в будь-якій сучасній клініці естетичної медицини. Він посилює ефект від інших методик корекції фігури та є самостійним потужним терапевтичним інструментом. Linfopress Evolution PRO — це передове обладнання преміумкласу, створене для досягнення бездоганних результатів та забезпечення максимального комфорту пацієнта.
-            </p>
+            <p>Якісний апаратний лімфодренажний масаж — це базова та необхідна процедура в будь-якій сучасній клініці естетичної медицини. Він посилює ефект від інших методик корекції фігури та є самостійним потужним терапевтичним інструментом. Linfopress Evolution PRO — це передове обладнання преміумкласу, створене для досягнення бездоганних результатів та забезпечення максимального комфорту пацієнта.</p>
 
-            <div class="seo-expandable-content" id="linfopress-seo-expand-box">
+            <div class="seo-expandable-content" id="seoExpandableContent">
               <h3 class="seo-article-sub-title">Біоміметична пульсація — новий стандарт терапії</h3>
               <p>Ключова інновація, що відрізняє цей професійний апарат для пресотерапії, полягає у використанні технології біоміметичної послідовної пульсації. Ця система максимально точно імітує природні фізіологічні процеси організму людини.</p>
               
-              <ul class="seo-bullet-list">
+              <ul class="seo-article-bullets">
                 <li><strong>Розігрів:</strong> Ексклюзивний режим, який м’яко готує тканини до впливу, що критично важливо при лікуванні фіброзного целюліту.</li>
                 <li><strong>Активація:</strong> Стимуляція роботи лімфатичних вузлів і запуск обмінних процесів.</li>
                 <li><strong>Дренаж:</strong> Глибоке та інтенсивне виведення надлишкової міжклітинної рідини й накопичених токсинів.</li>
@@ -3197,8 +3195,9 @@ function cleanHtml(raw, pageName) {
               <p>Linfopress пропонує унікальну куртку для масажу верхньої частини тулуба, універсальні манжети з 3 рівнями блискавок та швидке одягання за 60 секунд, заощаджуючи час лікаря та збільшуючи рентабельність кожного кабінету.</p>
             </div>
 
-            <button type="button" class="seo-toggle-action-btn" id="linfopress-seo-toggle-btn" onclick="window.toggleLinfopressSeoArticle()">
-              <span id="linfopress-seo-btn-label">Читати повністю ∨</span>
+            <button type="button" class="seo-toggle-btn" id="seoToggleBtn" onclick="toggleZionicSeoArticle()">
+              <span class="seo-btn-label">Читати повністю</span>
+              <span class="seo-btn-arrow">∨</span>
             </button>
           </div>
         </div>
