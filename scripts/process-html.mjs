@@ -1374,6 +1374,7 @@ function cleanHtml(raw, pageName) {
             <!-- Left Column: Information & Minimalist Benefits -->
             <div class="zionic-pillars-info-col">
               <div class="zionic-pillars-intro-box">
+                <span class="section-kicker">ПЕРЕВАГИ ДЛЯ КЛІНІКИ</span>
                 <h2 class="zionic-pillars-headline">ШВИДКО + РЕНТАБЕЛЬНО</h2>
                 <p class="zionic-pillars-desc">
                   Втілення 35 років інновацій іспанської естетичної медицини Termosalud. Синергія активного ротаційного масажу (MARP) та монополярного RF 470 кГц гарантує бездоганні клінічні результати для лідерів індустрії.
@@ -1410,7 +1411,7 @@ function cleanHtml(raw, pageName) {
                   <div class="pillar-min-body">
                     <h3 class="pillar-min-title">Швидкі та стійкі результати</h3>
                     <p class="pillar-min-text">
-                      Виразне зменшення об'ємів тіла, розгладження целюліту та потужний ліфтинг шкіри вже після 1-го сеансу.
+                      Помітне зменшення об'ємів та підвищення пружності шкіри вже після 1-го сеансу.
                     </p>
                   </div>
                 </div>
@@ -1425,7 +1426,7 @@ function cleanHtml(raw, pageName) {
               </div>
             </div>
 
-            <!-- Right Column: Large 3D Manipula with Scroll Zoom Effect -->
+            <!-- Right Column: Clean 3D Manipula Showcase Box (Desktop only) -->
             <div class="zionic-pillars-image-col">
               <div class="zionic-manipula-showcase-box">
                 <img src="/wp-content/uploads/zionic_official/ZIONIC-_manipulo2-copia-e1713857050153.png" alt="Zionic Deep Action Manipula 3D" class="zionic-manipula-zoom-img" id="zionic-scroll-manipula">
@@ -1448,8 +1449,8 @@ function cleanHtml(raw, pageName) {
           <div class="zionic-mobile-tech-block">
             <div class="container">
               <div class="zionic-mobile-tech-header">
-                <span class="tech-mobile-kicker">ТЕХНОЛОГІЧНА ПЕРЕВАГА</span>
-                <h3 class="tech-mobile-title">Запатентований синергічний вплив</h3>
+                <span class="section-kicker">ТЕХНОЛОГІЧНА ПЕРЕВАГА</span>
+                <h2 class="zionic-unified-section-title">Запатентований синергічний вплив</h2>
               </div>
             </div>
 
@@ -1493,6 +1494,7 @@ function cleanHtml(raw, pageName) {
         <section class="zionic-manipula-section" id="manipula">
           <div class="container">
             <div class="zionic-section-header">
+              <span class="section-kicker">МАЙСТЕРНІСТЬ ІНЖЕНЕРІЇ</span>
               <h2>Маніпула Deep Action: Досконалість інженерії</h2>
               <p class="section-subtitle">
                 Ергономічна конструкція зі змінними насадками для прицільної та комфортної роботи лікаря по будь-якій зоні тіла.
@@ -1559,10 +1561,13 @@ function cleanHtml(raw, pageName) {
               
               <!-- Left Column: Clinical Control Info -->
               <div class="accuracy-info-col">
-                <h2 class="accuracy-title">ВІДТВОРЮВАНІСТЬ ТА ПРЕЦИЗІЙНА ТОЧНІСТЬ</h2>
-                <p class="accuracy-desc">
-                  Інтуїтивний інтерфейс з відображенням параметрів у реальному часі дозволяє зберігати індивідуальні протоколи пацієнтів та відтворювати перевірені результати від сеансу до сеансу.
-                </p>
+                <div class="accuracy-header-box">
+                  <span class="section-kicker kicker-light">КЛІНІЧНИЙ КОНТРОЛЬ</span>
+                  <h2 class="accuracy-title">ВІДТВОРЮВАНІСТЬ ТА ПРЕЦИЗІЙНА ТОЧНІСТЬ</h2>
+                  <p class="accuracy-desc">
+                    Інтуїтивний інтерфейс з відображенням параметрів у реальному часі дозволяє зберігати індивідуальні протоколи пацієнтів та відтворювати перевірені результати від сеансу до сеансу.
+                  </p>
+                </div>
 
                 <div class="accuracy-highlights-list">
                   <div class="accuracy-highlight-item">
@@ -1619,6 +1624,7 @@ function cleanHtml(raw, pageName) {
         <section class="zionic-treatments-section" id="treatment-areas">
           <div class="container">
             <div class="zionic-section-header">
+              <span class="section-kicker">КЛІНІЧНІ ПРОТОКОЛИ</span>
               <h2>Зони застосування та показання</h2>
               <p class="section-subtitle">
                 Zionic розроблений для комплексної роботи з усім тілом та вирішення найпоширеніших естетичних завдань пацієнтів.
@@ -1691,6 +1697,7 @@ function cleanHtml(raw, pageName) {
       <section class="zionic-results-section" id="results">
         <div class="container">
           <div class="zionic-section-header">
+            <span class="section-kicker">РЕЗУЛЬТАТИ ТЕРАПІЇ</span>
             <h2>Доведені результати лікування</h2>
             <p class="section-subtitle">
               Фотографії реальних пацієнтів після проходження стандартного курсу процедур на апараті ZIONIC.
@@ -1732,7 +1739,8 @@ function cleanHtml(raw, pageName) {
         <div class="container">
           
           <!-- Section Header -->
-          <div class="zionic-unified-header">
+          <div class="zionic-unified-header zionic-section-header">
+            <span class="section-kicker">ЕКСПЕРТИЗА ТА ВІДПОВІДІ</span>
             <h2 class="unified-title">Все, що потрібно знати про ZIONIC</h2>
             <p class="unified-subtitle">
               Технологічні переваги, фінансова модель для клінік, клінічні протоколи та відповіді на головні запитання
