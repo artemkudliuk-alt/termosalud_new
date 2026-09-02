@@ -1683,7 +1683,6 @@ function cleanHtml(raw, pageName) {
           
           <!-- Section Header -->
           <div class="zionic-unified-header">
-            <span class="unified-kicker">ЕКСПЕРТИЗА ТА ПРАКТИКА</span>
             <h2 class="unified-title">Все, що потрібно знати про ZIONIC</h2>
             <p class="unified-subtitle">
               Технологічні переваги, фінансова модель для клінік, клінічні протоколи та відповіді на головні запитання
