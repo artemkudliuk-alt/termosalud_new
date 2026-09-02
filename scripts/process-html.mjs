@@ -2229,7 +2229,9 @@ function cleanHtml(raw, pageName) {
 
   if (pageName === 'linfopress') {
     const modernLinfopressHtml = `
-      <!-- 1. HERO STAGE (OFFICIAL BLACK LUXURY VIDEO HERO) -->
+      <!-- ==========================================================================
+           1. HERO STAGE (OFFICIAL BLACK LUXURY VIDEO HERO)
+           ========================================================================== -->
       <section class="linfopress-hero-stage" id="hero">
         <div class="linfopress-hero-media-wrapper">
           <video autoplay loop muted playsinline class="linfopress-hero-video-bg" preload="auto" poster="/photo_limfo.png">
@@ -2241,7 +2243,6 @@ function cleanHtml(raw, pageName) {
         <div class="container linfopress-hero-container">
           <div class="linfopress-hero-content-box">
             
-            <!-- Cloud Brand Outline Icon (Enlarged) -->
             <div class="linfopress-hero-logo-wrap">
               <img src="/LINFOPRESS-PRO-1.png" alt="Linfopress Evolution Pro" class="linfopress-official-logo" width="300" height="105" loading="eager">
             </div>
@@ -2251,7 +2252,7 @@ function cleanHtml(raw, pageName) {
               <span class="hero-word-secondary">КОМФОРТ</span>
             </h1>
 
-            <h2 class="linfopress-official-hero-kicker">ПРЕСОТЕРАПІЯ З НАЙБІЛЬШИМ РОЗМІРНИМ РЯДОМ НА РИНКУ</h2>
+            <p class="linfopress-official-hero-kicker">ПРЕСОТЕРАПІЯ З НАЙБІЛЬШИМ РОЗМІРНИМ РЯДОМ НА РИНКУ</p>
             <p class="linfopress-official-hero-desc">Ідеальне доповнення для комплексних процедур моделювання тіла та лімфодренажу</p>
 
             <div class="linfopress-hero-actions">
@@ -2269,277 +2270,737 @@ function cleanHtml(raw, pageName) {
       </section>
 
 
-      <!-- ADVANTAGES 5-PILL HORIZONTAL BANNER (EXACT 1-TO-1 CLONE) -->
-      <div class="advantages fade-up">
+      <!-- ==========================================================================
+           2. QUICK ADVANTAGES 5-PILL STRIP (CLEAN ARCHITECTURAL BENTO)
+           ========================================================================== -->
+      <section class="linfopress-advantages-strip">
         <div class="container">
-          <div class="advantages-video-bg">
-            <video autoplay="" loop="" muted="" playsinline="" poster="/wp-content/uploads/2026/04/video-placeholder-optimized.png">
-              <source src="/wp-content/themes/zionic/assets/images/presentation-video.mp4" type="video/mp4">
-            </video>
-            <div class="advantages-video-content">
-              <ul>
-                <li data-aos="fade-up" data-aos-delay="0" class="aos-init aos-animate">
-                  <div>
-                    <img src="/wp-content/uploads/2026/03/1-1.svg" alt="Нове покоління - фото" title="Нове покоління">
-                  </div>
-                  <div>Нове покоління</div>
-                  <div>Нове покоління комбінаторної пресотерапії</div>
-                </li>
-                <li data-aos="fade-up" data-aos-delay="100" class="aos-init aos-animate">
-                  <div>
-                    <img src="/wp-content/uploads/2026/03/2-1.svg" alt="Для всіх розмірів - фото" title="Для всіх розмірів">
-                  </div>
-                  <div>Для всіх розмірів</div>
-                  <div>Три рівня блискавок для пацієнтів всіх розмірів</div>
-                </li>
-                <li data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
-                  <div>
-                    <img src="/wp-content/uploads/2026/03/3-1.svg" alt="4 етапи - фото" title="4 етапи">
-                  </div>
-                  <div>4 етапи</div>
-                  <div>Чотири етапи пульсуючої пневматичної компресії</div>
-                </li>
-                <li data-aos="fade-up" data-aos-delay="300" class="aos-init aos-animate">
-                  <div>
-                    <img src="/wp-content/uploads/2026/03/4-1.svg" alt="10 програм - фото" title="10 програм">
-                  </div>
-                  <div>10 програм</div>
-                  <div>Десять програм послідовної біоміметичної пульсації</div>
-                </li>
-                <li data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">
-                  <div>
-                    <img src="/wp-content/uploads/2026/03/5-1.svg" alt="Унікальність - фото" title="Унікальність">
-                  </div>
-                  <div>Унікальність</div>
-                  <div>Тільки в Linfopress: пресомасаж холки і love-handles</div>
-                </li>
-              </ul>
+          <div class="linfopress-pills-grid">
+            <div class="linfopress-pill-card">
+              <div class="pill-icon-wrap">
+                <img src="/wp-content/uploads/2026/03/1-1.svg" alt="Нове покоління" width="36" height="36">
+              </div>
+              <h4 class="pill-title">Нове покоління</h4>
+              <p class="pill-desc">Нове покоління комбінаторної пресотерапії</p>
+            </div>
+
+            <div class="linfopress-pill-card">
+              <div class="pill-icon-wrap">
+                <img src="/wp-content/uploads/2026/03/2-1.svg" alt="Для всіх розмірів" width="36" height="36">
+              </div>
+              <h4 class="pill-title">Для всіх розмірів</h4>
+              <p class="pill-desc">Три рівні блискавок для пацієнтів всіх розмірів</p>
+            </div>
+
+            <div class="linfopress-pill-card">
+              <div class="pill-icon-wrap">
+                <img src="/wp-content/uploads/2026/03/3-1.svg" alt="4 етапи" width="36" height="36">
+              </div>
+              <h4 class="pill-title">4 етапи</h4>
+              <p class="pill-desc">Чотири етапи пульсуючої пневматичної компресії</p>
+            </div>
+
+            <div class="linfopress-pill-card">
+              <div class="pill-icon-wrap">
+                <img src="/wp-content/uploads/2026/03/4-1.svg" alt="10 програм" width="36" height="36">
+              </div>
+              <h4 class="pill-title">10 програм</h4>
+              <p class="pill-desc">Десять програм послідовної біоміметичної пульсації</p>
+            </div>
+
+            <div class="linfopress-pill-card">
+              <div class="pill-icon-wrap">
+                <img src="/wp-content/uploads/2026/03/5-1.svg" alt="Унікальність" width="36" height="36">
+              </div>
+              <h4 class="pill-title">Унікальність</h4>
+              <p class="pill-desc">Тільки в Linfopress: пресомасаж холки і love-handles</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ==========================================================================
+           3. TECHNOLOGIES (4 OBSIDIAN BENTO CARDS WITH GRAPHITE BORDERS)
+           ========================================================================== -->
+      <section class="linfopress-tech-bento-section" id="technologies">
+        <div class="container">
+          <div class="section-header-centered">
+            <h2 class="section-main-title">Технології Linfopress Evolution PRO</h2>
+            <p class="section-main-sub">
+              Вперше технологія біоміметичної послідовної пульсації втілена в найкращий в світі апарат для пресотерапії
+            </p>
+          </div>
+
+          <div class="linfopress-tech-grid">
+            <!-- TECH CARD 1 -->
+            <div class="linfopress-tech-card" onclick="window.openLinfopressTechModal(1)">
+              <div class="tech-media-box">
+                <video autoplay loop muted playsinline preload="none" poster="/wp-content/uploads/2026/03/1-preview-optimized.png">
+                  <source src="/wp-content/uploads/2026/03/1.mp4" type="video/mp4">
+                </video>
+                <span class="tech-stage-badge">ФАЗА 01</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-card-heading">Стадія розігріву</h3>
+                <ul class="tech-card-list">
+                  <li><span class="bullet-check">✓</span> Ніжно розтягує тканини і судини, готуючи ділянки для інтенсивного пресомасажу.</li>
+                  <li><span class="bullet-check">✓</span> Ідеально підходить для лікування фіброзного целюліту, коли пацієнтки є особливо чутливими.</li>
+                </ul>
+                <div class="tech-card-cta">
+                  <span>Дізнатись подробиці</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- TECH CARD 2 -->
+            <div class="linfopress-tech-card" onclick="window.openLinfopressTechModal(2)">
+              <div class="tech-media-box">
+                <video autoplay loop muted playsinline preload="none" poster="/wp-content/uploads/2026/03/2-preview-1-optimized.png">
+                  <source src="/wp-content/uploads/2026/03/2-1.mp4" type="video/mp4">
+                </video>
+                <span class="tech-stage-badge">ФАЗА 02</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-card-heading">Хвиля</h3>
+                <ul class="tech-card-list">
+                  <li><span class="bullet-check">✓</span> Послідовне стискання і розтискання 24-ох високоякісних манжет від дистальних ділянок до проксимальних.</li>
+                  <li><span class="bullet-check">✓</span> Тривалий масаж, спрямовує рідини з периферичних ділянок до центру тіла. Підходить для лікування целюліту та релаксації.</li>
+                </ul>
+                <div class="tech-card-cta">
+                  <span>Дізнатись подробиці</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- TECH CARD 3 -->
+            <div class="linfopress-tech-card" onclick="window.openLinfopressTechModal(3)">
+              <div class="tech-media-box">
+                <video autoplay loop muted playsinline preload="none" poster="/wp-content/uploads/2026/04/limfonew-optimized.jpg">
+                  <source src="/wp-content/uploads/2026/04/limfonew2.mp4" type="video/mp4">
+                </video>
+                <span class="tech-stage-badge">ФАЗА 03</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-card-heading">Лімфодренаж</h3>
+                <ul class="tech-card-list">
+                  <li><span class="bullet-check">✓</span> Найглибший, найінтенсивніший з можливих (контрольований тиск до 80 мм Hg).</li>
+                  <li><span class="bullet-check">✓</span> Тиск у 24-ох камерах зменшується, коли хвиля наближається до проксимальної цільової області.</li>
+                </ul>
+                <div class="tech-card-cta">
+                  <span>Дізнатись подробиці</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- TECH CARD 4 -->
+            <div class="linfopress-tech-card" onclick="window.openLinfopressTechModal(4)">
+              <div class="tech-media-box">
+                <video autoplay loop muted playsinline preload="none" poster="/wp-content/uploads/2026/03/4-preview-1-optimized.png">
+                  <source src="/wp-content/uploads/2026/03/1.mp4" type="video/mp4">
+                </video>
+                <span class="tech-stage-badge">ФАЗА 04</span>
+              </div>
+              <div class="tech-card-body">
+                <h3 class="tech-card-heading">Релаксація</h3>
+                <ul class="tech-card-list">
+                  <li><span class="bullet-check">✓</span> Заспокоює м’язи і тканини після інтенсивної роботи, відновлюючи тонус.</li>
+                  <li><span class="bullet-check">✓</span> Ідеально для завершального лікування целюліту, синдрому втомлених ніг, після ліпосакції та вагітності.</li>
+                </ul>
+                <div class="tech-card-cta">
+                  <span>Дізнатись подробиці</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ==========================================================================
+           MODALS FOR 4 PHASES (PREMIUM BLUR-IN LIGHTBOX)
+           ========================================================================== -->
+      <div id="linfopress-tech-modal-overlay" class="linfopress-modal-backdrop" onclick="window.closeLinfopressTechModal(event)">
+        <div class="linfopress-modal-dialog" onclick="event.stopPropagation()">
+          <button type="button" class="linfopress-modal-close-btn" onclick="window.closeLinfopressTechModal()">✕</button>
+          
+          <div id="lp-modal-tab-1" class="lp-modal-tab-content">
+            <div class="modal-video-wrapper">
+              <video controls playsinline class="modal-inner-video">
+                <source src="/wp-content/uploads/2026/03/1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="modal-text-content">
+              <h3 class="modal-title">Стадія розігріву</h3>
+              <p class="modal-desc">Стадія розігріву – це унікальна особливість апарату для пресотерапії Linfopress Evolution PRO. Її додали в кожну програму на запит досвідчених лікарів, які вважають, що тканини потрібно делікатно підготувати до компресії.</p>
+              <p class="modal-desc">Linfopress Evolution PRO автоматично задає стадію розігріву, що ніжно розтягує тканини і судини, готуючи ділянки для інтенсивного пресомасажу. Ідеально підходить для лікування фіброзного целюліту, коли пацієнтки є особливо чутливими.</p>
+            </div>
+          </div>
+
+          <div id="lp-modal-tab-2" class="lp-modal-tab-content" style="display:none;">
+            <div class="modal-video-wrapper">
+              <video controls playsinline class="modal-inner-video">
+                <source src="/wp-content/uploads/2026/03/2-1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="modal-text-content">
+              <h3 class="modal-title">Хвиля</h3>
+              <p class="modal-desc">Цей цикл багаторазово застосовує компресивний масаж починаючи від дистальних зон до центру тіла. Така послідовність надування/здування забезпечує постійний масаж, що переміщує рідини з дистальних зон до центру тіла, сприяючи поверненню рідин і їх реабсорбції.</p>
+              <p class="modal-desc">Цикл в камерах змінюється поступово: коли попередня камера здувається, наступна надувається. Масажний ефект підходить для усунення целюліту, спортивного масажу, підготовки до ліпосакції та релаксації м’язів.</p>
+            </div>
+          </div>
+
+          <div id="lp-modal-tab-3" class="lp-modal-tab-content" style="display:none;">
+            <div class="modal-video-wrapper">
+              <video controls playsinline class="modal-inner-video">
+                <source src="/wp-content/uploads/2026/04/limfonew2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="modal-text-content">
+              <h3 class="modal-title">Лімфодренаж</h3>
+              <p class="modal-desc">У цій стадії застосовуються фази планомірного стискання в напрямку від дистальних до проксимальних зон. Лімфодренаж в Linfopress Evolution PRO найглибший та найінтенсивніший з можливих — тиск досягає 80 мм Hg.</p>
+              <p class="modal-desc">Завдяки стадії розігріву і грамотно підібраним циклам стискань процедура сприймається пацієнтками абсолютно толерантно та безболісно.</p>
+            </div>
+          </div>
+
+          <div id="lp-modal-tab-4" class="lp-modal-tab-content" style="display:none;">
+            <div class="modal-video-wrapper">
+              <video controls playsinline class="modal-inner-video">
+                <source src="/wp-content/uploads/2026/03/1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="modal-text-content">
+              <h3 class="modal-title">Релаксація</h3>
+              <p class="modal-desc">Найпопулярніший етап процедури пресотерапії. Пацієнтки із вдячністю сприймають зменшення тиску і ритмічні заспокійливі хвилі, відчуваючи преміальний рівень процедури.</p>
+              <p class="modal-desc">Релаксація заспокоює м’язи і тканини після інтенсивної роботи, ідеально підходить для завершення лікування целюліту, синдрому втомлених ніг, реабілітації після ліпосакції та вагітності.</p>
             </div>
           </div>
         </div>
       </div>
 
 
-      <div class="technologies fade-up" id="technologies"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50">Технології Linfopress Evolution PRO</h2><div class="technologies-top-text aos-init" data-aos="fade-up" data-aos-delay="200">Вперше технологія біоміметичної послідовної пульсації втілена в найкращий в світі апарат для пресотерапії. Linfopress Evolution PRO імітує природні пульсуючі рухи в чотирьох унікальних комбінаціях:</div><div class="technologies-row row"><div class="col-lg-6"><div class="technologies-item aos-init" data-toggle="modal" data-target="#techModal1" data-aos="fade-up" data-aos-delay="300"><div class="ti-video-block"><video muted="" loop="" playsinline="" preload="none" poster="/wp-content/uploads/2026/03/1-preview-optimized.png">
-<source src="/wp-content/uploads/2026/03/1.mp4" type="video/mp4"></video></div><div class="ti-name">Стадія розігріву</div><div class="ti-descr"><ol>
-<li>Ніжно розтягує тканини і судини, готуючи ділянки для інтенсивного пресомасажу.</li>
-<li>Ідеально підходить для лікування фіброзного целюліту, коли пацієнтки є особливо чутливими.</li></ol></div><div class="ti-show-more">Дізнатись подробиці</div></div></div><div class="col-lg-6"><div class="technologies-item aos-init" data-toggle="modal" data-target="#techModal2" data-aos="fade-up" data-aos-delay="300"><div class="ti-video-block"><video muted="" loop="" playsinline="" preload="none" poster="/wp-content/uploads/2026/03/2-preview-1-optimized.png">
-<source src="/wp-content/uploads/2026/03/2-1.mp4" type="video/mp4"></video></div><div class="ti-name">Хвиля</div><div class="ti-descr"><ol>
-<li>Послідовне стискання і розтискання 24-ох високоякісних манжет від дистальних ділянок до проксимальних.</li>
-<li>Тривалий масаж, спрямовує рідини з периферичних ділянок до центру тіла. Підходить для лікування целюліту, спортивного масажу, розслаблення м’язів.</li></ol></div><div class="ti-show-more">Дізнатись подробиці</div></div></div><div class="col-lg-6"><div class="technologies-item aos-init" data-toggle="modal" data-target="#techModal3" data-aos="fade-up" data-aos-delay="300"><div class="ti-video-block"><video muted="" loop="" playsinline="" preload="none" poster="/wp-content/uploads/2026/04/limfonew-optimized.jpg">
-<source src="/wp-content/uploads/2026/04/limfonew2.mp4" type="video/mp4"></video></div><div class="ti-name">Лімфодренаж</div><div class="ti-descr"><ol>
-<li>Найглибший, найінтенсивніший з можливих (тиск до 80 мм Hg).</li>
-<li>Тиск в 24-ох манжетах зменшується, коли хвиля наближається до проксимальної цільової області.</li></ol></div><div class="ti-show-more">Дізнатись подробиці</div></div></div><div class="col-lg-6"><div class="technologies-item aos-init" data-toggle="modal" data-target="#techModal4" data-aos="fade-up" data-aos-delay="300"><div class="ti-video-block"><video muted="" loop="" playsinline="" preload="none" poster="/wp-content/uploads/2026/03/4-preview-1-optimized.png">
-<source src="" type="video/mp4"></video></div><div class="ti-name">Релаксація</div><div class="ti-descr"><ol>
-<li>Заспокоює м’язи і тканини після інтенсивної роботи.</li>
-<li>Ідеально для завершального лікування целюліту, синдрому втомлених ніг, після ліпосакції та вагітності.</li></ol></div><div class="ti-show-more">Дізнатись подробиці</div></div></div></div><div class="technologies-bottom-text aos-init" data-aos="fade-up" data-aos-delay="200">Нове покоління інтелектуальної пресотерапії. <br>Діапазон процедур від косметології до реабілітації після ліпоскацій та переломів</div><div class="aos-init" data-aos="fade-up" data-aos-delay="300">
-<button class="another-pages-banner-button" data-popup="popup_request">Дізнатись більше</button></div></div></div>
+      <!-- ==========================================================================
+           4. VIDEO PROCEDURE DEMONSTRATION SECTION (#procedure)
+           ========================================================================== -->
+      <section class="linfopress-procedure-section" id="procedure">
+        <div class="container">
+          <div class="section-header-centered">
+            <h2 class="section-main-title">Процедура Linfopress Evolution PRO</h2>
+            <p class="section-main-sub">
+              Повний цикл роботи апарату: від одягання ергономічних манжетів до терапевтичного лімфодренажу
+            </p>
+          </div>
 
-<div class="modal fade tech-modal" id="techModal1" tabindex="-1">
-<button type="button" class="close" data-dismiss="modal">
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.6862 9.85784C12.5014 9.66779 12.2807 9.51635 12.037 9.41233C11.7932 9.30831 11.5311 9.25377 11.2661 9.2519C11.0011 9.25003 10.7383 9.30085 10.493 9.40141C10.2478 9.50197 10.025 9.65028 9.8376 9.8377C9.65018 10.0251 9.50188 10.2479 9.40131 10.4931C9.30075 10.7384 9.24993 11.0011 9.2518 11.2662C9.25368 11.5312 9.30821 11.7933 9.41223 12.037C9.51625 12.2808 9.66769 12.5015 9.85774 12.6863L35.3136 38.1421C35.4983 38.3322 35.719 38.4836 35.9628 38.5876C36.2066 38.6916 36.4686 38.7462 36.7337 38.748C36.9987 38.7499 37.2615 38.6991 37.5067 38.5985C37.7519 38.498 37.9747 38.3497 38.1622 38.1622C38.3496 37.9748 38.4979 37.752 38.5984 37.5068C38.699 37.2616 38.7498 36.9988 38.7479 36.7338C38.7461 36.4687 38.6915 36.2067 38.5875 35.9629C38.4835 35.7191 38.3321 35.4984 38.142 35.3137L12.6862 9.85784Z" fill="#FFFF00"></path>
-<path d="M9.85832 35.3138C9.66827 35.4986 9.51684 35.7193 9.41282 35.963C9.30879 36.2068 9.25426 36.4689 9.25239 36.7339C9.25051 36.9989 9.30134 37.2617 9.4019 37.507C9.50246 37.7522 9.65076 37.975 9.83818 38.1624C10.0256 38.3498 10.2484 38.4981 10.4936 38.5987C10.7389 38.6992 11.0016 38.7501 11.2667 38.7482C11.5317 38.7463 11.7938 38.6918 12.0375 38.5878C12.2813 38.4837 12.502 38.3323 12.6868 38.1423L38.1426 12.6864C38.3326 12.5017 38.4841 12.281 38.5881 12.0372C38.6921 11.7934 38.7467 11.5314 38.7485 11.2663C38.7504 11.0013 38.6996 10.7385 38.599 10.4933C38.4985 10.2481 38.3502 10.0253 38.1627 9.83784C37.9753 9.65042 37.7525 9.50212 37.5073 9.40156C37.2621 9.30099 36.9993 9.25018 36.7342 9.25205C36.4692 9.25392 36.2072 9.30845 35.9634 9.41247C35.7196 9.5165 35.4989 9.66793 35.3142 9.85799L9.85832 35.3138Z" fill="#FFFF00"></path>
-</svg>
-</button><div class="modal-dialog modal-xs modal-dialog-centered"><div class="modal-content"><div class="modal-video"><video class="modal-video" controls="" loop="" playsinline="">
-<source src="/wp-content/uploads/2026/03/1.mp4" type="video/mp4"></video></div><div class="ti-name">Стадія розігріву</div><div class="ti-descr"><p>Стадія розігріву – це унікальна особливість апарату для пресотерапії Linfopress Evolution PRO.</p><p>Стадію розігріву додали в кожну програму Linfopress Evolution PRO на запит досвідчених лікарів, які вважають, що тканини потрібно підготувати до компресії.</p><p>На простих апаратах лікарі вручну встановлюють програму з помірним стисненням на перші 5 хвилин процедури, а потім вручну переключають на робочий тиск.</p><p>Linfopress Evolution PRO – це новий етап розвитку пресотерапії. Автоматично задає стадію розігріву, що ніжно розтягує тканини і судини, готуючи ділянки для інтенсивного пресомасажу. Ідеально підходить для лікування фіброзного целюліту, коли пацієнтки є особливо чутливими.</p><p>За свідченням користувачів пацієнтки приємно здивовані від того, що в процесі процедури змінюється тиск. Це зручно, ефективно і підкреслює преміальність клініки, де навіть базова лікувальна процедура краща, ніж у всіх.</p></div></div></div></div>
+          <div class="linfopress-procedure-cinema-box">
+            <div class="cinema-media-wrap" id="linfopress-procedure-player-trigger" data-youtube="K1v77enueJ8">
+              <video autoplay loop muted playsinline preload="auto" class="cinema-bg-video">
+                <source src="/wp-content/uploads/2026/03/termosalud_vid.mp4" type="video/mp4">
+              </video>
+              <div class="cinema-play-overlay">
+                <div class="cinema-play-button">
+                  <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                </div>
+                <span class="cinema-play-text">ДИВИТИСЬ ВІДЕО-ПРЕЗЕНТАЦІЮ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<div class="modal fade tech-modal" id="techModal2" tabindex="-1">
-<button type="button" class="close" data-dismiss="modal">
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.6862 9.85784C12.5014 9.66779 12.2807 9.51635 12.037 9.41233C11.7932 9.30831 11.5311 9.25377 11.2661 9.2519C11.0011 9.25003 10.7383 9.30085 10.493 9.40141C10.2478 9.50197 10.025 9.65028 9.8376 9.8377C9.65018 10.0251 9.50188 10.2479 9.40131 10.4931C9.30075 10.7384 9.24993 11.0011 9.2518 11.2662C9.25368 11.5312 9.30821 11.7933 9.41223 12.037C9.51625 12.2808 9.66769 12.5015 9.85774 12.6863L35.3136 38.1421C35.4983 38.3322 35.719 38.4836 35.9628 38.5876C36.2066 38.6916 36.4686 38.7462 36.7337 38.748C36.9987 38.7499 37.2615 38.6991 37.5067 38.5985C37.7519 38.498 37.9747 38.3497 38.1622 38.1622C38.3496 37.9748 38.4979 37.752 38.5984 37.5068C38.699 37.2616 38.7498 36.9988 38.7479 36.7338C38.7461 36.4687 38.6915 36.2067 38.5875 35.9629C38.4835 35.7191 38.3321 35.4984 38.142 35.3137L12.6862 9.85784Z" fill="#FFFF00"></path>
-<path d="M9.85832 35.3138C9.66827 35.4986 9.51684 35.7193 9.41282 35.963C9.30879 36.2068 9.25426 36.4689 9.25239 36.7339C9.25051 36.9989 9.30134 37.2617 9.4019 37.507C9.50246 37.7522 9.65076 37.975 9.83818 38.1624C10.0256 38.3498 10.2484 38.4981 10.4936 38.5987C10.7389 38.6992 11.0016 38.7501 11.2667 38.7482C11.5317 38.7463 11.7938 38.6918 12.0375 38.5878C12.2813 38.4837 12.502 38.3323 12.6868 38.1423L38.1426 12.6864C38.3326 12.5017 38.4841 12.281 38.5881 12.0372C38.6921 11.7934 38.7467 11.5314 38.7485 11.2663C38.7504 11.0013 38.6996 10.7385 38.599 10.4933C38.4985 10.2481 38.3502 10.0253 38.1627 9.83784C37.9753 9.65042 37.7525 9.50212 37.5073 9.40156C37.2621 9.30099 36.9993 9.25018 36.7342 9.25205C36.4692 9.25392 36.2072 9.30845 35.9634 9.41247C35.7196 9.5165 35.4989 9.66793 35.3142 9.85799L9.85832 35.3138Z" fill="#FFFF00"></path>
-</svg>
-</button><div class="modal-dialog modal-xs modal-dialog-centered"><div class="modal-content"><div class="modal-video"><video class="modal-video" controls="" loop="" playsinline="">
-<source src="/wp-content/uploads/2026/03/2-1.mp4" type="video/mp4"></video></div><div class="ti-name">Хвиля</div><div class="ti-descr"><p>Цей цикл багаторазово застосовує компресивний масаж починаючи від дистальних зон до центру тіла. Така послідовність надування/здування забезпечує постійний масаж, що переміщує рідини з дистальних зон до центру тіла, сприяючи поверненню рідин і їх реабсорбції.</p><p>Цикл в камерах змінюється поступово, коли попередня камера здувається, наступна надувається. На відміну від стадії розігріву, стадія «хвилі» завжди надуває всі камери, починаючи з дистальної камери і закінчуючи на проксимальній.</p><p>Масажний ефект, що забезпечується на цій фазі, підходить для усунення целюліту, спортивного масажу, підготовки до ліпосакції та релаксації м’язів.</p></div></div></div></div>
 
-<div class="modal fade tech-modal" id="techModal3" tabindex="-1">
-<button type="button" class="close" data-dismiss="modal">
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.6862 9.85784C12.5014 9.66779 12.2807 9.51635 12.037 9.41233C11.7932 9.30831 11.5311 9.25377 11.2661 9.2519C11.0011 9.25003 10.7383 9.30085 10.493 9.40141C10.2478 9.50197 10.025 9.65028 9.8376 9.8377C9.65018 10.0251 9.50188 10.2479 9.40131 10.4931C9.30075 10.7384 9.24993 11.0011 9.2518 11.2662C9.25368 11.5312 9.30821 11.7933 9.41223 12.037C9.51625 12.2808 9.66769 12.5015 9.85774 12.6863L35.3136 38.1421C35.4983 38.3322 35.719 38.4836 35.9628 38.5876C36.2066 38.6916 36.4686 38.7462 36.7337 38.748C36.9987 38.7499 37.2615 38.6991 37.5067 38.5985C37.7519 38.498 37.9747 38.3497 38.1622 38.1622C38.3496 37.9748 38.4979 37.752 38.5984 37.5068C38.699 37.2616 38.7498 36.9988 38.7479 36.7338C38.7461 36.4687 38.6915 36.2067 38.5875 35.9629C38.4835 35.7191 38.3321 35.4984 38.142 35.3137L12.6862 9.85784Z" fill="#FFFF00"></path>
-<path d="M9.85832 35.3138C9.66827 35.4986 9.51684 35.7193 9.41282 35.963C9.30879 36.2068 9.25426 36.4689 9.25239 36.7339C9.25051 36.9989 9.30134 37.2617 9.4019 37.507C9.50246 37.7522 9.65076 37.975 9.83818 38.1624C10.0256 38.3498 10.2484 38.4981 10.4936 38.5987C10.7389 38.6992 11.0016 38.7501 11.2667 38.7482C11.5317 38.7463 11.7938 38.6918 12.0375 38.5878C12.2813 38.4837 12.502 38.3323 12.6868 38.1423L38.1426 12.6864C38.3326 12.5017 38.4841 12.281 38.5881 12.0372C38.6921 11.7934 38.7467 11.5314 38.7485 11.2663C38.7504 11.0013 38.6996 10.7385 38.599 10.4933C38.4985 10.2481 38.3502 10.0253 38.1627 9.83784C37.9753 9.65042 37.7525 9.50212 37.5073 9.40156C37.2621 9.30099 36.9993 9.25018 36.7342 9.25205C36.4692 9.25392 36.2072 9.30845 35.9634 9.41247C35.7196 9.5165 35.4989 9.66793 35.3142 9.85799L9.85832 35.3138Z" fill="#FFFF00"></path>
-</svg>
-</button><div class="modal-dialog modal-xs modal-dialog-centered"><div class="modal-content"><div class="modal-video"><video class="modal-video" controls="" loop="" playsinline="">
-<source src="/wp-content/uploads/2026/04/limfonew2.mp4" type="video/mp4"></video></div><div class="ti-name">Лімфодренаж</div><div class="ti-descr"><p>В цій стадії застосовуються фази планомірного стискання в напрямку від дистальних до проксимальних зон, тиск зменшується при наближенні до проксимальної зони.</p><p>Лімфодренаж в Linfopress Evolution PRO найглибший, найінтенсивніший з можливих до 80 мм Hg. Завдяки стадії розігріву і грамотно підібраним циклам стискань сприймається пацієнтками толерантно. Без неприємних відчуттів.</p><p>Тиск в камерах можна налаштовувати індивідуально. Ідеально підходить для відведення надлишків рідини з тканин, для лікування целлюліту, викликаного застоєм рідини.</p></div></div></div></div>
+      <!-- ==========================================================================
+           5. KEY ADVANTAGES 9-ITEM MATRIX (#advantages)
+           ========================================================================== -->
+      <section class="linfopress-advantages-grid-section" id="advantages">
+        <div class="container">
+          <div class="section-header-centered">
+            <h2 class="section-main-title">Переваги Linfopress Evolution PRO</h2>
+            <p class="section-main-sub">
+              9 ключових технологічних переваг, що роблять Linfopress лідером на ринку медичної пресотерапії
+            </p>
+          </div>
 
-<div class="modal fade tech-modal" id="techModal4" tabindex="-1">
-<button type="button" class="close" data-dismiss="modal">
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12.6862 9.85784C12.5014 9.66779 12.2807 9.51635 12.037 9.41233C11.7932 9.30831 11.5311 9.25377 11.2661 9.2519C11.0011 9.25003 10.7383 9.30085 10.493 9.40141C10.2478 9.50197 10.025 9.65028 9.8376 9.8377C9.65018 10.0251 9.50188 10.2479 9.40131 10.4931C9.30075 10.7384 9.24993 11.0011 9.2518 11.2662C9.25368 11.5312 9.30821 11.7933 9.41223 12.037C9.51625 12.2808 9.66769 12.5015 9.85774 12.6863L35.3136 38.1421C35.4983 38.3322 35.719 38.4836 35.9628 38.5876C36.2066 38.6916 36.4686 38.7462 36.7337 38.748C36.9987 38.7499 37.2615 38.6991 37.5067 38.5985C37.7519 38.498 37.9747 38.3497 38.1622 38.1622C38.3496 37.9748 38.4979 37.752 38.5984 37.5068C38.699 37.2616 38.7498 36.9988 38.7479 36.7338C38.7461 36.4687 38.6915 36.2067 38.5875 35.9629C38.4835 35.7191 38.3321 35.4984 38.142 35.3137L12.6862 9.85784Z" fill="#FFFF00"></path>
-<path d="M9.85832 35.3138C9.66827 35.4986 9.51684 35.7193 9.41282 35.963C9.30879 36.2068 9.25426 36.4689 9.25239 36.7339C9.25051 36.9989 9.30134 37.2617 9.4019 37.507C9.50246 37.7522 9.65076 37.975 9.83818 38.1624C10.0256 38.3498 10.2484 38.4981 10.4936 38.5987C10.7389 38.6992 11.0016 38.7501 11.2667 38.7482C11.5317 38.7463 11.7938 38.6918 12.0375 38.5878C12.2813 38.4837 12.502 38.3323 12.6868 38.1423L38.1426 12.6864C38.3326 12.5017 38.4841 12.281 38.5881 12.0372C38.6921 11.7934 38.7467 11.5314 38.7485 11.2663C38.7504 11.0013 38.6996 10.7385 38.599 10.4933C38.4985 10.2481 38.3502 10.0253 38.1627 9.83784C37.9753 9.65042 37.7525 9.50212 37.5073 9.40156C37.2621 9.30099 36.9993 9.25018 36.7342 9.25205C36.4692 9.25392 36.2072 9.30845 35.9634 9.41247C35.7196 9.5165 35.4989 9.66793 35.3142 9.85799L9.85832 35.3138Z" fill="#FFFF00"></path>
-</svg>
-</button><div class="modal-dialog modal-xs modal-dialog-centered"><div class="modal-content"><div class="modal-video"><video class="modal-video" controls="" loop="" playsinline="">
-<source src="" type="video/mp4"></video></div><div class="ti-name">Релаксація</div><div class="ti-descr"><p>Найпопулярніший етап процедри пресотерапії. Пацієнтки із вдячністю сприймають зменшення тиску і ритмічні заспокоюючі хвилі. Відчувають, що процедура проходить на вищому рівні.</p><p>Релаксація заспокоює м’язи і тканини після інтенсивної роботи. Ідеально підходить для завершального лікування целюліту, синдрому втомлених ніг, після ліпосакції та після вагітності або втоми після менопаузи.</p></div></div></div></div>
+          <div class="linfopress-advantages-row">
+            <div class="linfopress-advantages-col-list">
+              <div class="adv-item-card">
+                <span class="adv-index">01</span>
+                <p class="adv-text">Перший у світі апарат для пресотерапії з масажем ділянок холки та боків (love-handles)</p>
+              </div>
 
-<script>document.addEventListener('DOMContentLoaded', () => {
-            const items = document.querySelectorAll('.technologies-item');
-            const isMobile = () => window.innerWidth <= 991;
-            items.forEach(item => {
-                const video = item.querySelector('video');
-                const playOnHover = () => {
-                item.addEventListener('mouseenter', () => {
-                    if (!isMobile()) {
-                    video.play();
-                    }
-                });
-                item.addEventListener('mouseleave', () => {
-                    if (!isMobile()) {
-                    video.pause();
-                    video.currentTime = 0;
-                    }
-                });
-                };
-                playOnHover();
-                const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (isMobile()) {
-                    if (entry.isIntersecting) {
-                        video.play();
-                    } else {
-                        video.pause();
-                        video.currentTime = 0;
-                    }
-                    }
-                });
-                }, {
-                threshold: 0.5
-                });
-                observer.observe(item);
-            });
-        });
-        $(document).ready(function () {
-            $('.tech-modal').on('shown.bs.modal', function () {
-                const video = $(this).find('video').get(0);
-                if (video) {
-                video.currentTime = 0;
-                video.play();
-                }
-            });
-            $('.tech-modal').on('hide.bs.modal', function () {
-                const video = $(this).find('video').get(0);
-                if (video) {
-                video.pause();
-                video.currentTime = 0;
-                }
-            });
-        });</script>
+              <div class="adv-item-card">
+                <span class="adv-index">02</span>
+                <p class="adv-text">Нове покоління інтелектуальної пресотерапії: технологія біоміметичної послідовної пульсації</p>
+              </div>
 
-<div class="linfo-video-block fade-up" id="procedure"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50">Процедура Linfopress Evolution PRO</h2><div class="video-block js-video-block aos-init" data-aos="fade-up" data-aos-delay="200"><div class="video-poster js-video-poster" data-youtube="K1v77enueJ8"><video class="modal-video js-preview-video" autoplay="" muted="" loop="" playsinline="" preload="auto">
-<source src="/wp-content/uploads/2026/03/termosalud_vid.mp4" type="video/mp4"></video><div class="play-button">
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.3965 4.11135C9.1042 4.20204 7 6.0722 7 8.59182V39.4082C7 42.7677 10.7428 44.9719 13.6816 43.3438L41.4902 27.9356C44.5137 26.2603 44.5137 21.7398 41.4902 20.0645L13.6816 4.65627C12.9469 4.24923 12.1606 4.08112 11.3965 4.11135Z" fill="white"></path>
-</svg></div></div><div class="video-container"><div class="js-youtube-player"></div></div></div></div></div>
+              <div class="adv-item-card">
+                <span class="adv-index">03</span>
+                <p class="adv-text">Підвищена безпека завдяки автоматичному контролю тиску в кожній окремій манжеті</p>
+              </div>
 
-<div class="advantages-big fade-up" id="advantages"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50">Переваги Linfopress Evolution PRO</h2><div class="advantages-big-row row"><div class="col-lg-8"><ul class="abr-ul">
-<li data-aos="fade-up" data-aos-delay="0" class="aos-init">
-<span>1</span>
-<span>Перший в світі апарат для&nbsp;пресотерапії з&nbsp;масажем ділянок холки і&nbsp;бочків (love-handles)</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="200" class="aos-init">
-<span>2</span>
-<span>Нове покоління інтелектуальної пресотерапії: технологія біоміметичної послідовної пульсації</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="400" class="aos-init">
-<span>3</span>
-<span>Підвищена безпека завдяки контролю тиску в&nbsp;кожній манжеті</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="0" class="aos-init">
-<span>4</span>
-<span>Найзручніший в&nbsp;роботі. Манжети для ніг і рук зручно одягаються, мають три рівня блискавок для пацієнтів всіх розмірів</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="200" class="aos-init">
-<span>5</span>
-<span>Найкомфортніший завдяки етапам розігріву і&nbsp;релаксації</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="400" class="aos-init">
-<span>6</span>
-<span>Ключовий елемент програм "Детокс", "Схуднення", "Антицелюліт"</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="0" class="aos-init">
-<span>7</span>
-<span>Використовується у спортивній медицині (розігрів перед тренуваннями, регенерація тканин)</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="200" class="aos-init">
-<span>8</span>
-<span>Використовується у пост-операційній реабілітації для&nbsp;дренажу</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="400" class="aos-init">
-<span>9</span>
-<span>Найвища якість матеріалів (апарат класу преміум)</span>
-</li></ul></div><div class="col-lg-4"><div class="abr-img-block">
-<img src="/wp-content/uploads/2026/03/abr-img-optimized.png" alt="Переваги Linfopress Evolution PRO - фото" title="Переваги Linfopress Evolution PRO" data-aos="fade-up" data-aos-delay="200" class="aos-init"></div></div></div></div></div>
+              <div class="adv-item-card">
+                <span class="adv-index">04</span>
+                <p class="adv-text">Найзручніший у роботі: бандажі для ніг і рук мають 3 рівні застібок-блискавок для будь-якої комплекції</p>
+              </div>
 
-<div class="readings fade-up" id="indications"><div class="container"><div class="row"><div class="col-lg-6"><div class="readings-block aos-init" data-aos="fade-up" data-aos-delay="200"><div class="app-video-bg">
-<video autoplay="" loop="" muted="" playsinline="" poster="/wp-content/uploads/2026/04/video-placeholder-optimized.png"><source src="/wp-content/themes/zionic/assets/images/presentation-video.mp4" type="video/mp4"></video><div class="app-video-content"><h2 class="readings-block-name">Показання</h2><ul class="readings-block-ul">
-<li>Лікування едематозного целлюліту</li>
-<li>Зменшення затримки рідини та набряків</li>
-<li>Підготування та реабілітація після ліпосакції</li>
-<li>Пост-операційна реабілітація після мастектомії</li>
-<li>Детоксикація тканин та лімфодренаж</li>
-<li>Спорт: Підготовка, DOMS (крепатура), регенерація зв’язок</li>
-<li>Покращення кровообігу, зняття втоми ніг</li>
-<li>Післяпологове відновлення, симптоми менопаузи</li></ul></div></div></div></div><div class="col-lg-6"><div class="contraindications-block aos-init" data-aos="fade-up" data-aos-delay="500"><h2 class="contraindications-block-name">Протипоказання</h2><ul class="contraindications-block-ul">
-<li>Онкологія</li>
-<li>Порушення цілісності шкірного покриву</li>
-<li>Епілепсія, порушення психіки</li>
-<li>Цукровий діабет (декомпенсована форма)</li>
-<li>Аутоімунні захворювання</li>
-<li>Хронічні захворювання на стадії загострення</li>
-<li>ГРВІ, грип</li></ul></div></div></div></div></div>
+              <div class="adv-item-card">
+                <span class="adv-index">05</span>
+                <p class="adv-text">Найкомфортніший для пацієнта завдяки обов'язковим етапам розігріву і релаксації</p>
+              </div>
 
-<div class="experience-block fade-up"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50">
-Досвід лікарів</h2><div class="experience-block-text aos-init" data-aos="fade-up" data-aos-delay="200">
-Фахівці «Арден-Палац» оцінили зручність в роботі манжет для ніг пацієнтів. Завдяки трьом рядам блискавок штани ідеально адаптуються для пацієнтів зростом від 1,5 до 2 метрів.</div><div class="experience-block-bg aos-init" data-aos="fade-up" data-aos-delay="300"><div class="row"><div class="col-lg-6"><div class="experience-block-img-block aos-init" data-aos="fade-up" data-aos-delay="200">
-<img src="/wp-content/uploads/2026/03/experience-block-img-optimized.png" alt="Linfopress Evolution PRO — це новий стандарт у пресотерапії, який перевершив усі мої очікування як лікаря - фото" title="Linfopress Evolution PRO — це новий стандарт у пресотерапії, який перевершив усі мої очікування як лікаря"></div></div><div class="col-lg-6"><div class="eb-title aos-init" data-aos="fade-up" data-aos-delay="300">
-Linfopress Evolution PRO — це новий стандарт у пресотерапії, який перевершив усі мої очікування як лікаря</div><div class="eb-descr aos-init" data-aos="fade-up" data-aos-delay="400"><p>Працюючи в сфері естетичної медицини та реабілітації вже багато років, я мала справу з різними апаратами для пресотерапії. Але коли в нашій клініці з’явився Linfopress Evolution PRO, це повністю змінило підхід до процедури. З точки зору фахівця, апарат неймовірно зручний у щоденній роботі. Одягання манжет більше не забирає багато часу, а завдяки трьом рядам блискавок штани ідеально та швидко адаптуються під пацієнтів будь-якої комплекції — від мініатюрних дівчат до високих чоловіків зростом під два метри. Але головна його перевага — це технологія біоміметичної послідовної пульсації. Мої пацієнти в повному захваті від поетапного підходу. Стадія м’якого розігріву ідеально готує судини та тканини , що дозволяє нам абсолютно безболісно працювати навіть з пацієнтками, які мають чутливий фіброзний целюліт.</p></div><div class="eb-name aos-init" data-aos="fade-up" data-aos-delay="500">
-Гуцул Оксана Миколаївна</div><div class="eb-profession aos-init" data-aos="fade-up" data-aos-delay="600">
-головний лікар Arden Palace Medical Resort &amp; SPA</div></div></div></div></div></div>
+              <div class="adv-item-card">
+                <span class="adv-index">06</span>
+                <p class="adv-text">Ключовий елемент клінічних програм «Детокс», «Схуднення» та «Антицелюліт»</p>
+              </div>
 
-<div class="why-this fade-up" id="why"><div class="why-this-video-bg"><video autoplay="" muted="" loop="" playsinline="">
-<source src="/wp-content/themes/zionic/assets/images/why-this-video.mp4" type="video/mp4"></video><div class="why-this-video-content"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50">
-Чому саме Linfopress Evolution PRO</h2><div class="why-this-row row"><div class="col-lg-4"><div class="why-this-div-for-img">
-<img src="/wp-content/uploads/2026/03/why-this-img-optimized.png" alt="Чому саме Linfopress Evolution PRO - фото" title="Чому саме Linfopress Evolution PRO" data-aos="fade-up" data-aos-delay="200" class="aos-init"></div></div><div class="col-lg-8"><div class="why-this-right-row row"><div class="col-lg-6 aos-init" data-aos="fade-up" data-aos-delay="0"><div class="why-this-item">
-<span>1</span>
-<span> Унікальна комбінація різних форм пресомасажу в одній програмі</span></div></div><div class="col-lg-6 aos-init" data-aos="fade-up" data-aos-delay="100"><div class="why-this-item">
-<span>2</span>
-<span>Преміальна якість матеріалів виконання</span></div></div><div class="col-lg-6 aos-init" data-aos="fade-up" data-aos-delay="200"><div class="why-this-item">
-<span>3</span>
-<span>Абсолютно унікальна куртка для пресомасажу холки і бочків</span></div></div><div class="col-lg-6 aos-init" data-aos="fade-up" data-aos-delay="300"><div class="why-this-item">
-<span>4</span>
-<span>Найзручніший метод одягання манжет</span></div></div><div class="col-lg-6 aos-init" data-aos="fade-up" data-aos-delay="400"><div class="why-this-item">
-<span>5</span>
-<span>Найінтенсивніший лімфодренажний масаж (завдяки підготовці та&nbsp;біоміметиці)</span></div></div></div></div></div><div class="set-block"><h2 class="set-block-title aos-init" data-aos="fade-up" data-aos-delay="50">
-Комплект поставки</h2><div class="set-block-row row"><div class="col-lg-2 aos-init" data-aos="fade-up" data-aos-delay="0"><div class="set-block-item"><div><img src="/wp-content/uploads/2026/03/set1-optimized.png" alt="Апарат - фото" title="Апарат"></div><div>Апарат</div></div></div><div class="col-lg-2 aos-init" data-aos="fade-up" data-aos-delay="100"><div class="set-block-item"><div><img src="/wp-content/uploads/2026/03/set2-optimized.png" alt="Функціональний візок - фото" title="Функціональний візок"></div><div>Функціональний візок</div></div></div><div class="col-lg-2 aos-init" data-aos="fade-up" data-aos-delay="200"><div class="set-block-item"><div><img src="/wp-content/uploads/2026/03/pants2-optimized.jpg" alt="Дві манжети для ніг (штани і пояс) - фото" title="Дві манжети для ніг (штани і пояс)"></div><div>Дві манжети для ніг (штани і пояс)</div></div></div><div class="col-lg-2 aos-init" data-aos="fade-up" data-aos-delay="300"><div class="set-block-item"><div><img src="/wp-content/uploads/2026/03/shirt2-optimized.jpg" alt="Куртка для масажу верхньої частини тулубу - фото" title="Куртка для масажу верхньої частини тулубу"></div><div>Куртка для масажу верхньої частини тулубу</div></div></div><div class="col-lg-2 aos-init" data-aos="fade-up" data-aos-delay="400"><div class="set-block-item"><div><img src="/wp-content/uploads/2026/03/set5-optimized.png" alt="Дві манжети для рук - фото" title="Дві манжети для рук"></div><div>Дві манжети для рук</div></div></div></div></div></div></div></div></div>
+              <div class="adv-item-card">
+                <span class="adv-index">07</span>
+                <p class="adv-text">Широко використовується у спортивній медицині (розігрів перед тренуваннями, швидке зняття крепатури)</p>
+              </div>
 
-<div class="questions fade-up" id="faq"><div class="container"><div class="aos-init" data-aos="fade-up" data-aos-delay="50">
-<button class="another-pages-banner-button" data-popup="popup_request">Отримати консультацію від лікаря-тренера</button></div><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50">Питання та відповіді</h2><div class="questions-text aos-init" data-aos="fade-up" data-aos-delay="200">
-Отримайте відповіді на поширені запитання про Linfopress Evolution PRO та про те, <br> як ця система може змінити вашу практику</div><ul class="faq-accordion">
-<li class="faq-item aos-init" data-aos="fade-up" data-aos-delay="0"><div class="faq-question">
-Чим Linfopress Evolution PRO відрізняється від традиційних систем пресотерапії? <span class="faq-icon"></span></div><div class="faq-answer"><p>Унікальною особливістю Linfopress Evolution PRO є куртка для верхньої частини тулуба, яка здійснює лімфомасаж не тільки рук але бочків (love handle), грудної ділянки і навіть холки!</p></div>
-</li>
-<li class="faq-item aos-init" data-aos="fade-up" data-aos-delay="100"><div class="faq-question">
-Скільки процедур потрібно для досягнення результату? <span class="faq-icon"></span></div><div class="faq-answer"><p>Кількість процедур залежить від поставленої мети. Для зняття відчуття втоми в ногах достатньо однієї процедури. Для лікування едематозного целлюліту потрібний курс з 10 процедур 2-3 процедури на тиждень.</p></div>
-</li>
-<li class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200"><div class="faq-question">
-Чи є процедура болісною? <span class="faq-icon"></span></div><div class="faq-answer"><p>Процедура Linfopress Evolution PRO є супер-комфортною завдяки етапу підготовки тканини до лімфомасажу. Пацієнтки позитивно сприймають масаж зони холки і бочків, чого ніколи не відчували на інших апаратах.</p></div>
-</li></ul></div></div>
+              <div class="adv-item-card">
+                <span class="adv-index">08</span>
+                <p class="adv-text">Незамінний у післяопераційній реабілітації для усунення застійних набряків та фіброзу</p>
+              </div>
 
-<section class="seo_text _single_page aos-init" data-aos="fade-up" data-aos-delay="200"><div class="container"><div class="seo_text_content"><h2>Купити апарат для пресотерапії Linfopress Evolution PRO: інновації в лімфодренажі</h2><p>Якісний апаратний лімфодренажний масаж — це базова та необхідна процедура в будь-якій сучасній клініці естетичної медицини. Він посилює ефект від інших методик корекції фігури та є самостійним потужним терапевтичним інструментом. Linfopress Evolution PRO — це передове обладнання преміумкласу, створене для досягнення бездоганних результатів та забезпечення комфорту пацієнта.</p><p>Рішення купити апарат для пресотерапії Linfopress — це інвестиція у статус вашої клініки та лояльність клієнтів. Ця модель перевершує аналогічні системи на ринку завдяки унікальній технологічній базі та продуманій до дрібниць ергономіці.</p><h3>Біоміметична пульсація — новий стандарт терапії</h3><p>Ключова інновація, що відрізняє цей професійний апарат для пресотерапії, полягає у використанні технології біоміметичної послідовної пульсації. Ця система максимально точно імітує природні фізіологічні процеси організму.</p><p>Процедура на Linfopress Evolution PRO включає 4 послідовні етапи:</p><ul>
-<li><strong>Розігрів:</strong> Ексклюзивний режим, який м’яко готує тканини до впливу. Цей етап є критично важливим, коли застосовується апарат для лікування целюліту фіброзної стадії, що потребує делікатного підходу.</li>
-<li><strong>Активація:</strong> Стимуляція роботи лімфатичних вузлів і запуск обмінних процесів.</li>
-<li><strong>Дренаж:</strong> Глибоке та інтенсивне виведення надлишкової міжклітинної рідини й накопичених токсинів.</li>
-<li><strong>Розслаблення:</strong> Зняття м’язового спазму та досягнення глибокого релаксаційного ефекту.</li></ul><p>Завдяки такому дбайливому та фізіологічному підходу Linfopress Evolution PRO ідеально підходить для складних клінічних випадків, зокрема періоду, коли необхідна ефективна пресотерапія після ліпосакції та інших втручань.</p><h3>Ексклюзивні переваги для клініки</h3><p>Як сучасне обладнання для лімфодренажу, цей апарат розроблявся з урахуванням високих вимог фахівців щодо зручності роботи. Він пропонує унікальні можливості:</p><ul>
-<li><strong>Масаж верхньої частини тулуба:</strong> Наявність спеціальної компресійної куртки дозволяє ефективно опрацьовувати зону «холки», спину, живіт і боки, що є безперечною конкурентною перевагою.</li>
-<li><strong>Універсальність манжетів:</strong> Апарат оснащений якісними бандажами з 3 рівнями застібок-блискавок. Це гарантує ідеальну посадку для пацієнтів будь-якої комплекції без використання додаткових розширювачів.</li>
-<li><strong>Оптимізація робочого часу:</strong> Інноваційна система швидкого одягання манжетів суттєво економить час фахівця між сеансами, збільшуючи пропускну здатність кабінету.</li></ul><p>Додайте до свого арсеналу передові технології для покращення мікроциркуляції. Запрошуємо вас оцінити всі можливості апарата на індивідуальній презентації.</p></div>
-<button class="seo_text_btn" data-more="Читати далі" data-less="Приховати">
-<span>Читати далі</span>
-</button></div></section>
+              <div class="adv-item-card">
+                <span class="adv-index">09</span>
+                <p class="adv-text">Найвища якість матеріалів виконання європейського виробництва (апарат класу преміум)</p>
+              </div>
+            </div>
 
-<style>@media only screen and (max-width: 991px){.template-linfopress .another-pages-banner{min-height:500px}}</style>
-    `;
+            <div class="linfopress-advantages-col-media">
+              <div class="adv-media-sticky-box">
+                <img src="/wp-content/uploads/2026/03/abr-img-optimized.png" alt="Переваги Linfopress Evolution PRO" class="adv-product-photo" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    // Replace inner content of linfopress page
+
+      <!-- ==========================================================================
+           6. INDICATIONS & CONTRAINDICATIONS (SIGNATURE FOOTER GRAY #54595f BACKGROUND)
+           ========================================================================== -->
+      <section class="linfopress-matrix-section" id="indications">
+        <div class="container">
+          <div class="section-header-centered">
+            <h2 class="section-main-title">Показання та протипоказання</h2>
+            <p class="section-main-sub">
+              Повний спектр терапевтичного застосування та медичні критерії безпеки пацієнта
+            </p>
+          </div>
+
+          <div class="linfopress-creative-matrix-grid">
+            <!-- LEFT CARD: INDICATIONS -->
+            <div class="matrix-creative-card indications-card">
+              <div class="matrix-card-header">
+                <h3 class="matrix-main-head">Клінічні показання</h3>
+                <p class="matrix-sub-head">8 ключових терапевтичних напрямків апарату Linfopress</p>
+              </div>
+
+              <div class="matrix-items-stack">
+                <div class="matrix-item-row">
+                  <span class="item-index">01</span>
+                  <div class="item-content">
+                    <h4 class="item-title">Лікування едематозного целюліту</h4>
+                    <p class="item-desc">Усунення застою рідини у підшкірно-жировій клітковині та розгладження рельєфу шкіри.</p>
+                  </div>
+                </div>
+
+                <div class="matrix-item-row">
+                  <span class="item-index">02</span>
+                  <div class="item-content">
+                    <h4 class="item-title">Зменшення затримки рідини та набряків</h4>
+                    <p class="item-desc">Потужне виведення токсинів та відновлення нормального лімфотоку по всьому тілу.</p>
+                  </div>
+                </div>
+
+                <div class="matrix-item-row">
+                  <span class="item-index">03</span>
+                  <div class="item-content">
+                    <h4 class="item-title">Підготовка та реабілітація після ліпосакції</h4>
+                    <p class="item-desc">Профілактика нерівностей, рубцювання та прискорення реабілітаційного періоду.</p>
+                  </div>
+                </div>
+
+                <div class="matrix-item-row">
+                  <span class="item-index">04</span>
+                  <div class="item-content">
+                    <h4 class="item-title">Пост-операційна реабілітація</h4>
+                    <p class="item-desc">Відновлення мікроциркуляції після оперативних втручань та мастектомії.</p>
+                  </div>
+                </div>
+
+                <div class="matrix-item-row">
+                  <span class="item-index">05</span>
+                  <div class="item-content">
+                    <h4 class="item-title">Детоксикація тканин та загальний лімфодренаж</h4>
+                    <p class="item-desc">Активація обмінних процесів організму та глибоке очищення лімфатичної системи.</p>
+                  </div>
+                </div>
+
+                <div class="matrix-item-row">
+                  <span class="item-index">06</span>
+                  <div class="item-content">
+                    <h4 class="item-title">Спортивна медицина та зняття крепатури</h4>
+                    <p class="item-desc">Зняття міофасціального гіпертонусу (DOMS), розігрів перед тренуваннями та регенерація зв'язок.</p>
+                  </div>
+                </div>
+
+                <div class="matrix-item-row">
+                  <span class="item-index">07</span>
+                  <div class="item-content">
+                    <h4 class="item-title">Покращення кровообігу та зняття втоми ніг</h4>
+                    <p class="item-desc">Усунення синдрому «важких ніг» та профілактика хронічної венозної недостатності.</p>
+                  </div>
+                </div>
+
+                <div class="matrix-item-row">
+                  <span class="item-index">08</span>
+                  <div class="item-content">
+                    <h4 class="item-title">Післяпологове відновлення</h4>
+                    <p class="item-desc">Швидка нормалізація водно-сольового балансу та зняття набряків після пологів.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT CARD: CONTRAINDICATIONS -->
+            <div class="matrix-creative-card contraindications-card">
+              <div class="matrix-card-header">
+                <h3 class="matrix-main-head">Протипоказання</h3>
+                <p class="matrix-sub-head">Медичні протоколи безпеки пацієнта CE Medical</p>
+              </div>
+
+              <div class="matrix-items-stack">
+                <div class="matrix-item-row">
+                  <span class="item-alert-icon">✕</span>
+                  <div class="item-content">
+                    <h4 class="item-title">Онкологічні захворювання</h4>
+                    <p class="item-desc">Злоякісні пухлини в анамнезі або активній фазі.</p>
+                  </div>
+                </div>
+
+                <div class="matrix-item-row">
+                  <span class="item-alert-icon">✕</span>
+                  <div class="item-content">
+                    <h4 class="item-title">Порушення цілісності шкірного покриву</h4>
+                    <p class="item-desc">Відкриті рани, опіки, виразки або інфекційні дерматити в зоні манжетів.</p>
+                  </div>
+                </div>
+
+                <div class="matrix-item-row">
+                  <span class="item-alert-icon">✕</span>
+                  <div class="item-content">
+                    <h4 class="item-title">Тромбофлебіт та гострий тромбоз</h4>
+                    <p class="item-desc">Запалення вен або ризик відриву тромбів у судинній системі.</p>
+                  </div>
+                </div>
+
+                <div class="matrix-item-row">
+                  <span class="item-alert-icon">✕</span>
+                  <div class="item-content">
+                    <h4 class="item-title">Важка серцева недостатність</h4>
+                    <p class="item-desc">Декомпенсовані патології серцево-судинної системи та наявність кардіостимулятора.</p>
+                  </div>
+                </div>
+
+                <div class="matrix-item-row">
+                  <span class="item-alert-icon">✕</span>
+                  <div class="item-content">
+                    <h4 class="item-title">Цукровий діабет (декомпенсована форма)</h4>
+                    <p class="item-desc">Важкі порушення трофіки тканин та периферичної чутливості.</p>
+                  </div>
+                </div>
+
+                <div class="matrix-item-row">
+                  <span class="item-alert-icon">✕</span>
+                  <div class="item-content">
+                    <h4 class="item-title">Гострі інфекційні стани та лихоманка</h4>
+                    <p class="item-desc">ГРВІ, грип, підвищена температура тіла та запальні процеси.</p>
+                  </div>
+                </div>
+
+                <div class="matrix-item-row">
+                  <span class="item-alert-icon">✕</span>
+                  <div class="item-content">
+                    <h4 class="item-title">Епілепсія та розлади ЦНС</h4>
+                    <p class="item-desc">Стани підвищеної судомної готовності та гострі нервові розлади.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ==========================================================================
+           7. DOCTORS TRUST & CLINICAL REVIEW
+           ========================================================================== -->
+      <section class="linfopress-doctor-section" id="expert-review">
+        <div class="container">
+          <div class="section-header-centered">
+            <h2 class="section-main-title">Досвід лікарів</h2>
+            <p class="section-main-sub">
+              Практичний клінічний досвід використання Linfopress у провідних медичних та SPA-центрах України
+            </p>
+          </div>
+
+          <div class="linfopress-doctor-card">
+            <div class="doc-photo-col">
+              <img src="/wp-content/uploads/2026/03/experience-block-img-optimized.png" alt="Гуцул Оксана Миколаївна" class="doc-portrait-img" loading="lazy">
+            </div>
+            <div class="doc-text-col">
+              <div class="doc-quote-mark">“</div>
+              <h3 class="doc-quote-title">Linfopress Evolution PRO — це новий стандарт у пресотерапії, який перевершив усі мої очікування як лікаря</h3>
+              <p class="doc-quote-text">
+                Працюючи в сфері естетичної медицини та реабілітації багато років, я мала справу з різними апаратами. Але коли в нашій клініці з’явився Linfopress Evolution PRO, це повністю змінило підхід до процедури. З точки зору фахівця, апарат неймовірно зручний: одягання манжет більше не забирає багато часу, а завдяки 3 рядам блискавок штани ідеально адаптуються під пацієнтів будь-якого зросту від 1,5 до 2 метрів. Головна перевага — технологія біоміметичної послідовної пульсації та стадія розігріву, що дозволяє працювати абсолютно безболісно навіть із чутливим фіброзним целюлітом.
+              </p>
+              <div class="doc-meta-box">
+                <h4 class="doc-name">Гуцул Оксана Миколаївна</h4>
+                <p class="doc-role">Головний лікар Arden Palace Medical Resort & SPA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ==========================================================================
+           8. WHY LINFOPRESS & EQUIPMENT PACKAGE (#why)
+           ========================================================================== -->
+      <section class="linfopress-why-and-package-section" id="why">
+        <div class="container">
+          <div class="section-header-centered">
+            <h2 class="section-main-title">Чому саме Linfopress Evolution PRO</h2>
+            <p class="section-main-sub">
+              5 ключових технологічних причин інвестувати у флагман пресотерапії
+            </p>
+          </div>
+
+          <div class="why-benefits-grid">
+            <div class="why-bento-card">
+              <span class="why-num">01</span>
+              <h4 class="why-card-title">Унікальна комбінація форм пресомасажу</h4>
+              <p class="why-card-desc">Поєднання 4 послідовних фаз стискання в єдиній інтелектуальній програмі.</p>
+            </div>
+
+            <div class="why-bento-card">
+              <span class="why-num">02</span>
+              <h4 class="why-card-title">Преміальна якість матеріалів</h4>
+              <p class="why-card-desc">Високоміцна медична тканина з легким очищенням та зносостійкістю понад 10 років.</p>
+            </div>
+
+            <div class="why-bento-card">
+              <span class="why-num">03</span>
+              <h4 class="why-card-title">Унікальна куртка для холки та боків</h4>
+              <p class="why-card-desc">Єдиний у світі бандаж для опрацювання проблемних зон спини, грудей і love-handles.</p>
+            </div>
+
+            <div class="why-bento-card">
+              <span class="why-num">04</span>
+              <h4 class="why-card-title">Найзручніший метод одягання манжет</h4>
+              <p class="why-card-desc">Швидка підготовка пацієнта за 60 секунд завдяки ергономічним потрійним блискавкам.</p>
+            </div>
+
+            <div class="why-bento-card">
+              <span class="why-num">05</span>
+              <h4 class="why-card-title">Найінтенсивніший лімфодренажний масаж</h4>
+              <p class="why-card-desc">Глибокий та безпечний вплив завдяки автоматичному біоміметичному контролю тиску.</p>
+            </div>
+          </div>
+
+          <!-- EQUIPMENT PACKAGE -->
+          <div class="linfopress-package-box">
+            <div class="package-header">
+              <h3 class="package-title">Комплект поставки</h3>
+              <p class="package-subtitle">Повна заводська комплектація обладнання для миттєвого старту роботи в клініці</p>
+            </div>
+
+            <div class="package-items-grid">
+              <div class="package-item-card">
+                <div class="package-img-wrap">
+                  <img src="/wp-content/uploads/2026/03/set1-optimized.png" alt="Апарат Linfopress" loading="lazy">
+                </div>
+                <h4 class="package-item-name">Апарат Linfopress PRO</h4>
+              </div>
+
+              <div class="package-item-card">
+                <div class="package-img-wrap">
+                  <img src="/wp-content/uploads/2026/03/set2-optimized.png" alt="Функціональний візок" loading="lazy">
+                </div>
+                <h4 class="package-item-name">Функціональний візок</h4>
+              </div>
+
+              <div class="package-item-card">
+                <div class="package-img-wrap">
+                  <img src="/wp-content/uploads/2026/03/pants2-optimized.jpg" alt="Манжети для ніг" loading="lazy">
+                </div>
+                <h4 class="package-item-name">Манжети для ніг і пояс</h4>
+              </div>
+
+              <div class="package-item-card">
+                <div class="package-img-wrap">
+                  <img src="/wp-content/uploads/2026/03/shirt2-optimized.jpg" alt="Куртка для тулубу" loading="lazy">
+                </div>
+                <h4 class="package-item-name">Куртка для тулубу та холки</h4>
+              </div>
+
+              <div class="package-item-card">
+                <div class="package-img-wrap">
+                  <img src="/wp-content/uploads/2026/03/set5-optimized.png" alt="Манжети для рук" loading="lazy">
+                </div>
+                <h4 class="package-item-name">Дві манжети для рук</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ==========================================================================
+           9. FAQ ACCORDION SECTION (#faq)
+           ========================================================================== -->
+      <section class="linfopress-faq-section" id="faq">
+        <div class="container">
+          <div class="section-header-centered">
+            <h2 class="section-main-title">Питання та відповіді</h2>
+            <p class="section-main-sub">
+              Відповіді на поширені запитання про Linfopress Evolution PRO та клінічну ефективність системи
+            </p>
+          </div>
+
+          <div class="linfopress-faq-accordion">
+            <div class="faq-accordion-card active" onclick="window.toggleLinfopressFaq(this)">
+              <div class="faq-card-header">
+                <span class="faq-q-index">01</span>
+                <h3 class="faq-q-text">Чим Linfopress Evolution PRO відрізняється від традиційних систем пресотерапії?</h3>
+                <span class="faq-toggle-icon">−</span>
+              </div>
+              <div class="faq-card-body" style="display:block;">
+                <p>Унікальною особливістю Linfopress Evolution PRO є спеціальна компресійна куртка для верхньої частини тулуба, яка здійснює лімфомасаж не тільки рук, але й боків (love handles), грудної ділянки і навіть «холки» (вдовиного горбика). Крім того, апарат має 24 незалежні пневмосектори з перекриттям без сліпих зон та 4-фазну біоміметичну пульсацію з обов'язковим розігрівом тканин.</p>
+              </div>
+            </div>
+
+            <div class="faq-accordion-card" onclick="window.toggleLinfopressFaq(this)">
+              <div class="faq-card-header">
+                <span class="faq-q-index">02</span>
+                <h3 class="faq-q-text">Скільки процедур потрібно для досягнення вираженого результату?</h3>
+                <span class="faq-toggle-icon">+</span>
+              </div>
+              <div class="faq-card-body">
+                <p>Для зняття відчуття втоми, важкості в ногах та швидкого лімфодренажу достатньо однієї процедури. Для стійкого лікування едематозного целюліту, стійкого зменшення об'ємів та детоксикації рекомендується курс з 10–12 процедур з періодичністю 2–3 сеанси на тиждень.</p>
+              </div>
+            </div>
+
+            <div class="faq-accordion-card" onclick="window.toggleLinfopressFaq(this)">
+              <div class="faq-card-header">
+                <span class="faq-q-index">03</span>
+                <h3 class="faq-q-text">Чи є процедура болісною для пацієнтів із чутливими судинами?</h3>
+                <span class="faq-toggle-icon">+</span>
+              </div>
+              <div class="faq-card-body">
+                <p>Процедура на Linfopress Evolution PRO є абсолютно комфортною та приємною. Завдяки автоматичній стадії м'якого розігріву тканини та судини плавно адаптуються до тиску, що повністю виключає синці, біль та дискомфорт навіть у пацієнток із чутливим фіброзним целюлітом.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ==========================================================================
+           10. OFFICIAL TEST-DRIVE APPLICATION FORM (#application)
+           ========================================================================== -->
+      <section class="linfopress-partner-stage-section" id="application">
+        <div class="container">
+          <div class="section-header-centered">
+            <h2 class="section-main-title">Стати партнером TermoSalud</h2>
+            <p class="section-main-sub">
+              Замовте персональну презентацію та виїзний тест-драйв Linfopress Evolution PRO у вашій клініці
+            </p>
+          </div>
+
+          <div class="partner-form-stage-wrapper">
+            <div class="partner-form-card-clean">
+              <h3 class="presentation-title-clean">Заявка на презентацію Linfopress</h3>
+              <p class="presentation-desc-clean">
+                Заповніть форму, і наш медичний експерт зв'яжеться з вами для організації демонстрації
+              </p>
+
+              <form action="/send-mail" method="POST" class="clean-lead-form">
+                <div class="clean-form-row">
+                  <div class="clean-input-group">
+                    <label>Ваше ім'я</label>
+                    <input type="text" name="name" placeholder="Олена Шевченко" required>
+                  </div>
+                  <div class="clean-input-group">
+                    <label>Контактний телефон</label>
+                    <input type="tel" name="phone" placeholder="+380 (XX) XXX-XX-XX" required>
+                  </div>
+                </div>
+
+                <div class="clean-form-row">
+                  <div class="clean-input-group">
+                    <label>Назва клініки / міста</label>
+                    <input type="text" name="clinic" placeholder="Центр естетичної медицини, Київ">
+                  </div>
+                  <div class="clean-input-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="clinic@example.com">
+                  </div>
+                </div>
+
+                <button type="submit" class="clean-submit-btn">
+                  <span>ЗАМОВИТИ ВИЇЗНИЙ ТЕСТ-ДРАЙВ</span>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ==========================================================================
+           11. EXPANDABLE SEO CLEAN ARTICLE (.seo_text)
+           ========================================================================== -->
+      <section class="linfopress-seo-clean-section" id="seo-article">
+        <div class="container">
+          <div class="seo-clean-wrapper">
+            <h2 class="seo-article-main-title">Купити апарат для пресотерапії Linfopress Evolution PRO: інновації в лімфодренажі</h2>
+            
+            <p class="seo-lead-text">
+              Якісний апаратний лімфодренажний масаж — це базова та необхідна процедура в будь-якій сучасній клініці естетичної медицини. Він посилює ефект від інших методик корекції фігури та є самостійним потужним терапевтичним інструментом. Linfopress Evolution PRO — це передове обладнання преміумкласу, створене для досягнення бездоганних результатів та забезпечення максимального комфорту пацієнта.
+            </p>
+
+            <div class="seo-expandable-content" id="linfopress-seo-expand-box">
+              <h3 class="seo-article-sub-title">Біоміметична пульсація — новий стандарт терапії</h3>
+              <p>Ключова інновація, що відрізняє цей професійний апарат для пресотерапії, полягає у використанні технології біоміметичної послідовної пульсації. Ця система максимально точно імітує природні фізіологічні процеси організму людини.</p>
+              
+              <ul class="seo-bullet-list">
+                <li><strong>Розігрів:</strong> Ексклюзивний режим, який м’яко готує тканини до впливу, що критично важливо при лікуванні фіброзного целюліту.</li>
+                <li><strong>Активація:</strong> Стимуляція роботи лімфатичних вузлів і запуск обмінних процесів.</li>
+                <li><strong>Дренаж:</strong> Глибоке та інтенсивне виведення надлишкової міжклітинної рідини й накопичених токсинів.</li>
+                <li><strong>Розслаблення:</strong> Зняття м’язового спазму та досягнення глибокого релаксаційного ефекту.</li>
+              </ul>
+
+              <h3 class="seo-article-sub-title">Ексклюзивні переваги для клініки</h3>
+              <p>Linfopress пропонує унікальну куртку для масажу верхньої частини тулуба, універсальні манжети з 3 рівнями блискавок та швидке одягання за 60 секунд, заощаджуючи час лікаря та збільшуючи рентабельність кожного кабінету.</p>
+            </div>
+
+            <button type="button" class="seo-toggle-action-btn" id="linfopress-seo-toggle-btn" onclick="window.toggleLinfopressSeoArticle()">
+              <span id="linfopress-seo-btn-label">Читати повністю ∨</span>
+            </button>
+          </div>
+        </div>
+      </section>
+`;
+
     html = html.replace(/<div[\s\n]+class=center>[\s\S]*?(?=<footer|$)/i, `<div class="linfopress-main-page-wrapper">\n${modernLinfopressHtml}\n</div>\n`);
   }
 

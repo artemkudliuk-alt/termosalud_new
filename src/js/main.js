@@ -1506,3 +1506,77 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+
+// ==========================================================================
+// LINFOPRESS INTERACTIVE CONTROLS
+// ==========================================================================
+window.openLinfopressTechModal = function(phaseNum) {
+  const overlay = document.getElementById('linfopress-tech-modal-overlay');
+  if (!overlay) return;
+  
+  for (let i = 1; i <= 4; i++) {
+    const tab = document.getElementById('lp-modal-tab-' + i);
+    if (tab) {
+      tab.style.display = (i === phaseNum) ? 'block' : 'none';
+      const video = tab.querySelector('video');
+      if (video) {
+        if (i === phaseNum) {
+          video.currentTime = 0;
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      }
+    }
+  }
+  
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+};
+
+window.closeLinfopressTechModal = function(e) {
+  const overlay = document.getElementById('linfopress-tech-modal-overlay');
+  if (!overlay) return;
+  
+  const allVideos = overlay.querySelectorAll('video');
+  allVideos.forEach(v => v.pause());
+  
+  overlay.classList.remove('active');
+  document.body.style.overflow = '';
+};
+
+window.toggleLinfopressFaq = function(cardEl) {
+  const allCards = document.querySelectorAll('.linfopress-faq-accordion .faq-accordion-card');
+  const body = cardEl.querySelector('.faq-card-body');
+  const icon = cardEl.querySelector('.faq-toggle-icon');
+  const isCurrentlyActive = cardEl.classList.contains('active');
+
+  allCards.forEach(c => {
+    c.classList.remove('active');
+    const b = c.querySelector('.faq-card-body');
+    const i = c.querySelector('.faq-toggle-icon');
+    if (b) b.style.display = 'none';
+    if (i) i.textContent = '+';
+  });
+
+  if (!isCurrentlyActive) {
+    cardEl.classList.add('active');
+    if (body) body.style.display = 'block';
+    if (icon) icon.textContent = '−';
+  }
+};
+
+window.toggleLinfopressSeoArticle = function() {
+  const box = document.getElementById('linfopress-seo-expand-box');
+  const label = document.getElementById('linfopress-seo-btn-label');
+  if (!box || !label) return;
+
+  if (box.style.display === 'block') {
+    box.style.display = 'none';
+    label.textContent = 'Читати повністю ∨';
+  } else {
+    box.style.display = 'block';
+    label.textContent = 'Приховати ∧';
+  }
+};
