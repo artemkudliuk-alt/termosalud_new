@@ -12794,16 +12794,17 @@ footer {
 }
 
 
+
 /* ==========================================================================
-   TECHNOLOGIES SECTION (CRISP WHITE HEADINGS + GRAPHITE GRAY BORDERS)
+   TECHNOLOGIES SECTION (RESTORED CLEAN WHITE BACKGROUND + DARK HEADINGS)
    ========================================================================== */
 .zionic-tech-bento-section {
   position: relative !important;
   z-index: 10 !important;
-  background: #09090b !important;
+  background: #ffffff !important; /* Pure clean white background as original */
   padding: 110px 0 !important;
-  border-top: none !important;
-  border-bottom: 1px solid #27272a !important;
+  border-top: 1px solid #e4e4e7 !important;
+  border-bottom: 1px solid #e4e4e7 !important;
   width: 100% !important;
 }
 
@@ -12820,16 +12821,17 @@ footer {
   font-size: 13px !important;
   font-weight: 800 !important;
   letter-spacing: 2px !important;
-  color: #a1a1aa !important;
+  color: #71717a !important;
   text-transform: uppercase !important;
   margin-bottom: 12px !important;
 }
 
-.zionic-tech-bento-section .section-main-title {
+.zionic-tech-bento-section .section-main-title,
+.zionic-main-page-wrapper .zionic-tech-bento-section .section-main-title {
   font-family: 'Montserrat', sans-serif !important;
   font-size: clamp(36px, 3.8vw, 48px) !important;
   font-weight: 900 !important;
-  color: #ffffff !important;
+  color: #111111 !important; /* Obsidian Dark Main Title */
   line-height: 1.2 !important;
   letter-spacing: -0.5px !important;
   margin: 0 0 16px 0 !important;
@@ -12839,7 +12841,7 @@ footer {
 .zionic-tech-bento-section .section-main-sub {
   font-family: 'Inter', sans-serif !important;
   font-size: 18.5px !important;
-  color: #a1a1aa !important;
+  color: #52525b !important;
   line-height: 1.6 !important;
   margin: 0 auto !important;
   max-width: 860px !important;
@@ -12869,14 +12871,14 @@ footer {
   overflow: hidden !important;
   display: flex !important;
   flex-direction: column !important;
-  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12) !important;
   transition: all 0.35s ease !important;
 }
 
 .tech-bento-card:hover {
   transform: translateY(-5px) !important;
-  border-color: #71717a !important; /* Soft gray highlight on hover */
-  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.35) !important;
+  border-color: #71717a !important;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.2) !important;
 }
 
 .tech-card-media {
@@ -12906,7 +12908,7 @@ footer {
   left: 16px !important;
   background: #27272a !important;
   color: #f4f4f5 !important;
-  border: 1px solid #52525b !important; /* Muted gray border */
+  border: 1px solid #52525b !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 11.5px !important;
   font-weight: 800 !important;
@@ -12925,7 +12927,7 @@ footer {
   background: #18181b !important;
 }
 
-/* WHITE BOLD HEADINGS */
+/* WHITE BOLD HEADINGS INSIDE DARK CARDS */
 .tech-card-heading,
 .zionic-main-page-wrapper .tech-card-heading,
 .zionic-tech-bento-section .tech-card-heading,
