@@ -11659,8 +11659,9 @@ html, body {
 }
 
 
+
 /* ==========================================================================
-   ZIONIC FULLSCREEN EDGE-TO-EDGE VIDEO BANNER + LUXURY PLAY BUTTON
+   ZIONIC FULLSCREEN VIDEO BANNER - PURE CIRCULAR PLAY BUTTON ONLY
    ========================================================================== */
 .zionic-video-fullscreen-banner {
   position: relative;
@@ -11702,7 +11703,7 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.65) 100%);
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.65) 100%);
   pointer-events: none;
   z-index: 2;
 }
@@ -11711,18 +11712,16 @@ html, body {
   position: relative;
   z-index: 5;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
   pointer-events: auto;
 }
 
-/* Luxury Glowing Play Button */
-.lux-play-central-btn {
+/* Pure Circular Play Button */
+.lux-play-pure-circle-btn {
   position: relative;
-  width: 110px;
-  height: 110px;
+  width: 100px;
+  height: 100px;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -11733,126 +11732,65 @@ html, body {
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.lux-play-central-btn:hover {
-  transform: scale(1.12);
+.lux-play-pure-circle-btn:hover {
+  transform: scale(1.14);
 }
 
-.play-icon-inner {
+.pure-circle-inner {
   position: relative;
   z-index: 4;
   width: 90px;
   height: 90px;
   background: #ffffff;
   border: 1px solid #ffffff;
+  border-radius: 50% !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 255, 255, 0.5);
   transition: all 0.3s ease;
-  padding-left: 4px; /* Optical center for triangle */
+  padding-left: 4px; /* Optical center for play triangle */
 }
 
-.lux-play-central-btn:hover .play-icon-inner {
-  background: #ffffff;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7), 0 0 40px rgba(255, 255, 255, 0.8);
+.lux-play-pure-circle-btn:hover .pure-circle-inner {
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7), 0 0 45px rgba(255, 255, 255, 0.9);
 }
 
-.play-pulse-ring {
+.pure-pulse-ring {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 110px;
-  height: 110px;
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  border-radius: 50%;
-  animation: zionicPlayPulse 2.2s infinite ease-out;
+  width: 90px;
+  height: 90px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 50% !important;
+  animation: zionicPurePulse 2.4s infinite ease-out;
   pointer-events: none;
 }
 
-.play-pulse-ring-outer {
+.pure-pulse-ring-outer {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 110px;
-  height: 110px;
-  border: 1.5px solid rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
-  animation: zionicPlayPulse 2.2s infinite 0.8s ease-out;
+  width: 90px;
+  height: 90px;
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50% !important;
+  animation: zionicPurePulse 2.4s infinite 0.9s ease-out;
   pointer-events: none;
 }
 
-@keyframes zionicPlayPulse {
+@keyframes zionicPurePulse {
   0% {
     width: 90px;
     height: 90px;
-    opacity: 0.9;
+    opacity: 0.95;
   }
   100% {
     width: 170px;
     height: 170px;
     opacity: 0;
   }
-}
-
-.video-play-lux-label {
-  display: inline-block;
-  background: rgba(17, 17, 17, 0.85);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 13px !important;
-  font-weight: 800 !important;
-  letter-spacing: 2px !important;
-  text-transform: uppercase !important;
-  padding: 10px 24px !important;
-  border-radius: 0 !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.lux-play-central-btn:hover + .video-play-lux-label,
-.video-play-lux-label:hover {
-  background: #ffffff;
-  color: #111111;
-  border-color: #ffffff;
-  transform: translateY(-2px);
-}
-
-
-/* ==========================================================================
-   ZIONIC TEST-DRIVE CUSTOM STAGE (EXACT MAIN PAGE ARCHITECTURE)
-   ========================================================================== */
-.zionic-test-drive-custom-stage {
-  position: relative;
-  z-index: 18;
-  background: #f4f4f5;
-  padding: 110px 0;
-  border-top: 1px solid #e4e4e7;
-  border-bottom: 1px solid #e4e4e7;
-}
-
-.zionic-test-drive-custom-stage .presentation-stage-grid {
-  display: grid;
-  grid-template-columns: 46% 54%;
-  gap: 36px;
-  align-items: stretch;
-}
-
-@media (max-width: 991px) {
-  .zionic-test-drive-custom-stage .presentation-stage-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-}
-
-.zionic-test-drive-custom-stage .presentation-form-card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }

@@ -1863,21 +1863,21 @@ function cleanHtml(raw, pageName) {
 
       <!-- 8. PROCEDURE VIDEO BANNER -->
             <!-- 8. PROCEDURE VIDEO FULLSCREEN BANNER (EDGE-TO-EDGE) -->
-      <section class="zionic-video-fullscreen-banner" id="procedure" data-video-id="CYsDii-PZ7s">
+            <!-- 8. PROCEDURE VIDEO FULLSCREEN BANNER (CIRCULAR PLAY ICON ONLY) -->
+      <section class="zionic-video-fullscreen-banner js-open-video-lightbox" id="procedure" data-video-id="cqskAxvFlxY">
         <video autoplay loop muted playsinline poster="/wp-content/uploads/2026/03/procedure-2-optimized.jpg" class="video-fullscreen-bg">
           <source src="/wp-content/uploads/2026/03/tratamiento_de_remodelaciun_corporal_zionic_online_video_cutter.mp4" type="video/mp4">
         </video>
         <div class="video-fullscreen-vignette"></div>
 
         <div class="video-fullscreen-center-box">
-          <button type="button" class="lux-play-central-btn js-open-video-lightbox" data-video-id="CYsDii-PZ7s" aria-label="Дивитись презентацію ZIONIC">
-            <span class="play-pulse-ring"></span>
-            <span class="play-pulse-ring-outer"></span>
-            <div class="play-icon-inner">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="#111111"><polygon points="7 4 19 12 7 20 7 4"></polygon></svg>
+          <button type="button" class="lux-play-pure-circle-btn js-open-video-lightbox" data-video-id="cqskAxvFlxY" aria-label="Дивитись відео ZIONIC">
+            <span class="pure-pulse-ring"></span>
+            <span class="pure-pulse-ring-outer"></span>
+            <div class="pure-circle-inner">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="#111111"><polygon points="8 5 19 12 8 19 8 5"></polygon></svg>
             </div>
           </button>
-          <span class="video-play-lux-label js-open-video-lightbox" data-video-id="CYsDii-PZ7s">ДИВИТИСЯ ВІДЕО ПРОЦЕДУРИ</span>
         </div>
       </section>
 
