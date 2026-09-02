@@ -2123,67 +2123,48 @@ function cleanHtml(raw, pageName) {
         </div>
       </section>
 
-      <!-- 2. PILLARS + UNIT SHOWCASE (CLONED FROM TERMOSALUD WITH UKRAINIAN LOCALIZATION) -->
-      <section class="zionic-pillars-section linfopress-pillars-section" id="linfopress-advantages">
+      <!-- 2. ADVANCED COMPRESSION & PROCEDURE SHOWCASE (TOP INFO + WIDE BOTTOM IMAGE) -->
+      <section class="linfopress-pillars-section" id="linfopress-advantages">
         <div class="container">
-          <div class="zionic-pillars-split-wrap">
-            
-            <!-- Left Column: Information & Minimalist Benefits -->
-            <div class="zionic-pillars-info-col">
-              <div class="zionic-pillars-intro-box">
-                <span class="section-kicker">ПЕРЕВАГИ ДЛЯ КЛІНІКИ ТА ЛІКАРЯ</span>
-                <h2 class="zionic-pillars-headline">АВТОНОМНІСТЬ + РЕНТАБЕЛЬНІСТЬ</h2>
-                <p class="zionic-pillars-desc">
-                  Втілення 35 років досвіду іспанської медичної інженерії Termosalud. Інтелектуальна пневматична компресія з біоміметичним пульсом, що ідеально поєднується з будь-якими апаратними та естетичними процедурами.
-                </p>
-              </div>
-
-              <!-- Minimalist Airy Highlights -->
-              <div class="zionic-minimal-pillars-list">
-                <!-- Point 1 -->
-                <div class="pillar-min-item">
-                  <div class="pillar-min-bullet">01</div>
-                  <div class="pillar-min-body">
-                    <h3 class="pillar-min-title">100% Заповнюваність кабінету</h3>
-                    <p class="pillar-min-text">
-                      Автономна процедура «hands-free», що не вимагає постійної присутності лікаря, забезпечуючи максимальну маржинальність без витратних матеріалів.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Point 2 -->
-                <div class="pillar-min-item">
-                  <div class="pillar-min-bullet">02</div>
-                  <div class="pillar-min-body">
-                    <h3 class="pillar-min-title">Найбільший розмірний ряд на ринку</h3>
-                    <p class="pillar-min-text">
-                      Адаптивний костюм із 3 рівнями регулювання блискавок підходить для пацієнтів зростом від 1.50 м до 2.00 м та вагою до 58 розміру одягу.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Point 3 -->
-                <div class="pillar-min-item">
-                  <div class="pillar-min-bullet">03</div>
-                  <div class="pillar-min-body">
-                    <h3 class="pillar-min-title">Швидкі результати з 1-го сеансу</h3>
-                    <p class="pillar-min-text">
-                      Миттєве зняття набряків, розвантаження венозного русла, лімфодренаж та відчуття неймовірної легкості в усьому тілі.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- Right Column: Machine Unit Showcase -->
-            <div class="zionic-pillars-image-col">
-              <div class="zionic-manipula-showcase-box">
-                <img src="/wp-content/uploads/linfopress_official/linfopress_hero_machine.png" alt="Linfopress Evolution PRO Апарат та Костюм" class="zionic-manipula-zoom-img">
-              </div>
-            </div>
-
+          
+          <!-- 1. Top Centered Intro Box -->
+          <div class="zionic-section-header text-center">
+            <span class="section-kicker">ПЕРЕДОВА ПНЕВМАТИЧНА КОМПРЕСІЯ</span>
+            <h2>ПРЕСОТЕРАПІЯ ПЕРЕДОВОЇ КОМПРЕСІЇ</h2>
+            <p class="section-subtitle">
+              <strong>Linfopress Evolution PRO</strong> — це інноваційна система імпульсної пневматичної пресотерапії з технологією компресії, що точно відтворює природний фізіологічний відтік лімфи та венозної крові з видимим ефектом з першого сеансу.
+            </p>
           </div>
+
+          <!-- 2. 4-Column Feature Pillars Grid On Top -->
+          <div class="linfopress-pillars-top-grid">
+            <div class="pillar-top-card">
+              <div class="pillar-top-num">01</div>
+              <h3 class="pillar-top-title">Клінічна ефективність</h3>
+              <p class="pillar-top-text">Видимий результат з 1-ї процедури: миттєве усунення набряків та відчуття легкості в тілі.</p>
+            </div>
+            <div class="pillar-top-card">
+              <div class="pillar-top-num">02</div>
+              <h3 class="pillar-top-title">Ідеальна комбінація</h3>
+              <p class="pillar-top-text">Повна сумісність з іншими апаратними та естетичними методиками для максимального результату.</p>
+            </div>
+            <div class="pillar-top-card">
+              <div class="pillar-top-num">03</div>
+              <h3 class="pillar-top-title">Система «Hands-Free»</h3>
+              <p class="pillar-top-text">100% автономна процедура без потреби постійної присутності персоналу в кабінеті.</p>
+            </div>
+            <div class="pillar-top-card">
+              <div class="pillar-top-num">04</div>
+              <h3 class="pillar-top-title">Клінічна безпека</h3>
+              <p class="pillar-top-text">Прецизійне регулювання градієнта тиску в кожній камері для захисту судинного русла.</p>
+            </div>
+          </div>
+
+          <!-- 3. Wide Procedure Bed Image Underneath -->
+          <div class="linfopress-procedure-showcase-wrap">
+            <img src="/wp-content/uploads/linfopress_official/linfopress_procedure_bed.png" alt="Linfopress Evolution PRO Процедура на кушетці" class="linfopress-procedure-wide-img" loading="lazy">
+          </div>
+
         </div>
       </section>
 
