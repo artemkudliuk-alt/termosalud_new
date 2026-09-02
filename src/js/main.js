@@ -1321,49 +1321,50 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  // ==========================================================================
-  // ZIONIC VERTICAL BEFORE/AFTER COMPARISON (TOP-TO-BOTTOM)
-  // ==========================================================================
-  const vRange = document.getElementById('verticalRangeInput');
-  const vLayerBefore = document.getElementById('verticalCompareLayerBefore');
-  const vDividerHandle = document.getElementById('verticalDividerHandle');
-  const vViewport = document.getElementById('zionicVerticalCompareViewport');
 
-  if (vRange && vLayerBefore && vDividerHandle) {
-    function updateVCompare(val) {
+  // ==========================================================================
+  // ZIONIC HORIZONTAL BEFORE/AFTER COMPARISON (LEFT-TO-RIGHT)
+  // ==========================================================================
+  const hRange = document.getElementById('horizontalRangeInput');
+  const hLayerBefore = document.getElementById('horizontalCompareLayerBefore');
+  const hDividerHandle = document.getElementById('horizontalDividerHandle');
+  const hViewport = document.getElementById('zionicHorizontalCompareViewport');
+
+  if (hRange && hLayerBefore && hDividerHandle) {
+    function updateHCompare(val) {
       const clamped = Math.max(0, Math.min(100, val));
-      vLayerBefore.style.clipPath = `inset(0 0 ${100 - clamped}% 0)`;
-      vDividerHandle.style.top = `${clamped}%`;
+      hLayerBefore.style.clipPath = `inset(0 ${100 - clamped}% 0 0)`;
+      hDividerHandle.style.left = `${clamped}%`;
     }
 
-    vRange.addEventListener('input', (e) => {
-      updateVCompare(e.target.value);
+    hRange.addEventListener('input', (e) => {
+      updateHCompare(e.target.value);
     });
 
-    // Touch & Mouse direct vertical move
-    if (vViewport) {
-      let isVDown = false;
-      function handleVMove(clientY) {
-        const rect = vViewport.getBoundingClientRect();
-        const pos = ((clientY - rect.top) / rect.height) * 100;
-        vRange.value = pos;
-        updateVCompare(pos);
+    // Touch & Mouse direct horizontal move
+    if (hViewport) {
+      let isHDown = false;
+      function handleHMove(clientX) {
+        const rect = hViewport.getBoundingClientRect();
+        const pos = ((clientX - rect.left) / rect.width) * 100;
+        hRange.value = pos;
+        updateHCompare(pos);
       }
 
-      vViewport.addEventListener('mousedown', (e) => {
-        isVDown = true;
-        handleVMove(e.clientY);
+      hViewport.addEventListener('mousedown', (e) => {
+        isHDown = true;
+        handleHMove(e.clientX);
       });
       window.addEventListener('mousemove', (e) => {
-        if (isVDown) handleVMove(e.clientY);
+        if (isHDown) handleHMove(e.clientX);
       });
-      window.addEventListener('mouseup', () => { isVDown = false; });
+      window.addEventListener('mouseup', () => { isHDown = false; });
 
-      vViewport.addEventListener('touchstart', (e) => {
-        if (e.touches.length > 0) handleVMove(e.touches[0].clientY);
+      hViewport.addEventListener('touchstart', (e) => {
+        if (e.touches.length > 0) handleHMove(e.touches[0].clientX);
       }, { passive: true });
-      vViewport.addEventListener('touchmove', (e) => {
-        if (e.touches.length > 0) handleVMove(e.touches[0].clientY);
+      hViewport.addEventListener('touchmove', (e) => {
+        if (e.touches.length > 0) handleHMove(e.touches[0].clientX);
       }, { passive: true });
     }
   }
@@ -1394,10 +1395,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (vLiveBadge) vLiveBadge.textContent = sessions;
 
       // Reset slider to center 50%
-      if (vRange) {
-        vRange.value = 50;
-        if (vLayerBefore) vLayerBefore.style.clipPath = 'inset(0 0 50% 0)';
-        if (vDividerHandle) vDividerHandle.style.top = '50%';
+      if (hRange) {
+        hRange.value = 50;
+        if (hLayerBefore) hLayerBefore.style.clipPath = 'inset(0 50% 0 0)';
+        if (hDividerHandle) hDividerHandle.style.left = '50%';
       }
     });
   });

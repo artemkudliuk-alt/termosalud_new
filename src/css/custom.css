@@ -10906,8 +10906,9 @@ html, body {
 }
 
 
+
 /* ==========================================================================
-   ZIONIC VERTICAL COMPARE (TOP-TO-BOTTOM) + 6 SIDE SELECTION TILES
+   ZIONIC HORIZONTAL COMPARE (LEFT-TO-RIGHT) + EQUAL HEIGHT SIDE TILES
    ========================================================================== */
 .zionic-ba-section {
   background: #ffffff;
@@ -10919,9 +10920,9 @@ html, body {
 .zionic-split-results-layout {
   display: grid;
   grid-template-columns: 46% 54%;
-  gap: 40px;
-  align-items: start;
-  max-width: 1400px;
+  gap: 36px;
+  align-items: stretch; /* Both columns match EXACT height */
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -10932,33 +10933,27 @@ html, body {
   }
 }
 
-/* Left Column: Vertical Compare Viewport */
+/* Left Column: Horizontal Compare Viewport */
 .zionic-compare-left-col {
-  position: sticky;
-  top: 90px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-@media (max-width: 991px) {
-  .zionic-compare-left-col {
-    position: relative;
-    top: 0;
-  }
-}
-
-.zionic-vertical-compare-viewport {
+.zionic-horizontal-compare-viewport {
   position: relative;
   width: 100%;
-  aspect-ratio: 300 / 414; /* Exact vertical portrait ratio with ZERO empty space */
-  max-height: 640px;
+  flex: 1; /* Takes full available height */
+  min-height: 520px;
   background: #111111;
   overflow: hidden;
   border: 1px solid #27272a;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
   user-select: none;
-  cursor: ns-resize; /* Vertical cursor */
+  cursor: ew-resize; /* Horizontal cursor */
 }
 
-.vertical-img-layer {
+.horizontal-img-layer {
   position: absolute;
   top: 0;
   left: 0;
@@ -10966,7 +10961,7 @@ html, body {
   height: 100%;
 }
 
-.vertical-img-layer img {
+.horizontal-img-layer img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -10974,14 +10969,15 @@ html, body {
   pointer-events: none;
 }
 
-.vertical-img-layer.layer-before {
-  clip-path: inset(0 0 50% 0); /* Top half shown initially */
+.horizontal-img-layer.layer-before {
+  clip-path: inset(0 50% 0 0); /* Left half shown initially */
   z-index: 2;
   will-change: clip-path;
 }
 
-.vertical-compare-tag {
+.horizontal-compare-tag {
   position: absolute;
+  top: 16px;
   background: #111111;
   border: 1px solid #3f3f46;
   color: #ffffff;
@@ -10994,37 +10990,35 @@ html, body {
   z-index: 4;
 }
 
-.tag-top {
-  top: 16px;
+.tag-left {
   left: 16px;
 }
 
-.tag-bottom {
-  bottom: 16px;
+.tag-right {
   right: 16px;
 }
 
-/* Horizontal Divider Line & Handle (Drags Up & Down) */
-.vertical-divider-handle {
+/* Vertical Divider Line & Horizontal Drag Handle (Left to Right) */
+.horizontal-divider-handle {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  height: 2px;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
   background: #ffffff;
   z-index: 5;
-  transform: translateY(-50%);
+  transform: translateX(-50%);
   pointer-events: none;
-  will-change: top;
+  will-change: left;
 }
 
-.vertical-divider-line {
+.horizontal-divider-line {
   width: 100%;
   height: 100%;
   background: #ffffff;
 }
 
-.vertical-handle-pill {
+.horizontal-handle-pill {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11035,22 +11029,21 @@ html, body {
   border: 2px solid #ffffff;
   border-radius: 0 !important;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #ffffff;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
-  gap: 1px;
+  gap: 2px;
 }
 
-.vertical-range-input {
+.horizontal-range-input {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
-  cursor: ns-resize;
+  cursor: ew-resize;
   z-index: 10;
   margin: 0;
   padding: 0;
@@ -11066,6 +11059,7 @@ html, body {
   border-top: none;
   padding: 16px 20px;
   color: #ffffff;
+  flex-shrink: 0;
 }
 
 .meta-current-left {
@@ -11100,35 +11094,45 @@ html, body {
   padding: 4px 12px;
 }
 
-/* Right Column: 6 Rich Selection Tiles Grid (2 columns x 3 rows) */
+/* Right Column: 6 Tiles Matching Exact Total Height */
+.zionic-compare-right-col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .zionic-result-tiles-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  grid-template-rows: repeat(3, 1fr); /* 3 equal rows matching left height */
+  gap: 14px;
+  height: 100%;
 }
 
 @media (max-width: 575px) {
   .zionic-result-tiles-grid {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 }
 
 .result-tile-card {
   background: #f4f4f5;
   border: 1px solid #e4e4e7;
-  padding: 24px 20px;
+  padding: 20px 20px;
   cursor: pointer;
   border-radius: 0 !important;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
   flex-direction: column;
+  justify-content: space-between; /* Equal vertical spacing */
   position: relative;
 }
 
 .result-tile-card:hover {
   background: #ffffff;
   border-color: #27272a;
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
@@ -11137,14 +11141,13 @@ html, body {
   border-color: #111111 !important;
   color: #ffffff !important;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  transform: translateY(-2px);
 }
 
 .tile-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .tile-number {
@@ -11179,10 +11182,10 @@ html, body {
 
 .tile-title {
   font-family: 'Montserrat', sans-serif !important;
-  font-size: 18px !important;
+  font-size: 17px !important;
   font-weight: 900 !important;
   color: #111111 !important;
-  margin: 0 0 8px 0 !important;
+  margin: 0 0 6px 0 !important;
   line-height: 1.25 !important;
 }
 
@@ -11194,7 +11197,7 @@ html, body {
   font-family: 'Inter', sans-serif !important;
   font-size: 13.5px !important;
   color: #52525b !important;
-  line-height: 1.55 !important;
+  line-height: 1.5 !important;
   margin: 0 !important;
 }
 

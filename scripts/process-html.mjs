@@ -1537,43 +1537,44 @@ function cleanHtml(raw, pageName) {
       <!-- 5. CLINICAL BEFORE & AFTER SLIDER (MAIN PAGE SLIDER SYSTEM) -->
             <!-- 4. INTERACTIVE CLINICAL BEFORE & AFTER COMPARISON STAGE -->
             <!-- 4. VERTICAL SPLIT BEFORE / AFTER STAGE + 6 SELECTION TILES -->
+            <!-- 4. HORIZONTAL SPLIT BEFORE / AFTER STAGE + 6 EQUAL-HEIGHT TILES -->
       <section class="zionic-ba-section" id="results">
         <div class="container-fluid px-lg-5">
           <div class="section-header-centered">
             <span class="luxury-kicker">КЛІНІЧНИЙ ПРОТОКОЛ</span>
             <h2 class="section-main-title">Клінічно підтверджені результати</h2>
             <p class="section-main-sub">
-              Оберіть протокол терапії праворуч та рухайте повзунок вгору-вниз для оцінки реальних результатів «До» та «Після»
+              Оберіть протокол терапії праворуч та рухайте повзунок вліво-вправо для оцінки реальних результатів «До» та «Після»
             </p>
           </div>
 
           <div class="zionic-split-results-layout">
-            <!-- LEFT COLUMN: VERTICAL SLIDER COMPARISON STAGE -->
+            <!-- LEFT COLUMN: HORIZONTAL SLIDER COMPARISON STAGE -->
             <div class="zionic-compare-left-col">
-              <div class="zionic-vertical-compare-viewport" id="zionicVerticalCompareViewport">
+              <div class="zionic-horizontal-compare-viewport" id="zionicHorizontalCompareViewport">
                 <!-- AFTER IMAGE (BOTTOM LAYER) -->
-                <div class="vertical-img-layer layer-after">
+                <div class="horizontal-img-layer layer-after">
                   <img id="compareImgAfter" src="/wp-content/uploads/zionic_official/case_1_after.jpg" alt="Після процедури Zionic" draggable="false">
-                  <span class="vertical-compare-tag tag-bottom">ПІСЛЯ</span>
+                  <span class="horizontal-compare-tag tag-right">ПІСЛЯ</span>
                 </div>
 
                 <!-- BEFORE IMAGE (TOP CLIPPED LAYER) -->
-                <div class="vertical-img-layer layer-before" id="verticalCompareLayerBefore">
+                <div class="horizontal-img-layer layer-before" id="horizontalCompareLayerBefore">
                   <img id="compareImgBefore" src="/wp-content/uploads/zionic_official/case_1_before.jpg" alt="До процедури Zionic" draggable="false">
-                  <span class="vertical-compare-tag tag-top">ДО</span>
+                  <span class="horizontal-compare-tag tag-left">ДО</span>
                 </div>
 
-                <!-- HORIZONTAL DIVIDER LINE & VERTICAL DRAG HANDLE -->
-                <div class="vertical-divider-handle" id="verticalDividerHandle">
-                  <div class="vertical-divider-line"></div>
-                  <div class="vertical-handle-pill">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                <!-- VERTICAL DIVIDER LINE & HORIZONTAL DRAG HANDLE -->
+                <div class="horizontal-divider-handle" id="horizontalDividerHandle">
+                  <div class="horizontal-divider-line"></div>
+                  <div class="horizontal-handle-pill">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
                   </div>
                 </div>
 
                 <!-- RANGE INPUT FOR TOUCH & ARIA ACCESSIBILITY -->
-                <input type="range" min="0" max="100" value="50" class="vertical-range-input" id="verticalRangeInput" aria-label="Вертикальне порівняння результатів До та Після">
+                <input type="range" min="0" max="100" value="50" class="horizontal-range-input" id="horizontalRangeInput" aria-label="Горизонтальне порівняння результатів До та Після">
               </div>
 
               <!-- LIVE PROTOCOL BADGE UNDER SCREEN -->
@@ -1586,7 +1587,7 @@ function cleanHtml(raw, pageName) {
               </div>
             </div>
 
-            <!-- RIGHT COLUMN: 6 RICH INTERACTIVE TILES -->
+            <!-- RIGHT COLUMN: 6 RICH TILES MATCHING EXACT HEIGHT -->
             <div class="zionic-compare-right-col">
               <div class="zionic-result-tiles-grid">
                 <!-- TILE 1 -->
