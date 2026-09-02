@@ -1522,33 +1522,15 @@ function cleanHtml(raw, pageName) {
       </section>
 
       <!-- 4. MANIPULA & NOZZLES SPECIFICATION -->
-      <section class="zionic-manipula-section" id="manipula">
-        <div class="container">
-          <div class="section-header-centered">
-            <span class="luxury-kicker">ЕРГОНОМІКА ТА ТОЧНІСТЬ</span>
-            <h2 class="section-main-title">Оснащення інтелектуальної маніпули</h2>
-            <p class="section-main-sub">
-              Кольоровий дисплей керування на рукоятці та змінні анатомічні насадки для роботи з будь-якою зоною тіла
-            </p>
-          </div>
-
-          <div class="manipula-showcase-grid">
-            <div class="manipula-feature-card">
-              <div class="feature-num">01</div>
-              <h4 class="feature-title">Сенсорне керування на рукоятці</h4>
-              <p class="feature-desc">Лікар регулює швидкість ротації та потужність RF прямо під час сеансу без відриву від пацієнта.</p>
-            </div>
-
-            <div class="manipula-feature-card center-media-card">
-              <img src="/wp-content/uploads/2026/03/tech-optimized.png" alt="Маніпула ZIONIC" class="manipula-img" width="480" height="340">
-            </div>
-
-            <div class="manipula-feature-card">
-              <div class="feature-num">02</div>
-              <h4 class="feature-title">Змінні насадки (Nozzles)</h4>
-              <p class="feature-desc">Два розміри насадок (для малих зон: руки, спина, живіт; для великих зон: стегна, сідниці).</p>
-            </div>
-          </div>
+            <!-- 3. FULLSCREEN UNCOMPROMISED MANIPULA INFOGRAPHIC SHOWCASE -->
+      <section class="zionic-manipula-fullscreen-section" id="manipula">
+        <div class="manipula-fullscreen-wrapper">
+          <img 
+            src="/zionic_manipula_official_infographic.png" 
+            alt="Технологічна досконалість маніпули Zionic" 
+            class="manipula-fullscreen-img"
+            loading="lazy"
+          >
         </div>
       </section>
 
