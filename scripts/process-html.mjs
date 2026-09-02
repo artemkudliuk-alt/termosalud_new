@@ -1862,22 +1862,22 @@ function cleanHtml(raw, pageName) {
       </section>
 
       <!-- 8. PROCEDURE VIDEO BANNER -->
-      <section class="zionic-video-banner-section" id="procedure">
-        <div class="container">
-          <div class="video-banner-sharp-frame">
-            <video autoplay loop muted playsinline poster="/wp-content/uploads/2026/03/procedure-2-optimized.jpg" class="procedure-video-bg">
-              <source src="/wp-content/uploads/2026/03/tratamiento_de_remodelaciun_corporal_zionic_online_video_cutter.mp4" type="video/mp4">
-            </video>
-            <div class="video-banner-overlay"></div>
-            <div class="video-banner-content">
-              <h2 class="video-banner-title">Процедура ZIONIC у реальній практиці</h2>
-              <p class="video-banner-sub">Подивіться, як проходить сеанс та як реагує тіло пацієнта на терапію MARP</p>
-              <button type="button" class="video-play-huge-btn js-open-video-lightbox" data-video-id="CYsDii-PZ7s">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                <span>ДИВИТИСЬ ВІДЕО ПРОЦЕДУРИ</span>
-              </button>
+            <!-- 8. PROCEDURE VIDEO FULLSCREEN BANNER (EDGE-TO-EDGE) -->
+      <section class="zionic-video-fullscreen-banner" id="procedure" data-video-id="CYsDii-PZ7s">
+        <video autoplay loop muted playsinline poster="/wp-content/uploads/2026/03/procedure-2-optimized.jpg" class="video-fullscreen-bg">
+          <source src="/wp-content/uploads/2026/03/tratamiento_de_remodelaciun_corporal_zionic_online_video_cutter.mp4" type="video/mp4">
+        </video>
+        <div class="video-fullscreen-vignette"></div>
+
+        <div class="video-fullscreen-center-box">
+          <button type="button" class="lux-play-central-btn js-open-video-lightbox" data-video-id="CYsDii-PZ7s" aria-label="Дивитись презентацію ZIONIC">
+            <span class="play-pulse-ring"></span>
+            <span class="play-pulse-ring-outer"></span>
+            <div class="play-icon-inner">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="#111111"><polygon points="7 4 19 12 7 20 7 4"></polygon></svg>
             </div>
-          </div>
+          </button>
+          <span class="video-play-lux-label js-open-video-lightbox" data-video-id="CYsDii-PZ7s">ДИВИТИСЯ ВІДЕО ПРОЦЕДУРИ</span>
         </div>
       </section>
 
