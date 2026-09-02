@@ -1137,3 +1137,49 @@ function initKnowledgeFilterSwipe() {
 }
 
 
+
+
+// 21. Zionic Custom Sharp Sliders (Before & After, Experience)
+document.addEventListener('DOMContentLoaded', () => {
+  const initZionicSlider = (containerSelector) => {
+    const container = document.querySelector(containerSelector);
+    if (!container) return;
+    const wrapper = container.querySelector('.swiper-wrapper');
+    const prevBtn = container.querySelector('.prev-btn');
+    const nextBtn = container.querySelector('.next-btn');
+
+    if (wrapper && prevBtn && nextBtn) {
+      prevBtn.addEventListener('click', () => {
+        const slideWidth = wrapper.querySelector('.swiper-slide')?.offsetWidth || 340;
+        wrapper.scrollBy({ left: -(slideWidth + 24), behavior: 'smooth' });
+      });
+      nextBtn.addEventListener('click', () => {
+        const slideWidth = wrapper.querySelector('.swiper-slide')?.offsetWidth || 340;
+        wrapper.scrollBy({ left: slideWidth + 24, behavior: 'smooth' });
+      });
+    }
+  };
+
+  initZionicSlider('.zionic-ba-swiper');
+  initZionicSlider('.zionic-exp-swiper');
+});
+
+
+// 22. Zionic Sharp Carousel Click Handler
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.zionic-gallery-carousel').forEach(carousel => {
+    const track = carousel.querySelector('.zionic-carousel-track');
+    const prev = carousel.querySelector('.prev-btn');
+    const next = carousel.querySelector('.next-btn');
+    if (track && prev && next) {
+      prev.addEventListener('click', () => {
+        const itemWidth = track.querySelector('.zionic-carousel-item')?.offsetWidth || 340;
+        track.scrollBy({ left: -(itemWidth + 20), behavior: 'smooth' });
+      });
+      next.addEventListener('click', () => {
+        const itemWidth = track.querySelector('.zionic-carousel-item')?.offsetWidth || 340;
+        track.scrollBy({ left: itemWidth + 20, behavior: 'smooth' });
+      });
+    }
+  });
+});
