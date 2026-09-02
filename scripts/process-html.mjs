@@ -1639,7 +1639,7 @@ function cleanHtml(raw, pageName) {
               <p class="reason-box-desc">Виробництво TermoSalud в Іспанії відповідно до медичних нормативів ISO 13485 та європейської директиви MDD.</p>
             </div>
 
-            <div class="reason-bento-box highlight-gold-box">
+            <div class="reason-bento-box highlight-hero-box">
               <div class="reason-icon-wrap"><img src="/wp-content/uploads/2026/03/5-2.svg" alt="5" width="36" height="36"></div>
               <h4 class="reason-box-title">Навчання та підтримка</h4>
               <p class="reason-box-desc">Безкоштовна постановка руки для ваших спеціалістів сертифікованим лікарем-методистом TermoSalud Україна.</p>
