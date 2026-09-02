@@ -2821,30 +2821,48 @@ function cleanHtml(raw, pageName) {
 
 
       <!-- ==========================================================================
-           7. DOCTORS TRUST & CLINICAL REVIEW
+           7. DOCTORS TRUST & CLINICAL REVIEW (FULL-WIDTH CINEMATIC SHOWCASE)
            ========================================================================== -->
       <section class="linfopress-doctor-section" id="expert-review">
-        <div class="container">
+        <div class="container doctor-header-container">
           <div class="section-header-centered">
             <h2 class="section-main-title">Досвід лікарів</h2>
             <p class="section-main-sub">
               Практичний клінічний досвід використання Linfopress у провідних медичних та SPA-центрах України
             </p>
           </div>
+        </div>
 
-          <div class="linfopress-doctor-card">
-            <div class="doc-photo-col">
-              <img src="/wp-content/uploads/2026/03/experience-block-img-optimized.png" alt="Гуцул Оксана Миколаївна" class="doc-portrait-img" loading="lazy">
-            </div>
-            <div class="doc-text-col">
-              <div class="doc-quote-mark">“</div>
-              <h3 class="doc-quote-title">Linfopress Evolution PRO — це новий стандарт у пресотерапії, який перевершив усі мої очікування як лікаря</h3>
-              <p class="doc-quote-text">
+        <!-- 100% FULLSCREEN EDGE-TO-EDGE SHOWCASE STAGE -->
+        <div class="linfopress-doctor-fullscreen-stage">
+          <div class="doctor-bg-media-wrap">
+            <img src="/linfopress-doctor-review-bg.jpg" alt="Процедура на апараті Linfopress Evolution PRO" class="doctor-bg-img" loading="lazy">
+            <div class="doctor-bg-gradient-overlay"></div>
+          </div>
+
+          <div class="container doctor-fullscreen-container">
+            <div class="doctor-fullscreen-content">
+              <div class="doctor-quote-badge">
+                <span class="doctor-badge-dot"></span>
+                <span>КЛІНІЧНИЙ ВІДГУК ГОЛОВНОГО ЛІКАРЯ</span>
+              </div>
+
+              <h3 class="doctor-statement-title">
+                «Linfopress Evolution PRO — це новий стандарт у пресотерапії, який перевершив усі мої очікування як лікаря»
+              </h3>
+
+              <p class="doctor-statement-desc">
                 Працюючи в сфері естетичної медицини та реабілітації багато років, я мала справу з різними апаратами. Але коли в нашій клініці з’явився Linfopress Evolution PRO, це повністю змінило підхід до процедури. З точки зору фахівця, апарат неймовірно зручний: одягання манжет більше не забирає багато часу, а завдяки 3 рядам блискавок штани ідеально адаптуються під пацієнтів будь-якого зросту від 1,5 до 2 метрів. Головна перевага — технологія біоміметичної послідовної пульсації та стадія розігріву, що дозволяє працювати абсолютно безболісно навіть із чутливим фіброзним целюлітом.
               </p>
-              <div class="doc-meta-box">
-                <h4 class="doc-name">Гуцул Оксана Миколаївна</h4>
-                <p class="doc-role">Головний лікар Arden Palace Medical Resort & SPA</p>
+
+              <div class="doctor-author-profile">
+                <div class="doctor-author-avatar">
+                  <img src="/wp-content/uploads/2026/03/experience-block-img-optimized.png" alt="Гуцул Оксана Миколаївна" class="author-avatar-img">
+                </div>
+                <div class="doctor-author-info">
+                  <h4 class="doctor-author-name">Гуцул Оксана Миколаївна</h4>
+                  <p class="doctor-author-title">Головний лікар Arden Palace Medical Resort & SPA</p>
+                </div>
               </div>
             </div>
           </div>
