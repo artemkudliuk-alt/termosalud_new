@@ -1,4 +1,38 @@
 
+// ==========================================================================
+// CERTIFICATE FULLSCREEN LIGHTBOX HANDLERS
+// ==========================================================================
+window.openCertLightbox = function(imgSrc, captionText) {
+  const modal = document.getElementById('certLightboxModal');
+  const img = document.getElementById('certLightboxImg');
+  const caption = document.getElementById('certLightboxCaption');
+  if (!modal || !img) return;
+  img.src = imgSrc;
+  if (caption) caption.textContent = captionText || '';
+  modal.classList.add('is-open');
+  document.documentElement.classList.add('modal-open-lock');
+  document.body.classList.add('modal-open-lock');
+};
+
+window.closeCertLightbox = function(e) {
+  if (e && e.target && e.target.closest('.cert-lightbox-dialog') && !e.target.classList.contains('cert-lightbox-close')) return;
+  const modal = document.getElementById('certLightboxModal');
+  if (!modal) return;
+  modal.classList.remove('is-open');
+  document.documentElement.classList.remove('modal-open-lock');
+  document.body.classList.remove('modal-open-lock');
+};
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    const modal = document.getElementById('certLightboxModal');
+    if (modal && modal.classList.contains('is-open')) {
+      window.closeCertLightbox();
+    }
+  }
+});
+
+
 // SEO Article Toggle
 window.toggleZionicSeoArticle = function() {
   const content = document.getElementById('seoExpandableContent');

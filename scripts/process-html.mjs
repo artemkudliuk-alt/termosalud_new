@@ -2141,7 +2141,7 @@ function cleanHtml(raw, pageName) {
         </div>
       </section>
 
-      <!-- 12. DOCUMENTS & CERTIFICATES -->
+      <!-- 12. DOCUMENTS & CERTIFICATES WITH FULLSCREEN LIGHTBOX -->
       <section class="zionic-certificates-section" id="certificates">
         <div class="container">
           <div class="section-header-centered">
@@ -2151,10 +2151,16 @@ function cleanHtml(raw, pageName) {
           </div>
 
           <div class="zionic-cert-scans-grid">
-            <!-- Cert 1 -->
-            <div class="cert-scan-card">
+            <!-- Cert 1: Ukraine -->
+            <div class="cert-scan-card" onclick="openCertLightbox('/zionic_cert_ukraine.png', 'Сертифікат відповідності МОЗ України / ПолітехМед (UA.TR.101)')">
               <div class="cert-scan-frame">
                 <img src="/zionic_cert_ukraine.png" alt="Сертифікат відповідності МОЗ України" loading="lazy">
+                <div class="cert-zoom-overlay">
+                  <span class="cert-zoom-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  </span>
+                  <span class="cert-zoom-text">Натисніть для збільшення</span>
+                </div>
               </div>
               <div class="cert-scan-info">
                 <div class="cert-scan-badge">UA.TR.101 • МОЗ України</div>
@@ -2163,10 +2169,16 @@ function cleanHtml(raw, pageName) {
               </div>
             </div>
 
-            <!-- Cert 2 -->
-            <div class="cert-scan-card">
+            <!-- Cert 2: FDA / International -->
+            <div class="cert-scan-card" onclick="openCertLightbox('/zionic_cert_fda.png', 'Declaration of Conformity FDA (USA & CE 0120)')">
               <div class="cert-scan-frame">
                 <img src="/zionic_cert_fda.png" alt="Declaration of Conformity FDA" loading="lazy">
+                <div class="cert-zoom-overlay">
+                  <span class="cert-zoom-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                  </span>
+                  <span class="cert-zoom-text">Натисніть для збільшення</span>
+                </div>
               </div>
               <div class="cert-scan-info">
                 <div class="cert-scan-badge">FDA 510(k) • CE Medical</div>
@@ -2763,6 +2775,18 @@ Linfopress Evolution PRO — це новий стандарт у пресоте�
 
   const footerInject = `
   ${modernGlassPopupModal}
+  
+  <!-- CERTIFICATE FULLSCREEN LIGHTBOX MODAL -->
+  <div class="cert-lightbox-modal" id="certLightboxModal" onclick="closeCertLightbox(event)">
+    <button type="button" class="cert-lightbox-close" onclick="closeCertLightbox(event)" aria-label="Закрити">✕</button>
+    <div class="cert-lightbox-dialog" onclick="event.stopPropagation()">
+      <div class="cert-lightbox-img-wrap">
+        <img src="" id="certLightboxImg" alt="Сертифікат у повному розмірі">
+      </div>
+      <div class="cert-lightbox-caption" id="certLightboxCaption"></div>
+    </div>
+  </div>
+
   <script type="module" src="/src/js/main.js"></script>
 `;
 
@@ -2777,7 +2801,6 @@ Linfopress Evolution PRO — це новий стандарт у пресоте�
 
   return html;
 }
-
 
 for (const p of pages) {
   const rawFile = path.join(rootDir, 'docs/research/raw_html', `${p.name}.html`);

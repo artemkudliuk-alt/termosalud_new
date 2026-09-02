@@ -12152,11 +12152,14 @@ html, body {
    ZIONIC LOWER SCREENS: DOCTORS, FAQ, REAL CERTIFICATES & EXPANDABLE SEO
    ========================================================================== */
 
-/* 1. DOCTORS & EXPERT REVIEWS */
+
+/* ==========================================================================
+   DOCTORS CARDS (PURE WHITE LUXURY CARDS WITH HIGH CONTRAST TEXT)
+   ========================================================================== */
 .zionic-doctors-section {
   position: relative !important;
   z-index: 19 !important;
-  background: #ffffff !important;
+  background: #f4f4f5 !important;
   padding: 110px 0 !important;
   border-top: 1px solid #e4e4e7 !important;
   width: 100% !important;
@@ -12167,37 +12170,6 @@ html, body {
   max-width: 960px !important;
   margin: 0 auto 56px auto !important;
   padding: 0 20px !important;
-}
-
-.zionic-doctors-section .luxury-kicker {
-  display: inline-block !important;
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 13px !important;
-  font-weight: 800 !important;
-  letter-spacing: 2px !important;
-  color: #71717a !important;
-  text-transform: uppercase !important;
-  margin-bottom: 12px !important;
-}
-
-.zionic-doctors-section .section-main-title {
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: clamp(36px, 3.8vw, 48px) !important;
-  font-weight: 900 !important;
-  color: #111111 !important;
-  line-height: 1.2 !important;
-  letter-spacing: -0.5px !important;
-  margin: 0 0 16px 0 !important;
-  text-transform: uppercase !important;
-}
-
-.zionic-doctors-section .section-main-sub {
-  font-family: 'Inter', sans-serif !important;
-  font-size: 18.5px !important;
-  color: #52525b !important;
-  line-height: 1.6 !important;
-  margin: 0 auto !important;
-  max-width: 860px !important;
 }
 
 .zionic-doctors-grid {
@@ -12219,20 +12191,20 @@ html, body {
 }
 
 .doctor-luxury-card {
-  background: #18181b !important;
-  border: 1px solid #27272a !important;
+  background: #ffffff !important;
+  border: 1px solid #e4e4e7 !important;
   border-radius: 0 !important;
   overflow: hidden !important;
   display: flex !important;
   flex-direction: column !important;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
   transition: all 0.35s ease !important;
 }
 
 .doctor-luxury-card:hover {
   transform: translateY(-6px) !important;
-  border-color: #52525b !important;
-  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.22) !important;
+  border-color: #111111 !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1) !important;
 }
 
 .doctor-photo-frame {
@@ -12240,7 +12212,8 @@ html, body {
   width: 100% !important;
   height: 380px !important;
   overflow: hidden !important;
-  background: #09090b !important;
+  background: #f8fafc !important;
+  border-bottom: 1px solid #e4e4e7 !important;
 }
 
 .doctor-photo-frame img {
@@ -12261,7 +12234,7 @@ html, body {
   display: flex !important;
   flex-direction: column !important;
   gap: 6px !important;
-  background: #18181b !important;
+  background: #ffffff !important;
 }
 
 .doctor-header-row {
@@ -12272,11 +12245,12 @@ html, body {
   margin-bottom: 4px !important;
 }
 
-.doctor-name {
+.doctor-name,
+.zionic-main-page-wrapper .doctor-name {
   font-family: 'Montserrat', sans-serif !important;
-  font-size: 20px !important;
+  font-size: 21px !important;
   font-weight: 900 !important;
-  color: #ffffff !important;
+  color: #111111 !important;
   margin: 0 !important;
   line-height: 1.25 !important;
 }
@@ -12285,9 +12259,9 @@ html, body {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 11.5px !important;
   font-weight: 800 !important;
-  color: #ffffff !important;
-  background: #27272a !important;
-  border: 1px solid #3f3f46 !important;
+  color: #111111 !important;
+  background: #f4f4f5 !important;
+  border: 1px solid #d4d4d8 !important;
   padding: 4px 10px !important;
   border-radius: 0 !important;
   text-transform: uppercase !important;
@@ -12295,133 +12269,25 @@ html, body {
 
 .doctor-specialty {
   font-family: 'Montserrat', sans-serif !important;
-  font-size: 13.5px !important;
-  font-weight: 700 !important;
-  color: #d4d4d8 !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  color: #111111 !important;
   margin: 0 !important;
   line-height: 1.4 !important;
 }
 
 .doctor-clinic {
   font-family: 'Inter', sans-serif !important;
-  font-size: 14.5px !important;
-  color: #a1a1aa !important;
+  font-size: 15px !important;
+  color: #52525b !important;
   line-height: 1.5 !important;
   margin: 0 !important;
 }
 
 
-/* 2. FAQ ACCORDION */
-.zionic-faq-section {
-  position: relative !important;
-  z-index: 20 !important;
-  background: #f4f4f5 !important;
-  padding: 110px 0 !important;
-  border-top: 1px solid #e4e4e7 !important;
-  width: 100% !important;
-}
-
-.faq-accordion-grid {
-  max-width: 1000px !important;
-  margin: 0 auto !important;
-  padding: 0 20px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 14px !important;
-  box-sizing: border-box !important;
-}
-
-.faq-accordion-card {
-  position: relative !important;
-  width: 100% !important;
-  background: #18181b !important;
-  border: 1px solid #27272a !important;
-  border-radius: 0 !important;
-  overflow: hidden !important;
-  transition: all 0.25s ease !important;
-}
-
-.faq-accordion-card.active {
-  background: #111111 !important;
-  border-color: #3f3f46 !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
-}
-
-.faq-toggle-header {
-  position: relative !important;
-  width: 100% !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  padding: 24px 30px !important;
-  background: transparent !important;
-  border: none !important;
-  text-align: left !important;
-  cursor: pointer !important;
-  gap: 20px !important;
-  box-sizing: border-box !important;
-  border-radius: 0 !important;
-}
-
-.faq-q-text {
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 18.5px !important;
-  font-weight: 800 !important;
-  color: #ffffff !important;
-  line-height: 1.35 !important;
-  flex: 1 1 auto !important;
-  margin: 0 !important;
-  transition: color 0.2s ease !important;
-}
-
-.faq-accordion-card.active .faq-q-text {
-  color: #ffffff !important;
-}
-
-.faq-icon {
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 22px !important;
-  font-weight: 700 !important;
-  color: #ffffff !important;
-  background: #27272a !important;
-  border: 1px solid #3f3f46 !important;
-  width: 36px !important;
-  height: 36px !important;
-  min-width: 36px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border-radius: 0 !important;
-  flex-shrink: 0 !important;
-  transition: all 0.25s ease !important;
-}
-
-.faq-accordion-card.active .faq-icon {
-  background: #ffffff !important;
-  color: #111111 !important;
-  border-color: #ffffff !important;
-}
-
-.faq-accordion-card .faq-answer-body {
-  display: none !important;
-  padding: 0 30px 26px 30px !important;
-  box-sizing: border-box !important;
-}
-
-.faq-accordion-card.active .faq-answer-body {
-  display: block !important;
-}
-
-.faq-answer-body p {
-  font-family: 'Inter', sans-serif !important;
-  font-size: 16px !important;
-  color: #a1a1aa !important;
-  line-height: 1.65 !important;
-  margin: 0 !important;
-}
-
-
-/* 3. REAL CERTIFICATES & SCANS */
+/* ==========================================================================
+   CERTIFICATES ZOOM & FULLSCREEN LIGHTBOX
+   ========================================================================== */
 .zionic-certificates-section {
   position: relative !important;
   z-index: 21 !important;
@@ -12458,6 +12324,7 @@ html, body {
   flex-direction: column !important;
   gap: 20px !important;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+  cursor: pointer !important;
   transition: all 0.3s ease !important;
 }
 
@@ -12479,6 +12346,7 @@ html, body {
   justify-content: center !important;
   padding: 12px !important;
   box-sizing: border-box !important;
+  cursor: zoom-in !important;
 }
 
 .cert-scan-frame img {
@@ -12489,8 +12357,40 @@ html, body {
   transition: transform 0.3s ease !important;
 }
 
-.cert-scan-card:hover .cert-scan-frame img {
-  transform: scale(1.02) !important;
+/* Elegant Zoom Overlay on hover */
+.cert-zoom-overlay {
+  position: absolute !important;
+  bottom: 14px !important;
+  right: 14px !important;
+  background: rgba(17, 17, 17, 0.88) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  padding: 8px 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+  transition: all 0.25s ease !important;
+  pointer-events: none !important;
+}
+
+.cert-scan-card:hover .cert-zoom-overlay {
+  background: #111111 !important;
+  border-color: #ffffff !important;
+  transform: scale(1.05) !important;
+}
+
+.cert-zoom-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #ffffff !important;
 }
 
 .cert-scan-badge {
@@ -12522,6 +12422,104 @@ html, body {
   color: #52525b !important;
   line-height: 1.6 !important;
   margin: 0 !important;
+}
+
+/* ==========================================================================
+   FULLSCREEN CERTIFICATE LIGHTBOX MODAL
+   ========================================================================== */
+.cert-lightbox-modal {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 999999 !important;
+  background: rgba(10, 10, 12, 0.92) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 24px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-sizing: border-box !important;
+}
+
+.cert-lightbox-modal.is-open {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.cert-lightbox-dialog {
+  position: relative !important;
+  max-width: 92vw !important;
+  max-height: 92vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  animation: modalScaleIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+@keyframes modalScaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.cert-lightbox-close {
+  position: fixed !important;
+  top: 24px !important;
+  right: 28px !important;
+  width: 48px !important;
+  height: 48px !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  color: #ffffff !important;
+  font-size: 22px !important;
+  font-weight: 300 !important;
+  border-radius: 0 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.25s ease !important;
+  z-index: 1000000 !important;
+}
+
+.cert-lightbox-close:hover {
+  background: #ffffff !important;
+  color: #111111 !important;
+  transform: scale(1.06) !important;
+}
+
+.cert-lightbox-img-wrap {
+  position: relative !important;
+  max-width: 88vw !important;
+  max-height: 82vh !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #ffffff !important;
+  padding: 12px !important;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.cert-lightbox-img-wrap img {
+  max-width: 100% !important;
+  max-height: 80vh !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.cert-lightbox-caption {
+  margin-top: 14px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  text-align: center !important;
+  letter-spacing: 0.5px !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8) !important;
 }
 
 
