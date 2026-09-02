@@ -28,7 +28,7 @@ name="msapplication-TileImage" content="/wp-content/uploads/2026/03/favicon-opti
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Onest:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/css/custom.css?v=1788383805355">
+  <link rel="stylesheet" href="/src/css/custom.css?v=1788385631539">
   <style>
     .split-title, .split-title *, .split-panel .split-title, .split-panel h3, .split-content .split-title, .split-content h3 {
       color: #f1f5f9 !important;
@@ -137,7 +137,7 @@ class=content>
                 <span>ЗАМОВИТИ ТЕСТ-ДРАЙВ</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
-              <button class="linfopress-btn-ghost-dark" id="open-linfopress-video-btn" data-video-id="K1v77enueJ8">
+              <button class="linfopress-btn-ghost-dark" id="open-linfopress-video-btn" data-video-id="K1v77enueJ8" onclick="window.openLinfopressVideoLightbox()">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                 <span>ВІДЕО-ДЕМОНСТРАЦІЯ</span>
               </button>
@@ -361,7 +361,7 @@ class=content>
 
 
       <!-- ==========================================================================
-           4. VIDEO PROCEDURE DEMONSTRATION SECTION (#procedure)
+           4. VIDEO PROCEDURE DEMONSTRATION SECTION (#procedure) - 100% FULL WIDTH
            ========================================================================== -->
       <section class="linfopress-procedure-section" id="procedure">
         <div class="container">
@@ -371,22 +371,33 @@ class=content>
               Повний цикл роботи апарату: від одягання ергономічних манжетів до терапевтичного лімфодренажу
             </p>
           </div>
+        </div>
 
-          <div class="linfopress-procedure-cinema-box">
-            <div class="cinema-media-wrap" id="linfopress-procedure-player-trigger" data-youtube="K1v77enueJ8">
-              <video autoplay loop muted playsinline preload="auto" class="cinema-bg-video">
-                <source src="/wp-content/uploads/2026/03/termosalud_vid.mp4" type="video/mp4">
-              </video>
-              <div class="cinema-play-overlay">
-                <div class="cinema-play-button">
-                  <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                </div>
-                <span class="cinema-play-text">ДИВИТИСЬ ВІДЕО-ПРЕЗЕНТАЦІЮ</span>
+        <!-- 100% FULL-WIDTH CINEMA SCREEN -->
+        <div class="linfopress-procedure-fullwidth-wrap">
+          <div class="cinema-media-wrap js-procedure-video-trigger" id="linfopress-procedure-player-trigger" onclick="window.playLinfopressProcedureVideo(this)">
+            <video autoplay loop muted playsinline preload="auto" class="cinema-bg-video" id="procedure-preview-video">
+              <source src="/wp-content/uploads/2026/03/termosalud_vid.mp4" type="video/mp4">
+            </video>
+            <div class="cinema-play-overlay" id="procedure-play-overlay">
+              <div class="cinema-play-button">
+                <svg width="38" height="38" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
               </div>
+              <span class="cinema-play-text">ДИВИТИСЬ ВІДЕО-ПРЕЗЕНТАЦІЮ</span>
             </div>
+            <div class="cinema-iframe-holder" id="procedure-iframe-holder"></div>
           </div>
         </div>
       </section>
+
+      <!-- Linfopress Video Modal Lightbox (for Hero button and direct popups) -->
+      <div id="linfopress_video_modal" class="zionic-video-lightbox" role="dialog" aria-modal="true" style="display:none;">
+        <div class="zionic-video-lightbox-backdrop" data-close-video-modal onclick="window.closeLinfopressVideoLightbox()"></div>
+        <div class="zionic-video-lightbox-dialog">
+          <button type="button" class="zionic-video-lightbox-close" data-close-video-modal onclick="window.closeLinfopressVideoLightbox()" aria-label="Закрити">✕</button>
+          <div id="linfopress_modal_video_container" class="zionic-video-lightbox-frame"></div>
+        </div>
+      </div>
 
 
       <!-- ==========================================================================

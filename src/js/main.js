@@ -1580,3 +1580,41 @@ window.toggleLinfopressSeoArticle = function() {
     label.textContent = 'Приховати ∧';
   }
 };
+
+
+// ==========================================================================
+// FULLWIDTH PROCEDURE VIDEO PLAYER & LIGHTBOX (YOUTUBE: K1v77enueJ8)
+// ==========================================================================
+window.playLinfopressProcedureVideo = function(triggerEl) {
+  const holder = document.getElementById('procedure-iframe-holder');
+  const overlay = document.getElementById('procedure-play-overlay');
+  const previewVideo = document.getElementById('procedure-preview-video');
+  if (!holder) return;
+
+  if (previewVideo) previewVideo.pause();
+  if (overlay) overlay.style.display = 'none';
+
+  holder.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/K1v77enueJ8?autoplay=1&start=1&rel=0&modestbranding=1&controls=1" title="Процедура Linfopress Evolution PRO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; inset: 0; width: 100%; height: 100%; border: none;"></iframe>';
+  holder.style.display = 'block';
+};
+
+window.openLinfopressVideoLightbox = function() {
+  const modal = document.getElementById('linfopress_video_modal');
+  const container = document.getElementById('linfopress_modal_video_container');
+  if (!modal || !container) return;
+  container.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/K1v77enueJ8?autoplay=1&start=1&rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%; height:100%; border:none;"></iframe>';
+  modal.style.display = 'flex';
+  modal.classList.add('is-active', 'show');
+  document.body.style.overflow = 'hidden';
+};
+
+window.closeLinfopressVideoLightbox = function() {
+  const modal = document.getElementById('linfopress_video_modal');
+  const container = document.getElementById('linfopress_modal_video_container');
+  if (container) container.innerHTML = '';
+  if (modal) {
+    modal.style.display = 'none';
+    modal.classList.remove('is-active', 'show');
+  }
+  document.body.style.overflow = '';
+};
