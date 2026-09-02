@@ -5428,31 +5428,19 @@ footer {
 }
 
 .zionic-hero-title .zionic-word-top {
-  position: relative !important;
-  display: inline-block !important;
+  display: block !important;
   white-space: nowrap !important;
-  color: #54595f !important;
-  font-weight: 800 !important;
+  color: #111111 !important;
+  font-weight: 900 !important;
   font-size: inherit !important;
   line-height: inherit !important;
   width: fit-content !important;
-  padding: 0 4px !important;
-  margin-bottom: 14px !important;
-  z-index: 2 !important;
+  padding: 0 !important;
+  margin-bottom: 6px !important;
 }
 
 .zionic-hero-title .zionic-word-top::after {
-  content: '' !important;
-  position: absolute !important;
-  bottom: 2px !important;
-  left: -8px !important;
-  right: -12px !important;
-  height: 28% !important;
-  background: #ffffff !important;
-  border: none !important;
-  border-radius: 0px !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
-  z-index: -1 !important;
+  display: none !important;
 }
 
 .zionic-hero-title .zionic-word-bottom {
