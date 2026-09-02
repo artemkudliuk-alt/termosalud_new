@@ -2094,16 +2094,15 @@ function cleanHtml(raw, pageName) {
         <div class="container linfopress-hero-container">
           <div class="linfopress-hero-content-box">
             
-            <!-- Cloud Brand Outline Icon -->
+            <!-- Cloud Brand Outline Icon (Enlarged) -->
             <div class="linfopress-cloud-brand-icon">
-              <svg width="68" height="42" viewBox="0 0 68 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 38H52C59.732 38 66 31.732 66 24C66 16.7118 60.4439 10.7226 53.3087 10.0678C51.3411 4.24949 45.6601 0 39 0C30.4079 0 23.3276 6.72622 22.8465 15.2017C21.3197 14.4328 19.5934 14 17.7778 14C11.2731 14 6 19.2731 6 25.7778C6 26.6896 6.10372 27.5772 6.29969 28.4307C2.62886 29.8052 0 33.3768 0 37.5556C0 37.8048 0.00947094 38.0519 0.028169 38.2965" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg width="96" height="58" viewBox="0 0 68 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 38H52C59.732 38 66 31.732 66 24C66 16.7118 60.4439 10.7226 53.3087 10.0678C51.3411 4.24949 45.6601 0 39 0C30.4079 0 23.3276 6.72622 22.8465 15.2017C21.3197 14.4328 19.5934 14 17.7778 14C11.2731 14 6 19.2731 6 25.7778C6 26.6896 6.10372 27.5772 6.29969 28.4307C2.62886 29.8052 0 33.3768 0 37.5556C0 37.8048 0.00947094 38.0519 0.028169 38.2965" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
 
             <h1 class="linfopress-official-hero-title">
               <span class="hero-word-primary">ТОЧНІСТЬ</span>
-              <span class="hero-yellow-bar"></span>
               <span class="hero-word-secondary">КОМФОРТ</span>
             </h1>
 
@@ -2119,24 +2118,6 @@ function cleanHtml(raw, pageName) {
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                 <span>ВІДЕО-ДЕМОНСТРАЦІЯ</span>
               </button>
-            </div>
-
-            <!-- Trust Bar / Key Specs -->
-            <div class="linfopress-hero-trust-bar">
-              <div class="hero-trust-item">
-                <span class="hero-trust-metric">24</span>
-                <span class="hero-trust-label">Камери з косим перекриттям</span>
-              </div>
-              <div class="hero-trust-divider"></div>
-              <div class="hero-trust-item">
-                <span class="hero-trust-metric">100%</span>
-                <span class="hero-trust-label">Автономний сеанс Hands-Free</span>
-              </div>
-              <div class="hero-trust-divider"></div>
-              <div class="hero-trust-item">
-                <span class="hero-trust-metric">4</span>
-                <span class="hero-trust-label">Клінічні цикли компресії</span>
-              </div>
             </div>
           </div>
         </div>

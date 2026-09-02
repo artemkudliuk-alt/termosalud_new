@@ -7591,11 +7591,13 @@ footer {
 }
 
 .linfopress-cloud-brand-icon {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .linfopress-cloud-brand-icon svg {
   display: block;
+  width: 96px;
+  height: 58px;
   opacity: 0.95;
 }
 
@@ -7603,11 +7605,12 @@ footer {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   color: #ffffff !important;
   text-transform: uppercase;
-  margin: 0 0 20px 0 !important;
+  margin: 0 0 24px 0 !important;
   line-height: 1.05 !important;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 4px;
 }
 
 .linfopress-official-hero-title .hero-word-primary {
@@ -7615,15 +7618,6 @@ footer {
   font-weight: 900;
   letter-spacing: -0.5px;
   color: #ffffff;
-}
-
-.linfopress-official-hero-title .hero-yellow-bar {
-  display: block;
-  width: 130px;
-  height: 5px;
-  background: #d4e036;
-  margin: 10px 0 12px 0;
-  box-shadow: 0 0 16px rgba(212, 224, 54, 0.4);
 }
 
 .linfopress-official-hero-title .hero-word-secondary {
@@ -7649,7 +7643,7 @@ footer {
   font-size: clamp(15px, 1.3vw, 16.5px);
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
-  margin: 0 0 32px 0;
+  margin: 0 0 36px 0;
   max-width: 540px;
 }
 
@@ -7658,7 +7652,6 @@ footer {
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
-  margin-bottom: 40px;
 }
 
 .linfopress-btn-pill-white {
@@ -7683,11 +7676,11 @@ footer {
 }
 
 .linfopress-btn-pill-white:hover {
-  background: #d4e036;
-  border-color: #d4e036;
+  background: #e2e8f0;
+  border-color: #cbd5e1;
   color: #060709 !important;
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(212, 224, 54, 0.35);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
 }
 
 .linfopress-btn-ghost-dark {
@@ -7711,64 +7704,10 @@ footer {
 }
 
 .linfopress-btn-ghost-dark:hover {
-  background: rgba(255, 255, 255, 0.18);
-  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #ffffff !important;
   transform: translateY(-2px);
-}
-
-.linfopress-hero-trust-bar {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding-top: 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
-}
-
-.linfopress-hero-trust-bar .hero-trust-item {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.linfopress-hero-trust-bar .hero-trust-metric {
-  font-family: var(--active-heading-font), 'Montserrat', sans-serif;
-  font-size: 24px;
-  font-weight: 900;
-  color: #d4e036;
-  line-height: 1;
-}
-
-@media (max-width: 768px) {
-  .linfopress-hero-trust-bar {
-    justify-content: space-around !important;
-    gap: 8px !important;
-    width: 100% !important;
-    background: rgba(6, 7, 9, 0.75) !important;
-    backdrop-filter: blur(10px) !important;
-    padding: 16px 12px !important;
-    border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  }
-
-  .linfopress-hero-trust-bar .hero-trust-metric {
-    font-size: 20px !important;
-  }
-
-  .linfopress-hero-trust-bar .hero-trust-label {
-    font-size: 10.5px !important;
-  }
-}
-
-.linfopress-hero-trust-bar .hero-trust-label {
-  font-size: 12px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.72);
-  line-height: 1.3;
-}
-
-.linfopress-hero-trust-bar .hero-trust-divider {
-  width: 1px;
-  height: 32px;
-  background: rgba(255, 255, 255, 0.15);
 }
 
 /* 3. Linfopress Tech Suit Section (4-column Grid) */
