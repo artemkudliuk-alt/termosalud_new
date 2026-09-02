@@ -5858,7 +5858,7 @@ footer {
 
 .manipula-photo-frame {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 0px !important;
   overflow: hidden;
   box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
   border: 1px solid #e2e8f0;
@@ -6030,7 +6030,7 @@ footer {
   padding: 16px 20px;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 12px;
+  border-radius: 0px !important;
   transition: all 0.25s ease;
 }
 
@@ -6047,7 +6047,7 @@ footer {
   color: #54595f;
   background: #ffffff;
   padding: 4px 10px;
-  border-radius: 4px;
+  border-radius: 0px !important;
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -6071,6 +6071,7 @@ footer {
   background: #ffffff !important;
   color: #1e232e !important;
   border: 1.5px solid #ffffff !important;
+  border-radius: 0px !important;
 }
 
 .zionic-btn-light:hover {
@@ -6086,7 +6087,7 @@ footer {
 .accuracy-cinema-player-box {
   width: 100%;
   position: relative;
-  border-radius: 20px;
+  border-radius: 0px !important;
   overflow: hidden;
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -6124,14 +6125,14 @@ footer {
   border-radius: 50%;
   background: rgba(15, 23, 42, 0.85);
   backdrop-filter: blur(12px);
-  border: 2px solid #38bdf8;
+  border: 2px solid #ffffff;
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease, background 0.3s ease;
   z-index: 2;
-  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .play-pulse-ring {
@@ -6139,7 +6140,7 @@ footer {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 2px solid rgba(56, 189, 248, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.4);
   animation: playPulseAnim 2s infinite ease-out;
 }
 
@@ -6150,7 +6151,7 @@ footer {
 
 .accuracy-cinema-player-box:hover .play-pulse-core {
   transform: scale(1.12);
-  background: #38bdf8;
+  background: #ffffff;
   color: #0f172a;
 }
 
@@ -6165,7 +6166,7 @@ footer {
   background: rgba(15, 23, 42, 0.75);
   backdrop-filter: blur(10px);
   padding: 10px 16px;
-  border-radius: 12px;
+  border-radius: 0px !important;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -6176,7 +6177,7 @@ footer {
   font-weight: 900;
   letter-spacing: 0.8px;
   padding: 3px 8px;
-  border-radius: 4px;
+  border-radius: 0px !important;
   text-transform: uppercase;
 }
 
@@ -6446,7 +6447,7 @@ footer {
 
 .result-card {
   background: #ffffff;
-  border-radius: 20px;
+  border-radius: 0px !important;
   overflow: hidden;
   border: 1px solid rgba(226, 232, 240, 0.8);
   box-shadow: 0 10px 30px rgba(0,0,0,0.03);
@@ -6464,6 +6465,7 @@ footer {
   height: 250px;
   overflow: hidden;
   background: #f1f5f9;
+  border-radius: 0px !important;
 }
 
 .result-img-wrap img {
@@ -6471,6 +6473,7 @@ footer {
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 0px !important;
 }
 
 .result-meta {
@@ -6500,7 +6503,7 @@ footer {
   font-size: 11.5px;
   font-weight: 700;
   padding: 4px 10px;
-  border-radius: 4px;
+  border-radius: 0px !important;
 }
 
 .badge-area {
@@ -6509,7 +6512,7 @@ footer {
   font-size: 11.5px;
   font-weight: 600;
   padding: 4px 10px;
-  border-radius: 4px;
+  border-radius: 0px !important;
 }
 
 /* ==========================================================================
@@ -6584,7 +6587,7 @@ footer {
   font-size: 14.5px !important;
   font-weight: 700 !important;
   padding: 11px 22px;
-  border-radius: 999px;
+  border-radius: 0px !important;
   cursor: pointer;
   transition: all 0.25s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
@@ -6613,7 +6616,7 @@ footer {
 .knowledge-item {
   background: #f8fafc;
   border: 1px solid rgba(226, 232, 240, 0.95);
-  border-radius: 18px;
+  border-radius: 0px !important;
   overflow: hidden;
   transition: all 0.25s ease;
 }
@@ -6653,11 +6656,12 @@ footer {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: 16px !important;
   font-weight: 900 !important;
-  color: #0284c7;
-  background: rgba(2, 132, 199, 0.08);
+  color: #1e232e !important;
+  background: #f1f5f9 !important;
+  border: 1px solid #e2e8f0 !important;
   width: 42px;
   height: 42px;
-  border-radius: 12px;
+  border-radius: 0px !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6677,7 +6681,7 @@ footer {
   font-weight: 800 !important;
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  color: #0284c7;
+  color: #54595f !important;
 }
 
 .knowledge-item-title {
@@ -6692,7 +6696,7 @@ footer {
 .knowledge-action-icon {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 0px !important;
   background: #f1f5f9;
   color: #0f172a;
   display: flex;
@@ -6816,7 +6820,7 @@ footer {
 .zionic-direct-call-box {
   background: #ffffff;
   border: 1px solid rgba(226, 232, 240, 0.9);
-  border-radius: 16px;
+  border-radius: 0px !important;
   padding: 16px 20px;
   display: flex;
   align-items: center;
@@ -6828,7 +6832,7 @@ footer {
 .direct-call-icon {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
+  border-radius: 0px !important;
   background: rgba(15, 23, 42, 0.05);
   color: #0f172a;
   display: flex;
@@ -6860,7 +6864,7 @@ footer {
 }
 
 .direct-call-number:hover {
-  color: #0284c7;
+  color: #54595f;
 }
 
 @media (max-width: 991px) {
@@ -6937,6 +6941,46 @@ footer {
     width: 100%;
     justify-content: center;
   }
+}
+
+/* ==========================================================================
+   GLOBAL SWISS SHARP ARCHITECTURAL CORNERS FOR ZIONIC PAGE
+   ========================================================================== */
+.zionic-main-page-wrapper .manipula-photo-frame,
+.zionic-main-page-wrapper .manipula-swiss-item,
+.zionic-main-page-wrapper .swiss-item-bullet,
+.zionic-main-page-wrapper .accuracy-highlight-item,
+.zionic-main-page-wrapper .accuracy-hl-bullet,
+.zionic-main-page-wrapper .accuracy-cinema-player-box,
+.zionic-main-page-wrapper .accuracy-video-thumb,
+.zionic-main-page-wrapper .accuracy-video-bottom-bar,
+.zionic-main-page-wrapper .video-live-pill,
+.zionic-main-page-wrapper .kol-card,
+.zionic-main-page-wrapper .result-card,
+.zionic-main-page-wrapper .result-img-wrap,
+.zionic-main-page-wrapper .result-img-wrap img,
+.zionic-main-page-wrapper .badge-sessions,
+.zionic-main-page-wrapper .badge-area,
+.zionic-main-page-wrapper .knowledge-filter-btn,
+.zionic-main-page-wrapper .knowledge-item,
+.zionic-main-page-wrapper .knowledge-num,
+.zionic-main-page-wrapper .knowledge-action-icon,
+.zionic-main-page-wrapper .zionic-direct-call-box,
+.zionic-main-page-wrapper .direct-call-icon,
+.zionic-main-page-wrapper .presentation-media-card,
+.zionic-main-page-wrapper .presentation-form-card,
+.zionic-main-page-wrapper .format-switcher,
+.zionic-main-page-wrapper .format-btn,
+.zionic-main-page-wrapper .field-group input,
+.zionic-main-page-wrapper .field-group select,
+.zionic-main-page-wrapper .messenger-radio-pill,
+.zionic-main-page-wrapper .presentation-submit-btn,
+.zionic-main-page-wrapper .trust-check-icon,
+.zionic-main-page-wrapper .stage-live-badge,
+.zionic-main-page-wrapper .pillar-vertical-card,
+.zionic-main-page-wrapper .pillar-step-number,
+.zionic-main-page-wrapper .zionic-sharp-contact-btn {
+  border-radius: 0px !important;
 }
 
 
