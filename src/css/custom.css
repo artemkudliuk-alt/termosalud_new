@@ -10969,6 +10969,10 @@ html, body {
   pointer-events: none;
 }
 
+.horizontal-img-layer.layer-after {
+  z-index: 1;
+}
+
 .horizontal-img-layer.layer-before {
   clip-path: inset(0 50% 0 0); /* Left half shown initially */
   z-index: 2;
@@ -10987,7 +10991,8 @@ html, body {
   letter-spacing: 1.5px !important;
   padding: 5px 14px !important;
   border-radius: 0 !important;
-  z-index: 4;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
 }
 
 .tag-left {
