@@ -2027,17 +2027,17 @@ function cleanHtml(raw, pageName) {
 
           <div class="faq-accordion-grid">
             <div class="faq-accordion-card active">
-              <button type="button" class="faq-toggle-header">
+              <button type="button" class="faq-toggle-header" onclick="toggleZionicFaq(this)">
                 <span class="faq-q-text">Скільки процедур потрібно для помітного результату?</span>
                 <span class="faq-icon">−</span>
               </button>
-              <div class="faq-answer-body" style="display: block;">
+              <div class="faq-answer-body">
                 <p>Перші зміни у тонусі шкіри та зняття набряклості помітні вже після 1–2 сеансів. Стійкий виражений ефект зменшення об'ємів та лікування целюліту досягається за курс із 6–10 процедур з інтервалом 2–3 рази на тиждень.</p>
               </div>
             </div>
 
             <div class="faq-accordion-card">
-              <button type="button" class="faq-toggle-header">
+              <button type="button" class="faq-toggle-header" onclick="toggleZionicFaq(this)">
                 <span class="faq-q-text">Чи відчуває пацієнт біль під час процедури ZIONIC?</span>
                 <span class="faq-icon">+</span>
               </button>
@@ -2047,7 +2047,7 @@ function cleanHtml(raw, pageName) {
             </div>
 
             <div class="faq-accordion-card">
-              <button type="button" class="faq-toggle-header">
+              <button type="button" class="faq-toggle-header" onclick="toggleZionicFaq(this)">
                 <span class="faq-q-text">Які витратні матеріали потрібні для роботи?</span>
                 <span class="faq-icon">+</span>
               </button>
@@ -2057,7 +2057,7 @@ function cleanHtml(raw, pageName) {
             </div>
 
             <div class="faq-accordion-card">
-              <button type="button" class="faq-toggle-header">
+              <button type="button" class="faq-toggle-header" onclick="toggleZionicFaq(this)">
                 <span class="faq-q-text">Які умови гарантії та сервісного обслуговування?</span>
                 <span class="faq-icon">+</span>
               </button>

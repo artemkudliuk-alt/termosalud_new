@@ -1,3 +1,27 @@
+
+// Global Bulletproof FAQ Accordion Handler for Zionic & Linfopress
+window.toggleZionicFaq = function(btn) {
+  const card = btn.closest('.faq-accordion-card');
+  if (!card) return;
+  const isCurrentlyActive = card.classList.contains('active');
+  const icon = card.querySelector('.faq-icon');
+
+  if (isCurrentlyActive) {
+    card.classList.remove('active');
+    if (icon) icon.textContent = '+';
+  } else {
+    card.classList.add('active');
+    if (icon) icon.textContent = '−';
+  }
+};
+
+document.addEventListener('click', function(e) {
+  const btn = e.target.closest('.faq-toggle-header');
+  if (btn && !btn.hasAttribute('onclick')) {
+    window.toggleZionicFaq(btn);
+  }
+});
+
 /**
  * Termosalud Interactive JavaScript Modules
  */
@@ -1218,18 +1242,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // FAQ Accordion click
+  // FAQ Accordion click - Precision Toggle
   document.querySelectorAll('.faq-toggle-header').forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
       const card = btn.closest('.faq-accordion-card');
-      const body = card.querySelector('.faq-answer-body');
-      const icon = btn.querySelector('.faq-icon');
-      if (body.style.display === 'none' || !body.style.display) {
-        body.style.display = 'block';
-        if (icon) icon.textContent = '−';
-      } else {
-        body.style.display = 'none';
+      if (!card) return;
+      const isCurrentlyActive = card.classList.contains('active');
+      const icon = card.querySelector('.faq-icon');
+
+      if (isCurrentlyActive) {
+        card.classList.remove('active');
         if (icon) icon.textContent = '+';
+      } else {
+        card.classList.add('active');
+        if (icon) icon.textContent = '−';
       }
     });
   });
