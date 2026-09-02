@@ -1,4 +1,26 @@
 
+// SEO Article Toggle
+window.toggleZionicSeoArticle = function() {
+  const content = document.getElementById('seoExpandableContent');
+  const btn = document.getElementById('seoToggleBtn');
+  if (!content || !btn) return;
+  
+  const isExpanded = content.classList.contains('expanded');
+  const label = btn.querySelector('.seo-btn-label');
+  const arrow = btn.querySelector('.seo-btn-arrow');
+  
+  if (isExpanded) {
+    content.classList.remove('expanded');
+    if (label) label.textContent = 'Читати повністю';
+    if (arrow) arrow.textContent = '∨';
+  } else {
+    content.classList.add('expanded');
+    if (label) label.textContent = 'Приховати';
+    if (arrow) arrow.textContent = '∧';
+  }
+};
+
+
 // Global Bulletproof FAQ Accordion Handler for Zionic & Linfopress
 window.toggleZionicFaq = function(btn) {
   const card = btn.closest('.faq-accordion-card');
