@@ -11923,15 +11923,24 @@ html, body {
   gap: 12px !important;
 }
 
+
 .guarantees-head-title {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 17px !important;
   font-weight: 900 !important;
   color: #111111 !important;
-  margin: 0 0 4px 0 !important;
+  margin: 10px 0 12px 0 !important;
+  padding-left: 68px !important; /* Exactly aligned with the headings in the text */
   letter-spacing: 0.5px !important;
   text-transform: uppercase !important;
 }
+
+@media (max-width: 576px) {
+  .guarantees-head-title {
+    padding-left: 0 !important;
+  }
+}
+
 
 .guarantee-item-row {
   display: flex !important;
