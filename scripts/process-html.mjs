@@ -2078,6 +2078,7 @@ function cleanHtml(raw, pageName) {
             <!-- Q1 -->
             <div class="faq-accordion-card active">
               <button type="button" class="faq-toggle-header" onclick="toggleZionicFaq(this)">
+                <span class="faq-q-index">01</span>
                 <span class="faq-q-text">Скільки процедур потрібно для видимого результату?</span>
                 <span class="faq-icon">−</span>
               </button>
@@ -2089,6 +2090,7 @@ function cleanHtml(raw, pageName) {
             <!-- Q2 -->
             <div class="faq-accordion-card">
               <button type="button" class="faq-toggle-header" onclick="toggleZionicFaq(this)">
+                <span class="faq-q-index">02</span>
                 <span class="faq-q-text">Чи комфортна процедура і які відчуття підчас неї?</span>
                 <span class="faq-icon">+</span>
               </button>
@@ -2100,6 +2102,7 @@ function cleanHtml(raw, pageName) {
             <!-- Q3 -->
             <div class="faq-accordion-card">
               <button type="button" class="faq-toggle-header" onclick="toggleZionicFaq(this)">
+                <span class="faq-q-index">03</span>
                 <span class="faq-q-text">Чи потрібен час на відновлення після сеансу?</span>
                 <span class="faq-icon">+</span>
               </button>
@@ -2111,6 +2114,7 @@ function cleanHtml(raw, pageName) {
             <!-- Q4 -->
             <div class="faq-accordion-card">
               <button type="button" class="faq-toggle-header" onclick="toggleZionicFaq(this)">
+                <span class="faq-q-index">04</span>
                 <span class="faq-q-text">Для яких зон тіла найчастіше застосовується ZIONIC?</span>
                 <span class="faq-icon">+</span>
               </button>
@@ -2122,6 +2126,7 @@ function cleanHtml(raw, pageName) {
             <!-- Q5 -->
             <div class="faq-accordion-card">
               <button type="button" class="faq-toggle-header" onclick="toggleZionicFaq(this)">
+                <span class="faq-q-index">05</span>
                 <span class="faq-q-text">Чим ZIONIC відрізняється від інших косметологічних рішень?</span>
                 <span class="faq-icon">+</span>
               </button>
