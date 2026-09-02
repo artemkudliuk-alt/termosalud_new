@@ -3,7 +3,7 @@
  */
 import '../css/custom.css';
 
-document.addEventListener('DOMContentLoaded', () => {
+function initAll() {
   initPopupModals();
   initTechVideoModals();
   initFaqAccordions();
@@ -24,7 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
   initZionicScrollManipula();
   initZionicCurtainSlide();
   initZionicVideoModal();
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initAll);
+} else {
+  initAll();
+}
 
 /**
  * 1. Popup Modals (Liquid Glass Lead capture / Presentation request)
@@ -1014,66 +1020,70 @@ function initZionicCurtainSlide() {
  * 19. Zionic Video Lightbox Modal & Smooth Scroll to Application Form
  */
 function initZionicVideoModal() {
-  const modal = document.getElementById('zionic_video_modal');
-  const openBtn = document.getElementById('open_zionic_video_btn');
-  const container = document.getElementById('zionic_modal_video_container');
+  function openVideo(videoId) {
+    const modal = document.getElementById('zionic_video_modal');
+    const container = document.getElementById('zionic_modal_video_container');
+    if (!modal || !container) return;
 
-  if (modal && openBtn && container) {
-    function openVideo() {
-      const videoId = openBtn.getAttribute('data-video-id') || 'CYsDii-PZ7s';
-      container.innerHTML = `
-        <iframe 
-          src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-      `;
-      modal.style.display = 'flex';
-      modal.classList.add('is-active', 'show');
-      document.documentElement.classList.add('modal-open-lock');
-      document.body.classList.add('modal-open-lock');
-    }
-
-    function closeVideo() {
-      container.innerHTML = '';
-      modal.style.display = 'none';
-      modal.classList.remove('is-active', 'show');
-      document.documentElement.classList.remove('modal-open-lock');
-      document.body.classList.remove('modal-open-lock');
-    }
-
-    openBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      openVideo();
-    });
-
-    modal.addEventListener('click', (e) => {
-      if (e.target.closest('[data-close-video-modal]') || e.target === modal) {
-        closeVideo();
-      }
-    });
-
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && modal.classList.contains('show')) {
-        closeVideo();
-      }
-    });
+    container.innerHTML = `
+      <iframe 
+        src="https://www.youtube.com/embed/${videoId || 'CYsDii-PZ7s'}?autoplay=1&rel=0&modestbranding=1" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    `;
+    modal.style.display = 'flex';
+    modal.classList.add('is-active', 'show');
+    document.documentElement.classList.add('modal-open-lock');
+    document.body.classList.add('modal-open-lock');
   }
 
-  // Smooth scroll handler for hero action button leading to application form
+  function closeVideo() {
+    const modal = document.getElementById('zionic_video_modal');
+    const container = document.getElementById('zionic_modal_video_container');
+    if (container) container.innerHTML = '';
+    if (modal) {
+      modal.style.display = 'none';
+      modal.classList.remove('is-active', 'show');
+    }
+    document.documentElement.classList.remove('modal-open-lock');
+    document.body.classList.remove('modal-open-lock');
+  }
+
   document.addEventListener('click', (e) => {
-    const link = e.target.closest('a[href="#application"]');
-    if (!link) return;
-    const formCard = document.querySelector('.presentation-form-card') || document.getElementById('application');
-    if (formCard) {
+    const openTrigger = e.target.closest('#open_zionic_video_btn, [data-open-zionic-video]');
+    if (openTrigger) {
       e.preventDefault();
-      formCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      setTimeout(() => {
-        const firstInput = formCard.querySelector('input[name="name"], #zionic_stage_name');
-        if (firstInput) {
-          firstInput.focus({ preventScroll: true });
-        }
-      }, 700);
+      const videoId = openTrigger.getAttribute('data-video-id') || 'CYsDii-PZ7s';
+      openVideo(videoId);
+      return;
+    }
+
+    if (e.target.closest('[data-close-video-modal]') || e.target.id === 'zionic_video_modal') {
+      closeVideo();
+      return;
+    }
+
+    const appLink = e.target.closest('a[href="#application"]');
+    if (appLink) {
+      const formCard = document.querySelector('.presentation-form-card') || document.getElementById('application');
+      if (formCard) {
+        e.preventDefault();
+        formCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        setTimeout(() => {
+          const firstInput = formCard.querySelector('input[name="name"], #zionic_stage_name');
+          if (firstInput) {
+            firstInput.focus({ preventScroll: true });
+          }
+        }, 700);
+      }
+    }
+  });
+
+  window.addEventListener('keydown', (e) => {
+    const modal = document.getElementById('zionic_video_modal');
+    if (e.key === 'Escape' && modal && modal.classList.contains('show')) {
+      closeVideo();
     }
   });
 }
