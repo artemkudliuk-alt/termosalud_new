@@ -1882,56 +1882,139 @@ function cleanHtml(raw, pageName) {
       </section>
 
       <!-- 9. TEST-DRIVE APPLICATION FORM (EXACT LUXURY MAIN PAGE FORM) -->
-      <section class="zionic-booking-section" id="test-drive">
+            <!-- 9. TEST-DRIVE APPLICATION STAGE (EXACT LUXURY MAIN PAGE ARCHITECTURE) -->
+      <section class="application-presentation zionic-test-drive-custom-stage" id="test-drive">
         <div class="container">
-          <div class="luxury-booking-card">
-            <div class="row align-items-center">
-              <div class="col-lg-5">
-                <div class="booking-text-wrap">
-                  <span class="luxury-kicker">БЕЗКОШТОВНИЙ ТЕСТ-ДРАЙВ</span>
-                  <h2 class="booking-title">Замовте презентацію ZIONIC у вашу клініку</h2>
-                  <p class="booking-desc">
-                    Ми привеземо апарат ZIONIC безпосередньо у ваш медичний центр або салон краси, проведемо демонстрацію на ваших пацієнтах та навчимо персонал.
-                  </p>
-                  <div class="booking-trust-pills">
-                    <div class="trust-pill"><span class="pill-check">✓</span><span>0 ₴ за виїзд і доставку</span></div>
-                    <div class="trust-pill"><span class="pill-check">✓</span><span>Тест на реальних клієнтах</span></div>
-                    <div class="trust-pill"><span class="pill-check">✓</span><span>Без зобов'язань покупки</span></div>
+          <div class="presentation-header">
+            <span class="luxury-kicker">ТЕСТ-ДРАЙВ ТА ПРЕЗЕНТАЦІЯ</span>
+            <h2 class="section-main-title">Замовте виїзний тест-драйв ZIONIC</h2>
+            <p class="section-main-sub">Оцініть можливості та результативність апарату ZIONIC безпосередньо у вашій клініці або в нашому шоурумі</p>
+          </div>
+
+          <div class="presentation-stage-grid">
+            <!-- Left Column: Visual Media Card with Photo & Trust Highlights -->
+            <div class="presentation-visual-col">
+              <div class="presentation-photo-frame">
+                <img src="/photo_form.png?v=1787685047" class="presentation-showcase-img" alt="Zionic Test Drive Presentation">
+                <div class="presentation-photo-overlay"></div>
+                <div class="presentation-floating-tag">
+                  <span class="live-pulse-dot"></span>
+                  <span>Безкоштовний тест-драйв для клінік</span>
+                </div>
+              </div>
+              
+              <div class="presentation-trust-features">
+                <div class="trust-feature-item">
+                  <span class="trust-icon">✓</span>
+                  <div>
+                    <strong>Безкоштовний виїзд та доставка (0 ₴)</strong>
+                    <span>Привеземо апарат ZIONIC та проведемо тест на ваших пацієнтах</span>
+                  </div>
+                </div>
+                <div class="trust-feature-item">
+                  <span class="trust-icon">✓</span>
+                  <div>
+                    <strong>Розрахунок фінансової окупності</strong>
+                    <span>Персональний бізнес-план повернення інвестицій за 3–5 місяців</span>
+                  </div>
+                </div>
+                <div class="trust-feature-item">
+                  <span class="trust-icon">✓</span>
+                  <div>
+                    <strong>Навчання лікарів та сертифікація</strong>
+                    <span>Постановка руки та протоколи від сертифікованого лікаря TermoSalud</span>
+                  </div>
+                </div>
+                <div class="trust-feature-item">
+                  <span class="trust-icon">✓</span>
+                  <div>
+                    <strong>Без жодних зобов'язань покупки</strong>
+                    <span>Ви приймаєте рішення лише після оцінки реальних результатів</span>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="col-lg-7">
-                <form class="luxury-booking-form" onsubmit="event.preventDefault(); alert('Дякуємо! Ваша заявка прийнята. Наш методист зв\'яжеться з вами.');">
+            <!-- Right Column: Open High-Converting Booking Form -->
+            <div class="presentation-form-col">
+              <div class="presentation-form-card">
+                <div class="form-card-header">
+                  <h3 class="form-card-title">Заявка на виїзний тест-драйв</h3>
+                  <p class="form-card-subtitle">Заповніть форму, і наш менеджер узгодить з вами зручний день та формат тестування</p>
+                </div>
+
+                <!-- Format Switcher: Clinic vs Showroom -->
+                <div class="format-switcher-wrap">
+                  <span class="format-label">Формат тестування:</span>
+                  <div class="format-switcher">
+                    <button type="button" class="format-tab-btn active" data-format="clinic">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg>
+                      <span>У вашій клініці (Виїзд)</span>
+                    </button>
+                    <button type="button" class="format-tab-btn" data-format="showroom">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></svg>
+                      <span>Шоурум (Київ)</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Open Form Inputs -->
+                <form class="presentation-open-form" onsubmit="event.preventDefault(); alert('Дякуємо! Ваша заявка прийнята. Наш менеджер зв\'яжеться з вами найближчим часом.');">
+                  <div class="form-group-item">
+                    <label class="form-label-text" for="zionic_pres_name">Ваше ім'я та посада</label>
+                    <div class="input-with-icon">
+                      <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="7.5" r="4.5" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></circle><path d="M4.5 20C4.5 16 8 14 12 14C16 14 19.5 16 19.5 20" stroke-width="1.8" stroke-linecap="round"></path></svg>
+                      <input type="text" id="zionic_pres_name" placeholder="Наприклад: Олена, головний лікар" required class="luxury-form-input">
+                    </div>
+                  </div>
+
                   <div class="form-row-2col">
-                    <div class="form-input-group">
-                      <label>Ваше ім'я та посада</label>
-                      <input type="text" placeholder="Наприклад: Олена, головний лікар" required>
+                    <div class="form-group-item">
+                      <label class="form-label-text" for="zionic_pres_phone">Телефон</label>
+                      <div class="input-with-icon">
+                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="6" y="2" width="12" height="20" rx="3" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></rect><circle cx="12" cy="18" r="1" fill="currentColor"></circle><path d="M10 5H14" stroke-width="1.5" stroke-linecap="round"></path></svg>
+                        <input type="tel" id="zionic_pres_phone" placeholder="+380" required class="luxury-form-input">
+                      </div>
                     </div>
-                    <div class="form-input-group">
-                      <label>Телефон</label>
-                      <input type="tel" placeholder="+380" required>
-                    </div>
-                  </div>
-
-                  <div class="form-input-group">
-                    <label>Місто та назва клініки</label>
-                    <input type="text" placeholder="Київ, Клініка естетичної медицини" required>
-                  </div>
-
-                  <div class="form-input-group">
-                    <label>Зручний месенджер для зв'язку</label>
-                    <div class="messenger-selector-row">
-                      <label class="msg-choice active"><input type="radio" name="zionic_msg" value="WhatsApp" checked><span>WhatsApp</span></label>
-                      <label class="msg-choice"><input type="radio" name="zionic_msg" value="Telegram"><span>Telegram</span></label>
-                      <label class="msg-choice"><input type="radio" name="zionic_msg" value="Viber"><span>Viber</span></label>
+                    <div class="form-group-item">
+                      <label class="form-label-text" for="zionic_pres_city">Місто та клініка</label>
+                      <div class="input-with-icon">
+                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></path><circle cx="12" cy="10" r="3" stroke-width="1.5"></circle></svg>
+                        <input type="text" id="zionic_pres_city" placeholder="Київ, Клініка естетики" required class="luxury-form-input">
+                      </div>
                     </div>
                   </div>
 
-                  <button type="submit" class="luxury-submit-btn">
+                  <!-- Messenger Selection -->
+                  <div class="form-group-item">
+                    <label class="form-label-text">Зручний месенджер для зв'язку</label>
+                    <div class="messenger-pills-row">
+                      <label class="messenger-pill active">
+                        <input type="radio" name="zionic_messenger" value="WhatsApp" checked class="messenger-radio">
+                        <span class="messenger-pill-dot dot-emerald"></span>
+                        <span>WhatsApp</span>
+                      </label>
+                      <label class="messenger-pill">
+                        <input type="radio" name="zionic_messenger" value="Telegram" class="messenger-radio">
+                        <span class="messenger-pill-dot dot-cyan"></span>
+                        <span>Telegram</span>
+                      </label>
+                      <label class="messenger-pill">
+                        <input type="radio" name="zionic_messenger" value="Viber" class="messenger-radio">
+                        <span class="messenger-pill-dot dot-purple"></span>
+                        <span>Viber</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="submit-presentation-btn">
                     <span>ЗАБРОНЮВАТИ ВИЇЗНИЙ ТЕСТ-ДРАЙВ</span>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                   </button>
+
+                  <p class="form-privacy-note">
+                    🔒 Натискаючи кнопку, ви даєте згоду на обробку персональних даних відповідно до політики конфіденційності.
+                  </p>
                 </form>
               </div>
             </div>

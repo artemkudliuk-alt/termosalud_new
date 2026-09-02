@@ -11822,3 +11822,37 @@ html, body {
   border-color: #ffffff;
   transform: translateY(-2px);
 }
+
+
+/* ==========================================================================
+   ZIONIC TEST-DRIVE CUSTOM STAGE (EXACT MAIN PAGE ARCHITECTURE)
+   ========================================================================== */
+.zionic-test-drive-custom-stage {
+  position: relative;
+  z-index: 18;
+  background: #f4f4f5;
+  padding: 110px 0;
+  border-top: 1px solid #e4e4e7;
+  border-bottom: 1px solid #e4e4e7;
+}
+
+.zionic-test-drive-custom-stage .presentation-stage-grid {
+  display: grid;
+  grid-template-columns: 46% 54%;
+  gap: 36px;
+  align-items: stretch;
+}
+
+@media (max-width: 991px) {
+  .zionic-test-drive-custom-stage .presentation-stage-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.zionic-test-drive-custom-stage .presentation-form-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
