@@ -235,18 +235,47 @@ function initFaqAccordions() {
     `;
   });
 
-  // Zionic editorial text toggle
+  // Zionic Unified Knowledge Hub Accordion Toggle
   document.addEventListener('click', (e) => {
-    const toggleBtn = e.target.closest('#toggle-zionic-info-btn');
-    if (!toggleBtn) return;
-    const moreInfo = document.getElementById('zionic-more-info');
-    if (moreInfo) {
-      const isOpen = moreInfo.classList.toggle('open');
-      const textSpan = toggleBtn.querySelector('.toggle-text');
-      const icon = toggleBtn.querySelector('.toggle-icon');
-      if (textSpan) textSpan.textContent = isOpen ? 'Згорнути опис' : 'Читати повний опис технології';
-      if (icon) icon.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+    const trigger = e.target.closest('.knowledge-trigger');
+    if (!trigger) return;
+    const item = trigger.closest('.knowledge-item');
+    if (!item) return;
+    const isOpen = item.classList.contains('active');
+    const body = item.querySelector('.knowledge-body');
+
+    if (isOpen) {
+      item.classList.remove('active');
+      trigger.setAttribute('aria-expanded', 'false');
+      if (body) body.style.display = 'none';
+    } else {
+      item.classList.add('active');
+      trigger.setAttribute('aria-expanded', 'true');
+      if (body) body.style.display = 'block';
     }
+  });
+
+  // Knowledge Hub Category Filter Tabs
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.knowledge-filter-btn');
+    if (!btn) return;
+    const bar = btn.closest('.knowledge-filter-bar');
+    if (!bar) return;
+    bar.querySelectorAll('.knowledge-filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.getAttribute('data-filter') || 'all';
+    const card = btn.closest('.zionic-unified-knowledge-card');
+    if (!card) return;
+
+    card.querySelectorAll('.knowledge-item').forEach((item) => {
+      const cat = item.getAttribute('data-category');
+      if (filter === 'all' || cat === filter) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
   });
 
   // Global format switcher delegation

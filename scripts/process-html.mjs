@@ -1677,116 +1677,165 @@ function cleanHtml(raw, pageName) {
         </div>
       </section>
 
-      <!-- 8. ZIONIC COMPREHENSIVE INFORMATION & FAQ HUB (SCREEN 1) -->
-      <section class="zionic-info-hub-section" id="faq">
+      <!-- 8. ZIONIC COMPREHENSIVE UNIFIED KNOWLEDGE & FAQ HUB (SCREEN 1) -->
+      <section class="zionic-unified-info-section" id="faq">
         <div class="container">
-          <div class="zionic-section-header">
-            <span class="section-kicker">ЕКСПЕРТИЗА ТА ПРАКТИКА</span>
-            <h2>Все про апарат ZIONIC: технології, інвестиції та окупність</h2>
-            <p>Комплексні відповіді на ключові питання для керівників клінік, лікарів-косметологів та інвесторів</p>
+          
+          <!-- Section Header -->
+          <div class="zionic-unified-header">
+            <span class="unified-kicker">ЕКСПЕРТИЗА ТА ПРАКТИКА</span>
+            <h2 class="unified-title">Все, що потрібно знати про ZIONIC</h2>
+            <p class="unified-subtitle">
+              Технологічні переваги, фінансова модель для клінік, клінічні протоколи та відповіді на головні запитання
+            </p>
           </div>
 
-          <div class="zionic-info-hub-grid">
+          <!-- Single Unified Knowledge Container -->
+          <div class="zionic-unified-knowledge-card">
             
-            <!-- Left Column: Editorial & Investment Value -->
-            <div class="zionic-editorial-card">
-              <div class="editorial-card-badge">
-                <span class="badge-pulse-dot"></span>
-                <span>Експертний аналіз окупності</span>
-              </div>
-              <h3 class="editorial-card-title">Купити апарат Zionic — інвестувати в передове обладнання для корекції фігури</h3>
+            <!-- Category Quick-Nav Filters -->
+            <div class="knowledge-filter-bar">
+              <button type="button" class="knowledge-filter-btn active" data-filter="all">Всі теми</button>
+              <button type="button" class="knowledge-filter-btn" data-filter="business">Інвестиції та окупність</button>
+              <button type="button" class="knowledge-filter-btn" data-filter="tech">Технологія Rollactive</button>
+              <button type="button" class="knowledge-filter-btn" data-filter="clinical">Протоколи та безпека</button>
+              <button type="button" class="knowledge-filter-btn" data-filter="training">Навчання лікарів</button>
+            </div>
+
+            <!-- Unified Accordion Items List -->
+            <div class="knowledge-accordion-list">
               
-              <p class="editorial-card-lead">
-                У сучасній естетичній медицині найбільший попит мають неінвазивні методики, що поєднують високу результативність, безболісність та відсутність реабілітації. Рішення купити апарат Zionic відкриває для вашої клініки можливість запропонувати пацієнтам комплексний підхід до моделювання контурів тіла.
-              </p>
-
-              <div class="editorial-metrics-row">
-                <div class="editorial-metric-box">
-                  <span class="metric-value">3–6</span>
-                  <span class="metric-label">місяців окупність</span>
-                </div>
-                <div class="editorial-metric-box">
-                  <span class="metric-value">85%+</span>
-                  <span class="metric-label">чиста маржинальність</span>
-                </div>
-                <div class="editorial-metric-box">
-                  <span class="metric-value">0 грн</span>
-                  <span class="metric-label">витратні матеріали</span>
-                </div>
-              </div>
-
-              <!-- Expandable Detailed Section -->
-              <div class="editorial-details-collapse" id="zionic-more-info">
-                <div class="editorial-details-content">
-                  <div class="editorial-sub-block">
-                    <h4>Технологія Rollactive RF: синергія для ідеального результату</h4>
-                    <p>
-                      В одній ергономічній маніпулі об'єднані два найпотужніші фактори: монополярний резистивний RF 470 кГц та інтелектуальний ротаційний масаж MARP (до 3 млн імпульсів/сек). Синергія розм'якшує фіброзний целюліт, дренує тканини та забезпечує потужний ліфтинг шкіри.
-                    </p>
+              <!-- Item 1: Business & Investment -->
+              <div class="knowledge-item active" data-category="business">
+                <button type="button" class="knowledge-trigger" aria-expanded="true">
+                  <div class="knowledge-left-meta">
+                    <span class="knowledge-num">01</span>
+                    <div class="knowledge-title-wrap">
+                      <span class="knowledge-cat-tag">Рентабельність та інвестиції</span>
+                      <h3 class="knowledge-item-title">Купити апарат Zionic: чому це вигідна інвестиція для клініки?</h3>
+                    </div>
                   </div>
-                  <div class="editorial-sub-block">
-                    <h4>Рентабельність та абсолютна безпека</h4>
+                  <div class="knowledge-action-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19" class="icon-v"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  </div>
+                </button>
+                <div class="knowledge-body" style="display: block;">
+                  <div class="knowledge-body-inner">
                     <p>
-                      Інтегрована система датчиків постійно моніторить температуру та силу притискання в режимі реального часу, виключаючи будь-які ризики опіків чи дискомфорту для пацієнта.
+                      У сучасній естетичній медицині найбільший попит мають неінвазивні методики, що поєднують високу результативність, комфорт та повну відсутність періоду реабілітації. Рішення купити апарат Zionic відкриває для вашої клініки можливість запропонувати преміальний комплексний догляд за фігурою.
+                    </p>
+                    <p>
+                      <strong>Швидка окупність та маржинальність:</strong> середній термін повернення інвестицій становить від 3 до 6 місяців при навантаженні всього 3–4 пацієнти на день. Завдяки повній відсутності дорогих одноразових витратних матеріалів (картриджів чи одноразових насадок), чиста маржинальність кожної процедури перевищує 85%, забезпечуючи стабільний та прогнозований прибуток вашого медичного центру.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <button type="button" class="editorial-toggle-btn" id="toggle-zionic-info-btn">
-                <span class="toggle-text">Читати повний опис технології</span>
-                <svg class="toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-              </button>
-            </div>
-
-            <!-- Right Column: Interactive FAQ Accordion -->
-            <div class="zionic-faq-card">
-              <h3 class="faq-card-heading">Часті питання лікарів та керівників</h3>
-              
-              <div class="faq-accordion-list">
-                <div class="faq-item active">
-                  <button class="faq-question-btn" aria-expanded="true">
-                    <span>Скільки процедур потрібно для стійкого результату?</span>
-                    <span class="faq-arrow">−</span>
-                  </button>
-                  <div class="faq-answer" style="display: block;">
-                    <p>Перші відчутні результати (покращення тургору шкіри, зменшення набряклості) помітні вже після 1–2 сеансів. Для стійкого та вираженого ефекту моделювання фігури та зменшення целюліту рекомендовано курс із 6–10 процедур з інтервалом 2–3 дні.</p>
+              <!-- Item 2: Rollactive RF Technology -->
+              <div class="knowledge-item" data-category="tech">
+                <button type="button" class="knowledge-trigger" aria-expanded="false">
+                  <div class="knowledge-left-meta">
+                    <span class="knowledge-num">02</span>
+                    <div class="knowledge-title-wrap">
+                      <span class="knowledge-cat-tag">Унікальна технологія</span>
+                      <h3 class="knowledge-item-title">У чому полягає синергія запатентованої технології Rollactive RF?</h3>
+                    </div>
                   </div>
-                </div>
-
-                <div class="faq-item">
-                  <button class="faq-question-btn" aria-expanded="false">
-                    <span>Чи болюча процедура для пацієнта?</span>
-                    <span class="faq-arrow">+</span>
-                  </button>
-                  <div class="faq-answer">
-                    <p>Процедура абсолютно безболісна та комфортна. Пацієнт відчуває приємне глибоке тепло від резистивного RF та розслабляючий масаж обертовими сферами. Завдяки сенсорному контролю виключено ризик перегріву або опіку.</p>
+                  <div class="knowledge-action-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19" class="icon-v"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
                   </div>
-                </div>
-
-                <div class="faq-item">
-                  <button class="faq-question-btn" aria-expanded="false">
-                    <span>Яка окупність апарата для клініки?</span>
-                    <span class="faq-arrow">+</span>
-                  </button>
-                  <div class="faq-answer">
-                    <p>Середній термін окупності становить від 3 до 6 місяців при навантаженні 3–4 пацієнти на день. Відсутність дорогих одноразових витратних матеріалів робить маржинальність кожної процедури понад 85%.</p>
-                  </div>
-                </div>
-
-                <div class="faq-item">
-                  <button class="faq-question-btn" aria-expanded="false">
-                    <span>Чи проводиться навчання персоналу клініки?</span>
-                    <span class="faq-arrow">+</span>
-                  </button>
-                  <div class="faq-answer">
-                    <p>Так! При купівлі або оренді апарата сертифікований лікар-тренер Termosalud проводить повне очне практичне навчання спеціалістів вашої клініки з видачею офіційних сертифікатів та протоколів процедур.</p>
+                </button>
+                <div class="knowledge-body">
+                  <div class="knowledge-body-inner">
+                    <p>
+                      Секрет найвищої клінічної ефективності ZIONIC полягає в одночасному поєднанні двох взаємопідсилюючих факторів в одній ергономічній маніпулі Deep Action:
+                    </p>
+                    <ul class="knowledge-bullet-list">
+                      <li><strong>Монополярний резистивний RF 470 кГц:</strong> глибока теплова дія проникає в дерму та гіподерму, стимулюючи неоколагенез, ущільнюючи розтягнуту шкіру та розщеплюючи жирові клітини.</li>
+                      <li><strong>Інтелектуальний ротаційний масаж MARP:</strong> активна механічна ротація з частотою до 3 000 000 імпульсів за секунду активує кровообіг, розм'якшує фіброзні спайки та забезпечує глибокий медичний лімфодренаж.</li>
+                    </ul>
+                    <p>
+                      Така дія не просто тимчасово зменшує об'єми за рахунок виведення води, а структурно реконструює тканини та ефективно лікує навіть застарілі форми фіброзного целюліту (стадії I, II та III).
+                    </p>
                   </div>
                 </div>
               </div>
-            </div>
 
+              <!-- Item 3: Clinical Protocol & Sessions -->
+              <div class="knowledge-item" data-category="clinical">
+                <button type="button" class="knowledge-trigger" aria-expanded="false">
+                  <div class="knowledge-left-meta">
+                    <span class="knowledge-num">03</span>
+                    <div class="knowledge-title-wrap">
+                      <span class="knowledge-cat-tag">Клінічний протокол</span>
+                      <h3 class="knowledge-item-title">Скільки процедур потрібно для отримання стійкого результату?</h3>
+                    </div>
+                  </div>
+                  <div class="knowledge-action-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19" class="icon-v"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  </div>
+                </button>
+                <div class="knowledge-body">
+                  <div class="knowledge-body-inner">
+                    <p>
+                      Перші відчутні зміни — підвищення пружності шкіри, зняття набряків та відчуття легкості в тілі — помітні вже після перших 1–2 сеансів. Для досягнення вираженого стійкого ефекту моделювання контурів, зменшення об'ємів живота і стегон та усунення целюліту рекомендовано стандартний курс із 6–10 процедур з періодичністю 2–3 рази на тиждень. Отриманий результат зберігається тривалий час за умови дотримання підтримуючих сеансів раз на 1–2 місяці.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4: Painlessness & Safety -->
+              <div class="knowledge-item" data-category="clinical">
+                <button type="button" class="knowledge-trigger" aria-expanded="false">
+                  <div class="knowledge-left-meta">
+                    <span class="knowledge-num">04</span>
+                    <div class="knowledge-title-wrap">
+                      <span class="knowledge-cat-tag">Комфорт та безпека</span>
+                      <h3 class="knowledge-item-title">Чи болюча процедура та як влаштована система захисту пацієнта?</h3>
+                    </div>
+                  </div>
+                  <div class="knowledge-action-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19" class="icon-v"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  </div>
+                </button>
+                <div class="knowledge-body">
+                  <div class="knowledge-body-inner">
+                    <p>
+                      Процедура на апараті ZIONIC є на 100% безболісною та атравматичною. Пацієнт відчуває лише приємне глибоке зігрівання та розслаблюючу дію масажних сфер.
+                    </p>
+                    <p>
+                      <strong>Безпека медичного рівня:</strong> маніпула обладнана вбудованими сенсорами безперервного моніторингу температури та датчиками тиску притискання. Якщо температура шкіри досягає заданого порогу безпеки, система автоматично модулює потужність RF, повністю виключаючи ризик перегріву або опіку.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 5: Training & Certification -->
+              <div class="knowledge-item" data-category="training">
+                <button type="button" class="knowledge-trigger" aria-expanded="false">
+                  <div class="knowledge-left-meta">
+                    <span class="knowledge-num">05</span>
+                    <div class="knowledge-title-wrap">
+                      <span class="knowledge-cat-tag">Навчання та сервіс</span>
+                      <h3 class="knowledge-item-title">Чи проводиться офіційне навчання та сертифікація лікарів клініки?</h3>
+                    </div>
+                  </div>
+                  <div class="knowledge-action-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19" class="icon-v"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  </div>
+                </button>
+                <div class="knowledge-body">
+                  <div class="knowledge-body-inner">
+                    <p>
+                      Так, обов'язково! При купівлі або оренді апарата ZIONIC сертифікований лікар-методист компанії Termosalud Україна проводить повне очне практичне навчання спеціалістів вашої клініки. Програма включає постановку руки лікаря, вивчення індивідуальних клінічних протоколів для різних зон тіла та видачу іменних сертифікатів міжнародного зразка.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
+
         </div>
       </section>
 
