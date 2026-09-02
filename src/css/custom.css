@@ -10616,3 +10616,22 @@ html, body {
 .trust-pill .trust-check {
   color: #ffffff !important;
 }
+
+
+/* ==========================================================================
+   REMOVE GRADIENT / SHADOW OVERLAY ON MANIPULA SECTION
+   ========================================================================== */
+.zionic-manipula-fullscreen-section,
+.zionic-manipula-section,
+.manipula-fullscreen-wrapper,
+.manipula-fullscreen-img {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+  filter: none !important;
+}
+
+.zionic-tech-bento-section {
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
