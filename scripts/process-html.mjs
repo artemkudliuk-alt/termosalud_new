@@ -791,7 +791,6 @@ function cleanHtml(raw, pageName) {
       <section class="application-presentation zionic-partner-stage-section" id="test-drive">
         <div class="container-fluid px-lg-5">
           <div class="section-header-centered">
-            <span class="luxury-kicker">ОФІЦІЙНЕ ПАРТНЕРСТВО ТА ПРЕЗЕНТАЦІЯ</span>
             <h2 class="section-main-title">Стати партнером TermoSalud</h2>
             <p class="section-main-sub">
               При замовленні апарата ZIONIC ви отримуєте професійне навчання, маркетинговий запуск та надійну сервісну підтримку
@@ -1450,7 +1449,6 @@ function cleanHtml(raw, pageName) {
       <section class="zionic-tech-bento-section" id="technologies">
         <div class="container">
           <div class="section-header-centered">
-            <span class="luxury-kicker">ІННОВАЦІЙНА СИНЕРГІЯ</span>
             <h2 class="section-main-title">Технології ZIONIC</h2>
             <p class="section-main-sub">
               Поєднання двох потужних енергій в одній маніпулі під контролем вбудованого інтелекту
@@ -1523,7 +1521,6 @@ function cleanHtml(raw, pageName) {
       <section class="zionic-ba-section" id="results">
         <div class="container-fluid px-lg-5">
           <div class="section-header-centered">
-            <span class="luxury-kicker">КЛІНІЧНИЙ ПРОТОКОЛ</span>
             <h2 class="section-main-title">Клінічно підтверджені результати</h2>
             <p class="section-main-sub">
               Оберіть протокол терапії праворуч та рухайте повзунок вліво-вправо для оцінки реальних результатів «До» та «Після»
@@ -1642,7 +1639,6 @@ function cleanHtml(raw, pageName) {
       <section class="zionic-procedure-showcase-section" id="procedure-experience">
         <div class="container-fluid px-lg-5">
           <div class="section-header-centered">
-            <span class="luxury-kicker">ПРОТОКОЛ ТА ЕКСПЕРТНИЙ ДОСВІД</span>
             <h2 class="section-main-title">Процедура ZIONIC</h2>
             <p class="section-main-sub">
               ZIONIC — новий рівень апаратного моделювання тіла з поєднанням глибокої діатермії та ротаційного масажу
@@ -1701,7 +1697,6 @@ function cleanHtml(raw, pageName) {
       <section class="zionic-treatments-fullscreen-section" id="reasons-treatments">
         <div class="container-fluid px-lg-5">
           <div class="section-header-centered">
-            <span class="luxury-kicker">ЕФЕКТИВНІСТЬ ТА ТЕХНОЛОГІЯ</span>
             <h2 class="section-main-title">5 причин чому Zionic кращий апарат для контурного моделювання тіла</h2>
             <p class="section-main-sub">
               ZIONIC поєднує RF-нагрів і глибоку стимуляцію для точної корекції фігури. Інтелектуальний контроль температури та адаптивна дія забезпечують зменшення жиру, підтягування тканин і покращення мікроциркуляції без болю та реабілітації.
@@ -1718,7 +1713,6 @@ function cleanHtml(raw, pageName) {
       <section class="zionic-matrix-section" id="indications">
         <div class="container-fluid px-lg-5">
           <div class="section-header-centered">
-            <span class="luxury-kicker">КЛІНІЧНІ РЕКОМЕНДАЦІЇ ТА БЕЗПЕКА</span>
             <h2 class="section-main-title">Показання та протипоказання</h2>
             <p class="section-main-sub">
               Повний спектр терапевтичного застосування та медичні критерії безпеки пацієнта
@@ -1869,7 +1863,6 @@ function cleanHtml(raw, pageName) {
       <section class="application-presentation zionic-partner-stage-section" id="test-drive">
         <div class="container-fluid px-lg-5">
           <div class="presentation-header text-center">
-            <span class="luxury-kicker">ОФІЦІЙНЕ ПАРТНЕРСТВО ТА ПРЕЗЕНТАЦІЯ</span>
             <h2 class="section-main-title">Стати партнером TermoSalud</h2>
             <p class="section-main-sub">
               При замовленні апарата ZIONIC ви отримуєте професійне навчання, маркетинговий запуск та надійну сервісну підтримку
@@ -2021,7 +2014,6 @@ function cleanHtml(raw, pageName) {
       <section class="zionic-doctors-section" id="doctors">
         <div class="container">
           <div class="section-header-centered">
-            <span class="luxury-kicker">ЕКСПЕРТИ ТА КЛІНІЧНИЙ ДОСВІД</span>
             <h2 class="section-main-title">Лікарі довіряють ZIONIC у щоденній практиці</h2>
             <p class="section-main-sub">Косметологи, дерматологи та керівники клінік Європи вже обрали ZIONIC як надійний інструмент для моделювання тіла. Їхні відгуки це найкраще підтвердження ефективності.</p>
           </div>
@@ -2078,7 +2070,6 @@ function cleanHtml(raw, pageName) {
       <section class="zionic-faq-section" id="faq">
         <div class="container">
           <div class="section-header-centered">
-            <span class="luxury-kicker">ВІДПОВІДІ НА ЗАПИТАННЯ</span>
             <h2 class="section-main-title">Питання та відповіді</h2>
             <p class="section-main-sub">Отримайте відповіді на поширені запитання про Zionic та про те, як ця система може змінити вашу практику</p>
           </div>
@@ -2146,7 +2137,6 @@ function cleanHtml(raw, pageName) {
       <section class="zionic-certificates-section" id="certificates">
         <div class="container">
           <div class="section-header-centered">
-            <span class="luxury-kicker">ОФІЦІЙНА ДОКУМЕНТАЦІЯ</span>
             <h2 class="section-main-title">Документи та сертифікати</h2>
             <p class="section-main-sub">Офіційне підтвердження безпеки, відповідності міжнародним стандартам якості та реєстрація в МОЗ України</p>
           </div>
