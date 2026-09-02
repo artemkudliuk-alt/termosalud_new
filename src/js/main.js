@@ -234,6 +234,31 @@ function initFaqAccordions() {
       </div>
     `;
   });
+
+  // Zionic editorial text toggle
+  document.addEventListener('click', (e) => {
+    const toggleBtn = e.target.closest('#toggle-zionic-info-btn');
+    if (!toggleBtn) return;
+    const moreInfo = document.getElementById('zionic-more-info');
+    if (moreInfo) {
+      const isOpen = moreInfo.classList.toggle('open');
+      const textSpan = toggleBtn.querySelector('.toggle-text');
+      const icon = toggleBtn.querySelector('.toggle-icon');
+      if (textSpan) textSpan.textContent = isOpen ? 'Згорнути опис' : 'Читати повний опис технології';
+      if (icon) icon.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+    }
+  });
+
+  // Global format switcher delegation
+  document.addEventListener('click', (e) => {
+    const tabBtn = e.target.closest('.format-tab-btn');
+    if (!tabBtn) return;
+    const parent = tabBtn.closest('.format-switcher');
+    if (parent) {
+      parent.querySelectorAll('.format-tab-btn').forEach(b => b.classList.remove('active'));
+      tabBtn.classList.add('active');
+    }
+  });
 }
 
 /**

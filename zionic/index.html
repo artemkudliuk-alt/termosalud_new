@@ -28,7 +28,7 @@ name="msapplication-TileImage" content="/wp-content/uploads/2026/03/favicon-opti
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Onest:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/css/custom.css?v=1788348074982">
+  <link rel="stylesheet" href="/src/css/custom.css?v=1788349014640">
   <style>
     .split-title, .split-title *, .split-panel .split-title, .split-panel h3, .split-content .split-title, .split-content h3 {
       color: #f1f5f9 !important;
@@ -455,95 +455,284 @@ class=content>
         </div>
       </section>
 
-      <!-- 8. FAQ ACCORDION -->
-      <section class="zionic-faq-section" id="faq">
+      <!-- 8. ZIONIC COMPREHENSIVE INFORMATION & FAQ HUB (SCREEN 1) -->
+      <section class="zionic-info-hub-section" id="faq">
         <div class="container">
           <div class="zionic-section-header">
-            <h2>Все, що потрібно знати про ZIONIC</h2>
+            <span class="section-kicker">ЕКСПЕРТИЗА ТА ПРАКТИКА</span>
+            <h2>Все про апарат ZIONIC: технології, інвестиції та окупність</h2>
+            <p>Комплексні відповіді на ключові питання для керівників клінік, лікарів-косметологів та інвесторів</p>
           </div>
 
-          <div class="faq-accordion-list">
-            <div class="faq-item">
-              <button class="faq-question-btn" aria-expanded="false">
-                <span>Скільки процедур потрібно для отримання стійкого результату?</span>
-                <span class="faq-arrow">+</span>
+          <div class="zionic-info-hub-grid">
+            
+            <!-- Left Column: Editorial & Investment Value -->
+            <div class="zionic-editorial-card">
+              <div class="editorial-card-badge">
+                <span class="badge-pulse-dot"></span>
+                <span>Експертний аналіз окупності</span>
+              </div>
+              <h3 class="editorial-card-title">Купити апарат Zionic — інвестувати в передове обладнання для корекції фігури</h3>
+              
+              <p class="editorial-card-lead">
+                У сучасній естетичній медицині найбільший попит мають неінвазивні методики, що поєднують високу результативність, безболісність та відсутність реабілітації. Рішення купити апарат Zionic відкриває для вашої клініки можливість запропонувати пацієнтам комплексний підхід до моделювання контурів тіла.
+              </p>
+
+              <div class="editorial-metrics-row">
+                <div class="editorial-metric-box">
+                  <span class="metric-value">3–6</span>
+                  <span class="metric-label">місяців окупність</span>
+                </div>
+                <div class="editorial-metric-box">
+                  <span class="metric-value">85%+</span>
+                  <span class="metric-label">чиста маржинальність</span>
+                </div>
+                <div class="editorial-metric-box">
+                  <span class="metric-value">0 грн</span>
+                  <span class="metric-label">витратні матеріали</span>
+                </div>
+              </div>
+
+              <!-- Expandable Detailed Section -->
+              <div class="editorial-details-collapse" id="zionic-more-info">
+                <div class="editorial-details-content">
+                  <div class="editorial-sub-block">
+                    <h4>Технологія Rollactive RF: синергія для ідеального результату</h4>
+                    <p>
+                      В одній ергономічній маніпулі об'єднані два найпотужніші фактори: монополярний резистивний RF 470 кГц та інтелектуальний ротаційний масаж MARP (до 3 млн імпульсів/сек). Синергія розм'якшує фіброзний целюліт, дренує тканини та забезпечує потужний ліфтинг шкіри.
+                    </p>
+                  </div>
+                  <div class="editorial-sub-block">
+                    <h4>Рентабельність та абсолютна безпека</h4>
+                    <p>
+                      Інтегрована система датчиків постійно моніторить температуру та силу притискання в режимі реального часу, виключаючи будь-які ризики опіків чи дискомфорту для пацієнта.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="editorial-toggle-btn" id="toggle-zionic-info-btn">
+                <span class="toggle-text">Читати повний опис технології</span>
+                <svg class="toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
               </button>
-              <div class="faq-answer">
-                <p>Перші відчутні результати (покращення тургору шкіри, зменшення набряклості) помітні вже після 1–2 сеансів. Для стійкого та вираженого ефекту моделювання фігури та зменшення целюліту рекомендовано курс із 6–10 процедур з інтервалом 2–3 дні.</p>
+            </div>
+
+            <!-- Right Column: Interactive FAQ Accordion -->
+            <div class="zionic-faq-card">
+              <h3 class="faq-card-heading">Часті питання лікарів та керівників</h3>
+              
+              <div class="faq-accordion-list">
+                <div class="faq-item active">
+                  <button class="faq-question-btn" aria-expanded="true">
+                    <span>Скільки процедур потрібно для стійкого результату?</span>
+                    <span class="faq-arrow">−</span>
+                  </button>
+                  <div class="faq-answer" style="display: block;">
+                    <p>Перші відчутні результати (покращення тургору шкіри, зменшення набряклості) помітні вже після 1–2 сеансів. Для стійкого та вираженого ефекту моделювання фігури та зменшення целюліту рекомендовано курс із 6–10 процедур з інтервалом 2–3 дні.</p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-question-btn" aria-expanded="false">
+                    <span>Чи болюча процедура для пацієнта?</span>
+                    <span class="faq-arrow">+</span>
+                  </button>
+                  <div class="faq-answer">
+                    <p>Процедура абсолютно безболісна та комфортна. Пацієнт відчуває приємне глибоке тепло від резистивного RF та розслабляючий масаж обертовими сферами. Завдяки сенсорному контролю виключено ризик перегріву або опіку.</p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-question-btn" aria-expanded="false">
+                    <span>Яка окупність апарата для клініки?</span>
+                    <span class="faq-arrow">+</span>
+                  </button>
+                  <div class="faq-answer">
+                    <p>Середній термін окупності становить від 3 до 6 місяців при навантаженні 3–4 пацієнти на день. Відсутність дорогих одноразових витратних матеріалів робить маржинальність кожної процедури понад 85%.</p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <button class="faq-question-btn" aria-expanded="false">
+                    <span>Чи проводиться навчання персоналу клініки?</span>
+                    <span class="faq-arrow">+</span>
+                  </button>
+                  <div class="faq-answer">
+                    <p>Так! При купівлі або оренді апарата сертифікований лікар-тренер Termosalud проводить повне очне практичне навчання спеціалістів вашої клініки з видачею офіційних сертифікатів та протоколів процедур.</p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="faq-item">
-              <button class="faq-question-btn" aria-expanded="false">
-                <span>Чи болюча процедура для пацієнта?</span>
-                <span class="faq-arrow">+</span>
-              </button>
-              <div class="faq-answer">
-                <p>Процедура абсолютно безболісна та комфортна. Пацієнт відчуває приємне глибоке тепло від резистивного RF та розслабляючий масаж обертовими сферами. Завдяки сенсорному контролю виключено ризик перегріву або опіку.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question-btn" aria-expanded="false">
-                <span>Яка окупність апарата для клініки?</span>
-                <span class="faq-arrow">+</span>
-              </button>
-              <div class="faq-answer">
-                <p>Середній термін окупності становить від 3 до 6 місяців при навантаженні 3–4 пацієнти на день. Відсутність дорогих одноразових витратних матеріалів робить маржинальність кожної процедури понад 85%.</p>
-              </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question-btn" aria-expanded="false">
-                <span>Чи проводиться навчання персоналу клініки?</span>
-                <span class="faq-arrow">+</span>
-              </button>
-              <div class="faq-answer">
-                <p>Так! При купівлі або оренді апарата сертифікований лікар-тренер Termosalud проводить повне очне практичне навчання спеціалістів вашої клініки з видачею офіційних сертифікатів та протоколів процедур.</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      <!-- 9. PARTNERSHIP & TEST DRIVE CTA -->
-      <section class="zionic-cta-banner-section" id="application">
+      <!-- 9. ZIONIC TEST-DRIVE APPLICATION & PRESENTATION STAGE (SCREEN 2) -->
+      <section class="application-presentation zionic-presentation-stage" id="application">
         <div class="container">
-          <div class="cta-luxury-card">
-            <div class="cta-card-content">
-              <span class="section-kicker kicker-light">ЕКСКЛЮЗИВНА ПРОПОЗИЦІЯ</span>
-              <h2>Замовте виїзний тест-драйв ZIONIC у вашу клініку</h2>
-              <p>
-                Привеземо апарат безпосередньо у вашу клініку, проведемо демонстрацію на ваших пацієнтах та розрахуємо персональну фінансову модель окупності для вашого міста.
-              </p>
-              <div class="cta-actions-row">
-                <button class="cta-white-btn" data-target="#popup_request">
-                  <span>Забронювати безкоштовний тест-драйв</span>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </button>
-                <a href="tel:+380937205277" class="cta-phone-link">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                  <span>+380 93 720 52 77</span>
-                </a>
+          <div class="presentation-header">
+            <span class="section-kicker">ТЕСТ-ДРАЙВ ТА ПРЕЗЕНТАЦІЯ</span>
+            <h2>Замовте виїзний тест-драйв ZIONIC у вашу клініку</h2>
+            <p>Оцініть можливості та результативність апарата Termosalud безпосередньо на ваших пацієнтах або в нашому демонстраційному центрі</p>
+          </div>
+
+          <!-- 2-Column Stage: Left Visual + Right Open Interactive Form -->
+          <div class="presentation-stage-grid">
+            
+            <!-- Left Column: Visual Media Card with Photo & Trust Highlights -->
+            <div class="presentation-visual-col">
+              <div class="presentation-photo-frame">
+                <img
+                  src="/photo_zionic.png"
+                  class="presentation-showcase-img"
+                  alt="Zionic Test Drive Presentation"
+                />
+                <div class="presentation-photo-overlay"></div>
+                <div class="presentation-floating-tag">
+                  <span class="live-pulse-dot"></span>
+                  <span>Ексклюзивний тест-драйв для клінік</span>
+                </div>
+              </div>
+              
+              <div class="presentation-trust-features">
+                <div class="trust-feature-item">
+                  <span class="trust-icon">✓</span>
+                  <div>
+                    <strong>Безкоштовний виїзд до вашої клініки</strong>
+                    <span>Привеземо апарат та проведемо тест безпосередньо у вашому кабінеті</span>
+                  </div>
+                </div>
+                <div class="trust-feature-item">
+                  <span class="trust-icon">✓</span>
+                  <div>
+                    <strong>Розрахунок фінансової окупності</strong>
+                    <span>Персональний бізнес-план повернення інвестицій за 3–6 місяців</span>
+                  </div>
+                </div>
+                <div class="trust-feature-item">
+                  <span class="trust-icon">✓</span>
+                  <div>
+                    <strong>Навчання лікарів та сертифікація</strong>
+                    <span>Повний супровід та авторські протоколи від сертифікованих тренерів Termosalud</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Direct Contact Box -->
+              <div class="zionic-direct-call-box">
+                <div class="direct-call-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="direct-call-info">
+                  <span class="direct-call-label">Гаряча лінія для керівників та лікарів:</span>
+                  <a href="tel:+380937205277" class="direct-call-number">+380 93 720 52 77</a>
+                </div>
               </div>
             </div>
+
+            <!-- Right Column: Open High-Converting Booking Form -->
+            <div class="presentation-form-col">
+              <div class="presentation-form-card">
+                <div class="form-card-header">
+                  <h3 class="form-card-title">Заявка на виїзний тест-драйв</h3>
+                  <p class="form-card-subtitle">Заповніть форму, і наш фахівець узгодить з вами зручний день та формат тестування</p>
+                </div>
+
+                <!-- Format Switcher: Clinic vs Showroom -->
+                <div class="format-switcher-wrap">
+                  <span class="format-label">Формат тестування:</span>
+                  <div class="format-switcher">
+                    <button type="button" class="format-tab-btn active" data-format="clinic">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 9h1M9 13h1M9 17h1M14 9h1M14 13h1M14 17h1"/></svg>
+                      <span>У вашій клініці (виїзд)</span>
+                    </button>
+                    <button type="button" class="format-tab-btn" data-format="showroom">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></svg>
+                      <span>У шоурумі (Київ)</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Main Booking Form -->
+                <form class="glass-modal-form zionic-stage-form" onsubmit="event.preventDefault(); document.querySelector('.form-success-toast')?.classList.add('show'); setTimeout(() => document.querySelector('.form-success-toast')?.classList.remove('show'), 4000);">
+                  <div class="form-group-item">
+                    <label class="form-label-text" for="zionic_stage_name">Ваше ім'я та посада</label>
+                    <div class="input-with-icon">
+                      <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="7.5" r="4.5" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></circle><path d="M4.5 20C4.5 16 8 14 12 14C16 14 19.5 16 19.5 20" stroke-width="1.8" stroke-linecap="round"></path></svg>
+                      <input type="text" id="zionic_stage_name" name="name" placeholder="Наприклад: Вікторія, головний лікар" required class="luxury-form-input">
+                    </div>
+                  </div>
+
+                  <div class="form-row-2col">
+                    <div class="form-group-item">
+                      <label class="form-label-text" for="zionic_stage_phone">Телефон</label>
+                      <div class="input-with-icon">
+                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="6" y="2" width="12" height="20" rx="3" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></rect><circle cx="12" cy="18" r="1" fill="currentColor"></circle><path d="M10 5H14" stroke-width="1.5" stroke-linecap="round"></path></svg>
+                        <input type="tel" id="zionic_stage_phone" name="phone" placeholder="+380" required class="luxury-form-input">
+                      </div>
+                    </div>
+
+                    <div class="form-group-item">
+                      <label class="form-label-text" for="zionic_stage_city">Місто / Назва клініки</label>
+                      <div class="input-with-icon">
+                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 21.5C12 21.5 19 14.5 19 9.5C19 5.5 16 2.5 12 2.5C8 2.5 5 5.5 5 9.5C5 14.5 12 21.5 12 21.5Z" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></path><circle cx="12" cy="9.5" r="2.5" stroke-width="1.6" fill="currentColor"></circle></svg>
+                        <input type="text" id="zionic_stage_city" name="city" placeholder="Київ, Клініка..." required class="luxury-form-input">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group-item">
+                    <label class="form-label-text">Зручний месенджер для підтвердження</label>
+                    <div class="messenger-pills-row">
+                      <label class="messenger-pill active">
+                        <input type="radio" name="zionic_stage_messenger" value="Whatsapp" checked class="messenger-radio">
+                        <span class="pill-dot dot-green"></span>
+                        <span>WhatsApp</span>
+                      </label>
+                      <label class="messenger-pill">
+                        <input type="radio" name="zionic_stage_messenger" value="Telegram" class="messenger-radio">
+                        <span class="pill-dot dot-blue"></span>
+                        <span>Telegram</span>
+                      </label>
+                      <label class="messenger-pill">
+                        <input type="radio" name="zionic_stage_messenger" value="Viber" class="messenger-radio">
+                        <span class="pill-dot dot-purple"></span>
+                        <span>Viber</span>
+                      </label>
+                      <label class="messenger-pill">
+                        <input type="radio" name="zionic_stage_messenger" value="Call" class="messenger-radio">
+                        <span class="pill-dot dot-dark"></span>
+                        <span>Дзвінок</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="shimmer-submit-btn">
+                    <span>Замовити безкоштовний тест-драйв</span>
+                    <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </button>
+
+                  <div class="form-trust-bullets">
+                    <div class="trust-bullet-item">
+                      <span class="bullet-check">✓</span>
+                      <span>0 грн за виїзд та доставку</span>
+                    </div>
+                    <div class="trust-bullet-item">
+                      <span class="bullet-check">✓</span>
+                      <span>Без зобов'язань купівлі</span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
     
 </div>
-<section
-class="seo_text _single_page" data-aos=fade-up data-aos-delay=200><div
-class=container><div
-class=seo_text_content><h2>Купити апарат Zionic — інвестувати в передове обладнання для корекції фігури</h2><p>У сучасній естетичній медицині найбільший попит мають неінвазивні методики, що поєднують високу результативність, безболісність та відсутність періоду реабілітації. Рішення купити апарат Zionic відкриває для вашої клініки можливість запропонувати пацієнтам саме такі процедури. Це інноваційне обладнання для корекції фігури забезпечує комплексний підхід до моделювання контурів тіла.</p><p>Унікальна концепція апарата дозволяє фахівцям ефективно працювати з локальними жировими відкладеннями, атонією шкіри та всіма формами целюліту, досягаючи стійких і помітних результатів уже після перших сеансів.</p><h3>Технологія Rollactive RF: синергія для ідеального результату</h3><p>Секрет найвищої ефективності ZIONIC полягає у використанні запатентованої технології Rollactive RF. В одній ергономічній маніпулі об&#8217;єднані два найпотужніші фактори, які взаємно посилюють дію один одного:</p><ul>
-<li><strong>Монополярний RF для тіла:</strong> Глибока резистивна діатермія проникає у тканини, забезпечуючи термічний вплив. Він стимулює вироблення колагену, забезпечуючи потужну підтяжку в&#8217;ялої шкіри та підвищення її тургору.</li>
-<li><strong>Інтелектуальний ротаційний масаж:</strong> Інтенсивний механічний вплив активізує кровообіг та клітинний метаболізм. За глибиною та інтенсивністю опрацювання це перевершує стандартний апаратний масаж для схуднення.</li></ul><p>Така синергія робить ZIONIC незамінним інструментом, коли потрібне успішне лікування фіброзного целюліту. Апарат розм&#8217;якшує щільні тканини й забезпечує глибокий медичний лімфодренаж, усуваючи застійні явища.</p><h3>Рентабельність та абсолютна безпека</h3><p>Обираючи цей передовий ротаційний масаж апарат, керівники клінік отримують надійний інструмент для стабільного збільшення прибутку. Ефективність процедур гарантує високе повернення пацієнтів.</p><ul>
-<li><strong>Швидка окупність:</strong> Висока маржинальність процедур на апараті ZIONIC забезпечує відмінні показники рентабельності. Середній термін повернення інвестицій для клініки становить від 9 місяців.</li>
-<li><strong>Інтелектуальний контроль:</strong> Інтегрована система контролю температури та тиску гарантує безпеку пацієнта, виключаючи ризики дискомфорту або перегріву тканин.</li></ul><p>Потужний апарат для RF ліфтингу тіла ZIONIC стане візитною карткою вашої клініки. Розширте спектр преміальних послуг разом із передовими технологіями. Запишіться на тест-драйв, щоб особисто переконатися в унікальних можливостях обладнання.</p></div>
-<button
-class=seo_text_btn data-more="Читати далі" data-less=Приховати>
-<span>Читати далі</span>
-</button></div></section></div></div>
+
     <!-- Modern Luxury Spanish Footer -->
     <footer class="modern-luxury-footer">
       <div class="footer-container">
