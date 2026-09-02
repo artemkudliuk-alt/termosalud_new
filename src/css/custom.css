@@ -11814,45 +11814,96 @@ html, body {
 }
 
 
+
 /* ==========================================================================
-   ZIONIC PARTNER & PRESENTATION STAGE (ORIGINAL CONTENT + LUXURY DESIGN)
+   ZIONIC PARTNER & PRESENTATION STAGE - PRECISION SPACING & LARGE TYPOGRAPHY
    ========================================================================== */
 .zionic-partner-stage-section {
-  position: relative;
-  z-index: 18;
-  background: #f4f4f5;
-  padding: 110px 0;
-  border-top: 1px solid #e4e4e7;
-  border-bottom: 1px solid #e4e4e7;
+  position: relative !important;
+  z-index: 18 !important;
+  background: #f4f4f5 !important;
+  padding: 100px 0 !important;
+  border-top: 1px solid #e4e4e7 !important;
+  border-bottom: 1px solid #e4e4e7 !important;
 }
 
+/* Header spacing */
+.zionic-partner-stage-section .presentation-header {
+  text-align: center !important;
+  max-width: 980px !important;
+  margin: 0 auto 50px auto !important;
+  padding: 0 20px !important;
+}
+
+.zionic-partner-stage-section .luxury-kicker {
+  display: inline-block !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+  color: #71717a !important;
+  text-transform: uppercase !important;
+  margin-bottom: 12px !important;
+}
+
+.zionic-partner-stage-section .section-main-title {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: clamp(36px, 3.8vw, 48px) !important;
+  font-weight: 900 !important;
+  color: #111111 !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.5px !important;
+  margin: 0 0 16px 0 !important;
+  text-transform: uppercase !important;
+}
+
+.zionic-partner-stage-section .section-main-sub {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 19px !important;
+  color: #52525b !important;
+  line-height: 1.6 !important;
+  margin: 0 auto !important;
+  max-width: 860px !important;
+}
+
+/* Grid */
 .zionic-partner-stage-section .presentation-stage-grid {
-  display: grid;
-  grid-template-columns: 48% 52%;
-  gap: 40px;
-  align-items: stretch;
-  max-width: 1440px;
-  margin: 0 auto;
+  display: grid !important;
+  grid-template-columns: 48% 52% !important;
+  gap: 36px !important;
+  align-items: stretch !important;
+  max-width: 1400px !important;
+  margin: 0 auto !important;
+  padding: 0 24px !important;
+  box-sizing: border-box !important;
 }
 
 @media (max-width: 991px) {
   .zionic-partner-stage-section .presentation-stage-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
   }
 }
 
-.presentation-photo-frame {
-  position: relative;
-  width: 100%;
-  height: 380px;
-  overflow: hidden;
-  border: 1px solid #e4e4e7;
-  background: #ffffff;
-  margin-bottom: 24px;
+/* Left Visual Column */
+.zionic-partner-stage-section .presentation-visual-col {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
 }
 
-.presentation-photo-frame .presentation-showcase-img {
+.zionic-partner-stage-section .presentation-photo-frame {
+  position: relative !important;
+  width: 100% !important;
+  height: 340px !important;
+  min-height: 340px !important;
+  overflow: hidden !important;
+  border: 1px solid #e4e4e7 !important;
+  background: #ffffff !important;
+  margin-bottom: 0 !important;
+}
+
+.zionic-partner-stage-section .presentation-photo-frame .presentation-showcase-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -11861,177 +11912,45 @@ html, body {
 }
 
 .partner-guarantees-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
 }
 
 .guarantees-head-title {
   font-family: 'Montserrat', sans-serif !important;
-  font-size: 16px !important;
+  font-size: 17px !important;
   font-weight: 900 !important;
   color: #111111 !important;
-  margin: 0 0 6px 0 !important;
+  margin: 0 0 4px 0 !important;
   letter-spacing: 0.5px !important;
   text-transform: uppercase !important;
 }
 
 .guarantee-item-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  background: #ffffff;
-  border: 1px solid #e4e4e7;
-  padding: 14px 18px;
-  border-radius: 0 !important;
-  transition: all 0.25s ease;
-}
-
-.guarantee-item-row:hover {
-  border-color: #27272a;
-  transform: translateX(4px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
-}
-
-.guarantee-num {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
-  font-weight: 900;
-  color: #111111;
-  background: #f4f4f5;
-  border: 1px solid #d4d4d8;
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.guarantee-text strong {
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  font-weight: 800;
-  color: #111111;
-  margin-bottom: 3px;
-}
-
-.guarantee-text span {
-  display: block;
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  color: #52525b;
-  line-height: 1.5;
-}
-
-.partner-card-kicker {
-  display: inline-block;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 1.5px;
-  color: #71717a;
-  margin-bottom: 8px;
-}
-
-
-/* ==========================================================================
-   ZIONIC PAGE CLEAN STACKING & FLOW (NO STICKY BLEED-THROUGH)
-   ========================================================================== */
-.zionic-official-hero {
-  position: relative !important;
-  z-index: 2 !important;
-  width: 100% !important;
-  min-height: calc(100vh - 72px) !important;
-  background: #000000 !important;
-  overflow: hidden !important;
-}
-
-.zionic-infinite-ticker-section,
-.zionic-tech-bento-section,
-.zionic-manipula-fullscreen-section,
-.zionic-ba-section,
-.zionic-procedure-showcase-section,
-.zionic-treatments-fullscreen-section,
-.zionic-matrix-section,
-.zionic-video-fullscreen-banner,
-.zionic-partner-stage-section,
-.zionic-faq-section,
-.zionic-certificates-section,
-.zionic-seo-clean-section {
-  position: relative !important;
-  z-index: 5 !important;
-  width: 100% !important;
-  background-color: #ffffff;
-}
-
-.zionic-infinite-ticker-section,
-.zionic-manipula-fullscreen-section,
-.zionic-video-fullscreen-banner {
-  background-color: #000000 !important;
-}
-
-.zionic-treatments-fullscreen-section,
-.zionic-matrix-section,
-.zionic-partner-stage-section,
-.zionic-certificates-section {
-  background-color: #f4f4f5 !important;
-}
-
-/* ==========================================================================
-   ZIONIC FAQ LUXURY STYLES
-   ========================================================================== */
-.zionic-faq-section {
-  padding: 100px 0 !important;
-  background: #ffffff !important;
-  border-top: 1px solid #e4e4e7 !important;
-}
-
-.faq-accordion-grid {
-  max-width: 900px !important;
-  margin: 0 auto !important;
   display: flex !important;
-  flex-direction: column !important;
+  align-items: flex-start !important;
   gap: 16px !important;
-}
-
-.faq-accordion-card {
   background: #ffffff !important;
   border: 1px solid #e4e4e7 !important;
+  padding: 16px 20px !important;
+  border-radius: 0 !important;
   transition: all 0.25s ease !important;
 }
 
-.faq-accordion-card.active,
-.faq-accordion-card:hover {
-  border-color: #111111 !important;
+.guarantee-item-row:hover {
+  border-color: #27272a !important;
+  transform: translateX(4px) !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05) !important;
 }
 
-.faq-toggle-header {
-  width: 100% !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  padding: 24px 28px !important;
-  background: transparent !important;
-  border: none !important;
-  text-align: left !important;
-  cursor: pointer !important;
-}
-
-.faq-q-text {
+.guarantee-num {
   font-family: 'Montserrat', sans-serif !important;
-  font-size: 17px !important;
-  font-weight: 800 !important;
+  font-size: 14px !important;
+  font-weight: 900 !important;
   color: #111111 !important;
-  line-height: 1.4 !important;
-}
-
-.faq-icon {
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 24px !important;
-  font-weight: 700 !important;
-  color: #111111 !important;
+  background: #f4f4f5 !important;
+  border: 1px solid #d4d4d8 !important;
   width: 32px !important;
   height: 32px !important;
   display: flex !important;
@@ -12040,123 +11959,175 @@ html, body {
   flex-shrink: 0 !important;
 }
 
-.faq-answer-body {
-  display: none;
-  padding: 0 28px 24px 28px !important;
-}
-
-.faq-accordion-card.active .faq-answer-body {
+.guarantee-text strong {
   display: block !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 16.5px !important;
+  font-weight: 800 !important;
+  color: #111111 !important;
+  margin-bottom: 4px !important;
 }
 
-.faq-answer-body p {
+.guarantee-text span {
+  display: block !important;
   font-family: 'Inter', sans-serif !important;
-  font-size: 15px !important;
+  font-size: 14.5px !important;
   color: #52525b !important;
-  line-height: 1.7 !important;
-  margin: 0 !important;
+  line-height: 1.55 !important;
 }
 
-/* ==========================================================================
-   ZIONIC CERTIFICATES & QUALITY STANDARDS
-   ========================================================================== */
-.zionic-certificates-section {
-  padding: 100px 0 !important;
-  background: #f4f4f5 !important;
-  border-top: 1px solid #e4e4e7 !important;
-  border-bottom: 1px solid #e4e4e7 !important;
-}
-
-.zionic-cert-cards-grid {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
-  gap: 24px !important;
-  max-width: 1300px !important;
-  margin: 0 auto !important;
-}
-
-@media (max-width: 991px) {
-  .zionic-cert-cards-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-
-@media (max-width: 576px) {
-  .zionic-cert-cards-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
-
-.zionic-cert-card {
-  background: #ffffff !important;
-  border: 1px solid #e4e4e7 !important;
-  padding: 32px 24px !important;
+/* Right Form Column - NO UNWANTED BLANK GAPS */
+.zionic-partner-stage-section .presentation-form-col {
   display: flex !important;
   flex-direction: column !important;
-  align-items: flex-start !important;
-  transition: all 0.3s ease !important;
+  height: 100% !important;
 }
 
-.zionic-cert-card:hover {
-  border-color: #111111 !important;
-  transform: translateY(-4px) !important;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06) !important;
+.zionic-partner-stage-section .presentation-form-card {
+  background: #ffffff !important;
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 0 !important;
+  padding: 36px 40px !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.04) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important; /* CRITICAL: removes huge empty gaps */
+  gap: 22px !important;
+  height: 100% !important;
+  box-sizing: border-box !important;
 }
 
-.cert-card-badge {
+.zionic-partner-stage-section .form-card-header {
+  margin-bottom: 0 !important; /* Controlled by flex gap */
+}
+
+.zionic-partner-stage-section .partner-card-kicker {
+  display: inline-block !important;
   font-family: 'Montserrat', sans-serif !important;
-  font-size: 14px !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1.5px !important;
+  color: #71717a !important;
+  text-transform: uppercase !important;
+  margin-bottom: 6px !important;
+}
+
+.zionic-partner-stage-section .form-card-title {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 28px !important;
   font-weight: 900 !important;
   color: #111111 !important;
-  background: #f4f4f5 !important;
-  border: 1px solid #d4d4d8 !important;
-  padding: 6px 14px !important;
-  margin-bottom: 20px !important;
-  letter-spacing: 1px !important;
+  margin: 0 0 10px 0 !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.3px !important;
 }
 
-.cert-card-title {
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 18px !important;
-  font-weight: 900 !important;
-  color: #111111 !important;
-  margin-bottom: 10px !important;
-}
-
-.cert-card-desc {
+.zionic-partner-stage-section .form-card-subtitle {
   font-family: 'Inter', sans-serif !important;
-  font-size: 14px !important;
+  font-size: 15.5px !important;
   color: #52525b !important;
   line-height: 1.6 !important;
   margin: 0 !important;
 }
 
-/* ==========================================================================
-   ZIONIC SEO SECTION
-   ========================================================================== */
-.zionic-seo-clean-section {
-  padding: 80px 0 !important;
-  background: #ffffff !important;
+.zionic-partner-stage-section .presentation-open-form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+  margin-top: 4px !important;
 }
 
-.seo-clean-box {
-  max-width: 1000px !important;
-  margin: 0 auto !important;
-  border-left: 3px solid #111111 !important;
-  padding-left: 28px !important;
+.zionic-partner-stage-section .form-group-item {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
 }
 
-.seo-clean-title {
+.zionic-partner-stage-section .form-label-text {
   font-family: 'Montserrat', sans-serif !important;
-  font-size: 20px !important;
+  font-size: 12.5px !important;
   font-weight: 800 !important;
   color: #111111 !important;
-  margin-bottom: 12px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
 }
 
-.seo-clean-text {
+.zionic-partner-stage-section .luxury-form-input {
   font-family: 'Inter', sans-serif !important;
-  font-size: 14px !important;
+  font-size: 15.5px !important;
+  padding: 13px 16px 13px 44px !important;
+  background: #ffffff !important;
+  border: 1px solid #d4d4d8 !important;
+  color: #111111 !important;
+  border-radius: 0 !important;
+  transition: all 0.25s ease !important;
+}
+
+.zionic-partner-stage-section .luxury-form-input:focus {
+  border-color: #111111 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(17, 17, 17, 0.1) !important;
+}
+
+.zionic-partner-stage-section .messenger-pills-row {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 10px !important;
+}
+
+.zionic-partner-stage-section .messenger-pill {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 11px 14px !important;
+  background: #ffffff !important;
+  border: 1px solid #d4d4d8 !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  color: #111111 !important;
+  cursor: pointer !important;
+  border-radius: 0 !important;
+  transition: all 0.2s ease !important;
+}
+
+.zionic-partner-stage-section .messenger-pill.active,
+.zionic-partner-stage-section .messenger-pill:hover {
+  border-color: #111111 !important;
+  background: #f4f4f5 !important;
+}
+
+.zionic-partner-stage-section .submit-presentation-btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  background: #111111 !important;
+  color: #ffffff !important;
+  border: 1px solid #111111 !important;
+  padding: 16px 28px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 900 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  border-radius: 0 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  margin-top: 6px !important;
+}
+
+.zionic-partner-stage-section .submit-presentation-btn:hover {
+  background: #ffffff !important;
+  color: #111111 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+.zionic-partner-stage-section .form-privacy-note {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 12.5px !important;
   color: #71717a !important;
-  line-height: 1.7 !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
 }
