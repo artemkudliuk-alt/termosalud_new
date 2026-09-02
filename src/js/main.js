@@ -71,7 +71,9 @@ window.toggleZionicSeoArticle = function() {
 };
 
 
-// Global Bulletproof FAQ Accordion Handler for Zionic & Linfopress
+// ==========================================================================
+// ROBUST ZIONIC FAQ ACCORDION TOGGLE
+// ==========================================================================
 window.toggleZionicFaq = function(btn) {
   const card = btn.closest('.faq-accordion-card');
   if (!card) return;
@@ -82,17 +84,20 @@ window.toggleZionicFaq = function(btn) {
     card.classList.remove('active');
     if (icon) icon.textContent = '+';
   } else {
+    // Optionally close other cards in the same grid for accordion elegance
+    const allCards = card.parentElement ? card.parentElement.querySelectorAll('.faq-accordion-card') : [];
+    allCards.forEach(c => {
+      if (c !== card) {
+        c.classList.remove('active');
+        const otherIcon = c.querySelector('.faq-icon');
+        if (otherIcon) otherIcon.textContent = '+';
+      }
+    });
+
     card.classList.add('active');
     if (icon) icon.textContent = '−';
   }
 };
-
-document.addEventListener('click', function(e) {
-  const btn = e.target.closest('.faq-toggle-header');
-  if (btn && !btn.hasAttribute('onclick')) {
-    window.toggleZionicFaq(btn);
-  }
-});
 
 /**
  * Termosalud Interactive JavaScript Modules

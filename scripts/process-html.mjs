@@ -2074,6 +2074,7 @@ function cleanHtml(raw, pageName) {
       </section>
 
       <!-- 11. FAQ ACCORDION -->
+      <!-- 11. FAQ ACCORDION -->
       <section class="zionic-faq-section" id="faq">
         <div class="container">
           <div class="section-header-centered">
