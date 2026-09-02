@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollToTop();
   initPartnersDraggableCarousel();
   initZionicScrollManipula();
+  initZionicCurtainSlide();
 });
 
 /**
@@ -919,3 +920,77 @@ function initZionicScrollManipula() {
   // Initial update
   updateZoom();
 }
+
+/**
+ * 18. Zionic Infographic to Manipula Curtain Slide Snap Transition
+ */
+function initZionicCurtainSlide() {
+  const sInfo = document.querySelector('.zionic-fullwidth-infographic-section');
+  const sManipula = document.querySelector('.zionic-manipula-section');
+  if (!sInfo || !sManipula) return;
+
+  let isSnapping = false;
+
+  window.addEventListener('wheel', (e) => {
+    if (isSnapping || window.innerWidth < 992) return;
+
+    const infoRect = sInfo.getBoundingClientRect();
+    const manipulaRect = sManipula.getBoundingClientRect();
+    const winHeight = window.innerHeight;
+
+    // Case 1: User is viewing Infographic (top near 0) and scrolls DOWN
+    if (Math.abs(infoRect.top) < 80 && e.deltaY > 15 && manipulaRect.top > winHeight * 0.35) {
+      e.preventDefault();
+      isSnapping = true;
+      const targetY = sManipula.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: targetY,
+        behavior: 'smooth'
+      });
+      setTimeout(() => {
+        isSnapping = false;
+      }, 750);
+    }
+    // Case 2: User is at the top of Manipula section and scrolls UP
+    else if (Math.abs(manipulaRect.top) < 40 && e.deltaY < -15) {
+      e.preventDefault();
+      isSnapping = true;
+      const targetY = sInfo.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: targetY,
+        behavior: 'smooth'
+      });
+      setTimeout(() => {
+        isSnapping = false;
+      }, 750);
+    }
+  }, { passive: false });
+
+  // Touch support for tablets / touch devices
+  let touchStartY = 0;
+  window.addEventListener('touchstart', (e) => {
+    if (e.touches && e.touches[0]) {
+      touchStartY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  window.addEventListener('touchmove', (e) => {
+    if (isSnapping || !touchStartY || window.innerWidth < 992) return;
+    const touchEndY = e.touches[0].clientY;
+    const diff = touchStartY - touchEndY;
+    const infoRect = sInfo.getBoundingClientRect();
+    const manipulaRect = sManipula.getBoundingClientRect();
+    const winHeight = window.innerHeight;
+
+    if (Math.abs(infoRect.top) < 60 && diff > 30 && manipulaRect.top > winHeight * 0.35) {
+      isSnapping = true;
+      const targetY = sManipula.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: targetY,
+        behavior: 'smooth'
+      });
+      setTimeout(() => { isSnapping = false; }, 750);
+    }
+  }, { passive: true });
+}
+

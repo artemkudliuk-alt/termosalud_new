@@ -5344,7 +5344,8 @@ footer {
 .zionic-main-page-wrapper {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow-x: clip;
+  overflow-y: visible;
   background: #ffffff;
 }
 
@@ -5757,7 +5758,7 @@ footer {
   }
 }
 
-/* 4. FULL-WIDTH TECHNICAL INFOGRAPHIC SECTION (FULL SCREEN FIT, NO STRETCH, NO DISTORTION) */
+/* 4. FULL-WIDTH TECHNICAL INFOGRAPHIC SECTION (STICKY CURTAIN SLIDE) */
 .zionic-fullwidth-infographic-section {
   padding: 0 !important;
   margin: 0 !important;
@@ -5769,6 +5770,18 @@ footer {
   justify-content: center;
   overflow: hidden;
   position: relative;
+}
+
+@media (min-width: 992px) {
+  .zionic-fullwidth-infographic-section {
+    position: sticky !important;
+    top: 0 !important;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+    z-index: 10 !important;
+    overflow: hidden !important;
+  }
 }
 
 .zionic-infographic-fullwidth-container {
@@ -5811,12 +5824,14 @@ footer {
   }
 }
 
-
-/* 5. MANIPULA DEEP ACTION SECTION (PREMIUM SWISS MEDICAL SPLIT) */
+/* 5. MANIPULA DEEP ACTION SECTION (SLIDES OVER INFOGRAPHIC LIKE A CURTAIN) */
 .zionic-manipula-section {
+  position: relative !important;
+  z-index: 20 !important;
   padding: 140px 0 150px 0 !important;
   background: #f8fafc;
   overflow: hidden;
+  box-shadow: 0 -25px 60px rgba(15, 23, 42, 0.08) !important;
 }
 
 .zionic-manipula-split-layout {
