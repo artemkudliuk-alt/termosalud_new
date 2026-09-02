@@ -7588,6 +7588,13 @@ footer {
 .linfopress-hero-content-box {
   max-width: 650px;
   text-align: left;
+  margin-left: 100px;
+}
+
+@media (max-width: 991px) {
+  .linfopress-hero-content-box {
+    margin-left: 0;
+  }
 }
 
 .linfopress-cloud-brand-icon {
