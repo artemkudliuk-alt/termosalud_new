@@ -1328,7 +1328,8 @@ function cleanHtml(raw, pageName) {
   // ==========================================
   if (pageName === 'zionic') {
     const modernZionicHtml = `
-      <!-- 1. ZIONIC OFFICIAL LUXURY HERO -->
+
+      <!-- 1. HERO SECTION (RESTORED EXACT ORIGINAL) -->
       <section class="zionic-official-hero">
         <div class="zionic-hero-bg-media">
           <video autoplay loop muted playsinline class="zionic-hero-bg-video" preload="auto">
@@ -1340,7 +1341,7 @@ function cleanHtml(raw, pageName) {
         <div class="container zionic-hero-container">
           <div class="zionic-hero-content">
             <div class="zionic-hero-logo-wrap">
-              <img src="/wp-content/uploads/zionic_official/Zionic-Aesthetic-logotipo.png" alt="Zionic Aesthetic" class="zionic-official-logo">
+              <img src="/wp-content/uploads/zionic_official/Zionic-Aesthetic-logotipo.png" alt="Zionic Aesthetic" class="zionic-official-logo" width="220" height="48">
             </div>
 
             <h1 class="zionic-hero-title">
@@ -1353,12 +1354,12 @@ function cleanHtml(raw, pageName) {
             </p>
 
             <div class="zionic-hero-actions">
-              <a href="#application" class="zionic-primary-btn">
+              <a href="#test-drive" class="zionic-primary-btn">
                 <span>Замовити тест-драйв у клініку</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
               <button type="button" class="zionic-secondary-btn" id="open_zionic_video_btn" data-video-id="CYsDii-PZ7s">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                 <span>Відео-демонстрація</span>
               </button>
             </div>
@@ -1366,377 +1367,440 @@ function cleanHtml(raw, pageName) {
         </div>
       </section>
 
-<div id="advantages-icons" class="advantages"><div class="container"><div class="advantages-video-bg">
-<video autoplay="" loop="" muted="" playsinline="" poster="/wp-content/uploads/2026/04/video-placeholder-optimized.png"><source src="/wp-content/themes/zionic/assets/images/presentation-video.mp4" type="video/mp4"></video><div class="advantages-video-content"><ul>
-<li data-aos="fade-up" data-aos-delay="0" data-aos-anchor="#advantages-icons" data-aos-anchor-placement="top-center" class="aos-init"><div>
-<img src="/wp-content/uploads/2026/03/icons8-highway_arrows-1.svg" alt="Максимальний ліфтинг - фото" title="Максимальний ліфтинг"></div><div>Максимальний ліфтинг</div><div>Найглибший медичний монополярний RF у поєднанні з ротаційним масажем під контролем інтелекту машини</div>
-</li>
-<li data-aos="fade-up" data-aos-delay="50" data-aos-anchor="#advantages-icons" data-aos-anchor-placement="top-center" class="aos-init"><div>
-<img src="/wp-content/uploads/2026/03/icons8-working_mom-1.svg" alt="Персоналізація процедури - фото" title="Персоналізація процедури"></div><div>Персоналізація процедури</div><div>Інтелектуальний вибір індивідуальної програми пацієнта для автоматичного формування оптимальної терапевтичної дози</div>
-</li>
-<li data-aos="fade-up" data-aos-delay="100" data-aos-anchor="#advantages-icons" data-aos-anchor-placement="top-center" class="aos-init"><div>
-<img src="/wp-content/uploads/2026/03/icons8-venus_de_milo-1.svg" alt="Ефективне лікування целюліту - фото" title="Ефективне лікування целюліту"></div><div>Ефективне лікування целюліту</div><div>Єдиний апарат, що ефективно працює з пацієнтами з едематозним фіброзним станом</div>
-</li>
-<li data-aos="fade-up" data-aos-delay="150" data-aos-anchor="#advantages-icons" data-aos-anchor-placement="top-center" class="aos-init"><div>
-<img src="/wp-content/uploads/2026/03/icons8-waist-1.svg" alt="Приємне моделювання фігури - фото" title="Приємне моделювання фігури"></div><div>Приємне моделювання фігури</div><div>Найкомфортніший серед усіх існуючих апаратів для корекції силуету завдяки контролю процедури інтелектом машини</div>
-</li>
-<li data-aos="fade-up" data-aos-delay="200" data-aos-anchor="#advantages-icons" data-aos-anchor-placement="top-center" class="aos-init"><div>
-<img src="/wp-content/uploads/2026/03/icons8-trust-1.svg" alt="Відновлення після пластичних операцій - фото" title="Відновлення після пластичних операцій"></div><div>Відновлення після пластичних операцій</div><div>Спеціалізовані програми реабілітації та підтяжки шкіри після ліпосакцій</div>
-</li></ul></div></div></div></div>
+      <!-- 2. 5-PILL HORIZONTAL LUXURY ADVANTAGES (MAIN PAGE & LINFOPRESS STYLE) -->
+      <section class="zionic-pillars-bar" id="advantages-icons">
+        <div class="container-fluid px-lg-5">
+          <div class="zionic-pillars-inner">
+            <div class="zionic-pillars-bg-video">
+              <video autoplay loop muted playsinline poster="/wp-content/uploads/2026/04/video-placeholder-optimized.png">
+                <source src="/wp-content/themes/zionic/assets/images/presentation-video.mp4" type="video/mp4">
+              </video>
+              <div class="zionic-pillars-overlay"></div>
+            </div>
 
-<div class="technologies fade-up" id="technologies"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-anchor="#technologies" data-aos-anchor-placement="top-bottom">Технології ZIONIC</h2><div class="technologies-top-text aos-init" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="#technologies" data-aos-anchor-placement="top-bottom">Унікальність ZIONIC в тому, що вперше в одній платформі моделювання тіла об’єднані найглибша резистивна діатермія і ротаційний масаж, що змінює напрямок руху в залежності від руху лімфи під контролем інтелекту машини.</div><div class="technologies-row row"><div class="col-lg-6"><div class="technologies-item aos-init" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="#technologies" data-aos-anchor-placement="top-bottom"><div class="ti-video-block"><video muted="" loop="" playsinline="" preload="none" poster="/wp-content/uploads/2026/03/zio-1.mp4_snapshot_00.02.383-optimized.jpg">
-<source src="/wp-content/uploads/2026/03/zio-1.mp4" type="video/mp4"></video></div><div class="ti-name">Медичний монополярний резистивний RF</div><div class="ti-descr"><p>Глибока діатермія резистивного типу призводить до інтенсивної стимуляції клітин, розширення судин та підвищення внутрішньої температури, активуючи процеси природної регенерації організму.</p><p>Вона мобілізує електросигнали, що існують у м’яких тканинах у вигляді електролітів, посилює метаболізм, сприяє васкуляризації, ревіталізує гіпотрофічні тканини, покращує оксигенацію та циркуляторну активність.</p><p>Технологія ZIONIC походить з класичної медицини, де частота 470 кГц використовується для:</p><ol role="list">
-<li>Зняття больового синдрому</li>
-<li>Поліпшення діапазону рухів</li>
-<li>Прискорення регенерація тканин</li>
-<li>Післяопераційної реабілітації</li></ol></div></div></div><div class="col-lg-6"><div class="technologies-item aos-init" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="#technologies" data-aos-anchor-placement="top-bottom"><div class="ti-video-block"><video muted="" loop="" playsinline="" preload="none" poster="/wp-content/uploads/2026/03/zio-2.mp4_snapshot_00.01.087-optimized.jpg">
-<source src="/wp-content/uploads/2026/03/zio-2.mp4" type="video/mp4"></video></div><div class="ti-name">Інтелектуальний ротаційний масаж</div><div class="ti-descr"><p>Режими ротаційного масажу спеціально розроблені для потужного медичного лімфодренажа. Зміна напрямку обертання спрямовує рух лімфи.</p><p>Ротаційна механічна дія маніпули MARP створює глибокий лімфодренажний ефект, активуючи мікроциркуляцію та прискорюючи виведення міжклітинної рідини. Зміна напрямку обертання роликів сприяє відтоку лімфи у фізіологічному напрямку, зменшує набряклість і покращує трофіку тканин.</p><p>Синхронізація механічного масажу з монополярною RF-енергією підсилює проникнення тепла в дерму та підшкірну клітковину, що сприяє ремоделюванню колагену й еластину.</p></div></div></div></div></div></div>
+            <div class="zionic-pillars-grid">
+              <div class="pillar-pill-item">
+                <div class="pillar-icon-box">
+                  <img src="/wp-content/uploads/2026/03/icons8-highway_arrows-1.svg" alt="Максимальний ліфтинг" width="36" height="36">
+                </div>
+                <h4 class="pillar-title">Максимальний ліфтинг</h4>
+                <p class="pillar-desc">Найглибший монополярний RF у поєднанні з ротаційним масажем MARP</p>
+              </div>
 
-<script>document.addEventListener('DOMContentLoaded', () => {
-            const items = document.querySelectorAll('.technologies-item');
-            const isMobile = () => window.innerWidth <= 991;
-            items.forEach(item => {
-                const video = item.querySelector('video');
-                const playOnHover = () => {
-                    item.addEventListener('mouseenter', () => {
-                        if (!isMobile()) {
-                        video.play();
-                        }
-                    });
-                    item.addEventListener('mouseleave', () => {
-                        if (!isMobile()) {
-                            video.pause();
-                            video.currentTime = 0;
-                        }
-                    });
-                };
-                playOnHover();
-                const observer = new IntersectionObserver(entries => {
-                    entries.forEach(entry => {
-                        if (isMobile()) {
-                            if (entry.isIntersecting) {
-                                video.play();
-                            } else {
-                                video.pause();
-                                video.currentTime = 0;
-                            }
-                        }
-                    });
-                }, {
-                    threshold: 0.5
-                });
-                observer.observe(item);
-            });
-        });</script>
+              <div class="pillar-pill-item">
+                <div class="pillar-icon-box">
+                  <img src="/wp-content/uploads/2026/03/icons8-working_mom-1.svg" alt="Персоналізація" width="36" height="36">
+                </div>
+                <h4 class="pillar-title">Персоналізація</h4>
+                <p class="pillar-desc">Автоматичний підбір індивідуальної програми під кожного пацієнта</p>
+              </div>
 
-<div class="tech_zionic section--padding" id="manipula"><div class="container">
-<img class="tech_zionic_pc aos-init" src="/wp-content/uploads/2026/03/tech-optimized.png" data-aos="fade-up" data-aos-anchor="#manipula" data-aos-anchor-placement="top-bottom" alt="Оснащення інтелектуальної маніпули ZIONIC - фото" title="Оснащення інтелектуальної маніпули ZIONIC"><div class="tech_zionic_mob"><h2 class="big-title aos-init aos-animate" data-aos="fade-up" data-aos-delay="50">
-Оснащення інтелектуальної маніпули ZIONIC</h2><div class="beast-top-text aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-Маніпула ZIONIC поєднує інтенсивну механічну дію з глибоким RF-прогріванням. Оснащена сенсорами тиску й температури для контролю параметрів у реальному часі. Двигун MARP з 3 режимами обертання та 10 швидкостями адаптується до різних зон тіла, забезпечуючи ефективність і комфорт пацієнта.</div><div class="tech_zionic_list">
-<img src="/wp-content/uploads/2026/03/tech-mob-1-optimized.png" data-aos="fade-up" data-aos-delay="50" alt=" - фото" title="" class="aos-init aos-animate"><div class="tech_zionic_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">Ергономічний корпус забезпечує точне маневрування."</div><div class="tech_zionic_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">Інтегровані сенсори контроль температури та тиску."</div><div class="tech_zionic_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">Двигун MARP 3 режими обертання, 10 рівнів швидкості."</div><div class="tech_zionic_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="250">Змінні аплікатори (Deep Action) та (Deep Action Max) для різних зон."</div>
-<img src="/wp-content/uploads/2026/03/tech-mob-2-optimized.png" data-aos="fade-up" data-aos-delay="200" alt=" - фото" title="" class="aos-init aos-animate"><div class="tech_zionic_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="350">Сенсорний екран інтуїтивне керування параметрами процедури."</div></div><div class="tech_zionic_nozzles"><div class="tech_zionic_nozzles_title aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-2 насадки</div><div class="tech_zionic_nozzles_text aos-init aos-animate" data-aos="fade-up" data-aos-delay="250">
-2 насадки</div><div class="tech_zionic_nozzles_list"><div class="tech_zionic_nozzles_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-<img src="/wp-content/uploads/2026/03/nozzle-1-optimized.png" alt="30 mm - фото" title="30 mm"><div>30 mm</div></div><div class="tech_zionic_nozzles_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="350">
-<img src="/wp-content/uploads/2026/03/nozzle-2-optimized.png" alt="19 mm - фото" title="19 mm"><div>19 mm</div></div></div></div></div></div></div>
+              <div class="pillar-pill-item">
+                <div class="pillar-icon-box">
+                  <img src="/wp-content/uploads/2026/03/icons8-venus_de_milo-1.svg" alt="Лікування целюліту" width="36" height="36">
+                </div>
+                <h4 class="pillar-title">Лікування целюліту</h4>
+                <p class="pillar-desc">Ефективна дія при едематозних та фіброзних стадіях целюліту</p>
+              </div>
 
-<div class="experience-block experience-block--zionic fade-up"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50">
-Процедура ZIONIC</h2><div class="experience-block-text aos-init" data-aos="fade-up" data-aos-delay="200">
-ZIONIC новий рівень апаратного моделювання тіла</div><div class="experience-block-bg aos-init" data-aos="fade-up"><div class="row"><div class="col-lg-6"><div class="eb-title aos-init" data-aos="fade-up" data-aos-delay="300">
-О процедурі</div><div class="eb-descr aos-init" data-aos="fade-up" data-aos-delay="400"><p data-start="0" data-end="312">Я працюю з апаратом Zionic, і найчастіше до мене звертаються пацієнти зі схожими запитами: набряклість, нерівний рельєф шкіри, локальні жирові відкладення та відчуття «застою» в тілі. Уже після перших процедур люди відзначають легкість, зменшення об’ємів за рахунок виведення зайвої рідини та більш гладку шкіру.</p><p data-start="314" data-end="583">Сама процедура поєднує глибокий механічний масаж і радіочастотний прогрів тканин. Завдяки цьому ми одночасно покращуємо лімфодренаж, посилюємо кровообіг і стимулюємо обмінні процеси в жировій тканині. Це дає не лише візуальний ефект, а й покращує загальний стан тканин.</p><p data-start="585" data-end="851" data-is-last-node="" data-is-only-node="">Після курсу пацієнти виглядають більш підтягнутими: шкіра стає щільнішою, рельєф рівнішим, зменшуються прояви целюліту. Водночас важливо розуміти — найкращий і стійкий результат ми отримуємо, коли процедура поєднується з правильним харчуванням і фізичною активністю.</p></div></div><div class="col-lg-6"><div class="experience-slider aos-init" data-aos="fade-up" data-aos-delay="200">
-  <div class="zionic-gallery-carousel zionic-exp-carousel">
-    <div class="zionic-carousel-track">
-      <div class="zionic-carousel-item"><img src="/wp-content/uploads/2026/03/procedure-1-optimized.png" alt="Процедура ZIONIC 1"></div>
-      <div class="zionic-carousel-item"><img src="/wp-content/uploads/2026/03/procedure-2-optimized.jpg" alt="Процедура ZIONIC 2"></div>
-      <div class="zionic-carousel-item"><img src="/wp-content/uploads/2026/03/procedure-3-optimized.jpg" alt="Процедура ZIONIC 3"></div>
-    </div>
-    <div class="zionic-slider-controls">
-      <button type="button" class="zionic-slider-btn prev-btn" aria-label="Попередній слайд">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-      </button>
-      <button type="button" class="zionic-slider-btn next-btn" aria-label="Наступний слайд">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-      </button>
-    </div>
-  </div>
-</div></div></div></div></div>
+              <div class="pillar-pill-item">
+                <div class="pillar-icon-box">
+                  <img src="/wp-content/uploads/2026/03/icons8-waist-1.svg" alt="Моделювання фігури" width="36" height="36">
+                </div>
+                <h4 class="pillar-title">Моделювання фігури</h4>
+                <p class="pillar-desc">Найкомфортніший апарат для корекції силуету без болю та синців</p>
+              </div>
 
-<div class="beast" id="beast"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50">
-5 причин чому Zionic кращий апарат для контурного моделювання тіла</h2><div class="beast-top-text aos-init" data-aos="fade-up" data-aos-delay="200">
-ZIONIC поєднує RF-нагрів і глибоку стимуляцію для точної корекції фігури. Інтелектуальний контроль температури та адаптивна дія забезпечують зменшення жиру, підтягування тканин і покращення мікроциркуляції без болю та реабілітації.</div><div class="beast-desctop">
-<img src="/wp-content/uploads/2026/03/beast-big-optimized.png" alt="5 причин чому Zionic кращий апарат для контурного моделювання тіла - фото" title="5 причин чому Zionic кращий апарат для контурного моделювання тіла" data-aos="fade-up" data-aos-delay="400" class="aos-init"></div><div class="beast-mobile"><ul>
-<li data-aos="fade-up" data-aos-delay="100" class="aos-init aos-animate">
-<span>
-<img src="/wp-content/uploads/2026/03/1-2.svg" alt="Антицелюлітна дія - фото" title="Антицелюлітна дія">
-</span>
-<span>
-<b>Антицелюлітна дія</b>
-<i>Зменшує прояви целюліту шляхом стимуляції мікроциркуляції та дренажу тканин.</i>
-</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="150" class="aos-init aos-animate">
-<span>
-<img src="/wp-content/uploads/2026/03/2-2.svg" alt="Підвищення тонусу - фото" title="Підвищення тонусу">
-</span>
-<span>
-<b>Підвищення тонусу</b>
-<i>Підвищує тонус м’язів і шкіри, сприяє формуванню чіткого силуету без перевантаження. </i>
-</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
-<span>
-<img src="/wp-content/uploads/2026/03/3-2.svg" alt="Зменшення жирових відкладень - фото" title="Зменшення жирових відкладень">
-</span>
-<span>
-<b>Зменшення жирових відкладень</b>
-<i>Зменшує локальні жирові відкладення через теплову дію та механічну стимуляцію.</i>
-</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="250" class="aos-init aos-animate">
-<span>
-<img src="/wp-content/uploads/2026/03/4-2.svg" alt="Активація кровообігу - фото" title="Активація кровообігу">
-</span>
-<span>
-<b>Активація кровообігу</b>
-<i>Активує кровообіг і лімфовідтік, покращує живлення тканин і виведення метаболітів.</i>
-</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="300" class="aos-init aos-animate">
-<span>
-<img src="/wp-content/uploads/2026/03/5-2.svg" alt="Підтягування шкіри - фото" title="Підтягування шкіри">
-</span>
-<span>
-<b>Підтягування шкіри</b>
-<i>Стимулює неоколагенез, покращуючи пружність шкіри та її щільність після втрати тонусу.</i>
-</span>
-</li></ul></div></div></div>
+              <div class="pillar-pill-item">
+                <div class="pillar-icon-box">
+                  <img src="/wp-content/uploads/2026/03/icons8-trust-1.svg" alt="Реабілітація" width="36" height="36">
+                </div>
+                <h4 class="pillar-title">Реабілітація</h4>
+                <p class="pillar-desc">Швидке відновлення та підтяжка тканин після ліпосакцій</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<div class="ba section--padding"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50">
-Клінічно підтверджені результати апарату ZIONIC</h2><div class="beast-top-text aos-init" data-aos="fade-up" data-aos-delay="200">
-Візуальні зміни вже після перших процедур: покращення тонусу, чіткіший контур, зменшення ознак целюліту.Завдяки поєднанню RF-енергії та механічного ролика апарат діє глибоко, не травмуючи шкіру.</div><div class="ba_slider aos-init" data-aos="fade-up" data-aos-delay="400">
-  <div class="zionic-gallery-carousel zionic-ba-carousel">
-    <div class="zionic-carousel-track">
-      <div class="zionic-carousel-item"><img src="/wp-content/uploads/2026/03/ba-1-optimized.png" alt="Клінічні результати ZIONIC 1"></div>
-      <div class="zionic-carousel-item"><img src="/wp-content/uploads/2026/03/ba-2-optimized.png" alt="Клінічні результати ZIONIC 2"></div>
-      <div class="zionic-carousel-item"><img src="/wp-content/uploads/2026/03/ba-3-optimized.png" alt="Клінічні результати ZIONIC 3"></div>
-      <div class="zionic-carousel-item"><img src="/wp-content/uploads/2026/03/imgi_12_result-8-optimized.png" alt="Клінічні результати ZIONIC 4"></div>
-      <div class="zionic-carousel-item"><img src="/wp-content/uploads/2026/03/imgi_16_result-3-optimized.png" alt="Клінічні результати ZIONIC 5"></div>
-      <div class="zionic-carousel-item"><img src="/wp-content/uploads/2026/03/imgi_14_result-1-optimized.png" alt="Клінічні результати ZIONIC 6"></div>
-    </div>
-    <div class="zionic-slider-controls">
-      <button type="button" class="zionic-slider-btn prev-btn" aria-label="Попередній слайд">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-      </button>
-      <button type="button" class="zionic-slider-btn next-btn" aria-label="Наступний слайд">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-      </button>
-    </div>
-  </div>
-</div></div></div><div class="col-lg-6"><div class="contraindications-block aos-init" data-aos="fade-up" data-aos-delay="500"><h2 class="contraindications-block-name">Протипоказання</h2><ul class="contraindications-block-ul">
-<li>Онкологія</li>
-<li>Порушення цілісності шкірного покриву у зоні проведення процедури</li>
-<li>Наявність металевих імплантів та стентів</li>
-<li>Епілепсія, порушення психіки</li>
-<li>Цукровий діабет, декомпенсована форма</li>
-<li>Аутоімунні захворювання</li>
-<li>Хронічні захворювання на стадії загострення</li>
-<li>Орві, грип</li>
-<li>Вагітність</li></ul></div></div></div></div></div>
+      <!-- 3. TECHNOLOGIES BENTO SHOWCASE (MAIN PAGE STYLE) -->
+      <section class="zionic-tech-bento-section" id="technologies">
+        <div class="container">
+          <div class="section-header-centered">
+            <span class="luxury-kicker">ІННОВАЦІЙНА СИНЕРГІЯ</span>
+            <h2 class="section-main-title">Технології ZIONIC</h2>
+            <p class="section-main-sub">
+              Поєднання двох потужних енергій в одній маніпулі під контролем вбудованого інтелекту
+            </p>
+          </div>
 
-<div class="advantages-big advantages-big--zionic " id="advantages" style="background-image: url('/wp-content/themes/zionic/assets/images/zionic/advantages-bg.jpg');"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50">Переваги Zionic</h2><div class="advantages-big-row row"><div class="col-lg-4"><div class="abr-img-block">
-<img src="/wp-content/uploads/2026/03/advantages-img-optimized.png" alt="Переваги Zionic - фото" title="Переваги Zionic" data-aos="fade-up" data-aos-delay="200" class="aos-init"></div></div><div class="col-lg-8"><ul class="abr-ul">
-<li data-aos="fade-up" data-aos-delay="0" class="aos-init">
-<span>1</span>
-<span>Перший в світі апарат, який комбінує найглибший медичний монополярний RF резистивного типу з інтелектуальним ротаційним масажем для максимально можливого моделювання тіла.</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="0" class="aos-init">
-<span>2</span>
-<span>Інтелектуальна Система взаємодії з пацієнтом враховує: температуру, тиск, передану енергію для формування оптимальної терапевтичної дози.</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="0" class="aos-init">
-<span>3</span>
-<span>Підвищена безпека завдяки технології одночасного контролю температури і тиску в реальному часі під час процедури.</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="0" class="aos-init">
-<span>4</span>
-<span>Єдиний апарат, який ефективно і без болю лікує великих пацієнтів з едематозним фіброзним целюлітом завдяки унікальній комбінації глибокого внутрішнього прогріву, який знімає больові відчуття, та активному ротаційному масажу.</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="0" class="aos-init">
-<span>5</span>
-<span>Найкомфортніший з усіх апаратів для моделювання фігури, тому найпопулярніший у пацієнтів та рекомендований спеціалістами.</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="0" class="aos-init">
-<span>6</span>
-<span>Ключовий елемент програм "Детокс", "Схуднення", "Антицелюліт" для відновлення балансу та тонусу тіла.</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="0" class="aos-init">
-<span>7</span>
-<span>Використовується у спортивній медицині для розігріву м'язів перед тренуваннями і для регенерації зв'язкових тканин.</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="0" class="aos-init">
-<span>8</span>
-<span>Використовується у пост-операційній реабілітації для зменшення відчуття стягнутості шкіри після операції, профілактики утворення фіброзу.</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="0" class="aos-init">
-<span>9</span>
-<span>Найвигідніший з усіх апаратів для моделювання фігури завдяки високій рентабельності процедури. Окупність 9 місяців.</span>
-</li></ul></div></div></div></div>
+          <div class="tech-bento-grid">
+            <!-- Card 1: Medical RF -->
+            <div class="tech-bento-card">
+              <div class="tech-card-media">
+                <video autoplay loop muted playsinline poster="/wp-content/uploads/2026/03/zio-1.mp4_snapshot_00.02.383-optimized.jpg">
+                  <source src="/wp-content/uploads/2026/03/zio-1.mp4" type="video/mp4">
+                </video>
+                <div class="tech-badge-tag">МОНОПОЛЯРНИЙ RF 470 кГц</div>
+              </div>
+              <div class="tech-card-content">
+                <h3 class="tech-card-heading">Медичний монополярний резистивний RF</h3>
+                <p class="tech-card-text">
+                  Глибока резистивна діатермія прогріває глибокі шари дерми та підшкірно-жирову клітковину, активуючи природний неоколагенез та посилюючи ангіогенез.
+                </p>
+                <ul class="tech-bullets-list">
+                  <li><span class="bullet-check">✓</span><span>Зменшення об'єму жирових клітин</span></li>
+                  <li><span class="bullet-check">✓</span><span>Потужний миттєвий та пролонгований ліфтинг</span></li>
+                  <li><span class="bullet-check">✓</span><span>Зняття болю та поліпшення рухливості тканин</span></li>
+                </ul>
+              </div>
+            </div>
 
-<div class="linfo-video-block" id="procedure"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50">
-Результати, яким довіряють професіонали</h2><div class="beast-top-text aos-init" data-aos="fade-up" data-aos-delay="100">
-Пружна та підтягнута шкіра, зменшення целюліту та жирових відкладень, відчуття легкості та зменшення набряків, рівніший контур і виразніший тонус</div><div class="video-block js-video-block aos-init" data-aos="fade-up" data-aos-delay="200"><div class="video-poster js-video-poster" data-youtube="cqskAxvFlxY"><video class="modal-video js-preview-video" autoplay="" muted="" loop="" playsinline="" preload="auto">
-<source src="/wp-content/uploads/2026/03/tratamiento_de_remodelaciun_corporal_zionic_online_video_cutter.mp4" type="video/mp4"></video><div class="play-button">
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.3965 4.11135C9.1042 4.20204 7 6.0722 7 8.59182V39.4082C7 42.7677 10.7428 44.9719 13.6816 43.3438L41.4902 27.9356C44.5137 26.2603 44.5137 21.7398 41.4902 20.0645L13.6816 4.65627C12.9469 4.24923 12.1606 4.08112 11.3965 4.11135Z" fill="white"></path>
-</svg></div></div><div class="video-container"><div class="js-youtube-player"></div></div></div></div></div>
+            <!-- Card 2: MARP Rotation -->
+            <div class="tech-bento-card">
+              <div class="tech-card-media">
+                <video autoplay loop muted playsinline poster="/wp-content/uploads/2026/03/zio-2.mp4_snapshot_00.01.087-optimized.jpg">
+                  <source src="/wp-content/uploads/2026/03/zio-2.mp4" type="video/mp4">
+                </video>
+                <div class="tech-badge-tag">MARP SYSTEM</div>
+              </div>
+              <div class="tech-card-content">
+                <h3 class="tech-card-heading">Активний ротаційний глибокий масаж MARP</h3>
+                <p class="tech-card-text">
+                  Запатентований механізм активної ротації забезпечує потужний фізіологічний лімфодренаж, виведення токсинів та розбивання фіброзних тяжів без гематом.
+                </p>
+                <ul class="tech-bullets-list">
+                  <li><span class="bullet-check">✓</span><span>Стимуляція відтоку лімфи у фізіологічному напрямку</span></li>
+                  <li><span class="bullet-check">✓</span><span>Абсолютно комфортна процедура для пацієнта</span></li>
+                  <li><span class="bullet-check">✓</span><span>Повна безпека завдяки датчикам тиску</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<div class="application-presentation application-zionic" id="application"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="0">
-Стати партнером</h2><div class="row"><div class="col-lg-6"><div class="application-p-left aos-init" data-aos="fade-up-right" data-aos-delay="300" data-aos-duration="500"><div class="app-video-bg">
-<video autoplay="" loop="" muted="" playsinline="" poster="/wp-content/uploads/2026/04/video-placeholder-optimized.png"><source src="/wp-content/themes/zionic/assets/images/presentation-video.mp4" type="video/mp4"></video><div class="app-video-content"><div class="application-p-left-text-3 aos-init" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500"><p>При замовленні апарата ZIONIC ви отримуєте професійне навчання від сертифікованих фахівців дистриб’ютора та провідних лікарів-косметологів. Програма охоплює як теоретичні основи, так і практичну роботу з апаратом, що дозволяє клінікам одразу впровадити процедури на найвищому рівні.</p></div><div class="application-p-left-form aos-init" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600"> <script></script> <div class="gf_browser_chrome gform_wrapper gform-theme gform-theme--foundation gform-theme--framework gform-theme--orbital" data-form-theme="orbital" data-form-index="0" id="gform_wrapper_1"><style>/*<![CDATA[*/#gform_wrapper_1[data-form-index="0"].gform-theme,[data-parent-form="1_0"]{--gform-theme-color-primary:#204ce5;--gform-theme-color-primary-rgb:32, 76, 229;--gform-theme-color-primary-contrast:#fff;--gform-theme-color-primary-contrast-rgb:255, 255, 255;--gform-theme-color-primary-darker:#001AB3;--gform-theme-color-primary-lighter:#527EFF;--gform-theme-color-secondary:#fff;--gform-theme-color-secondary-rgb:255, 255, 255;--gform-theme-color-secondary-contrast:#112337;--gform-theme-color-secondary-contrast-rgb:17, 35, 55;--gform-theme-color-secondary-darker:#F5F5F5;--gform-theme-color-secondary-lighter:#FFF;--gform-theme-color-outside-control-light:rgba(17, 35, 55, 0.1);--gform-theme-color-outside-control-light-rgb:17, 35, 55;--gform-theme-color-outside-control-light-darker:rgba(104, 110, 119, 0.35);--gform-theme-color-outside-control-light-lighter:#F5F5F5;--gform-theme-color-outside-control-dark:#585e6a;--gform-theme-color-outside-control-dark-rgb:88, 94, 106;--gform-theme-color-outside-control-dark-darker:#112337;--gform-theme-color-outside-control-dark-lighter:rgba(17, 35, 55, 0.65);--gform-theme-color-inside-control:#fff;--gform-theme-color-inside-control-rgb:255, 255, 255;--gform-theme-color-inside-control-contrast:#112337;--gform-theme-color-inside-control-contrast-rgb:17, 35, 55;--gform-theme-color-inside-control-darker:#F5F5F5;--gform-theme-color-inside-control-lighter:#FFF;--gform-theme-color-inside-control-primary:#204ce5;--gform-theme-color-inside-control-primary-rgb:32, 76, 229;--gform-theme-color-inside-control-primary-contrast:#fff;--gform-theme-color-inside-control-primary-contrast-rgb:255, 255, 255;--gform-theme-color-inside-control-primary-darker:#001AB3;--gform-theme-color-inside-control-primary-lighter:#527EFF;--gform-theme-color-inside-control-light:rgba(17, 35, 55, 0.1);--gform-theme-color-inside-control-light-rgb:17, 35, 55;--gform-theme-color-inside-control-light-darker:rgba(104, 110, 119, 0.35);--gform-theme-color-inside-control-light-lighter:#F5F5F5;--gform-theme-color-inside-control-dark:#585e6a;--gform-theme-color-inside-control-dark-rgb:88, 94, 106;--gform-theme-color-inside-control-dark-darker:#112337;--gform-theme-color-inside-control-dark-lighter:rgba(17, 35, 55, 0.65);--gform-theme-border-radius:3px;--gform-theme-font-size-secondary:14px;--gform-theme-font-size-tertiary:13px;--gform-theme-icon-control-number:url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 0C4.26522 5.96046e-08 4.51957 0.105357 4.70711 0.292893L7.70711 3.29289C8.09763 3.68342 8.09763 4.31658 7.70711 4.70711C7.31658 5.09763 6.68342 5.09763 6.29289 4.70711L4 2.41421L1.70711 4.70711C1.31658 5.09763 0.683417 5.09763 0.292893 4.70711C-0.0976311 4.31658 -0.097631 3.68342 0.292893 3.29289L3.29289 0.292893C3.48043 0.105357 3.73478 0 4 0ZM0.292893 9.29289C0.683417 8.90237 1.31658 8.90237 1.70711 9.29289L4 11.5858L6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289C8.09763 9.68342 8.09763 10.3166 7.70711 10.7071L4.70711 13.7071C4.31658 14.0976 3.68342 14.0976 3.29289 13.7071L0.292893 10.7071C-0.0976311 10.3166 -0.0976311 9.68342 0.292893 9.29289Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gform-theme-icon-control-select:url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.292893 0.292893C0.683417 -0.097631 1.31658 -0.097631 1.70711 0.292893L5 3.58579L8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893C10.0976 0.683417 10.0976 1.31658 9.70711 1.70711L5.70711 5.70711C5.31658 6.09763 4.68342 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gform-theme-icon-control-search:url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='640' height='640'%3E%3Cpath d='M256 128c-70.692 0-128 57.308-128 128 0 70.691 57.308 128 128 128 70.691 0 128-57.309 128-128 0-70.692-57.309-128-128-128zM64 256c0-106.039 85.961-192 192-192s192 85.961 192 192c0 41.466-13.146 79.863-35.498 111.248l154.125 154.125c12.496 12.496 12.496 32.758 0 45.254s-32.758 12.496-45.254 0L367.248 412.502C335.862 434.854 297.467 448 256 448c-106.039 0-192-85.962-192-192z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gform-theme-control-border-color:#686e77;--gform-theme-control-size:var(--gform-theme-control-size-md);--gform-theme-control-label-color-primary:#112337;--gform-theme-control-label-color-secondary:#112337;--gform-theme-control-choice-size:var(--gform-theme-control-choice-size-md);--gform-theme-control-checkbox-check-size:var(--gform-theme-control-checkbox-check-size-md);--gform-theme-control-radio-check-size:var(--gform-theme-control-radio-check-size-md);--gform-theme-control-button-font-size:var(--gform-theme-control-button-font-size-md);--gform-theme-control-button-padding-inline:var(--gform-theme-control-button-padding-inline-md);--gform-theme-control-button-size:var(--gform-theme-control-button-size-md);--gform-theme-control-button-border-color-secondary:#686e77;--gform-theme-control-file-button-background-color-hover:#EBEBEB;--gform-theme-field-page-steps-number-color:rgba(17, 35, 55, 0.8)}/*]]>*/</style><div id="gf_1" class="gform_anchor" tabindex="-1"></div><form method="post" enctype="multipart/form-data" target="gform_ajax_frame_1" id="gform_1" action="/zionic/#gf_1" data-formid="1"><div class="gform-body gform_body"><div id="gform_fields_1" class="gform_fields top_label form_sublabel_below description_below"><div id="field_1_1" class="gfield gfield--type-text gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible" data-js-reload="field_1_1"><label class="gfield_label gform-field-label" for="input_1_1">Ім'я<span class="gfield_required"><span class="gfield_required gfield_required_text">(Обов'язково)</span></span></label><div class="ginput_container ginput_container_text"><input name="input_1" id="input_1_1" type="text" value="" class="large" placeholder="Ім'я" aria-required="true" aria-invalid="false"></div></div><fieldset id="field_1_6" class="gfield gfield--type-radio gfield--type-choice gfield--width-full field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible" data-js-reload="field_1_6"><legend class="gfield_label gform-field-label">Месенжер</legend><div class="ginput_container ginput_container_radio"><div class="gfield_radio" id="input_1_6"><div class="gchoice gchoice_1_6_0">
-<input class="gfield-choice-input" name="input_6" type="radio" value="Whatsapp" checked="checked" id="choice_1_6_0" onchange="gformToggleRadioOther( this )">
-<label for="choice_1_6_0" id="label_1_6_0" class="gform-field-label gform-field-label--type-inline">Whatsapp</label></div><div class="gchoice gchoice_1_6_1">
-<input class="gfield-choice-input" name="input_6" type="radio" value="Viber" id="choice_1_6_1" onchange="gformToggleRadioOther( this )">
-<label for="choice_1_6_1" id="label_1_6_1" class="gform-field-label gform-field-label--type-inline">Viber</label></div><div class="gchoice gchoice_1_6_2">
-<input class="gfield-choice-input" name="input_6" type="radio" value="Telegram" id="choice_1_6_2" onchange="gformToggleRadioOther( this )">
-<label for="choice_1_6_2" id="label_1_6_2" class="gform-field-label gform-field-label--type-inline">Telegram</label></div></div></div></fieldset><div id="field_1_3" class="gfield gfield--type-phone gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible" data-js-reload="field_1_3"><label class="gfield_label gform-field-label" for="input_1_3">Телефон<span class="gfield_required"><span class="gfield_required gfield_required_text">(Обов'язково)</span></span></label><div class="ginput_container ginput_container_phone"><input name="input_3" id="input_1_3" type="text" value="" class="large" placeholder="Телефон" aria-required="true" aria-invalid="false" inputmode="text"></div></div><div id="field_1_5" class="gfield gfield--type-email field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible" data-js-reload="field_1_5"><label class="gfield_label gform-field-label" for="input_1_5">Email</label><div class="ginput_container ginput_container_email">
-<input name="input_5" id="input_1_5" type="text" value="" class="large" placeholder="Email" aria-invalid="false"></div></div><div id="field_1_4" class="gfield gfield--type-text gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below hidden_label gfield_visibility_visible" data-js-reload="field_1_4"><label class="gfield_label gform-field-label" for="input_1_4">Місто<span class="gfield_required"><span class="gfield_required gfield_required_text">(Обов'язково)</span></span></label><div class="ginput_container ginput_container_text"><input name="input_4" id="input_1_4" type="text" value="" class="large" placeholder="Місто" aria-required="true" aria-invalid="false"></div></div></div></div><div class="gform_footer before"> <input type="submit" id="gform_submit_button_1" class="gform_button button" value="Заявка на презентацію" onclick="if(window[&quot;gf_submitting_1&quot;]){return false;}  window[&quot;gf_submitting_1&quot;]=true;  " onkeypress="if( event.keyCode == 13 ){ if(window[&quot;gf_submitting_1&quot;]){return false;} window[&quot;gf_submitting_1&quot;]=true;  jQuery(&quot;#gform_1&quot;).trigger(&quot;submit&quot;,[true]); }"> <input type="hidden" name="gform_ajax" value="form_id=1&amp;title=&amp;description=&amp;tabindex=0&amp;theme=data-form-theme='orbital'">
-<input type="hidden" class="gform_hidden" name="is_submit_1" value="1">
-<input type="hidden" class="gform_hidden" name="gform_submit" value="1">
-<input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
-<input type="hidden" class="gform_hidden" name="state_1" value="WyJ7XCI2XCI6W1wiMDM3ZmFmMzEzNGQ2OTM0OWFhN2Y2ZDViNWNhNDViOWZcIixcImM4MjkxYjhjZmNjYzk5NTlhMjc4MGJmYWFiODY4Yjg5XCIsXCJjNTAzODg0NTFiNzYxOWUyMTFhMjNkNGIzMGUzZWU2NFwiXX0iLCI2ODlkM2E1Y2JhNDUyZGM5MjhhNzc5Mzg4ZTkxNmYzMyJd">
-<input type="hidden" class="gform_hidden" name="gform_target_page_number_1" id="gform_target_page_number_1" value="0">
-<input type="hidden" class="gform_hidden" name="gform_source_page_number_1" id="gform_source_page_number_1" value="1">
-<input type="hidden" name="gform_field_values" value=""></div></form></div>
-<iframe style="display:none;width:0px;height:0px;" src="about:blank" name="gform_ajax_frame_1" id="gform_ajax_frame_1" title="Цей iframe містить логіку, необхідну для обробки Ajax в Gravity Forms."></iframe> <script>gform.initializeOnLoaded( function() {gformInitSpinner( 1, '/wp-content/plugins/gravityforms/images/spinner.svg', false );jQuery('#gform_ajax_frame_1').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_1');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_1').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_1').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_1').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_1').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_1').val();gformInitSpinner( 1, '/wp-content/plugins/gravityforms/images/spinner.svg', false );jQuery(document).trigger('gform_page_loaded', [1, current_page]);window['gf_submitting_1'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_1').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_1').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [1]);window['gf_submitting_1'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_1').text());}, 50);}else{jQuery('#gform_1').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [1, current_page]);gform.utils.trigger({ event: 'gform/postRender', native: false, data: { formId: 1, currentPage: current_page } });} );} );</script> </div></div></div></div></div><div class="col-lg-6"><div class="application-zionic-right aos-init" data-aos="fade-up-left" data-aos-delay="300" data-aos-duration="500"><div class="application-zionic-title">
-Ми забезпечуємо надійне партнерство:</div><ul class="abr-ul">
-<li data-aos="fade-up" data-aos-delay="0" class="aos-init">
-<span>1</span>
-<span>Вся продукція сертифікована та поставляється напряму<br>від виробника.</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="100" class="aos-init">
-<span>2</span>
-<span>Безкоштовне навчання для лікарів, повний супровід запуску процедури.</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="200" class="aos-init">
-<span>3</span>
-<span>Готові рекламні матеріали, презентації, макети усе для швидкого старту.</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="300" class="aos-init">
-<span>4</span>
-<span>Гарантія, технічна підтримка та оперативний ремонт без зайвої тяганини.</span>
-</li>
-<li data-aos="fade-up" data-aos-delay="400" class="aos-init">
-<span>5</span>
-<span>Передоплата, розтермінування або індивідуальні умови під ваш бізнес.</span>
-</li></ul></div></div></div></div></div>
+      <!-- 4. MANIPULA & NOZZLES SPECIFICATION -->
+      <section class="zionic-manipula-section" id="manipula">
+        <div class="container">
+          <div class="section-header-centered">
+            <span class="luxury-kicker">ЕРГОНОМІКА ТА ТОЧНІСТЬ</span>
+            <h2 class="section-main-title">Оснащення інтелектуальної маніпули</h2>
+            <p class="section-main-sub">
+              Кольоровий дисплей керування на рукоятці та змінні анатомічні насадки для роботи з будь-якою зоною тіла
+            </p>
+          </div>
 
-<div class="trust" id="trust"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50">
-Лікарі довіряють ZIONIC у щоденній практиці</h2><div class="trust-top-text aos-init" data-aos="fade-up" data-aos-delay="200">
-Косметологи, дерматологи та керівники клінік Європі вже обрали ZIONIC як надійний
-інструмент для моделювання тіла. Їхні відгуки це найкраще підтвердження ефективності.</div><div class="trust-row row"><div class="col-lg-4 aos-init" data-aos="fade-up" data-aos-delay="0"><div class="trust-item"><div class="trust-item-img-block">
-<img src="/wp-content/uploads/2026/03/doctor1-optimized.png" alt="Олена Стоянова - фото" title="Олена Стоянова"></div><div class="trust-item-text-1">Олена Стоянова</div><div class="trust-item-text-2">PhD<br>Клініка Естетичної Медицини St. Esthetic, Київ</div></div></div><div class="col-lg-4 aos-init" data-aos="fade-up" data-aos-delay="200"><div class="trust-item"><div class="trust-item-img-block">
-<img src="/wp-content/uploads/2026/03/doctor2-optimized.png" alt="Ганна Кривошеєва - фото" title="Ганна Кривошеєва"></div><div class="trust-item-text-1">Ганна Кривошеєва</div><div class="trust-item-text-2">PhD <br>MD Клініка апаратної косметології L’CLINIC, Київ</div></div></div><div class="col-lg-4 aos-init" data-aos="fade-up" data-aos-delay="400"><div class="trust-item"><div class="trust-item-img-block">
-<img src="/wp-content/uploads/2026/03/doctor3-optimized.png" alt="Carmen Navarro - фото" title="Carmen Navarro"></div><div class="trust-item-text-1">Carmen Navarro</div><div class="trust-item-text-2">Легенда Естетичної Медицини Іспанії <br>Клініка Carmen Navarro Sagasta, Мадрид</div></div></div></div> <script id="trustSliderScript">let trustSwiper;
-                let isSlider = false;
-                function initTrustSlider(){
+          <div class="manipula-showcase-grid">
+            <div class="manipula-feature-card">
+              <div class="feature-num">01</div>
+              <h4 class="feature-title">Сенсорне керування на рукоятці</h4>
+              <p class="feature-desc">Лікар регулює швидкість ротації та потужність RF прямо під час сеансу без відриву від пацієнта.</p>
+            </div>
 
-                    if(isSlider) return;
+            <div class="manipula-feature-card center-media-card">
+              <img src="/wp-content/uploads/2026/03/tech-optimized.png" alt="Маніпула ZIONIC" class="manipula-img" width="480" height="340">
+            </div>
 
-                    const trustRow = document.querySelector('.trust-row');
-                    const cols = trustRow.querySelectorAll('.col-lg-4');
+            <div class="manipula-feature-card">
+              <div class="feature-num">02</div>
+              <h4 class="feature-title">Змінні насадки (Nozzles)</h4>
+              <p class="feature-desc">Два розміри насадок (для малих зон: руки, спина, живіт; для великих зон: стегна, сідниці).</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    trustRow.classList.add('swiper');
+      <!-- 5. CLINICAL BEFORE & AFTER SLIDER (MAIN PAGE SLIDER SYSTEM) -->
+      <section class="zionic-ba-section" id="results">
+        <div class="container">
+          <div class="section-header-centered">
+            <span class="luxury-kicker">РЕЗУЛЬТАТИ ТЕРАПІЇ</span>
+            <h2 class="section-main-title">Клінічно підтверджені результати</h2>
+            <p class="section-main-sub">
+              Візуальні зміни вже після перших 2–3 процедур: чіткий контур, зменшення об'ємів та виражений ліфтинг шкіри
+            </p>
+          </div>
 
-                    const wrapper = document.createElement('div');
-                    wrapper.classList.add('swiper-wrapper');
+          <div class="zionic-modern-gallery-slider">
+            <div class="zionic-gallery-track">
+              <div class="zionic-slide-item">
+                <div class="slide-img-frame">
+                  <img src="/wp-content/uploads/2026/03/ba-1-optimized.png" alt="Результати Zionic 1" loading="lazy">
+                </div>
+                <div class="slide-caption">Стегна та сідниці • 6 сеансів</div>
+              </div>
 
-                    cols.forEach(col=>{
-                        col.classList.add('swiper-slide');
-                        wrapper.appendChild(col);
-                    });
+              <div class="zionic-slide-item">
+                <div class="slide-img-frame">
+                  <img src="/wp-content/uploads/2026/03/ba-2-optimized.png" alt="Результати Zionic 2" loading="lazy">
+                </div>
+                <div class="slide-caption">Зменшення целюліту • 5 сеансів</div>
+              </div>
 
-                    trustRow.appendChild(wrapper);
+              <div class="zionic-slide-item">
+                <div class="slide-img-frame">
+                  <img src="/wp-content/uploads/2026/03/ba-3-optimized.png" alt="Результати Zionic 3" loading="lazy">
+                </div>
+                <div class="slide-caption">Підтяжка шкіри • 4 сеанси</div>
+              </div>
 
-                    const pagination = document.createElement('div');
-                    pagination.classList.add('trust-pagination');
-                    trustRow.appendChild(pagination);
+              <div class="zionic-slide-item">
+                <div class="slide-img-frame">
+                  <img src="/wp-content/uploads/2026/03/imgi_12_result-8-optimized.png" alt="Результати Zionic 4" loading="lazy">
+                </div>
+                <div class="slide-caption">Корекція зони галіфе • 6 сеансів</div>
+              </div>
 
-                    trustSwiper = new Swiper('.trust-row',{
-                        slidesPerView:"auto",
-                        spaceBetween:10,
-                        grabCursor:true,
-                        pagination:{
-                            el:".trust-pagination",
-                            clickable:true
-                        }
-                    });
+              <div class="zionic-slide-item">
+                <div class="slide-img-frame">
+                  <img src="/wp-content/uploads/2026/03/imgi_16_result-3-optimized.png" alt="Результати Zionic 5" loading="lazy">
+                </div>
+                <div class="slide-caption">Живіт та боки • 5 сеансів</div>
+              </div>
 
-                    isSlider = true;
-                }
-                function destroyTrustSlider(){
+              <div class="zionic-slide-item">
+                <div class="slide-img-frame">
+                  <img src="/wp-content/uploads/2026/03/imgi_14_result-1-optimized.png" alt="Результати Zionic 6" loading="lazy">
+                </div>
+                <div class="slide-caption">Тонус та пружність • 4 сеанси</div>
+              </div>
+            </div>
 
-                    if(!isSlider) return;
+            <div class="zionic-carousel-controls">
+              <button type="button" class="sharp-carousel-btn prev-btn" aria-label="Попереднє фото">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+              </button>
+              <div class="carousel-counter"><span class="current-slide">01</span> / <span class="total-slides">06</span></div>
+              <button type="button" class="sharp-carousel-btn next-btn" aria-label="Наступне фото">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    trustSwiper.destroy(true,true);
+      <!-- 6. 5 REASONS BENTO GRID (WHY ZIONIC IS BEST) -->
+      <section class="zionic-reasons-section" id="beast">
+        <div class="container">
+          <div class="section-header-centered">
+            <span class="luxury-kicker">ПЕРЕВАГИ ДЛЯ БІЗНЕСУ ТА КЛІНІКИ</span>
+            <h2 class="section-main-title">5 причин обрати ZIONIC</h2>
+            <p class="section-main-sub">
+              Чому провідні клініки та естетичні центри обирають апарат ZIONIC як флагман контурного моделювання тіла
+            </p>
+          </div>
 
-                    const trustRow = document.querySelector('.trust-row');
-                    const wrapper = trustRow.querySelector('.swiper-wrapper');
-                    const slides = wrapper.querySelectorAll('.swiper-slide');
+          <div class="reasons-bento-grid">
+            <div class="reason-bento-box">
+              <div class="reason-icon-wrap"><img src="/wp-content/uploads/2026/03/1-2.svg" alt="1" width="36" height="36"></div>
+              <h4 class="reason-box-title">Швидка окупність (ROI)</h4>
+              <p class="reason-box-desc">Середній чек на курс процедур від 20 000 ₴. Повна окупність апарату від 3 до 5 місяців активної роботи клініки.</p>
+            </div>
 
-                    slides.forEach(slide=>{
-                        slide.classList.remove('swiper-slide');
-                        trustRow.appendChild(slide);
-                    });
+            <div class="reason-bento-box">
+              <div class="reason-icon-wrap"><img src="/wp-content/uploads/2026/03/2-2.svg" alt="2" width="36" height="36"></div>
+              <h4 class="reason-box-title">Широкий спектр показань</h4>
+              <p class="reason-box-desc">Робота з усіма стадіями целюліту, атонією шкіри, локальними жировими відкладеннями та м'язовою напругою.</p>
+            </div>
 
-                    wrapper.remove();
+            <div class="reason-bento-box">
+              <div class="reason-icon-wrap"><img src="/wp-content/uploads/2026/03/3-2.svg" alt="3" width="36" height="36"></div>
+              <h4 class="reason-box-title">Без витратних матеріалів</h4>
+              <p class="reason-box-desc">Мінімальна собівартість сеансу (лише базовий контактний крем), що гарантує рекордну маржинальність.</p>
+            </div>
 
-                    const pagination = trustRow.querySelector('.trust-pagination');
-                    if(pagination) pagination.remove();
+            <div class="reason-bento-box">
+              <div class="reason-icon-wrap"><img src="/wp-content/uploads/2026/03/4-2.svg" alt="4" width="36" height="36"></div>
+              <h4 class="reason-box-title">Сертифікація CE Medical</h4>
+              <p class="reason-box-desc">Виробництво TermoSalud в Іспанії відповідно до медичних нормативів ISO 13485 та європейської директиви MDD.</p>
+            </div>
 
-                    trustRow.classList.remove('swiper');
+            <div class="reason-bento-box highlight-gold-box">
+              <div class="reason-icon-wrap"><img src="/wp-content/uploads/2026/03/5-2.svg" alt="5" width="36" height="36"></div>
+              <h4 class="reason-box-title">Навчання та підтримка</h4>
+              <p class="reason-box-desc">Безкоштовна постановка руки для ваших спеціалістів сертифікованим лікарем-методистом TermoSalud Україна.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    isSlider = false;
-                }
-                function checkTrustSlider(){
-                    if ( window.innerWidth <= 991 ){
-                        initTrustSlider();
-                    } else {
-                        destroyTrustSlider();
-                    }
-                }
-                checkTrustSlider();
-                window.addEventListener('resize',checkTrustSlider);</script> </div></div>
+      <!-- 7. INDICATIONS & CONTRAINDICATIONS (SPLIT MATRIX) -->
+      <section class="zionic-matrix-section" id="indications">
+        <div class="container">
+          <div class="matrix-split-wrapper">
+            <!-- Left: Indications (Dark) -->
+            <div class="matrix-side indications-side">
+              <span class="matrix-kicker">КЛІНІЧНИЙ СПЕКТР</span>
+              <h3 class="matrix-title">Показання до застосування</h3>
+              <ul class="matrix-checklist">
+                <li><span class="check-icon">✓</span><span>Локальні жирові відкладення (живіт, боки, стегна, руки)</span></li>
+                <li><span class="check-icon">✓</span><span>Едематозний, фіброзний та м'який целюліт</span></li>
+                <li><span class="check-icon">✓</span><span>Втрата пружності, дряблість та атонія шкіри</span></li>
+                <li><span class="check-icon">✓</span><span>Моделювання силуету та підтяжка контуру сідниць</span></li>
+                <li><span class="check-icon">✓</span><span>Реабілітація після хірургічної ліпосакції</span></li>
+                <li><span class="check-icon">✓</span><span>М'язовий гіпертонус та болі після навантажень</span></li>
+              </ul>
+            </div>
 
-<div class="questions" id="faq"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50">Питання та відповіді</h2><div class="questions-text aos-init" data-aos="fade-up" data-aos-delay="200">
-Отримайте відповіді на поширені запитання про Zionic та про те, <br> як ця система може змінити вашу практику</div><ul class="faq-accordion">
-<li class="faq-item aos-init" data-aos="fade-up" data-aos-delay="0"><div class="faq-question">
-Скільки процедур потрібно для видимого результату? <span class="faq-icon"></span></div><div class="faq-answer"><p>Виробник рекомендує не менше чотирьох процедур. Бажаний курс включає 6 – 10 процедур в залежності від поставлених задач.</p></div>
-</li>
-<li class="faq-item aos-init" data-aos="fade-up" data-aos-delay="100"><div class="faq-question">
-Чи комфортна процедура і які відчуття підчас неї? <span class="faq-icon"></span></div><div class="faq-answer"><p>Найкомфортніша процедура апаратного масажу. Відчуття приємні. Лагідне тепло народжується всередині м’яких тканин, розслабляючи м’язи.</p></div>
-</li>
-<li class="faq-item aos-init" data-aos="fade-up" data-aos-delay="200"><div class="faq-question">
-Чи потрібен час на відновлення після сеансу? <span class="faq-icon"></span></div><div class="faq-answer"><p>Ні.</p></div>
-</li>
-<li class="faq-item aos-init" data-aos="fade-up" data-aos-delay="300"><div class="faq-question">
-Для яких зон тіла найчастіше застосовується ZIONIC? <span class="faq-icon"></span></div><div class="faq-answer"><p>Призначений для лікування фіброзного целюліта, тобто в основному для стегон і сідниць, ZIONIC користується великим попитом для масажу спини і шийно-плечового сегменту, тому що дуже приємний.</p></div>
-</li>
-<li class="faq-item aos-init" data-aos="fade-up" data-aos-delay="400"><div class="faq-question">
-Чим ZIONIC відрізняється від інших косметологічних рішень? <span class="faq-icon"></span></div><div class="faq-answer"><p>Єдина система, яка об’єднує глибокий діатермічний прогрів резистивного типу і ротаційний масаж з регулюванням обертів по ходу лімфатичної рідини.</p></div>
-</li></ul></div></div>
+            <!-- Right: Contraindications (Light Sharp) -->
+            <div class="matrix-side contraindications-side">
+              <span class="matrix-kicker-dark">БЕЗПЕКА ПАЦІЄНТА</span>
+              <h3 class="matrix-title-dark">Протипоказання</h3>
+              <ul class="matrix-crosslist">
+                <li><span class="cross-icon">✕</span><span>Вагітність та період лактації</span></li>
+                <li><span class="cross-icon">✕</span><span>Наявність кардіостимулятора або металевих імплантів у зоні обробки</span></li>
+                <li><span class="cross-icon">✕</span><span>Онкологічні захворювання</span></li>
+                <li><span class="cross-icon">✕</span><span>Гострі запальні процеси та інфекції шкіри</span></li>
+                <li><span class="cross-icon">✕</span><span>Тромбофлебіт та важкі судинні порушення</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<div class="documents section--padding"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50">Документи та сертифікати</h2><div class="documents_list"><div class="documents_item aos-init" data-aos="fade-up" data-aos-delay="100">
-<img src="/wp-content/uploads/2026/03/document-optimized.png" alt="document 1"></div><div class="documents_item aos-init" data-aos="fade-up" data-aos-delay="150">
-<img src="/wp-content/uploads/2026/03/78d2c841-1-optimized.png" alt="document 2"></div></div></div></div>
+      <!-- 8. PROCEDURE VIDEO BANNER -->
+      <section class="zionic-video-banner-section" id="procedure">
+        <div class="container">
+          <div class="video-banner-sharp-frame">
+            <video autoplay loop muted playsinline poster="/wp-content/uploads/2026/03/procedure-2-optimized.jpg" class="procedure-video-bg">
+              <source src="/wp-content/uploads/2026/03/tratamiento_de_remodelaciun_corporal_zionic_online_video_cutter.mp4" type="video/mp4">
+            </video>
+            <div class="video-banner-overlay"></div>
+            <div class="video-banner-content">
+              <h2 class="video-banner-title">Процедура ZIONIC у реальній практиці</h2>
+              <p class="video-banner-sub">Подивіться, як проходить сеанс та як реагує тіло пацієнта на терапію MARP</p>
+              <button type="button" class="video-play-huge-btn js-open-video-lightbox" data-video-id="CYsDii-PZ7s">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>ДИВИТИСЬ ВІДЕО ПРОЦЕДУРИ</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section class="seo_text _single_page aos-init" data-aos="fade-up" data-aos-delay="200"><div class="container"><div class="seo_text_content"><h2>Купити апарат Zionic — інвестувати в передове обладнання для корекції фігури</h2><p>У сучасній естетичній медицині найбільший попит мають неінвазивні методики, що поєднують високу результативність, безболісність та відсутність періоду реабілітації. Рішення купити апарат Zionic відкриває для вашої клініки можливість запропонувати пацієнтам саме такі процедури. Це інноваційне обладнання для корекції фігури забезпечує комплексний підхід до моделювання контурів тіла.</p><p>Унікальна концепція апарата дозволяє фахівцям ефективно працювати з локальними жировими відкладеннями, атонією шкіри та всіма формами целюліту, досягаючи стійких і помітних результатів уже після перших сеансів.</p><h3>Технологія Rollactive RF: синергія для ідеального результату</h3><p>Секрет найвищої ефективності ZIONIC полягає у використанні запатентованої технології Rollactive RF. В одній ергономічній маніпулі об’єднані два найпотужніші фактори, які взаємно посилюють дію один одного:</p><ul>
-<li><strong>Монополярний RF для тіла:</strong> Глибока резистивна діатермія проникає у тканини, забезпечуючи термічний вплив. Він стимулює вироблення колагену, забезпечуючи потужну підтяжку в’ялої шкіри та підвищення її тургору.</li>
-<li><strong>Інтелектуальний ротаційний масаж:</strong> Інтенсивний механічний вплив активізує кровообіг та клітинний метаболізм. За глибиною та інтенсивністю опрацювання це перевершує стандартний апаратний масаж для схуднення.</li></ul><p>Така синергія робить ZIONIC незамінним інструментом, коли потрібне успішне лікування фіброзного целюліту. Апарат розм’якшує щільні тканини й забезпечує глибокий медичний лімфодренаж, усуваючи застійні явища.</p><h3>Рентабельність та абсолютна безпека</h3><p>Обираючи цей передовий ротаційний масаж апарат, керівники клінік отримують надійний інструмент для стабільного збільшення прибутку. Ефективність процедур гарантує високе повернення пацієнтів.</p><ul>
-<li><strong>Швидка окупність:</strong> Висока маржинальність процедур на апараті ZIONIC забезпечує відмінні показники рентабельності. Середній термін повернення інвестицій для клініки становить від 9 місяців.</li>
-<li><strong>Інтелектуальний контроль:</strong> Інтегрована система контролю температури та тиску гарантує безпеку пацієнта, виключаючи ризики дискомфорту або перегріву тканин.</li></ul><p>Потужний апарат для RF ліфтингу тіла ZIONIC стане візитною карткою вашої клініки. Розширте спектр преміальних послуг разом із передовими технологіями. Запишіться на тест-драйв, щоб особисто переконатися в унікальних можливостях обладнання.</p></div>
-<button class="seo_text_btn" data-more="Читати далі" data-less="Приховати">
-<span>Читати далі</span>
-</button></div></section>
+      <!-- 9. TEST-DRIVE APPLICATION FORM (EXACT LUXURY MAIN PAGE FORM) -->
+      <section class="zionic-booking-section" id="test-drive">
+        <div class="container">
+          <div class="luxury-booking-card">
+            <div class="row align-items-center">
+              <div class="col-lg-5">
+                <div class="booking-text-wrap">
+                  <span class="luxury-kicker">БЕЗКОШТОВНИЙ ТЕСТ-ДРАЙВ</span>
+                  <h2 class="booking-title">Замовте презентацію ZIONIC у вашу клініку</h2>
+                  <p class="booking-desc">
+                    Ми привеземо апарат ZIONIC безпосередньо у ваш медичний центр або салон краси, проведемо демонстрацію на ваших пацієнтах та навчимо персонал.
+                  </p>
+                  <div class="booking-trust-pills">
+                    <div class="trust-pill"><span class="pill-check">✓</span><span>0 ₴ за виїзд і доставку</span></div>
+                    <div class="trust-pill"><span class="pill-check">✓</span><span>Тест на реальних клієнтах</span></div>
+                    <div class="trust-pill"><span class="pill-check">✓</span><span>Без зобов'язань покупки</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-7">
+                <form class="luxury-booking-form" onsubmit="event.preventDefault(); alert('Дякуємо! Ваша заявка прийнята. Наш методист зв\'яжеться з вами.');">
+                  <div class="form-row-2col">
+                    <div class="form-input-group">
+                      <label>Ваше ім'я та посада</label>
+                      <input type="text" placeholder="Наприклад: Олена, головний лікар" required>
+                    </div>
+                    <div class="form-input-group">
+                      <label>Телефон</label>
+                      <input type="tel" placeholder="+380" required>
+                    </div>
+                  </div>
+
+                  <div class="form-input-group">
+                    <label>Місто та назва клініки</label>
+                    <input type="text" placeholder="Київ, Клініка естетичної медицини" required>
+                  </div>
+
+                  <div class="form-input-group">
+                    <label>Зручний месенджер для зв'язку</label>
+                    <div class="messenger-selector-row">
+                      <label class="msg-choice active"><input type="radio" name="zionic_msg" value="WhatsApp" checked><span>WhatsApp</span></label>
+                      <label class="msg-choice"><input type="radio" name="zionic_msg" value="Telegram"><span>Telegram</span></label>
+                      <label class="msg-choice"><input type="radio" name="zionic_msg" value="Viber"><span>Viber</span></label>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="luxury-submit-btn">
+                    <span>ЗАБРОНЮВАТИ ВИЇЗНИЙ ТЕСТ-ДРАЙВ</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. FAQ ACCORDION (MAIN PAGE LUXURY STYLE) -->
+      <section class="zionic-faq-section" id="faq">
+        <div class="container">
+          <div class="section-header-centered">
+            <span class="luxury-kicker">ВІДПОВІДІ НА ЗАПИТАННЯ</span>
+            <h2 class="section-main-title">Часті питання про ZIONIC</h2>
+          </div>
+
+          <div class="faq-accordion-grid">
+            <div class="faq-accordion-card">
+              <button type="button" class="faq-toggle-header">
+                <span class="faq-q-text">Скільки процедур потрібно для помітного результату?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer-body">
+                <p>Перші зміни у тонусі шкіри та зняття набряклості помітні вже після 1–2 сеансів. Стійкий виражений ефект ремоделювання фігури досягається за курс із 6–10 процедур з інтервалом 2–3 рази на тиждень.</p>
+              </div>
+            </div>
+
+            <div class="faq-accordion-card">
+              <button type="button" class="faq-toggle-header">
+                <span class="faq-q-text">Чи відчуває пацієнт біль під час процедури ZIONIC?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer-body">
+                <p>Ні, процедура абсолютно безболісна та комфортна. Пацієнт відчуває приємне глибоке тепло та розслаблюючий механічний масаж без синців та гематом.</p>
+              </div>
+            </div>
+
+            <div class="faq-accordion-card">
+              <button type="button" class="faq-toggle-header">
+                <span class="faq-q-text">Які витратні матеріали потрібні для роботи?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer-body">
+                <p>Апарат не вимагає дорогих картриджів, одноразових костюмів або змінних лінз. Потрібен лише спеціальний контактний гліцериновий крем TermoSalud для ковзання маніпули та проведення RF.</p>
+              </div>
+            </div>
+
+            <div class="faq-accordion-card">
+              <button type="button" class="faq-toggle-header">
+                <span class="faq-q-text">Які умови гарантії та сервісного обслуговування?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer-body">
+                <p>TermoSalud надає 2 роки повної офіційної гарантії. Наш сервісний центр в Україні забезпечує технічну підтримку та надання підмінного апарату на час регламентних робіт.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11. SEO & CERTIFICATES -->
+      <section class="zionic-seo-clean-section">
+        <div class="container">
+          <div class="seo-clean-box">
+            <h3 class="seo-clean-title">Купити апарат Zionic (Rollactive RF) для корекції фігури в Україні</h3>
+            <p class="seo-clean-text">
+              Офіційний дистриб'ютор TermoSalud в Україні пропонує оригінальний апарат преміум-класу Zionic для медичних центрів, клінік естетичної медицини та SPA-комплексів. Поєднання резистивного монополярного радіочастотного ліфтингу з глибоким ротаційним масажем MARP гарантує неперевершені результати корекції фігури та омолодження тіла.
+            </p>
+          </div>
+        </div>
+      </section>
+
     `;
 
     // Replace the inner content of zionic page
