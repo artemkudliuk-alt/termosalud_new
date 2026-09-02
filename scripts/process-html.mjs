@@ -2124,7 +2124,59 @@ function cleanHtml(raw, pageName) {
         </div>
       </section>
 
-<div class="technologies fade-up" id="technologies"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50">Технології Linfopress Evolution PRO</h2><div class="technologies-top-text aos-init" data-aos="fade-up" data-aos-delay="200">Вперше технологія біоміметичної послідовної пульсації втілена в найкращий в світі апарат для пресотерапії. Linfopress Evolution PRO імітує природні пульсуючі рухи в чотирьох унікальних комбінаціях:</div><div class="technologies-row row"><div class="col-lg-6"><div class="technologies-item aos-init" data-toggle="modal" data-target="#techModal1" data-aos="fade-up" data-aos-delay="300"><div class="ti-video-block"><video muted="" loop="" playsinline="" preload="none" poster="/wp-content/uploads/2026/03/1-preview-optimized.png">
+
+      <!-- ADVANTAGES 5-PILL HORIZONTAL BANNER (EXACT 1-TO-1 CLONE) -->
+      <div class="advantages fade-up">
+        <div class="container">
+          <div class="advantages-video-bg">
+            <video autoplay="" loop="" muted="" playsinline="" poster="/wp-content/uploads/2026/04/video-placeholder-optimized.png">
+              <source src="/wp-content/themes/zionic/assets/images/presentation-video.mp4" type="video/mp4">
+            </video>
+            <div class="advantages-video-content">
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="0" class="aos-init aos-animate">
+                  <div>
+                    <img src="/wp-content/uploads/2026/03/1-1.svg" alt="Нове покоління - фото" title="Нове покоління">
+                  </div>
+                  <div>Нове покоління</div>
+                  <div>Нове покоління комбінаторної пресотерапії</div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="100" class="aos-init aos-animate">
+                  <div>
+                    <img src="/wp-content/uploads/2026/03/2-1.svg" alt="Для всіх розмірів - фото" title="Для всіх розмірів">
+                  </div>
+                  <div>Для всіх розмірів</div>
+                  <div>Три рівня блискавок для пацієнтів всіх розмірів</div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">
+                  <div>
+                    <img src="/wp-content/uploads/2026/03/3-1.svg" alt="4 етапи - фото" title="4 етапи">
+                  </div>
+                  <div>4 етапи</div>
+                  <div>Чотири етапи пульсуючої пневматичної компресії</div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300" class="aos-init aos-animate">
+                  <div>
+                    <img src="/wp-content/uploads/2026/03/4-1.svg" alt="10 програм - фото" title="10 програм">
+                  </div>
+                  <div>10 програм</div>
+                  <div>Десять програм послідовної біоміметичної пульсації</div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">
+                  <div>
+                    <img src="/wp-content/uploads/2026/03/5-1.svg" alt="Унікальність - фото" title="Унікальність">
+                  </div>
+                  <div>Унікальність</div>
+                  <div>Тільки в Linfopress: пресомасаж холки і love-handles</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="technologies fade-up" id="technologies"><div class="container"><h2 class="big-title aos-init" data-aos="fade-up" data-aos-delay="50">Технології Linfopress Evolution PRO</h2><div class="technologies-top-text aos-init" data-aos="fade-up" data-aos-delay="200">Вперше технологія біоміметичної послідовної пульсації втілена в найкращий в світі апарат для пресотерапії. Linfopress Evolution PRO імітує природні пульсуючі рухи в чотирьох унікальних комбінаціях:</div><div class="technologies-row row"><div class="col-lg-6"><div class="technologies-item aos-init" data-toggle="modal" data-target="#techModal1" data-aos="fade-up" data-aos-delay="300"><div class="ti-video-block"><video muted="" loop="" playsinline="" preload="none" poster="/wp-content/uploads/2026/03/1-preview-optimized.png">
 <source src="/wp-content/uploads/2026/03/1.mp4" type="video/mp4"></video></div><div class="ti-name">Стадія розігріву</div><div class="ti-descr"><ol>
 <li>Ніжно розтягує тканини і судини, готуючи ділянки для інтенсивного пресомасажу.</li>
 <li>Ідеально підходить для лікування фіброзного целюліту, коли пацієнтки є особливо чутливими.</li></ol></div><div class="ti-show-more">Дізнатись подробиці</div></div></div><div class="col-lg-6"><div class="technologies-item aos-init" data-toggle="modal" data-target="#techModal2" data-aos="fade-up" data-aos-delay="300"><div class="ti-video-block"><video muted="" loop="" playsinline="" preload="none" poster="/wp-content/uploads/2026/03/2-preview-1-optimized.png">
