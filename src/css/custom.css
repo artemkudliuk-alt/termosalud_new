@@ -7352,4 +7352,122 @@ footer {
   border-radius: 0px !important;
 }
 
+/* ==========================================================================
+   ZIONIC VIDEO LIGHTBOX MODAL (SWISS MEDICAL CINEMA POPUP)
+   ========================================================================== */
+.zionic-video-lightbox {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  z-index: 999999 !important;
+  display: none;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
+  box-sizing: border-box !important;
+}
+
+.zionic-video-lightbox.show {
+  display: flex !important;
+}
+
+.zionic-video-lightbox .glass-modal-backdrop {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(15, 23, 42, 0.88) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  cursor: pointer !important;
+}
+
+.zionic-video-lightbox-card {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 960px !important;
+  background: #0f172a !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 0px !important;
+  box-shadow: 0 35px 90px rgba(0, 0, 0, 0.75) !important;
+  z-index: 2 !important;
+  overflow: hidden !important;
+  animation: zionicModalFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+}
+
+@keyframes zionicModalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.zionic-video-modal-close {
+  position: absolute !important;
+  top: 12px !important;
+  right: 12px !important;
+  width: 40px !important;
+  height: 40px !important;
+  background: rgba(0, 0, 0, 0.75) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  z-index: 10 !important;
+  border-radius: 0px !important;
+  transition: all 0.2s ease !important;
+}
+
+.zionic-video-modal-close:hover {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #ffffff !important;
+}
+
+.zionic-video-lightbox-frame {
+  position: relative !important;
+  padding-bottom: 56.25% !important;
+  height: 0 !important;
+  background: #000000 !important;
+  overflow: hidden !important;
+}
+
+.zionic-video-lightbox-frame iframe,
+.zionic-video-lightbox-frame video {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
+}
+
+.zionic-video-lightbox-caption {
+  padding: 14px 20px !important;
+  background: #1e232e !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+.zionic-video-lightbox-caption .video-lightbox-title {
+  color: #ffffff !important;
+  font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.2px !important;
+}
+
+
 

@@ -1353,14 +1353,14 @@ function cleanHtml(raw, pageName) {
             </p>
 
             <div class="zionic-hero-actions">
-              <button class="zionic-primary-btn" data-target="#popup_request">
+              <a href="#application" class="zionic-primary-btn">
                 <span>Замовити тест-драйв у клініку</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-              </button>
-              <a href="#zionic-accuracy" class="zionic-secondary-btn">
+              </a>
+              <button type="button" class="zionic-secondary-btn" id="open_zionic_video_btn" data-video-id="CYsDii-PZ7s">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                 <span>Відео-демонстрація</span>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -2048,6 +2048,21 @@ function cleanHtml(raw, pageName) {
           </div>
         </div>
       </section>
+
+      <!-- ZIONIC VIDEO LIGHTBOX MODAL -->
+      <div id="zionic_video_modal" class="popup glass-popup-modal zionic-video-lightbox" role="dialog" aria-modal="true" style="display: none;">
+        <div class="glass-modal-backdrop" data-close-video-modal></div>
+        <div class="zionic-video-lightbox-card">
+          <button type="button" class="zionic-video-modal-close" data-close-video-modal aria-label="Закрити">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+          <div class="zionic-video-lightbox-frame" id="zionic_modal_video_container"></div>
+          <div class="zionic-video-lightbox-caption">
+            <span class="video-live-pill">LIVE ДЕМОНСТРАЦІЯ</span>
+            <span class="video-lightbox-title">Клінічна процедура моделювання тіла ZIONIC</span>
+          </div>
+        </div>
+      </div>
     `;
 
     // Replace the inner content of zionic page (up to footer, replacing old raw seo_text as well)

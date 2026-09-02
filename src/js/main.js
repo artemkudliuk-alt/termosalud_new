@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initPartnersDraggableCarousel();
   initZionicScrollManipula();
   initZionicCurtainSlide();
+  initZionicVideoModal();
 });
 
 /**
@@ -39,6 +40,14 @@ function initPopupModals() {
     const href = trigger.getAttribute('href') || '';
     const target = trigger.getAttribute('data-target') || trigger.getAttribute('data-bs-target') || '';
     const text = (trigger.textContent || '').trim().toLowerCase();
+
+    if (
+      href === '#application' ||
+      trigger.classList.contains('zionic-primary-btn') ||
+      trigger.closest('#application')
+    ) {
+      return;
+    }
 
     if (
       href === '#popup_request' ||
@@ -1000,4 +1009,73 @@ function initZionicCurtainSlide() {
   attachCurtainSlide('.zionic-curtain-stage', '.zionic-manipula-section');
   attachCurtainSlide('.zionic-curtain-stage-2', '.zionic-treatments-section');
 }
+
+/**
+ * 19. Zionic Video Lightbox Modal & Smooth Scroll to Application Form
+ */
+function initZionicVideoModal() {
+  const modal = document.getElementById('zionic_video_modal');
+  const openBtn = document.getElementById('open_zionic_video_btn');
+  const container = document.getElementById('zionic_modal_video_container');
+
+  if (modal && openBtn && container) {
+    function openVideo() {
+      const videoId = openBtn.getAttribute('data-video-id') || 'CYsDii-PZ7s';
+      container.innerHTML = `
+        <iframe 
+          src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      `;
+      modal.style.display = 'flex';
+      modal.classList.add('is-active', 'show');
+      document.documentElement.classList.add('modal-open-lock');
+      document.body.classList.add('modal-open-lock');
+    }
+
+    function closeVideo() {
+      container.innerHTML = '';
+      modal.style.display = 'none';
+      modal.classList.remove('is-active', 'show');
+      document.documentElement.classList.remove('modal-open-lock');
+      document.body.classList.remove('modal-open-lock');
+    }
+
+    openBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openVideo();
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target.closest('[data-close-video-modal]') || e.target === modal) {
+        closeVideo();
+      }
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('show')) {
+        closeVideo();
+      }
+    });
+  }
+
+  // Smooth scroll handler for hero action button leading to application form
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a[href="#application"]');
+    if (!link) return;
+    const formCard = document.querySelector('.presentation-form-card') || document.getElementById('application');
+    if (formCard) {
+      e.preventDefault();
+      formCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      setTimeout(() => {
+        const firstInput = formCard.querySelector('input[name="name"], #zionic_stage_name');
+        if (firstInput) {
+          firstInput.focus({ preventScroll: true });
+        }
+      }, 700);
+    }
+  });
+}
+
 
