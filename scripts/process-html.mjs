@@ -2851,9 +2851,6 @@ function cleanHtml(raw, pageName) {
               </p>
 
               <div class="doctor-author-profile">
-                <div class="doctor-author-avatar">
-                  <img src="/wp-content/uploads/2026/03/experience-block-img-optimized.png" alt="Гуцул Оксана Миколаївна" class="author-avatar-img">
-                </div>
                 <div class="doctor-author-info">
                   <h4 class="doctor-author-name">Гуцул Оксана Миколаївна</h4>
                   <p class="doctor-author-title">Головний лікар Arden Palace Medical Resort & SPA</p>
