@@ -1525,9 +1525,9 @@ function cleanHtml(raw, pageName) {
       <section class="zionic-ba-section" id="results">
         <div class="container-fluid px-lg-5">
           <div class="section-header-centered">
-            <h2 class="section-main-title">Клінічно підтверджені результати</h2>
+            <h2 class="section-main-title">Клінічно підтверджені результати апарату ZIONIC</h2>
             <p class="section-main-sub">
-              Оберіть протокол терапії праворуч та рухайте повзунок вліво-вправо для оцінки реальних результатів «До» та «Після»
+              Візуальні зміни вже після перших процедур: покращення тонусу, чіткіший контур, зменшення ознак целюліту. Завдяки поєднанню RF-енергії та механічного ролика апарат діє глибоко, не травмуючи шкіру.
             </p>
           </div>
 
