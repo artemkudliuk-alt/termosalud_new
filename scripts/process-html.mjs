@@ -3592,4 +3592,17 @@ for (const p of pages) {
   console.log(`Generated ${path.join(p.outDir, p.outFile)} (${processed.length} bytes)`);
 }
 
-console.log('HTML pages successfully regenerated with modern SEO Blur-In Reveal Section!');
+// Sync all public root files to project root so Vercel (outputDirectory: '.') serves them properly
+if (fs.existsSync(path.join(rootDir, 'public'))) {
+  const publicFiles = fs.readdirSync(path.join(rootDir, 'public'));
+  for (const file of publicFiles) {
+    const src = path.join(rootDir, 'public', file);
+    const dest = path.join(rootDir, file);
+    if (fs.statSync(src).isFile()) {
+      fs.copyFileSync(src, dest);
+    }
+  }
+  console.log('Successfully synced all public assets to root directory for Vercel.');
+}
+
+console.log('HTML pages successfully regenerated!');
