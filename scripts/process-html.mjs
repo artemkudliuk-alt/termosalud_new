@@ -1354,46 +1354,46 @@ function cleanHtml(raw, pageName) {
           <div class="zionic-ticker-overlay"></div>
         </div>
 
-        <div class="zionic-ticker-viewport">
+          <div class="zionic-ticker-viewport">
           <div class="zionic-ticker-track">
             <!-- SET 1 -->
             <div class="zionic-ticker-item">
               <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-highway_arrows-1.svg" alt="Максимальний ліфтинг" width="48" height="48"></div>
               <div class="pillar-text-content">
                 <h4 class="pillar-title">Максимальний ліфтинг</h4>
-                <p class="pillar-desc">Найглибший монополярний RF у поєднанні з ротаційним масажем MARP</p>
+                <p class="pillar-desc">Найглибший медичний монополярний RF у поєднанні з ротаційним масажем під контролем інтелекту машини</p>
               </div>
             </div>
 
             <div class="zionic-ticker-item">
-              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-working_mom-1.svg" alt="Персоналізація" width="48" height="48"></div>
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-working_mom-1.svg" alt="Персоналізація процедури" width="48" height="48"></div>
               <div class="pillar-text-content">
-                <h4 class="pillar-title">Персоналізація</h4>
-                <p class="pillar-desc">Автоматичний підбір індивідуальної програми під кожного пацієнта</p>
+                <h4 class="pillar-title">Персоналізація процедури</h4>
+                <p class="pillar-desc">Інтелектуальний вибір індивідуальної програми пацієнта для автоматичного формування оптимальної терапевтичної дози</p>
               </div>
             </div>
 
             <div class="zionic-ticker-item">
-              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-venus_de_milo-1.svg" alt="Лікування целюліту" width="48" height="48"></div>
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-venus_de_milo-1.svg" alt="Ефективне лікування целюліту" width="48" height="48"></div>
               <div class="pillar-text-content">
-                <h4 class="pillar-title">Лікування целюліту</h4>
-                <p class="pillar-desc">Ефективна дія при едематозних та фіброзних стадіях целюліту</p>
+                <h4 class="pillar-title">Ефективне лікування целюліту</h4>
+                <p class="pillar-desc">Єдиний апарат, що ефективно працює з пацієнтами з едематозним фіброзним станом</p>
               </div>
             </div>
 
             <div class="zionic-ticker-item">
-              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-waist-1.svg" alt="Моделювання фігури" width="48" height="48"></div>
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-waist-1.svg" alt="Приємне моделювання фігури" width="48" height="48"></div>
               <div class="pillar-text-content">
-                <h4 class="pillar-title">Моделювання фігури</h4>
-                <p class="pillar-desc">Найкомфортніший апарат для корекції силуету без болю та синців</p>
+                <h4 class="pillar-title">Приємне моделювання фігури</h4>
+                <p class="pillar-desc">Найкомфортніший серед усіх існуючих апаратів для корекції силуету завдяки контролю процедури інтелектом машини</p>
               </div>
             </div>
 
             <div class="zionic-ticker-item">
-              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-trust-1.svg" alt="Реабілітація" width="48" height="48"></div>
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-trust-1.svg" alt="Відновлення після пластичних операцій" width="48" height="48"></div>
               <div class="pillar-text-content">
-                <h4 class="pillar-title">Реабілітація</h4>
-                <p class="pillar-desc">Швидке відновлення та підтяжка тканин після ліпосакцій</p>
+                <h4 class="pillar-title">Відновлення після пластичних операцій</h4>
+                <p class="pillar-desc">Спеціалізовані програми реабілітації та підтяжки шкіри після ліпосакцій</p>
               </div>
             </div>
 
@@ -1402,39 +1402,39 @@ function cleanHtml(raw, pageName) {
               <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-highway_arrows-1.svg" alt="Максимальний ліфтинг" width="48" height="48"></div>
               <div class="pillar-text-content">
                 <h4 class="pillar-title">Максимальний ліфтинг</h4>
-                <p class="pillar-desc">Найглибший монополярний RF у поєднанні з ротаційним масажем MARP</p>
+                <p class="pillar-desc">Найглибший медичний монополярний RF у поєднанні з ротаційним масажем під контролем інтелекту машини</p>
               </div>
             </div>
 
             <div class="zionic-ticker-item">
-              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-working_mom-1.svg" alt="Персоналізація" width="48" height="48"></div>
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-working_mom-1.svg" alt="Персоналізація процедури" width="48" height="48"></div>
               <div class="pillar-text-content">
-                <h4 class="pillar-title">Персоналізація</h4>
-                <p class="pillar-desc">Автоматичний підбір індивідуальної програми під кожного пацієнта</p>
+                <h4 class="pillar-title">Персоналізація процедури</h4>
+                <p class="pillar-desc">Інтелектуальний вибір індивідуальної програми пацієнта для автоматичного формування оптимальної терапевтичної дози</p>
               </div>
             </div>
 
             <div class="zionic-ticker-item">
-              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-venus_de_milo-1.svg" alt="Лікування целюліту" width="48" height="48"></div>
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-venus_de_milo-1.svg" alt="Ефективне лікування целюліту" width="48" height="48"></div>
               <div class="pillar-text-content">
-                <h4 class="pillar-title">Лікування целюліту</h4>
-                <p class="pillar-desc">Ефективна дія при едематозних та фіброзних стадіях целюліту</p>
+                <h4 class="pillar-title">Ефективне лікування целюліту</h4>
+                <p class="pillar-desc">Єдиний апарат, що ефективно працює з пацієнтами з едематозним фіброзним станом</p>
               </div>
             </div>
 
             <div class="zionic-ticker-item">
-              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-waist-1.svg" alt="Моделювання фігури" width="48" height="48"></div>
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-waist-1.svg" alt="Приємне моделювання фігури" width="48" height="48"></div>
               <div class="pillar-text-content">
-                <h4 class="pillar-title">Моделювання фігури</h4>
-                <p class="pillar-desc">Найкомфортніший апарат для корекції силуету без болю та синців</p>
+                <h4 class="pillar-title">Приємне моделювання фігури</h4>
+                <p class="pillar-desc">Найкомфортніший серед усіх існуючих апаратів для корекції силуету завдяки контролю процедури інтелектом машини</p>
               </div>
             </div>
 
             <div class="zionic-ticker-item">
-              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-trust-1.svg" alt="Реабілітація" width="48" height="48"></div>
+              <div class="pillar-icon-box"><img src="/wp-content/uploads/2026/03/icons8-trust-1.svg" alt="Відновлення після пластичних операцій" width="48" height="48"></div>
               <div class="pillar-text-content">
-                <h4 class="pillar-title">Реабілітація</h4>
-                <p class="pillar-desc">Швидке відновлення та підтяжка тканин після ліпосакцій</p>
+                <h4 class="pillar-title">Відновлення після пластичних операцій</h4>
+                <p class="pillar-desc">Спеціалізовані програми реабілітації та підтяжки шкіри після ліпосакцій</p>
               </div>
             </div>
           </div>
