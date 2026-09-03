@@ -21443,21 +21443,24 @@ html body.template-zionic .doctor-luxury-card p,
    ========================================================================== */
 html body.template-linfopress .linfopress-official-hero-title,
 .linfopress-official-hero-title {
-  text-transform: none !important;
-  font-size: clamp(48px, 5.8vw, 84px) !important;
-  line-height: 1.02 !important;
-  letter-spacing: -1px !important;
+  text-transform: uppercase !important;
+  font-size: clamp(52px, 6.2vw, 92px) !important;
+  font-weight: 900 !important;
+  line-height: 0.98 !important;
+  letter-spacing: -1.5px !important;
 }
 
 html body.template-linfopress .linfopress-hero-desc,
 .linfopress-hero-desc {
-  text-transform: none !important;
-  font-weight: 500 !important;
-  font-size: clamp(16px, 1.4vw, 20px) !important;
-  line-height: 1.5 !important;
-  letter-spacing: normal !important;
-  color: #e2e8f0 !important;
-  max-width: 640px !important;
+  text-transform: uppercase !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 800 !important;
+  font-size: clamp(17px, 1.6vw, 22px) !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0.8px !important;
+  color: #ffffff !important;
+  max-width: 680px !important;
+  margin: 18px 0 32px 0 !important;
 }
 
 
