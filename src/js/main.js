@@ -635,9 +635,10 @@ function initBlurRevealOnScroll() {
     return;
   }
 
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
   const observerOptions = {
-    threshold: 0.12,
-    rootMargin: '0px 0px -40px 0px'
+    threshold: isMobile ? 0.05 : 0.12,
+    rootMargin: isMobile ? '30px 0px -20px 0px' : '0px 0px -40px 0px'
   };
 
   const observer = new IntersectionObserver((entries, obs) => {
