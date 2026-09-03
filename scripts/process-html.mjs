@@ -1716,117 +1716,119 @@ function cleanHtml(raw, pageName) {
             </p>
           </div>
 
-          <div class="zionic-creative-matrix-grid">
-            <!-- LEFT CARD: CLINICAL INDICATIONS (DEEP OBSIDIAN) -->
-            <div class="matrix-creative-card indications-card">
-              <div class="matrix-card-header">
-                <span class="matrix-status-pill pill-positive">
-                  <span class="pill-dot"></span> РЕКОМЕНДОВАНО ДЛЯ ТЕРАПІЇ
-                </span>
-                <h3 class="matrix-main-head">Клінічні показання</h3>
-                <p class="matrix-sub-head">6 ключових терапевтичних напрямків апарату ZIONIC</p>
+          <div class="zionic-creative-matrix-grid exact-original-matrix">
+            <!-- LEFT CARD: INDICATIONS -->
+            <div class="matrix-creative-card indications-card exact-indications">
+              <div class="matrix-card-header exact-card-header">
+                <h3 class="matrix-main-head">Показання</h3>
               </div>
 
-              <div class="matrix-items-stack">
-                <div class="matrix-item-row">
-                  <span class="item-index">01</span>
-                  <div class="item-content">
-                    <h4 class="item-title">Локальні жирові відкладення</h4>
-                    <p class="item-desc">Стійкі жирові пастки на животі, боках, зовнішній та внутрішній поверхні стегон, спині та руках.</p>
-                  </div>
+              <div class="matrix-items-stack exact-list-stack">
+                <div class="exact-list-item">
+                  <span class="item-icon check-icon">✓</span>
+                  <span class="item-text">Лікування целлюліту трьох стадій</span>
                 </div>
-
-                <div class="matrix-item-row">
-                  <span class="item-index">02</span>
-                  <div class="item-content">
-                    <h4 class="item-title">Усі стадії та форми целюліту</h4>
-                    <p class="item-desc">Ефективне лікування едематозного, твердого фіброзного та м'якого целюліту з усуненням «апельсинової кірки».</p>
-                  </div>
+                <div class="exact-list-item">
+                  <span class="item-icon check-icon">✓</span>
+                  <span class="item-text">Локальне схуднення</span>
                 </div>
-
-                <div class="matrix-item-row">
-                  <span class="item-index">03</span>
-                  <div class="item-content">
-                    <h4 class="item-title">Атонія та втрата пружності шкіри</h4>
-                    <p class="item-desc">Дряблість тканин, зниження тургору після різкого схуднення, вагітності чи вікових змін дерми.</p>
-                  </div>
+                <div class="exact-list-item">
+                  <span class="item-icon check-icon">✓</span>
+                  <span class="item-text">Прецизійне підтягування шкіри (ліфтинг)</span>
                 </div>
-
-                <div class="matrix-item-row">
-                  <span class="item-index">04</span>
-                  <div class="item-content">
-                    <h4 class="item-title">Моделювання силуету та підтяжка сідниць</h4>
-                    <p class="item-desc">Бразильський ліфтинг сідниць, звуження талії та формування чітких гармонійних контурів тіла.</p>
-                  </div>
+                <div class="exact-list-item">
+                  <span class="item-icon check-icon">✓</span>
+                  <span class="item-text">Підготовка до пластичної хірургії (ліпосакції)</span>
                 </div>
-
-                <div class="matrix-item-row">
-                  <span class="item-index">05</span>
-                  <div class="item-content">
-                    <h4 class="item-title">Постхірургічна реабілітація</h4>
-                    <p class="item-desc">Швидке зняття набряків, профілактика спайкових процесів і фіброзу після ліпосакції.</p>
-                  </div>
+                <div class="exact-list-item">
+                  <span class="item-icon check-icon">✓</span>
+                  <span class="item-text">Пост-операційна реабілітація</span>
                 </div>
-
-                <div class="matrix-item-row">
-                  <span class="item-index">06</span>
-                  <div class="item-content">
-                    <h4 class="item-title">М'язовий гіпертонус та болі</h4>
-                    <p class="item-desc">Зняття міофасціального спазму, лікування крепатури (DOMS) та розігрів тканин у спортивній медицині.</p>
-                  </div>
+                <div class="exact-list-item">
+                  <span class="item-icon check-icon">✓</span>
+                  <span class="item-text">Детоксикація тканин</span>
+                </div>
+                <div class="exact-list-item">
+                  <span class="item-icon check-icon">✓</span>
+                  <span class="item-text">Лімфодренаж</span>
+                </div>
+                <div class="exact-list-item">
+                  <span class="item-icon check-icon">✓</span>
+                  <span class="item-text">Підготовка до фізичних навантажень</span>
+                </div>
+                <div class="exact-list-item">
+                  <span class="item-icon check-icon">✓</span>
+                  <span class="item-text">Лікування DOMS (крепатури) після фізичних навантажень</span>
+                </div>
+                <div class="exact-list-item">
+                  <span class="item-icon check-icon">✓</span>
+                  <span class="item-text">Реабілітація опорно-рухового апарату</span>
+                </div>
+                <div class="exact-list-item">
+                  <span class="item-icon check-icon">✓</span>
+                  <span class="item-text">Регенерація зв’язкових тканин</span>
+                </div>
+                <div class="exact-list-item">
+                  <span class="item-icon check-icon">✓</span>
+                  <span class="item-text">Покращення кровообігу</span>
+                </div>
+                <div class="exact-list-item">
+                  <span class="item-icon check-icon">✓</span>
+                  <span class="item-text">Зняття спазму</span>
+                </div>
+                <div class="exact-list-item">
+                  <span class="item-icon check-icon">✓</span>
+                  <span class="item-text">Загальна релаксація організму (SPA-Wellness програма)</span>
+                </div>
+                <div class="exact-list-item">
+                  <span class="item-icon check-icon">✓</span>
+                  <span class="item-text">Психоемоційна реабілітація завдяки підвищенню м'язової активності</span>
                 </div>
               </div>
             </div>
 
-            <!-- RIGHT CARD: CONTRAINDICATIONS (CLEAN ARCHITECTURAL ZINC) -->
-            <div class="matrix-creative-card contraindications-card">
-              <div class="matrix-card-header">
-                <span class="matrix-status-pill pill-warning">
-                  <span class="pill-cross">✕</span> МЕДИЧНІ ОБМЕЖЕННЯ
-                </span>
+            <!-- RIGHT CARD: CONTRAINDICATIONS -->
+            <div class="matrix-creative-card contraindications-card exact-contraindications">
+              <div class="matrix-card-header exact-card-header">
                 <h3 class="matrix-main-head">Протипоказання</h3>
-                <p class="matrix-sub-head">Стандарти безпеки відповідно до європейських протоколів CE Medical</p>
               </div>
 
-              <div class="matrix-items-stack">
-                <div class="matrix-item-row">
-                  <span class="item-alert-icon">✕</span>
-                  <div class="item-content">
-                    <h4 class="item-title">Вагітність та лактація</h4>
-                    <p class="item-desc">Період вагітності на будь-якому терміні та активне грудне вигодовування.</p>
-                  </div>
+              <div class="matrix-items-stack exact-list-stack">
+                <div class="exact-list-item">
+                  <span class="item-icon cross-icon">✕</span>
+                  <span class="item-text">Онкологія</span>
                 </div>
-
-                <div class="matrix-item-row">
-                  <span class="item-alert-icon">✕</span>
-                  <div class="item-content">
-                    <h4 class="item-title">Кардіостимулятори та металеві імпланти</h4>
-                    <p class="item-desc">Наявність водіїв ритму, стентів, штифтів або металевих конструкцій у зоні дії маніпули.</p>
-                  </div>
+                <div class="exact-list-item">
+                  <span class="item-icon cross-icon">✕</span>
+                  <span class="item-text">Порушення цілісності шкірного покриву у зоні проведення процедури</span>
                 </div>
-
-                <div class="matrix-item-row">
-                  <span class="item-alert-icon">✕</span>
-                  <div class="item-content">
-                    <h4 class="item-title">Онкологічні патології</h4>
-                    <p class="item-desc">Злоякісні новоутворення в анамнезі або активній фазі незалежно від локалізації.</p>
-                  </div>
+                <div class="exact-list-item">
+                  <span class="item-icon cross-icon">✕</span>
+                  <span class="item-text">Наявність металевих імплантів та стентів</span>
                 </div>
-
-                <div class="matrix-item-row">
-                  <span class="item-alert-icon">✕</span>
-                  <div class="item-content">
-                    <h4 class="item-title">Гострі запальні процеси та інфекції</h4>
-                    <p class="item-desc">Порушення цілісності шкірного покриву, дерматити, лихоманка та гострі респіраторні стани.</p>
-                  </div>
+                <div class="exact-list-item">
+                  <span class="item-icon cross-icon">✕</span>
+                  <span class="item-text">Епілепсія, порушення психіки</span>
                 </div>
-
-                <div class="matrix-item-row">
-                  <span class="item-alert-icon">✕</span>
-                  <div class="item-content">
-                    <h4 class="item-title">Тромбофлебіт та важкі судинні порушення</h4>
-                    <p class="item-desc">Гострий тромбоз глибоких вен, васкуліти та порушення згортання крові.</p>
-                  </div>
+                <div class="exact-list-item">
+                  <span class="item-icon cross-icon">✕</span>
+                  <span class="item-text">Цукровий діабет, декомпенсована форма</span>
+                </div>
+                <div class="exact-list-item">
+                  <span class="item-icon cross-icon">✕</span>
+                  <span class="item-text">Аутоімунні захворювання</span>
+                </div>
+                <div class="exact-list-item">
+                  <span class="item-icon cross-icon">✕</span>
+                  <span class="item-text">Хронічні захворювання на стадії загострення</span>
+                </div>
+                <div class="exact-list-item">
+                  <span class="item-icon cross-icon">✕</span>
+                  <span class="item-text">Орві, грип</span>
+                </div>
+                <div class="exact-list-item">
+                  <span class="item-icon cross-icon">✕</span>
+                  <span class="item-text">Вагітність</span>
                 </div>
               </div>
             </div>
