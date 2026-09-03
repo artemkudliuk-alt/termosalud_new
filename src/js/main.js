@@ -1398,51 +1398,89 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // ==========================================================================
-  // ZIONIC HORIZONTAL BEFORE/AFTER COMPARISON (LEFT-TO-RIGHT)
+  // UNIFIED BEFORE/AFTER COMPARISON SLIDER ENGINE (DESKTOP & MOBILE)
   // ==========================================================================
-  const hRange = document.getElementById('horizontalRangeInput');
-  const hLayerBefore = document.getElementById('horizontalCompareLayerBefore');
-  const hDividerHandle = document.getElementById('horizontalDividerHandle');
-  const hViewport = document.getElementById('zionicHorizontalCompareViewport');
+  function initCompareSlider(viewport) {
+    if (!viewport || viewport._sliderInitialized) return;
+    viewport._sliderInitialized = true;
 
-  if (hRange && hLayerBefore && hDividerHandle) {
-    function updateHCompare(val) {
-      const clamped = Math.max(0, Math.min(100, val));
-      hLayerBefore.style.clipPath = `inset(0 ${100 - clamped}% 0 0)`;
-      hDividerHandle.style.left = `${clamped}%`;
+    const layerBefore = viewport.querySelector('.layer-before');
+    const dividerHandle = viewport.querySelector('.horizontal-divider-handle');
+    if (!layerBefore || !dividerHandle) return;
+
+    function setPosition(percent) {
+      const clamped = Math.max(0, Math.min(100, percent));
+      layerBefore.style.clipPath = `inset(0 ${100 - clamped}% 0 0)`;
+      dividerHandle.style.left = `${clamped}%`;
     }
 
-    hRange.addEventListener('input', (e) => {
-      updateHCompare(e.target.value);
+    // Set initial position 50%
+    setPosition(50);
+
+    let isPointerDown = false;
+
+    function handleMove(clientX) {
+      const rect = viewport.getBoundingClientRect();
+      if (rect.width <= 0) return;
+      const pos = ((clientX - rect.left) / rect.width) * 100;
+      setPosition(pos);
+    }
+
+    // Modern Pointer Events API (works for touch, mouse, stylus across all browsers)
+    viewport.addEventListener('pointerdown', (e) => {
+      if (e.button !== 0 && e.pointerType === 'mouse') return;
+      isPointerDown = true;
+      try {
+        viewport.setPointerCapture(e.pointerId);
+      } catch (_) {}
+      handleMove(e.clientX);
+      e.preventDefault();
+      e.stopPropagation();
     });
 
-    // Touch & Mouse direct horizontal move
-    if (hViewport) {
-      let isHDown = false;
-      function handleHMove(clientX) {
-        const rect = hViewport.getBoundingClientRect();
-        const pos = ((clientX - rect.left) / rect.width) * 100;
-        hRange.value = pos;
-        updateHCompare(pos);
+    viewport.addEventListener('pointermove', (e) => {
+      if (!isPointerDown) return;
+      handleMove(e.clientX);
+      e.preventDefault();
+    });
+
+    function endPointer(e) {
+      if (isPointerDown) {
+        isPointerDown = false;
+        try {
+          viewport.releasePointerCapture(e.pointerId);
+        } catch (_) {}
       }
-
-      hViewport.addEventListener('mousedown', (e) => {
-        isHDown = true;
-        handleHMove(e.clientX);
-      });
-      window.addEventListener('mousemove', (e) => {
-        if (isHDown) handleHMove(e.clientX);
-      });
-      window.addEventListener('mouseup', () => { isHDown = false; });
-
-      hViewport.addEventListener('touchstart', (e) => {
-        if (e.touches.length > 0) handleHMove(e.touches[0].clientX);
-      }, { passive: true });
-      hViewport.addEventListener('touchmove', (e) => {
-        if (e.touches.length > 0) handleHMove(e.touches[0].clientX);
-      }, { passive: true });
     }
+
+    viewport.addEventListener('pointerup', endPointer);
+    viewport.addEventListener('pointercancel', endPointer);
+
+    // Touch events fallback with active preventDefault to prevent browser ghost image drag
+    viewport.addEventListener('touchstart', (e) => {
+      if (e.touches.length > 0) {
+        handleMove(e.touches[0].clientX);
+      }
+    }, { passive: false });
+
+    viewport.addEventListener('touchmove', (e) => {
+      if (e.touches.length > 0) {
+        handleMove(e.touches[0].clientX);
+        e.preventDefault();
+      }
+    }, { passive: false });
   }
+
+  // Initialize master desktop viewport
+  const hMasterViewport = document.getElementById('zionicHorizontalCompareViewport');
+  if (hMasterViewport) {
+    initCompareSlider(hMasterViewport);
+  }
+
+  // Initialize all mobile inline viewports
+  document.querySelectorAll('.mobile-tile-ba-viewport').forEach((vp) => {
+    initCompareSlider(vp);
+  });
 
   // Result Tile & Mobile Accordion Handlers
   const resultTiles = document.querySelectorAll('.result-tile-card');
@@ -1474,6 +1512,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isCurrentlyExpanded) {
           tile.classList.add('is-expanded');
           tile.classList.add('is-active');
+
+          // Ensure the slider inside this newly opened tile is initialized & positioned at 50%
+          const innerViewport = tile.querySelector('.mobile-tile-ba-viewport');
+          if (innerViewport) {
+            initCompareSlider(innerViewport);
+            const layerBefore = innerViewport.querySelector('.layer-before');
+            const dividerHandle = innerViewport.querySelector('.horizontal-divider-handle');
+            if (layerBefore && dividerHandle) {
+              layerBefore.style.clipPath = 'inset(0 50% 0 0)';
+              dividerHandle.style.left = '50%';
+            }
+          }
         }
       } else {
         // Desktop behavior
@@ -1492,58 +1542,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (vLiveTitle) vLiveTitle.textContent = title;
         if (vLiveBadge) vLiveBadge.textContent = sessions;
 
-        // Reset slider to center 50%
-        if (hRange) {
-          hRange.value = 50;
-          if (hLayerBefore) hLayerBefore.style.clipPath = 'inset(0 50% 0 0)';
-          if (hDividerHandle) hDividerHandle.style.left = '50%';
+        // Reset master slider to 50%
+        if (hMasterViewport) {
+          const mLayerBefore = hMasterViewport.querySelector('.layer-before');
+          const mDividerHandle = hMasterViewport.querySelector('.horizontal-divider-handle');
+          if (mLayerBefore && mDividerHandle) {
+            mLayerBefore.style.clipPath = 'inset(0 50% 0 0)';
+            mDividerHandle.style.left = '50%';
+          }
         }
       }
     });
-  });
-
-  // Mobile Inline Slider Drag Handlers
-  document.querySelectorAll('.mobile-tile-ba-viewport').forEach((viewport) => {
-    const range = viewport.querySelector('.horizontal-range-input');
-    const layerBefore = viewport.querySelector('.layer-before');
-    const dividerHandle = viewport.querySelector('.horizontal-divider-handle');
-
-    if (range && layerBefore && dividerHandle) {
-      function updateMobileCompare(val) {
-        const clamped = Math.max(0, Math.min(100, val));
-        layerBefore.style.clipPath = `inset(0 ${100 - clamped}% 0 0)`;
-        dividerHandle.style.left = `${clamped}%`;
-      }
-
-      range.addEventListener('input', (e) => {
-        updateMobileCompare(e.target.value);
-      });
-
-      let isDown = false;
-      function handleMobileMove(clientX) {
-        const rect = viewport.getBoundingClientRect();
-        if (rect.width <= 0) return;
-        const pos = ((clientX - rect.left) / rect.width) * 100;
-        range.value = pos;
-        updateMobileCompare(pos);
-      }
-
-      viewport.addEventListener('mousedown', (e) => {
-        isDown = true;
-        handleMobileMove(e.clientX);
-      });
-      window.addEventListener('mousemove', (e) => {
-        if (isDown) handleMobileMove(e.clientX);
-      });
-      window.addEventListener('mouseup', () => { isDown = false; });
-
-      viewport.addEventListener('touchstart', (e) => {
-        if (e.touches.length > 0) handleMobileMove(e.touches[0].clientX);
-      }, { passive: true });
-      viewport.addEventListener('touchmove', (e) => {
-        if (e.touches.length > 0) handleMobileMove(e.touches[0].clientX);
-      }, { passive: true });
-    }
   });
 
 

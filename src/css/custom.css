@@ -10919,7 +10919,10 @@ html, body {
   overflow: hidden;
   border: 1px solid #27272a;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
-  user-select: none;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -webkit-touch-callout: none !important;
+  touch-action: none !important;
   cursor: ew-resize; /* Horizontal cursor */
 }
 
@@ -10936,7 +10939,11 @@ html, body {
   height: 100%;
   object-fit: cover;
   display: block;
-  pointer-events: none;
+  pointer-events: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -webkit-user-drag: none !important;
+  -webkit-touch-callout: none !important;
 }
 
 .horizontal-img-layer.layer-after {
@@ -11358,8 +11365,10 @@ h4.tile-title {
     overflow: hidden !important;
     border: 1px solid #3f3f46 !important;
     user-select: none !important;
+    -webkit-user-select: none !important;
+    -webkit-touch-callout: none !important;
     cursor: ew-resize !important;
-    touch-action: pan-y !important;
+    touch-action: none !important;
     margin-top: 10px !important;
   }
 
@@ -11377,6 +11386,10 @@ h4.tile-title {
     object-fit: cover !important;
     display: block !important;
     pointer-events: none !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -webkit-user-drag: none !important;
+    -webkit-touch-callout: none !important;
   }
 
   .mobile-tile-ba-viewport .layer-after {
@@ -11450,16 +11463,7 @@ h4.tile-title {
   }
 
   .mobile-tile-ba-viewport .horizontal-range-input {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    opacity: 0 !important;
-    cursor: ew-resize !important;
-    z-index: 10 !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    display: none !important;
   }
 }
 
