@@ -2448,7 +2448,7 @@ function cleanHtml(raw, pageName) {
             <!-- TECH CARD 1 -->
             <div class="linfopress-tech-card" onclick="window.openLinfopressTechModal(1)">
               <div class="tech-media-box">
-                <video autoplay loop muted playsinline preload="auto" poster="/wp-content/uploads/2026/03/1-preview-optimized.png">
+                <video autoplay loop muted playsinline preload="none" poster="/wp-content/uploads/2026/03/1-preview-optimized.png">
                   <source src="/wp-content/uploads/2026/03/1.mp4" type="video/mp4">
                 </video>
                 <span class="tech-stage-badge">ФАЗА 01</span>
@@ -2469,7 +2469,7 @@ function cleanHtml(raw, pageName) {
             <!-- TECH CARD 2 -->
             <div class="linfopress-tech-card" onclick="window.openLinfopressTechModal(2)">
               <div class="tech-media-box">
-                <video autoplay loop muted playsinline preload="auto" poster="/wp-content/uploads/2026/03/2-preview-1-optimized.png">
+                <video autoplay loop muted playsinline preload="none" poster="/wp-content/uploads/2026/03/2-preview-1-optimized.png">
                   <source src="/wp-content/uploads/2026/03/2-1.mp4" type="video/mp4">
                 </video>
                 <span class="tech-stage-badge">ФАЗА 02</span>
@@ -2490,83 +2490,7 @@ function cleanHtml(raw, pageName) {
             <!-- TECH CARD 3 -->
             <div class="linfopress-tech-card" onclick="window.openLinfopressTechModal(3)">
               <div class="tech-media-box">
-                <video autoplay loop muted playsinline preload="auto" poster="/wp-content/uploads/2026/04/limfonew-optimized.jpg">
-                  <source src="/wp-content/uploads/2026/04/limfonew2.mp4" type="video/mp4">
-                </video>
-                <span class="tech-stage-badge">ФАЗА 03</span>
-              </div>
-              <div class="tech-card-body">
-                <h3 class="tech-card-heading">Лімфодренаж</h3>
-                <ul class="tech-card-list">
-                  <li><span class="bullet-check">✓</span> Найглибший, найінтенсивніший з можливих (тиск до 80 мм Hg).</li>
-                  <li><span class="bullet-check">✓</span> Тиск в 24-ох манжетах зменшується, коли хвиля наближається до проксимальної цільової області.</li>
-                </ul>
-                <div class="tech-card-cta">
-                  <span>Дізнатись подробиці</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </div>
-              </div>
-            </div>
-
-            <!-- TECH CARD 4 -->
-            <div class="linfopress-tech-card" onclick="window.openLinfopressTechModal(4)">
-              <div class="tech-media-box">
-                <img src="/wp-content/uploads/2026/03/4-preview-1-optimized.png" alt="Релаксація" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                <span class="tech-stage-badge">ФАЗА 04</span>
-              </div>
-              <div class="tech-card-body">
-                <h3 class="tech-card-heading">Релаксація</h3>
-                <ul class="tech-card-list">
-            </p>
-          </div>
-
-          <div class="linfopress-tech-grid">
-            <!-- TECH CARD 1 -->
-            <div class="linfopress-tech-card" onclick="window.openLinfopressTechModal(1)">
-              <div class="tech-media-box">
-                <video autoplay loop muted playsinline preload="auto" poster="/wp-content/uploads/2026/03/1-preview-optimized.png">
-                  <source src="/wp-content/uploads/2026/03/1.mp4" type="video/mp4">
-                </video>
-                <span class="tech-stage-badge">ФАЗА 01</span>
-              </div>
-              <div class="tech-card-body">
-                <h3 class="tech-card-heading">Стадія розігріву</h3>
-                <ul class="tech-card-list">
-                  <li><span class="bullet-check">✓</span> Ніжно розтягує тканини і судини, готуючи ділянки для інтенсивного пресомасажу.</li>
-                  <li><span class="bullet-check">✓</span> Ідеально підходить для лікування фіброзного целюліту, коли пацієнтки є особливо чутливими.</li>
-                </ul>
-                <div class="tech-card-cta">
-                  <span>Дізнатись подробиці</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </div>
-              </div>
-            </div>
-
-            <!-- TECH CARD 2 -->
-            <div class="linfopress-tech-card" onclick="window.openLinfopressTechModal(2)">
-              <div class="tech-media-box">
-                <video autoplay loop muted playsinline preload="auto" poster="/wp-content/uploads/2026/03/2-preview-1-optimized.png">
-                  <source src="/wp-content/uploads/2026/03/2-1.mp4" type="video/mp4">
-                </video>
-                <span class="tech-stage-badge">ФАЗА 02</span>
-              </div>
-              <div class="tech-card-body">
-                <h3 class="tech-card-heading">Хвиля</h3>
-                <ul class="tech-card-list">
-                  <li><span class="bullet-check">✓</span> Послідовне стискання і розтискання 24-ох високоякісних манжет від дистальних ділянок до проксимальних.</li>
-                  <li><span class="bullet-check">✓</span> Тривалий масаж, спрямовує рідини з периферичних ділянок до центру тіла. Підходить для лікування целюліту, спортивного масажу, розслаблення м'язів.</li>
-                </ul>
-                <div class="tech-card-cta">
-                  <span>Дізнатись подробиці</span>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </div>
-              </div>
-            </div>
-
-            <!-- TECH CARD 3 -->
-            <div class="linfopress-tech-card" onclick="window.openLinfopressTechModal(3)">
-              <div class="tech-media-box">
-                <video autoplay loop muted playsinline preload="auto" poster="/wp-content/uploads/2026/04/limfonew-optimized.jpg">
+                <video autoplay loop muted playsinline preload="none" poster="/wp-content/uploads/2026/04/limfonew-optimized.jpg">
                   <source src="/wp-content/uploads/2026/04/limfonew2.mp4" type="video/mp4">
                 </video>
                 <span class="tech-stage-badge">ФАЗА 03</span>
@@ -2605,6 +2529,29 @@ function cleanHtml(raw, pageName) {
           </div>
         </div>
       </section>
+
+
+      <!-- ==========================================================================
+           MODALS FOR 4 PHASES (PREMIUM BLUR-IN LIGHTBOX)
+           ========================================================================== -->
+      <div id="linfopress-tech-modal-overlay" class="linfopress-modal-backdrop" onclick="window.closeLinfopressTechModal(event)">
+        <div class="linfopress-modal-dialog" onclick="event.stopPropagation()">
+          <button type="button" class="linfopress-modal-close-btn" onclick="window.closeLinfopressTechModal()">✕</button>
+          
+          <!-- TAB 1: Стадія розігріву -->
+          <div id="lp-modal-tab-1" class="lp-modal-tab-content">
+            <div class="modal-video-wrapper">
+              <video controls playsinline class="modal-inner-video" poster="/wp-content/uploads/2026/03/1-preview-optimized.png">
+                <source src="/wp-content/uploads/2026/03/1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="modal-text-content">
+              <h3 class="modal-title">Стадія розігріву</h3>
+              <p class="modal-desc">Стадія розігріву – це унікальна особливість апарату для пресотерапії Linfopress Evolution PRO. Її додали в кожну програму на запит досвідчених лікарів, які вважають, що тканини потрібно делікатно підготувати до компресії.</p>
+              <p class="modal-desc">Linfopress Evolution PRO автоматично задає стадію розігріву, що ніжно розтягує тканини і судини, готуючи ділянки для інтенсивного пресомасажу. Ідеально підходить для лікування фіброзного целюліту, коли пацієнтки є особливо чутливими.</p>
+            </div>
+          </div>
+
           <!-- TAB 2: Хвиля -->
           <div id="lp-modal-tab-2" class="lp-modal-tab-content" style="display:none;">
             <div class="modal-video-wrapper">
@@ -2638,9 +2585,7 @@ function cleanHtml(raw, pageName) {
           <!-- TAB 4: Релаксація -->
           <div id="lp-modal-tab-4" class="lp-modal-tab-content" style="display:none;">
             <div class="modal-video-wrapper">
-              <video controls playsinline class="modal-inner-video" poster="/wp-content/uploads/2026/03/4-preview-1-optimized.png">
-                <source src="" type="video/mp4">
-              </video>
+              <img src="/wp-content/uploads/2026/03/4-preview-1-optimized.png" alt="Релаксація" style="width: 100%; height: 100%; object-fit: cover; display: block;">
             </div>
             <div class="modal-text-content">
               <h3 class="modal-title">Релаксація</h3>
@@ -2649,7 +2594,6 @@ function cleanHtml(raw, pageName) {
             </div>
           </div>
         </div>
-      </div>
       </div>
 
 
