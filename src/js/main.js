@@ -1410,8 +1410,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setPosition(percent) {
       const clamped = Math.max(0, Math.min(100, percent));
-      layerBefore.style.clipPath = `inset(0 ${100 - clamped}% 0 0)`;
-      dividerHandle.style.left = `${clamped}%`;
+      layerBefore.style.setProperty('clip-path', `inset(0 ${100 - clamped}% 0 0)`, 'important');
+      dividerHandle.style.setProperty('left', `${clamped}%`, 'important');
     }
 
     // Set initial position 50%

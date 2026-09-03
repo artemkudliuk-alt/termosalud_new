@@ -11430,7 +11430,7 @@ h4.tile-title {
     position: absolute !important;
     top: 0 !important;
     bottom: 0 !important;
-    left: 50% !important;
+    left: 50%;
     width: 2px !important;
     background: #ffffff !important;
     z-index: 5 !important;
