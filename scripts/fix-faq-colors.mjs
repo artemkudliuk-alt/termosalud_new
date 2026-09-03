@@ -2,28 +2,44 @@ import fs from 'fs';
 
 let css = fs.readFileSync('C:/nextweb/termosalud/src/css/custom.css', 'utf8');
 
-// Replace all white colors on faq-q-text with #0f172a
-css = css.replace(/\.faq-accordion-card\.active \.faq-q-text\s*\{\s*color:\s*#ffffff\s*!important;\s*\}/g, '.faq-accordion-card.active .faq-q-text { color: #0f172a !important; }');
-css = css.replace(/\.faq-q-text\s*\{([^}]*?)color:\s*#ffffff\s*!important;/g, '.faq-q-text {$1color: #0f172a !important;');
-css = css.replace(/\.linfopress-faq-accordion \.faq-q-text\s*\{([^}]*?)color:\s*#ffffff\s*!important;/g, '.linfopress-faq-accordion .faq-q-text {$1color: #0f172a !important;');
-css = css.replace(/body\.template-zionic \.faq-q-text,\s*\.template-zionic \.faq-q-text\s*\{([^}]*?)color:\s*#ffffff\s*!important;/g, 'body.template-zionic .faq-q-text, .template-zionic .faq-q-text {$1color: #0f172a !important;');
-css = css.replace(/html body\.template-zionic \.faq-q-text\s*\{([^}]*?)color:\s*#ffffff\s*!important;/g, 'html body.template-zionic .faq-q-text {$1color: #0f172a !important;');
-css = css.replace(/html body\.template-linfopress \.faq-q-text\s*\{([^}]*?)color:\s*#ffffff\s*!important;/g, 'html body.template-linfopress .faq-q-text {$1color: #0f172a !important;');
-css = css.replace(/\.zionic-main-page-wrapper \.faq-q-text\s*\{([^}]*?)color:\s*#ffffff\s*!important;/g, '.zionic-main-page-wrapper .faq-q-text {$1color: #0f172a !important;');
+const fixFaqIndexColor = `
+/* Fix FAQ Index and Icon Colors */
+html body.template-zionic .faq-accordion-card .faq-q-index,
+html body.template-zionic .faq-accordion-card.active .faq-q-index,
+.faq-accordion-card .faq-q-index,
+.faq-accordion-card.active .faq-q-index {
+  background: transparent !important;
+  color: #18181b !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  width: auto !important;
+  height: auto !important;
+  display: inline-block !important;
+}
 
-// In active state, make sure question text stays dark and clear
-css += `
-/* Force active faq question text to be deep charcoal */
-.faq-accordion-card.active .faq-q-text,
-.linfopress-faq-accordion .faq-accordion-card.active .faq-q-text,
-html body.template-zionic .faq-accordion-card.active .faq-q-text,
-html body.template-linfopress .faq-accordion-card.active .faq-q-text,
-html body.template-zionic .faq-q-text,
-html body.template-linfopress .faq-q-text,
-.faq-q-text {
-  color: #0f172a !important;
+html body.template-zionic .faq-accordion-card:not(.active) .faq-q-index,
+.faq-accordion-card:not(.active) .faq-q-index {
+  color: #71717a !important;
+}
+
+html body.template-zionic .faq-accordion-card.active .faq-icon,
+html body.template-zionic .faq-accordion-card .faq-icon,
+.faq-accordion-card.active .faq-icon,
+.faq-accordion-card .faq-icon {
+  background: transparent !important;
+  color: #18181b !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  width: 28px !important;
+  height: 28px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 `;
 
+css += '\n' + fixFaqIndexColor;
 fs.writeFileSync('C:/nextweb/termosalud/src/css/custom.css', css, 'utf8');
-console.log('Successfully fixed all FAQ question colors');
+console.log('Fixed FAQ index and icon styling in custom.css');

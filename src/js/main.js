@@ -61,7 +61,7 @@ window.toggleZionicSeoArticle = function() {
   
   if (isExpanded) {
     content.classList.remove('expanded');
-    if (label) label.textContent = 'Читати далі';
+    if (label) label.textContent = 'Читати повністю';
     if (arrow) arrow.textContent = '∨';
   } else {
     content.classList.add('expanded');

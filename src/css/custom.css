@@ -20437,7 +20437,7 @@ html body.template-zionic .guarantees-head-title,
   color: #111111 !important;
   line-height: 1.35 !important;
   margin: 18px 0 14px 0 !important;
-  padding-left: 0 !important;
+  padding-left: 69px !important;
   text-transform: none !important;
 }
 
@@ -20459,4 +20459,1044 @@ html body.template-zionic .zionic-partner-stage-section,
   background: #ffffff !important;
   position: relative !important;
   z-index: 10 !important;
+}
+
+
+/* ==========================================================================
+   RESTORE ORIGINAL LUXURY DOCTOR CARDS DESIGN
+   ========================================================================== */
+html body.template-zionic .zionic-doctors-section,
+.zionic-doctors-section {
+  background: #ffffff !important;
+  padding: 110px 0 !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+html body.template-zionic .zionic-doctors-grid,
+.zionic-doctors-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 32px !important;
+  max-width: 1300px !important;
+  margin: 48px auto 0 auto !important;
+}
+
+@media (max-width: 991px) {
+  html body.template-zionic .zionic-doctors-grid,
+  .zionic-doctors-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+    max-width: 560px !important;
+  }
+}
+
+html body.template-zionic .doctor-luxury-card,
+.doctor-luxury-card {
+  background: #ffffff !important;
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 0px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+  transition: all 0.35s ease !important;
+}
+
+html body.template-zionic .doctor-luxury-card:hover,
+.doctor-luxury-card:hover {
+  transform: translateY(-6px) !important;
+  border-color: #111111 !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1) !important;
+}
+
+html body.template-zionic .doctor-photo-frame,
+.doctor-photo-frame {
+  position: relative !important;
+  width: 100% !important;
+  height: 380px !important;
+  overflow: hidden !important;
+  background: #f4f4f5 !important;
+  border-bottom: 1px solid #e4e4e7 !important;
+  border-radius: 0px !important;
+}
+
+html body.template-zionic .doctor-photo-frame img,
+.doctor-photo-frame img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  display: block !important;
+  border-radius: 0px !important;
+  transition: transform 0.5s ease !important;
+}
+
+html body.template-zionic .doctor-card-info,
+.doctor-card-info {
+  padding: 24px 22px 28px 22px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+  background: #ffffff !important;
+}
+
+html body.template-zionic .doctor-name,
+.doctor-name {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  color: #111111 !important;
+  margin: 0 !important;
+  line-height: 1.25 !important;
+  text-transform: none !important;
+}
+
+html body.template-zionic .doctor-phd-badge,
+.doctor-phd-badge {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 11.5px !important;
+  font-weight: 800 !important;
+  color: #111111 !important;
+  background: #f4f4f5 !important;
+  border: 1px solid #d4d4d8 !important;
+  padding: 4px 10px !important;
+  border-radius: 0px !important;
+  text-transform: uppercase !important;
+}
+
+html body.template-zionic .doctor-specialty,
+.doctor-specialty {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #27272a !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+html body.template-zionic .doctor-clinic,
+.doctor-clinic {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  color: #71717a !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
+}
+
+
+/* ==========================================================================
+   RESTORE ORIGINAL LUXURY FAQ ACCORDION DESIGN
+   ========================================================================== */
+html body.template-zionic .zionic-faq-section,
+.zionic-faq-section {
+  background: #ffffff !important;
+  padding: 110px 0 !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+html body.template-zionic .zionic-faq-accordion-stack,
+.zionic-faq-accordion-stack {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+  max-width: 1000px !important;
+  margin: 0 auto !important;
+}
+
+html body.template-zionic .faq-accordion-card,
+.faq-accordion-card {
+  background: #ffffff !important;
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 0px !important;
+  overflow: hidden !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02) !important;
+}
+
+html body.template-zionic .faq-accordion-card:hover,
+.faq-accordion-card:hover {
+  border-color: #a1a1aa !important;
+}
+
+html body.template-zionic .faq-accordion-card.active,
+.faq-accordion-card.active {
+  border-color: #18181b !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06) !important;
+}
+
+html body.template-zionic .faq-toggle-header,
+.faq-toggle-header {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+  padding: 24px 28px !important;
+  background: #ffffff !important;
+  border: none !important;
+  text-align: left !important;
+  cursor: pointer !important;
+}
+
+html body.template-zionic .faq-q-index,
+.faq-q-index {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  color: #71717a !important;
+  flex-shrink: 0 !important;
+}
+
+html body.template-zionic .faq-accordion-card.active .faq-q-index,
+.faq-accordion-card.active .faq-q-index {
+  color: #18181b !important;
+}
+
+html body.template-zionic .faq-q-text,
+.faq-q-text {
+  flex: 1 !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 17.5px !important;
+  font-weight: 700 !important;
+  color: #18181b !important;
+  line-height: 1.35 !important;
+  text-transform: none !important;
+}
+
+html body.template-zionic .faq-icon,
+.faq-icon {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  color: #18181b !important;
+  line-height: 1 !important;
+  flex-shrink: 0 !important;
+}
+
+html body.template-zionic .faq-answer-body,
+.faq-answer-body {
+  padding: 0 28px 24px 62px !important;
+  background: #ffffff !important;
+}
+
+html body.template-zionic .faq-accordion-card:not(.active) .faq-answer-body,
+.faq-accordion-card:not(.active) .faq-answer-body {
+  display: none !important;
+}
+
+html body.template-zionic .faq-accordion-card.active .faq-answer-body,
+.faq-accordion-card.active .faq-answer-body {
+  display: block !important;
+}
+
+html body.template-zionic .faq-answer-body p,
+.faq-answer-body p {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 15.5px !important;
+  color: #52525b !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+}
+
+
+/* Fix FAQ Index and Icon Colors */
+html body.template-zionic .faq-accordion-card .faq-q-index,
+html body.template-zionic .faq-accordion-card.active .faq-q-index,
+.faq-accordion-card .faq-q-index,
+.faq-accordion-card.active .faq-q-index {
+  background: transparent !important;
+  color: #18181b !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  width: auto !important;
+  height: auto !important;
+  display: inline-block !important;
+}
+
+html body.template-zionic .faq-accordion-card:not(.active) .faq-q-index,
+.faq-accordion-card:not(.active) .faq-q-index {
+  color: #71717a !important;
+}
+
+html body.template-zionic .faq-accordion-card.active .faq-icon,
+html body.template-zionic .faq-accordion-card .faq-icon,
+.faq-accordion-card.active .faq-icon,
+.faq-accordion-card .faq-icon {
+  background: transparent !important;
+  color: #18181b !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  width: 28px !important;
+  height: 28px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+
+/* ==========================================================================
+   RESTORE ORIGINAL LUXURY SEO ARTICLE & BUTTON DESIGN
+   ========================================================================== */
+html body.template-zionic section#seo-article,
+#seo-article {
+  background: #ffffff !important;
+  padding: 100px 0 !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+html body.template-zionic .seo-article-card,
+.seo-article-card {
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding: 0 24px !important;
+  box-sizing: border-box !important;
+  text-align: left !important;
+}
+
+html body.template-zionic section#seo-article h2.seo-article-main-title,
+html body.template-zionic .seo-article-main-title,
+#seo-article .seo-article-main-title {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: clamp(28px, 3.2vw, 38px) !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.5px !important;
+  text-transform: none !important;
+  text-align: left !important;
+  margin: 0 0 28px 0 !important;
+}
+
+html body.template-zionic .seo-article-sub-title,
+.seo-article-sub-title {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  line-height: 1.35 !important;
+  text-transform: none !important;
+  text-align: left !important;
+  margin: 36px 0 16px 0 !important;
+}
+
+html body.template-zionic .seo-article-card p,
+.seo-article-card p {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 16px !important;
+  color: #475569 !important;
+  line-height: 1.75 !important;
+  margin: 0 0 20px 0 !important;
+  text-align: left !important;
+}
+
+html body.template-zionic .seo-article-bullets,
+.seo-article-bullets {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 0 24px 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 14px !important;
+}
+
+html body.template-zionic .seo-article-bullets li,
+.seo-article-bullets li {
+  position: relative !important;
+  padding-left: 24px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 15.5px !important;
+  color: #475569 !important;
+  line-height: 1.7 !important;
+  text-align: left !important;
+}
+
+html body.template-zionic .seo-article-bullets li::before,
+.seo-article-bullets li::before {
+  content: "•" !important;
+  position: absolute !important;
+  left: 6px !important;
+  top: 0 !important;
+  color: #0f172a !important;
+  font-weight: 900 !important;
+  font-size: 20px !important;
+}
+
+html body.template-zionic .seo-article-bullets li strong,
+.seo-article-bullets li strong {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+}
+
+/* 6. SIGNATURE LUXURY BUTTON */
+html body.template-zionic .seo-toggle-btn,
+html body.template-zionic .seo-article-card .seo-toggle-btn,
+.seo-toggle-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  background: #0f172a !important;
+  color: #ffffff !important;
+  border: 1.5px solid #0f172a !important;
+  padding: 14px 28px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  cursor: pointer !important;
+  border-radius: 0px !important;
+  margin: 24px 0 0 0 !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15) !important;
+}
+
+html body.template-zionic .seo-toggle-btn:hover,
+html body.template-zionic .seo-article-card .seo-toggle-btn:hover,
+.seo-toggle-btn:hover {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #0f172a !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.2) !important;
+}
+
+html body.template-zionic .seo-toggle-btn .seo-btn-label,
+.seo-toggle-btn .seo-btn-label {
+  color: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  text-transform: uppercase !important;
+}
+
+html body.template-zionic .seo-toggle-btn .seo-btn-arrow,
+.seo-toggle-btn .seo-btn-arrow {
+  color: inherit !important;
+  font-size: 14px !important;
+}
+
+
+/* ==========================================================================
+   PROCEDURE ZIONIC HEADER STYLES (MATCHING SCREENSHOT EXACTLY)
+   ========================================================================== */
+html body.template-zionic #procedure-experience .section-main-title,
+#procedure-experience .section-main-title {
+  text-transform: none !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: clamp(32px, 3.5vw, 44px) !important;
+  font-weight: 800 !important;
+  color: #18181b !important;
+  margin-bottom: 14px !important;
+  letter-spacing: -0.5px !important;
+  text-align: center !important;
+}
+
+html body.template-zionic #procedure-experience .section-main-sub,
+#procedure-experience .section-main-sub {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 19px !important;
+  font-weight: 500 !important;
+  color: #18181b !important;
+  line-height: 1.4 !important;
+  max-width: 760px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+
+html body.template-zionic .zionic-main-page-wrapper #procedure-experience .section-main-title,
+html body.template-zionic #procedure-experience .section-main-title,
+.zionic-main-page-wrapper #procedure-experience .section-main-title,
+#procedure-experience .section-main-title {
+  text-transform: none !important;
+}
+
+
+@media (max-width: 576px) {
+  html body.template-zionic .guarantees-head-title,
+  .guarantees-head-title {
+    padding-left: 0 !important;
+  }
+}
+
+
+/* ==========================================================================
+   PERMANENT FIX: FAQ NUMBER BADGE ALWAYS LIGHT & LEGIBLE
+   ========================================================================== */
+html body.template-zionic .faq-accordion-card .faq-q-index,
+html body.template-zionic .faq-accordion-card.active .faq-q-index,
+html body.template-linfopress .faq-accordion-card .faq-q-index,
+html body.template-linfopress .faq-accordion-card.active .faq-q-index,
+.faq-accordion-card .faq-q-index,
+.faq-accordion-card.active .faq-q-index,
+.faq-q-index {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px !important;
+  background: #f4f4f5 !important;
+  color: #18181b !important;
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 0px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.5px !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+}
+
+html body.template-zionic .faq-accordion-card .faq-icon,
+html body.template-zionic .faq-accordion-card.active .faq-icon,
+html body.template-linfopress .faq-accordion-card .faq-icon,
+html body.template-linfopress .faq-accordion-card.active .faq-icon,
+.faq-accordion-card .faq-icon,
+.faq-accordion-card.active .faq-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  background: transparent !important;
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 0px !important;
+  color: #18181b !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+}
+
+
+/* ==========================================================================
+   PERMANENT RESTORATION: ZIONIC NINE ADVANTAGES LUXURY SHARP WHITE CARDS
+   ========================================================================== */
+html body.template-zionic .zionic-nine-advantages-section,
+.zionic-nine-advantages-section {
+  padding: 100px 0 !important;
+  background: #ffffff !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+html body.template-zionic .zionic-nine-advantages-section .section-main-title,
+.zionic-nine-advantages-section .section-main-title {
+  color: #18181b !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: clamp(32px, 3.5vw, 44px) !important;
+  font-weight: 800 !important;
+  text-transform: none !important;
+  margin: 0 auto 48px auto !important;
+  text-align: center !important;
+}
+
+html body.template-zionic .advantage-nine-card,
+.advantage-nine-card {
+  background: #18181b !important;
+  border: 1px solid #27272a !important;
+  border-radius: 0px !important;
+  padding: 24px 22px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+html body.template-zionic .advantage-nine-card:hover,
+.advantage-nine-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25) !important;
+  border-color: #52525b !important;
+}
+
+html body.template-zionic .advantage-nine-num,
+.advantage-nine-num {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 26px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  line-height: 1 !important;
+  margin-bottom: 14px !important;
+  display: block !important;
+}
+
+html body.template-zionic .advantage-nine-text,
+.advantage-nine-text {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+  color: #cbd5e1 !important;
+  margin: 0 !important;
+  font-weight: 400 !important;
+}
+
+
+/* ==========================================================================
+   PERMANENT RESTORATION: FAQ ACCORDION ALL CARDS HAVE DARK BORDERS
+   ========================================================================== */
+html body.template-zionic .faq-accordion-card,
+html body.template-linfopress .faq-accordion-card,
+.faq-accordion-card {
+  border: 1px solid #18181b !important;
+  border-radius: 0px !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04) !important;
+}
+
+html body.template-zionic .faq-accordion-card:hover,
+html body.template-linfopress .faq-accordion-card:hover,
+.faq-accordion-card:hover {
+  border-color: #000000 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+html body.template-zionic .faq-accordion-card.active,
+html body.template-linfopress .faq-accordion-card.active,
+.faq-accordion-card.active {
+  border-color: #000000 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+html body.template-zionic .faq-accordion-card .faq-q-index,
+html body.template-zionic .faq-accordion-card.active .faq-q-index,
+html body.template-linfopress .faq-accordion-card .faq-q-index,
+html body.template-linfopress .faq-accordion-card.active .faq-q-index,
+.faq-accordion-card .faq-q-index,
+.faq-accordion-card.active .faq-q-index {
+  border: 1px solid #18181b !important;
+}
+
+html body.template-zionic .faq-accordion-card .faq-icon,
+html body.template-zionic .faq-accordion-card.active .faq-icon,
+html body.template-linfopress .faq-accordion-card .faq-icon,
+html body.template-linfopress .faq-accordion-card.active .faq-icon,
+.faq-accordion-card .faq-icon,
+.faq-accordion-card.active .faq-icon {
+  border: 1px solid #18181b !important;
+  color: #18181b !important;
+}
+
+
+/* ==========================================================================
+   PERMANENT LUXURY DARK SHADES WITH SHARP FRAMES (DOCTORS & FAQ)
+   "с темными оттенками, острыми рамками"
+   ========================================================================== */
+
+/* 1. DOCTOR CARDS: DARK LUXURY & STRICT SHARP GEOMETRY */
+html body.template-zionic .doctor-luxury-card,
+.doctor-luxury-card {
+  background: #18181b !important;
+  border: 1px solid #27272a !important;
+  border-radius: 0px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.35s ease !important;
+}
+
+html body.template-zionic .doctor-luxury-card:hover,
+.doctor-luxury-card:hover {
+  transform: translateY(-6px) !important;
+  border-color: #52525b !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3) !important;
+}
+
+html body.template-zionic .doctor-photo-frame,
+.doctor-photo-frame {
+  position: relative !important;
+  width: 100% !important;
+  height: 380px !important;
+  overflow: hidden !important;
+  background: #111111 !important;
+  border-bottom: 1px solid #27272a !important;
+  border-radius: 0px !important;
+}
+
+html body.template-zionic .doctor-photo-frame img,
+.doctor-photo-frame img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  display: block !important;
+  border-radius: 0px !important;
+  transition: transform 0.5s ease !important;
+}
+
+html body.template-zionic .doctor-luxury-card:hover .doctor-photo-frame img,
+.doctor-luxury-card:hover .doctor-photo-frame img {
+  transform: scale(1.03) !important;
+}
+
+html body.template-zionic .doctor-card-info,
+.doctor-card-info {
+  padding: 24px 22px 28px 22px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  background: #18181b !important;
+}
+
+html body.template-zionic .doctor-name,
+.doctor-name {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+  letter-spacing: -0.3px !important;
+}
+
+html body.template-zionic .doctor-badge,
+.doctor-badge {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.8px !important;
+  color: #ffffff !important;
+  background: #27272a !important;
+  border: 1px solid #3f3f46 !important;
+  padding: 3px 8px !important;
+  border-radius: 0px !important;
+  text-transform: uppercase !important;
+}
+
+html body.template-zionic .doctor-clinic,
+.doctor-clinic {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14.5px !important;
+  line-height: 1.55 !important;
+  color: #94a3b8 !important;
+  margin: 0 !important;
+}
+
+html body.template-zionic .doctor-role,
+.doctor-role {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #cbd5e1 !important;
+  margin-bottom: 2px !important;
+}
+
+
+/* 2. FAQ ACCORDIONS: DARK LUXURY SHADES WITH SHARP FRAMES */
+html body.template-zionic .faq-accordion-card,
+html body.template-linfopress .faq-accordion-card,
+.faq-accordion-card {
+  position: relative !important;
+  width: 100% !important;
+  background: #18181b !important;
+  border: 1px solid #27272a !important;
+  border-radius: 0px !important;
+  overflow: hidden !important;
+  transition: all 0.25s ease !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12) !important;
+}
+
+html body.template-zionic .faq-accordion-card:hover,
+html body.template-linfopress .faq-accordion-card:hover,
+.faq-accordion-card:hover {
+  border-color: #52525b !important;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.2) !important;
+}
+
+html body.template-zionic .faq-accordion-card.active,
+html body.template-linfopress .faq-accordion-card.active,
+.faq-accordion-card.active {
+  background: #111111 !important;
+  border-color: #3f3f46 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+html body.template-zionic .faq-toggle-header,
+html body.template-linfopress .faq-toggle-header,
+.faq-toggle-header {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 20px !important;
+  padding: 24px 28px !important;
+  background: transparent !important;
+  border: none !important;
+  text-align: left !important;
+  cursor: pointer !important;
+}
+
+html body.template-zionic .faq-q-index,
+html body.template-zionic .faq-accordion-card.active .faq-q-index,
+html body.template-linfopress .faq-q-index,
+html body.template-linfopress .faq-accordion-card.active .faq-q-index,
+.faq-q-index,
+.faq-accordion-card.active .faq-q-index {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px !important;
+  background: #27272a !important;
+  color: #ffffff !important;
+  border: 1px solid #3f3f46 !important;
+  border-radius: 0px !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.5px !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+}
+
+html body.template-zionic .faq-q-text,
+html body.template-zionic .faq-accordion-card.active .faq-q-text,
+html body.template-linfopress .faq-q-text,
+html body.template-linfopress .faq-accordion-card.active .faq-q-text,
+.faq-q-text,
+.faq-accordion-card.active .faq-q-text {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  line-height: 1.35 !important;
+  letter-spacing: -0.2px !important;
+  flex: 1 1 auto !important;
+  margin: 0 !important;
+}
+
+html body.template-zionic .faq-icon,
+html body.template-zionic .faq-accordion-card.active .faq-icon,
+html body.template-linfopress .faq-icon,
+html body.template-linfopress .faq-accordion-card.active .faq-icon,
+.faq-icon,
+.faq-accordion-card.active .faq-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  background: #27272a !important;
+  border: 1px solid #3f3f46 !important;
+  border-radius: 0px !important;
+  color: #ffffff !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  transition: all 0.2s ease !important;
+}
+
+html body.template-zionic .faq-accordion-card.active .faq-icon,
+.faq-accordion-card.active .faq-icon {
+  background: #ffffff !important;
+  color: #111111 !important;
+  border-color: #ffffff !important;
+}
+
+html body.template-zionic .faq-answer-body,
+html body.template-linfopress .faq-answer-body,
+.faq-answer-body {
+  padding: 16px 28px 24px 28px !important;
+  background: #111111 !important;
+  border-top: 1px solid #27272a !important;
+}
+
+html body.template-zionic .faq-answer-body p,
+html body.template-linfopress .faq-answer-body p,
+.faq-answer-body p {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+  color: #cbd5e1 !important;
+  margin: 0 !important;
+}
+
+
+/* Refine Doctor text contrast */
+html body.template-zionic .doctor-luxury-card .doctor-name,
+.doctor-luxury-card .doctor-name {
+  color: #ffffff !important;
+}
+
+html body.template-zionic .doctor-luxury-card .doctor-phd-badge,
+.doctor-luxury-card .doctor-phd-badge {
+  background: #27272a !important;
+  color: #ffffff !important;
+  border: 1px solid #3f3f46 !important;
+  border-radius: 0px !important;
+}
+
+html body.template-zionic .doctor-luxury-card .doctor-specialty,
+.doctor-luxury-card .doctor-specialty {
+  color: #e2e8f0 !important;
+  font-weight: 600 !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  margin: 0 !important;
+}
+
+html body.template-zionic .doctor-luxury-card .doctor-clinic,
+html body.template-zionic .doctor-luxury-card p,
+.doctor-luxury-card .doctor-clinic,
+.doctor-luxury-card p {
+  color: #94a3b8 !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+  margin: 0 !important;
+}
+
+
+/* ==========================================================================
+   RESTORED EXACT FAQ STRIPES ACCORDION (MATCHING SCREENSHOTS EXACTLY)
+   ========================================================================== */
+.exact-zionic-faq {
+  padding: 85px 0 95px 0 !important;
+  background: #ffffff !important;
+}
+
+.exact-faq-accordion-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  max-width: 1050px !important;
+  margin: 0 auto !important;
+}
+
+.exact-faq-item {
+  background: #1e2430 !important;
+  border: 1px solid #2d3748 !important;
+  border-radius: 0px !important; /* Sharp frames as requested */
+  overflow: hidden !important;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08) !important;
+}
+
+.exact-faq-item:hover {
+  border-color: #4a5568 !important;
+}
+
+.exact-faq-btn {
+  width: 100% !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 22px 28px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+  cursor: pointer !important;
+  text-align: left !important;
+  outline: none !important;
+}
+
+.exact-faq-question {
+  color: #ffffff !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 1.4 !important;
+  letter-spacing: -0.2px !important;
+}
+
+.exact-faq-chevron {
+  color: #38bdf8 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.25s ease !important;
+}
+
+.exact-faq-content {
+  display: none;
+  padding: 0 28px 24px 28px !important;
+}
+
+.exact-faq-item.active .exact-faq-content {
+  display: block !important;
+}
+
+.exact-faq-answer {
+  color: #cbd5e1 !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+}
+
+
+/* ==========================================================================
+   LINFOPRESS HERO ADAPTED TEXT (MATCHING SCREENSHOT 1 PRECISELY)
+   ========================================================================== */
+html body.template-linfopress .linfopress-official-hero-title,
+.linfopress-official-hero-title {
+  text-transform: none !important;
+  font-size: clamp(48px, 5.8vw, 84px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -1px !important;
+}
+
+html body.template-linfopress .linfopress-hero-desc,
+.linfopress-hero-desc {
+  text-transform: none !important;
+  font-weight: 500 !important;
+  font-size: clamp(16px, 1.4vw, 20px) !important;
+  line-height: 1.5 !important;
+  letter-spacing: normal !important;
+  color: #e2e8f0 !important;
+  max-width: 640px !important;
+}
+
+
+/* ==========================================================================
+   LINFOPRESS TECHNOLOGIES HEADER (MATCHING SCREENSHOT 1 VERBATIM)
+   ========================================================================== */
+html body.template-linfopress .linfopress-tech-main-title,
+.linfopress-tech-main-title {
+  text-transform: none !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: clamp(32px, 3.8vw, 48px) !important;
+  font-weight: 800 !important;
+  color: #18181b !important;
+  letter-spacing: -0.5px !important;
+  margin: 0 0 16px 0 !important;
+  text-align: center !important;
+}
+
+html body.template-linfopress .linfopress-tech-main-sub,
+.linfopress-tech-main-sub {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  color: #4b5563 !important;
+  max-width: 920px !important;
+  margin: 0 auto 48px auto !important;
+  text-align: center !important;
+}
+
+
+/* Higher specificity override for Linfopress technologies header */
+html body.template-linfopress section.linfopress-tech-bento-section h2.section-main-title,
+html body.template-linfopress section.linfopress-tech-bento-section .linfopress-tech-main-title,
+html body.template-linfopress section#technologies h2,
+html body.template-linfopress section#technologies .section-main-title {
+  text-transform: none !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: clamp(32px, 3.8vw, 48px) !important;
+  font-weight: 800 !important;
+  color: #18181b !important;
+  letter-spacing: -0.5px !important;
 }

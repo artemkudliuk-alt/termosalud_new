@@ -1324,7 +1324,6 @@ function cleanHtml(raw, pageName) {
           <div class="zionic-hero-content">
             <div class="zionic-hero-logo-wrap">
               <img src="/wp-content/uploads/zionic_official/Zionic-Aesthetic-logotipo.png" alt="Zionic Aesthetic" class="zionic-official-logo" width="220" height="48">
-              <div class="zionic-hero-sublogo-tag">технологія Rollactive RF</div>
             </div>
 
             <h1 class="zionic-hero-title">
@@ -2153,8 +2152,7 @@ function cleanHtml(raw, pageName) {
         </div>
       </section>
 
-      <!-- 11. FAQ ACCORDION -->
-      <!-- 11. FAQ ACCORDION -->
+      <!-- 11. FAQ ACCORDION (EXACT STRIPES REPLICATED FROM SCREENSHOTS) -->
       <section class="zionic-faq-section exact-zionic-faq" id="faq">
         <div class="container">
           <div class="section-header-centered text-center" style="margin-bottom: 44px;">
@@ -2348,12 +2346,12 @@ function cleanHtml(raw, pageName) {
             </div>
 
             <h1 class="linfopress-official-hero-title">
-              <span class="hero-word-primary">ТОЧНІСТЬ</span>
-              <span class="hero-word-secondary">КОМФОРТ</span>
+              <span class="hero-word-primary">Linfopress</span>
+              <span class="hero-word-secondary">Evolution PRO</span>
             </h1>
 
             <p class="linfopress-hero-desc">
-              ПРЕСОТЕРАПІЯ З НАЙБІЛЬШИМ РОЗМІРНИМ РЯДОМ НА РИНКУ
+              Перший в світі апарат для преміальної пресотерапії усіх зон тіла. Нове покоління інтелектуальної реабілітації
             </p>
 
             <div class="linfopress-hero-actions">
@@ -2401,7 +2399,7 @@ function cleanHtml(raw, pageName) {
               </div>
               <div class="pillar-text-content">
                 <h4 class="pillar-title">Для всіх розмірів</h4>
-                <p class="pillar-desc">Три рівні блискавок для пацієнтів всіх розмірів</p>
+                <p class="pillar-desc">Три рівня блискавок для пацієнтів всіх розмірів</p>
               </div>
             </div>
 
@@ -2452,7 +2450,7 @@ function cleanHtml(raw, pageName) {
               </div>
               <div class="pillar-text-content">
                 <h4 class="pillar-title">Для всіх розмірів</h4>
-                <p class="pillar-desc">Три рівні блискавок для пацієнтів всіх розмірів</p>
+                <p class="pillar-desc">Три рівня блискавок для пацієнтів всіх розмірів</p>
               </div>
             </div>
 
@@ -2496,9 +2494,9 @@ function cleanHtml(raw, pageName) {
       <section class="linfopress-tech-bento-section" id="technologies">
         <div class="container">
           <div class="section-header-centered">
-            <h2 class="section-main-title">Технології Linfopress Evolution PRO</h2>
-            <p class="section-main-sub">
-              Вперше технологія біоміметичної послідовної пульсації втілена в найкращий в світі апарат для пресотерапії
+            <h2 class="section-main-title linfopress-tech-main-title" style="text-transform: none !important;">Технології Linfopress Evolution PRO</h2>
+            <p class="section-main-sub linfopress-tech-main-sub">
+              Вперше технологія біоміметичної послідовної пульсації втілена в найкращий в світі апарат для пресотерапії. Linfopress Evolution PRO імітує природні пульсуючі рухи в чотирьох унікальних комбінаціях:
             </p>
           </div>
 
