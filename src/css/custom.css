@@ -33,7 +33,7 @@
   /* Standard Body & Card Text */
   --type-body-size: 15.5px;
   --type-body-lh: 1.65;
-  --type-body-color: #64748b;
+  --type-body-color: #54595f;
 
   /* Small Labels, Tags, Microcopy */
   --type-small-size: 13px;
@@ -57,7 +57,7 @@
   --bg-pure: #ffffff;
   --bg-soft-gray: #f7f9fa;
   --bg-card: #ffffff;
-  --brand-border: #e2e8f0;
+  --brand-border: #e4e4e7;
   --brand-border-light: #edf2f7;
 
   /* Dark Graphite & Slate (7.1% Dark Navy/Slate) */
@@ -80,10 +80,10 @@
 
   /* Typography & Muted Grays */
   --text-dark: #1e232e;
-  --text-heading: #111827;
+  --text-heading: #18181b;
   --text-body: #54595f;
   --text-muted: #7a7a7a;
-  --text-light: #94a3b8;
+  --text-light: #a1a1aa;
 
   /* Micro Accents (<0.1%) */
   --accent-stripe: #1e232e;
@@ -301,7 +301,7 @@ header .logo:hover img {
 .header-block-on-main ul li a {
   display: flex !important;
   align-items: center !important;
-  color: #334155 !important;
+  color: #54595f !important;
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 600 !important;
   font-size: 15.5px !important;
@@ -312,7 +312,7 @@ header .logo:hover img {
 }
 
 .header-block-on-main ul li a:hover {
-  color: #0f172a !important;
+  color: #18181b !important;
 }
 
 .mobile-menu-socials {
@@ -330,7 +330,7 @@ header .logo:hover img {
   display: inline-flex !important;
   align-items: center !important;
   gap: 8px !important;
-  color: #1e293b !important;
+  color: #54595f !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 15px !important;
   font-weight: 700 !important;
@@ -348,7 +348,7 @@ header .logo:hover img {
 }
 
 .header-phone:hover {
-  color: #0f172a !important;
+  color: #18181b !important;
 }
 
 .header-btn {
@@ -528,7 +528,7 @@ header .logo:hover img {
     display: block !important;
     width: 100% !important;
     height: 2px !important;
-    background: #0f172a !important;
+    background: #18181b !important;
     border-radius: 0px !important;
     transition: all 0.25s ease !important;
   }
@@ -570,7 +570,7 @@ header .logo:hover img {
     align-items: stretch !important;
     gap: 20px !important;
     z-index: 999 !important;
-    border-bottom: 1px solid #e2e8f0 !important;
+    border-bottom: 1px solid #e4e4e7 !important;
   }
 
   .header-center.active {
@@ -596,7 +596,7 @@ header .logo:hover img {
     font-family: 'Montserrat', sans-serif !important;
     font-size: 14.5px !important;
     font-weight: 700 !important;
-    color: #0f172a !important;
+    color: #18181b !important;
     text-decoration: none !important;
     text-transform: uppercase !important;
     letter-spacing: 0.5px !important;
@@ -608,7 +608,7 @@ header .logo:hover img {
     flex-direction: column !important;
     gap: 12px !important;
     padding-top: 16px !important;
-    border-top: 1px solid #e2e8f0 !important;
+    border-top: 1px solid #e4e4e7 !important;
   }
 
   .mobile-menu-tg-btn {
@@ -617,7 +617,7 @@ header .logo:hover img {
     justify-content: center !important;
     gap: 8px !important;
     height: 44px !important;
-    background: #0f172a !important;
+    background: #18181b !important;
     color: #ffffff !important;
     font-family: 'Montserrat', sans-serif !important;
     font-size: 11.5px !important;
@@ -752,7 +752,7 @@ header .logo:hover img {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: clamp(19px, 1.8vw, 24px) !important;
   font-weight: 700 !important;
-  color: #1e293b !important;
+  color: #54595f !important;
   line-height: 1.35 !important;
   letter-spacing: 0.6px !important;
   text-transform: uppercase !important;
@@ -1069,7 +1069,7 @@ header .logo:hover img {
   font-family: var(--active-heading-font) !important;
   font-size: clamp(36px, 3.8vw, 48px) !important;
   font-weight: 500 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   line-height: 1.2 !important;
   margin: 0 0 16px 0 !important;
   letter-spacing: -0.5px !important;
@@ -1274,7 +1274,7 @@ header .logo:hover img {
 .zionic-compact-card .split-title span {
   font-size: 0.65em !important;
   font-weight: 700 !important;
-  color: #cbd5e1 !important;
+  color: #d4d4d8 !important;
   margin-left: 8px !important;
 }
 
@@ -1335,9 +1335,9 @@ header .logo:hover img {
 }
 
 .zionic-compact-card .split-btn-ghost:hover {
-  background: #e2e8f0 !important;
-  border-color: #e2e8f0 !important;
-  color: #0f172a !important;
+  background: #e4e4e7 !important;
+  border-color: #e4e4e7 !important;
+  color: #18181b !important;
 }
 
 .zionic-compact-card .split-btn-ghost-muted {
@@ -1360,7 +1360,7 @@ header .logo:hover img {
   min-height: 380px !important;
   border-radius: 0px !important;
   overflow: hidden !important;
-  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.25) !important;
+  box-shadow: 0 16px 40px rgba(24, 24, 27, 0.25) !important;
   border: 1px solid rgba(255, 255, 255, 0.22) !important;
   background: #000000 !important;
   cursor: pointer !important;
@@ -1476,7 +1476,7 @@ header .logo:hover img {
   width: 68px !important;
   height: 68px !important;
   border-radius: 50% !important;
-  background: rgba(15, 23, 42, 0.88) !important;
+  background: rgba(24, 24, 27, 0.88) !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
   border: 2px solid rgba(255, 255, 255, 0.85) !important;
@@ -1495,7 +1495,7 @@ header .logo:hover img {
 .zionic-youtube-compact-wrapper:hover .video-facade-play {
   transform: translate(-50%, -50%) scale(1.12) !important;
   background: #ffffff !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   border-color: #ffffff !important;
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6) !important;
 }
@@ -1613,7 +1613,7 @@ header .logo:hover img {
 .bento-card {
   position: relative !important;
   background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e4e4e7 !important;
   border-radius: 0px !important;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02) !important;
   box-sizing: border-box !important;
@@ -1628,13 +1628,13 @@ header .logo:hover img {
 }
 
 .bento-card:hover {
-  border-color: #0f172a !important;
+  border-color: #18181b !important;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06) !important;
 }
 
 .bento-card.is-open {
-  border-color: #0f172a !important;
-  border-left: 4px solid #0f172a !important;
+  border-color: #18181b !important;
+  border-left: 4px solid #18181b !important;
   background: #fafbfc !important;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08) !important;
   transform: none !important;
@@ -1667,7 +1667,7 @@ header .logo:hover img {
 }
 
 .bento-card:hover .bento-top-meta {
-  background: rgba(15, 23, 42, 0.015) !important;
+  background: rgba(24, 24, 27, 0.015) !important;
 }
 
 .bento-meta-left {
@@ -1684,22 +1684,22 @@ header .logo:hover img {
   min-width: 52px !important;
   min-height: 52px !important;
   border-radius: 0px !important;
-  background: #f8fafc !important;
-  border: 1px solid #e2e8f0 !important;
+  background: #f4f4f5 !important;
+  border: 1px solid #e4e4e7 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   transition: all 0.3s ease !important;
   flex-shrink: 0 !important;
 }
 
 .bento-card:hover .bento-icon-pod,
 .bento-card.is-open .bento-icon-pod {
-  background: #0f172a !important;
-  border-color: #0f172a !important;
+  background: #18181b !important;
+  border-color: #18181b !important;
   color: #ffffff !important;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.25) !important;
+  box-shadow: 0 4px 12px rgba(24, 24, 27, 0.25) !important;
 }
 
 .bento-card:hover .bento-svg path,
@@ -1731,7 +1731,7 @@ header .logo:hover img {
   font-size: 12.5px !important;
   font-weight: 800 !important;
   letter-spacing: 1.2px !important;
-  color: #64748b !important;
+  color: #54595f !important;
   text-transform: uppercase !important;
   line-height: 1.2 !important;
 }
@@ -1748,7 +1748,7 @@ header .logo:hover img {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: 24px !important;
   font-weight: 800 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin: 0 !important;
   line-height: 1.2 !important;
   white-space: nowrap !important;
@@ -1765,8 +1765,8 @@ header .logo:hover img {
   font-weight: 800 !important;
   padding: 5px 14px !important;
   background: #f1f5f9 !important;
-  color: #0f172a !important;
-  border: 1px solid #e2e8f0 !important;
+  color: #18181b !important;
+  border: 1px solid #e4e4e7 !important;
   border-radius: 0px !important;
   text-transform: uppercase !important;
   letter-spacing: 0.6px !important;
@@ -1779,7 +1779,7 @@ header .logo:hover img {
 
 .bento-pill-tag.tag-safety {
   background: #f1f5f9 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
 }
 
 .bento-pill-tag.tag-consumables {
@@ -1798,8 +1798,8 @@ header .logo:hover img {
   height: 40px !important;
   border-radius: 0px !important;
   background: #f1f5f9 !important;
-  border: 1px solid #e2e8f0 !important;
-  color: #0f172a !important;
+  border: 1px solid #e4e4e7 !important;
+  color: #18181b !important;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
   flex-shrink: 0 !important;
 }
@@ -1809,8 +1809,8 @@ header .logo:hover img {
 }
 
 .bento-card.is-open .bento-chevron {
-  background: #0f172a !important;
-  border-color: #0f172a !important;
+  background: #18181b !important;
+  border-color: #18181b !important;
   color: #ffffff !important;
 }
 
@@ -1863,7 +1863,7 @@ header .logo:hover img {
   gap: 12px !important;
   font-size: 16px !important;
   font-weight: 600 !important;
-  color: #1e293b !important;
+  color: #54595f !important;
 }
 
 .bento-check {
@@ -1875,7 +1875,7 @@ header .logo:hover img {
 /* ROI Stat Display (Row 1) */
 .bento-roi-display {
   background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e4e4e7 !important;
   padding: 24px 28px !important;
   display: flex !important;
   flex-direction: column !important;
@@ -1905,7 +1905,7 @@ header .logo:hover img {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: 46px !important;
   font-weight: 900 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   line-height: 1 !important;
   white-space: nowrap !important;
   letter-spacing: -0.5px !important;
@@ -1915,7 +1915,7 @@ header .logo:hover img {
 .num-label {
   font-size: 15px !important;
   font-weight: 800 !important;
-  color: #64748b !important;
+  color: #54595f !important;
   letter-spacing: 1px !important;
   white-space: nowrap !important;
   text-transform: uppercase !important;
@@ -1924,7 +1924,7 @@ header .logo:hover img {
 .roi-subtext {
   font-size: 15.5px !important;
   font-weight: 600 !important;
-  color: #64748b !important;
+  color: #54595f !important;
   line-height: 1.4 !important;
 }
 
@@ -1939,7 +1939,7 @@ header .logo:hover img {
 .roi-graph-bar {
   width: 85% !important;
   height: 100% !important;
-  background: #0f172a !important;
+  background: #18181b !important;
 }
 
 .roi-graph-meta {
@@ -1949,13 +1949,13 @@ header .logo:hover img {
   gap: 8px !important;
   font-size: 11px !important;
   font-weight: 700 !important;
-  color: #64748b !important;
+  color: #54595f !important;
 }
 
 .roi-badge-highlight {
-  color: #0f172a !important;
+  color: #18181b !important;
   background: #f1f5f9 !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e4e4e7 !important;
   padding: 3px 8px !important;
   font-weight: 800 !important;
   white-space: nowrap !important;
@@ -1970,7 +1970,7 @@ header .logo:hover img {
 
 .cert-seal {
   background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e4e4e7 !important;
   padding: 12px 6px !important;
   text-align: center !important;
   display: flex !important;
@@ -1980,7 +1980,7 @@ header .logo:hover img {
 }
 
 .cert-seal:hover {
-  border-color: #0f172a !important;
+  border-color: #18181b !important;
   transform: translateY(-2px) !important;
 }
 
@@ -1988,20 +1988,20 @@ header .logo:hover img {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: 12.5px !important;
   font-weight: 900 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
 }
 
 .seal-name {
   font-size: 9px !important;
   font-weight: 700 !important;
-  color: #64748b !important;
+  color: #54595f !important;
   text-transform: uppercase !important;
 }
 
 /* Big Stat Hero Box (Rows 3, 4, 5, 6) */
 .bento-stat-hero-box {
   background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e4e4e7 !important;
   padding: 20px 22px !important;
   text-align: center !important;
   display: flex !important;
@@ -2016,7 +2016,7 @@ header .logo:hover img {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: 38px !important;
   font-weight: 900 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   line-height: 1 !important;
   white-space: nowrap !important;
 }
@@ -2024,13 +2024,13 @@ header .logo:hover img {
 .stat-highlight-label {
   font-size: 12px !important;
   font-weight: 700 !important;
-  color: #1e293b !important;
+  color: #54595f !important;
 }
 
 .stat-sub-highlight {
   font-size: 11px !important;
   font-weight: 500 !important;
-  color: #64748b !important;
+  color: #54595f !important;
 }
 
 @media (max-width: 991px) {
@@ -2094,7 +2094,7 @@ header .logo:hover img {
     font-size: 16px !important;
     line-height: 1.65 !important;
     margin-bottom: 16px !important;
-    color: #1e293b !important;
+    color: #54595f !important;
   }
   .bento-feature-item {
     font-size: 16px !important;
@@ -2203,7 +2203,7 @@ header .logo:hover img {
   display: flex !important;
   flex-direction: column !important;
   background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e4e4e7 !important;
   border-radius: 0px !important;
   overflow: hidden !important;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04) !important;
@@ -2219,7 +2219,7 @@ header .logo:hover img {
   height: 330px !important;
   min-height: 330px !important;
   overflow: hidden !important;
-  background: #f8fafc !important;
+  background: #f4f4f5 !important;
 }
 
 .presentation-showcase-img {
@@ -2238,7 +2238,7 @@ header .logo:hover img {
 .presentation-photo-overlay {
   position: absolute !important;
   inset: 0 !important;
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.08) 0%, rgba(15, 23, 42, 0.15) 100%) !important;
+  background: linear-gradient(180deg, rgba(24, 24, 27, 0.08) 0%, rgba(24, 24, 27, 0.15) 100%) !important;
   pointer-events: none !important;
 }
 
@@ -2252,7 +2252,7 @@ header .logo:hover img {
   align-items: center !important;
   gap: 8px !important;
   padding: 8px 18px !important;
-  background: rgba(15, 23, 42, 0.88) !important;
+  background: rgba(24, 24, 27, 0.88) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
@@ -2310,7 +2310,7 @@ header .logo:hover img {
 .trust-feature-item strong {
   font-size: 17.5px !important;
   font-weight: 800 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   line-height: 1.35 !important;
   display: block !important;
   margin-bottom: 4px !important;
@@ -2331,7 +2331,7 @@ header .logo:hover img {
 .presentation-form-card {
   scroll-margin-top: 85px !important;
   background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e4e4e7 !important;
   border-radius: 0px !important;
   padding: 40px 44px 34px 44px !important;
   box-shadow: 0 16px 45px rgba(0, 0, 0, 0.05) !important;
@@ -2623,13 +2623,13 @@ body.modal-open-lock {
   -webkit-overflow-scrolling: touch !important;
   overscroll-behavior: contain !important;
   background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e4e4e7 !important;
   border-radius: 20px !important;
   padding: 24px 24px 20px 24px !important;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35) !important;
   box-sizing: border-box !important;
   scrollbar-width: thin !important;
-  scrollbar-color: #cbd5e1 transparent !important;
+  scrollbar-color: #d4d4d8 transparent !important;
   opacity: 1 !important;
 }
 
@@ -2640,7 +2640,7 @@ body.modal-open-lock {
   background: transparent !important;
 }
 .glass-modal-card::-webkit-scrollbar-thumb {
-  background: #cbd5e1 !important;
+  background: #d4d4d8 !important;
   border-radius: 4px !important;
 }
 
@@ -2662,21 +2662,21 @@ body.modal-open-lock {
   width: 30px !important;
   height: 30px !important;
   background: #f1f5f9 !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e4e4e7 !important;
   border-radius: 0px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   cursor: pointer !important;
   transition: all 0.2s ease !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   z-index: 10 !important;
   padding: 0 !important;
 }
 
 .glass-modal-close:hover {
-  background: #0f172a !important;
-  border-color: #0f172a !important;
+  background: #18181b !important;
+  border-color: #18181b !important;
   color: #ffffff !important;
   transform: rotate(90deg) !important;
 }
@@ -2702,14 +2702,14 @@ body.modal-open-lock {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: 19px !important;
   font-weight: 800 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin: 0 0 3px 0 !important;
   line-height: 1.2 !important;
 }
 
 .glass-modal-subtitle {
   font-size: 11.5px !important;
-  color: #64748b !important;
+  color: #54595f !important;
   line-height: 1.35 !important;
   margin: 0 !important;
 }
@@ -2741,7 +2741,7 @@ body.modal-open-lock {
 .format-switcher {
   display: flex !important;
   background: #f1f5f9 !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e4e4e7 !important;
   padding: 4px !important;
   gap: 6px !important;
 }
@@ -2755,7 +2755,7 @@ body.modal-open-lock {
   padding: 11px 16px !important;
   background: transparent !important;
   border: none !important;
-  color: #64748b !important;
+  color: #54595f !important;
   font-size: 14.5px !important;
   font-weight: 700 !important;
   cursor: pointer !important;
@@ -2765,7 +2765,7 @@ body.modal-open-lock {
 
 .format-tab-btn.active {
   background: #ffffff !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06) !important;
 }
 
@@ -2786,7 +2786,7 @@ body.modal-open-lock {
   gap: 8px !important;
   padding: 11px 8px !important;
   background: #ffffff !important;
-  border: 1px solid #cbd5e1 !important;
+  border: 1px solid #d4d4d8 !important;
   border-radius: 0px !important;
   color: #475569 !important;
   font-size: 14px !important;
@@ -2816,7 +2816,7 @@ body.modal-open-lock {
 .device-pill.active {
   background: #edf4f7 !important;
   border-color: #1e232e !important;
-  color: #0f172a !important;
+  color: #18181b !important;
 }
 
 .form-group-item {
@@ -2837,7 +2837,7 @@ body.modal-open-lock {
   transform: translateY(-50%) !important;
   width: 18px !important;
   height: 18px !important;
-  stroke: #94a3b8 !important;
+  stroke: #a1a1aa !important;
   pointer-events: none !important;
   transition: stroke 0.25s ease !important;
 }
@@ -2846,10 +2846,10 @@ body.modal-open-lock {
   width: 100% !important;
   height: 52px !important;
   background: #ffffff !important;
-  border: 1.5px solid #cbd5e1 !important;
+  border: 1.5px solid #d4d4d8 !important;
   border-radius: 0px !important;
   padding: 0 16px 0 44px !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   font-family: inherit !important;
   font-size: 15.5px !important;
   font-weight: 500 !important;
@@ -2859,7 +2859,7 @@ body.modal-open-lock {
 }
 
 .luxury-form-input::placeholder {
-  color: #94a3b8 !important;
+  color: #a1a1aa !important;
   font-weight: 400 !important;
   font-size: 14.5px !important;
 }
@@ -2883,7 +2883,7 @@ body.modal-open-lock {
   gap: 8px !important;
   padding: 11px 8px !important;
   background: #ffffff !important;
-  border: 1px solid #cbd5e1 !important;
+  border: 1px solid #d4d4d8 !important;
   border-radius: 0px !important;
   color: #475569 !important;
   font-size: 14px !important;
@@ -2912,7 +2912,7 @@ body.modal-open-lock {
 .messenger-pill.active {
   background: #edf4f7 !important;
   border-color: #1e232e !important;
-  color: #0f172a !important;
+  color: #18181b !important;
 }
 
 .form-row-2col {
@@ -2983,7 +2983,7 @@ body.modal-open-lock {
   gap: 3px !important;
   font-size: 10px !important;
   font-weight: 600 !important;
-  color: #64748b !important;
+  color: #54595f !important;
 }
 
 .bullet-check {
@@ -3039,7 +3039,7 @@ body.modal-open-lock {
   .glass-modal-subtitle {
     font-size: 12.5px !important;
     line-height: 1.4 !important;
-    color: #64748b !important;
+    color: #54595f !important;
   }
 
   .glass-modal-card .format-switcher-wrap {
@@ -3083,7 +3083,7 @@ body.modal-open-lock {
     font-size: 11px !important;
     font-weight: 700 !important;
     border-radius: 10px !important;
-    border: 1.5px solid #e2e8f0 !important;
+    border: 1.5px solid #e4e4e7 !important;
     gap: 5px !important;
     line-height: 1.2 !important;
   }
@@ -3102,8 +3102,8 @@ body.modal-open-lock {
     height: 44px !important;
     font-size: 13.5px !important;
     border-radius: 11px !important;
-    border: 1.5px solid #e2e8f0 !important;
-    background: #f8fafc !important;
+    border: 1.5px solid #e4e4e7 !important;
+    background: #f4f4f5 !important;
     padding: 0 14px 0 42px !important;
   }
 
@@ -3124,7 +3124,7 @@ body.modal-open-lock {
     font-size: 12px !important;
     font-weight: 700 !important;
     border-radius: 10px !important;
-    border: 1.5px solid #e2e8f0 !important;
+    border: 1.5px solid #e4e4e7 !important;
     gap: 5px !important;
   }
 
@@ -3147,7 +3147,7 @@ body.modal-open-lock {
 
   .glass-modal-card .trust-bullet-item {
     font-size: 10.5px !important;
-    color: #64748b !important;
+    color: #54595f !important;
     font-weight: 600 !important;
   }
 
@@ -3238,7 +3238,7 @@ body.modal-open-lock {
 .modern-partner-card {
   flex: 0 0 380px !important;
   background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e4e4e7 !important;
   border-radius: 0px !important;
   overflow: hidden !important;
   text-decoration: none !important;
@@ -3284,7 +3284,7 @@ body.modal-open-lock {
   width: 100% !important;
   height: 280px !important;
   overflow: hidden !important;
-  background: #0f172a !important;
+  background: #18181b !important;
   border-radius: 0px !important;
 }
 
@@ -3339,7 +3339,7 @@ body.modal-open-lock {
   align-items: center !important;
   gap: 7px !important;
   padding: 7px 14px !important;
-  background: rgba(15, 23, 42, 0.82) !important;
+  background: rgba(24, 24, 27, 0.82) !important;
   backdrop-filter: blur(8px) !important;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
   border-radius: 0px !important;
@@ -3386,9 +3386,9 @@ body.modal-open-lock {
   padding: 7px 14px !important;
   background: rgba(255, 255, 255, 0.94) !important;
   backdrop-filter: blur(10px) !important;
-  border: 1px solid #cbd5e1 !important;
+  border: 1px solid #d4d4d8 !important;
   border-radius: 0px !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   font-size: 12px !important;
   font-weight: 800 !important;
   align-self: flex-end !important;
@@ -3429,7 +3429,7 @@ body.modal-open-lock {
   font-family: var(--active-heading-font) !important;
   font-size: 20px !important;
   font-weight: 700 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin: 0 0 4px 0 !important;
 }
 
@@ -3437,7 +3437,7 @@ body.modal-open-lock {
   font-family: var(--active-heading-font) !important;
   font-size: 20px !important;
   font-weight: 700 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin: 0 0 4px 0 !important;
 }
 
@@ -3491,7 +3491,7 @@ body.modal-open-lock {
   gap: 8px !important;
   padding: 6px 16px !important;
   background: #f1f5f9 !important;
-  border: 1px solid #cbd5e1 !important;
+  border: 1px solid #d4d4d8 !important;
   border-radius: 0px !important;
   color: #1e232e !important;
   font-size: 11px !important;
@@ -3519,7 +3519,7 @@ body.modal-open-lock {
   border-bottom: 2px solid #1e232e !important;
   padding: 16px 20px !important;
   margin: 0 auto 28px auto !important;
-  background: #f8fafc !important;
+  background: #f4f4f5 !important;
   text-align: center !important;
   width: 100% !important;
   max-width: 600px !important;
@@ -3530,7 +3530,7 @@ body.modal-open-lock {
   font-size: 15px !important;
   font-weight: 600 !important;
   line-height: 1.6 !important;
-  color: #1e293b !important;
+  color: #54595f !important;
   margin: 0 0 6px 0 !important;
   font-style: italic !important;
   text-align: center !important;
@@ -3539,7 +3539,7 @@ body.modal-open-lock {
 .editorial-quote-author {
   font-size: 11px !important;
   font-weight: 800 !important;
-  color: #64748b !important;
+  color: #54595f !important;
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
   text-align: center !important;
@@ -3552,7 +3552,7 @@ body.modal-open-lock {
   text-align: center !important;
   gap: clamp(24px, 4vw, 50px) !important;
   padding-top: 20px !important;
-  border-top: 1px solid #e2e8f0 !important;
+  border-top: 1px solid #e4e4e7 !important;
   width: 100% !important;
   max-width: 600px !important;
   margin: 0 auto !important;
@@ -3577,7 +3577,7 @@ body.modal-open-lock {
 .stat-label {
   font-size: 11.5px !important;
   font-weight: 600 !important;
-  color: #64748b !important;
+  color: #54595f !important;
   line-height: 1.35 !important;
 }
 
@@ -3591,14 +3591,14 @@ body.modal-open-lock {
 .editorial-lead-p {
   font-size: clamp(14.5px, 1.1vw, 16.5px) !important;
   line-height: 1.75 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   font-weight: 500 !important;
   margin: 0 !important;
 }
 
 .editorial-lead-p strong {
   font-weight: 800 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
 }
 
 .editorial-pillars-list {
@@ -3961,7 +3961,7 @@ footer {
 
 .footer-brand-sub {
   font-size: 14px !important;
-  color: #e2e8f0 !important;
+  color: #e4e4e7 !important;
   letter-spacing: 1px !important;
   margin: 0 !important;
   font-weight: 600 !important;
@@ -4064,7 +4064,7 @@ footer {
   padding-top: 24px !important;
   border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
   font-size: 14.5px !important;
-  color: #e2e8f0 !important;
+  color: #e4e4e7 !important;
   flex-wrap: wrap !important;
   gap: 12px !important;
 }
@@ -4074,7 +4074,7 @@ footer {
 }
 
 .footer-made-in {
-  color: #cbd5e1 !important;
+  color: #d4d4d8 !important;
 }
 
 @media (max-width: 991px) {
@@ -4171,7 +4171,7 @@ footer {
 }
 
 .split-title span {
-  color: #cbd5e1 !important;
+  color: #d4d4d8 !important;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.75) !important;
 }
 
@@ -4512,7 +4512,7 @@ footer {
     font-size: 11.5px !important;
     font-weight: 800 !important;
     letter-spacing: 0.8px !important;
-    color: #64748b !important;
+    color: #54595f !important;
     margin-bottom: 2px !important;
   }
 
@@ -4529,7 +4529,7 @@ footer {
     font-weight: 800 !important;
     margin: 0 !important;
     line-height: 1.2 !important;
-    color: #0f172a !important;
+    color: #18181b !important;
   }
 
   .bento-pill-tag {
@@ -4540,7 +4540,7 @@ footer {
     border-radius: 0px !important;
     white-space: nowrap !important;
     line-height: 1.3 !important;
-    border: 1px solid #cbd5e1 !important;
+    border: 1px solid #d4d4d8 !important;
   }
 
   .bento-pill-tag.tag-consumables {
@@ -4573,7 +4573,7 @@ footer {
     font-size: 15px !important;
     line-height: 1.55 !important;
     margin-bottom: 16px !important;
-    color: #1e293b !important;
+    color: #54595f !important;
   }
 
   .bento-feature-pills {
@@ -4634,9 +4634,9 @@ footer {
     font-size: 15.5px !important;
     font-weight: 900 !important;
     padding: 8px 16px !important;
-    background: #0f172a !important;
+    background: #18181b !important;
     color: #ffffff !important;
-    border: 1px solid #0f172a !important;
+    border: 1px solid #18181b !important;
   }
 
   .stat-big-highlight {
@@ -4806,7 +4806,7 @@ footer {
     font-size: 17px !important;
     line-height: 1.6 !important;
     font-weight: 600 !important;
-    color: #0f172a !important;
+    color: #18181b !important;
     margin-bottom: 10px !important;
   }
 
@@ -4839,7 +4839,7 @@ footer {
     font-size: 17px !important;
     line-height: 1.7 !important;
     font-weight: 500 !important;
-    color: #1e293b !important;
+    color: #54595f !important;
     margin-bottom: 28px !important;
   }
 
@@ -4867,7 +4867,7 @@ footer {
   .pillar-body p {
     font-size: 16.5px !important;
     line-height: 1.6 !important;
-    color: #334155 !important;
+    color: #54595f !important;
   }
 
   .editorial-conclusion {
@@ -5063,7 +5063,7 @@ footer {
   .hero-clean-title .hero-subline {
     font-size: clamp(14px, 3.8vw, 17px) !important;
     font-weight: 700 !important;
-    color: #1e293b !important;
+    color: #54595f !important;
     letter-spacing: 0.5px !important;
     text-transform: uppercase !important;
     white-space: normal !important;
@@ -5131,7 +5131,7 @@ footer {
   .product-name {
     font-size: 18px !important;
     font-weight: 800 !important;
-    color: #0f172a !important;
+    color: #18181b !important;
     line-height: 1.15 !important;
     margin: 0 !important;
     letter-spacing: 0.3px !important;
@@ -5151,14 +5151,14 @@ footer {
     font-size: 12.5px !important;
     font-weight: 800 !important;
     letter-spacing: 0.8px !important;
-    background: #0f172a !important;
+    background: #18181b !important;
     color: #ffffff !important;
     border-radius: 20px !important;
     display: inline-flex !important;
     align-items: center !important;
     gap: 6px !important;
     text-decoration: none !important;
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.18) !important;
+    box-shadow: 0 4px 12px rgba(24, 24, 27, 0.18) !important;
   }
 
   .product-image-wrap {
@@ -5167,7 +5167,7 @@ footer {
     min-width: 82px !important;
     border-radius: 50% !important;
     background: radial-gradient(circle at center, #ffffff 40%, rgba(225, 238, 248, 0.85) 100%) !important;
-    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08) !important;
+    box-shadow: 0 4px 14px rgba(24, 24, 27, 0.08) !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -5197,20 +5197,20 @@ footer {
     width: 32px !important;
     height: 32px !important;
     border-radius: 50% !important;
-    background: #f8fafc !important;
-    border: 1px solid rgba(15, 23, 42, 0.1) !important;
+    background: #f4f4f5 !important;
+    border: 1px solid rgba(24, 24, 27, 0.1) !important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     cursor: pointer !important;
-    color: #0f172a !important;
+    color: #18181b !important;
   }
 
   .slider-arrow.active {
-    background: #0f172a !important;
+    background: #18181b !important;
     color: #ffffff !important;
-    border-color: #0f172a !important;
+    border-color: #18181b !important;
   }
 
 }
@@ -5456,7 +5456,7 @@ footer {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: clamp(18px, 1.8vw, 23px) !important;
   font-weight: 700 !important;
-  color: #1e293b !important;
+  color: #54595f !important;
   line-height: 1.35 !important;
   letter-spacing: 0.6px !important;
   text-transform: uppercase !important;
@@ -5476,7 +5476,7 @@ footer {
   height: 52px;
   padding: 0 28px;
   border-radius: 999px;
-  background: #0f172a;
+  background: #18181b;
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
@@ -5485,14 +5485,14 @@ footer {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.2);
+  box-shadow: 0 10px 25px rgba(24, 24, 27, 0.2);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .zionic-primary-btn:hover {
-  background: #1e293b;
+  background: #54595f;
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.28);
+  box-shadow: 0 14px 30px rgba(24, 24, 27, 0.28);
 }
 
 .zionic-secondary-btn {
@@ -5500,8 +5500,8 @@ footer {
   padding: 0 24px;
   border-radius: 0px !important;
   background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(15, 23, 42, 0.15);
-  color: #0f172a;
+  border: 1px solid rgba(24, 24, 27, 0.15);
+  color: #18181b;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
@@ -5514,7 +5514,7 @@ footer {
 
 .zionic-secondary-btn:hover {
   background: #ffffff;
-  border-color: #0f172a;
+  border-color: #18181b;
   transform: translateY(-2px);
 }
 
@@ -5548,11 +5548,11 @@ footer {
   font-weight: 800 !important;
   letter-spacing: 2px !important;
   text-transform: uppercase !important;
-  color: #64748b !important;
+  color: #54595f !important;
 }
 
 .section-kicker.kicker-light {
-  color: #94a3b8 !important;
+  color: #a1a1aa !important;
 }
 
 .zionic-section-header h2,
@@ -5568,7 +5568,7 @@ footer {
   font-weight: 900 !important;
   line-height: 1.15 !important;
   letter-spacing: -0.5px !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   text-align: center !important;
   text-transform: uppercase !important;
   margin: 0 auto 16px auto !important;
@@ -5596,13 +5596,13 @@ footer {
 }
 
 .accuracy-desc {
-  color: #e2e8f0 !important;
+  color: #e4e4e7 !important;
 }
 
 /* 3. PILLARS SPLIT SECTION (WITH 3D MANIPULA SCROLL ZOOM & AIRY MINIMALISM) */
 .zionic-pillars-section {
   padding: 90px 0 100px 0;
-  background: #f8fafc;
+  background: #f4f4f5;
   overflow: hidden;
   position: relative;
 }
@@ -5655,10 +5655,10 @@ footer {
   font-size: var(--type-small-size, 13px);
   font-weight: var(--type-small-weight, 900);
   letter-spacing: var(--type-small-spacing, 0.5px);
-  color: #0f172a;
+  color: #18181b;
   background: #f1f5f9;
   padding: 5px 12px;
-  border-left: 2px solid #0f172a;
+  border-left: 2px solid #18181b;
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -5672,7 +5672,7 @@ footer {
   font-size: var(--type-h3-size, 19px);
   font-weight: var(--type-h3-weight, 800);
   line-height: var(--type-h3-lh, 1.25);
-  color: #0f172a;
+  color: #18181b;
   margin: 0 0 6px 0;
   letter-spacing: -0.3px;
 }
@@ -5680,7 +5680,7 @@ footer {
 .pillar-min-text {
   font-size: var(--type-body-size, 15.5px);
   line-height: var(--type-body-lh, 1.65);
-  color: var(--type-body-color, #64748b);
+  color: var(--type-body-color, #54595f);
   margin: 0;
 }
 
@@ -5694,12 +5694,12 @@ footer {
   height: 52px;
   padding: 0 36px;
   border-radius: 0px !important;
-  background: #0f172a;
+  background: #18181b;
   color: #ffffff;
   font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.8px;
-  border: 1.5px solid #0f172a;
+  border: 1.5px solid #18181b;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -5710,9 +5710,9 @@ footer {
 
 .zionic-sharp-contact-btn:hover {
   background: transparent;
-  color: #0f172a;
+  color: #18181b;
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 10px 24px rgba(24, 24, 27, 0.12);
 }
 
 .zionic-pillars-image-col {
@@ -5842,9 +5842,9 @@ footer {
   position: relative !important;
   z-index: 2 !important;
   padding: 140px 0 150px 0 !important;
-  background: #f8fafc;
+  background: #f4f4f5;
   overflow: hidden;
-  box-shadow: 0 -25px 60px rgba(15, 23, 42, 0.08) !important;
+  box-shadow: 0 -25px 60px rgba(24, 24, 27, 0.08) !important;
 }
 
 .zionic-manipula-split-layout {
@@ -5867,15 +5867,15 @@ footer {
   width: 100%;
   border-radius: 0px !important;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
-  border: 1px solid #e2e8f0;
+  box-shadow: 0 20px 50px rgba(24, 24, 27, 0.08);
+  border: 1px solid #e4e4e7;
   background: #ffffff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .manipula-photo-frame:hover {
   transform: translateY(-4px);
-  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 30px 60px rgba(24, 24, 27, 0.12);
 }
 
 .manipula-full-photo {
@@ -5900,7 +5900,7 @@ footer {
   gap: 18px;
   align-items: flex-start;
   padding: 16px 0;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e4e4e7;
   transition: transform 0.25s ease;
 }
 
@@ -5917,11 +5917,11 @@ footer {
   font-size: var(--type-small-size, 13px);
   font-weight: var(--type-small-weight, 900);
   letter-spacing: var(--type-small-spacing, 0.5px);
-  color: #0f172a;
+  color: #18181b;
   background: #ffffff;
   padding: 6px 14px;
-  border: 1px solid #e2e8f0;
-  border-left: 3px solid #0f172a;
+  border: 1px solid #e4e4e7;
+  border-left: 3px solid #18181b;
   flex-shrink: 0;
   margin-top: 2px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
@@ -5936,7 +5936,7 @@ footer {
   font-size: var(--type-h3-size, 19px);
   font-weight: var(--type-h3-weight, 800);
   line-height: var(--type-h3-lh, 1.25);
-  color: #0f172a;
+  color: #18181b;
   margin: 0 0 6px 0;
   letter-spacing: -0.3px;
 }
@@ -5944,7 +5944,7 @@ footer {
 .swiss-item-desc {
   font-size: var(--type-body-size, 15.5px);
   line-height: var(--type-body-lh, 1.65);
-  color: var(--type-body-color, #64748b);
+  color: var(--type-body-color, #54595f);
   margin: 0;
 }
 
@@ -6070,7 +6070,7 @@ footer {
 .accuracy-hl-text p {
   font-size: 14.5px;
   line-height: 1.55;
-  color: #e2e8f0;
+  color: #e4e4e7;
   margin: 0;
 }
 
@@ -6130,7 +6130,7 @@ footer {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(24, 24, 27, 0.85);
   backdrop-filter: blur(12px);
   border: 2px solid #ffffff;
   color: #ffffff;
@@ -6159,7 +6159,7 @@ footer {
 .accuracy-cinema-player-box:hover .play-pulse-core {
   transform: scale(1.12);
   background: #ffffff;
-  color: #0f172a;
+  color: #18181b;
 }
 
 .accuracy-video-bottom-bar {
@@ -6170,7 +6170,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: rgba(15, 23, 42, 0.75);
+  background: rgba(24, 24, 27, 0.75);
   backdrop-filter: blur(10px);
   padding: 10px 16px;
   border-radius: 0px !important;
@@ -6224,7 +6224,7 @@ footer {
   height: 68px;
   border-radius: 50%;
   background: #ffffff;
-  color: #0f172a;
+  color: #18181b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6234,14 +6234,14 @@ footer {
 
 .video-preview-wrapper:hover .play-overlay-btn {
   transform: translate(-50%, -50%) scale(1.1);
-  background: #f8fafc;
+  background: #f4f4f5;
 }
 
 .video-duration-tag {
   position: absolute;
   bottom: 14px;
   left: 14px;
-  background: rgba(15, 23, 42, 0.8);
+  background: rgba(24, 24, 27, 0.8);
   color: #ffffff;
   padding: 6px 12px;
   border-radius: 6px;
@@ -6257,7 +6257,7 @@ footer {
   padding: 120px 0 130px 0 !important;
   background: #ffffff !important;
   overflow: hidden;
-  box-shadow: 0 -25px 60px rgba(15, 23, 42, 0.08) !important;
+  box-shadow: 0 -25px 60px rgba(24, 24, 27, 0.08) !important;
 }
 
 .treatments-swiss-layout {
@@ -6306,7 +6306,7 @@ footer {
   gap: 18px;
   align-items: flex-start;
   padding: 16px 0;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e4e4e7;
   transition: transform 0.25s ease;
 }
 
@@ -6323,11 +6323,11 @@ footer {
   font-size: var(--type-small-size, 13px);
   font-weight: var(--type-small-weight, 900);
   letter-spacing: var(--type-small-spacing, 0.5px);
-  color: #0f172a;
+  color: #18181b;
   background: #ffffff;
   padding: 6px 14px;
-  border: 1px solid #e2e8f0;
-  border-left: 3px solid #0f172a;
+  border: 1px solid #e4e4e7;
+  border-left: 3px solid #18181b;
   flex-shrink: 0;
   margin-top: 2px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
@@ -6342,7 +6342,7 @@ footer {
   font-size: var(--type-h3-size, 19px);
   font-weight: var(--type-h3-weight, 800);
   line-height: var(--type-h3-lh, 1.25);
-  color: #0f172a;
+  color: #18181b;
   margin: 0 0 6px 0;
   letter-spacing: -0.3px;
 }
@@ -6350,7 +6350,7 @@ footer {
 .treatment-swiss-item .swiss-item-desc {
   font-size: var(--type-body-size, 15.5px);
   line-height: var(--type-body-lh, 1.65);
-  color: var(--type-body-color, #64748b);
+  color: var(--type-body-color, #54595f);
   margin: 0;
 }
 
@@ -6381,7 +6381,7 @@ footer {
 }
 
 .kol-card {
-  background: #f8fafc;
+  background: #f4f4f5;
   padding: 38px;
   border-radius: 24px;
   border: 1px solid rgba(226, 232, 240, 0.8);
@@ -6411,14 +6411,14 @@ footer {
   font-size: 42px;
   line-height: 1;
   font-family: Georgia, serif;
-  color: #cbd5e1;
+  color: #d4d4d8;
   margin-bottom: 6px;
 }
 
 .kol-text {
   font-size: 15.5px;
   line-height: 1.65;
-  color: #334155;
+  color: #54595f;
   font-style: italic;
   margin: 0 0 24px 0;
   flex-grow: 1;
@@ -6427,20 +6427,20 @@ footer {
 .kol-author strong {
   display: block;
   font-size: 16px;
-  color: #0f172a;
+  color: #18181b;
 }
 
 .kol-author span {
   display: block;
   font-size: 13px;
-  color: #64748b;
+  color: #54595f;
   margin-top: 4px;
 }
 
 /* 9. CLINICAL RESULTS */
 .zionic-results-section {
   padding: 100px 0;
-  background: #f8fafc;
+  background: #f4f4f5;
 }
 
 .results-gallery-grid {
@@ -6493,7 +6493,7 @@ footer {
 .result-meta h4 {
   font-size: 16px;
   font-weight: 700;
-  color: #0f172a;
+  color: #18181b;
   margin: 0;
   line-height: 1.4;
 }
@@ -6505,7 +6505,7 @@ footer {
 }
 
 .badge-sessions {
-  background: #0f172a;
+  background: #18181b;
   color: #ffffff;
   font-size: 11.5px;
   font-weight: 700;
@@ -6514,8 +6514,8 @@ footer {
 }
 
 .badge-area {
-  background: #e2e8f0;
-  color: #334155;
+  background: #e4e4e7;
+  color: #54595f;
   font-size: 11.5px;
   font-weight: 600;
   padding: 4px 10px;
@@ -6551,7 +6551,7 @@ footer {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: clamp(32px, 3.8vw, 48px) !important;
   font-weight: 800 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   line-height: 1.2 !important;
   margin: 0 0 16px 0 !important;
 }
@@ -6560,7 +6560,7 @@ footer {
   font-family: var(--active-body-font), 'Inter', sans-serif !important;
   font-size: clamp(17px, 1.5vw, 20px) !important;
   line-height: 1.6 !important;
-  color: #64748b !important;
+  color: #54595f !important;
   margin: 0;
 }
 
@@ -6601,16 +6601,16 @@ footer {
 }
 
 .knowledge-filter-btn:hover {
-  color: #0f172a;
-  border-color: #cbd5e1;
-  background: #f8fafc;
+  color: #18181b;
+  border-color: #d4d4d8;
+  background: #f4f4f5;
 }
 
 .knowledge-filter-btn.active {
-  background: #0f172a !important;
+  background: #18181b !important;
   color: #ffffff !important;
-  border-color: #0f172a !important;
-  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15);
+  border-color: #18181b !important;
+  box-shadow: 0 4px 14px rgba(24, 24, 27, 0.15);
 }
 
 /* Accordion List */
@@ -6621,7 +6621,7 @@ footer {
 }
 
 .knowledge-item {
-  background: #f8fafc;
+  background: #f4f4f5;
   border: 1px solid rgba(226, 232, 240, 0.95);
   border-radius: 0px !important;
   overflow: hidden;
@@ -6630,14 +6630,14 @@ footer {
 
 .knowledge-item:hover {
   background: #ffffff;
-  border-color: #cbd5e1;
+  border-color: #d4d4d8;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
 }
 
 .knowledge-item.active {
   background: #ffffff;
-  border-color: #0f172a;
-  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+  border-color: #18181b;
+  box-shadow: 0 10px 28px rgba(24, 24, 27, 0.06);
 }
 
 .knowledge-trigger {
@@ -6665,7 +6665,7 @@ footer {
   font-weight: 900 !important;
   color: #1e232e !important;
   background: #f1f5f9 !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e4e4e7 !important;
   width: 42px;
   height: 42px;
   border-radius: 0px !important;
@@ -6695,7 +6695,7 @@ footer {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: clamp(19px, 1.8vw, 22px) !important;
   font-weight: 800 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   line-height: 1.35 !important;
   margin: 0 !important;
 }
@@ -6705,7 +6705,7 @@ footer {
   height: 40px;
   border-radius: 0px !important;
   background: #f1f5f9;
-  color: #0f172a;
+  color: #18181b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6714,7 +6714,7 @@ footer {
 }
 
 .knowledge-item.active .knowledge-action-icon {
-  background: #0f172a;
+  background: #18181b;
   color: #ffffff;
 }
 
@@ -6812,7 +6812,7 @@ footer {
    ========================================================================== */
 .zionic-presentation-stage {
   padding: 100px 0 120px 0 !important;
-  background: #f8fafc !important;
+  background: #f4f4f5 !important;
 }
 
 .zionic-presentation-stage .presentation-header {
@@ -6825,7 +6825,7 @@ footer {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: clamp(32px, 3.8vw, 48px) !important;
   font-weight: 800 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   line-height: 1.2 !important;
   margin: 0 0 16px 0 !important;
 }
@@ -6834,7 +6834,7 @@ footer {
   font-family: var(--active-body-font), 'Inter', sans-serif !important;
   font-size: clamp(17px, 1.5vw, 20px) !important;
   line-height: 1.6 !important;
-  color: #64748b !important;
+  color: #54595f !important;
   margin: 0;
 }
 
@@ -6858,8 +6858,8 @@ footer {
   width: 44px;
   height: 44px;
   border-radius: 0px !important;
-  background: rgba(15, 23, 42, 0.05);
-  color: #0f172a;
+  background: rgba(24, 24, 27, 0.05);
+  color: #18181b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6875,7 +6875,7 @@ footer {
 .direct-call-label {
   font-family: var(--active-body-font), 'Inter', sans-serif !important;
   font-size: 12px;
-  color: #64748b;
+  color: #54595f;
   font-weight: 500;
 }
 
@@ -6883,7 +6883,7 @@ footer {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: 16px;
   font-weight: 800;
-  color: #0f172a;
+  color: #18181b;
   text-decoration: none;
   transition: color 0.2s ease;
 }
@@ -6955,10 +6955,10 @@ footer {
   }
   .zionic-tech-card {
     background: #ffffff !important;
-    border: 1px solid #e2e8f0 !important;
+    border: 1px solid #e4e4e7 !important;
     border-radius: 0px !important;
     padding: 20px 18px !important;
-    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.03) !important;
+    box-shadow: 0 4px 14px rgba(24, 24, 27, 0.03) !important;
   }
   .tech-card-header {
     display: flex !important;
@@ -6981,7 +6981,7 @@ footer {
     text-transform: uppercase !important;
     letter-spacing: 0.8px !important;
     padding: 4px 8px !important;
-    border: 1px solid #e2e8f0 !important;
+    border: 1px solid #e4e4e7 !important;
     border-radius: 0px !important;
   }
   .zionic-tech-card h4 {
@@ -7445,7 +7445,7 @@ footer {
   left: 0 !important;
   width: 100% !important;
   height: 100% !important;
-  background: rgba(15, 23, 42, 0.9) !important;
+  background: rgba(24, 24, 27, 0.9) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   cursor: pointer !important;
@@ -7456,7 +7456,7 @@ footer {
   position: relative !important;
   width: 100% !important;
   max-width: 960px !important;
-  background: #0f172a !important;
+  background: #18181b !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
   border-radius: 0px !important;
   box-shadow: 0 35px 90px rgba(0, 0, 0, 0.75) !important;
@@ -7496,7 +7496,7 @@ footer {
 
 .zionic-video-modal-close:hover {
   background: #ffffff !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   border-color: #ffffff !important;
 }
 
@@ -7688,8 +7688,8 @@ footer {
 }
 
 .linfopress-btn-pill-white:hover {
-  background: #e2e8f0;
-  border-color: #cbd5e1;
+  background: #e4e4e7;
+  border-color: #d4d4d8;
   color: #060709 !important;
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
@@ -7740,7 +7740,7 @@ footer {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: clamp(26px, 3.2vw, 38px);
   font-weight: 400;
-  color: #0f172a;
+  color: #18181b;
   letter-spacing: 0.5px;
   margin: 0 0 22px 0;
   text-transform: uppercase;
@@ -7802,7 +7802,7 @@ footer {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: 16.5px;
   font-weight: 700;
-  color: #0f172a;
+  color: #18181b;
   line-height: 1.35;
   margin: 0 0 4px 0;
 }
@@ -7810,7 +7810,7 @@ footer {
 .frameless-feature-item .feature-sub {
   font-family: var(--active-body-font), 'Inter', sans-serif !important;
   font-size: 14.5px;
-  color: #64748b;
+  color: #54595f;
   line-height: 1.45;
   margin: 0;
 }
@@ -7892,19 +7892,19 @@ footer {
 
 .linfopress-card {
   background: #ffffff;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #e4e4e7;
   border-radius: 0px !important;
   padding: 24px 20px;
   display: flex;
   flex-direction: column;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.02);
+  box-shadow: 0 4px 12px rgba(24, 24, 27, 0.02);
 }
 
 .linfopress-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
-  border-color: #cbd5e1;
+  box-shadow: 0 12px 28px rgba(24, 24, 27, 0.06);
+  border-color: #d4d4d8;
 }
 
 .linfopress-card-media {
@@ -7913,7 +7913,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  background: #f8fafc;
+  background: #f4f4f5;
   padding: 12px;
 }
 
@@ -7937,7 +7937,7 @@ footer {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: 17px;
   font-weight: 800;
-  color: #0f172a;
+  color: #18181b;
   margin: 0 0 10px 0;
   line-height: 1.3;
 }
@@ -7945,7 +7945,7 @@ footer {
 .linfopress-card-body p {
   font-family: var(--active-body-font), 'Inter', sans-serif !important;
   font-size: 14px;
-  color: #64748b;
+  color: #54595f;
   line-height: 1.6;
   margin: 0;
 }
@@ -7953,7 +7953,7 @@ footer {
 /* 4. Linfopress Animated Protocols Grid */
 .linfopress-protocols-section {
   padding: 90px 0 100px 0;
-  background: #f8fafc;
+  background: #f4f4f5;
 }
 
 .linfopress-protocols-grid {
@@ -7964,24 +7964,24 @@ footer {
 
 .protocol-card {
   background: #ffffff;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #e4e4e7;
   border-radius: 0px !important;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.03);
+  box-shadow: 0 4px 14px rgba(24, 24, 27, 0.03);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .protocol-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 14px 30px rgba(24, 24, 27, 0.08);
 }
 
 .protocol-gif-wrap {
   height: 200px;
   position: relative;
-  background: #0f172a;
+  background: #18181b;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -7998,7 +7998,7 @@ footer {
   position: absolute;
   top: 12px;
   left: 12px;
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(24, 24, 27, 0.85);
   backdrop-filter: blur(8px);
   color: #ffffff;
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
@@ -8022,7 +8022,7 @@ footer {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: 18px;
   font-weight: 800;
-  color: #0f172a;
+  color: #18181b;
   margin: 0 0 10px 0;
   line-height: 1.25;
 }
@@ -8065,19 +8065,19 @@ footer {
 
 .size-card {
   background: #ffffff;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #e4e4e7;
   border-radius: 0px !important;
   padding: 24px;
   text-align: left;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.02);
+  box-shadow: 0 4px 12px rgba(24, 24, 27, 0.02);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .size-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+  box-shadow: 0 12px 28px rgba(24, 24, 27, 0.06);
 }
 
 .size-img-wrap {
@@ -8086,7 +8086,7 @@ footer {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  background: #f8fafc;
+  background: #f4f4f5;
   padding: 12px;
 }
 
@@ -8111,14 +8111,14 @@ footer {
   font-family: var(--active-heading-font), 'Montserrat', sans-serif !important;
   font-size: 18px;
   font-weight: 800;
-  color: #0f172a;
+  color: #18181b;
   margin: 0 0 10px 0;
 }
 
 .size-card-info p {
   font-family: var(--active-body-font), 'Inter', sans-serif !important;
   font-size: 14px;
-  color: #64748b;
+  color: #54595f;
   line-height: 1.6;
   margin: 0;
 }
@@ -8231,21 +8231,21 @@ footer {
   font-weight: 900 !important;
   line-height: 1.05 !important;
   letter-spacing: -0.5px !important;
-  color: #1e293b !important;
+  color: #54595f !important;
   text-transform: uppercase !important;
   margin: 0 0 16px 0 !important;
 }
 
 .zionic-hero-title span {
   display: block;
-  color: #1e293b !important;
+  color: #54595f !important;
 }
 
 .zionic-hero-subtitle {
   font-family: 'Inter', sans-serif !important;
   font-size: clamp(13px, 1.2vw, 15px) !important;
   font-weight: 500 !important;
-  color: #334155 !important;
+  color: #54595f !important;
   line-height: 1.5 !important;
   max-width: 520px !important;
   margin: 0 0 24px 0 !important;
@@ -8265,7 +8265,7 @@ footer {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: #0f172a;
+  color: #18181b;
   text-decoration: none;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
@@ -8280,18 +8280,18 @@ footer {
   align-items: center;
   gap: 8px;
   background: #ffffff;
-  border: 1px solid #0f172a;
+  border: 1px solid #18181b;
   padding: 8px 16px;
   font-family: 'Inter', sans-serif;
   font-size: 13px;
   font-weight: 600;
-  color: #0f172a;
+  color: #18181b;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .zionic-btn-video-badge:hover {
-  background: #0f172a;
+  background: #18181b;
   color: #ffffff;
 }
 
@@ -12167,7 +12167,7 @@ html, body {
   width: 100% !important;
   height: 380px !important;
   overflow: hidden !important;
-  background: #f8fafc !important;
+  background: #f4f4f5 !important;
   border-bottom: 1px solid #e4e4e7 !important;
 }
 
@@ -12293,8 +12293,8 @@ html, body {
   position: relative !important;
   width: 100% !important;
   height: 480px !important;
-  background: #f8fafc !important;
-  border: 1px solid #e2e8f0 !important;
+  background: #f4f4f5 !important;
+  border: 1px solid #e4e4e7 !important;
   overflow: hidden !important;
   display: flex !important;
   align-items: center !important;
@@ -12738,14 +12738,14 @@ footer {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 19px !important;
   font-weight: 800 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   line-height: 1.35 !important;
   flex: 1 1 auto !important;
   margin: 0 !important;
   transition: color 0.2s ease !important;
 }
 
-.faq-accordion-card.active .faq-q-text { color: #0f172a !important; }
+.faq-accordion-card.active .faq-q-text { color: #18181b !important; }
 
 .faq-icon {
   font-family: 'Montserrat', sans-serif !important;
@@ -13015,7 +13015,7 @@ footer {
   position: relative !important;
   width: 100% !important;
   height: 480px !important;
-  background: #f8fafc !important;
+  background: #f4f4f5 !important;
   border: 1px solid #e4e4e7 !important; /* Soft Slate Border */
   overflow: hidden !important;
   display: flex !important;
@@ -13223,7 +13223,7 @@ footer {
 .contraindications-card .matrix-sub-head {
   font-family: 'Inter', sans-serif !important;
   font-size: 16px !important;
-  color: #e2e8f0 !important; /* Crisp Subtitle */
+  color: #e4e4e7 !important; /* Crisp Subtitle */
   line-height: 1.5 !important;
   margin: 0 !important;
 }
@@ -13399,7 +13399,7 @@ footer {
   font-size: 19.5px !important;
   font-weight: 900 !important;
   line-height: 1.35 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
 }
 
 .zionic-main-page-wrapper .cert-scan-title {
@@ -13521,7 +13521,7 @@ body.template-zionic .faq-q-text,
   font-size: 19.5px !important;
   font-weight: 900 !important;
   line-height: 1.35 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
 }
 
 body.template-zionic .cert-scan-title,
@@ -13650,7 +13650,7 @@ html body.template-zionic .doctor-name {
 }
 
 html body.template-zionic .faq-q-text {
-  color: #0f172a !important;
+  color: #18181b !important;
 }
 
 html body.template-zionic .cert-scan-title {
@@ -13829,7 +13829,7 @@ html body.template-zionic .zionic-certificates-section .section-main-title {
   font-weight: 500 !important;
   line-height: 1.18 !important;
   letter-spacing: -0.5px !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin: 0 0 18px 0 !important;
   text-transform: uppercase !important;
 }
@@ -13882,7 +13882,7 @@ html body.template-linfopress .section-title,
   font-weight: 500 !important; /* Exact same as Home Page "ІННОВАЦІЙНІ ТЕХНОЛОГІЇ TERMOSALUD" */
   line-height: 1.18 !important;
   letter-spacing: -0.5px !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin: 0 0 18px 0 !important;
   text-transform: uppercase !important;
 }
@@ -14000,7 +14000,7 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
 
 .linfopress-btn-pill-white {
   background: #ffffff !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 13.5px !important;
   font-weight: 800 !important;
@@ -14071,8 +14071,8 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
 }
 
 .linfopress-pill-card {
-  background: #f8fafc !important;
-  border: 1px solid #e2e8f0 !important;
+  background: #f4f4f5 !important;
+  border: 1px solid #e4e4e7 !important;
   padding: 24px 20px !important;
   text-align: center !important;
   transition: all 0.3s ease !important;
@@ -14083,7 +14083,7 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
 
 .linfopress-pill-card:hover {
   transform: translateY(-4px) !important;
-  border-color: #0f172a !important;
+  border-color: #18181b !important;
   box-shadow: 0 10px 25px rgba(0,0,0,0.06) !important;
 }
 
@@ -14100,14 +14100,14 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
   font-family: 'Montserrat', sans-serif !important;
   font-size: 17px !important;
   font-weight: 800 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin: 0 0 6px 0 !important;
 }
 
 .pill-desc {
   font-family: 'Inter', sans-serif !important;
   font-size: 13.5px !important;
-  color: #64748b !important;
+  color: #54595f !important;
   line-height: 1.45 !important;
   margin: 0 !important;
 }
@@ -14290,7 +14290,7 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
 
 .linfopress-modal-close-btn:hover {
   background: #ffffff !important;
-  color: #0f172a !important;
+  color: #18181b !important;
 }
 
 .modal-inner-video {
@@ -14370,7 +14370,7 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
   width: 80px !important;
   height: 80px !important;
   background: #ffffff !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -14421,14 +14421,14 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
   align-items: center !important;
   gap: 20px !important;
   padding: 18px 24px !important;
-  background: #f8fafc !important;
-  border: 1px solid #e2e8f0 !important;
+  background: #f4f4f5 !important;
+  border: 1px solid #e4e4e7 !important;
   transition: all 0.25s ease !important;
 }
 
 .adv-item-card:hover {
   transform: translateX(6px) !important;
-  border-color: #0f172a !important;
+  border-color: #18181b !important;
   background: #ffffff !important;
   box-shadow: 0 8px 20px rgba(0,0,0,0.06) !important;
 }
@@ -14437,14 +14437,14 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
   font-family: 'Montserrat', sans-serif !important;
   font-size: 18px !important;
   font-weight: 900 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   min-width: 32px !important;
 }
 
 .adv-text {
   font-family: 'Inter', sans-serif !important;
   font-size: 16px !important;
-  color: #1e293b !important;
+  color: #54595f !important;
   line-height: 1.5 !important;
   margin: 0 !important;
 }
@@ -14495,7 +14495,7 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
 }
 
 .linfopress-matrix-section .matrix-sub-head {
-  color: #e2e8f0 !important;
+  color: #e4e4e7 !important;
   font-family: 'Inter', sans-serif !important;
   font-size: 16px !important;
   margin-bottom: 24px !important;
@@ -14513,13 +14513,13 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
 }
 
 .linfopress-matrix-section .matrix-item-row:hover {
-  border-color: #0f172a !important;
+  border-color: #18181b !important;
   transform: translateX(4px) !important;
   box-shadow: 0 8px 22px rgba(0,0,0,0.12) !important;
 }
 
 .linfopress-matrix-section .item-index {
-  color: #0f172a !important;
+  color: #18181b !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 15px !important;
   font-weight: 900 !important;
@@ -14527,7 +14527,7 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
 }
 
 .linfopress-matrix-section .item-alert-icon {
-  color: #64748b !important;
+  color: #54595f !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 16px !important;
   font-weight: 900 !important;
@@ -14535,7 +14535,7 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
 }
 
 .linfopress-matrix-section .item-title {
-  color: #0f172a !important;
+  color: #18181b !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 17.5px !important;
   font-weight: 900 !important;
@@ -14561,8 +14561,8 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
   display: grid !important;
   grid-template-columns: 380px 1fr !important;
   gap: 48px !important;
-  background: #f8fafc !important;
-  border: 1px solid #e2e8f0 !important;
+  background: #f4f4f5 !important;
+  border: 1px solid #e4e4e7 !important;
   padding: 48px !important;
   align-items: center !important;
   max-width: 1200px !important;
@@ -14580,7 +14580,7 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
   width: 100% !important;
   height: auto !important;
   object-fit: cover !important;
-  border: 1px solid #cbd5e1 !important;
+  border: 1px solid #d4d4d8 !important;
 }
 
 .doc-quote-mark {
@@ -14588,7 +14588,7 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
   font-size: 56px !important;
   font-weight: 900 !important;
   line-height: 1 !important;
-  color: #94a3b8 !important;
+  color: #a1a1aa !important;
   margin-bottom: 8px !important;
 }
 
@@ -14597,7 +14597,7 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
   font-size: 24px !important;
   font-weight: 800 !important;
   line-height: 1.35 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin-bottom: 16px !important;
 }
 
@@ -14613,14 +14613,14 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
   font-family: 'Montserrat', sans-serif !important;
   font-size: 20px !important;
   font-weight: 900 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin-bottom: 4px !important;
 }
 
 .doc-role {
   font-family: 'Inter', sans-serif !important;
   font-size: 15px !important;
-  color: #64748b !important;
+  color: #54595f !important;
   margin: 0 !important;
 }
 
@@ -14651,15 +14651,15 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
 }
 
 .why-bento-card {
-  background: #f8fafc !important;
-  border: 1px solid #e2e8f0 !important;
+  background: #f4f4f5 !important;
+  border: 1px solid #e4e4e7 !important;
   padding: 32px 28px !important;
   transition: all 0.3s ease !important;
 }
 
 .why-bento-card:hover {
   transform: translateY(-4px) !important;
-  border-color: #0f172a !important;
+  border-color: #18181b !important;
   box-shadow: 0 12px 30px rgba(0,0,0,0.06) !important;
 }
 
@@ -14667,7 +14667,7 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
   font-family: 'Montserrat', sans-serif !important;
   font-size: 24px !important;
   font-weight: 900 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   display: block !important;
   margin-bottom: 12px !important;
 }
@@ -14676,21 +14676,21 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
   font-family: 'Montserrat', sans-serif !important;
   font-size: 19px !important;
   font-weight: 800 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin-bottom: 10px !important;
 }
 
 .why-card-desc {
   font-family: 'Inter', sans-serif !important;
   font-size: 15px !important;
-  color: #64748b !important;
+  color: #54595f !important;
   line-height: 1.6 !important;
   margin: 0 !important;
 }
 
 .linfopress-package-box {
-  background: #f8fafc !important;
-  border: 1px solid #e2e8f0 !important;
+  background: #f4f4f5 !important;
+  border: 1px solid #e4e4e7 !important;
   padding: 48px 40px !important;
   text-align: center !important;
 }
@@ -14699,14 +14699,14 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
   font-family: 'Montserrat', sans-serif !important;
   font-size: 32px !important;
   font-weight: 900 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin-bottom: 8px !important;
 }
 
 .package-subtitle {
   font-family: 'Inter', sans-serif !important;
   font-size: 17px !important;
-  color: #64748b !important;
+  color: #54595f !important;
   margin-bottom: 40px !important;
 }
 
@@ -14730,7 +14730,7 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
 
 .package-item-card {
   background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e4e4e7 !important;
   padding: 24px 16px !important;
   text-align: center !important;
   transition: all 0.3s ease !important;
@@ -14738,7 +14738,7 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
 
 .package-item-card:hover {
   transform: translateY(-4px) !important;
-  border-color: #0f172a !important;
+  border-color: #18181b !important;
   box-shadow: 0 8px 20px rgba(0,0,0,0.06) !important;
 }
 
@@ -14761,7 +14761,7 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
   font-family: 'Montserrat', sans-serif !important;
   font-size: 15px !important;
   font-weight: 800 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin: 0 !important;
 }
 
@@ -14810,7 +14810,7 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
   font-family: 'Montserrat', sans-serif !important;
   font-size: 20px !important;
   font-weight: 800 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin: 0 !important;
   flex: 1 !important;
 }
@@ -15020,8 +15020,8 @@ html body.template-linfopress section:not(#hero) p.section-main-sub,
 }
 
 .linfopress-hero-actions .linfopress-primary-btn:hover {
-  background: #e2e8f0 !important;
-  border-color: #e2e8f0 !important;
+  background: #e4e4e7 !important;
+  border-color: #e4e4e7 !important;
   transform: translateY(-2px) !important;
 }
 
@@ -15176,7 +15176,7 @@ html body.template-linfopress .linfopress-partner-stage-section .section-main-ti
   font-weight: 500 !important;
   line-height: 1.18 !important;
   letter-spacing: -0.5px !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin: 0 auto 18px auto !important;
   text-transform: uppercase !important;
   text-align: center !important;
@@ -15278,7 +15278,7 @@ html body.template-zionic .section-main-title {
   font-size: clamp(34px, 3.8vw, 48px) !important;
   font-weight: 700 !important;
   line-height: 1.2 !important;
-  color: #111827 !important;
+  color: #18181b !important;
   text-align: center !important;
   margin: 0 auto 50px auto !important;
   text-transform: none !important;
@@ -15428,7 +15428,7 @@ html body.template-linfopress .why-main-title,
   font-weight: 700 !important;
   line-height: 1.25 !important;
   letter-spacing: -0.5px !important;
-  color: #111827 !important;
+  color: #18181b !important;
   text-align: center !important;
   margin: 0 auto 50px auto !important;
   text-transform: none !important;
@@ -15563,7 +15563,7 @@ html body.template-linfopress .why-main-title,
   font-weight: 700 !important;
   line-height: 1.25 !important;
   letter-spacing: -0.5px !important;
-  color: #111827 !important;
+  color: #18181b !important;
   text-align: center !important;
   margin: 0 auto 52px auto !important;
   text-transform: none !important;
@@ -15719,7 +15719,7 @@ html body.template-linfopress .why-main-title,
   font-weight: 700 !important;
   line-height: 1.22 !important;
   letter-spacing: -0.5px !important;
-  color: #111827 !important;
+  color: #18181b !important;
   text-align: center !important;
   margin: 0 auto 52px auto !important;
   text-transform: none !important;
@@ -15830,7 +15830,7 @@ html body.template-linfopress section.linfopress-why-section h2 {
   font-size: clamp(34px, 3.8vw, 48px) !important;
   font-weight: 700 !important;
   line-height: 1.25 !important;
-  color: #111827 !important;
+  color: #18181b !important;
   text-align: center !important;
   margin: 0 auto 52px auto !important;
 }
@@ -15843,7 +15843,7 @@ html body.template-linfopress section.linfopress-why-section h2 {
   position: relative !important;
   z-index: 15 !important;
   width: 100% !important;
-  background: #f8fafc !important;
+  background: #f4f4f5 !important;
   padding: 80px 0 0 0 !important;
   overflow: hidden !important;
 }
@@ -15859,8 +15859,8 @@ html body.template-linfopress section.linfopress-why-section h2 {
   display: flex !important;
   align-items: center !important;
   overflow: hidden !important;
-  border-top: 1px solid #e2e8f0 !important;
-  border-bottom: 1px solid #e2e8f0 !important;
+  border-top: 1px solid #e4e4e7 !important;
+  border-bottom: 1px solid #e4e4e7 !important;
 }
 
 .linfopress-doctor-fullscreen-stage .doctor-bg-media-wrap {
@@ -15925,7 +15925,7 @@ html body.template-linfopress section.linfopress-why-section h2 {
   font-size: 12px !important;
   font-weight: 700 !important;
   letter-spacing: 0.8px !important;
-  color: #1e293b !important;
+  color: #54595f !important;
   margin-bottom: 24px !important;
   text-transform: uppercase !important;
 }
@@ -15942,7 +15942,7 @@ html body.template-linfopress section.linfopress-why-section h2 {
   font-size: clamp(22px, 2.2vw, 29px) !important;
   font-weight: 700 !important;
   line-height: 1.35 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin: 0 0 22px 0 !important;
   letter-spacing: -0.3px !important;
 }
@@ -15952,7 +15952,7 @@ html body.template-linfopress section.linfopress-why-section h2 {
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 1.72 !important;
-  color: #334155 !important;
+  color: #54595f !important;
   margin: 0 0 32px 0 !important;
 }
 
@@ -15984,14 +15984,14 @@ html body.template-linfopress section.linfopress-why-section h2 {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 18px !important;
   font-weight: 700 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin: 0 0 4px 0 !important;
 }
 
 .doctor-author-title {
   font-family: 'Inter', sans-serif !important;
   font-size: 14px !important;
-  color: #64748b !important;
+  color: #54595f !important;
   margin: 0 !important;
 }
 
@@ -16068,12 +16068,12 @@ html body.template-linfopress section.linfopress-why-section h2 {
 .linfopress-package-section {
   background: #ffffff !important;
   padding: 80px 0 90px 0 !important;
-  border-bottom: 1px solid #e2e8f0 !important;
+  border-bottom: 1px solid #e4e4e7 !important;
 }
 
 .linfopress-package-section .linfopress-package-box {
-  background: #f8fafc !important;
-  border: 1px solid #e2e8f0 !important;
+  background: #f4f4f5 !important;
+  border: 1px solid #e4e4e7 !important;
   border-radius: 20px !important;
   padding: 50px 40px !important;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
@@ -16088,14 +16088,14 @@ html body.template-linfopress section.linfopress-why-section h2 {
   font-family: 'Montserrat', sans-serif !important;
   font-size: clamp(26px, 2.6vw, 34px) !important;
   font-weight: 700 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin: 0 0 12px 0 !important;
 }
 
 .linfopress-package-section .package-subtitle {
   font-family: 'Inter', sans-serif !important;
   font-size: 16px !important;
-  color: #64748b !important;
+  color: #54595f !important;
   max-width: 600px !important;
   margin: 0 auto !important;
 }
@@ -16108,7 +16108,7 @@ html body.template-linfopress section.linfopress-why-section h2 {
 
 .linfopress-package-section .package-item-card {
   background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e4e4e7 !important;
   border-radius: 0px !important;
   padding: 20px 16px !important;
   text-align: center !important;
@@ -16143,7 +16143,7 @@ html body.template-linfopress section.linfopress-why-section h2 {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 14px !important;
   font-weight: 600 !important;
-  color: #1e293b !important;
+  color: #54595f !important;
   line-height: 1.4 !important;
   margin: 0 !important;
 }
@@ -16166,7 +16166,7 @@ html body.template-linfopress section.linfopress-why-section h2 {
    ========================================================================== */
 .linfopress-why-section .why-card-item {
   background: #ffffff !important;
-  border: 1.5px solid #0f172a !important; /* STRICT SHARP FRAME IN MAIN PAGE STYLE */
+  border: 1.5px solid #18181b !important; /* STRICT SHARP FRAME IN MAIN PAGE STYLE */
   border-radius: 0px !important; /* STRICT 0PX SHARP CORNERS */
   padding: 24px 28px !important;
   min-height: 130px !important;
@@ -16179,7 +16179,7 @@ html body.template-linfopress section.linfopress-why-section h2 {
 
 .linfopress-why-section .why-card-item:hover {
   transform: translateY(-3px) !important;
-  border-color: #0f172a !important;
+  border-color: #18181b !important;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08) !important;
 }
 
@@ -16189,7 +16189,7 @@ html body.template-linfopress section.linfopress-why-section h2 {
   font-size: 34px !important;
   font-weight: 800 !important;
   line-height: 1 !important;
-  color: #0f172a !important; /* REMOVED YELLOW -> SIGNATURE DEEP GRAPHITE */
+  color: #18181b !important; /* REMOVED YELLOW -> SIGNATURE DEEP GRAPHITE */
   margin-bottom: 12px !important;
   letter-spacing: -0.5px !important;
 }
@@ -16200,7 +16200,7 @@ html body.template-linfopress section.linfopress-why-section h2 {
   font-size: 16px !important;
   font-weight: 600 !important;
   line-height: 1.45 !important;
-  color: #1e293b !important;
+  color: #54595f !important;
   margin: 0 !important;
 }
 
@@ -16245,7 +16245,7 @@ html body.template-linfopress .package-title {
   font-family: 'Inter', sans-serif !important;
   font-size: 16px !important;
   line-height: 1.6 !important;
-  color: #94a3b8 !important;
+  color: #a1a1aa !important;
   max-width: 680px !important;
   margin: 0 auto !important;
   text-align: center !important;
@@ -16312,7 +16312,7 @@ html body.template-linfopress .package-title {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 15px !important;
   font-weight: 600 !important;
-  color: #f8fafc !important;
+  color: #f4f4f5 !important;
   line-height: 1.4 !important;
   margin: 0 !important;
   text-align: center !important;
@@ -16382,7 +16382,7 @@ html body.template-linfopress .linfopress-package-section h2,
   font-family: 'Inter', sans-serif !important;
   font-size: 16px !important;
   line-height: 1.6 !important;
-  color: #94a3b8 !important;
+  color: #a1a1aa !important;
   max-width: 680px !important;
   margin: 0 auto !important;
   text-align: center !important;
@@ -16398,7 +16398,7 @@ html body.template-linfopress .linfopress-package-section h2,
 
 .linfopress-package-section .package-item-card {
   background: #111622 !important;
-  border: 1.5px solid #1e293b !important; /* CRISP BLACK / DEEP GRAPHITE FRAME */
+  border: 1.5px solid #54595f !important; /* CRISP BLACK / DEEP GRAPHITE FRAME */
   border-radius: 0px !important; /* STRICT 0PX SHARP CORNERS */
   padding: 24px 18px 26px 18px !important;
   text-align: center !important;
@@ -16560,7 +16560,7 @@ html body.template-linfopress .seo-article-main-title {
   font-family: 'Montserrat', sans-serif !important;
   font-size: clamp(26px, 3.2vw, 38px) !important;
   font-weight: 800 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   line-height: 1.3 !important;
   letter-spacing: -0.5px !important;
   text-transform: none !important; /* NO SCREAMING ALL-CAPS */
@@ -16579,7 +16579,7 @@ html body.template-linfopress .seo-article-sub-title {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 22px !important;
   font-weight: 700 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   line-height: 1.35 !important;
   margin: 36px 0 16px 0 !important;
 }
@@ -16607,7 +16607,7 @@ html body.template-linfopress .seo-article-bullets li::before {
   position: absolute !important;
   left: 6px !important;
   top: 0 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   font-weight: 900 !important;
   font-size: 20px !important;
 }
@@ -16616,7 +16616,7 @@ html body.template-linfopress .seo-article-bullets li strong {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 16px !important;
   font-weight: 700 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
 }
 
 /* SIGNATURE LUXURY BLACK BUTTON */
@@ -16625,9 +16625,9 @@ html body.template-linfopress .seo-toggle-btn {
   align-items: center !important;
   justify-content: center !important;
   gap: 10px !important;
-  background: #0f172a !important;
+  background: #18181b !important;
   color: #ffffff !important;
-  border: 1.5px solid #0f172a !important;
+  border: 1.5px solid #18181b !important;
   padding: 14px 28px !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 13.5px !important;
@@ -16638,15 +16638,15 @@ html body.template-linfopress .seo-toggle-btn {
   border-radius: 0px !important; /* STRICT 0PX SHARP CORNERS */
   margin-top: 14px !important;
   transition: all 0.25s ease !important;
-  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15) !important;
+  box-shadow: 0 4px 14px rgba(24, 24, 27, 0.15) !important;
 }
 
 html body.template-linfopress .seo-toggle-btn:hover {
   background: #ffffff !important;
-  color: #0f172a !important;
-  border-color: #0f172a !important;
+  color: #18181b !important;
+  border-color: #18181b !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.2) !important;
+  box-shadow: 0 8px 24px rgba(24, 24, 27, 0.2) !important;
 }
 
 html body.template-linfopress .seo-toggle-btn .seo-btn-arrow {
@@ -16667,7 +16667,7 @@ html body.template-linfopress .seo-article-main-title {
   font-family: 'Montserrat', sans-serif !important;
   font-size: clamp(26px, 3.2vw, 38px) !important;
   font-weight: 800 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   line-height: 1.3 !important;
   letter-spacing: -0.5px !important;
   margin: 0 0 24px 0 !important;
@@ -16728,7 +16728,7 @@ html body.template-zionic .seo-article-main-title,
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
   font-size: clamp(28px, 3.2vw, 38px) !important;
   font-weight: 800 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   line-height: 1.25 !important;
   letter-spacing: -0.5px !important;
   text-transform: none !important; /* STRICT SENTENCE CASE AS IN SCREENSHOT 1 */
@@ -16743,7 +16743,7 @@ html body.template-zionic .seo-article-sub-title,
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
   font-size: 22px !important;
   font-weight: 700 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   line-height: 1.35 !important;
   text-transform: none !important;
   text-align: left !important;
@@ -16792,7 +16792,7 @@ html body.template-zionic .seo-article-bullets li::before,
   position: absolute !important;
   left: 6px !important;
   top: 0 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   font-weight: 900 !important;
   font-size: 20px !important;
 }
@@ -16803,7 +16803,7 @@ html body.template-zionic .seo-article-bullets li strong,
   font-family: 'Montserrat', sans-serif !important;
   font-size: 16px !important;
   font-weight: 700 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
 }
 
 /* 6. SIGNATURE BUTTON: MATCHING ON BOTH PAGES */
@@ -16814,9 +16814,9 @@ html body.template-zionic .seo-toggle-btn,
   align-items: center !important;
   justify-content: center !important;
   gap: 10px !important;
-  background: #0f172a !important;
+  background: #18181b !important;
   color: #ffffff !important;
-  border: 1.5px solid #0f172a !important;
+  border: 1.5px solid #18181b !important;
   padding: 14px 28px !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 13.5px !important;
@@ -16827,17 +16827,17 @@ html body.template-zionic .seo-toggle-btn,
   border-radius: 0px !important;
   margin-top: 14px !important;
   transition: all 0.25s ease !important;
-  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15) !important;
+  box-shadow: 0 4px 14px rgba(24, 24, 27, 0.15) !important;
 }
 
 html body.template-linfopress .seo-toggle-btn:hover,
 html body.template-zionic .seo-toggle-btn:hover,
 .seo-toggle-btn:hover {
   background: #ffffff !important;
-  color: #0f172a !important;
-  border-color: #0f172a !important;
+  color: #18181b !important;
+  border-color: #18181b !important;
   transform: translateY(-2px) !important;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.2) !important;
+  box-shadow: 0 8px 24px rgba(24, 24, 27, 0.2) !important;
 }
 
 
@@ -16856,10 +16856,10 @@ html body.template-zionic .zionic-faq-section,
 .linfopress-faq-section,
 html body.template-zionic .zionic-faq-section,
 html body.template-linfopress .linfopress-faq-section {
-  background: #f8fafc !important;
+  background: #f4f4f5 !important;
   padding: 85px 0 95px 0 !important;
-  border-top: 1px solid #e2e8f0 !important;
-  border-bottom: 1px solid #e2e8f0 !important;
+  border-top: 1px solid #e4e4e7 !important;
+  border-bottom: 1px solid #e4e4e7 !important;
 }
 
 @media (max-width: 768px) {
@@ -16908,12 +16908,12 @@ html body.template-linfopress .faq-accordion-card {
   position: relative !important;
   width: 100% !important;
   background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e4e4e7 !important;
   border-radius: 0px !important; /* Gentle modern curvature */
   overflow: hidden !important;
   padding: 0 !important;
   margin-bottom: 0 !important;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03) !important;
+  box-shadow: 0 4px 16px rgba(24, 24, 27, 0.03) !important;
   transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease !important;
   box-sizing: border-box !important;
   cursor: pointer !important;
@@ -16923,8 +16923,8 @@ html body.template-linfopress .faq-accordion-card {
 .linfopress-faq-accordion .faq-accordion-card:hover,
 html body.template-zionic .faq-accordion-card:hover,
 html body.template-linfopress .faq-accordion-card:hover {
-  border-color: #cbd5e1 !important;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06) !important;
+  border-color: #d4d4d8 !important;
+  box-shadow: 0 8px 24px rgba(24, 24, 27, 0.06) !important;
   transform: translateY(-1px) !important;
 }
 
@@ -16934,8 +16934,8 @@ html body.template-linfopress .faq-accordion-card:hover {
 html body.template-zionic .faq-accordion-card.active,
 html body.template-linfopress .faq-accordion-card.active {
   background: #ffffff !important;
-  border-color: #0f172a !important;
-  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08) !important;
+  border-color: #18181b !important;
+  box-shadow: 0 12px 32px rgba(24, 24, 27, 0.08) !important;
   transform: translateY(-1px) !important;
 }
 
@@ -16984,7 +16984,7 @@ html body.template-linfopress .faq-q-index {
   height: 32px !important;
   border-radius: 0px !important;
   background: #f1f5f9 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 13px !important;
   font-weight: 800 !important;
@@ -16997,7 +16997,7 @@ html body.template-linfopress .faq-q-index {
 .linfopress-faq-accordion .faq-accordion-card.active .faq-q-index,
 html body.template-zionic .faq-accordion-card.active .faq-q-index,
 html body.template-linfopress .faq-accordion-card.active .faq-q-index {
-  background: #0f172a !important;
+  background: #18181b !important;
   color: #ffffff !important;
 }
 
@@ -17009,7 +17009,7 @@ html body.template-linfopress .faq-q-text {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 17px !important;
   font-weight: 700 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   line-height: 1.35 !important;
   letter-spacing: -0.2px !important;
   flex: 1 1 auto !important;
@@ -17042,9 +17042,9 @@ html body.template-linfopress .faq-toggle-icon {
   height: 32px !important;
   min-width: 32px !important;
   border-radius: 0px !important;
-  background: #f8fafc !important;
-  border: 1px solid #e2e8f0 !important;
-  color: #0f172a !important;
+  background: #f4f4f5 !important;
+  border: 1px solid #e4e4e7 !important;
+  color: #18181b !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 18px !important;
   font-weight: 600 !important;
@@ -17058,8 +17058,8 @@ html body.template-linfopress .faq-toggle-icon {
 .linfopress-faq-accordion .faq-accordion-card.active .faq-toggle-icon,
 html body.template-zionic .faq-accordion-card.active .faq-icon,
 html body.template-linfopress .faq-accordion-card.active .faq-toggle-icon {
-  background: #0f172a !important;
-  border-color: #0f172a !important;
+  background: #18181b !important;
+  border-color: #18181b !important;
   color: #ffffff !important;
 }
 
@@ -17402,7 +17402,7 @@ html body.template-linfopress .faq-card-body p {
     font-weight: 500 !important;
     line-height: 1.18 !important;
     letter-spacing: -0.5px !important;
-    color: #0f172a !important;
+    color: #18181b !important;
     margin-bottom: 12px !important;
     text-transform: uppercase !important;
   }
@@ -17443,7 +17443,7 @@ html body.template-linfopress .faq-card-body p {
 
   .presentation-visual-col {
     width: 100% !important;
-    border: 1px solid #e2e8f0 !important;
+    border: 1px solid #e4e4e7 !important;
     border-radius: 0px !important;
     overflow: hidden !important;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04) !important;
@@ -17490,7 +17490,7 @@ html body.template-linfopress .faq-card-body p {
 
   .presentation-form-card {
     padding: 28px 18px 24px 18px !important;
-    border: 1px solid #e2e8f0 !important;
+    border: 1px solid #e4e4e7 !important;
     border-radius: 0px !important;
     box-shadow: 0 16px 45px rgba(0, 0, 0, 0.05) !important;
     background: #ffffff !important;
@@ -17647,7 +17647,7 @@ html body.template-linfopress .faq-accordion-card.active .faq-q-text,
 html body.template-zionic .faq-q-text,
 html body.template-linfopress .faq-q-text,
 .faq-q-text {
-  color: #0f172a !important;
+  color: #18181b !important;
 }
 
 
@@ -17820,7 +17820,7 @@ header.header,
     font-weight: 500 !important;
     line-height: 1.18 !important;
     letter-spacing: -0.5px !important;
-    color: #0f172a !important;
+    color: #18181b !important;
     margin-bottom: 16px !important;
     text-transform: uppercase !important;
   }
@@ -17861,7 +17861,7 @@ header.header,
     font-weight: 500 !important;
     line-height: 1.18 !important;
     letter-spacing: -0.5px !important;
-    color: #0f172a !important;
+    color: #18181b !important;
     margin-bottom: 12px !important;
     text-transform: uppercase !important;
     word-break: normal !important;
@@ -17910,7 +17910,7 @@ html body.template-linfopress .section-main-title,
   font-weight: 700 !important;
   line-height: 1.16 !important;
   letter-spacing: -0.5px !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   text-transform: uppercase !important;
   margin: 0 0 14px 0 !important;
 }
@@ -18020,7 +18020,7 @@ html body.template-linfopress .section-main-title,
   font-weight: 800 !important;
   line-height: 1.25 !important;
   letter-spacing: -0.3px !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin-bottom: 8px !important;
 }
 
@@ -18039,7 +18039,7 @@ html body.template-linfopress .section-main-title,
   font-size: clamp(18px, 4.5vw, 22px) !important;
   font-weight: 800 !important;
   line-height: 1.25 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin-bottom: 12px !important;
 }
 
@@ -18048,7 +18048,7 @@ html body.template-linfopress .section-main-title,
   font-family: 'Montserrat', sans-serif !important;
   font-size: 14.5px !important;
   line-height: 1.5 !important;
-  color: #334155 !important;
+  color: #54595f !important;
 }
 
 /* C. Why Us / Advantage Cards */
@@ -18059,7 +18059,7 @@ html body.template-linfopress .section-main-title,
   font-size: clamp(17px, 4.2vw, 20px) !important;
   font-weight: 800 !important;
   line-height: 1.3 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin-bottom: 6px !important;
 }
 
@@ -18081,7 +18081,7 @@ html body.template-linfopress .faq-q-text {
   font-size: clamp(15.5px, 4vw, 17.5px) !important;
   font-weight: 700 !important;
   line-height: 1.35 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
 }
 
 .faq-answer-inner,
@@ -18100,7 +18100,7 @@ html body.template-linfopress .faq-q-text {
   font-size: clamp(17px, 4.2vw, 20px) !important;
   font-weight: 700 !important;
   line-height: 1.35 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin-bottom: 10px !important;
 }
 
@@ -18117,14 +18117,14 @@ html body.template-linfopress .faq-q-text {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 16px !important;
   font-weight: 700 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
 }
 
 .doctor-role,
 .doctor-clinic {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 13.5px !important;
-  color: #64748b !important;
+  color: #54595f !important;
 }
 
 /* F. Package Item Cards */
@@ -18133,7 +18133,7 @@ html body.template-linfopress .faq-q-text {
   font-family: 'Montserrat', sans-serif !important;
   font-size: clamp(16px, 4vw, 18px) !important;
   font-weight: 700 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   margin-bottom: 6px !important;
 }
 
@@ -18152,7 +18152,7 @@ html body.template-linfopress .faq-q-text {
   font-size: clamp(22px, 5.5vw, 28px) !important;
   font-weight: 800 !important;
   line-height: 1.25 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   text-transform: uppercase !important;
 }
 
@@ -18217,7 +18217,7 @@ html body.template-linfopress .faq-q-text {
     font-weight: 700 !important;
     line-height: 1.15 !important;
     letter-spacing: -0.5px !important;
-    color: #0f172a !important;
+    color: #18181b !important;
     text-transform: uppercase !important;
     margin-bottom: 18px !important;
   }
@@ -18254,7 +18254,7 @@ html body.template-linfopress .faq-q-text {
     font-weight: 800 !important;
     line-height: 1.25 !important;
     letter-spacing: -0.4px !important;
-    color: #0f172a !important;
+    color: #18181b !important;
   }
 
   /* Card Body & List Text (+15%: 16.5px - 17.5px) */
@@ -18281,7 +18281,7 @@ html body.template-linfopress .faq-q-text {
     font-size: 24px !important;
     font-weight: 700 !important;
     line-height: 1.35 !important;
-    color: #0f172a !important;
+    color: #18181b !important;
   }
 
   /* FAQ Accordions (+15%) */
@@ -18290,7 +18290,7 @@ html body.template-linfopress .faq-q-text {
     font-size: 20px !important;
     font-weight: 700 !important;
     line-height: 1.35 !important;
-    color: #0f172a !important;
+    color: #18181b !important;
   }
 
   html body.template-zionic .faq-answer-inner,
@@ -18340,7 +18340,7 @@ html body.template-linfopress .faq-q-text {
     font-weight: 700 !important;
     line-height: 1.15 !important;
     letter-spacing: -0.5px !important;
-    color: #0f172a !important;
+    color: #18181b !important;
     text-transform: uppercase !important;
     margin-bottom: 12px !important;
     word-break: normal !important;
@@ -18380,7 +18380,7 @@ html body.template-linfopress .faq-q-text {
     font-size: clamp(20px, 5.2vw, 23px) !important;
     font-weight: 800 !important;
     line-height: 1.25 !important;
-    color: #0f172a !important;
+    color: #18181b !important;
   }
 
   /* Card Body & Lists on Mobile (+15%: 15.5px - 16px) */
@@ -18407,7 +18407,7 @@ html body.template-linfopress .faq-q-text {
     font-size: clamp(17px, 4.4vw, 19px) !important;
     font-weight: 700 !important;
     line-height: 1.35 !important;
-    color: #0f172a !important;
+    color: #18181b !important;
   }
 
   html body.template-zionic .faq-answer-inner,
@@ -18444,7 +18444,7 @@ html body.template-linfopress .linfopress-tech-card p,
 html body.template-linfopress .linfopress-tech-card li,
 .linfopress-tech-card p,
 .linfopress-tech-card li {
-  color: #e2e8f0 !important;
+  color: #e4e4e7 !important;
 }
 
 html body.template-zionic .tech-bento-card-dark .bento-head-title,
@@ -18462,7 +18462,7 @@ html body.template-zionic .tech-bento-card-dark p,
 html body.template-zionic .tech-bento-card-dark li,
 html body.template-zionic .bento-card-dark p,
 .tech-bento-card .bento-bottom-content p {
-  color: #cbd5e1 !important;
+  color: #d4d4d8 !important;
 }
 
 
@@ -18482,7 +18482,7 @@ html body.template-linfopress .tech-card-heading {
 .linfopress-tech-card p,
 html body.template-zionic .tech-bento-card p,
 html body.template-linfopress .linfopress-tech-card p {
-  color: #cbd5e1 !important;
+  color: #d4d4d8 !important;
 }
 
 
@@ -18510,7 +18510,7 @@ html body.template-linfopress .linfopress-tech-card p,
 html body.template-linfopress .linfopress-tech-card li,
 html body.template-linfopress .linfopress-tech-card li span,
 .tech-card-text {
-  color: #e2e8f0 !important;
+  color: #e4e4e7 !important;
 }
 
 html body .tech-card-content .bullet-check,
@@ -18554,8 +18554,8 @@ html body .bullet-check {
   align-items: center !important;
   gap: 20px !important;
   padding: 18px 24px !important;
-  background: #f8fafc !important;
-  border: 1px solid #e2e8f0 !important;
+  background: #f4f4f5 !important;
+  border: 1px solid #e4e4e7 !important;
   opacity: 1 !important;
   visibility: visible !important;
 }
@@ -18564,7 +18564,7 @@ html body .bullet-check {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 20px !important;
   font-weight: 900 !important;
-  color: #0f172a !important;
+  color: #18181b !important;
   min-width: 36px !important;
   opacity: 1 !important;
   visibility: visible !important;
@@ -18576,7 +18576,7 @@ html body .bullet-check {
   font-family: 'Inter', 'Montserrat', sans-serif !important;
   font-size: 16.5px !important;
   font-weight: 500 !important;
-  color: #1e293b !important;
+  color: #54595f !important;
   line-height: 1.55 !important;
   margin: 0 !important;
   opacity: 1 !important;
@@ -18596,7 +18596,7 @@ html body .bullet-check {
 section.linfopress-package-section,
 html body.template-linfopress .linfopress-package-section,
 html body.template-zionic .package-section {
-  background: #090d16 !important;
+  background: #121212 !important;
   padding: 100px 0 !important;
 }
 
@@ -18620,7 +18620,7 @@ html body.template-linfopress .linfopress-package-section p,
 html body.template-zionic .package-section p,
 .package-subtitle,
 .linfopress-package-section .package-subtitle {
-  color: #cbd5e1 !important;
+  color: #d4d4d8 !important;
   font-family: 'Inter', 'Montserrat', sans-serif !important;
   font-size: 19.5px !important;
   line-height: 1.6 !important;
@@ -18659,8 +18659,8 @@ html body.template-zionic .package-section p,
 /* Individual Package Card - Bigger, Expanded */
 .linfopress-package-section .package-item-card,
 .package-item-card {
-  background: #111827 !important;
-  border: 1px solid #334155 !important;
+  background: #18181b !important;
+  border: 1px solid #54595f !important;
   padding: 24px 20px !important;
   display: flex !important;
   flex-direction: column !important;
@@ -18674,7 +18674,7 @@ html body.template-zionic .package-section p,
 .linfopress-package-section .package-item-card:hover,
 .package-item-card:hover {
   transform: translateY(-6px) !important;
-  border-color: #64748b !important;
+  border-color: #54595f !important;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45) !important;
 }
 
@@ -18722,7 +18722,7 @@ html body.template-zionic .package-section p,
 section#why,
 html body.template-linfopress section#why,
 html body.template-zionic section#why {
-  background: #090d16 !important;
+  background: #121212 !important;
 }
 
 html body.template-linfopress section#why h2,
@@ -18741,14 +18741,14 @@ html body.template-zionic section#why h2,
 html body.template-zionic section#why p,
 .why-this-p,
 .why-subtitle {
-  color: #cbd5e1 !important;
+  color: #d4d4d8 !important;
   font-size: 19.5px !important;
 }
 
 .why-this-item,
 .why-showcase-card {
-  background: #111827 !important;
-  border: 1px solid #334155 !important;
+  background: #18181b !important;
+  border: 1px solid #54595f !important;
   color: #ffffff !important;
 }
 
@@ -18763,7 +18763,7 @@ html body.template-zionic section#why p,
 .why-this-item p,
 .why-this-item .why-item-desc,
 .why-showcase-card p {
-  color: #cbd5e1 !important;
+  color: #d4d4d8 !important;
   font-size: 16.5px !important;
   line-height: 1.6 !important;
 }
@@ -18787,15 +18787,15 @@ html body.template-zionic section#why p,
 
 .linfopress-tech-card,
 .tech-bento-card {
-  background: #111827 !important;
-  border: 1px solid #334155 !important;
+  background: #18181b !important;
+  border: 1px solid #54595f !important;
   overflow: hidden !important;
 }
 
 .linfopress-tech-card .tech-card-body,
 .tech-bento-card .tech-card-content {
   padding: 32px !important;
-  background: #111827 !important;
+  background: #18181b !important;
 }
 
 @media (max-width: 768px) {
@@ -18820,7 +18820,7 @@ html body.template-zionic section#why p,
 .tech-bento-card p,
 .tech-bento-card li,
 .tech-card-list li {
-  color: #e2e8f0 !important;
+  color: #e4e4e7 !important;
   font-size: 16.5px !important;
   line-height: 1.6 !important;
 }
@@ -18843,7 +18843,7 @@ html body.template-zionic section#why p,
 .matrix-creative-card.indications-card,
 .matrix-creative-card.contraindications-card {
   padding: 36px !important;
-  background: #334155 !important;
+  background: #54595f !important;
   border: 1px solid #475569 !important;
 }
 
@@ -18862,7 +18862,7 @@ html body.template-zionic section#why p,
 }
 
 .matrix-creative-card .matrix-sub-head {
-  color: #cbd5e1 !important;
+  color: #d4d4d8 !important;
   font-size: 16.5px !important;
   margin-bottom: 28px !important;
 }
@@ -18870,12 +18870,12 @@ html body.template-zionic section#why p,
 /* Inside item rows are crisp white cards with dark slate text */
 .matrix-item-row {
   background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
+  border: 1px solid #e4e4e7 !important;
   padding: 18px 20px !important;
 }
 
 .matrix-item-row .item-title {
-  color: #0f172a !important;
+  color: #18181b !important;
   font-size: 18px !important;
   font-weight: 800 !important;
 }
@@ -18940,7 +18940,7 @@ html body.template-zionic .why-this p,
 html body.template-linfopress section#package p,
 
 html body.template-zionic section#why p {
-  color: #cbd5e1 !important;
+  color: #d4d4d8 !important;
   font-family: 'Inter', 'Montserrat', sans-serif !important;
   font-size: 19.5px !important;
   line-height: 1.6 !important;
@@ -18990,7 +18990,7 @@ html body:not(#_x):not(#_y):not(#_z) .linfopress-package-section p,
 html body:not(#_x):not(#_y):not(#_z) .linfopress-package-section .package-subtitle,
 html body:not(#_x):not(#_y):not(#_z) .package-section p,
 html body:not(#_x):not(#_y):not(#_z) section#package p {
-  color: #cbd5e1 !important;
+  color: #d4d4d8 !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 19.5px !important;
   line-height: 1.6 !important;
@@ -19026,8 +19026,8 @@ html body .package-items-grid {
 }
 
 html body .package-item-card {
-  background: #111827 !important;
-  border: 1px solid #334155 !important;
+  background: #18181b !important;
+  border: 1px solid #54595f !important;
   padding: 24px 20px !important;
   min-height: 320px !important;
   display: flex !important;
@@ -19121,7 +19121,7 @@ html body .why-card-item p,
 html body .why-card-text,
 .why-card-item .why-card-text,
 .why-card-item p {
-  color: #0f172a !important;
+  color: #18181b !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 16.5px !important;
   font-weight: 600 !important;
@@ -19133,7 +19133,7 @@ html body .why-card-text,
 html body .linfopress-why-section .why-card-item .why-card-num,
 html body .why-card-item .why-card-num,
 .why-card-item .why-card-num {
-  color: #0f172a !important;
+  color: #18181b !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 32px !important;
   font-weight: 900 !important;
@@ -19156,7 +19156,7 @@ html body:not(#_x):not(#_y):not(#_z) .why-card-item .why-card-text,
 html body:not(#_x):not(#_y):not(#_z) .why-card-item p,
 .why-card-text,
 .why-card-item p {
-  color: #0f172a !important;
+  color: #18181b !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 16.5px !important;
   font-weight: 600 !important;
@@ -19169,7 +19169,7 @@ html body:not(#_x):not(#_y):not(#_z) #why .why-card-item .why-card-num,
 html body:not(#_x):not(#_y):not(#_z) .linfopress-why-section .why-card-num,
 html body:not(#_x):not(#_y):not(#_z) .why-card-num,
 .why-card-num {
-  color: #0f172a !important;
+  color: #18181b !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 34px !important;
   font-weight: 900 !important;
@@ -19187,7 +19187,7 @@ html body:not(#_x):not(#_y):not(#_z) #why .why-main-title,
 html body:not(#_x):not(#_y):not(#_z) #why h2,
 .linfopress-why-section h2,
 .why-main-title {
-  color: #0f172a !important;
+  color: #18181b !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: clamp(36px, 3.6vw, 52px) !important;
   font-weight: 700 !important;
@@ -19202,7 +19202,7 @@ html body:not(#_x):not(#_y):not(#_z) #why h2,
 html body:not(#_x):not(#_y):not(#_z) .linfopress-why-section .why-card-item .why-card-num,
 html body:not(#_x):not(#_y):not(#_z) #why .why-card-num,
 .why-card-num {
-  color: #0f172a !important;
+  color: #18181b !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 34px !important;
   font-weight: 900 !important;
@@ -19219,7 +19219,7 @@ html body:not(#_x):not(#_y):not(#_z) #why .why-card-text,
 html body:not(#_x):not(#_y):not(#_z) #why .why-card-item p,
 .why-card-text,
 .why-card-item p {
-  color: #0f172a !important;
+  color: #18181b !important;
   font-family: 'Montserrat', sans-serif !important;
   font-size: 16.5px !important;
   font-weight: 600 !important;
@@ -19231,6 +19231,101 @@ html body:not(#_x):not(#_y):not(#_z) #why .why-card-item p,
 
 html body .why-card-item {
   background: #ffffff !important;
-  border: 1.5px solid #0f172a !important;
+  border: 1.5px solid #18181b !important;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03) !important;
+}
+
+
+/* ==========================================================================
+   STRICT MONOCHROME & FOOTER-GRAY (#54595f) DESIGN SYSTEM (ZERO BLUE TINTS)
+   ========================================================================== */
+
+/* 1. All Section Frames and Cards on Linfopress & Zionic */
+.linfopress-tech-card,
+.zionic-tech-card,
+.tech-bento-card,
+.linfopress-bento-card,
+.t-reveal-item,
+.phase-card,
+.phase-video-card,
+.why-card-item,
+.package-item-card,
+.advantage-card-v2,
+.linfopress-advantage-card,
+.matrix-creative-card,
+.matrix-custom-item,
+.presentation-card,
+.guarantee-card,
+.doctor-author-avatar {
+  border-color: #54595f !important; /* EXACT SIGNATURE FOOTER DARK GRAY */
+}
+
+/* Second screen (Technologies 4 phases) strict dark gray borders */
+.linfopress-tech-bento-section .linfopress-tech-card,
+.linfopress-tech-card {
+  background: #18181b !important;
+  border: 1.5px solid #54595f !important;
+}
+
+.linfopress-tech-card:hover {
+  border-color: #71717a !important;
+}
+
+.tech-stage-badge {
+  background: #27272a !important;
+  border: 1px solid #54595f !important;
+  color: #ffffff !important;
+}
+
+/* Why section cards */
+.why-card-item,
+.linfopress-why-section .why-card-item {
+  background: #ffffff !important;
+  border: 1.5px solid #54595f !important;
+}
+
+/* Package section cards */
+.package-item-card,
+.linfopress-package-section .package-item-card {
+  background: #18181b !important;
+  border: 1.5px solid #54595f !important;
+}
+
+/* Indications matrix cards */
+.matrix-creative-card,
+.indications-card,
+.contraindications-card {
+  border: 1.5px solid #54595f !important;
+}
+
+/* Main title styling */
+h1, h2, h3, h4, h5, h6,
+.section-main-title,
+.why-main-title {
+  color: #18181b !important;
+}
+
+/* Dark section headings & package */
+#package h2,
+#package .package-title,
+.linfopress-package-section h2,
+.linfopress-package-section .package-title,
+.package-section h2 {
+  color: #ffffff !important;
+}
+
+#package p,
+#package .package-subtitle,
+.linfopress-package-section p,
+.linfopress-package-section .package-subtitle,
+.package-section p {
+  color: #d4d4d8 !important;
+}
+
+/* Footer Gray Brand Elements */
+.site-footer,
+footer,
+.footer-gray-bg {
+  background-color: #54595f !important;
+  color: #ffffff !important;
 }
