@@ -21994,18 +21994,50 @@ html body.template-linfopress section#technologies .section-main-title {
   text-decoration: none !important;
   display: inline-block;
   cursor: pointer !important;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), text-shadow 0.35s ease, opacity 0.25s ease !important;
+  will-change: transform;
 }
 
+/* 1. Video Banner Title Hover (centered zoom + subtle lift & luminous glow) */
 .video-banner-title a:hover,
 .video-banner-link:hover,
+.zionic-video-banner-fullwidth:hover .video-banner-title a {
+  transform: scale(1.045) translateY(-3px) !important;
+  text-shadow: 0 12px 32px rgba(0, 0, 0, 0.85), 0 0 25px rgba(255, 255, 255, 0.35) !important;
+  opacity: 1 !important;
+}
+
+/* 2. Split Card Title Hover (left-anchored zoom + slight forward nudge) */
+.split-title a,
+.split-title-link {
+  transform-origin: left center !important;
+}
+
 .split-title a:hover,
 .split-title-link:hover,
+.zionic-compact-card:hover .split-title a {
+  transform: scale(1.035) translateX(3px) !important;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+  opacity: 1 !important;
+}
+
+/* 3. Hero Product Title Hover */
+.product-name a,
+.product-title-link {
+  transform-origin: left center !important;
+}
+
 .product-name a:hover,
 .product-title-link:hover {
-  opacity: 0.85;
+  transform: scale(1.03) translateX(3px) !important;
+  opacity: 1 !important;
 }
 
 .zionic-video-banner-fullwidth {
   cursor: pointer;
+  transition: filter 0.35s ease;
+}
+
+.zionic-video-banner-fullwidth:hover {
+  filter: brightness(1.06);
 }
