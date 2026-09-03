@@ -2638,47 +2638,82 @@ function cleanHtml(raw, pageName) {
       <!-- ==========================================================================
            5. KEY ADVANTAGES 9-ITEM MATRIX (#advantages)
            ========================================================================== -->
-      <section class="linfopress-advantages-grid-section" id="advantages" style="background: #ffffff !important; position: relative !important; z-index: 20 !important;">
+      <section class="linfopress-advantages-grid-section lp-features-section" id="advantages" style="background: #ffffff !important; position: relative !important; z-index: 20 !important; padding: 120px 0 100px 0 !important; scroll-margin-top: 90px !important;">
         <style>
-          #advantages .section-main-title,
-          .linfopress-advantages-grid-section .section-main-title {
+          #advantages {
+            padding-top: 120px !important;
+            scroll-margin-top: 90px !important;
+          }
+          #advantages .section-main-title {
             color: #18181b !important;
             opacity: 1 !important;
             visibility: visible !important;
             display: block !important;
+            font-family: 'Montserrat', sans-serif !important;
+            font-size: clamp(34px, 3.8vw, 50px) !important;
+            font-weight: 700 !important;
+            text-align: center !important;
+            margin: 0 auto 16px auto !important;
           }
-          #advantages .section-main-sub,
-          .linfopress-advantages-grid-section .section-main-sub {
+          #advantages .section-main-sub {
             color: #475569 !important;
             opacity: 1 !important;
             visibility: visible !important;
             display: block !important;
+            font-family: 'Inter', 'Montserrat', sans-serif !important;
+            font-size: 17px !important;
+            text-align: center !important;
+            max-width: 860px !important;
+            margin: 0 auto 52px auto !important;
           }
-          #advantages .adv-item-card,
-          .linfopress-advantages-grid-section .adv-item-card {
-            background: #f4f4f5 !important;
-            border: 1px solid #e4e4e7 !important;
-            opacity: 1 !important;
-            visibility: visible !important;
+          .lp-features-row {
+            display: flex !important;
+            align-items: flex-start !important;
+            justify-content: space-between !important;
+            gap: 48px !important;
+          }
+          .lp-features-col-list {
+            flex: 1 1 60% !important;
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 14px !important;
+          }
+          .lp-features-col-media {
+            flex: 1 1 40% !important;
+            position: sticky !important;
+            top: 120px !important;
+          }
+          .lp-feature-card {
             display: flex !important;
             align-items: center !important;
-            gap: 20px !important;
+            gap: 22px !important;
             padding: 18px 24px !important;
-          }
-          #advantages .adv-index,
-          .linfopress-advantages-grid-section .adv-index {
-            color: #18181b !important;
-            font-weight: 900 !important;
-            font-size: 18px !important;
-            min-width: 32px !important;
+            background: #f4f4f5 !important;
+            border: 1px solid #e4e4e7 !important;
+            border-radius: 4px !important;
+            transition: all 0.25s ease !important;
             opacity: 1 !important;
             visibility: visible !important;
           }
-          #advantages .adv-text,
-          #advantages .adv-item-card p,
-          .linfopress-advantages-grid-section .adv-text,
-          .linfopress-advantages-grid-section .adv-item-card p {
+          .lp-feature-card:hover {
+            transform: translateX(6px) !important;
+            border-color: #18181b !important;
+            background: #ffffff !important;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06) !important;
+          }
+          .lp-feature-index {
             color: #18181b !important;
+            font-family: 'Montserrat', sans-serif !important;
+            font-weight: 900 !important;
+            font-size: 20px !important;
+            min-width: 36px !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            display: inline-block !important;
+          }
+          .lp-feature-text {
+            color: #18181b !important;
+            font-family: 'Inter', 'Montserrat', sans-serif !important;
             font-size: 16px !important;
             font-weight: 500 !important;
             line-height: 1.5 !important;
@@ -2686,6 +2721,21 @@ function cleanHtml(raw, pageName) {
             opacity: 1 !important;
             visibility: visible !important;
             display: block !important;
+          }
+          .lp-feature-photo {
+            width: 100% !important;
+            height: auto !important;
+            object-fit: contain !important;
+            display: block !important;
+          }
+          @media (max-width: 991px) {
+            .lp-features-row {
+              flex-direction: column !important;
+            }
+            .lp-features-col-media {
+              position: static !important;
+              margin-top: 32px !important;
+            }
           }
         </style>
         <div class="container">
@@ -2696,57 +2746,57 @@ function cleanHtml(raw, pageName) {
             </p>
           </div>
 
-          <div class="linfopress-advantages-row">
-            <div class="linfopress-advantages-col-list">
-              <div class="adv-item-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
-                <span class="adv-index" style="color: #18181b !important; font-weight: 900 !important;">01</span>
-                <p class="adv-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Перший в світі апарат для пресотерапії з масажем ділянок холки і бочків (love-handles)</p>
+          <div class="lp-features-row linfopress-advantages-row">
+            <div class="lp-features-col-list linfopress-advantages-col-list">
+              <div class="lp-feature-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
+                <span class="lp-feature-index" style="color: #18181b !important; font-weight: 900 !important;">01</span>
+                <p class="lp-feature-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Перший в світі апарат для пресотерапії з масажем ділянок холки і бочків (love-handles)</p>
               </div>
 
-              <div class="adv-item-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
-                <span class="adv-index" style="color: #18181b !important; font-weight: 900 !important;">02</span>
-                <p class="adv-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Нове покоління інтелектуальної пресотерапії: технологія біоміметичної послідовної пульсації</p>
+              <div class="lp-feature-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
+                <span class="lp-feature-index" style="color: #18181b !important; font-weight: 900 !important;">02</span>
+                <p class="lp-feature-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Нове покоління інтелектуальної пресотерапії: технологія біоміметичної послідовної пульсації</p>
               </div>
 
-              <div class="adv-item-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
-                <span class="adv-index" style="color: #18181b !important; font-weight: 900 !important;">03</span>
-                <p class="adv-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Підвищена безпека завдяки контролю тиску в кожній манжеті</p>
+              <div class="lp-feature-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
+                <span class="lp-feature-index" style="color: #18181b !important; font-weight: 900 !important;">03</span>
+                <p class="lp-feature-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Підвищена безпека завдяки контролю тиску в кожній манжеті</p>
               </div>
 
-              <div class="adv-item-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
-                <span class="adv-index" style="color: #18181b !important; font-weight: 900 !important;">04</span>
-                <p class="adv-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Найзручніший в роботі. Манжети для ніг і рук зручно одягаються, мають три рівня блискавок для пацієнтів всіх розмірів</p>
+              <div class="lp-feature-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
+                <span class="lp-feature-index" style="color: #18181b !important; font-weight: 900 !important;">04</span>
+                <p class="lp-feature-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Найзручніший в роботі. Манжети для ніг і рук зручно одягаються, мають три рівня блискавок для пацієнтів всіх розмірів</p>
               </div>
 
-              <div class="adv-item-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
-                <span class="adv-index" style="color: #18181b !important; font-weight: 900 !important;">05</span>
-                <p class="adv-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Найкомфортніший завдяки етапам розігріву і релаксації</p>
+              <div class="lp-feature-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
+                <span class="lp-feature-index" style="color: #18181b !important; font-weight: 900 !important;">05</span>
+                <p class="lp-feature-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Найкомфортніший завдяки етапам розігріву і релаксації</p>
               </div>
 
-              <div class="adv-item-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
-                <span class="adv-index" style="color: #18181b !important; font-weight: 900 !important;">06</span>
-                <p class="adv-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Ключовий елемент програм "Детокс", "Схуднення", "Антицелюліт"</p>
+              <div class="lp-feature-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
+                <span class="lp-feature-index" style="color: #18181b !important; font-weight: 900 !important;">06</span>
+                <p class="lp-feature-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Ключовий елемент програм "Детокс", "Схуднення", "Антицелюліт"</p>
               </div>
 
-              <div class="adv-item-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
-                <span class="adv-index" style="color: #18181b !important; font-weight: 900 !important;">07</span>
-                <p class="adv-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Використовується у спортивній медицині (розігрів перед тренуваннями, регенерація зв'язкових тканин)</p>
+              <div class="lp-feature-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
+                <span class="lp-feature-index" style="color: #18181b !important; font-weight: 900 !important;">07</span>
+                <p class="lp-feature-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Використовується у спортивній медицині (розігрів перед тренуваннями, регенерація зв'язкових тканин)</p>
               </div>
 
-              <div class="adv-item-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
-                <span class="adv-index" style="color: #18181b !important; font-weight: 900 !important;">08</span>
-                <p class="adv-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Використовується у пост-операційній реабілітації для дренажу</p>
+              <div class="lp-feature-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
+                <span class="lp-feature-index" style="color: #18181b !important; font-weight: 900 !important;">08</span>
+                <p class="lp-feature-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Використовується у пост-операційній реабілітації для дренажу</p>
               </div>
 
-              <div class="adv-item-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
-                <span class="adv-index" style="color: #18181b !important; font-weight: 900 !important;">09</span>
-                <p class="adv-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Найвища якість матеріалів (апарат класу преміум)</p>
+              <div class="lp-feature-card" style="background: #f4f4f5 !important; border: 1px solid #e4e4e7 !important;">
+                <span class="lp-feature-index" style="color: #18181b !important; font-weight: 900 !important;">09</span>
+                <p class="lp-feature-text" style="color: #18181b !important; font-size: 16px !important; line-height: 1.5 !important; opacity: 1 !important; visibility: visible !important; display: block !important;">Найвища якість матеріалів (апарат класу преміум)</p>
               </div>
             </div>
 
-            <div class="linfopress-advantages-col-media">
-              <div class="adv-media-sticky-box">
-                <img src="/wp-content/uploads/2026/03/abr-img-optimized.png" alt="Переваги Linfopress Evolution PRO" class="adv-product-photo" loading="lazy">
+            <div class="lp-features-col-media linfopress-advantages-col-media">
+              <div class="lp-feature-media-box adv-media-sticky-box">
+                <img src="/wp-content/uploads/2026/03/abr-img-optimized.png" alt="Переваги Linfopress Evolution PRO" class="lp-feature-photo adv-product-photo" loading="lazy">
               </div>
             </div>
           </div>
