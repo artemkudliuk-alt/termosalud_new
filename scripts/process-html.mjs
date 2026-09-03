@@ -1861,7 +1861,7 @@ function cleanHtml(raw, pageName) {
                 <!-- 2 -->
                 <div class="advantage-nine-card">
                   <span class="advantage-nine-num">2</span>
-                  <p class="advantage-nine-text">Інтелектуальна Система взаємодії з пацієнтом враховує температуру, тиск, передану енергію для формування оптимальної терапевтичної дози.</p>
+                  <p class="advantage-nine-text">Інтелектуальна Система взаємодії з пацієнтом враховує: температуру, тиск, передану енергію для формування оптимальної терапевтичної дози.</p>
                 </div>
                 <!-- 3 -->
                 <div class="advantage-nine-card">
@@ -1882,21 +1882,6 @@ function cleanHtml(raw, pageName) {
                 <div class="advantage-nine-card">
                   <span class="advantage-nine-num">6</span>
                   <p class="advantage-nine-text">Ключовий елемент програм "Детокс", "Схуднення", "Антицелюліт" для відновлення балансу та тонусу тіла.</p>
-                </div>
-                <!-- 7 -->
-                <div class="advantage-nine-card">
-                  <span class="advantage-nine-num">7</span>
-                  <p class="advantage-nine-text">Використовується у спортивній медицині для розігріву м'язів перед тренуваннями і для регенерації зв'язкових тканин.</p>
-                </div>
-                <!-- 8 -->
-                <div class="advantage-nine-card">
-                  <span class="advantage-nine-num">8</span>
-                  <p class="advantage-nine-text">Використовується у пост-операційній реабілітації для зменшення відчуття стягнутості шкіри після операції, профілактики утворення фіброзу.</p>
-                </div>
-                <!-- 9 -->
-                <div class="advantage-nine-card">
-                  <span class="advantage-nine-num">9</span>
-                  <p class="advantage-nine-text">Найвигідніший з усіх апаратів для моделювання фігури завдяки високій рентабельності процедури. Окупність 9 місяців.</p>
                 </div>
               </div>
             </div>
