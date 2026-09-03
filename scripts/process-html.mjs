@@ -2039,52 +2039,53 @@ function cleanHtml(raw, pageName) {
       <!-- 10. DOCTORS & EXPERT REVIEWS -->
       <section class="zionic-doctors-section" id="doctors">
         <div class="container">
-          <div class="section-header-centered">
+          <div class="section-header-centered text-center">
             <h2 class="section-main-title">Лікарі довіряють ZIONIC у щоденній практиці</h2>
-            <p class="section-main-sub">Косметологи, дерматологи та керівники клінік Європи вже обрали ZIONIC як надійний інструмент для моделювання тіла. Їхні відгуки це найкраще підтвердження ефективності.</p>
+            <p class="section-main-sub">Косметологи, дерматологи та керівники клінік Європі вже обрали ZIONIC як надійний інструмент для моделювання тіла. Їхні відгуки це найкраще підтвердження ефективності.</p>
           </div>
 
-          <div class="zionic-doctors-grid">
+          <div class="zionic-doctors-grid exact-doctors-grid">
             <!-- Doctor 1 -->
-            <div class="doctor-luxury-card">
-              <div class="doctor-photo-frame">
-                <img src="/wp-content/uploads/2026/03/doctor1-optimized.png" alt="Олена Стоянова - PhD" loading="lazy">
+            <div class="doctor-luxury-card exact-doctor-card">
+              <div class="doctor-photo-frame exact-doctor-photo">
+                <img src="/wp-content/uploads/2026/03/doctor1-optimized.png" alt="Олена Стоянова" loading="lazy">
               </div>
-              <div class="doctor-card-info">
-                <div class="doctor-header-row">
-                  <h4 class="doctor-name">Олена Стоянова</h4>
-                  <span class="doctor-phd-badge">PhD</span>
-                </div>
-                <p class="doctor-clinic">Клініка Естетичної Медицини St. Esthetic, Київ</p>
+              <div class="doctor-card-info exact-doctor-info">
+                <h4 class="doctor-name exact-doc-name">Олена Стоянова</h4>
+                <p class="doctor-clinic exact-doc-desc">
+                  PhD<br>
+                  Клініка Естетичної Медицини St. Esthetic,<br>
+                  Київ
+                </p>
               </div>
             </div>
 
             <!-- Doctor 2 -->
-            <div class="doctor-luxury-card">
-              <div class="doctor-photo-frame">
-                <img src="/wp-content/uploads/2026/03/doctor2-optimized.png" alt="Ганна Кривошеєва - PhD" loading="lazy">
+            <div class="doctor-luxury-card exact-doctor-card">
+              <div class="doctor-photo-frame exact-doctor-photo">
+                <img src="/wp-content/uploads/2026/03/doctor2-optimized.png" alt="Ганна Кривошеєва" loading="lazy">
               </div>
-              <div class="doctor-card-info">
-                <div class="doctor-header-row">
-                  <h4 class="doctor-name">Ганна Кривошеєва</h4>
-                  <span class="doctor-phd-badge">PhD</span>
-                </div>
-                <p class="doctor-clinic">MD Клініка апаратної косметології L'CLINIC, Київ</p>
+              <div class="doctor-card-info exact-doctor-info">
+                <h4 class="doctor-name exact-doc-name">Ганна Кривошеєва</h4>
+                <p class="doctor-clinic exact-doc-desc">
+                  PhD<br>
+                  MD Клініка апаратної косметології L'CLINIC,<br>
+                  Київ
+                </p>
               </div>
             </div>
 
             <!-- Doctor 3 -->
-            <div class="doctor-luxury-card">
-              <div class="doctor-photo-frame">
+            <div class="doctor-luxury-card exact-doctor-card">
+              <div class="doctor-photo-frame exact-doctor-photo">
                 <img src="/wp-content/uploads/2026/03/doctor3-optimized.png" alt="Carmen Navarro" loading="lazy">
               </div>
-              <div class="doctor-card-info">
-                <div class="doctor-header-row">
-                  <h4 class="doctor-name">Carmen Navarro</h4>
-                  <span class="doctor-phd-badge">Експерт</span>
-                </div>
-                <p class="doctor-specialty">Легенда Естетичної Медицини Іспанії</p>
-                <p class="doctor-clinic">Клініка Carmen Navarro Sagasta, Мадрид</p>
+              <div class="doctor-card-info exact-doctor-info">
+                <h4 class="doctor-name exact-doc-name">Carmen Navarro</h4>
+                <p class="doctor-clinic exact-doc-desc">
+                  Легенда Естетичної Медицини Іспанії<br>
+                  Клініка Carmen Navarro Sagasta, Мадрид
+                </p>
               </div>
             </div>
           </div>

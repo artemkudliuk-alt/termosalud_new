@@ -19958,3 +19958,107 @@ html body.template-zionic .exact-partner-title,
     gap: 40px !important;
   }
 }
+
+
+/* ==========================================================================
+   EXACT DOCTORS SECTION STYLES (MATCHING SCREENSHOT)
+   ========================================================================== */
+.exact-doctors-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 28px !important;
+  max-width: 1200px !important;
+  margin: 48px auto 0 auto !important;
+}
+
+.exact-doctor-card {
+  background: #1e2430 !important;
+  border-radius: 12px !important;
+  padding: 20px !important;
+  border: 1px solid #2d3748 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.exact-doctor-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2) !important;
+}
+
+.exact-doctor-photo {
+  width: 100% !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  margin-bottom: 18px !important;
+  background: #111827 !important;
+}
+
+.exact-doctor-photo img {
+  width: 100% !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.exact-doctor-info {
+  text-align: left !important;
+  padding: 0 4px !important;
+}
+
+.exact-doc-name {
+  color: #ffffff !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 16.5px !important;
+  font-weight: 700 !important;
+  margin: 0 0 8px 0 !important;
+  text-transform: none !important;
+}
+
+.exact-doc-desc {
+  color: #94a3b8 !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.45 !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .exact-doctors-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 24px !important;
+  }
+}
+
+
+/* Fix Doctor Card Dark Background & Text Colors */
+html body.template-zionic .exact-doctor-card .exact-doctor-info,
+.exact-doctor-card .exact-doctor-info,
+.exact-doctor-info {
+  background: transparent !important;
+  padding: 16px 4px 8px 4px !important;
+}
+
+html body.template-zionic .exact-doctor-card .exact-doc-name,
+.exact-doctor-card .exact-doc-name,
+.exact-doc-name {
+  color: #ffffff !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  margin: 0 0 8px 0 !important;
+  text-transform: none !important;
+}
+
+html body.template-zionic .exact-doctor-card .exact-doc-desc,
+.exact-doctor-card .exact-doc-desc,
+.exact-doc-desc {
+  color: #cbd5e1 !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13.5px !important;
+  line-height: 1.45 !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+}
