@@ -1310,7 +1310,8 @@ function cleanHtml(raw, pageName) {
   if (pageName === 'zionic') {
     const modernZionicHtml = `
 
-      <!-- 1. HERO SECTION (RESTORED EXACT ORIGINAL) -->
+      <!-- 1. HERO & TICKER CURTAIN TRACK (SCREEN 2 SLIDES OVER SCREEN 1 ONLY) -->
+      <div class="zionic-hero-curtain-track">
       <section class="zionic-official-hero">
         <div class="zionic-hero-bg-media">
           <video autoplay loop muted playsinline class="zionic-hero-bg-video" preload="auto">
@@ -1440,6 +1441,7 @@ function cleanHtml(raw, pageName) {
           </div>
         </div>
       </section>
+      </div><!-- /zionic-hero-curtain-track -->
 
       <!-- 3. TECHNOLOGIES BENTO SHOWCASE (MAIN PAGE STYLE) -->
       <section class="zionic-tech-bento-section" id="technologies">
