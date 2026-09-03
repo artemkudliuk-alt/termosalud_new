@@ -9743,12 +9743,18 @@ footer {
   display: flex;
   gap: 60px;
   width: max-content;
-  animation: zionicMarqueeLoop 30s linear infinite;
+  animation: zionicMarqueeLoop 24s linear infinite !important;
+  -webkit-animation: zionicMarqueeLoop 24s linear infinite !important;
   will-change: transform;
+  cursor: grab;
+}
+
+.zionic-ticker-track:active {
+  cursor: grabbing;
 }
 
 .zionic-infinite-ticker-section:hover .zionic-ticker-track {
-  animation-play-state: paused;
+  animation-play-state: running !important;
 }
 
 @keyframes zionicMarqueeLoop {
@@ -9757,6 +9763,15 @@ footer {
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@-webkit-keyframes zionicMarqueeLoop {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
   }
 }
 
