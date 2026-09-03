@@ -18737,7 +18737,7 @@ html body.template-zionic section#why h2,
   text-align: center !important;
 }
 
-html body.template-linfopress section#why p,
+html body.template-linfopress section#why p:not(.why-card-text):not(.why-item-desc):not(.why-card-item p),
 html body.template-zionic section#why p,
 .why-this-p,
 .why-subtitle {
@@ -18929,16 +18929,16 @@ html body .linfopress-package-section p,
 html body .linfopress-package-section .package-subtitle,
 html body .package-section p,
 html body .package-subtitle,
-html body .linfopress-why-section p,
+html body .linfopress-why-section p:not(.why-card-text):not(.why-item-desc):not(.why-card-item p),
 html body .why-this p,
 html body #why p,
 html body #package p,
 html body.template-linfopress .linfopress-package-section p,
 html body.template-linfopress .linfopress-package-section .package-subtitle,
-html body.template-linfopress .linfopress-why-section p,
+html body.template-linfopress .linfopress-why-section p:not(.why-card-text):not(.why-item-desc):not(.why-card-item p),
 html body.template-zionic .why-this p,
 html body.template-linfopress section#package p,
-html body.template-linfopress section#why p,
+html body.template-linfopress section#why p:not(.why-card-text):not(.why-item-desc):not(.why-card-item p),
 html body.template-zionic section#why p {
   color: #cbd5e1 !important;
   font-family: 'Inter', 'Montserrat', sans-serif !important;
@@ -18992,10 +18992,10 @@ html body:not(#_x):not(#_y):not(#_z) section#why h2 {
 
 html body:not(#_x):not(#_y):not(#_z) #package p,
 html body:not(#_x):not(#_y):not(#_z) #package .package-subtitle,
-html body:not(#_x):not(#_y):not(#_z) #why p,
+html body:not(#_x):not(#_y):not(#_z) #why p:not(.why-card-text):not(.why-item-desc):not(.why-card-item p),
 html body:not(#_x):not(#_y):not(#_z) .linfopress-package-section p,
 html body:not(#_x):not(#_y):not(#_z) .linfopress-package-section .package-subtitle,
-html body:not(#_x):not(#_y):not(#_z) .linfopress-why-section p,
+html body:not(#_x):not(#_y):not(#_z) .linfopress-why-section p:not(.why-card-text):not(.why-item-desc):not(.why-card-item p),
 html body:not(#_x):not(#_y):not(#_z) .why-this p,
 html body:not(#_x):not(#_y):not(#_z) .package-section p,
 html body:not(#_x):not(#_y):not(#_z) section#package p,
@@ -19119,4 +19119,70 @@ h1, h2, h3, h4, h5, h6,
     line-height: 1.2 !important;
     text-align: center !important;
   }
+}
+
+
+/* ==========================================================================
+   FIX WHY SECTION WHITE CARDS TEXT CONTRAST (DARK GRAPHITE TEXT)
+   ========================================================================== */
+html body .linfopress-why-section .why-card-item .why-card-text,
+html body .linfopress-why-section .why-card-text,
+html body .why-card-item p,
+html body .why-card-text,
+.why-card-item .why-card-text,
+.why-card-item p {
+  color: #0f172a !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 16.5px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+html body .linfopress-why-section .why-card-item .why-card-num,
+html body .why-card-item .why-card-num,
+.why-card-item .why-card-num {
+  color: #0f172a !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 32px !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  margin-bottom: 12px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+
+/* ==========================================================================
+   DEFINITIVE DARK TEXT ON WHITE WHY-CARDS (DESKTOP & MOBILE)
+   ========================================================================== */
+html body:not(#_x):not(#_y):not(#_z) #why .why-card-item .why-card-text,
+html body:not(#_x):not(#_y):not(#_z) #why .why-card-text,
+html body:not(#_x):not(#_y):not(#_z) #why .why-card-item p,
+html body:not(#_x):not(#_y):not(#_z) .linfopress-why-section .why-card-item .why-card-text,
+html body:not(#_x):not(#_y):not(#_z) .linfopress-why-section .why-card-text,
+html body:not(#_x):not(#_y):not(#_z) .why-card-item .why-card-text,
+html body:not(#_x):not(#_y):not(#_z) .why-card-item p,
+.why-card-text,
+.why-card-item p {
+  color: #0f172a !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 16.5px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+html body:not(#_x):not(#_y):not(#_z) #why .why-card-item .why-card-num,
+html body:not(#_x):not(#_y):not(#_z) .linfopress-why-section .why-card-num,
+html body:not(#_x):not(#_y):not(#_z) .why-card-num,
+.why-card-num {
+  color: #0f172a !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 34px !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  margin-bottom: 12px !important;
 }
