@@ -1323,26 +1323,21 @@ function cleanHtml(raw, pageName) {
           <div class="zionic-hero-content">
             <div class="zionic-hero-logo-wrap">
               <img src="/wp-content/uploads/zionic_official/Zionic-Aesthetic-logotipo.png" alt="Zionic Aesthetic" class="zionic-official-logo" width="220" height="48">
+              <div class="zionic-hero-sublogo-tag">технологія Rollactive RF</div>
             </div>
 
             <h1 class="zionic-hero-title">
-              <span class="zionic-word-top">НОВА ЕРА</span>
-              <span class="zionic-word-bottom">КОРЕКЦІЇ ТІЛА</span>
+              Нова ера корекції тіла
             </h1>
 
             <p class="zionic-hero-desc">
-              КОМБІНОВАНИЙ МОНОПОЛЯРНИЙ RF ТА РОТАЦІЙНИЙ МАСАЖ MARP
+              Комбінований монополярний RF з інтелектуальним ротаційний масажем під контролем інтелекту машини для ефективного, безпечного та комфортного моделювання тіла
             </p>
 
             <div class="zionic-hero-actions">
-              <a href="#test-drive-form" class="zionic-primary-btn">
-                <span>Замовити тест-драйв у клініку</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              <a href="#test-drive" class="zionic-primary-btn">
+                <span>Записатись на тест драйв</span>
               </a>
-              <button type="button" class="zionic-secondary-btn" id="open_zionic_video_btn" data-video-id="cqskAxvFlxY" onclick="window.openZionicVideoLightbox('cqskAxvFlxY')">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                <span>Відео-демонстрація</span>
-              </button>
             </div>
           </div>
         </div>
