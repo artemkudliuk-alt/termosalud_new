@@ -1310,8 +1310,7 @@ function cleanHtml(raw, pageName) {
   if (pageName === 'zionic') {
     const modernZionicHtml = `
 
-      <!-- 1. HERO & TICKER CURTAIN TRACK (SCREEN 2 SLIDES OVER SCREEN 1 ONLY) -->
-      <div class="zionic-hero-curtain-track">
+      <!-- 1. HERO SECTION (STICKY CURTAIN 1-TO-1 MATCHING LINFOPRESS) -->
       <section class="zionic-official-hero">
         <div class="zionic-hero-bg-media">
           <video autoplay loop muted playsinline class="zionic-hero-bg-video" preload="auto">
@@ -1440,7 +1439,6 @@ function cleanHtml(raw, pageName) {
           </div>
         </div>
       </section>
-      </div><!-- /zionic-hero-curtain-track -->
 
       <!-- 3. TECHNOLOGIES BENTO SHOWCASE (MAIN PAGE STYLE) -->
       <section class="zionic-tech-bento-section" id="technologies">
@@ -2723,7 +2721,7 @@ function cleanHtml(raw, pageName) {
             <!-- LEFT CARD: INDICATIONS -->
             <div class="matrix-creative-card indications-card">
               <div class="matrix-card-header">
-                <h3 class="matrix-main-head">Клінічні показання</h3>
+                <h3 class="matrix-main-head">Показання</h3>
                 <p class="matrix-sub-head">8 ключових терапевтичних напрямків апарату Linfopress</p>
               </div>
 
@@ -2731,8 +2729,7 @@ function cleanHtml(raw, pageName) {
                 <div class="matrix-item-row">
                   <span class="item-index">01</span>
                   <div class="item-content">
-                    <h4 class="item-title">Лікування едематозного целюліту</h4>
-                    <p class="item-desc">Усунення застою рідини у підшкірно-жировій клітковині та розгладження рельєфу шкіри.</p>
+                    <h4 class="item-title">Лікування едематозного целлюліту</h4>
                   </div>
                 </div>
 
@@ -2740,7 +2737,6 @@ function cleanHtml(raw, pageName) {
                   <span class="item-index">02</span>
                   <div class="item-content">
                     <h4 class="item-title">Зменшення затримки рідини та набряків</h4>
-                    <p class="item-desc">Потужне виведення токсинів та відновлення нормального лімфотоку по всьому тілу.</p>
                   </div>
                 </div>
 
@@ -2748,7 +2744,6 @@ function cleanHtml(raw, pageName) {
                   <span class="item-index">03</span>
                   <div class="item-content">
                     <h4 class="item-title">Підготування та реабілітація після ліпосакції</h4>
-                    <p class="item-desc">Профілактика нерівностей, рубцювання та прискорення реабілітаційного періоду.</p>
                   </div>
                 </div>
 
@@ -2756,7 +2751,6 @@ function cleanHtml(raw, pageName) {
                   <span class="item-index">04</span>
                   <div class="item-content">
                     <h4 class="item-title">Пост-операційна реабілітація після мастектомії</h4>
-                    <p class="item-desc">Відновлення мікроциркуляції після оперативних втручань та мастектомії.</p>
                   </div>
                 </div>
 
@@ -2764,7 +2758,6 @@ function cleanHtml(raw, pageName) {
                   <span class="item-index">05</span>
                   <div class="item-content">
                     <h4 class="item-title">Детоксикація тканин та лімфодренаж</h4>
-                    <p class="item-desc">Активація обмінних процесів організму та глибоке очищення лімфатичної системи.</p>
                   </div>
                 </div>
 
@@ -2772,7 +2765,6 @@ function cleanHtml(raw, pageName) {
                   <span class="item-index">06</span>
                   <div class="item-content">
                     <h4 class="item-title">Спорт: Підготовка, DOMS (крепатура), регенерація зв’язок</h4>
-                    <p class="item-desc">Зняття міофасціального гіпертонусу, розігрів перед тренуваннями та регенерація зв'язок.</p>
                   </div>
                 </div>
 
@@ -2780,7 +2772,6 @@ function cleanHtml(raw, pageName) {
                   <span class="item-index">07</span>
                   <div class="item-content">
                     <h4 class="item-title">Покращення кровообігу, зняття втоми ніг</h4>
-                    <p class="item-desc">Усунення синдрому «важких ніг» та профілактика хронічної венозної недостатності.</p>
                   </div>
                 </div>
 
@@ -2788,7 +2779,6 @@ function cleanHtml(raw, pageName) {
                   <span class="item-index">08</span>
                   <div class="item-content">
                     <h4 class="item-title">Післяпологове відновлення, симптоми менопаузи</h4>
-                    <p class="item-desc">Швидка нормалізація водно-сольового балансу та зняття набряків після пологів.</p>
                   </div>
                 </div>
               </div>
@@ -2806,7 +2796,6 @@ function cleanHtml(raw, pageName) {
                   <span class="item-alert-icon">✕</span>
                   <div class="item-content">
                     <h4 class="item-title">Онкологія</h4>
-                    <p class="item-desc">Злоякісні пухлини в анамнезі або в активній фазі.</p>
                   </div>
                 </div>
 
@@ -2814,7 +2803,6 @@ function cleanHtml(raw, pageName) {
                   <span class="item-alert-icon">✕</span>
                   <div class="item-content">
                     <h4 class="item-title">Порушення цілісності шкірного покриву</h4>
-                    <p class="item-desc">Відкриті рани, опіки, виразки або інфекційні дерматити в зоні манжетів.</p>
                   </div>
                 </div>
 
@@ -2822,7 +2810,6 @@ function cleanHtml(raw, pageName) {
                   <span class="item-alert-icon">✕</span>
                   <div class="item-content">
                     <h4 class="item-title">Епілепсія, порушення психіки</h4>
-                    <p class="item-desc">Стани підвищеної судомної готовності та гострі нервові розлади.</p>
                   </div>
                 </div>
 
@@ -2830,7 +2817,6 @@ function cleanHtml(raw, pageName) {
                   <span class="item-alert-icon">✕</span>
                   <div class="item-content">
                     <h4 class="item-title">Цукровий діабет (декомпенсована форма)</h4>
-                    <p class="item-desc">Важкі порушення трофіки тканин та периферичної чутливості.</p>
                   </div>
                 </div>
 
@@ -2838,7 +2824,6 @@ function cleanHtml(raw, pageName) {
                   <span class="item-alert-icon">✕</span>
                   <div class="item-content">
                     <h4 class="item-title">Аутоімунні захворювання</h4>
-                    <p class="item-desc">Системні захворювання сполучної тканини у фазі загострення.</p>
                   </div>
                 </div>
 
@@ -2846,7 +2831,6 @@ function cleanHtml(raw, pageName) {
                   <span class="item-alert-icon">✕</span>
                   <div class="item-content">
                     <h4 class="item-title">Хронічні захворювання на стадії загострення</h4>
-                    <p class="item-desc">Декомпенсовані патології внутрішніх органів та гострі стадії.</p>
                   </div>
                 </div>
 
@@ -2854,7 +2838,6 @@ function cleanHtml(raw, pageName) {
                   <span class="item-alert-icon">✕</span>
                   <div class="item-content">
                     <h4 class="item-title">ГРВІ, грип</h4>
-                    <p class="item-desc">Підвищена температура тіла, лихоманка та гострі вірусні запальні процеси.</p>
                   </div>
                 </div>
               </div>
