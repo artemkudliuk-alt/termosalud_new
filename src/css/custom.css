@@ -891,6 +891,17 @@ header .logo:hover img {
   box-shadow: 0 12px 30px rgba(30, 35, 46, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
   flex-shrink: 0 !important;
   transition: transform 0.4s ease !important;
+  overflow: hidden !important;
+}
+
+.product-image-wrap a,
+.product-image-link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  text-decoration: none !important;
 }
 
 .hero-product-slide:hover .product-image-wrap {
@@ -898,9 +909,11 @@ header .logo:hover img {
 }
 
 .product-image-wrap img {
-  max-width: 90% !important;
-  max-height: 90% !important;
+  max-width: 86% !important;
+  max-height: 86% !important;
   object-fit: contain !important;
+  display: block !important;
+  margin: 0 auto !important;
   filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.1)) !important;
 }
 

@@ -165,7 +165,7 @@ function cleanHtml(raw, pageName) {
                   </a>
                 </div>
                 <div class="product-image-wrap">
-                  <a href="/zionic/" style="display: block; width: 100%; height: 100%;"><img src="/wp-content/uploads/2026/03/zionic-optimized.png" alt="ZIONIC"></a>
+                  <a href="/zionic/" class="product-image-link" style="display: flex !important; align-items: center !important; justify-content: center !important; width: 100% !important; height: 100% !important;"><img src="/wp-content/uploads/2026/03/zionic-optimized.png" alt="ZIONIC"></a>
                 </div>
               </div>
 
@@ -179,7 +179,7 @@ function cleanHtml(raw, pageName) {
                   </a>
                 </div>
                 <div class="product-image-wrap">
-                  <a href="/linfopress/" style="display: block; width: 100%; height: 100%;"><img src="/wp-content/uploads/2026/03/linfopress-optimized.png" alt="Linfopress Evolution PRO"></a>
+                  <a href="/linfopress/" class="product-image-link" style="display: flex !important; align-items: center !important; justify-content: center !important; width: 100% !important; height: 100% !important;"><img src="/wp-content/uploads/2026/03/linfopress-optimized.png" alt="Linfopress Evolution PRO"></a>
                 </div>
               </div>
             </div>
