@@ -1836,6 +1836,73 @@ function cleanHtml(raw, pageName) {
         </div>
       </section>
 
+      <!-- 8. ПЕРЕВАГИ ZIONIC (9 NINE ADVANTAGES WITH 3D APPARATUS) -->
+      <section class="zionic-nine-advantages-section" id="advantages-grid">
+        <div class="container-fluid px-lg-5">
+          <div class="section-header-centered">
+            <h2 class="section-main-title">Переваги Zionic</h2>
+          </div>
+
+          <div class="zionic-nine-grid-layout">
+            <!-- LEFT: APPARATUS PHOTO -->
+            <div class="zionic-nine-apparatus-col">
+              <img src="/advantages-img-optimized.png" alt="Переваги Zionic - апарат" class="nine-apparatus-img" loading="lazy">
+            </div>
+
+            <!-- RIGHT: 9 NUMBERED CARDS (3x3) -->
+            <div class="zionic-nine-cards-col">
+              <div class="nine-cards-grid">
+                <!-- 1 -->
+                <div class="advantage-nine-card">
+                  <span class="advantage-nine-num">1</span>
+                  <p class="advantage-nine-text">Перший в світі апарат, який комбінує найглибший медичний монополярний RF резистивного типу з інтелектуальним ротаційним масажем для максимально можливого моделювання тіла.</p>
+                </div>
+                <!-- 2 -->
+                <div class="advantage-nine-card">
+                  <span class="advantage-nine-num">2</span>
+                  <p class="advantage-nine-text">Інтелектуальна Система взаємодії з пацієнтом враховує температуру, тиск, передану енергію для формування оптимальної терапевтичної дози.</p>
+                </div>
+                <!-- 3 -->
+                <div class="advantage-nine-card">
+                  <span class="advantage-nine-num">3</span>
+                  <p class="advantage-nine-text">Підвищена безпека завдяки технології одночасного контролю температури і тиску в реальному часі під час процедури.</p>
+                </div>
+                <!-- 4 -->
+                <div class="advantage-nine-card">
+                  <span class="advantage-nine-num">4</span>
+                  <p class="advantage-nine-text">Єдиний апарат, який ефективно і без болю лікує великих пацієнтів з едематозним фіброзним целюлітом завдяки унікальній комбінації глибокого внутрішнього прогріву, який знімає больові відчуття, та активному ротаційному масажу.</p>
+                </div>
+                <!-- 5 -->
+                <div class="advantage-nine-card">
+                  <span class="advantage-nine-num">5</span>
+                  <p class="advantage-nine-text">Найкомфортніший з усіх апаратів для моделювання фігури, тому найпопулярніший у пацієнтів та рекомендований спеціалістами.</p>
+                </div>
+                <!-- 6 -->
+                <div class="advantage-nine-card">
+                  <span class="advantage-nine-num">6</span>
+                  <p class="advantage-nine-text">Ключовий елемент програм "Детокс", "Схуднення", "Антицелюліт" для відновлення балансу та тонусу тіла.</p>
+                </div>
+                <!-- 7 -->
+                <div class="advantage-nine-card">
+                  <span class="advantage-nine-num">7</span>
+                  <p class="advantage-nine-text">Використовується у спортивній медицині для розігріву м'язів перед тренуваннями і для регенерації зв'язкових тканин.</p>
+                </div>
+                <!-- 8 -->
+                <div class="advantage-nine-card">
+                  <span class="advantage-nine-num">8</span>
+                  <p class="advantage-nine-text">Використовується у пост-операційній реабілітації для зменшення відчуття стягнутості шкіри після операції, профілактики утворення фіброзу.</p>
+                </div>
+                <!-- 9 -->
+                <div class="advantage-nine-card">
+                  <span class="advantage-nine-num">9</span>
+                  <p class="advantage-nine-text">Найвигідніший з усіх апаратів для моделювання фігури завдяки високій рентабельності процедури. Окупність 9 місяців.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- 8. PROCEDURE VIDEO BANNER -->
             <!-- 8. PROCEDURE VIDEO FULLSCREEN BANNER (EDGE-TO-EDGE) -->
             <!-- 8. PROCEDURE VIDEO FULLSCREEN BANNER (CIRCULAR PLAY ICON ONLY) -->
