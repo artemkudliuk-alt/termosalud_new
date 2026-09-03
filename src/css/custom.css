@@ -3064,7 +3064,7 @@ body.modal-open-lock {
     padding: 8px 10px !important;
     font-size: 12px !important;
     font-weight: 700 !important;
-    border-radius: 8px !important;
+    border-radius: 0px !important;
     gap: 6px !important;
   }
 
@@ -15323,7 +15323,7 @@ html body.template-zionic .section-main-title {
 
 .linfopress-why-section .why-card-item {
   background: #181d26 !important;
-  border-radius: 14px !important;
+  border-radius: 0px !important;
   padding: 26px 28px !important;
   min-height: 130px !important;
   display: flex !important;
@@ -15474,7 +15474,7 @@ html body.template-linfopress .why-main-title,
 
 .linfopress-why-section .why-card-item {
   background: #181d26 !important;
-  border-radius: 14px !important;
+  border-radius: 0px !important;
   padding: 26px 28px !important;
   min-height: 130px !important;
   display: flex !important;
@@ -15611,7 +15611,7 @@ html body.template-linfopress .why-main-title,
 .linfopress-why-section .why-card-item {
   background: #181d26 !important;
   border: 2px solid #54595f !important; /* EXACT SIGNATURE FOOTER GRAY FRAME */
-  border-radius: 14px !important;
+  border-radius: 0px !important;
   padding: 24px 28px !important;
   min-height: 130px !important;
   display: flex !important;
@@ -15768,7 +15768,7 @@ html body.template-linfopress .why-main-title,
 .linfopress-why-section .why-card-item {
   background: #54595f !important; /* EXACT SIGNATURE FOOTER GRAY */
   border: 1.5px solid rgba(255, 255, 255, 0.15) !important;
-  border-radius: 14px !important;
+  border-radius: 0px !important;
   padding: 24px 28px !important;
   min-height: 130px !important;
   display: flex !important;
@@ -16109,7 +16109,7 @@ html body.template-linfopress section.linfopress-why-section h2 {
 .linfopress-package-section .package-item-card {
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
-  border-radius: 14px !important;
+  border-radius: 0px !important;
   padding: 20px 16px !important;
   text-align: center !important;
   display: flex !important;
@@ -16909,7 +16909,7 @@ html body.template-linfopress .faq-accordion-card {
   width: 100% !important;
   background: #ffffff !important;
   border: 1px solid #e2e8f0 !important;
-  border-radius: 16px !important; /* Gentle modern curvature */
+  border-radius: 0px !important; /* Gentle modern curvature */
   overflow: hidden !important;
   padding: 0 !important;
   margin-bottom: 0 !important;
@@ -16958,7 +16958,7 @@ html body.template-linfopress .faq-card-header {
   gap: 16px !important;
   box-sizing: border-box !important;
   user-select: none !important;
-  border-radius: 16px 16px 0 0 !important;
+  border-radius: 0px !important;
 }
 
 @media (max-width: 768px) {
@@ -16982,7 +16982,7 @@ html body.template-linfopress .faq-q-index {
   justify-content: center !important;
   min-width: 32px !important;
   height: 32px !important;
-  border-radius: 9px !important;
+  border-radius: 0px !important;
   background: #f1f5f9 !important;
   color: #0f172a !important;
   font-family: 'Montserrat', sans-serif !important;
@@ -17030,7 +17030,6 @@ html body.template-linfopress .faq-q-text {
   }
 }
 
-/* 5. Circular Toggle Icon */
 .faq-icon,
 .faq-toggle-icon,
 .linfopress-faq-accordion .faq-toggle-icon,
@@ -17042,7 +17041,7 @@ html body.template-linfopress .faq-toggle-icon {
   width: 32px !important;
   height: 32px !important;
   min-width: 32px !important;
-  border-radius: 50% !important;
+  border-radius: 0px !important;
   background: #f8fafc !important;
   border: 1px solid #e2e8f0 !important;
   color: #0f172a !important;
@@ -17642,4 +17641,92 @@ html body.template-zionic .faq-q-text,
 html body.template-linfopress .faq-q-text,
 .faq-q-text {
   color: #0f172a !important;
+}
+
+
+/* ==========================================================================
+   STRICT SHARP CORNERS (0PX) & MOBILE SIDE PADDINGS (HARMONIZED WITH MAIN PAGE)
+   ========================================================================== */
+
+/* Strict 0px Sharp Corners across FAQ, Cards & Badges */
+.faq-accordion-card,
+.linfopress-faq-accordion .faq-accordion-card,
+html body.template-zionic .faq-accordion-card,
+html body.template-linfopress .faq-accordion-card,
+.faq-q-index,
+.linfopress-faq-accordion .faq-q-index,
+html body.template-zionic .faq-q-index,
+html body.template-linfopress .faq-q-index,
+.faq-icon,
+.faq-toggle-icon,
+.linfopress-faq-accordion .faq-toggle-icon,
+html body.template-zionic .faq-icon,
+html body.template-linfopress .faq-toggle-icon,
+.faq-toggle-header,
+.faq-card-header {
+  border-radius: 0px !important;
+}
+
+/* Mobile Side Paddings: Exactly 16px left/right like the Main page */
+@media (max-width: 768px) {
+  /* Ensure all containers on Zionic and Linfopress have standard 16px gutters */
+  .template-zionic .container,
+  .template-zionic .container-fluid,
+  .template-linfopress .container,
+  .template-linfopress .container-fluid,
+  .zionic-main-page-wrapper .container,
+  .linfopress-page-container .container,
+  .zionic-tech-bento-section .container,
+  .zionic-doctors-section .container,
+  .zionic-certificates-section .container,
+  .zionic-matrix-section .container,
+  .linfopress-why-section .container,
+  .linfopress-package-section .container,
+  .linfopress-matrix-section .container,
+  .linfopress-tech-bento-section .container,
+  .linfopress-advantages-grid-section .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Remove double padding from grids so cards get full width (341px) */
+  .tech-bento-grid,
+  .linfopress-tech-bento-grid,
+  .zionic-doctors-grid,
+  .linfopress-doctor-row,
+  .zionic-certificates-grid,
+  .zionic-creative-matrix-grid,
+  .linfopress-split-grid,
+  .package-items-grid,
+  .results-tiles-grid,
+  .why-cards-col,
+  .faq-accordion-grid,
+  .linfopress-faq-accordion {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Ensure cards take 100% of the container width */
+  .tech-bento-card,
+  .linfopress-tech-card,
+  .doctor-luxury-card,
+  .expert-review-card,
+  .cert-scan-card,
+  .matrix-creative-card,
+  .package-item-card,
+  .result-tile-card,
+  .faq-accordion-card,
+  .presentation-form-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    border-radius: 0px !important;
+  }
 }
