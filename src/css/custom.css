@@ -19527,3 +19527,7 @@ html body .faq-q-text {
   letter-spacing: 0.2px !important;
   text-transform: none !important;
 }
+
+.procedure-card-title { font-family: 'Montserrat', sans-serif !important; font-size: 24px !important; font-weight: 700 !important; color: #ffffff !important; margin: 0 0 24px 0 !important; line-height: 1.25 !important; letter-spacing: -0.2px !important; }
+
+html body.template-zionic .procedure-expert-text-card .procedure-card-title, html body .procedure-expert-text-card .procedure-card-title, .procedure-expert-text-card h3.procedure-card-title { color: #ffffff !important; font-family: 'Montserrat', sans-serif !important; font-size: 24px !important; font-weight: 700 !important; margin-bottom: 24px !important; display: block !important; }
