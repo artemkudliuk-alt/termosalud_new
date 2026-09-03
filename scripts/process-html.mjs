@@ -155,30 +155,31 @@ function cleanHtml(raw, pageName) {
           <div class="hero-right-col">
             <div class="hero-product-slider">
               <!-- Slide 1: ZIONIC -->
+              <!-- Slide 1: ZIONIC -->
               <div class="hero-product-slide active" data-slide="0">
                 <div class="product-info">
-                  <h2 class="product-name">ZIONIC<br><span>MARP SYSTEM</span></h2>
+                  <h2 class="product-name"><a href="/zionic/" class="product-title-link">ZIONIC<br><span>MARP SYSTEM</span></a></h2>
                   <a href="/zionic/" class="product-btn">
                     <span>ДЕТАЛЬНІШЕ</span>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                   </a>
                 </div>
                 <div class="product-image-wrap">
-                  <img src="/wp-content/uploads/2026/03/zionic-optimized.png" alt="ZIONIC">
+                  <a href="/zionic/" style="display: block; width: 100%; height: 100%;"><img src="/wp-content/uploads/2026/03/zionic-optimized.png" alt="ZIONIC"></a>
                 </div>
               </div>
 
               <!-- Slide 2: LINFOPRESS EVOLUTION PRO -->
               <div class="hero-product-slide" data-slide="1">
                 <div class="product-info">
-                  <h2 class="product-name">LINFOPRESS<br><span>EVOLUTION PRO</span></h2>
+                  <h2 class="product-name"><a href="/linfopress/" class="product-title-link">LINFOPRESS<br><span>EVOLUTION PRO</span></a></h2>
                   <a href="/linfopress/" class="product-btn">
                     <span>ДЕТАЛЬНІШЕ</span>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                   </a>
                 </div>
                 <div class="product-image-wrap">
-                  <img src="/wp-content/uploads/2026/03/linfopress-optimized.png" alt="Linfopress Evolution PRO">
+                  <a href="/linfopress/" style="display: block; width: 100%; height: 100%;"><img src="/wp-content/uploads/2026/03/linfopress-optimized.png" alt="Linfopress Evolution PRO"></a>
                 </div>
               </div>
             </div>
@@ -218,7 +219,7 @@ function cleanHtml(raw, pageName) {
         <div class="apparatus-monolith-block zionic-monolith" id="zionic-monolith-block">
           
           <!-- Full-Width 100% Video Banner -->
-          <div class="zionic-video-banner-fullwidth">
+          <div class="zionic-video-banner-fullwidth" onclick="window.location.href='/zionic/'" style="cursor: pointer;">
             <div class="video-banner-media">
               <video autoplay loop muted playsinline class="video-banner-bg" preload="auto" poster="/photo_zionic.png">
                 <source src="/zionic.mp4" type="video/mp4">
@@ -226,7 +227,7 @@ function cleanHtml(raw, pageName) {
               <div class="video-banner-overlay"></div>
             </div>
             <div class="video-banner-content">
-              <h3 class="video-banner-title">ZIONIC MARP SYSTEM</h3>
+              <h3 class="video-banner-title"><a href="/zionic/" class="video-banner-link">ZIONIC MARP SYSTEM</a></h3>
             </div>
           </div>
 
@@ -238,11 +239,11 @@ function cleanHtml(raw, pageName) {
                 <!-- Left Column: Compact Luxury Monochrome Card -->
                 <div class="zionic-compact-card">
                   <div class="split-badge-row">
-                    <span class="split-badge">✦ MARP + RF TECHNOLOGY</span>
+                    <a href="/zionic/" style="text-decoration: none;"><span class="split-badge">✦ MARP + RF TECHNOLOGY</span></a>
                     <span class="split-tag">MADE IN SPAIN</span>
                   </div>
                   
-                  <h3 class="split-title">ZIONIC <span>MARP SYSTEM</span></h3>
+                  <h3 class="split-title"><a href="/zionic/" class="split-title-link">ZIONIC <span>MARP SYSTEM</span></a></h3>
                   
                   <ul class="split-bullets">
                     <li><span class="split-check">✓</span> Одночасна дія: ліполіз, ліфтинг та тонус</li>
@@ -284,7 +285,7 @@ function cleanHtml(raw, pageName) {
         <div class="apparatus-monolith-block linfopress-monolith" id="linfopress-monolith-block">
           
           <!-- Full-Width 100% Video Banner for Linfopress -->
-          <div class="zionic-video-banner-fullwidth linfo-video-banner-fullwidth">
+          <div class="zionic-video-banner-fullwidth linfo-video-banner-fullwidth" onclick="window.location.href='/linfopress/'" style="cursor: pointer;">
             <div class="video-banner-media">
               <video autoplay loop muted playsinline class="video-banner-bg" preload="auto" poster="/photo_limfo.png">
                 <source src="/limfo.mp4" type="video/mp4">
@@ -292,7 +293,7 @@ function cleanHtml(raw, pageName) {
               <div class="video-banner-overlay"></div>
             </div>
             <div class="video-banner-content">
-              <h3 class="video-banner-title">LINFOPRESS EVOLUTION PRO</h3>
+              <h3 class="video-banner-title"><a href="/linfopress/" class="video-banner-link">LINFOPRESS EVOLUTION PRO</a></h3>
             </div>
           </div>
 
@@ -318,11 +319,11 @@ function cleanHtml(raw, pageName) {
                 <!-- Right Column: Compact Luxury Monochrome Card -->
                 <div class="zionic-compact-card">
                   <div class="split-badge-row">
-                    <span class="split-badge">✦ 4-IN-1 CYCLIC PRESSOTHERAPY</span>
+                    <a href="/linfopress/" style="text-decoration: none;"><span class="split-badge">✦ 4-IN-1 CYCLIC PRESSOTHERAPY</span></a>
                     <span class="split-tag">MADE IN SPAIN</span>
                   </div>
                   
-                  <h3 class="split-title">LINFOPRESS <span>EVOLUTION PRO</span></h3>
+                  <h3 class="split-title"><a href="/linfopress/" class="split-title-link">LINFOPRESS <span>EVOLUTION PRO</span></a></h3>
                   
                   <ul class="split-bullets">
                     <li><span class="split-check">✓</span> 24 незалежні пневмосектори з перекриттям</li>

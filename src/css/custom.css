@@ -21969,3 +21969,30 @@ html body.template-linfopress section#technologies .section-main-title {
   background: #27272a !important;
   border-color: #3f3f46 !important;
 }
+
+/* Product Showcase Title and Banner Links to /zionic/ and /linfopress/ */
+.video-banner-title a,
+.video-banner-link,
+.split-title a,
+.split-title-link,
+.product-name a,
+.product-title-link {
+  color: inherit !important;
+  text-decoration: none !important;
+  display: inline-block;
+  cursor: pointer !important;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.video-banner-title a:hover,
+.video-banner-link:hover,
+.split-title a:hover,
+.split-title-link:hover,
+.product-name a:hover,
+.product-title-link:hover {
+  opacity: 0.85;
+}
+
+.zionic-video-banner-fullwidth {
+  cursor: pointer;
+}
