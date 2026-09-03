@@ -2846,7 +2846,7 @@ function cleanHtml(raw, pageName) {
         <!-- 100% FULLSCREEN EDGE-TO-EDGE SHOWCASE STAGE -->
         <div class="linfopress-doctor-fullscreen-stage">
           <div class="doctor-bg-media-wrap">
-            <img src="/wp-content/uploads/2026/03/experience-block-img-optimized.png" alt="Процедура на апараті Linfopress Evolution PRO" class="doctor-bg-img" loading="lazy">
+            <img src="/linfopress-doctor-review-bg.jpg" alt="Процедура на апараті Linfopress Evolution PRO" class="doctor-bg-img" loading="lazy">
             <div class="doctor-bg-gradient-overlay"></div>
           </div>
 
