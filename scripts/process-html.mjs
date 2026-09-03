@@ -2850,13 +2850,8 @@ function cleanHtml(raw, pageName) {
             <div class="doctor-bg-gradient-overlay"></div>
           </div>
 
-          <div class="container doctor-fullscreen-container">
+          <div class="doctor-fullscreen-container">
             <div class="doctor-fullscreen-content">
-              <div class="doctor-quote-badge">
-                <span class="doctor-badge-dot"></span>
-                <span>ЕКСПЕРТИЗА ТА ДОСВІД</span>
-              </div>
-
               <h3 class="doctor-statement-title">
                 «Linfopress Evolution PRO — це новий стандарт у пресотерапії, який перевершив усі мої очікування як лікаря»
               </h3>
