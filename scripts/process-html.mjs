@@ -2224,7 +2224,7 @@ function cleanHtml(raw, pageName) {
       <section class="zionic-seo-clean-section" id="seo-article">
         <div class="container">
           <div class="seo-article-card">
-            <h2 class="seo-article-main-title">Купити апарат Zionic — інвестувати в передове обладнання для корекції фігури</h2>
+            <h2 class="seo-article-main-title" style="text-transform: none !important;">Купити апарат Zionic — інвестувати в передове обладнання для корекції фігури</h2>
             
             <p>У сучасній естетичній медицині найбільший попит мають неінвазивні методики, що поєднують високу результативність, безболісність та відсутність періоду реабілітації. Рішення купити апарат Zionic відкриває для вашої клініки можливість запропонувати пацієнтам саме такі процедури. Це інноваційне обладнання для корекції фігури забезпечує комплексний підхід до моделювання контурів тіла.</p>
 
@@ -2253,7 +2253,7 @@ function cleanHtml(raw, pageName) {
             </div>
 
             <button type="button" class="seo-toggle-btn" id="seoToggleBtn" onclick="toggleZionicSeoArticle()">
-              <span class="seo-btn-label">Читати повністю</span>
+              <span class="seo-btn-label">Читати далі</span>
               <span class="seo-btn-arrow">∨</span>
             </button>
           </div>
