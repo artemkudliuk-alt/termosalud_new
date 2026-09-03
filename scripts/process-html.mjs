@@ -1713,7 +1713,7 @@ function cleanHtml(raw, pageName) {
       <section class="zionic-matrix-section" id="indications">
         <div class="container-fluid px-lg-5">
           <div class="section-header-centered">
-            <h2 class="section-main-title">Показання та протипоказання</h2>
+            <h2 class="section-main-title"><span class="title-line-nowrap">Показання та</span> <span class="title-line-nowrap">протипоказання</span></h2>
             <p class="section-main-sub">
               Повний спектр терапевтичного застосування та медичні критерії безпеки пацієнта
             </p>
@@ -2679,7 +2679,7 @@ function cleanHtml(raw, pageName) {
       <section class="linfopress-matrix-section" id="indications">
         <div class="container">
           <div class="section-header-centered">
-            <h2 class="section-main-title">Показання та протипоказання</h2>
+            <h2 class="section-main-title"><span class="title-line-nowrap">Показання та</span> <span class="title-line-nowrap">протипоказання</span></h2>
             <p class="section-main-sub">
               Повний спектр терапевтичного застосування та медичні критерії безпеки пацієнта
             </p>
