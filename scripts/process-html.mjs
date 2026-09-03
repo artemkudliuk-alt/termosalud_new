@@ -1906,7 +1906,19 @@ function cleanHtml(raw, pageName) {
       <!-- 8. PROCEDURE VIDEO BANNER -->
             <!-- 8. PROCEDURE VIDEO FULLSCREEN BANNER (EDGE-TO-EDGE) -->
             <!-- 8. PROCEDURE VIDEO FULLSCREEN BANNER (CIRCULAR PLAY ICON ONLY) -->
-      <section class="zionic-video-fullscreen-banner" id="procedure" data-video-id="cqskAxvFlxY">
+      <!-- 9. PROCEDURE VIDEO BANNER WITH HEADER -->
+      <section class="zionic-video-presentation-section" id="procedure">
+        <div class="container">
+          <div class="section-header-centered text-center">
+            <h2 class="section-main-title">Результати, яким довіряють професіонали</h2>
+            <p class="section-main-sub">
+              Пружна та підтягнута шкіра, зменшення целюліту та жирових відкладень, відчуття легкості та зменшення набряків, рівніший контур і виразніший тонус
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="zionic-video-fullscreen-banner" id="procedure-banner" data-video-id="cqskAxvFlxY">
         <video autoplay loop muted playsinline poster="/wp-content/uploads/2026/03/procedure-2-optimized.jpg" class="video-fullscreen-bg">
           <source src="/wp-content/uploads/2026/03/tratamiento_de_remodelaciun_corporal_zionic_online_video_cutter.mp4" type="video/mp4">
         </video>
