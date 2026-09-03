@@ -17397,10 +17397,14 @@ html body.template-linfopress .faq-card-body p {
   .matrix-main-title,
   .ba-title,
   .package-title {
-    font-size: clamp(19px, 5.4vw, 25px) !important;
-    line-height: 1.25 !important;
-    letter-spacing: -0.3px !important;
-    margin-bottom: 8px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: clamp(28px, 6.8vw, 36px) !important;
+    font-weight: 500 !important;
+    line-height: 1.18 !important;
+    letter-spacing: -0.5px !important;
+    color: #0f172a !important;
+    margin-bottom: 12px !important;
+    text-transform: uppercase !important;
   }
 
   .section-main-sub,
@@ -17408,8 +17412,11 @@ html body.template-linfopress .faq-card-body p {
   .treatments-subtitle,
   .matrix-sub-desc,
   .package-subtitle {
-    font-size: clamp(13.5px, 3.8vw, 15px) !important;
-    line-height: 1.5 !important;
+    font-family: 'Montserrat', 'Inter', sans-serif !important;
+    font-size: clamp(15.5px, 4vw, 19px) !important;
+    font-weight: 400 !important;
+    line-height: 1.55 !important;
+    color: #475569 !important;
     padding: 0 4px !important;
   }
 
