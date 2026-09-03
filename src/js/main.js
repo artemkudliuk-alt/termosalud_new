@@ -1444,7 +1444,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Result Tile Click Handlers
+  // Result Tile & Mobile Accordion Handlers
   const resultTiles = document.querySelectorAll('.result-tile-card');
   const vImgBefore = document.getElementById('compareImgBefore');
   const vImgAfter = document.getElementById('compareImgAfter');
@@ -1453,29 +1453,97 @@ document.addEventListener('DOMContentLoaded', () => {
   const vLiveBadge = document.getElementById('liveCaseBadge');
 
   resultTiles.forEach((tile) => {
-    tile.addEventListener('click', () => {
-      resultTiles.forEach((t) => t.classList.remove('is-active'));
-      tile.classList.add('is-active');
+    tile.addEventListener('click', (e) => {
+      // If clicking inside the mobile slider interactive elements, don't toggle accordion
+      if (e.target.closest('.mobile-tile-ba-viewport')) {
+        return;
+      }
 
-      const bSrc = tile.getAttribute('data-before');
-      const aSrc = tile.getAttribute('data-after');
-      const title = tile.getAttribute('data-title');
-      const num = tile.getAttribute('data-num');
-      const sessions = tile.getAttribute('data-sessions');
+      const isMobile = window.innerWidth <= 991;
 
-      if (vImgBefore) vImgBefore.src = bSrc;
-      if (vImgAfter) vImgAfter.src = aSrc;
-      if (vLiveNum) vLiveNum.textContent = num;
-      if (vLiveTitle) vLiveTitle.textContent = title;
-      if (vLiveBadge) vLiveBadge.textContent = sessions;
+      if (isMobile) {
+        const isCurrentlyExpanded = tile.classList.contains('is-expanded');
 
-      // Reset slider to center 50%
-      if (hRange) {
-        hRange.value = 50;
-        if (hLayerBefore) hLayerBefore.style.clipPath = 'inset(0 50% 0 0)';
-        if (hDividerHandle) hDividerHandle.style.left = '50%';
+        // Close all tiles
+        resultTiles.forEach((t) => {
+          t.classList.remove('is-expanded');
+          t.classList.remove('is-active');
+        });
+
+        // Toggle: if it wasn't expanded, expand it
+        if (!isCurrentlyExpanded) {
+          tile.classList.add('is-expanded');
+          tile.classList.add('is-active');
+        }
+      } else {
+        // Desktop behavior
+        resultTiles.forEach((t) => t.classList.remove('is-active'));
+        tile.classList.add('is-active');
+
+        const bSrc = tile.getAttribute('data-before');
+        const aSrc = tile.getAttribute('data-after');
+        const title = tile.getAttribute('data-title');
+        const num = tile.getAttribute('data-num');
+        const sessions = tile.getAttribute('data-sessions');
+
+        if (vImgBefore) vImgBefore.src = bSrc;
+        if (vImgAfter) vImgAfter.src = aSrc;
+        if (vLiveNum) vLiveNum.textContent = num;
+        if (vLiveTitle) vLiveTitle.textContent = title;
+        if (vLiveBadge) vLiveBadge.textContent = sessions;
+
+        // Reset slider to center 50%
+        if (hRange) {
+          hRange.value = 50;
+          if (hLayerBefore) hLayerBefore.style.clipPath = 'inset(0 50% 0 0)';
+          if (hDividerHandle) hDividerHandle.style.left = '50%';
+        }
       }
     });
+  });
+
+  // Mobile Inline Slider Drag Handlers
+  document.querySelectorAll('.mobile-tile-ba-viewport').forEach((viewport) => {
+    const range = viewport.querySelector('.horizontal-range-input');
+    const layerBefore = viewport.querySelector('.layer-before');
+    const dividerHandle = viewport.querySelector('.horizontal-divider-handle');
+
+    if (range && layerBefore && dividerHandle) {
+      function updateMobileCompare(val) {
+        const clamped = Math.max(0, Math.min(100, val));
+        layerBefore.style.clipPath = `inset(0 ${100 - clamped}% 0 0)`;
+        dividerHandle.style.left = `${clamped}%`;
+      }
+
+      range.addEventListener('input', (e) => {
+        updateMobileCompare(e.target.value);
+      });
+
+      let isDown = false;
+      function handleMobileMove(clientX) {
+        const rect = viewport.getBoundingClientRect();
+        if (rect.width <= 0) return;
+        const pos = ((clientX - rect.left) / rect.width) * 100;
+        range.value = pos;
+        updateMobileCompare(pos);
+      }
+
+      viewport.addEventListener('mousedown', (e) => {
+        isDown = true;
+        handleMobileMove(e.clientX);
+      });
+      window.addEventListener('mousemove', (e) => {
+        if (isDown) handleMobileMove(e.clientX);
+      });
+      window.addEventListener('mouseup', () => { isDown = false; });
+
+      viewport.addEventListener('touchstart', (e) => {
+        if (e.touches.length > 0) handleMobileMove(e.touches[0].clientX);
+      }, { passive: true });
+      viewport.addEventListener('touchmove', (e) => {
+        if (e.touches.length > 0) handleMobileMove(e.touches[0].clientX);
+      }, { passive: true });
+    }
   });
 
 
