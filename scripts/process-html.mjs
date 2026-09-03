@@ -1573,21 +1573,21 @@ function cleanHtml(raw, pageName) {
             <div class="zionic-compare-right-col">
               <div class="zionic-result-tiles-grid">
                 <!-- TILE 1 -->
-                <div class="result-tile-card is-active is-expanded" data-case="1" data-before="/wp-content/uploads/zionic_official/case_1_before.jpg" data-after="/wp-content/uploads/zionic_official/case_1_after.jpg" data-title="Стегна та сідниці" data-num="КЕЙС 01" data-sessions="6 СЕАНСІВ">
+                <div class="result-tile-card is-active is-expanded" data-case="1" data-before="/wp-content/uploads/zionic_official/case_1_before.jpg" data-after="/wp-content/uploads/zionic_official/case_1_after.jpg" data-title="Стегна та сідниці" data-num="КЕЙС 01" data-sessions="6 СЕАНСІВ" style="background: #18181b !important; border: 1px solid #27272a !important;">
                   <div class="tile-header">
                     <div class="tile-header-left">
-                      <span class="tile-number">01</span>
-                      <h4 class="tile-title">Стегна та сідниці</h4>
+                      <span class="tile-number" style="color: #a1a1aa !important; font-weight: 800 !important;">01</span>
+                      <h4 class="tile-title" style="color: #ffffff !important; font-family: 'Montserrat', sans-serif !important; font-weight: 800 !important;">Стегна та сідниці</h4>
                     </div>
                     <div class="tile-header-right">
-                      <span class="tile-badge">6 сеансів</span>
-                      <span class="tile-accordion-arrow" aria-hidden="true">
+                      <span class="tile-badge" style="color: #ffffff !important; background: #27272a !important; border: 1px solid #3f3f46 !important;">6 сеансів</span>
+                      <span class="tile-accordion-arrow" aria-hidden="true" style="color: #d4d4d8 !important;">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                       </span>
                     </div>
                   </div>
                   <div class="tile-accordion-content">
-                    <p class="tile-desc">Усунення локальних жирових відкладень та підтяжка контуру сідниць. Зменшення окружності стегон на -4.5 см.</p>
+                    <p class="tile-desc" style="color: #d4d4d8 !important;">Усунення локальних жирових відкладень та підтяжка контуру сідниць. Зменшення окружності стегон на -4.5 см.</p>
                     <div class="mobile-tile-ba-viewport">
                       <div class="horizontal-img-layer layer-after">
                         <img src="/wp-content/uploads/zionic_official/case_1_after.jpg" alt="Після процедури Zionic" draggable="false" loading="lazy">
@@ -1610,21 +1610,21 @@ function cleanHtml(raw, pageName) {
                 </div>
 
                 <!-- TILE 2 -->
-                <div class="result-tile-card" data-case="2" data-before="/wp-content/uploads/zionic_official/case_2_before.jpg" data-after="/wp-content/uploads/zionic_official/case_2_after.jpg" data-title="Зменшення целюліту" data-num="КЕЙС 02" data-sessions="5 СЕАНСІВ">
+                <div class="result-tile-card" data-case="2" data-before="/wp-content/uploads/zionic_official/case_2_before.jpg" data-after="/wp-content/uploads/zionic_official/case_2_after.jpg" data-title="Зменшення целюліту" data-num="КЕЙС 02" data-sessions="5 СЕАНСІВ" style="background: #18181b !important; border: 1px solid #27272a !important;">
                   <div class="tile-header">
                     <div class="tile-header-left">
-                      <span class="tile-number">02</span>
-                      <h4 class="tile-title">Зменшення целюліту</h4>
+                      <span class="tile-number" style="color: #a1a1aa !important; font-weight: 800 !important;">02</span>
+                      <h4 class="tile-title" style="color: #ffffff !important; font-family: 'Montserrat', sans-serif !important; font-weight: 800 !important;">Зменшення целюліту</h4>
                     </div>
                     <div class="tile-header-right">
-                      <span class="tile-badge">5 сеансів</span>
-                      <span class="tile-accordion-arrow" aria-hidden="true">
+                      <span class="tile-badge" style="color: #ffffff !important; background: #27272a !important; border: 1px solid #3f3f46 !important;">5 сеансів</span>
+                      <span class="tile-accordion-arrow" aria-hidden="true" style="color: #d4d4d8 !important;">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                       </span>
                     </div>
                   </div>
                   <div class="tile-accordion-content">
-                    <p class="tile-desc">Помітне розгладження мікрорельєфу шкіри при фіброзному целюліті, усунення ефекту «апельсинової кірки».</p>
+                    <p class="tile-desc" style="color: #d4d4d8 !important;">Помітне розгладження мікрорельєфу шкіри при фіброзному целюліті, усунення ефекту «апельсинової кірки».</p>
                     <div class="mobile-tile-ba-viewport">
                       <div class="horizontal-img-layer layer-after">
                         <img src="/wp-content/uploads/zionic_official/case_2_after.jpg" alt="Після процедури Zionic" draggable="false" loading="lazy">
@@ -1647,21 +1647,21 @@ function cleanHtml(raw, pageName) {
                 </div>
 
                 <!-- TILE 3 -->
-                <div class="result-tile-card" data-case="3" data-before="/wp-content/uploads/zionic_official/case_3_before.jpg" data-after="/wp-content/uploads/zionic_official/case_3_after.jpg" data-title="Підтяжка та ліфтинг" data-num="КЕЙС 03" data-sessions="4 СЕАНСИ">
+                <div class="result-tile-card" data-case="3" data-before="/wp-content/uploads/zionic_official/case_3_before.jpg" data-after="/wp-content/uploads/zionic_official/case_3_after.jpg" data-title="Підтяжка та ліфтинг" data-num="КЕЙС 03" data-sessions="4 СЕАНСИ" style="background: #18181b !important; border: 1px solid #27272a !important;">
                   <div class="tile-header">
                     <div class="tile-header-left">
-                      <span class="tile-number">03</span>
-                      <h4 class="tile-title">Підтяжка та ліфтинг</h4>
+                      <span class="tile-number" style="color: #a1a1aa !important; font-weight: 800 !important;">03</span>
+                      <h4 class="tile-title" style="color: #ffffff !important; font-family: 'Montserrat', sans-serif !important; font-weight: 800 !important;">Підтяжка та ліфтинг</h4>
                     </div>
                     <div class="tile-header-right">
-                      <span class="tile-badge">4 сеанси</span>
-                      <span class="tile-accordion-arrow" aria-hidden="true">
+                      <span class="tile-badge" style="color: #ffffff !important; background: #27272a !important; border: 1px solid #3f3f46 !important;">4 сеанси</span>
+                      <span class="tile-accordion-arrow" aria-hidden="true" style="color: #d4d4d8 !important;">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                       </span>
                     </div>
                   </div>
                   <div class="tile-accordion-content">
-                    <p class="tile-desc">Потужне ущільнення в'ялої шкіри завдяки стимуляції синтезу неоколагену монополярним RF 470 кГц.</p>
+                    <p class="tile-desc" style="color: #d4d4d8 !important;">Потужне ущільнення в'ялої шкіри завдяки стимуляції синтезу неоколагену монополярним RF 470 кГц.</p>
                     <div class="mobile-tile-ba-viewport">
                       <div class="horizontal-img-layer layer-after">
                         <img src="/wp-content/uploads/zionic_official/case_3_after.jpg" alt="Після процедури Zionic" draggable="false" loading="lazy">
@@ -1684,21 +1684,21 @@ function cleanHtml(raw, pageName) {
                 </div>
 
                 <!-- TILE 4 -->
-                <div class="result-tile-card" data-case="4" data-before="/wp-content/uploads/zionic_official/case_4_before.jpg" data-after="/wp-content/uploads/zionic_official/case_4_after.jpg" data-title="Корекція зони галіфе" data-num="КЕЙС 04" data-sessions="6 СЕАНСІВ">
+                <div class="result-tile-card" data-case="4" data-before="/wp-content/uploads/zionic_official/case_4_before.jpg" data-after="/wp-content/uploads/zionic_official/case_4_after.jpg" data-title="Корекція зони галіфе" data-num="КЕЙС 04" data-sessions="6 СЕАНСІВ" style="background: #18181b !important; border: 1px solid #27272a !important;">
                   <div class="tile-header">
                     <div class="tile-header-left">
-                      <span class="tile-number">04</span>
-                      <h4 class="tile-title">Корекція зони галіфе</h4>
+                      <span class="tile-number" style="color: #a1a1aa !important; font-weight: 800 !important;">04</span>
+                      <h4 class="tile-title" style="color: #ffffff !important; font-family: 'Montserrat', sans-serif !important; font-weight: 800 !important;">Корекція зони галіфе</h4>
                     </div>
                     <div class="tile-header-right">
-                      <span class="tile-badge">6 сеансів</span>
-                      <span class="tile-accordion-arrow" aria-hidden="true">
+                      <span class="tile-badge" style="color: #ffffff !important; background: #27272a !important; border: 1px solid #3f3f46 !important;">6 сеансів</span>
+                      <span class="tile-accordion-arrow" aria-hidden="true" style="color: #d4d4d8 !important;">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                       </span>
                     </div>
                   </div>
                   <div class="tile-accordion-content">
-                    <p class="tile-desc">Зменшення стійких жирових пасток на зовнішній поверхні стегон за рахунок активної MARP-ротації.</p>
+                    <p class="tile-desc" style="color: #d4d4d8 !important;">Зменшення стійких жирових пасток на зовнішній поверхні стегон за рахунок активної MARP-ротації.</p>
                     <div class="mobile-tile-ba-viewport">
                       <div class="horizontal-img-layer layer-after">
                         <img src="/wp-content/uploads/zionic_official/case_4_after.jpg" alt="Після процедури Zionic" draggable="false" loading="lazy">
@@ -1721,21 +1721,21 @@ function cleanHtml(raw, pageName) {
                 </div>
 
                 <!-- TILE 5 -->
-                <div class="result-tile-card" data-case="5" data-before="/wp-content/uploads/zionic_official/case_5_before.jpg" data-after="/wp-content/uploads/zionic_official/case_5_after.jpg" data-title="Живіт та боки" data-num="КЕЙС 05" data-sessions="5 СЕАНСІВ">
+                <div class="result-tile-card" data-case="5" data-before="/wp-content/uploads/zionic_official/case_5_before.jpg" data-after="/wp-content/uploads/zionic_official/case_5_after.jpg" data-title="Живіт та боки" data-num="КЕЙС 05" data-sessions="5 СЕАНСІВ" style="background: #18181b !important; border: 1px solid #27272a !important;">
                   <div class="tile-header">
                     <div class="tile-header-left">
-                      <span class="tile-number">05</span>
-                      <h4 class="tile-title">Живіт та боки</h4>
+                      <span class="tile-number" style="color: #a1a1aa !important; font-weight: 800 !important;">05</span>
+                      <h4 class="tile-title" style="color: #ffffff !important; font-family: 'Montserrat', sans-serif !important; font-weight: 800 !important;">Живіт та боки</h4>
                     </div>
                     <div class="tile-header-right">
-                      <span class="tile-badge">5 сеансів</span>
-                      <span class="tile-accordion-arrow" aria-hidden="true">
+                      <span class="tile-badge" style="color: #ffffff !important; background: #27272a !important; border: 1px solid #3f3f46 !important;">5 сеансів</span>
+                      <span class="tile-accordion-arrow" aria-hidden="true" style="color: #d4d4d8 !important;">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                       </span>
                     </div>
                   </div>
                   <div class="tile-accordion-content">
-                    <p class="tile-desc">Формування витонченої лінії талії, усунення набряків та глибокий дренаж вісцеральних і підшкірних зон.</p>
+                    <p class="tile-desc" style="color: #d4d4d8 !important;">Формування витонченої лінії талії, усунення набряків та глибокий дренаж вісцеральних і підшкірних зон.</p>
                     <div class="mobile-tile-ba-viewport">
                       <div class="horizontal-img-layer layer-after">
                         <img src="/wp-content/uploads/zionic_official/case_5_after.jpg" alt="Після процедури Zionic" draggable="false" loading="lazy">
@@ -1758,21 +1758,21 @@ function cleanHtml(raw, pageName) {
                 </div>
 
                 <!-- TILE 6 -->
-                <div class="result-tile-card" data-case="6" data-before="/wp-content/uploads/zionic_official/case_6_before.jpg" data-after="/wp-content/uploads/zionic_official/case_6_after.jpg" data-title="Тонус та пружність" data-num="КЕЙС 06" data-sessions="4 СЕАНСИ">
+                <div class="result-tile-card" data-case="6" data-before="/wp-content/uploads/zionic_official/case_6_before.jpg" data-after="/wp-content/uploads/zionic_official/case_6_after.jpg" data-title="Тонус та пружність" data-num="КЕЙС 06" data-sessions="4 СЕАНСИ" style="background: #18181b !important; border: 1px solid #27272a !important;">
                   <div class="tile-header">
                     <div class="tile-header-left">
-                      <span class="tile-number">06</span>
-                      <h4 class="tile-title">Тонус та пружність</h4>
+                      <span class="tile-number" style="color: #a1a1aa !important; font-weight: 800 !important;">06</span>
+                      <h4 class="tile-title" style="color: #ffffff !important; font-family: 'Montserrat', sans-serif !important; font-weight: 800 !important;">Тонус та пружність</h4>
                     </div>
                     <div class="tile-header-right">
-                      <span class="tile-badge">4 сеанси</span>
-                      <span class="tile-accordion-arrow" aria-hidden="true">
+                      <span class="tile-badge" style="color: #ffffff !important; background: #27272a !important; border: 1px solid #3f3f46 !important;">4 сеанси</span>
+                      <span class="tile-accordion-arrow" aria-hidden="true" style="color: #d4d4d8 !important;">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
                       </span>
                     </div>
                   </div>
                   <div class="tile-accordion-content">
-                    <p class="tile-desc">Миттєвий та пролонгований ліфтинг тканин, покращення тургору та еластичності після ліполізу.</p>
+                    <p class="tile-desc" style="color: #d4d4d8 !important;">Миттєвий та пролонгований ліфтинг тканин, покращення тургору та еластичності після ліполізу.</p>
                     <div class="mobile-tile-ba-viewport">
                       <div class="horizontal-img-layer layer-after">
                         <img src="/wp-content/uploads/zionic_official/case_6_after.jpg" alt="Після процедури Zionic" draggable="false" loading="lazy">

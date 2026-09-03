@@ -11183,11 +11183,14 @@ html, body {
   color: #ffffff;
 }
 
-.tile-title {
+.tile-title,
+.result-tile-card .tile-title,
+.result-tile-card h4.tile-title,
+h4.tile-title {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 17px !important;
   font-weight: 900 !important;
-  color: #111111 !important;
+  color: #ffffff !important;
   margin: 0 0 6px 0 !important;
   line-height: 1.25 !important;
 }
@@ -21892,4 +21895,21 @@ html body.template-linfopress section#technologies .section-main-title {
 .linfopress-matrix-section .item-title {
   margin-bottom: 0px !important;
   line-height: 1.35 !important;
+}
+
+/* GUARANTEED WHITE COLOR FOR ZIONIC RESULTS ACCORDION TILES */
+.result-tile-card .tile-title,
+.result-tile-card h4,
+.result-tile-card .tile-header-left h4,
+.result-tile-card .tile-header h4,
+.zionic-result-tiles-grid .tile-title {
+  color: #ffffff !important;
+}
+.result-tile-card .tile-number {
+  color: #a1a1aa !important;
+}
+.result-tile-card .tile-badge {
+  color: #ffffff !important;
+  background: #27272a !important;
+  border-color: #3f3f46 !important;
 }
