@@ -2306,10 +2306,7 @@ function cleanHtml(raw, pageName) {
                 <span>ЗАМОВИТИ ТЕСТ-ДРАЙВ У КЛІНІКУ</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
-              <button type="button" class="linfopress-secondary-btn" id="open-linfopress-video-btn" onclick="window.openLinfopressVideoLightbox('K1v77enueJ8')">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                <span>ВІДЕО-ДЕМОНСТРАЦІЯ</span>
-              </button>
+              
             </div>
           </div>
         </div>
