@@ -2420,7 +2420,7 @@ function cleanHtml(raw, pageName) {
             <!-- TECH CARD 1 -->
             <div class="linfopress-tech-card" onclick="window.openLinfopressTechModal(1)">
               <div class="tech-media-box">
-                <video autoplay loop muted playsinline preload="none" poster="/wp-content/uploads/2026/03/1-preview-optimized.png">
+                <video autoplay loop muted playsinline preload="auto" poster="/wp-content/uploads/2026/03/1-preview-optimized.png">
                   <source src="/wp-content/uploads/2026/03/1.mp4" type="video/mp4">
                 </video>
                 <span class="tech-stage-badge">ФАЗА 01</span>
@@ -2441,7 +2441,7 @@ function cleanHtml(raw, pageName) {
             <!-- TECH CARD 2 -->
             <div class="linfopress-tech-card" onclick="window.openLinfopressTechModal(2)">
               <div class="tech-media-box">
-                <video autoplay loop muted playsinline preload="none" poster="/wp-content/uploads/2026/03/2-preview-1-optimized.png">
+                <video autoplay loop muted playsinline preload="auto" poster="/wp-content/uploads/2026/03/2-preview-1-optimized.png">
                   <source src="/wp-content/uploads/2026/03/2-1.mp4" type="video/mp4">
                 </video>
                 <span class="tech-stage-badge">ФАЗА 02</span>
@@ -2462,7 +2462,7 @@ function cleanHtml(raw, pageName) {
             <!-- TECH CARD 3 -->
             <div class="linfopress-tech-card" onclick="window.openLinfopressTechModal(3)">
               <div class="tech-media-box">
-                <video autoplay loop muted playsinline preload="none" poster="/wp-content/uploads/2026/04/limfonew-optimized.jpg">
+                <video autoplay loop muted playsinline preload="auto" poster="/wp-content/uploads/2026/04/limfonew-optimized.jpg">
                   <source src="/wp-content/uploads/2026/04/limfonew2.mp4" type="video/mp4">
                 </video>
                 <span class="tech-stage-badge">ФАЗА 03</span>
@@ -2483,9 +2483,7 @@ function cleanHtml(raw, pageName) {
             <!-- TECH CARD 4 -->
             <div class="linfopress-tech-card" onclick="window.openLinfopressTechModal(4)">
               <div class="tech-media-box">
-                <video autoplay loop muted playsinline preload="none" poster="/wp-content/uploads/2026/03/4-preview-1-optimized.png">
-                  <source src="/wp-content/uploads/2026/03/1.mp4" type="video/mp4">
-                </video>
+                <img src="/wp-content/uploads/2026/03/4-preview-1-optimized.png" alt="Релаксація" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                 <span class="tech-stage-badge">ФАЗА 04</span>
               </div>
               <div class="tech-card-body">
@@ -2514,7 +2512,7 @@ function cleanHtml(raw, pageName) {
           
           <div id="lp-modal-tab-1" class="lp-modal-tab-content">
             <div class="modal-video-wrapper">
-              <video controls playsinline class="modal-inner-video">
+              <video controls playsinline class="modal-inner-video" poster="/wp-content/uploads/2026/03/1-preview-optimized.png">
                 <source src="/wp-content/uploads/2026/03/1.mp4" type="video/mp4">
               </video>
             </div>
@@ -2527,7 +2525,7 @@ function cleanHtml(raw, pageName) {
 
           <div id="lp-modal-tab-2" class="lp-modal-tab-content" style="display:none;">
             <div class="modal-video-wrapper">
-              <video controls playsinline class="modal-inner-video">
+              <video controls playsinline class="modal-inner-video" poster="/wp-content/uploads/2026/03/2-preview-1-optimized.png">
                 <source src="/wp-content/uploads/2026/03/2-1.mp4" type="video/mp4">
               </video>
             </div>
@@ -2540,7 +2538,7 @@ function cleanHtml(raw, pageName) {
 
           <div id="lp-modal-tab-3" class="lp-modal-tab-content" style="display:none;">
             <div class="modal-video-wrapper">
-              <video controls playsinline class="modal-inner-video">
+              <video controls playsinline class="modal-inner-video" poster="/wp-content/uploads/2026/04/limfonew-optimized.jpg">
                 <source src="/wp-content/uploads/2026/04/limfonew2.mp4" type="video/mp4">
               </video>
             </div>
@@ -2553,9 +2551,7 @@ function cleanHtml(raw, pageName) {
 
           <div id="lp-modal-tab-4" class="lp-modal-tab-content" style="display:none;">
             <div class="modal-video-wrapper">
-              <video controls playsinline class="modal-inner-video">
-                <source src="/wp-content/uploads/2026/03/1.mp4" type="video/mp4">
-              </video>
+              <img src="/wp-content/uploads/2026/03/4-preview-1-optimized.png" alt="Релаксація" class="modal-inner-video" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block; border-radius: 0px;">
             </div>
             <div class="modal-text-content">
               <h3 class="modal-title">Релаксація</h3>
