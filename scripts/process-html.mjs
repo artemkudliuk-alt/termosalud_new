@@ -1327,7 +1327,8 @@ function cleanHtml(raw, pageName) {
             </div>
 
             <h1 class="zionic-hero-title">
-              Нова ера корекції тіла
+              <span class="zionic-word-top">НОВА ЕРА</span>
+              <span class="zionic-word-bottom">КОРЕКЦІЇ ТІЛА</span>
             </h1>
 
             <p class="zionic-hero-desc">
