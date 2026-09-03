@@ -28,7 +28,7 @@ name="msapplication-TileImage" content="/wp-content/uploads/2026/03/favicon-opti
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Onest:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/src/css/custom.css?v=1788422448207">
+  <link rel="stylesheet" href="/src/css/custom.css?v=1788422565858">
   <style>
     .split-title, .split-title *, .split-panel .split-title, .split-panel h3, .split-content .split-title, .split-content h3 {
       color: #f1f5f9 !important;
@@ -891,71 +891,78 @@ class=content>
 
       <!-- 11. FAQ ACCORDION -->
       <!-- 11. FAQ ACCORDION -->
-      <section class="zionic-faq-section" id="faq">
+      <section class="zionic-faq-section exact-zionic-faq" id="faq">
         <div class="container">
-          <div class="section-header-centered">
+          <div class="section-header-centered text-center" style="margin-bottom: 44px;">
             <h2 class="section-main-title">Питання та відповіді</h2>
-            <p class="section-main-sub">Отримайте відповіді на поширені запитання про Zionic та про те, як ця система може змінити вашу практику</p>
+            <p class="section-main-sub" style="max-width: 800px; margin: 0 auto; line-height: 1.55;">
+              Отримайте відповіді на поширені запитання про Zionic та про те,<br>як ця система може змінити вашу практику
+            </p>
           </div>
 
-          <div class="faq-accordion-grid">
+          <div class="exact-faq-accordion-list">
             <!-- Q1 -->
-            <div class="faq-accordion-card active">
-              <button type="button" class="faq-toggle-header" onclick="toggleZionicFaq(this)">
-                <span class="faq-q-index">01</span>
-                <span class="faq-q-text">Скільки процедур потрібно для видимого результату?</span>
-                <span class="faq-icon">−</span>
+            <div class="exact-faq-item active">
+              <button type="button" class="exact-faq-btn" onclick="toggleExactFaq(this)">
+                <span class="exact-faq-question">Скільки процедур потрібно для видимого результату?</span>
+                <span class="exact-faq-chevron">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </span>
               </button>
-              <div class="faq-answer-body">
-                <p>Перші зміни у тонусі шкіри та зняття набряклості помітні вже після 1–2 сеансів. Стійкий виражений ефект зменшення об'ємів та лікування целюліту досягається за курс із 6–10 процедур з інтервалом 2–3 рази на тиждень.</p>
+              <div class="exact-faq-content" style="display: block;">
+                <p class="exact-faq-answer">Виробник рекомендує не менше чотирьох процедур. Бажаний курс включає 6 – 10 процедур в залежності від поставлених задач.</p>
               </div>
             </div>
 
             <!-- Q2 -->
-            <div class="faq-accordion-card">
-              <button type="button" class="faq-toggle-header" onclick="toggleZionicFaq(this)">
-                <span class="faq-q-index">02</span>
-                <span class="faq-q-text">Чи комфортна процедура і які відчуття підчас неї?</span>
-                <span class="faq-icon">+</span>
+            <div class="exact-faq-item">
+              <button type="button" class="exact-faq-btn" onclick="toggleExactFaq(this)">
+                <span class="exact-faq-question">Чи комфортна процедура і які відчуття підчас неї?</span>
+                <span class="exact-faq-chevron">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </span>
               </button>
-              <div class="faq-answer-body">
-                <p>Ні, процедура абсолютно безболісна та фізіологічна. Пацієнт відчуває приємне глибоке тепло та розслаблюючий ротаційний масаж. Відсутні будь-які синці, печіння чи гематоми.</p>
+              <div class="exact-faq-content">
+                <p class="exact-faq-answer">Найкомфортніша процедура апаратного масажу. Відчуття приємні. Лагідне тепло народжується всередині м'яких тканин, розслабляючи м'язи.</p>
               </div>
             </div>
 
             <!-- Q3 -->
-            <div class="faq-accordion-card">
-              <button type="button" class="faq-toggle-header" onclick="toggleZionicFaq(this)">
-                <span class="faq-q-index">03</span>
-                <span class="faq-q-text">Чи потрібен час на відновлення після сеансу?</span>
-                <span class="faq-icon">+</span>
+            <div class="exact-faq-item">
+              <button type="button" class="exact-faq-btn" onclick="toggleExactFaq(this)">
+                <span class="exact-faq-question">Чи потрібен час на відновлення після сеансу?</span>
+                <span class="exact-faq-chevron">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </span>
               </button>
-              <div class="faq-answer-body">
-                <p>Реабілітаційний період повністю відсутній. Пацієнт може одразу повертатися до звичного ритму життя, спорту чи роботи без будь-яких обмежень.</p>
+              <div class="exact-faq-content">
+                <p class="exact-faq-answer">Ні.</p>
               </div>
             </div>
 
             <!-- Q4 -->
-            <div class="faq-accordion-card">
-              <button type="button" class="faq-toggle-header" onclick="toggleZionicFaq(this)">
-                <span class="faq-q-index">04</span>
-                <span class="faq-q-text">Для яких зон тіла найчастіше застосовується ZIONIC?</span>
-                <span class="faq-icon">+</span>
+            <div class="exact-faq-item">
+              <button type="button" class="exact-faq-btn" onclick="toggleExactFaq(this)">
+                <span class="exact-faq-question">Для яких зон тіла найчастіше застосовується ZIONIC?</span>
+                <span class="exact-faq-chevron">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </span>
               </button>
-              <div class="faq-answer-body">
-                <p>ZIONIC ефективно працює з усіма проблемними ділянками: стегна, сідниці, живіт, боки, спина, руки (трицепс), а також для загального ліфтингу шкіри тіла.</p>
+              <div class="exact-faq-content">
+                <p class="exact-faq-answer">Призначений для лікування фіброзного целюліта, тобто в основному для стегон і сідниць, ZIONIC користується великим попитом для масажу спини і шийно-плечового сегменту, тому що дуже приємний.</p>
               </div>
             </div>
 
             <!-- Q5 -->
-            <div class="faq-accordion-card">
-              <button type="button" class="faq-toggle-header" onclick="toggleZionicFaq(this)">
-                <span class="faq-q-index">05</span>
-                <span class="faq-q-text">Чим ZIONIC відрізняється від інших косметологічних рішень?</span>
-                <span class="faq-icon">+</span>
+            <div class="exact-faq-item">
+              <button type="button" class="exact-faq-btn" onclick="toggleExactFaq(this)">
+                <span class="exact-faq-question">Чим ZIONIC відрізняється від інших косметологічних рішень?</span>
+                <span class="exact-faq-chevron">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </span>
               </button>
-              <div class="faq-answer-body">
-                <p>Унікальність ZIONIC — це запатентована технологія MARP (ротаційний глибокий масаж) у поєднанні з резистивним монополярним RF 470 кГц. Вона одночасно впливає на жирову тканину, м'язи та дерму без болю і витратних матеріалів.</p>
+              <div class="exact-faq-content">
+                <p class="exact-faq-answer">Єдина система, яка об'єднує глибокий діатермічний прогрів резистивного типу і ротаційний масаж з регулюванням обертів по ходу лімфатичної рідини.</p>
               </div>
             </div>
           </div>

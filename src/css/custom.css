@@ -20062,3 +20062,94 @@ html body.template-zionic .exact-doctor-card .exact-doc-desc,
   font-weight: 500 !important;
   margin: 0 !important;
 }
+
+
+/* ==========================================================================
+   EXACT FAQ SECTION STYLES (MATCHING SCREENSHOT)
+   ========================================================================== */
+.exact-zionic-faq {
+  padding: 85px 0 95px 0 !important;
+  background: #ffffff !important;
+}
+
+.exact-faq-accordion-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+}
+
+.exact-faq-item {
+  background: #1e2430 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.exact-faq-btn {
+  width: 100% !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 22px 28px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+  cursor: pointer !important;
+  text-align: left !important;
+  outline: none !important;
+}
+
+.exact-faq-question {
+  color: #ffffff !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 15.5px !important;
+  font-weight: 700 !important;
+  line-height: 1.4 !important;
+}
+
+.exact-faq-chevron {
+  color: #38bdf8 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.25s ease !important;
+}
+
+.exact-faq-content {
+  display: none;
+  padding: 0 28px 24px 28px !important;
+}
+
+.exact-faq-item.active .exact-faq-content {
+  display: block !important;
+}
+
+.exact-faq-answer {
+  color: #cbd5e1 !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 14.5px !important;
+  line-height: 1.6 !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+}
+
+
+/* FAQ Title and Questions Sentence Case matching screenshots */
+html body.template-zionic .exact-faq-question,
+.exact-faq-question,
+.exact-faq-btn,
+.exact-faq-item span {
+  text-transform: none !important;
+}
+
+html body.template-zionic .exact-zionic-faq .section-main-title,
+.exact-zionic-faq .section-main-title {
+  text-transform: none !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 800 !important;
+  font-size: clamp(30px, 3.2vw, 44px) !important;
+  color: #18181b !important;
+}
