@@ -789,10 +789,10 @@ function cleanHtml(raw, pageName) {
       <!-- Screen 4: Open Presentation & Test-Drive Stage -->
             <!-- 9. BECOME A PARTNER & PRESENTATION STAGE (ORIGINAL CONTENT + MAIN PAGE DESIGN SYSTEM) -->
       <section class="application-presentation zionic-partner-stage-section" id="test-drive">
-        <div class="container-fluid px-lg-5">
-          <div class="section-header-centered">
-            <h2 class="section-main-title">Стати партнером TermoSalud</h2>
-            <p class="section-main-sub">
+        <div class="container">
+          <div class="section-header-centered text-center" style="text-align: center !important; margin: 0 auto 44px auto !important;">
+            <h2 class="section-main-title" style="text-align: center !important; margin-left: auto !important; margin-right: auto !important;">Стати партнером TermoSalud</h2>
+            <p class="section-main-sub" style="text-align: center !important; margin-left: auto !important; margin-right: auto !important;">
               При замовленні апарата ZIONIC ви отримуєте професійне навчання, маркетинговий запуск та надійну сервісну підтримку
             </p>
           </div>
@@ -1870,10 +1870,10 @@ function cleanHtml(raw, pageName) {
             <!-- 9. TEST-DRIVE APPLICATION STAGE (EXACT LUXURY MAIN PAGE ARCHITECTURE) -->
             <!-- 9. BECOME A PARTNER & PRESENTATION STAGE (ORIGINAL CONTENT + MAIN PAGE DESIGN SYSTEM) -->
       <section class="application-presentation zionic-partner-stage-section" id="test-drive">
-        <div class="container-fluid px-lg-5">
-          <div class="presentation-header text-center">
-            <h2 class="section-main-title">Стати партнером TermoSalud</h2>
-            <p class="section-main-sub">
+        <div class="container">
+          <div class="presentation-header text-center section-header-centered" style="text-align: center !important; margin: 0 auto 44px auto !important;">
+            <h2 class="section-main-title" style="text-align: center !important; margin-left: auto !important; margin-right: auto !important;">Стати партнером TermoSalud</h2>
+            <p class="section-main-sub" style="text-align: center !important; margin-left: auto !important; margin-right: auto !important;">
               При замовленні апарата ZIONIC ви отримуєте професійне навчання, маркетинговий запуск та надійну сервісну підтримку
             </p>
           </div>
@@ -3031,10 +3031,10 @@ function cleanHtml(raw, pageName) {
            10. OFFICIAL TEST-DRIVE APPLICATION FORM (#application / #test-drive)
            ========================================================================== -->
       <section class="application-presentation zionic-partner-stage-section linfopress-partner-stage-section" id="application">
-        <div class="container-fluid px-lg-5">
-          <div class="presentation-header text-center">
-            <h2 class="section-main-title">Стати партнером TermoSalud</h2>
-            <p class="section-main-sub">
+        <div class="container">
+          <div class="presentation-header text-center section-header-centered" style="text-align: center !important; margin: 0 auto 44px auto !important;">
+            <h2 class="section-main-title" style="text-align: center !important; margin-left: auto !important; margin-right: auto !important;">Стати партнером TermoSalud</h2>
+            <p class="section-main-sub" style="text-align: center !important; margin-left: auto !important; margin-right: auto !important;">
               При замовленні апарата Linfopress Evolution PRO ви отримуєте професійне навчання, маркетинговий запуск та надійну сервісну підтримку
             </p>
           </div>
