@@ -542,12 +542,11 @@ window.submitTermosaludLead = async function(e, formTitle) {
     }
   }
 
-  // Payload for FormSubmit
+  // Payload for FormSubmit (Exclusively for zionic.ua@gmail.com)
   const payload = {
     "_subject": `🔔 Нова заявка Termosalud: ${clientName || 'Клієнт'} (${clientPhone})`,
     "_template": "table",
     "_captcha": "false",
-    "_cc": "zionic.ua@gmail.com",
     "Форма / Джерело": formTitle || 'Форма на сайті',
     "Клієнт (Ім'я / Посада)": clientName || 'Не вказано',
     "Номер телефону": clientPhone || 'Не вказано',
@@ -584,7 +583,7 @@ window.submitTermosaludLead = async function(e, formTitle) {
 
     // Direct FormSubmit (primary on localhost, automatic fallback on production)
     if (!response) {
-      response = await fetch('https://formsubmit.co/ajax/artemkudliuk@gmail.com', {
+      response = await fetch('https://formsubmit.co/ajax/zionic.ua@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

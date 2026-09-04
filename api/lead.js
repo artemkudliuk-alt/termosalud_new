@@ -18,17 +18,15 @@
   try {
     const payload = typeof req.body === 'string' ? JSON.parse(req.body) : (req.body || {});
 
-    // Automatically CC client email so NO activation is required for client!
-    payload._cc = 'zionic.ua@gmail.com';
-
-    const response = await fetch('https://formsubmit.co/ajax/artemkudliuk@gmail.com', {
+    // Target email: ONLY zionic.ua@gmail.com
+    const response = await fetch('https://formsubmit.co/ajax/zionic.ua@gmail.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-        'Origin': 'http://localhost:5173',
-        'Referer': 'http://localhost:5173/'
+        'Origin': 'https://termosalud-new.vercel.app',
+        'Referer': 'https://termosalud-new.vercel.app/'
       },
       body: JSON.stringify(payload)
     });
