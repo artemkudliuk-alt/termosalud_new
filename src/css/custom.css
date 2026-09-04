@@ -11650,30 +11650,31 @@ h4.tile-title {
   z-index: 15 !important;
   background: #ffffff !important;
   background-color: #ffffff !important;
-  padding: 100px 0 60px 0 !important;
+  padding: 100px 0 85px 0 !important;
   border-top: 1px solid #e4e4e7 !important;
-  border-bottom: 1px solid #e4e4e7 !important;
+  border-bottom: none !important;
   width: 100% !important;
 }
 
 .treatments-infographic-viewport {
   position: relative !important;
   width: 100% !important;
-  max-width: 1440px !important;
-  margin: 40px auto 0 auto !important;
+  max-width: 1550px !important;
+  margin: 60px auto 0 auto !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  padding: 0 20px !important;
+  padding: 0 clamp(16px, 3vw, 40px) !important;
+  box-sizing: border-box !important;
   background: #ffffff !important;
   background-color: #ffffff !important;
 }
 
 .treatments-infographic-viewport img {
   width: 100% !important;
-  max-width: 960px !important;
+  max-width: 1450px !important;
   height: auto !important;
-  max-height: 85vh !important;
+  max-height: none !important;
   object-fit: contain !important;
   display: block !important;
   margin: 0 auto !important;
@@ -11700,7 +11701,7 @@ h4.tile-title {
   z-index: 16;
   background: #ffffff;
   padding: 110px 0;
-  border-top: 1px solid #e4e4e7;
+  border-top: none !important;
   border-bottom: 1px solid #e4e4e7;
 }
 
@@ -13202,8 +13203,9 @@ footer {
 .tech-card-media {
   position: relative !important;
   width: 100% !important;
-  height: 340px !important;
-  background: #000000 !important;
+  aspect-ratio: 16 / 9 !important;
+  height: auto !important;
+  background: #ffffff !important;
   overflow: hidden !important;
   border-bottom: 1px solid #27272a !important;
 }
@@ -13211,13 +13213,14 @@ footer {
 .tech-card-media video {
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover !important;
+  object-fit: contain !important;
   display: block !important;
-  transition: transform 0.5s ease !important;
+  background: #ffffff !important;
+  transition: transform 0.3s ease !important;
 }
 
 .tech-bento-card:hover .tech-card-media video {
-  transform: scale(1.03) !important;
+  transform: scale(1.01) !important;
 }
 
 .tech-badge-tag {
@@ -13443,7 +13446,7 @@ footer {
   z-index: 16 !important;
   background: #ffffff !important;
   padding: 110px 0 !important;
-  border-top: 1px solid #e4e4e7 !important;
+  border-top: none !important;
   border-bottom: 1px solid #e4e4e7 !important;
   width: 100% !important;
 }
@@ -21147,31 +21150,31 @@ html body.template-zionic .seo-article-card .seo-toggle-btn,
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 10px !important;
-  background: #0f172a !important;
-  color: #ffffff !important;
-  border: 1.5px solid #0f172a !important;
-  padding: 14px 28px !important;
-  font-family: 'Montserrat', sans-serif !important;
-  font-size: 13.5px !important;
-  font-weight: 700 !important;
-  letter-spacing: 1px !important;
-  text-transform: uppercase !important;
+  gap: 8px !important;
+  background: transparent !important;
+  color: #18181b !important;
+  border: none !important;
+  padding: 8px 16px !important;
+  font-family: 'Inter', 'Montserrat', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
   cursor: pointer !important;
   border-radius: 0px !important;
-  margin: 24px 0 0 0 !important;
-  transition: all 0.25s ease !important;
-  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15) !important;
+  margin: 28px auto 0 auto !important;
+  transition: all 0.2s ease !important;
+  box-shadow: none !important;
 }
 
 html body.template-zionic .seo-toggle-btn:hover,
 html body.template-zionic .seo-article-card .seo-toggle-btn:hover,
 .seo-toggle-btn:hover {
-  background: #ffffff !important;
-  color: #0f172a !important;
-  border-color: #0f172a !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.2) !important;
+  background: transparent !important;
+  color: #000000 !important;
+  border-color: transparent !important;
+  transform: translateY(-1px) !important;
+  box-shadow: none !important;
 }
 
 html body.template-zionic .seo-toggle-btn .seo-btn-label,
@@ -21179,13 +21182,13 @@ html body.template-zionic .seo-toggle-btn .seo-btn-label,
   color: inherit !important;
   font-size: inherit !important;
   font-weight: inherit !important;
-  text-transform: uppercase !important;
+  text-transform: none !important;
 }
 
 html body.template-zionic .seo-toggle-btn .seo-btn-arrow,
 .seo-toggle-btn .seo-btn-arrow {
   color: inherit !important;
-  font-size: 14px !important;
+  font-size: 15px !important;
 }
 
 
@@ -22041,3 +22044,904 @@ html body.template-linfopress section#technologies .section-main-title {
 .zionic-video-banner-fullwidth:hover {
   filter: brightness(1.06);
 }
+
+/* ==========================================================================
+   APPARATUS INTERNAL HEADER MENU (.header-block-another, .custom-select-logo)
+   ========================================================================== */
+.header-block-another {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.custom-select-logo {
+  position: relative !important;
+  margin-right: 18px !important;
+  user-select: none !important;
+}
+
+.select-display {
+  display: inline-flex !important;
+  align-items: center !important;
+  border-radius: 8px !important;
+  background: #000000 !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  padding: 8px 42px 8px 16px !important;
+  cursor: pointer !important;
+  position: relative !important;
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease !important;
+  height: 46px !important;
+  box-sizing: border-box !important;
+}
+
+.select-display:hover {
+  background: #121316 !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.select-display img {
+  height: 23px !important;
+  max-height: none !important;
+  width: auto !important;
+  display: block !important;
+}
+
+.select-arrow {
+  position: absolute !important;
+  right: 14px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  transition: transform 0.25s ease !important;
+  pointer-events: none !important;
+}
+
+.select-arrow.open {
+  transform: translateY(-50%) rotate(180deg) !important;
+}
+
+.select-options {
+  position: absolute !important;
+  top: calc(100% + 4px) !important;
+  left: 0 !important;
+  min-width: 195px !important;
+  background: #000000 !important;
+  border-radius: 8px !important;
+  padding: 14px 12px !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transform: translateY(-8px) !important;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease !important;
+  z-index: 10005 !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+}
+
+.select-options.open {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+}
+
+.option-item {
+  display: flex !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  padding: 8px 12px !important;
+  border-radius: 6px !important;
+  margin-bottom: 8px !important;
+  transition: background 0.2s ease, transform 0.2s ease !important;
+}
+
+.option-item:last-child {
+  margin-bottom: 0 !important;
+}
+
+.option-item:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  transform: translateX(3px) !important;
+}
+
+.option-item img {
+  height: 23px !important;
+  max-height: none !important;
+  width: auto !important;
+  display: block !important;
+}
+
+.header-ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 22px !important;
+}
+
+.header-ul li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.header-ul li a {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  letter-spacing: 0.2px !important;
+  line-height: 1.3 !important;
+  color: #54595f !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease, opacity 0.2s ease !important;
+  white-space: nowrap !important;
+}
+
+.header-ul li a:hover {
+  color: #18181b !important;
+}
+
+@media (max-width: 991px) {
+  .header-block-another {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+    gap: 16px !important;
+  }
+
+  .header-block-another .custom-select-logo {
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .header-block-another .select-display {
+    width: 100% !important;
+    justify-content: space-between !important;
+  }
+
+  .header-block-another .select-options {
+    position: static !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    display: none !important;
+    margin-top: 6px !important;
+    width: 100% !important;
+  }
+
+  .header-block-another .select-options.open {
+    display: block !important;
+  }
+
+  .header-ul {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+    gap: 14px !important;
+  }
+
+  .header-ul li {
+    width: 100% !important;
+  }
+
+  .header-ul li a {
+    font-size: 17px !important;
+    display: block !important;
+    color: #18181b !important;
+  }
+}
+
+/* ==========================================================================
+   PERFECTLY COMPACTED & BALANCED TECH BENTO CARDS (ZIONIC TECHNOLOGIES)
+   ========================================================================== */
+.zionic-tech-bento-section .tech-bento-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  background: #18181b !important;
+  border: 1px solid #3f3f46 !important;
+}
+
+.zionic-tech-bento-section .tech-card-content {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 32px 32px 28px 32px !important;
+  box-sizing: border-box !important;
+}
+
+.zionic-tech-bento-section .tech-card-heading {
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  line-height: 1.25 !important;
+  margin-bottom: 14px !important;
+}
+
+/* Card 1 Text Spacing & Compact Bullet List */
+.zionic-tech-bento-section .tech-bento-card:nth-child(1) .tech-card-text {
+  font-size: 15px !important;
+  line-height: 1.55 !important;
+  color: #d4d4d8 !important;
+  margin-bottom: 12px !important;
+}
+
+.zionic-tech-bento-section .tech-bullets-list {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 8px 16px !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 10px 0 0 0 !important;
+}
+
+.zionic-tech-bento-section .tech-bullets-list li {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 8px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 500 !important;
+  color: #e4e4e7 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  line-height: 1.35 !important;
+}
+
+.zionic-tech-bento-section .tech-bullets-list li .bullet-check {
+  color: #6DFCFF !important; /* Elegant cyan accent dot */
+  font-size: 15px !important;
+  font-weight: 900 !important;
+  line-height: 1.2 !important;
+  flex-shrink: 0 !important;
+}
+
+@media (max-width: 540px) {
+  .zionic-tech-bento-section .tech-bullets-list {
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+  }
+}
+
+/* Card 2 Balanced Text Spacing */
+.zionic-tech-bento-section .tech-bento-card:nth-child(2) .tech-card-text {
+  font-size: 15px !important;
+  line-height: 1.68 !important;
+  color: #d4d4d8 !important;
+  margin-bottom: 18px !important;
+}
+
+.zionic-tech-bento-section .tech-bento-card:nth-child(2) .tech-card-text:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* ==========================================================================
+   ZIONIC SEO ARTICLE CLEAN SECTION STYLES
+   ========================================================================== */
+html body.template-zionic section#seo-article,
+html body section#seo-article,
+#seo-article {
+  background: #ffffff !important;
+  padding: 80px 0 60px 0 !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+html body.template-zionic section#seo-article h2.seo-article-main-title,
+html body.template-zionic section#seo-article h2,
+html body section#seo-article h2,
+#seo-article .seo-article-main-title {
+  text-transform: none !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: clamp(26px, 3vw, 36px) !important;
+  font-weight: 700 !important;
+  color: #18181b !important;
+  line-height: 1.35 !important;
+  letter-spacing: -0.3px !important;
+  text-align: left !important;
+  margin: 0 0 24px 0 !important;
+}
+
+html body.template-zionic section#seo-article h3.seo-article-sub-title,
+html body.template-zionic section#seo-article h3,
+#seo-article .seo-article-sub-title {
+  text-transform: none !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  color: #18181b !important;
+  line-height: 1.4 !important;
+  text-align: left !important;
+  margin: 36px 0 16px 0 !important;
+}
+
+html body.template-zionic section#seo-article p,
+#seo-article p {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 16px !important;
+  color: #475569 !important;
+  line-height: 1.75 !important;
+  margin: 0 0 20px 0 !important;
+  text-align: left !important;
+}
+
+html body.template-zionic section#seo-article .seo-article-bullets,
+#seo-article .seo-article-bullets {
+  list-style: disc !important;
+  padding-left: 24px !important;
+  margin: 0 0 24px 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+html body.template-zionic section#seo-article .seo-article-bullets li,
+#seo-article .seo-article-bullets li {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 15.5px !important;
+  color: #475569 !important;
+  line-height: 1.7 !important;
+  text-align: left !important;
+  padding-left: 0 !important;
+}
+
+html body.template-zionic section#seo-article .seo-article-bullets li::before,
+#seo-article .seo-article-bullets li::before {
+  display: none !important;
+}
+
+html body.template-zionic section#seo-article .seo-article-bullets li strong,
+#seo-article .seo-article-bullets li strong {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #18181b !important;
+}
+
+/* ==========================================================================
+   ENSURE ZIONIC BENTO VIDEO FRAMES ALWAYS FIT 100% UNCROPPED (16:9 RATIO)
+   ========================================================================== */
+html body.template-zionic .tech-bento-card .tech-card-media,
+html body .zionic-tech-bento-section .tech-card-media,
+.tech-card-media {
+  position: relative !important;
+  width: 100% !important;
+  aspect-ratio: 16 / 9 !important;
+  height: auto !important;
+  background: #ffffff !important;
+  overflow: hidden !important;
+  border-bottom: 1px solid #27272a !important;
+}
+
+html body.template-zionic .tech-bento-card .tech-card-media video,
+html body .zionic-tech-bento-section .tech-card-media video,
+.tech-card-media video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  display: block !important;
+  background: #ffffff !important;
+  transition: transform 0.3s ease !important;
+}
+
+/* ==========================================================================
+   ZIONIC BALANCED VERTICAL RHYTHM & COMPACT GAP FIX (DESKTOP & MOBILE)
+   ========================================================================== */
+html body.template-zionic .zionic-tech-bento-section,
+html body.template-zionic .zionic-procedure-showcase-section,
+html body.template-zionic .zionic-treatments-fullscreen-section,
+html body.template-zionic .zionic-ba-section,
+html body.template-zionic .zionic-matrix-section,
+html body.template-zionic .zionic-nine-advantages-section,
+html body.template-zionic .zionic-video-presentation-section,
+html body.template-zionic .zionic-partner-stage-section,
+html body.template-zionic .zionic-doctors-section,
+html body.template-zionic .zionic-faq-section,
+html body.template-zionic .zionic-certificates-section,
+html body.template-zionic .zionic-seo-clean-section {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+html body.template-zionic .zionic-video-presentation-section {
+  padding-top: 60px !important;
+  padding-bottom: 35px !important;
+}
+
+html body.template-zionic .zionic-partner-stage-section {
+  padding-top: 60px !important;
+  padding-bottom: 70px !important;
+  margin-top: 0px !important;
+}
+
+html body.template-zionic .zionic-seo-clean-section {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+@media (max-width: 768px) {
+  html body.template-zionic .zionic-tech-bento-section,
+  html body.template-zionic .zionic-procedure-showcase-section,
+  html body.template-zionic .zionic-treatments-fullscreen-section,
+  html body.template-zionic .zionic-ba-section,
+  html body.template-zionic .zionic-matrix-section,
+  html body.template-zionic .zionic-nine-advantages-section,
+  html body.template-zionic .zionic-video-presentation-section,
+  html body.template-zionic .zionic-partner-stage-section,
+  html body.template-zionic .zionic-doctors-section,
+  html body.template-zionic .zionic-faq-section,
+  html body.template-zionic .zionic-certificates-section,
+  html body.template-zionic .zionic-seo-clean-section {
+    padding-top: 42px !important;
+    padding-bottom: 42px !important;
+  }
+
+  /* Subtle headline reduction on mobile ("совсем чуть-чуть") */
+  html body.template-zionic section:not(#zionic-official-hero) h2,
+  html body.template-zionic .section-main-title,
+  html body.template-zionic h2.section-main-title {
+    font-size: clamp(22px, 5.8vw, 27px) !important;
+    line-height: 1.25 !important;
+    margin-bottom: 12px !important;
+  }
+
+  html body.template-zionic .section-header-centered {
+    margin-bottom: 24px !important;
+  }
+
+  /* Scheme infographic on mobile: enlarged so text touches the screen edges */
+  html body.template-zionic .zionic-treatments-fullscreen-section .treatments-infographic-viewport {
+    padding: 0 !important;
+    margin: 20px auto 0 auto !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  html body.template-zionic .zionic-treatments-fullscreen-section .treatments-infographic-viewport img {
+    width: 110% !important;
+    max-width: 110% !important;
+    margin-left: -5% !important;
+    display: block !important;
+  }
+}
+
+/* ==========================================================================
+   LINFOPRESS TECH CTA STRIP (UNDER 4 TECH CARDS)
+   ========================================================================== */
+.linfopress-tech-cta-strip {
+  margin: 56px auto 20px auto !important;
+  text-align: center !important;
+  max-width: 860px !important;
+  padding: 0 20px !important;
+  box-sizing: border-box !important;
+}
+
+.tech-cta-strip-heading {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: clamp(24px, 2.8vw, 32px) !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  color: #18181b !important;
+  margin: 0 0 14px 0 !important;
+  text-align: center !important;
+  letter-spacing: -0.3px !important;
+}
+
+.tech-cta-strip-sub {
+  font-family: 'Montserrat', 'Inter', sans-serif !important;
+  font-size: clamp(17px, 1.5vw, 19px) !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+  color: #475569 !important;
+  margin: 0 auto 28px auto !important;
+  max-width: 780px !important;
+  text-align: center !important;
+}
+
+.tech-cta-strip-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #1e222d !important;
+  color: #ffffff !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 15.5px !important;
+  font-weight: 700 !important;
+  padding: 15px 44px !important;
+  border-radius: 8px !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 4px 16px rgba(30, 34, 45, 0.25) !important;
+  text-decoration: none !important;
+  letter-spacing: 0.2px !important;
+}
+
+.tech-cta-strip-btn:hover {
+  background: #2c3344 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(30, 34, 45, 0.38) !important;
+}
+
+.tech-cta-strip-btn:active {
+  transform: translateY(0) !important;
+}
+
+/* ==========================================================================
+   LINFOPRESS PRESENTATION & FREE TRIAL MODAL (PIXEL-MATCH WITH USER SCREENSHOT)
+   ========================================================================== */
+.lp-pres-modal-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  z-index: 999999 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.25s ease !important;
+  padding: 16px !important;
+  box-sizing: border-box !important;
+}
+
+.lp-pres-modal-overlay.active {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.lp-pres-modal-dialog {
+  background: #181b22 !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.9) !important;
+  width: 100% !important;
+  max-width: 480px !important;
+  max-height: 90vh !important;
+  overflow-y: auto !important;
+  position: relative !important;
+  padding: 34px 28px 32px 28px !important;
+  box-sizing: border-box !important;
+  transform: scale(0.95) translateY(8px) !important;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.lp-pres-modal-overlay.active .lp-pres-modal-dialog {
+  transform: scale(1) translateY(0) !important;
+}
+
+.lp-pres-modal-close-btn {
+  position: absolute !important;
+  top: 16px !important;
+  right: 18px !important;
+  background: transparent !important;
+  border: none !important;
+  color: #d4ff00 !important; /* Bright lime/yellow cross matching user screenshot */
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  line-height: 1 !important;
+  padding: 4px 8px !important;
+  transition: transform 0.2s ease, opacity 0.2s ease !important;
+  z-index: 10 !important;
+}
+
+.lp-pres-modal-close-btn:hover {
+  transform: scale(1.15) !important;
+  opacity: 0.85 !important;
+}
+
+.lp-pres-modal-title {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  color: #ffffff !important;
+  margin: 0 0 10px 0 !important;
+  padding-right: 32px !important;
+  letter-spacing: -0.2px !important;
+}
+
+.lp-pres-modal-notice {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.45 !important;
+  color: #94a3b8 !important;
+  margin: 0 0 20px 0 !important;
+}
+
+.lp-pres-modal-form {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 13px !important;
+}
+
+.lp-pres-form-group {
+  width: 100% !important;
+}
+
+.lp-pres-input {
+  width: 100% !important;
+  height: 48px !important;
+  background: #474c55 !important; /* Slate grey input background matching screenshot */
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 8px !important;
+  padding: 0 16px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 16px !important;
+  color: #ffffff !important;
+  box-sizing: border-box !important;
+  transition: all 0.2s ease !important;
+}
+
+.lp-pres-input::placeholder {
+  color: #cbd5e1 !important;
+  opacity: 1 !important;
+}
+
+.lp-pres-input:focus {
+  outline: none !important;
+  border-color: #6DFCFF !important;
+  box-shadow: 0 0 0 2px rgba(109, 252, 255, 0.25) !important;
+  background: #4e545f !important;
+}
+
+.lp-pres-messengers-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 22px !important;
+  margin: 2px 0 4px 0 !important;
+  flex-wrap: wrap !important;
+}
+
+.lp-pres-checkbox-label {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  cursor: pointer !important;
+  user-select: none !important;
+}
+
+.lp-pres-checkbox {
+  position: absolute !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.lp-pres-checkbox-custom {
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 4px !important;
+  border: 1.5px solid #94a3b8 !important;
+  background: #27272a !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.15s ease !important;
+  flex-shrink: 0 !important;
+}
+
+.lp-pres-checkbox-custom svg {
+  display: none !important;
+}
+
+.lp-pres-checkbox:checked + .lp-pres-checkbox-custom {
+  background: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.lp-pres-checkbox:checked + .lp-pres-checkbox-custom svg {
+  display: block !important;
+}
+
+.lp-pres-checkbox-text {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: #ffffff !important;
+}
+
+.lp-pres-submit-btn {
+  width: 100% !important;
+  height: 50px !important;
+  background: #6DFCFF !important; /* Vibrant cyan button matching screenshot */
+  color: #000000 !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  border-radius: 8px !important;
+  border: none !important;
+  cursor: pointer !important;
+  margin-top: 6px !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  letter-spacing: -0.2px !important;
+}
+
+.lp-pres-submit-btn:hover {
+  background: #53ecf0 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 18px rgba(109, 252, 255, 0.45) !important;
+}
+
+.lp-pres-submit-btn:active {
+  transform: translateY(0) !important;
+}
+
+/* Scrollbar styling for modal */
+.lp-pres-modal-dialog::-webkit-scrollbar {
+  width: 6px;
+}
+.lp-pres-modal-dialog::-webkit-scrollbar-track {
+  background: #181b22;
+}
+.lp-pres-modal-dialog::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+  border-radius: 3px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .linfopress-tech-cta-strip {
+    margin: 38px auto 10px auto !important;
+    padding: 0 16px !important;
+  }
+
+  .tech-cta-strip-heading {
+    font-size: clamp(20px, 5.5vw, 24px) !important;
+    line-height: 1.3 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .tech-cta-strip-sub {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+    margin-bottom: 22px !important;
+  }
+
+  .tech-cta-strip-btn {
+    width: 100% !important;
+    max-width: 320px !important;
+    padding: 14px 24px !important;
+    font-size: 15px !important;
+  }
+
+  .lp-pres-modal-dialog {
+    padding: 24px 18px 24px 18px !important;
+    border-radius: 14px !important;
+  }
+
+  .lp-pres-modal-title {
+    font-size: 17.5px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .lp-pres-modal-notice {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .lp-pres-input {
+    height: 46px !important;
+    font-size: 16px !important; /* Prevents iOS auto-zoom */
+    padding: 0 14px !important;
+  }
+
+  .lp-pres-messengers-row {
+    gap: 16px !important;
+  }
+
+  .lp-pres-checkbox-text {
+    font-size: 14px !important;
+  }
+
+  .lp-pres-submit-btn {
+    height: 48px !important;
+    font-size: 15px !important;
+  }
+}
+
+/* ==========================================================================
+   LINFOPRESS FAQ DOCTOR CONSULTATION BUTTON (EXACT MATCH WITH SCREENSHOT)
+   ========================================================================== */
+.faq-trainer-consult-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #1e222d !important;
+  color: #ffffff !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+  padding: 13px 34px !important;
+  border-radius: 6px !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 4px 14px rgba(30, 34, 45, 0.22) !important;
+  text-decoration: none !important;
+}
+
+.faq-trainer-consult-btn:hover {
+  background: #2b3242 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 22px rgba(30, 34, 45, 0.35) !important;
+}
+
+.faq-trainer-consult-btn:active {
+  transform: translateY(0) !important;
+}
+
+/* ==========================================================================
+   LINFOPRESS EXPANDABLE CLEAN SEO SECTION
+   ========================================================================== */
+html body.template-linfopress .linfopress-seo-clean-section,
+.linfopress-seo-clean-section {
+  padding-top: 50px !important;
+  padding-bottom: 60px !important;
+  background: #ffffff !important;
+}
+
+html body.template-linfopress .linfopress-seo-clean-section .seo-toggle-btn,
+html body.template-linfopress #seo-article .seo-toggle-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  background: transparent !important;
+  color: #18181b !important;
+  border: none !important;
+  padding: 8px 16px !important;
+  font-family: 'Inter', 'Montserrat', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  cursor: pointer !important;
+  border-radius: 0px !important;
+  margin: 28px auto 0 auto !important;
+  transition: all 0.2s ease !important;
+  box-shadow: none !important;
+}
+
+html body.template-linfopress .linfopress-seo-clean-section .seo-toggle-btn:hover,
+html body.template-linfopress #seo-article .seo-toggle-btn:hover {
+  background: transparent !important;
+  color: #000000 !important;
+  border-color: transparent !important;
+  transform: translateY(-1px) !important;
+  box-shadow: none !important;
+}
+
+html body.template-linfopress .linfopress-seo-clean-section .seo-toggle-btn .seo-btn-label,
+html body.template-linfopress #seo-article .seo-toggle-btn .seo-btn-label {
+  color: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  text-transform: none !important;
+}
+
+html body.template-linfopress .linfopress-seo-clean-section .seo-toggle-btn .seo-btn-arrow,
+html body.template-linfopress #seo-article .seo-toggle-btn .seo-btn-arrow {
+  color: inherit !important;
+  font-size: 15px !important;
+}
+
+@media (max-width: 600px) {
+  .faq-trainer-consult-btn {
+    width: 100% !important;
+    max-width: 320px !important;
+    padding: 13px 20px !important;
+    font-size: 13.5px !important;
+  }
+}
+
+

@@ -1594,6 +1594,52 @@ window.closeLinfopressTechModal = function(e) {
   document.body.style.overflow = '';
 };
 
+// ==========================================================================
+// LINFOPRESS PRESENTATION & FREE TRIAL MODAL (MATCHING USER SCREENSHOT)
+// ==========================================================================
+window.openLinfopressPresentationModal = function() {
+  const overlay = document.getElementById('linfopress-presentation-modal-overlay');
+  if (!overlay) return;
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+};
+
+window.closeLinfopressPresentationModal = function(e) {
+  if (e && e.target && e.target.closest('.lp-pres-modal-dialog') && !e.target.classList.contains('lp-pres-modal-close-btn')) return;
+  const overlay = document.getElementById('linfopress-presentation-modal-overlay');
+  if (!overlay) return;
+  overlay.classList.remove('active');
+  document.body.style.overflow = '';
+};
+
+window.handleLinfopressPresentationSubmit = function(e) {
+  if (e && typeof e.preventDefault === 'function') e.preventDefault();
+  const overlay = document.getElementById('linfopress-presentation-modal-overlay');
+  if (overlay) overlay.classList.remove('active');
+  document.body.style.overflow = '';
+
+  const toast = document.querySelector('.form-success-toast');
+  if (toast) {
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 4000);
+  } else {
+    alert('Дякуємо! Ваша заявка успішно надіслана. Наш спеціаліст зв’яжеться з вами найближчим часом.');
+  }
+};
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    const techOverlay = document.getElementById('linfopress-tech-modal-overlay');
+    if (techOverlay && techOverlay.classList.contains('active')) {
+      window.closeLinfopressTechModal();
+    }
+    const presOverlay = document.getElementById('linfopress-presentation-modal-overlay');
+    if (presOverlay && presOverlay.classList.contains('active')) {
+      window.closeLinfopressPresentationModal();
+    }
+  }
+});
+
 window.toggleLinfopressFaq = function(cardEl) {
   const allCards = document.querySelectorAll('.linfopress-faq-accordion .faq-accordion-card');
   const body = cardEl.querySelector('.faq-card-body');
@@ -1616,16 +1662,24 @@ window.toggleLinfopressFaq = function(cardEl) {
 };
 
 window.toggleLinfopressSeoArticle = function() {
-  const box = document.getElementById('linfopress-seo-expand-box');
-  const label = document.getElementById('linfopress-seo-btn-label');
-  if (!box || !label) return;
+  const content = document.getElementById('linfopressSeoExpandableContent') || document.getElementById('linfopress-seo-expand-box');
+  const btn = document.getElementById('linfopressSeoToggleBtn');
+  if (!content) return;
 
-  if (box.style.display === 'block') {
-    box.style.display = 'none';
-    label.textContent = 'Читати повністю ∨';
+  const isExpanded = content.classList.contains('expanded') || content.style.display === 'block';
+  const label = btn ? btn.querySelector('.seo-btn-label') : null;
+  const arrow = btn ? btn.querySelector('.seo-btn-arrow') : null;
+
+  if (isExpanded) {
+    content.classList.remove('expanded');
+    content.style.display = 'none';
+    if (label) label.textContent = 'Читати далі';
+    if (arrow) arrow.textContent = '∨';
   } else {
-    box.style.display = 'block';
-    label.textContent = 'Приховати ∧';
+    content.classList.add('expanded');
+    content.style.display = 'block';
+    if (label) label.textContent = 'Приховати';
+    if (arrow) arrow.textContent = '∧';
   }
 };
 
@@ -1690,3 +1744,45 @@ window.toggleExactFaq = function(btn) {
     if (chevron) chevron.innerHTML = '<polyline points="18 15 12 9 6 15"></polyline>';
   }
 };
+
+// ==========================================================================
+// APPARATUS HEADER SELECT DROPDOWN (.custom-select-logo)
+// ==========================================================================
+document.addEventListener('click', (e) => {
+  const display = e.target.closest('.select-display');
+  const customSelect = e.target.closest('.custom-select-logo');
+
+  if (display) {
+    const parent = display.closest('.custom-select-logo');
+    if (parent) {
+      const options = parent.querySelector('.select-options');
+      const arrow = parent.querySelector('.select-arrow');
+      if (options) options.classList.toggle('open');
+      if (arrow) arrow.classList.toggle('open');
+    }
+    return;
+  }
+
+  // Close when clicking outside
+  if (!customSelect) {
+    document.querySelectorAll('.select-options.open').forEach(opt => opt.classList.remove('open'));
+    document.querySelectorAll('.select-arrow.open').forEach(arr => arr.classList.remove('open'));
+  }
+});
+
+// Auto-close mobile drawer when an internal anchor link is clicked
+document.addEventListener('click', (e) => {
+  const anchor = e.target.closest('.header-ul a');
+  if (anchor) {
+    const mobileNav = document.getElementById('mobile-nav-panel');
+    const burger = document.getElementById('custom-burger-btn');
+    if (mobileNav && mobileNav.classList.contains('active')) {
+      mobileNav.classList.remove('active');
+    }
+    if (burger && burger.classList.contains('active')) {
+      burger.classList.remove('active');
+      burger.setAttribute('aria-expanded', 'false');
+    }
+  }
+});
+

@@ -15,7 +15,7 @@ const pages = [
 
 function cleanHtml(raw, pageName) {
 
-  // Clean Minimalist Header (Matching Original Termosalud Spanish Aesthetic)
+  // 1. General Header (Homepage & About Us)
   const modernHeaderHtml = `
     <header class="header">
       <!-- 1. Mobile Left: Black Hamburger Menu Button (Hidden on Desktop) -->
@@ -79,6 +79,156 @@ function cleanHtml(raw, pageName) {
     </header>
   `;
 
+  // 2. Header for Zionic page (Apparatus logo dropdown + In-page anchor navigation)
+  const zionicHeaderHtml = `
+    <header class="header">
+      <div class="header-left-nav">
+        <button class="custom-burger-btn" id="custom-burger-btn" aria-label="Меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <a href="/" class="logo header-logo" aria-label="Termosalud">
+        <picture>
+          <source srcset="/wp-content/themes/zionic/assets/images/logo.svg" media="(min-width: 992px)">
+          <img src="/wp-content/themes/zionic/assets/images/logo.svg" alt="Termosalud Medical & Aesthetic">
+        </picture>
+      </a>
+
+      <div class="header-center" id="mobile-nav-panel">
+        <div class="header-block-another">
+          <div class="custom-select-logo">
+            <div class="select-display" id="deviceSelectDisplay">
+              <img loading="eager" alt="Zionic" src="/wp-content/themes/zionic/assets/images/zionic.svg">
+              <svg class="select-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.8621 4.20374L8 10.3207L2.13793 4.20374C1.87759 3.93209 1.45559 3.93209 1.19525 4.20374C0.934916 4.4754 0.934916 4.91575 1.19525 5.1874L7.52866 11.7962C7.659 11.9322 7.82933 12 8 12C8.17067 12 8.341 11.9322 8.47134 11.7962L14.8047 5.1874C15.0651 4.91575 15.0651 4.4754 14.8047 4.20374C14.5444 3.93209 14.1224 3.93209 13.8621 4.20374Z" fill="#6DFCFF"></path>
+              </svg>
+            </div>
+            <div class="select-options" id="selectOptions">
+              <a href="/linfopress/" class="option-item">
+                <img loading="lazy" alt="Linfopress" src="/wp-content/themes/zionic/assets/images/linfopress.svg">
+              </a>
+              <a href="/zionic/" class="option-item">
+                <img loading="lazy" alt="Zionic" src="/wp-content/themes/zionic/assets/images/zionic.svg">
+              </a>
+            </div>
+          </div>
+          <ul class="header-ul">
+            <li><a href="#technologies">Технології</a></li>
+            <li><a href="#manipula">Оснащення</a></li>
+            <li><a href="#reasons-treatments">Чому Zionic</a></li>
+            <li><a href="#indications">Показання</a></li>
+            <li><a href="#advantages-grid">Переваги</a></li>
+            <li><a href="#test-drive">Стати партнером</a></li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-socials">
+          <a href="https://t.me/EstetPartners" target="_blank" rel="noopener noreferrer" class="mobile-menu-tg-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            <span>Написати в Telegram</span>
+          </a>
+          <a class="mobile-menu-phone" href="tel:+380937205277">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>+380 93 720 52 77</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="header-right-actions">
+        <a class="header-phone desktop-only-phone" href="tel:+380937205277">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>+380 93 720 52 77</span>
+        </a>
+
+        <button class="header-btn desktop-only-cta" data-target="#popup_request">
+          Заявка на презентацію
+        </button>
+
+        <button class="header-btn header-btn-compact mobile-only-cta" data-target="#popup_request">
+          ПРЕЗЕНТАЦІЯ
+        </button>
+      </div>
+    </header>
+  `;
+
+  // 3. Header for Linfopress page (Apparatus logo dropdown + In-page anchor navigation)
+  const linfopressHeaderHtml = `
+    <header class="header">
+      <div class="header-left-nav">
+        <button class="custom-burger-btn" id="custom-burger-btn" aria-label="Меню" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <a href="/" class="logo header-logo" aria-label="Termosalud">
+        <picture>
+          <source srcset="/wp-content/themes/zionic/assets/images/logo.svg" media="(min-width: 992px)">
+          <img src="/wp-content/themes/zionic/assets/images/logo.svg" alt="Termosalud Medical & Aesthetic">
+        </picture>
+      </a>
+
+      <div class="header-center" id="mobile-nav-panel">
+        <div class="header-block-another">
+          <div class="custom-select-logo">
+            <div class="select-display" id="deviceSelectDisplay">
+              <img loading="eager" alt="Linfopress" src="/wp-content/themes/zionic/assets/images/linfopress.svg">
+              <svg class="select-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.8621 4.20374L8 10.3207L2.13793 4.20374C1.87759 3.93209 1.45559 3.93209 1.19525 4.20374C0.934916 4.4754 0.934916 4.91575 1.19525 5.1874L7.52866 11.7962C7.659 11.9322 7.82933 12 8 12C8.17067 12 8.341 11.9322 8.47134 11.7962L14.8047 5.1874C15.0651 4.91575 15.0651 4.4754 14.8047 4.20374C14.5444 3.93209 14.1224 3.93209 13.8621 4.20374Z" fill="#FFFF00"></path>
+              </svg>
+            </div>
+            <div class="select-options" id="selectOptions">
+              <a href="/zionic/" class="option-item">
+                <img loading="lazy" alt="Zionic" src="/wp-content/themes/zionic/assets/images/zionic.svg">
+              </a>
+              <a href="/linfopress/" class="option-item">
+                <img loading="lazy" alt="Linfopress" src="/wp-content/themes/zionic/assets/images/linfopress.svg">
+              </a>
+            </div>
+          </div>
+          <ul class="header-ul">
+            <li><a href="#technologies">Технології</a></li>
+            <li><a href="#procedure">Процедура</a></li>
+            <li><a href="#advantages">Переваги</a></li>
+            <li><a href="#indications">Показання</a></li>
+            <li><a href="#why">Чому саме</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu-socials">
+          <a href="https://t.me/EstetPartners" target="_blank" rel="noopener noreferrer" class="mobile-menu-tg-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            <span>Написати в Telegram</span>
+          </a>
+          <a class="mobile-menu-phone" href="tel:+380937205277">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>+380 93 720 52 77</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="header-right-actions">
+        <a class="header-phone desktop-only-phone" href="tel:+380937205277">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>+380 93 720 52 77</span>
+        </a>
+
+        <button class="header-btn desktop-only-cta" data-target="#popup_request">
+          Заявка на презентацію
+        </button>
+
+        <button class="header-btn header-btn-compact mobile-only-cta" data-target="#popup_request">
+          ПРЕЗЕНТАЦІЯ
+        </button>
+      </div>
+    </header>
+  `;
+
 
   let html = raw;
   // Remove canonical links that cause Vite build EISDIR error
@@ -120,9 +270,14 @@ function cleanHtml(raw, pageName) {
   html = html.replace(/<!--\s*Google Tag Manager[\s\S]*?End Google Tag Manager\s*-->/gi, '');
   html = html.replace(/<noscript><iframe[^>]*googletagmanager[\s\S]*?<\/noscript>/gi, '');
 
-  // If page is index, inject clean Hero, Option 1 Modern Split Cards, Animated Why Us section, Presentation section, Partners carousel, and Scroll-Revealed SEO text
-  // Inject modern header across all pages
-  html = html.replace(/<header[\s\S]*?<\/header>/i, modernHeaderHtml);
+  // Inject active page header
+  let activeHeaderHtml = modernHeaderHtml;
+  if (pageName === 'zionic') {
+    activeHeaderHtml = zionicHeaderHtml;
+  } else if (pageName === 'linfopress') {
+    activeHeaderHtml = linfopressHeaderHtml;
+  }
+  html = html.replace(/<header[\s\S]*?<\/header>/i, activeHeaderHtml);
 
   if (pageName === 'index') {
     
@@ -1518,6 +1673,74 @@ function cleanHtml(raw, pageName) {
         </div>
       </section>
 
+<!-- 6. 5 REASONS BENTO GRID (WHY ZIONIC IS BEST) -->
+            <!-- 5. PROCEDURE ZIONIC SECTION (MODERNIZED IN MAIN PAGE DESIGN SYSTEM) -->
+      <section class="zionic-procedure-showcase-section" id="procedure-experience">
+        <div class="container-fluid px-lg-5">
+          <div class="section-header-centered">
+            <h2 class="section-main-title">Процедура ZIONIC</h2>
+            <p class="section-main-sub">
+              ZIONIC — новий рівень апаратного моделювання тіла з поєднанням глибокої діатермії та ротаційного масажу
+            </p>
+          </div>
+
+          <div class="zionic-procedure-split-grid">
+            <!-- LEFT COLUMN: EXPERT DOCTOR REVIEW & CLINICAL DESCRIPTION -->
+            <div class="procedure-expert-text-card">
+              <h3 class="procedure-card-title">О процедурі</h3>
+              
+              <div class="procedure-text-paragraphs">
+                <p class="procedure-lead-p">
+                  Я працюю з апаратом Zionic, і найчастіше до мене звертаються пацієнти зі схожими запитами: набряклість, нерівний рельєф шкіри, локальні жирові відкладення та відчуття «застою» в тілі. Уже після перших процедур люди відзначають легкість, зменшення об'ємів за рахунок виведення зайвої рідини та більш гладку шкіру.
+                </p>
+                <p>
+                  Сама процедура поєднує глибокий механічний масаж і радіочастотний прогрів тканин. Завдяки цьому ми одночасно покращуємо лімфодренаж, посилюємо кровообіг і стимулюємо обмінні процеси в жировій тканині. Це дає не лише візуальний ефект, а й покращує загальний стан тканин.
+                </p>
+                <p>
+                  Після курсу пацієнти виглядають більш підтягнутими: шкіра стає щільнішою, рельєф рівнішим, зменшуються прояви целюліту. Водночас важливо розуміти — найкращий і стійкий результат ми отримуємо, коли процедура поєднується з правильним харчуванням і фізичною активністю.
+                </p>
+              </div>
+            </div>
+
+            <!-- RIGHT COLUMN: PROCEDURE GALLERY SHOWCASE (SHARP BENTO) -->
+            <div class="procedure-gallery-bento">
+              <div class="gallery-main-frame">
+                <img src="/wp-content/uploads/2026/03/procedure-1-optimized.png" alt="Процедура Zionic на сідниці та стегна" loading="lazy">
+                <span class="gallery-frame-tag">Опрацювання стегон та сідниць</span>
+              </div>
+
+              <div class="gallery-sub-row">
+                <div class="gallery-sub-frame">
+                  <img src="/wp-content/uploads/2026/03/procedure-2-optimized.jpg" alt="Процедура Zionic спина та талія" loading="lazy">
+                  <span class="gallery-frame-tag">Зона спини та талії</span>
+                </div>
+                <div class="gallery-sub-frame">
+                  <img src="/wp-content/uploads/2026/03/procedure-3-optimized.jpg" alt="Процедура Zionic живіт" loading="lazy">
+                  <span class="gallery-frame-tag">Зона живота та боків</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. INDICATIONS & CONTRAINDICATIONS (SPLIT MATRIX) -->
+            <!-- 6. 5 REASONS WHY ZIONIC IS BEST (FULLSCREEN INFOGRAPHIC) -->
+      <section class="zionic-treatments-fullscreen-section" id="reasons-treatments">
+        <div class="container-fluid px-lg-5">
+          <div class="section-header-centered">
+            <h2 class="section-main-title">5 причин чому Zionic кращий апарат для контурного моделювання тіла</h2>
+            <p class="section-main-sub">
+              ZIONIC поєднує RF-нагрів і глибоку стимуляцію для точної корекції фігури. Інтелектуальний контроль температури та адаптивна дія забезпечують зменшення жиру, підтягування тканин і покращення мікроциркуляції без болю та реабілітації.
+            </p>
+          </div>
+        </div>
+
+        <div class="treatments-infographic-viewport">
+          <img src="/wp-content/uploads/2026/03/beast-big-optimized.png" alt="5 причин чому Zionic кращий апарат для контурного моделювання тіла" loading="eager">
+        </div>
+      </section>
+
       <!-- 5. CLINICAL BEFORE & AFTER SLIDER (MAIN PAGE SLIDER SYSTEM) -->
             <!-- 4. INTERACTIVE CLINICAL BEFORE & AFTER COMPARISON STAGE -->
             <!-- 4. VERTICAL SPLIT BEFORE / AFTER STAGE + 6 SELECTION TILES -->
@@ -1800,75 +2023,7 @@ function cleanHtml(raw, pageName) {
         </div>
       </section>
 
-      <!-- 6. 5 REASONS BENTO GRID (WHY ZIONIC IS BEST) -->
-            <!-- 5. PROCEDURE ZIONIC SECTION (MODERNIZED IN MAIN PAGE DESIGN SYSTEM) -->
-      <section class="zionic-procedure-showcase-section" id="procedure-experience">
-        <div class="container-fluid px-lg-5">
-          <div class="section-header-centered">
-            <h2 class="section-main-title">Процедура ZIONIC</h2>
-            <p class="section-main-sub">
-              ZIONIC — новий рівень апаратного моделювання тіла з поєднанням глибокої діатермії та ротаційного масажу
-            </p>
-          </div>
-
-          <div class="zionic-procedure-split-grid">
-            <!-- LEFT COLUMN: EXPERT DOCTOR REVIEW & CLINICAL DESCRIPTION -->
-            <div class="procedure-expert-text-card">
-              <h3 class="procedure-card-title">О процедурі</h3>
-              
-              <div class="procedure-text-paragraphs">
-                <p class="procedure-lead-p">
-                  Я працюю з апаратом Zionic, і найчастіше до мене звертаються пацієнти зі схожими запитами: набряклість, нерівний рельєф шкіри, локальні жирові відкладення та відчуття «застою» в тілі. Уже після перших процедур люди відзначають легкість, зменшення об'ємів за рахунок виведення зайвої рідини та більш гладку шкіру.
-                </p>
-                <p>
-                  Сама процедура поєднує глибокий механічний масаж і радіочастотний прогрів тканин. Завдяки цьому ми одночасно покращуємо лімфодренаж, посилюємо кровообіг і стимулюємо обмінні процеси в жировій тканині. Це дає не лише візуальний ефект, а й покращує загальний стан тканин.
-                </p>
-                <p>
-                  Після курсу пацієнти виглядають більш підтягнутими: шкіра стає щільнішою, рельєф рівнішим, зменшуються прояви целюліту. Водночас важливо розуміти — найкращий і стійкий результат ми отримуємо, коли процедура поєднується з правильним харчуванням і фізичною активністю.
-                </p>
-              </div>
-            </div>
-
-            <!-- RIGHT COLUMN: PROCEDURE GALLERY SHOWCASE (SHARP BENTO) -->
-            <div class="procedure-gallery-bento">
-              <div class="gallery-main-frame">
-                <img src="/wp-content/uploads/2026/03/procedure-1-optimized.png" alt="Процедура Zionic на сідниці та стегна" loading="lazy">
-                <span class="gallery-frame-tag">Опрацювання стегон та сідниць</span>
-              </div>
-
-              <div class="gallery-sub-row">
-                <div class="gallery-sub-frame">
-                  <img src="/wp-content/uploads/2026/03/procedure-2-optimized.jpg" alt="Процедура Zionic спина та талія" loading="lazy">
-                  <span class="gallery-frame-tag">Зона спини та талії</span>
-                </div>
-                <div class="gallery-sub-frame">
-                  <img src="/wp-content/uploads/2026/03/procedure-3-optimized.jpg" alt="Процедура Zionic живіт" loading="lazy">
-                  <span class="gallery-frame-tag">Зона живота та боків</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 7. INDICATIONS & CONTRAINDICATIONS (SPLIT MATRIX) -->
-            <!-- 6. 5 REASONS WHY ZIONIC IS BEST (FULLSCREEN INFOGRAPHIC) -->
-      <section class="zionic-treatments-fullscreen-section" id="reasons-treatments">
-        <div class="container-fluid px-lg-5">
-          <div class="section-header-centered">
-            <h2 class="section-main-title">5 причин чому Zionic кращий апарат для контурного моделювання тіла</h2>
-            <p class="section-main-sub">
-              ZIONIC поєднує RF-нагрів і глибоку стимуляцію для точної корекції фігури. Інтелектуальний контроль температури та адаптивна дія забезпечують зменшення жиру, підтягування тканин і покращення мікроциркуляції без болю та реабілітації.
-            </p>
-          </div>
-        </div>
-
-        <div class="treatments-infographic-viewport">
-          <img src="/zionic_treatments_ukr.png" alt="5 векторів дії ZIONIC для контурингу тіла" loading="lazy">
-        </div>
-      </section>
-
-            <!-- 7. CREATIVE CLINICAL INDICATIONS & CONTRAINDICATIONS MATRIX -->
+<!-- 7. CREATIVE CLINICAL INDICATIONS & CONTRAINDICATIONS MATRIX -->
       <section class="zionic-matrix-section" id="indications">
         <div class="container-fluid px-lg-5">
           <div class="section-header-centered">
@@ -2043,6 +2198,21 @@ function cleanHtml(raw, pageName) {
                 <div class="advantage-nine-card">
                   <span class="advantage-nine-num">6</span>
                   <p class="advantage-nine-text">Ключовий елемент програм "Детокс", "Схуднення", "Антицелюліт" для відновлення балансу та тонусу тіла.</p>
+                </div>
+                <!-- 7 -->
+                <div class="advantage-nine-card">
+                  <span class="advantage-nine-num">7</span>
+                  <p class="advantage-nine-text">Використовується у спортивній медицині для розігріву м'язів перед тренуваннями і для регенерації зв'язкових тканин.</p>
+                </div>
+                <!-- 8 -->
+                <div class="advantage-nine-card">
+                  <span class="advantage-nine-num">8</span>
+                  <p class="advantage-nine-text">Використовується у пост-операційній реабілітації для зменшення відчуття стягнутості шкіри після операції, профілактики утворення фіброзу.</p>
+                </div>
+                <!-- 9 -->
+                <div class="advantage-nine-card">
+                  <span class="advantage-nine-num">9</span>
+                  <p class="advantage-nine-text">Найвигідніший з усіх апаратів для моделювання фігури завдяки високій рентабельності процедури. Окупність 9 місяців.</p>
                 </div>
               </div>
             </div>
@@ -2425,7 +2595,47 @@ function cleanHtml(raw, pageName) {
         </div>
       </section>
 
-      
+      <!-- 13. MODERN SEO CLEAN ARTICLE SECTION -->
+      <section class="zionic-seo-clean-section" id="seo-article">
+        <div class="container">
+          <div class="seo-article-card">
+            <h2 class="seo-article-main-title" style="text-transform: none !important;">Купити апарат Zionic — інвестувати в передове обладнання для корекції фігури</h2>
+            
+            <p>У сучасній естетичній медицині найбільший попит мають неінвазивні методики, що поєднують високу результативність, безболісність та відсутність періоду реабілітації. Рішення купити апарат Zionic відкриває для вашої клініки можливість запропонувати пацієнтам саме такі процедури. Це інноваційне обладнання для корекції фігури забезпечує комплексний підхід до моделювання контурів тіла.</p>
+
+            <p>Унікальна концепція апарата дозволяє фахівцям ефективно працювати з локальними жировими відкладеннями, атонією шкіри та всіма формами целюліту, досягаючи стійких і помітних результатів уже після перших сеансів.</p>
+
+            <div class="seo-expandable-content" id="seoExpandableContent">
+              <h3 class="seo-article-sub-title">Технологія Rollactive RF: синергія для ідеального результату</h3>
+              <p>Секрет найвищої ефективності ZIONIC полягає у використанні запатентованої технології Rollactive RF. В одній ергономічній маніпулі об'єднані два найпотужніші фактори, які взаємно посилюють дію один одного:</p>
+              
+              <ul class="seo-article-bullets">
+                <li><strong>Монополярний RF для тіла:</strong> Глибока резистивна діатермія проникає у тканини, забезпечуючи термічний вплив. Він стимулює вироблення колагену, забезпечуючи потужну підтяжку в'ялої шкіри та підвищення її тургору.</li>
+                <li><strong>Інтелектуальний ротаційний масаж:</strong> Інтенсивний механічний вплив активізує кровообіг та клітинний метаболізм. За глибиною та інтенсивністю опрацювання це перевершує стандартний апаратний масаж для схуднення.</li>
+              </ul>
+
+              <p>Така синергія робить ZIONIC незамінним інструментом, коли потрібне успішне лікування фіброзного целюліту. Апарат розм'якшує щільні тканини й забезпечує глибокий медичний лімфодренаж, усуваючи застійні явища.</p>
+
+              <h3 class="seo-article-sub-title">Рентабельність та абсолютна безпека</h3>
+              <p>Обираючи цей передовий ротаційний масаж апарат, керівники клінік отримують надійний інструмент для стабільного збільшення прибутку. Ефективність процедур гарантує високе повернення пацієнтів.</p>
+
+              <ul class="seo-article-bullets">
+                <li><strong>Швидка окупність:</strong> Висока маржинальність процедур на апараті ZIONIC забезпечує відмінні показники рентабельності. Середній термін повернення інвестицій для клініки становить від 9 місяців.</li>
+                <li><strong>Інтелектуальний контроль:</strong> Інтегрована система контролю температури та тиску гарантує безпеку пацієнта, виключаючи ризики дискомфорту або перегріву тканин.</li>
+              </ul>
+
+              <p>Потужний апарат для RF ліфтингу тіла ZIONIC стане візитною карткою вашої клініки. Розширте спектр преміальних послуг разом із передовими технологіями. Запишіться на тест-драйв, щоб особисто переконатися в унікальних можливостях обладнання.</p>
+            </div>
+
+            <div class="seo-toggle-btn-wrap" style="text-align: center; margin-top: 24px;">
+              <button type="button" class="seo-toggle-btn" id="seoToggleBtn" onclick="toggleZionicSeoArticle()">
+                <span class="seo-btn-label">Читати повністю</span>
+                <span class="seo-btn-arrow">∨</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
     `;
 
@@ -2464,7 +2674,7 @@ function cleanHtml(raw, pageName) {
 
             <div class="linfopress-hero-actions">
               <a href="#application-form" class="linfopress-primary-btn">
-                <span>ЗАМОВИТИ ТЕСТ-ДРАЙВ У КЛІНІКУ</span>
+                <span>ЗАМОВИТИ ТЕСТ-ДРАЙВ</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </a>
               
@@ -2688,6 +2898,13 @@ function cleanHtml(raw, pageName) {
               </div>
             </div>
           </div>
+
+          <!-- CTA Strip Under 4 Tech Bento Cards -->
+          <div class="linfopress-tech-cta-strip">
+            <h3 class="tech-cta-strip-heading">Нове покоління інтелектуальної пресотерапії.</h3>
+            <p class="tech-cta-strip-sub">Діапазон процедур від косметології до реабілітації після ліпосакцій та переломів</p>
+            <button type="button" class="tech-cta-strip-btn" onclick="window.openLinfopressPresentationModal()">Дізнатись більше</button>
+          </div>
         </div>
       </section>
 
@@ -2708,8 +2925,11 @@ function cleanHtml(raw, pageName) {
             </div>
             <div class="modal-text-content">
               <h3 class="modal-title">Стадія розігріву</h3>
-              <p class="modal-desc">Стадія розігріву – це унікальна особливість апарату для пресотерапії Linfopress Evolution PRO. Її додали в кожну програму на запит досвідчених лікарів, які вважають, що тканини потрібно делікатно підготувати до компресії.</p>
-              <p class="modal-desc">Linfopress Evolution PRO автоматично задає стадію розігріву, що ніжно розтягує тканини і судини, готуючи ділянки для інтенсивного пресомасажу. Ідеально підходить для лікування фіброзного целюліту, коли пацієнтки є особливо чутливими.</p>
+              <p class="modal-desc">Стадія розігріву – це унікальна особливість апарату для пресотерапії Linfopress Evolution PRO.</p>
+              <p class="modal-desc">Стадію розігріву додали в кожну програму Linfopress Evolution PRO на запит досвідчених лікарів, які вважають, що тканини потрібно підготувати до компресії.</p>
+              <p class="modal-desc">На простих апаратах лікарі вручну встановлюють програму з помірним стисненням на перші 5 хвилин процедури, а потім вручну переключають на робочий тиск.</p>
+              <p class="modal-desc">Linfopress Evolution PRO – це новий етап розвитку пресотерапії. Автоматично задає стадію розігріву, що ніжно розтягує тканини і судини, готуючи ділянки для інтенсивного пресомасажу. Ідеально підходить для лікування фіброзного целюліту, коли пацієнтки є особливо чутливими.</p>
+              <p class="modal-desc">За свідченням користувачів пацієнтки приємно здивовані від того, що в процесі процедури змінюється тиск. Це зручно, ефективно і підкреслює преміальність клініки, де навіть базова лікувальна процедура краща, ніж у всіх.</p>
             </div>
           </div>
 
@@ -2754,6 +2974,62 @@ function cleanHtml(raw, pageName) {
               <p class="modal-desc">Релаксація заспокоює м’язи і тканини після інтенсивної роботи. Ідеально підходить для завершального лікування целюліту, синдрому втомлених ніг, після ліпосакції та після вагітності або втоми після менопаузи.</p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- ==========================================================================
+           PRESENTATION & FREE TRIAL MODAL (EXACT MATCH WITH USER SCREENSHOT)
+           ========================================================================== -->
+      <div id="linfopress-presentation-modal-overlay" class="lp-pres-modal-overlay" onclick="window.closeLinfopressPresentationModal(event)">
+        <div class="lp-pres-modal-dialog" onclick="event.stopPropagation()">
+          <button type="button" class="lp-pres-modal-close-btn" onclick="window.closeLinfopressPresentationModal()" aria-label="Закрити">✕</button>
+          
+          <h3 class="lp-pres-modal-title">Заявка на презентацію та безкоштовну пробну процедуру</h3>
+          <p class="lp-pres-modal-notice">Увага! Консультуємо лише професіоналів косметологічної галузі. Ми не надаємо жодних косметологічних послуг!</p>
+          
+          <form class="lp-pres-modal-form" onsubmit="window.handleLinfopressPresentationSubmit(event)">
+            <div class="lp-pres-form-group">
+              <input type="text" name="name" class="lp-pres-input" placeholder="Ім'я" required>
+            </div>
+            
+            <div class="lp-pres-messengers-row">
+              <label class="lp-pres-checkbox-label">
+                <input type="checkbox" name="messenger_whatsapp" value="Whatsapp" checked class="lp-pres-checkbox">
+                <span class="lp-pres-checkbox-custom">
+                  <svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4.5L4 7.5L10 1.5" stroke="#18181b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="lp-pres-checkbox-text">Whatsapp</span>
+              </label>
+              <label class="lp-pres-checkbox-label">
+                <input type="checkbox" name="messenger_viber" value="Viber" class="lp-pres-checkbox">
+                <span class="lp-pres-checkbox-custom">
+                  <svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4.5L4 7.5L10 1.5" stroke="#18181b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="lp-pres-checkbox-text">Viber</span>
+              </label>
+              <label class="lp-pres-checkbox-label">
+                <input type="checkbox" name="messenger_telegram" value="Telegram" class="lp-pres-checkbox">
+                <span class="lp-pres-checkbox-custom">
+                  <svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4.5L4 7.5L10 1.5" stroke="#18181b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="lp-pres-checkbox-text">Telegram</span>
+              </label>
+            </div>
+            
+            <div class="lp-pres-form-group">
+              <input type="tel" name="phone" class="lp-pres-input" placeholder="Телефон" required>
+            </div>
+            
+            <div class="lp-pres-form-group">
+              <input type="email" name="email" class="lp-pres-input" placeholder="Email" required>
+            </div>
+            
+            <div class="lp-pres-form-group">
+              <input type="text" name="city" class="lp-pres-input" placeholder="Місто" required>
+            </div>
+            
+            <button type="submit" class="lp-pres-submit-btn">Надіслати</button>
+          </form>
         </div>
       </div>
 
@@ -3262,6 +3538,11 @@ function cleanHtml(raw, pageName) {
       <section class="linfopress-faq-section" id="faq">
         <div class="container">
           <div class="section-header-centered">
+            <!-- Trainer Consultation Button -->
+            <div class="faq-pre-btn-wrap" style="text-align: center; margin-bottom: 28px;">
+              <button type="button" class="faq-trainer-consult-btn" onclick="document.getElementById('popup_request')?.classList.add('is-active', 'show');">Отримати консультацію від лікаря-тренера</button>
+            </div>
+
             <h2 class="section-main-title">Питання та відповіді</h2>
             <p class="section-main-sub">
               Отримайте відповіді на поширені запитання про Linfopress Evolution PRO та про те,
@@ -3454,6 +3735,52 @@ function cleanHtml(raw, pageName) {
                   </p>
                 </form>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. MINIMALIST CLEAN EXPANDABLE SEO ARTICLE (EXACT MATCH WITH ZIONIC & USER SCREENSHOT) -->
+      <section class="linfopress-seo-clean-section" id="seo-article">
+        <div class="container">
+          <div class="seo-article-card">
+            <h2 class="seo-article-main-title" style="text-transform: none !important;">Купити апарат для пресотерапії Linfopress Evolution PRO: інновації в лімфодренажі</h2>
+            
+            <p>Якісний апаратний лімфодренажний масаж — це базова та необхідна процедура в будь-якій сучасній клініці естетичної медицини. Він посилює ефект від інших методик корекції фігури та є самостійним потужним терапевтичним інструментом. Linfopress Evolution PRO — це передове обладнання преміумкласу, створене для досягнення бездоганних результатів та забезпечення комфорту пацієнта.</p>
+
+            <div class="seo-expandable-content" id="linfopressSeoExpandableContent">
+              <p>Рішення купити апарат для пресотерапії Linfopress — це інвестиція у статус вашої клініки та лояльність клієнтів. Ця модель перевершує аналогічні системи на ринку завдяки унікальній технологічній базі та продуманій до дрібниць ергономіці.</p>
+
+              <h3 class="seo-article-sub-title">Біоміметична пульсація — новий стандарт терапії</h3>
+              <p>Ключова інновація, що відрізняє цей професійний апарат для пресотерапії, полягає у використанні технології біоміметичної послідовної пульсації. Ця система максимально точно імітує природні фізіологічні процеси організму.</p>
+              
+              <p>Процедура на Linfopress Evolution PRO включає 4 послідовні етапи:</p>
+              <ul class="seo-article-bullets">
+                <li><strong>Розігрів:</strong> Ексклюзивний режим, який м’яко готує тканини до впливу. Цей етап є критично важливим, коли застосовується апарат для лікування целюліту фіброзної стадії, що потребує делікатного підходу.</li>
+                <li><strong>Активація:</strong> Стимуляція роботи лімфатичних вузлів і запуск обмінних процесів.</li>
+                <li><strong>Дренаж:</strong> Глибоке та інтенсивне виведення надлишкової міжклітинної рідини й накопичених токсинів.</li>
+                <li><strong>Розслаблення:</strong> Зняття м’язового спазму та досягнення глибокого релаксаційного ефекту.</li>
+              </ul>
+
+              <p>Завдяки такому дбайливому та фізіологічному підходу Linfopress Evolution PRO ідеально підходить для складних клінічних випадків, зокрема періоду, коли необхідна ефективна пресотерапія після ліпосакції та інших втручань.</p>
+
+              <h3 class="seo-article-sub-title">Ексклюзивні переваги для клініки</h3>
+              <p>Як сучасне обладнання для лімфодренажу, цей апарат розроблявся з урахуванням високих вимог фахівців щодо зручності роботи. Він пропонує унікальні можливості:</p>
+
+              <ul class="seo-article-bullets">
+                <li><strong>Масаж верхньої частини тулуба:</strong> Наявність спеціальної компресійної куртки дозволяє ефективно опрацьовувати зону «холки», спину, живіт і боки, що є безперечною конкурентною перевагою.</li>
+                <li><strong>Універсальність манжетів:</strong> Апарат оснащений якісними бандажами з 3 рівнями застібок-блискавок. Це гарантує ідеальну посадку для пацієнтів будь-якої комплекції без використання додаткових розширювачів.</li>
+                <li><strong>Оптимізація робочого часу:</strong> Інноваційна система швидкого одягання манжетів суттєво економить час фахівця між сеансами, збільшуючи пропускну здатність кабінету.</li>
+              </ul>
+
+              <p>Додайте до свого арсеналу передові технології для покращення мікроциркуляції. Запрошуємо вас оцінити всі можливості апарата на індивідуальній презентації.</p>
+            </div>
+
+            <div class="seo-toggle-btn-wrap" style="text-align: center; margin-top: 24px;">
+              <button type="button" class="seo-toggle-btn" id="linfopressSeoToggleBtn" onclick="window.toggleLinfopressSeoArticle()">
+                <span class="seo-btn-label">Читати далі</span>
+                <span class="seo-btn-arrow">∨</span>
+              </button>
             </div>
           </div>
         </div>
