@@ -454,7 +454,7 @@ function initMobileMenu() {
 }
 
 /**
- * 5. Form Submission Handling (Real Email Dispatch to artemkudliuk@gmail.com)
+ * 5. Form Submission Handling (Real Email Dispatch to zionic.ua@gmail.com)
  */
 window.submitTermosaludLead = async function(e, formTitle) {
   if (e && typeof e.preventDefault === 'function') e.preventDefault();
@@ -583,7 +583,7 @@ window.submitTermosaludLead = async function(e, formTitle) {
 
     // Direct FormSubmit (primary on localhost, automatic fallback on production)
     if (!response) {
-      response = await fetch('https://formsubmit.co/ajax/artemkudliuk@gmail.com', {
+      response = await fetch('https://formsubmit.co/ajax/zionic.ua@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -615,7 +615,7 @@ window.submitTermosaludLead = async function(e, formTitle) {
     }
 
     if (result.success === 'false' && result.message && result.message.includes('Activation')) {
-      showToast('⚠️ Увага: Будь ласка, натисніть "Activate Form" у листі на artemkudliuk@gmail.com для підтвердження!');
+      showToast('⚠️ Увага: Будь ласка, натисніть "Activate Form" у листі на zionic.ua@gmail.com для підтвердження!');
     } else {
       showToast('Дякуємо! Ваша заявка успішно прийнята. Ми зв\'яжемося з вами найближчим часом.');
     }

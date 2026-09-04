@@ -18,7 +18,7 @@
   try {
     const payload = typeof req.body === 'string' ? JSON.parse(req.body) : (req.body || {});
 
-    const response = await fetch('https://formsubmit.co/ajax/artemkudliuk@gmail.com', {
+    const response = await fetch('https://formsubmit.co/ajax/zionic.ua@gmail.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
