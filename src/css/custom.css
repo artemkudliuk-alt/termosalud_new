@@ -326,6 +326,30 @@ header .logo:hover img {
   flex-shrink: 0 !important;
 }
 
+.header-tg-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #18181b !important;
+  width: 32px !important;
+  height: 32px !important;
+  text-decoration: none !important;
+  flex-shrink: 0 !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.header-tg-link svg {
+  width: 20px !important;
+  height: 20px !important;
+  display: block !important;
+  fill: currentColor !important;
+}
+
+.header-tg-link:hover {
+  color: #0088cc !important;
+  transform: translateY(-1px) scale(1.08) !important;
+}
+
 .header-phone {
   display: inline-flex !important;
   align-items: center !important;
@@ -474,13 +498,13 @@ header .logo:hover img {
     width: auto !important;
   }
 
-  /* 3. Right: Compact Presentation Button */
+  /* 3. Right: Compact Presentation Button & Telegram */
   .header-right-actions {
     display: flex !important;
     align-items: center !important;
     justify-content: flex-end !important;
     flex: 0 0 auto !important;
-    gap: 0 !important;
+    gap: 10px !important;
     margin: 0 !important;
     padding: 0 !important;
   }
@@ -521,6 +545,37 @@ header .logo:hover img {
   .header-btn-compact:hover {
     background: #1e232e !important;
     color: #ffffff !important;
+  }
+
+  .header-tg-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #18181b !important;
+    width: 32px !important;
+    height: 32px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-decoration: none !important;
+    flex-shrink: 0 !important;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+
+  .header-tg-link svg {
+    width: 20px !important;
+    height: 20px !important;
+    display: block !important;
+    fill: currentColor !important;
+    transition: transform 0.2s ease !important;
+  }
+
+  .header-tg-link:hover {
+    color: #0088cc !important;
+    transform: translateY(-1px) scale(1.08) !important;
+  }
+
+  .header-tg-link:active {
+    transform: translateY(0) scale(0.95) !important;
   }
 
   /* Black Burger Stripes (Zero Yellow) */
@@ -2343,11 +2398,11 @@ header .logo:hover img {
 
 .presentation-form-card {
   scroll-margin-top: 85px !important;
-  background: #ffffff !important;
-  border: 1px solid #e4e4e7 !important;
+  background: #f4f4f6 !important;
+  border: 1px solid #e2e8f0 !important;
   border-radius: 0px !important;
   padding: 40px 44px 34px 44px !important;
-  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03) !important;
   display: flex !important;
   flex-direction: column !important;
   height: 100% !important;
@@ -12261,18 +12316,18 @@ h4.tile-title {
   line-height: 1.55 !important;
 }
 
-/* Right Form Column - NATIVE FORM WITHOUT WHITE BOX PLATE */
+/* Right Form Column - ELEGANT LIGHT-GRAY PLATE CARD */
 .zionic-partner-stage-section .presentation-form-col {
   display: flex !important;
   flex-direction: column !important;
 }
 
 .zionic-partner-stage-section .presentation-form-card {
-  background: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
-  box-shadow: none !important;
+  background: #f4f4f6 !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 0px !important;
+  padding: 40px 36px 36px 36px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03) !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: flex-start !important;
@@ -17807,11 +17862,11 @@ html body.template-linfopress .faq-card-body p {
   }
 
   .presentation-form-card {
-    padding: 28px 18px 24px 18px !important;
-    border: 1px solid #e4e4e7 !important;
+    padding: 28px 20px 24px 20px !important;
+    border: 1px solid #e2e8f0 !important;
     border-radius: 0px !important;
-    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.05) !important;
-    background: #ffffff !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03) !important;
+    background: #f4f4f6 !important;
   }
 
   .partner-card-kicker {
@@ -20642,10 +20697,79 @@ html body .matrix-creative-card.exact-contraindications,
 }
 
 @media (max-width: 991px) {
+  /* Remove outer side gutters from container so cards can stretch full width */
+  html body.template-zionic .zionic-matrix-section .container-fluid,
+  html body.template-zionic .zionic-matrix-section .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  html body.template-zionic .zionic-matrix-section .section-header-centered {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin-bottom: 32px !important;
+  }
+
   html body.template-zionic .zionic-creative-matrix-grid.exact-original-matrix,
   .zionic-creative-matrix-grid.exact-original-matrix {
     grid-template-columns: 1fr !important;
-    gap: 36px !important;
+    gap: 0px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 1. INDICATIONS: Dark background stretched full-width, comfortable 20px side text padding */
+  html body.template-zionic .matrix-creative-card.exact-indications,
+  html body .matrix-creative-card.exact-indications,
+  .exact-indications {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0px !important;
+    padding: 44px 20px 40px 20px !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 2. CONTRAINDICATIONS: White background stretched full-width, comfortable 20px side text padding */
+  html body.template-zionic .matrix-creative-card.exact-contraindications,
+  html body .matrix-creative-card.exact-contraindications,
+  .exact-contraindications {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 0px !important;
+    background: #ffffff !important;
+    padding: 40px 20px 44px 20px !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+  }
+
+  .exact-indications .matrix-main-head,
+  .exact-contraindications .matrix-main-head {
+    font-size: clamp(24px, 6vw, 28px) !important;
+    margin-bottom: 20px !important;
+  }
+
+  .exact-indications .exact-list-item,
+  .exact-contraindications .exact-list-item {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    padding: 8px 0 !important;
+  }
+
+  .exact-indications .exact-list-item .item-text,
+  .exact-contraindications .exact-list-item .item-text {
+    font-size: 15px !important;
+    line-height: 1.45 !important;
   }
 }
 
@@ -22943,5 +23067,161 @@ html body.template-linfopress #seo-article .seo-toggle-btn .seo-btn-arrow {
     font-size: 13.5px !important;
   }
 }
+
+/* ==========================================================================
+   GLOBAL PRESENTATION APPLICATION FORM: REFINED LIGHT-GRAY CARD BACKGROUND
+   Applies uniformly across all pages (Головна, Zionic, Linfopress)
+   ========================================================================== */
+html body .presentation-form-card,
+html body.template-zionic .presentation-form-card,
+html body.template-linfopress .presentation-form-card,
+.zionic-partner-stage-section .presentation-form-card,
+.linfopress-partner-stage-section .presentation-form-card,
+.application-presentation .presentation-form-card {
+  background: #f4f4f6 !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 0px !important;
+  padding: 40px 36px 36px 36px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  gap: 20px !important;
+  box-sizing: border-box !important;
+}
+
+/* Input fields stay crisp white on the gray card background */
+.presentation-form-card .luxury-form-input,
+.zionic-partner-stage-section .luxury-form-input,
+.linfopress-partner-stage-section .luxury-form-input,
+.application-presentation .luxury-form-input {
+  background: #ffffff !important;
+  border: 1px solid #d4d4d8 !important;
+  color: #111111 !important;
+  border-radius: 0px !important;
+  box-sizing: border-box !important;
+}
+
+.presentation-form-card .luxury-form-input:focus,
+.zionic-partner-stage-section .luxury-form-input:focus,
+.linfopress-partner-stage-section .luxury-form-input:focus,
+.application-presentation .luxury-form-input:focus {
+  border-color: #111111 !important;
+  background: #ffffff !important;
+  outline: none !important;
+}
+
+/* Messenger selector pills stay crisp white */
+.presentation-form-card .messenger-pill,
+.zionic-partner-stage-section .messenger-pill,
+.linfopress-partner-stage-section .messenger-pill,
+.application-presentation .messenger-pill {
+  background: #ffffff !important;
+  border: 1px solid #d4d4d8 !important;
+  border-radius: 0px !important;
+}
+
+.presentation-form-card .messenger-pill:hover,
+.presentation-form-card .messenger-pill.active,
+.zionic-partner-stage-section .messenger-pill:hover,
+.zionic-partner-stage-section .messenger-pill.active,
+.linfopress-partner-stage-section .messenger-pill:hover,
+.linfopress-partner-stage-section .messenger-pill.active {
+  border-color: #111111 !important;
+  background: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* ==========================================================================
+   MOBILE EXPANSION FOR CERTIFICATES & APPLICATION FORM
+   Removes nested border frames, stretches content to optimal mobile width
+   ========================================================================== */
+@media (max-width: 991px) {
+  /* 1. APPLICATION FORM: Stretched full-width (edge-to-edge), eliminating outer white frames */
+  html body .presentation-form-card,
+  html body.template-zionic .presentation-form-card,
+  html body.template-linfopress .presentation-form-card,
+  .zionic-partner-stage-section .presentation-form-card,
+  .linfopress-partner-stage-section .presentation-form-card,
+  .application-presentation .presentation-form-card {
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+    max-width: 100vw !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: 1px solid #e2e8f0 !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    border-radius: 0px !important;
+    padding: 38px 20px 34px 20px !important;
+    background: #f4f4f6 !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 2. CERTIFICATES: Stretch scans to full width, remove redundant nested frames */
+  .zionic-certificates-section .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .zionic-cert-scans-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .cert-scan-card {
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .cert-scan-frame {
+    width: 100% !important;
+    height: auto !important;
+    min-height: unset !important;
+    padding: 8px !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 0px !important;
+    box-sizing: border-box !important;
+  }
+
+  .cert-scan-frame img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: unset !important;
+    object-fit: contain !important;
+    display: block !important;
+  }
+
+  .cert-scan-info {
+    padding: 16px 4px 0 4px !important;
+  }
+
+  .cert-scan-badge {
+    margin-bottom: 8px !important;
+  }
+
+  .cert-scan-title {
+    font-size: 20px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 8px !important;
+  }
+
+  .cert-scan-desc {
+    font-size: 14.5px !important;
+    line-height: 1.5 !important;
+  }
+}
+
 
 
