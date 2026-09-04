@@ -1043,12 +1043,12 @@ function cleanHtml(raw, pageName) {
                 </div>
 
                 <!-- Open Form Inputs (Verbatim from Screenshot 2) -->
-                <form class="presentation-open-form" onsubmit="event.preventDefault(); alert('Дякуємо! Ваша заявка прийнята. Наш спеціаліст зв\'яжеться з вами найближчим часом.');">
+                <form class="presentation-open-form" data-form-name="Головна — Презентація Zionic" onsubmit="window.submitTermosaludLead(event, 'Головна — Презентація Zionic')">
                   <div class="form-group-item">
                     <label class="form-label-text" for="partner_name">Ваше ім'я та посада</label>
                     <div class="input-with-icon">
                       <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="7.5" r="4.5" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></circle><path d="M4.5 20C4.5 16 8 14 12 14C16 14 19.5 16 19.5 20" stroke-width="1.8" stroke-linecap="round"></path></svg>
-                      <input type="text" id="partner_name" placeholder="Наприклад: Олена, керівник клініки" required class="luxury-form-input">
+                      <input type="text" id="partner_name" name="name" placeholder="Наприклад: Олена, керівник клініки" required class="luxury-form-input">
                     </div>
                   </div>
 
@@ -1057,14 +1057,14 @@ function cleanHtml(raw, pageName) {
                       <label class="form-label-text" for="partner_phone">Телефон</label>
                       <div class="input-with-icon">
                         <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="6" y="2" width="12" height="20" rx="3" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></rect><circle cx="12" cy="18" r="1" fill="currentColor"></circle><path d="M10 5H14" stroke-width="1.5" stroke-linecap="round"></path></svg>
-                        <input type="tel" id="partner_phone" placeholder="+380" required class="luxury-form-input">
+                        <input type="tel" id="partner_phone" name="phone" placeholder="+380" required class="luxury-form-input">
                       </div>
                     </div>
                     <div class="form-group-item">
                       <label class="form-label-text" for="partner_email">Email</label>
                       <div class="input-with-icon">
                         <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></path><polyline points="22,6 12,13 2,6" stroke-width="1.5"></polyline></svg>
-                        <input type="email" id="partner_email" placeholder="clinic@example.com" required class="luxury-form-input">
+                        <input type="email" id="partner_email" name="email" placeholder="clinic@example.com" required class="luxury-form-input">
                       </div>
                     </div>
                   </div>
@@ -1073,7 +1073,7 @@ function cleanHtml(raw, pageName) {
                     <label class="form-label-text" for="partner_city">Місто та назва клініки</label>
                     <div class="input-with-icon">
                       <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></path><circle cx="12" cy="10" r="3" stroke-width="1.5"></circle></svg>
-                      <input type="text" id="partner_city" placeholder="Київ, Клініка естетичної медицини" required class="luxury-form-input">
+                      <input type="text" id="partner_city" name="city" placeholder="Київ, Клініка естетичної медицини" required class="luxury-form-input">
                     </div>
                   </div>
 
@@ -2361,12 +2361,12 @@ function cleanHtml(raw, pageName) {
                 </div>
 
                 <!-- Form Inputs -->
-                <form class="presentation-open-form" onsubmit="event.preventDefault(); alert('Дякуємо! Ваша заявка прийнята. Наш спеціаліст зв\'яжеться з вами найближчим часом.');">
+                <form class="presentation-open-form" data-form-name="Zionic — Заявка на тест-драйв" onsubmit="window.submitTermosaludLead(event, 'Zionic — Заявка на тест-драйв')">
                   <div class="form-group-item">
                     <label class="form-label-text" for="z_partner_name">Ім'я</label>
                     <div class="input-with-icon">
                       <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="7.5" r="4.5" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></circle><path d="M4.5 20C4.5 16 8 14 12 14C16 14 19.5 16 19.5 20" stroke-width="1.8" stroke-linecap="round"></path></svg>
-                      <input type="text" id="z_partner_name" placeholder="Ім'я" required class="luxury-form-input">
+                      <input type="text" id="z_partner_name" name="name" placeholder="Ім'я" required class="luxury-form-input">
                     </div>
                   </div>
 
@@ -2375,14 +2375,14 @@ function cleanHtml(raw, pageName) {
                       <label class="form-label-text" for="z_partner_phone">Телефон</label>
                       <div class="input-with-icon">
                         <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="6" y="2" width="12" height="20" rx="3" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></rect><circle cx="12" cy="18" r="1" fill="currentColor"></circle><path d="M10 5H14" stroke-width="1.5" stroke-linecap="round"></path></svg>
-                        <input type="tel" id="z_partner_phone" placeholder="+380" required class="luxury-form-input">
+                        <input type="tel" id="z_partner_phone" name="phone" placeholder="+380" required class="luxury-form-input">
                       </div>
                     </div>
                     <div class="form-group-item">
                       <label class="form-label-text" for="z_partner_email">Email</label>
                       <div class="input-with-icon">
                         <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></path><polyline points="22,6 12,13 2,6" stroke-width="1.5"></polyline></svg>
-                        <input type="email" id="z_partner_email" placeholder="Email" required class="luxury-form-input">
+                        <input type="email" id="z_partner_email" name="email" placeholder="Email" required class="luxury-form-input">
                       </div>
                     </div>
                   </div>
@@ -2391,7 +2391,7 @@ function cleanHtml(raw, pageName) {
                     <label class="form-label-text" for="z_partner_city">Місто</label>
                     <div class="input-with-icon">
                       <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></path><circle cx="12" cy="10" r="3" stroke-width="1.5"></circle></svg>
-                      <input type="text" id="z_partner_city" placeholder="Місто" required class="luxury-form-input">
+                      <input type="text" id="z_partner_city" name="city" placeholder="Місто" required class="luxury-form-input">
                     </div>
                   </div>
 
@@ -3008,7 +3008,7 @@ function cleanHtml(raw, pageName) {
           <h3 class="lp-pres-modal-title">Заявка на презентацію та безкоштовну пробну процедуру</h3>
           <p class="lp-pres-modal-notice">Увага! Консультуємо лише професіоналів косметологічної галузі. Ми не надаємо жодних косметологічних послуг!</p>
           
-          <form class="lp-pres-modal-form" onsubmit="window.handleLinfopressPresentationSubmit(event)">
+          <form class="lp-pres-modal-form" data-form-name="Linfopress — Модальне вікно безкоштовної процедури" onsubmit="window.submitTermosaludLead(event, 'Linfopress — Модальне вікно безкоштовної процедури')">
             <div class="lp-pres-form-group">
               <input type="text" name="name" class="lp-pres-input" placeholder="Ім'я" required>
             </div>
@@ -3690,12 +3690,12 @@ function cleanHtml(raw, pageName) {
                 </div>
 
                 <!-- Open Form Inputs -->
-                <form class="presentation-open-form" onsubmit="event.preventDefault(); alert('Дякуємо! Ваша заявка прийнята. Наш спеціаліст зв\'яжеться з вами найближчим часом.');">
+                <form class="presentation-open-form" data-form-name="Linfopress — Виїзний тест-драйв" onsubmit="window.submitTermosaludLead(event, 'Linfopress — Виїзний тест-драйв')">
                   <div class="form-group-item">
                     <label class="form-label-text" for="l_partner_name">Ваше ім'я та посада</label>
                     <div class="input-with-icon">
                       <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="7.5" r="4.5" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></circle><path d="M4.5 20C4.5 16 8 14 12 14C16 14 19.5 16 19.5 20" stroke-width="1.8" stroke-linecap="round"></path></svg>
-                      <input type="text" id="l_partner_name" placeholder="Наприклад: Олена, керівник клініки" required class="luxury-form-input">
+                      <input type="text" id="l_partner_name" name="name" placeholder="Наприклад: Олена, керівник клініки" required class="luxury-form-input">
                     </div>
                   </div>
 
@@ -3704,14 +3704,14 @@ function cleanHtml(raw, pageName) {
                       <label class="form-label-text" for="l_partner_phone">Телефон</label>
                       <div class="input-with-icon">
                         <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="6" y="2" width="12" height="20" rx="3" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></rect><circle cx="12" cy="18" r="1" fill="currentColor"></circle><path d="M10 5H14" stroke-width="1.5" stroke-linecap="round"></path></svg>
-                        <input type="tel" id="l_partner_phone" placeholder="+380" required class="luxury-form-input">
+                        <input type="tel" id="l_partner_phone" name="phone" placeholder="+380" required class="luxury-form-input">
                       </div>
                     </div>
                     <div class="form-group-item">
                       <label class="form-label-text" for="l_partner_email">Email</label>
                       <div class="input-with-icon">
                         <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></path><polyline points="22,6 12,13 2,6" stroke-width="1.5"></polyline></svg>
-                        <input type="email" id="l_partner_email" placeholder="clinic@example.com" required class="luxury-form-input">
+                        <input type="email" id="l_partner_email" name="email" placeholder="clinic@example.com" required class="luxury-form-input">
                       </div>
                     </div>
                   </div>
@@ -3720,7 +3720,7 @@ function cleanHtml(raw, pageName) {
                     <label class="form-label-text" for="l_partner_city">Місто та назва клініки</label>
                     <div class="input-with-icon">
                       <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></path><circle cx="12" cy="10" r="3" stroke-width="1.5"></circle></svg>
-                      <input type="text" id="l_partner_city" placeholder="Київ, Клініка естетичної медицини" required class="luxury-form-input">
+                      <input type="text" id="l_partner_city" name="city" placeholder="Київ, Клініка естетичної медицини" required class="luxury-form-input">
                     </div>
                   </div>
 
@@ -3939,12 +3939,12 @@ function cleanHtml(raw, pageName) {
         </div>
 
         <!-- Main Booking Form -->
-        <form class="glass-modal-form" onsubmit="event.preventDefault(); document.getElementById('popup_request')?.classList.remove('is-active', 'show'); document.querySelector('.form-success-toast')?.classList.add('show'); setTimeout(() => document.querySelector('.form-success-toast')?.classList.remove('show'), 4000);">
+        <form class="glass-modal-form" data-form-name="Універсальний попап — Бронювання тест-драйву" onsubmit="window.submitTermosaludLead(event, 'Універсальний попап — Бронювання тест-драйву')">
           <div class="form-group-item">
             <label class="form-label-text" for="modal_name">Ваше ім'я та посада</label>
             <div class="input-with-icon">
               <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="7.5" r="4.5" stroke-width="1.8" fill="currentColor" fill-opacity="0.15"></circle><path d="M4.5 20C4.5 16 8 14 12 14C16 14 19.5 16 19.5 20" stroke-width="1.8" stroke-linecap="round"></path></svg>
-              <input type="text" id="modal_name" placeholder="Наприклад: Наталія, головний лікар" required class="luxury-form-input">
+              <input type="text" id="modal_name" name="name" placeholder="Наприклад: Наталія, головний лікар" required class="luxury-form-input">
             </div>
           </div>
 
@@ -3953,7 +3953,7 @@ function cleanHtml(raw, pageName) {
               <label class="form-label-text" for="modal_phone">Телефон</label>
               <div class="input-with-icon">
                 <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="6" y="2" width="12" height="20" rx="3" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></rect><circle cx="12" cy="18" r="1" fill="currentColor"></circle><path d="M10 5H14" stroke-width="1.5" stroke-linecap="round"></path></svg>
-                <input type="tel" id="modal_phone" placeholder="+380" required class="luxury-form-input">
+                <input type="tel" id="modal_phone" name="phone" placeholder="+380" required class="luxury-form-input">
               </div>
             </div>
 
@@ -3961,7 +3961,7 @@ function cleanHtml(raw, pageName) {
               <label class="form-label-text" for="modal_city">Місто / Назва клініки</label>
               <div class="input-with-icon">
                 <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 21.5C12 21.5 19 14.5 19 9.5C19 5.5 16 2.5 12 2.5C8 2.5 5 5.5 5 9.5C5 14.5 12 21.5 12 21.5Z" stroke-width="1.8" fill="currentColor" fill-opacity="0.12"></path><circle cx="12" cy="9.5" r="2.5" stroke-width="1.6" fill="currentColor"></circle></svg>
-                <input type="text" id="modal_city" placeholder="Київ / Назва клініки" required class="luxury-form-input">
+                <input type="text" id="modal_city" name="city" placeholder="Київ / Назва клініки" required class="luxury-form-input">
               </div>
             </div>
           </div>

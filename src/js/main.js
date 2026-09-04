@@ -235,18 +235,22 @@ function initPopupModals() {
 }
 
 function openPopup(popup) {
+  if (!popup) return;
   popup.classList.add('is-active', 'show');
   popup.style.display = 'flex';
   document.documentElement.classList.add('modal-open-lock');
   document.body.classList.add('modal-open-lock');
 }
+window.openPopup = openPopup;
 
 function closePopup(popup) {
+  if (!popup) return;
   popup.classList.remove('is-active', 'show');
   popup.style.display = 'none';
   document.documentElement.classList.remove('modal-open-lock');
   document.body.classList.remove('modal-open-lock');
 }
+window.closePopup = closePopup;
 
 /**
  * 2. Video & Tech Modals
@@ -450,37 +454,197 @@ function initMobileMenu() {
 }
 
 /**
- * 5. Form Submission Handling
+ * 5. Form Submission Handling (Real Email Dispatch to artemkudliuk@gmail.com)
  */
+window.submitTermosaludLead = async function(e, formTitle) {
+  if (e && typeof e.preventDefault === 'function') e.preventDefault();
+  
+  let form = null;
+  if (e && e.target && e.target.tagName === 'FORM') {
+    form = e.target;
+  } else if (e && e.currentTarget && e.currentTarget.tagName === 'FORM') {
+    form = e.currentTarget;
+  } else if (e && e.tagName === 'FORM') {
+    form = e;
+  } else if (e && e.target) {
+    form = e.target.closest('form');
+  }
+  if (!form) return;
+
+  if (form.getAttribute('data-submitting') === 'true') return;
+  form.setAttribute('data-submitting', 'true');
+
+  const btn = form.querySelector('button[type="submit"], input[type="submit"], .submit-presentation-btn, .lp-pres-submit-btn, .modal-submit-btn');
+  const origBtnHtml = btn ? btn.innerHTML : '';
+  const origBtnText = btn ? (btn.value || btn.textContent) : '';
+
+  // Extract Name & Position
+  const nameEl = form.querySelector('#partner_name, #z_partner_name, #l_partner_name, #modal_name, input[name="name"], input[placeholder*="ім\'я" i], input[placeholder*="Ім\'я" i]');
+  const clientName = nameEl ? nameEl.value.trim() : '';
+
+  // Extract Phone
+  const phoneEl = form.querySelector('#partner_phone, #z_partner_phone, #l_partner_phone, #modal_phone, input[name="phone"], input[type="tel"], input[placeholder*="+380"]');
+  const clientPhone = phoneEl ? phoneEl.value.trim() : '';
+
+  // Extract Email
+  const emailEl = form.querySelector('#partner_email, #z_partner_email, #l_partner_email, input[name="email"], input[type="email"]');
+  const clientEmail = emailEl ? emailEl.value.trim() : '';
+
+  // Extract City & Clinic
+  const cityEl = form.querySelector('#partner_city, #z_partner_city, #l_partner_city, #modal_city, input[name="city"], input[placeholder*="Місто" i], input[placeholder*="місто" i]');
+  const clientCity = cityEl ? cityEl.value.trim() : '';
+
+  // Extract Messenger
+  let selectedMessenger = '';
+  const checkedRadio = form.querySelector('input[type="radio"][name*="messenger"]:checked');
+  if (checkedRadio) {
+    selectedMessenger = checkedRadio.value;
+  } else {
+    const checkedBoxes = Array.from(form.querySelectorAll('input[type="checkbox"][name*="messenger"]:checked'))
+      .map(cb => cb.value || cb.name.replace('messenger_', ''));
+    if (checkedBoxes.length > 0) {
+      selectedMessenger = checkedBoxes.join(', ');
+    }
+  }
+  if (!selectedMessenger) {
+    selectedMessenger = 'WhatsApp (за замовчуванням)';
+  }
+
+  // Extract Format & Device (from modal or page context)
+  let formatDetails = '';
+  const popupWrap = form.closest('#popup_request') || document.getElementById('popup_request');
+  if (form.closest('#popup_request') && popupWrap) {
+    const activeFormat = popupWrap.querySelector('.format-tab-btn.active');
+    if (activeFormat) {
+      formatDetails = activeFormat.textContent.trim().replace(/\s+/g, ' ');
+    }
+    const checkedDevice = popupWrap.querySelector('input[name="modal_device"]:checked');
+    if (checkedDevice) {
+      const devLabel = checkedDevice.closest('.device-pill')?.textContent.trim() || checkedDevice.value;
+      formatDetails += (formatDetails ? ' | Апарат: ' : 'Апарат: ') + devLabel;
+    }
+  }
+
+  // Visual loading state
+  if (btn) {
+    btn.disabled = true;
+    btn.classList.add('is-submitting');
+    if (btn.tagName === 'INPUT') {
+      btn.value = 'Надсилання...';
+    } else {
+      btn.innerHTML = `<span style="display:inline-flex;align-items:center;justify-content:center;gap:8px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="animation: spin 0.8s linear infinite;">
+          <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
+          <path d="M12 2a10 10 0 0 1 10 10" stroke="currentColor"></path>
+        </svg>
+        <span>Надсилання...</span>
+      </span>`;
+    }
+  }
+
+  // Payload for FormSubmit
+  const payload = {
+    "_subject": `🔔 Нова заявка Termosalud: ${clientName || 'Клієнт'} (${clientPhone})`,
+    "_template": "table",
+    "_captcha": "false",
+    "Форма / Джерело": formTitle || 'Форма на сайті',
+    "Клієнт (Ім'я / Посада)": clientName || 'Не вказано',
+    "Номер телефону": clientPhone || 'Не вказано',
+    "Email": clientEmail || 'Не вказано',
+    "Місто / Клініка": clientCity || 'Не вказано',
+    "Зручний месенджер": selectedMessenger,
+    "Формат тесту / Апарат": formatDetails || '—',
+    "Сторінка сайту": window.location.href,
+    "Дата та час": new Date().toLocaleString('uk-UA', { timeZone: 'Europe/Kyiv' })
+  };
+
+  try {
+    let response = null;
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    
+    // On Vercel production, try serverless /api/lead first
+    if (!isLocalhost) {
+      try {
+        const apiRes = await fetch('/api/lead', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+        if (apiRes.ok) {
+          response = apiRes;
+        }
+      } catch (apiErr) {
+        console.warn('Serverless API fallback to direct FormSubmit:', apiErr);
+      }
+    }
+
+    // Direct FormSubmit (primary on localhost, automatic fallback on production)
+    if (!response) {
+      response = await fetch('https://formsubmit.co/ajax/artemkudliuk@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+    }
+
+    const result = await response.json().catch(() => ({}));
+
+    // Reset inputs
+    form.reset();
+
+    // Close any open popups
+    const universalPopup = document.getElementById('popup_request');
+    if (universalPopup && (universalPopup.classList.contains('is-active') || universalPopup.classList.contains('show'))) {
+      if (typeof window.closePopup === 'function') {
+        window.closePopup(universalPopup);
+      } else {
+        universalPopup.classList.remove('is-active', 'show');
+        universalPopup.style.display = 'none';
+      }
+    }
+    const linfopressModal = document.getElementById('linfopress-presentation-modal-overlay');
+    if (linfopressModal && linfopressModal.classList.contains('active')) {
+      linfopressModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (result.success === 'false' && result.message && result.message.includes('Activation')) {
+      showToast('⚠️ Увага: Будь ласка, натисніть "Activate Form" у листі на artemkudliuk@gmail.com для підтвердження!');
+    } else {
+      showToast('Дякуємо! Ваша заявка успішно прийнята. Ми зв\'яжемося з вами найближчим часом.');
+    }
+  } catch (err) {
+    console.error('Submission error:', err);
+    showToast('Виникла помилка. Спробуйте ще раз або зателефонуйте нам.');
+  } finally {
+    form.removeAttribute('data-submitting');
+    if (btn) {
+      btn.disabled = false;
+      btn.classList.remove('is-submitting');
+      if (btn.tagName === 'INPUT') {
+        btn.value = origBtnText;
+      } else {
+        btn.innerHTML = origBtnHtml;
+      }
+    }
+  }
+};
+
 function initFormSubmissions() {
   document.addEventListener('submit', (e) => {
     const form = e.target;
     if (!form || form.tagName !== 'FORM') return;
+    if (form.getAttribute('data-submitting') === 'true') return;
 
     e.preventDefault();
-
-    const btn = form.querySelector('button[type="submit"], input[type="submit"]');
-    const origText = btn ? (btn.value || btn.textContent) : '';
-
-    if (btn) {
-      if (btn.tagName === 'INPUT') btn.value = 'Надсилаємо...';
-      else btn.textContent = 'Надсилаємо...';
-      btn.disabled = true;
-    }
-
-    setTimeout(() => {
-      form.reset();
-      if (btn) {
-        if (btn.tagName === 'INPUT') btn.value = origText;
-        else btn.textContent = origText;
-        btn.disabled = false;
-      }
-
-      const popup = document.getElementById('popup_request');
-      if (popup) closePopup(popup);
-
-      showToast('Дякуємо! Ваша заявка прийнята. Ми зв\'яжемося з вами найближчим часом.');
-    }, 600);
+    const title = form.getAttribute('data-form-name') || 'Заявка з сайту Termosalud';
+    window.submitTermosaludLead(e, title);
   });
 }
 
@@ -492,18 +656,21 @@ function showToast(message) {
     document.body.appendChild(toast);
   }
 
+  const isWarning = message.includes('⚠️');
   toast.innerHTML = `
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="${isWarning ? '#f59e0b' : '#10b981'}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;">
+      ${isWarning 
+        ? '<circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line>' 
+        : '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>'}
     </svg>
-    <span>${message}</span>
+    <span style="line-height:1.4;">${message}</span>
   `;
 
   toast.classList.add('show');
-  setTimeout(() => {
+  if (window._toastTimeout) clearTimeout(window._toastTimeout);
+  window._toastTimeout = setTimeout(() => {
     toast.classList.remove('show');
-  }, 4500);
+  }, 5000);
 }
 
 /**
@@ -1614,17 +1781,7 @@ window.closeLinfopressPresentationModal = function(e) {
 
 window.handleLinfopressPresentationSubmit = function(e) {
   if (e && typeof e.preventDefault === 'function') e.preventDefault();
-  const overlay = document.getElementById('linfopress-presentation-modal-overlay');
-  if (overlay) overlay.classList.remove('active');
-  document.body.style.overflow = '';
-
-  const toast = document.querySelector('.form-success-toast');
-  if (toast) {
-    toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 4000);
-  } else {
-    alert('Дякуємо! Ваша заявка успішно надіслана. Наш спеціаліст зв’яжеться з вами найближчим часом.');
-  }
+  return window.submitTermosaludLead(e, 'Linfopress — Модальне вікно безкоштовної процедури');
 };
 
 document.addEventListener('keydown', function(e) {

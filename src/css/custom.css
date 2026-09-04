@@ -3815,6 +3815,23 @@ body.modal-open-lock {
   opacity: 1;
 }
 
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 600px) {
+  .form-success-toast {
+    left: 16px !important;
+    right: 16px !important;
+    bottom: 20px !important;
+    padding: 14px 18px !important;
+    font-size: 14px !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+}
+
 /* Responsive adjustments */
 @media (max-width: 991px) {
   header,
