@@ -559,39 +559,14 @@ window.submitTermosaludLead = async function(e, formTitle) {
   };
 
   try {
-    let response = null;
-    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    
-    // On Vercel production, try serverless /api/lead first
-    if (!isLocalhost) {
-      try {
-        const apiRes = await fetch('/api/lead', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify(payload)
-        });
-        if (apiRes.ok) {
-          response = apiRes;
-        }
-      } catch (apiErr) {
-        console.warn('Serverless API fallback to direct FormSubmit:', apiErr);
-      }
-    }
-
-    // Direct FormSubmit (primary on localhost, automatic fallback on production)
-    if (!response) {
-      response = await fetch('https://formsubmit.co/ajax/zionic.ua@gmail.com', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify(payload)
-      });
-    }
+    const response = await fetch('/api/lead', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    });
 
     const result = await response.json().catch(() => ({}));
 
