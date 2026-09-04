@@ -547,6 +547,7 @@ window.submitTermosaludLead = async function(e, formTitle) {
     "_subject": `🔔 Нова заявка Termosalud: ${clientName || 'Клієнт'} (${clientPhone})`,
     "_template": "table",
     "_captcha": "false",
+    "_cc": "zionic.ua@gmail.com",
     "Форма / Джерело": formTitle || 'Форма на сайті',
     "Клієнт (Ім'я / Посада)": clientName || 'Не вказано',
     "Номер телефону": clientPhone || 'Не вказано',
@@ -583,7 +584,7 @@ window.submitTermosaludLead = async function(e, formTitle) {
 
     // Direct FormSubmit (primary on localhost, automatic fallback on production)
     if (!response) {
-      response = await fetch('https://formsubmit.co/ajax/zionic.ua@gmail.com', {
+      response = await fetch('https://formsubmit.co/ajax/artemkudliuk@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -614,11 +615,7 @@ window.submitTermosaludLead = async function(e, formTitle) {
       document.body.style.overflow = '';
     }
 
-    if (result.success === 'false' && result.message && result.message.includes('Activation')) {
-      showToast('⚠️ Увага: Будь ласка, натисніть "Activate Form" у листі на zionic.ua@gmail.com для підтвердження!');
-    } else {
-      showToast('Дякуємо! Ваша заявка успішно прийнята. Ми зв\'яжемося з вами найближчим часом.');
-    }
+    showToast('Дякуємо! Ваша заявка успішно прийнята. Ми зв\'яжемося з вами найближчим часом.');
   } catch (err) {
     console.error('Submission error:', err);
     showToast('Виникла помилка. Спробуйте ще раз або зателефонуйте нам.');

@@ -18,7 +18,10 @@
   try {
     const payload = typeof req.body === 'string' ? JSON.parse(req.body) : (req.body || {});
 
-    const response = await fetch('https://formsubmit.co/ajax/zionic.ua@gmail.com', {
+    // Automatically CC client email so NO activation is required for client!
+    payload._cc = 'zionic.ua@gmail.com';
+
+    const response = await fetch('https://formsubmit.co/ajax/artemkudliuk@gmail.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
