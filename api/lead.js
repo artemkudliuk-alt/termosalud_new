@@ -8,6 +8,36 @@ const transporter = nodemailer.createTransport({
   }
 });
 
+function escapeHtml(str) {
+  return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+async function sendTelegramLead(fields) {
+  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const chatId = process.env.TELEGRAM_CHAT_ID;
+  if (!token || !chatId) return;
+
+  const text = `🔔 <b>Нова заявка Termosalud</b>\n\n` +
+    `<b>Форма:</b> ${escapeHtml(fields.formName)}\n` +
+    `<b>Клієнт:</b> ${escapeHtml(fields.clientName)}\n` +
+    `<b>Телефон:</b> ${escapeHtml(fields.clientPhone)}\n` +
+    `<b>Email:</b> ${escapeHtml(fields.clientEmail)}\n` +
+    `<b>Місто:</b> ${escapeHtml(fields.clientCity)}\n` +
+    `<b>Месенджер:</b> ${escapeHtml(fields.messenger)}\n` +
+    `<b>Формат:</b> ${escapeHtml(fields.formatDetails)}\n` +
+    `<b>Сторінка:</b> ${escapeHtml(fields.pageUrl)}\n` +
+    `<b>Час:</b> ${escapeHtml(fields.dateStr)}`;
+
+  const resp = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ chat_id: chatId, text, parse_mode: 'HTML' })
+  });
+  if (!resp.ok) {
+    throw new Error(`Telegram API ${resp.status}: ${await resp.text()}`);
+  }
+}
+
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -98,13 +128,19 @@ export default async function handler(req, res) {
       </div>
     `;
 
-    await transporter.sendMail({
-      from: '"TermoSalud Україна" <artemkudliuk@gmail.com>',
-      to: 'zionic.ua@gmail.com',
-      replyTo: clientEmail !== 'Не вказано' ? clientEmail : 'zionic.ua@gmail.com',
-      subject: subject,
-      html: htmlContent
-    });
+    await Promise.all([
+      transporter.sendMail({
+        from: '"TermoSalud Україна" <artemkudliuk@gmail.com>',
+        to: 'zionic.ua@gmail.com',
+        replyTo: clientEmail !== 'Не вказано' ? clientEmail : 'zionic.ua@gmail.com',
+        subject: subject,
+        html: htmlContent
+      }),
+      sendTelegramLead({
+        formName, clientName, clientPhone, clientEmail, clientCity,
+        messenger, formatDetails, pageUrl, dateStr
+      }).catch((err) => console.error('Telegram lead delivery error:', err))
+    ]);
 
     return res.status(200).json({ success: true, message: 'Lead delivered successfully' });
   } catch (error) {
