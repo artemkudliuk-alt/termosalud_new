@@ -288,34 +288,8 @@ function cleanHtml(raw, pageName) {
   // Remove analytics / GTM
   html = html.replace(/<script[^>]*googletagmanager[^>]*>[\s\S]*?<\/script>/gi, '');
   html = html.replace(/<script[^>]*gtm\.js[^>]*>[\s\S]*?<\/script>/gi, '');
-  html = html.replace(/<script>[\s\S]*?googletagmanager\.com\/gtm\.js[\s\S]*?<\/script>/gi, '');
   html = html.replace(/<!--\s*Google Tag Manager[\s\S]*?End Google Tag Manager\s*-->/gi, '');
   html = html.replace(/<noscript><iframe[^>]*googletagmanager[\s\S]*?<\/noscript>/gi, '');
-
-  // Install client GTM + GA4 tags (TZ 2026-09-07)
-  const GTM_ID = 'GTM-NHQ8HK9G';
-  const GA4_ID = 'G-JFD4JFP1WS';
-  html = html.replace('<head>', `<head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','${GTM_ID}');</script>
-  <!-- End Google Tag Manager -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=${GA4_ID}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '${GA4_ID}');
-  </script>`);
-  html = html.replace(/<body([^>]*)>/, `<body$1>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_ID}"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->`);
 
   // Inject active page header
   let activeHeaderHtml = modernHeaderHtml;
