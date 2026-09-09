@@ -1,5 +1,16 @@
 
 // ==========================================================================
+// PHONE INPUT: put cursor after the pre-filled "+380" on focus
+// ==========================================================================
+document.addEventListener('focus', (e) => {
+  const el = e.target;
+  if (el.tagName === 'INPUT' && el.type === 'tel' && el.selectionStart === 0 && el.selectionEnd === 0) {
+    const pos = el.value.length;
+    el.setSelectionRange(pos, pos);
+  }
+}, true);
+
+// ==========================================================================
 // CERTIFICATE FULLSCREEN LIGHTBOX HANDLERS (ZERO SCROLL JUMP)
 // ==========================================================================
 window._savedCertScrollTop = 0;

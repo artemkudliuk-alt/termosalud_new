@@ -5580,6 +5580,16 @@ footer {
   box-shadow: 0 14px 30px rgba(24, 24, 27, 0.28);
 }
 
+/* Mid-page CTA sections sit between two content sections; drop the divider
+   border those sections normally use to separate themselves, so it doesn't
+   hug the button. */
+.zionic-mid-cta-section + section {
+  border-top: none !important;
+}
+section:has(+ .zionic-mid-cta-section) {
+  border-bottom: none !important;
+}
+
 .zionic-secondary-btn {
   height: 52px;
   padding: 0 24px;
